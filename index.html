@@ -72,7 +72,7 @@
       card.className='grade';card.type='button';
       const book=i<=6?'Pupil’s Book + Workbook':'Student’s Book + Workbook';
       card.innerHTML='<div class="num">'+String(i).padStart(2,'0')+'</div><h3>Grade '+i+'</h3><p>'+book+'</p>';
-      card.addEventListener('click',()=>{selectionStatus.hidden=false;selectionStatus.textContent='Grade '+i+' selected. The lesson list is not available yet and will be added after both textbooks have been reviewed.';});
+      card.addEventListener('click',()=>{window.location.href='lessons.html?grade='+i;});
       root.appendChild(card);
     }
   </script>
