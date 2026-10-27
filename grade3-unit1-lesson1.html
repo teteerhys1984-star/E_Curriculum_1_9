@@ -9,12 +9,45 @@
 :root{color-scheme:dark;--bg:#0c0b1b;--panel:#17152d;--line:#39345b;--text:#fbf9ff;--muted:#c0bdd9;--mint:#73f5d0;--blue:#9caeff;--pink:#ff8fcf;--orange:#ffc17e}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--text);font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 8% 0%,#5d2b8940,transparent 34%),radial-gradient(ellipse at 95% 20%,#145c8040,transparent 30%),var(--bg)}a{color:inherit}.wrap{max-width:1000px;margin:auto;padding:24px 20px 44px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.brand{font:700 13px 'Space Grotesk',sans-serif;letter-spacing:2px;color:var(--mint)}.back{border:1px solid #514777;border-radius:99px;padding:10px 14px;text-decoration:none;color:#ded8f6;font-size:13px}.hero{padding:44px 0 26px}.eyebrow{color:var(--mint);font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}.hero h1{font:700 clamp(36px,6vw,58px)/1.06 'Space Grotesk',sans-serif;letter-spacing:-2px;margin:12px 0;background:linear-gradient(100deg,#fff,#c7d0ff 52%,#ffb8df);color:transparent;background-clip:text}.hero p,.muted{color:var(--muted);line-height:1.75}.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{font-size:12px;color:#e7e1ff;border:1px solid #454066;background:#ffffff08;padding:8px 12px;border-radius:99px}.notice{border:1px solid #775a2b;background:#2c241b;border-radius:15px;padding:14px 16px;color:#ffe3b1;font-size:13px;line-height:1.7;margin-bottom:22px}.section{border:1px solid var(--line);background:linear-gradient(145deg,#211d3d,#141329);border-radius:20px;padding:22px;margin:14px 0}.section h2{font:700 23px 'Space Grotesk',sans-serif;margin:0 0 12px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;font-weight:800;color:var(--mint);margin-bottom:7px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.tile,.activity{border:1px solid #454066;border-radius:14px;padding:16px;margin-top:12px;background:#ffffff05}.tile h3{font:700 16px 'Space Grotesk',sans-serif;margin:0 0 8px}.tile p,.activity p{line-height:1.7}.vocab{width:100%;border-collapse:collapse;margin-top:12px}.vocab th,.vocab td{text-align:left;padding:12px 10px;border-bottom:1px solid #39345b;font-size:13px;vertical-align:top}.vocab th{color:var(--blue);font-size:11px;text-transform:uppercase;letter-spacing:1px}.answer{margin-top:12px;border-left:3px solid var(--mint);padding:10px 13px;background:#73f5d012;border-radius:0 10px 10px 0;line-height:1.7}.answer[hidden]{display:none}button{font:700 13px 'DM Sans',sans-serif;border:1px solid #5b5680;border-radius:10px;padding:10px 14px;background:#282345;color:#fff;cursor:pointer}button:hover,button:focus-visible{border-color:var(--mint);outline:2px solid #73f5d055;outline-offset:2px}.primary{background:linear-gradient(100deg,#4a2f75,#224e59);border-color:#74639d}.status{display:inline-block;border:1px solid #7a6030;color:#ffe2a6;border-radius:99px;padding:4px 8px;font-size:10px;font-weight:800;letter-spacing:.6px;text-transform:uppercase}.status.inferred{border-color:#6557a0;color:#d7ccff}.status.practice{border-color:#347b62;color:#a7ffd0}.question{padding:14px 0;border-bottom:1px solid #39345b}.question:last-child{border-bottom:0}.question p{margin:0 0 10px;line-height:1.65}.options{display:grid;gap:8px}.option{display:flex;gap:9px;align-items:flex-start;color:#e7e1ff;font-size:14px;line-height:1.5}.option input{margin-top:4px;accent-color:#73f5d0}.footer{margin-top:28px;border-top:1px solid #343052;padding-top:20px;color:#aaa5c5;font-size:12px;line-height:1.8}.footer a{color:#a7ffd0}
 @media(max-width:650px){.wrap{padding:18px 14px 32px}.section{padding:17px}.grid{grid-template-columns:1fr}.hero h1{letter-spacing:-1.2px}.vocab th,.vocab td{padding:10px 6px}}
+
+/* Experimental learner-friendly bright lesson theme */
+:root{color-scheme:light;--bg:#fff9f0;--panel:#ffffff;--line:#dce6f4;--text:#263451;--muted:#586783;--mint:#087f8c;--blue:#465de8;--pink:#e84d9b;--orange:#c66a08}
+body{background:radial-gradient(ellipse at 4% 0%,#ffe4f1 0,transparent 30%),radial-gradient(ellipse at 95% 8%,#d8f7ff 0,transparent 32%),linear-gradient(180deg,#fffaf0,#f2f7ff);color:var(--text)}
+.brand,.eyebrow,.kicker{color:#6d42d8}
+.back{border-color:#d5d9f3;color:#37436a;background:#fff}
+.hero h1{background:linear-gradient(100deg,#6544df,#e34f9d 55%,#f39a29);color:transparent;background-clip:text}
+.hero p,.muted{color:#586783}
+.pill{color:#39456a;border-color:#d8def3;background:#fff;box-shadow:0 3px 12px #4b5e9010}
+.notice{border:1px solid #ffd28a;background:#fff3d9;color:#795019}
+.section{border:1px solid #dce5f5;background:linear-gradient(145deg,#fff,#f9fbff);box-shadow:0 10px 28px #344b7810}
+.section h2{color:#28365b}
+.tile,.activity{border:1px solid #e1e8f6;background:linear-gradient(135deg,#fff,#f7faff);box-shadow:0 4px 12px #3d51800b}
+.tile:nth-child(4n+1){border-top:4px solid #f28ab7}.tile:nth-child(4n+2){border-top:4px solid #6e82f4}.tile:nth-child(4n+3){border-top:4px solid #54c7b6}.tile:nth-child(4n+4){border-top:4px solid #ffbd62}
+.vocab th{color:#5b48d6}.vocab th,.vocab td{border-bottom-color:#e2e8f5}
+.answer{border-left-color:#17a68e;background:#e6fbf5;color:#244d4a}
+button{border:1px solid #d0d8f2;background:#eef1ff;color:#343e78}
+button:hover,button:focus-visible{border-color:#6a63e8;outline:3px solid #6a63e830}
+.primary{background:linear-gradient(100deg,#6747e8,#e44d9c);border-color:transparent;color:white}
+.status{border-color:#efbd67;color:#80500a;background:#fff5d9}
+.status.inferred{border-color:#c5b8ff;color:#5c43ba;background:#f2edff}
+.status.practice{border-color:#8cdec7;color:#176b59;background:#e8fff7}
+.question{border-bottom-color:#e5eaf5}.option{color:#374360}.option input{accent-color:#7258e8}
+.footer{border-top-color:#e1e6f2;color:#65718b}.footer a{color:#087f75}
+.lesson-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:18px 0 14px}
+.lesson-tab{min-height:76px;border:1px solid #dbe3f4;border-radius:16px;background:#fff;color:#354264;box-shadow:0 5px 16px #354a7810;padding:13px 10px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.lesson-tab .tab-emoji{font-size:24px;line-height:1.1}.lesson-tab .tab-label{font-size:12px;font-weight:800}
+.lesson-tab[aria-selected="true"]{color:white;background:linear-gradient(135deg,#7052e8,#e253a1);border-color:transparent;box-shadow:0 8px 22px #7352d83d}
+.tab-panel[hidden]{display:none}.tab-panel>.section:first-child{margin-top:0}
+.art-strip{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin:10px 0 20px;padding:16px;border-radius:18px;background:linear-gradient(100deg,#e6f8ff,#f8eaff,#fff0d9);font-size:30px}
+.art-strip span{display:inline-flex;align-items:center;justify-content:center;width:54px;height:54px;border-radius:16px;background:#ffffffc9;box-shadow:0 4px 12px #4d56801a}
+@media(max-width:650px){.lesson-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.lesson-tab{min-height:68px}.art-strip{gap:8px}.art-strip span{width:46px;height:46px}}
+
 </style>
 </head>
 <body><main class="wrap">
 <header class="top"><div class="brand">✦ ENGLISH FULL CURRICULUM</div><a class="back" href="lessons.html?grade=3">← Back to Grade 3</a></header>
 <section class="hero"><div class="eyebrow">GRADE 3 · UNIT 1 · LESSON 1</div><h1>Back to School</h1><p>Learn about family, describe what people have, practise questions about yourself, and get ready for a new school year.</p><div class="pills"><span class="pill">Pupil’s Book · pp. 3–5</span><span class="pill">Workbook · pp. 3–5</span><span class="pill">Learn · Practise · Review</span></div></section>
-<div class="notice"><strong>Source note:</strong> This first version was built from OCR-based text notes. The original page images and listening audio have not been visually rechecked here. Anything that depends on a picture or audio is clearly marked; do not treat inferred answers as confirmed textbook answers.</div>
+<div class="notice"><strong>Source note:</strong> This experimental lesson layout was built from OCR-based text notes. The original page images and listening audio have not been visually rechecked here. Anything that depends on a picture or audio is clearly marked; do not treat inferred answers as confirmed textbook answers.</div>
 <section class="section"><div class="kicker">01 · Learning goals</div><h2>By the end of this lesson, you can…</h2><div class="grid"><div class="tile"><h3>Talk about family</h3><p>Say who you live with and mention brothers and sisters.</p></div><div class="tile"><h3>Use have got / has got</h3><p>Describe people and things using the correct form.</p></div><div class="tile"><h3>Ask and answer questions</h3><p>Practise age, home, family, and a brother’s name.</p></div><div class="tile"><h3>Talk about school</h3><p>Understand familiar classroom words and school routines.</p></div></div></section>
 <section class="section" id="pupil-book"><div class="kicker">02 · Pupil’s Book</div><h2>Read, learn, speak, and listen</h2>
 <div class="activity"><h3>Activity 1 · Listen and read</h3><p>The page contains a dialogue with Dad, John, Carla, Ted, Zak, and Miss Maria. The exact speaker-to-line matching was not verified from the image, so this page does not recreate the dialogue.</p><span class="status">Text needs visual check</span></div>
@@ -67,5 +100,34 @@
 <footer class="footer">ENGLISH FULL CURRICULUM · Learn · Practise · Test Yourself<br>Questions or feedback? <a href="https://wa.me/963930215022" target="_blank" rel="noopener noreferrer">Contact the project team on WhatsApp ↗</a><br><a href="lessons.html?grade=3">Return to Grade 3 lessons</a></footer>
 </main>
 <script>
-(function(){document.querySelectorAll('[data-toggle-answer]').forEach(function(button){button.addEventListener('click',function(){const panel=document.getElementById(button.getAttribute('aria-controls'));const show=panel.hidden;panel.hidden=!show;button.setAttribute('aria-expanded',String(show));button.textContent=show?(button.dataset.hideLabel||'Hide Answer'):(button.dataset.showLabel||'Show Answer');});});})();
+(function(){
+  const main=document.querySelector('main.wrap');
+  const notice=main.querySelector('.notice');
+  const sections=Array.from(main.querySelectorAll('.section'));
+  const pupil=main.querySelector('#pupil-book');
+  const workbook=main.querySelector('#workbook');
+  const vocabulary=sections.find(s=>s.querySelector('.kicker')?.textContent.includes('Key vocabulary'));
+  const test=sections.find(s=>s.querySelector('.kicker')?.textContent.includes('Lesson review'));
+  const goals=sections.find(s=>s.querySelector('.kicker')?.textContent.includes('Learning goals'));
+  const grammar=sections.find(s=>s!==pupil&&s!==workbook&&s!==vocabulary&&s!==test&&s!==goals);
+  const nav=document.createElement('nav');nav.className='lesson-tabs';nav.setAttribute('aria-label','Lesson sections');
+  const panels=document.createElement('div');panels.className='tab-panels';
+  const configs=[
+    {id:'tab-pupil',label:"Pupil’s Book",emoji:'📘',items:[goals,grammar,pupil]},
+    {id:'tab-workbook',label:'Workbook',emoji:'✏️',items:[workbook]},
+    {id:'tab-vocabulary',label:'Vocabulary',emoji:'🌈',items:[vocabulary]},
+    {id:'tab-test',label:'Lesson Test',emoji:'🏆',items:[test]}
+  ];
+  configs.forEach((c,i)=>{
+    const button=document.createElement('button');button.type='button';button.className='lesson-tab';button.id=c.id+'-button';button.setAttribute('role','tab');button.setAttribute('aria-controls',c.id);button.setAttribute('aria-selected',i===0?'true':'false');button.tabIndex=i===0?0:-1;
+    button.innerHTML='<span class="tab-emoji" aria-hidden="true">'+c.emoji+'</span><span class="tab-label">'+c.label+'</span>';nav.appendChild(button);
+    const panel=document.createElement('div');panel.className='tab-panel';panel.id=c.id;panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby',button.id);panel.hidden=i!==0;
+    c.items.filter(Boolean).forEach(s=>panel.appendChild(s));panels.appendChild(panel);
+    button.addEventListener('click',()=>{configs.forEach((other,j)=>{const b=document.getElementById(other.id+'-button'),p=document.getElementById(other.id);b.setAttribute('aria-selected',j===i?'true':'false');b.tabIndex=j===i?0:-1;p.hidden=j!==i;});});
+    button.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const next=(i+(e.key==='ArrowRight'?1:configs.length-1))%configs.length;document.getElementById(configs[next].id+'-button').focus();}});
+  });
+  const art=document.createElement('div');art.className='art-strip';art.setAttribute('aria-label','Back to school illustrations');art.innerHTML='<span aria-hidden="true">🎒</span><span aria-hidden="true">📚</span><span aria-hidden="true">✏️</span><span aria-hidden="true">🏫</span><span aria-hidden="true">🌟</span>';
+  notice.after(art,nav,panels);
+  document.querySelectorAll('[data-toggle-answer]').forEach(button=>button.addEventListener('click',function(){const panel=document.getElementById(button.getAttribute('aria-controls'));const show=panel.hidden;panel.hidden=!show;button.setAttribute('aria-expanded',String(show));button.textContent=show?(button.dataset.hideLabel||'Hide Answer'):(button.dataset.showLabel||'Show Answer');}));
+})();
 </script></body></html>
