@@ -14,6 +14,7 @@
     .stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.stat{padding:12px 16px;background:#ffffff08;border:1px solid var(--line);border-radius:14px;font-size:13px;color:var(--muted)}.stat b{color:var(--text);font-size:18px;margin-left:6px}
     .section-head{display:flex;justify-content:space-between;align-items:end;gap:14px;flex-wrap:wrap;margin:24px 0 18px}.section-head h2{margin:0;font-size:25px}.section-head p{margin:6px 0 0;color:var(--muted);font-size:13px}
     .grades{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grade{background:linear-gradient(145deg,#18243a,#111827);border:1px solid var(--line);border-radius:20px;padding:20px;text-align:right;color:var(--text);cursor:pointer;transition:.2s;min-height:150px}.grade:hover,.grade:focus{transform:translateY(-3px);border-color:var(--mint);outline:none}.num{font-size:32px;font-weight:bold;color:var(--mint)}.grade h3{margin:10px 0 5px}.grade p{color:var(--muted);margin:0;font-size:13px}
+    .selection-status{margin:16px 0 0;padding:14px 16px;border:1px solid #426a62;background:#102a2a;border-radius:14px;color:#d8fff2;line-height:1.8;font-size:14px}.selection-status[hidden]{display:none}
     .notice{margin-top:24px;border:1px solid #354766;background:#121b2d;border-radius:16px;padding:18px;color:var(--muted);line-height:1.8;font-size:13px}.notice strong{color:var(--text)}
     footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);color:#7f8ba4;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     @media(max-width:700px){.grades{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding-top:42px}}@media(max-width:430px){.grades{grid-template-columns:1fr}.grade{min-height:120px}}
@@ -31,18 +32,20 @@
     <section aria-labelledby="grades-title">
       <div class="section-head"><div><h2 id="grades-title">اختر صفك الدراسي</h2><p>ابدأ من صفك للوصول إلى قائمة الدروس.</p></div><div class="pill">المرحلة الأساسية</div></div>
       <div class="grades" id="grades"></div>
+      <p class="selection-status" id="selection-status" role="status" aria-live="polite" hidden></p>
     </section>
     <aside class="notice"><strong>قيد الإعداد:</strong> هذه هي الواجهة الأساسية للمنصة. ستُضاف صفحات الدروس الفعلية بعد تجهيز محتوى الكتب والتحقق من صور الصفحات، مع شرح مفصل ومفردات مترجمة وتمارين تكشف إجاباتها عند الطلب واختبار شامل لكل درس.</aside>
     <footer><span>English Full Curriculum</span><span>تعلم • تدرب • اختبر نفسك</span></footer>
   </main>
   <script>
     const root=document.getElementById('grades');
+    const selectionStatus=document.getElementById('selection-status');
     for(let i=1;i<=9;i++){
       const card=document.createElement('button');
       card.className='grade';card.type='button';
       const book=i<=6?'Pupil’s Book + Workbook':'Student’s Book + Workbook';
       card.innerHTML='<div class="num">'+String(i).padStart(2,'0')+'</div><h3>الصف '+i+'</h3><p>'+book+'</p>';
-      card.addEventListener('click',()=>{alert('سيتم تجهيز قائمة دروس الصف '+i+' بعد إضافة محتوى المنهاج.');});
+      card.addEventListener('click',()=>{selectionStatus.hidden=false;selectionStatus.textContent='اخترت الصف '+i+'. قائمة الدروس غير متاحة بعد، وسيتم إضافتها بعد مراجعة محتوى الكتابين لهذا الصف.';});
       root.appendChild(card);
     }
   </script>
