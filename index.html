@@ -1,41 +1,67 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101827">
-  <title>English Full Curriculum | المنهاج التفاعلي</title>
+  <meta name="description" content="An interactive English curriculum for Grades 1–9, with lessons, vocabulary, practice, and assessments.">
+  <title>English Full Curriculum</title>
   <style>
-    :root{color-scheme:dark;--bg:#0b1020;--panel:#141c30;--line:#2b3853;--text:#f4f7ff;--muted:#aab6ce;--mint:#72f0c2;--blue:#8aa8ff}
-    *{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(ellipse at top left,#1c3151 0,transparent 42%),var(--bg);color:var(--text);min-height:100vh}
-    .wrap{max-width:1120px;margin:auto;padding:28px 20px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-    .brand{font-size:13px;color:var(--mint);letter-spacing:1px}.pill{border:1px solid var(--line);padding:9px 13px;border-radius:99px;color:var(--muted);font-size:12px}
-    .hero{padding:64px 0 36px;max-width:760px}.eyebrow{color:var(--mint);font-size:14px}.hero h1{font-size:clamp(34px,6vw,66px);line-height:1.16;margin:14px 0}.hero p{color:var(--muted);font-size:17px;line-height:1.9;max-width:680px}
-    .stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.stat{padding:12px 16px;background:#ffffff08;border:1px solid var(--line);border-radius:14px;font-size:13px;color:var(--muted)}.stat b{color:var(--text);font-size:18px;margin-left:6px}
+    :root{color-scheme:dark;--bg:#0b1020;--panel:#141c30;--line:#2b3853;--text:#f4f7ff;--muted:#aab6ce;--mint:#72f0c2;--blue:#8aa8ff;--wa:#25d366}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(ellipse at top left,#1c3151 0,transparent 42%),var(--bg);color:var(--text);min-height:100vh}
+    a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:24px 20px 32px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .brand{font-size:13px;color:var(--mint);letter-spacing:1.6px;font-weight:800}.pill{border:1px solid var(--line);padding:9px 13px;border-radius:99px;color:var(--muted);font-size:12px}
+    .hero{padding:62px 0 36px;max-width:780px}.eyebrow{color:var(--mint);font-size:14px;font-weight:700;letter-spacing:.4px}.hero h1{font-size:clamp(36px,6vw,68px);line-height:1.08;letter-spacing:-1.8px;margin:14px 0}.hero p{color:var(--muted);font-size:17px;line-height:1.85;max-width:690px}
+    .stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.stat{padding:12px 16px;background:#ffffff08;border:1px solid var(--line);border-radius:14px;font-size:13px;color:var(--muted)}.stat b{color:var(--text);font-size:18px;margin-right:6px}
     .section-head{display:flex;justify-content:space-between;align-items:end;gap:14px;flex-wrap:wrap;margin:24px 0 18px}.section-head h2{margin:0;font-size:25px}.section-head p{margin:6px 0 0;color:var(--muted);font-size:13px}
-    .grades{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grade{background:linear-gradient(145deg,#18243a,#111827);border:1px solid var(--line);border-radius:20px;padding:20px;text-align:right;color:var(--text);cursor:pointer;transition:.2s;min-height:150px}.grade:hover,.grade:focus{transform:translateY(-3px);border-color:var(--mint);outline:none}.num{font-size:32px;font-weight:bold;color:var(--mint)}.grade h3{margin:10px 0 5px}.grade p{color:var(--muted);margin:0;font-size:13px}
+    .grades{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grade{background:linear-gradient(145deg,#18243a,#111827);border:1px solid var(--line);border-radius:20px;padding:20px;text-align:left;color:var(--text);cursor:pointer;transition:transform .2s,border-color .2s;min-height:150px}.grade:hover,.grade:focus-visible{transform:translateY(-3px);border-color:var(--mint);outline:none}.num{font-size:32px;font-weight:800;color:var(--mint)}.grade h3{margin:10px 0 5px}.grade p{color:var(--muted);margin:0;font-size:13px}
     .selection-status{margin:16px 0 0;padding:14px 16px;border:1px solid #426a62;background:#102a2a;border-radius:14px;color:#d8fff2;line-height:1.8;font-size:14px}.selection-status[hidden]{display:none}
-    .notice{margin-top:24px;border:1px solid #354766;background:#121b2d;border-radius:16px;padding:18px;color:var(--muted);line-height:1.8;font-size:13px}.notice strong{color:var(--text)}
-    footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);color:#7f8ba4;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    @media(max-width:700px){.grades{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding-top:42px}}@media(max-width:430px){.grades{grid-template-columns:1fr}.grade{min-height:120px}}
+    .notice{margin-top:24px;border:1px solid #354766;background:#121b2d;border-radius:18px;padding:20px;color:var(--muted);line-height:1.8;font-size:14px}.notice strong{color:var(--text)}.notice h3{color:var(--text);margin:0 0 8px}
+    .contact{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border:1px solid #24583e;background:linear-gradient(120deg,#10251f,#12202c);border-radius:18px;padding:15px 18px;text-decoration:none;transition:transform .2s,border-color .2s}.contact:hover,.contact:focus-visible{transform:translateY(-2px);border-color:var(--wa);outline:none}.contact-copy{display:flex;align-items:center;gap:12px}.wa-icon{width:46px;height:46px;flex:0 0 46px;border-radius:15px;background:var(--wa);display:grid;place-items:center;box-shadow:0 0 24px #25d36630}.contact-name{font-weight:800;color:#fff;font-size:15px}.contact-number{font-size:14px;color:#b9f6d0;direction:ltr;text-align:left;margin-top:3px}.contact-cta{font-size:12px;color:#b9f6d0;border:1px solid #347b54;border-radius:99px;padding:8px 12px;white-space:nowrap}
+    footer{margin-top:34px;padding-top:20px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr minmax(260px,390px);gap:20px;align-items:center;color:#7f8ba4;font-size:12px}.footer-brand{color:var(--muted);font-weight:700;letter-spacing:.8px;margin-bottom:6px}.footer-note{line-height:1.7}
+    @media(max-width:700px){.grades{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{padding-top:42px}footer{grid-template-columns:1fr}.contact-cta{white-space:normal}}@media(max-width:430px){.grades{grid-template-columns:1fr}.grade{min-height:120px}.contact{align-items:flex-start}.contact-cta{margin-left:58px}}
   </style>
 </head>
 <body>
   <main class="wrap">
-    <header class="top"><div class="brand">✦ ENGLISH FULL CURRICULUM</div><div class="pill">منصة تعليمية تفاعلية • الصفوف 1–9</div></header>
+    <header class="top">
+      <div class="brand">✦ ENGLISH FULL CURRICULUM</div>
+      <div class="pill">INTERACTIVE LEARNING · GRADES 1–9</div>
+    </header>
     <section class="hero">
-      <div class="eyebrow">تعلّم الإنجليزية خطوة بخطوة</div>
-      <h1>منهاجك كامل،<br>بطريقة أذكى.</h1>
-      <p>مساحة تعليمية تجمع الدروس والشرح والمفردات والتمارين والاختبارات في تجربة واحدة واضحة. اختر صفك للبدء، وسيتم تنظيم المحتوى بحسب الكتاب والدروس.</p>
-      <div class="stats"><div class="stat"><b>9</b> صفوف دراسية</div><div class="stat"><b>2</b> كتابان لكل صف</div><div class="stat"><b>20</b> سؤالاً في اختبار الدرس</div></div>
+      <div class="eyebrow">YOUR ENGLISH LEARNING JOURNEY STARTS HERE</div>
+      <h1>Your curriculum.<br>A smarter way to learn.</h1>
+      <p>Explore a clear, student-friendly learning space built around lessons, explanations, vocabulary, practice activities, and assessments. Choose your grade to get started.</p>
+      <div class="stats"><div class="stat"><b>9</b> Grades</div><div class="stat"><b>2</b> Books per grade</div><div class="stat"><b>20</b> Questions per lesson test</div></div>
     </section>
     <section aria-labelledby="grades-title">
-      <div class="section-head"><div><h2 id="grades-title">اختر صفك الدراسي</h2><p>ابدأ من صفك للوصول إلى قائمة الدروس.</p></div><div class="pill">المرحلة الأساسية</div></div>
+      <div class="section-head"><div><h2 id="grades-title">Choose Your Grade</h2><p>Select a grade to explore its learning materials.</p></div><div class="pill">BASIC EDUCATION</div></div>
       <div class="grades" id="grades"></div>
       <p class="selection-status" id="selection-status" role="status" aria-live="polite" hidden></p>
     </section>
-    <aside class="notice"><strong>قيد الإعداد:</strong> هذه هي الواجهة الأساسية للمنصة. ستُضاف صفحات الدروس الفعلية بعد تجهيز محتوى الكتب والتحقق من صور الصفحات، مع شرح مفصل ومفردات مترجمة وتمارين تكشف إجاباتها عند الطلب واختبار شامل لكل درس.</aside>
-    <footer><span>English Full Curriculum</span><span>تعلم • تدرب • اختبر نفسك</span></footer>
+    <aside class="notice">
+      <h3>Content Preparation in Progress</h3>
+      The core interface is ready. Lesson content will be added after the textbook pages have been checked for clarity, completeness, and correct order. Planned learning features include detailed explanations, vocabulary with Arabic translations, practice activities with answers revealed on demand, and a comprehensive test for every lesson.
+      <div style="margin-top:18px">
+        <a class="contact" href="https://wa.me/963930215022" target="_blank" rel="noopener noreferrer" aria-label="Contact المهندس سومر شاهين on WhatsApp at 0930215022">
+          <span class="contact-copy">
+            <span class="wa-icon" aria-hidden="true"><svg width="27" height="27" viewBox="0 0 24 24" fill="none"><path d="M20.1 11.8a8.1 8.1 0 0 1-12 7.1L4 20l1.1-4a8.1 8.1 0 1 1 15-4.2Z" stroke="#073b20" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8.4c.2-.5.5-.5.8-.5h.4c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .7.6 1 1.4 1.7 2.4 2.2.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.7-.1l1.5.7c.3.1.4.3.4.5 0 .4-.2 1.1-.7 1.5-.5.4-1.1.7-2 .5-1-.2-2.3-.8-3.6-1.9-1.1-1-1.9-2.3-2.1-3.2-.2-.8.1-1.5.5-2.1Z" fill="#073b20"/></svg></span>
+            <span><span class="contact-name" lang="ar" dir="rtl">المهندس سومر شاهين</span><span class="contact-number">0930215022</span></span>
+          </span>
+          <span class="contact-cta">Chat on WhatsApp ↗</span>
+        </a>
+      </div>
+    </aside>
+    <footer>
+      <div><div class="footer-brand">ENGLISH FULL CURRICULUM</div><div>Learn · Practise · Test Yourself</div></div>
+      <a class="contact" href="https://wa.me/963930215022" target="_blank" rel="noopener noreferrer" aria-label="Contact المهندس سومر شاهين on WhatsApp at 0930215022">
+        <span class="contact-copy">
+          <span class="wa-icon" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 24 24" fill="none"><path d="M20.1 11.8a8.1 8.1 0 0 1-12 7.1L4 20l1.1-4a8.1 8.1 0 1 1 15-4.2Z" stroke="#073b20" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 8.4c.2-.5.5-.5.8-.5h.4c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.5.6c-.2.2-.2.4 0 .7.6 1 1.4 1.7 2.4 2.2.2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.7-.1l1.5.7c.3.1.4.3.4.5 0 .4-.2 1.1-.7 1.5-.5.4-1.1.7-2 .5-1-.2-2.3-.8-3.6-1.9-1.1-1-1.9-2.3-2.1-3.2-.2-.8.1-1.5.5-2.1Z" fill="#073b20"/></svg></span>
+          <span><span class="contact-name" lang="ar" dir="rtl">المهندس سومر شاهين</span><span class="contact-number">0930215022</span></span>
+        </span>
+        <span class="contact-cta">WhatsApp ↗</span>
+      </a>
+    </footer>
   </main>
   <script>
     const root=document.getElementById('grades');
@@ -44,8 +70,8 @@
       const card=document.createElement('button');
       card.className='grade';card.type='button';
       const book=i<=6?'Pupil’s Book + Workbook':'Student’s Book + Workbook';
-      card.innerHTML='<div class="num">'+String(i).padStart(2,'0')+'</div><h3>الصف '+i+'</h3><p>'+book+'</p>';
-      card.addEventListener('click',()=>{selectionStatus.hidden=false;selectionStatus.textContent='اخترت الصف '+i+'. قائمة الدروس غير متاحة بعد، وسيتم إضافتها بعد مراجعة محتوى الكتابين لهذا الصف.';});
+      card.innerHTML='<div class="num">'+String(i).padStart(2,'0')+'</div><h3>Grade '+i+'</h3><p>'+book+'</p>';
+      card.addEventListener('click',()=>{selectionStatus.hidden=false;selectionStatus.textContent='Grade '+i+' selected. The lesson list is not available yet and will be added after both textbooks have been reviewed.';});
       root.appendChild(card);
     }
   </script>
