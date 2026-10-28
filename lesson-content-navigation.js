@@ -36,7 +36,7 @@
 
   // Book/workbook/vocabulary: one existing content panel per step; no content is rewritten.
   const panels = Array.from(main.querySelectorAll(':scope > .panel'));
-  if (panels.length >= 2) {
+  if (panels.length >= 2 && !main.querySelector('form#quiz')) {
     main.insertBefore(nav, panels[0]);
     let active = 0;
     const buttons = panels.map((panel,i) => {
