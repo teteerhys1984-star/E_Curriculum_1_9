@@ -26,4 +26,6 @@
 </main>
 <script>
 (function(){const p=new URLSearchParams(location.search);const n=Number(p.get('grade'));const grade=Number.isInteger(n)&&n>=1&&n<=9?n:null;const book=p.get('book')==='workbook'?'Workbook':(grade&&grade>=7?'Student’s Book':'Pupil’s Book');document.getElementById('grade-pill').textContent=grade?'Grade '+grade:'Grade preview';document.getElementById('book-pill').textContent=book;document.getElementById('page-title').textContent=grade?'Grade '+grade+' · Lesson template':'Your lesson, step by step.';document.getElementById('page-description').textContent='A reusable lesson structure for '+(grade?'Grade '+grade:'your selected grade')+', with clear explanations, Arabic-supported vocabulary, practice, and a comprehensive test.';document.getElementById('back-link').href=grade?'lessons.html?grade='+grade:'lessons.html';document.querySelectorAll('[data-toggle-answer]').forEach(function(button){button.addEventListener('click',function(){const panel=document.getElementById(button.getAttribute('aria-controls'));const willShow=panel.hidden;panel.hidden=!willShow;button.setAttribute('aria-expanded',String(willShow));button.textContent=willShow?'Hide Answer':'Show Answer';});});})();
-</script></body></html>
+</script>
+<script src="lesson-content-navigation.js" defer></script>
+</body></html>
