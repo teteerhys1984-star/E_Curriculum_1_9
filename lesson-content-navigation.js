@@ -14,6 +14,9 @@
     .content-nav-links button{background:var(--soft,#eaf5ff);color:var(--ink,#202642);box-shadow:none;border:1px solid transparent;padding:8px 9px;text-align:left;width:100%;font-size:.84rem;line-height:1.25;white-space:normal}
     .content-nav-links button[aria-current=step]{background:var(--accent,#00a896);color:white}
     .content-nav-controls{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;margin:24px 0 10px;padding:14px 16px;background:linear-gradient(120deg,#fff,#f3f7ff);border:1px solid #dfe5f1;border-radius:18px;box-shadow:0 8px 22px #25304a10}.content-nav-controls button{min-width:132px;padding:12px 20px;font-size:.95rem;border-radius:12px}.lesson-step-footer{clear:both;display:flex;justify-content:center;align-items:center;gap:14px;width:100%;margin:28px auto 14px;padding:8px 0}.lesson-step-footer .content-nav-controls{flex:0 1 520px;width:min(100%,520px);margin:0;justify-content:center}.lesson-step-footer .content-nav-controls button{flex:1;max-width:220px}.lesson-step-footer button:disabled{opacity:.45;cursor:not-allowed;transform:none}.lesson-step-footer button[data-prev]{background:#64748b}.lesson-step-footer button[data-next]{background:var(--accent,#00a896)}
+    /* Keep mixed Arabic/English sentences in natural Unicode bidirectional order. */
+    main.wrap :is(p,li,h1,h2,h3,h4,h5,h6,label,summary,blockquote,.question,.panel,.answer,.explanation){unicode-bidi:plaintext}
+    main.wrap :is(input,textarea,select){unicode-bidi:plaintext}
     .content-step-hidden{display:none!important}
     .content-nav-hint{font-size:.72rem;line-height:1.3;color:var(--muted,#626b83);margin:6px 0 0}
     .content-nav button:focus-visible{outline:3px solid #202642;outline-offset:3px}
