@@ -88,7 +88,11 @@
     }
   }
   if (!quiz && panels.length >= 2) {
-    main.insertBefore(nav, panels[0]);
+    // Generated heading-led steps stay inside their original container. Insert the
+    // navigator before that container (not before a nested child), avoiding a
+    // NotFoundError that previously stopped the whole script on one-panel pages.
+    const insertionTarget = panels[0].parentElement === main ? panels[0] : (directPanels[0] || panels[0]);
+    main.insertBefore(nav, insertionTarget);
     main.appendChild(footer);
     let active = 0;
     const buttons = panels.map((panel,i) => {
