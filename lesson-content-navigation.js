@@ -1,6 +1,6 @@
 /* Shared in-lesson navigator: turns long lesson pages into short, navigable steps. */
 (() => {
-  const main = document.querySelector('main.wrap');
+  const main = document.querySelector('main.wrap') || document.querySelector('main');
   if (!main || document.body.dataset.navPage === 'menu') return;
   const style = document.createElement('style');
   style.textContent = `
