@@ -56,7 +56,7 @@
   // General lesson content: use direct panels where possible. If a page has one large
   // panel, split it into semantic heading-led steps without rewriting its content.
   const quiz = main.querySelector('form#quiz');
-  const directPanels = Array.from(main.children).filter(el => el.classList?.contains('panel'));
+  const directPanels = Array.from(main.children).filter(el => el.classList?.contains('panel') || el.classList?.contains('section'));
   let panels = directPanels;
   if (!quiz && panels.length < 2) {
     const container = panels[0] || main.querySelector('section.panel, .lesson-content, article');
