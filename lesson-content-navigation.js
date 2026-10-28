@@ -17,6 +17,7 @@
     .content-step-hidden{display:none!important}
     .content-nav-hint{font-size:.72rem;line-height:1.3;color:var(--muted,#626b83);margin:6px 0 0}
     .content-nav button:focus-visible{outline:3px solid #202642;outline-offset:3px}
+    @media(max-width:760px){body{padding-right:0}.content-nav{left:8px;right:8px;top:auto;bottom:8px;width:auto;max-height:34vh}.content-nav-links{flex-direction:row;overflow-x:auto}.content-nav-links button{width:auto;white-space:nowrap}.content-nav-controls{flex-direction:row}.content-nav-hint{display:none}}
   `;
   document.head.appendChild(style);
 
