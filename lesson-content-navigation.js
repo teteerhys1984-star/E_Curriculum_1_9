@@ -15,9 +15,9 @@
     .content-nav-links button[aria-current=step]{background:var(--accent,#00a896);color:white}
     .content-nav-controls{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;margin:24px 0 10px;padding:14px 16px;background:linear-gradient(120deg,#fff,#f3f7ff);border:1px solid #dfe5f1;border-radius:18px;box-shadow:0 8px 22px #25304a10}.content-nav-controls button{min-width:132px;padding:12px 20px;font-size:.95rem;border-radius:12px}.lesson-step-footer{clear:both;display:flex;justify-content:center;align-items:center;gap:14px;width:100%;margin:28px auto 14px;padding:8px 0}.lesson-step-footer .content-nav-controls{flex:0 1 520px;width:min(100%,520px);margin:0;justify-content:center}.lesson-step-footer .content-nav-controls button{flex:1;max-width:220px}.lesson-step-footer button:disabled{opacity:.45;cursor:not-allowed;transform:none}.lesson-step-footer button[data-prev]{background:#64748b}.lesson-step-footer button[data-next]{background:var(--accent,#00a896)}
     /* Let each text block determine its base direction from its first strong character. */
-    main.wrap [dir=auto]{unicode-bidi:plaintext}
-    main.wrap :is(input,textarea){unicode-bidi:plaintext;text-align:start}
-    main.wrap :is(p,li,h1,h2,h3,h4,h5,h6,label,summary,blockquote,.question,.panel,.answer,.explanation){text-align:start}
+    main [dir=auto]{unicode-bidi:plaintext}
+    main :is(input,textarea){unicode-bidi:plaintext;text-align:start}
+    main :is(p,li,h1,h2,h3,h4,h5,h6,label,summary,blockquote,.question,.panel,.answer,.explanation){text-align:start}
     .content-step-hidden{display:none!important}
     .content-nav-hint{font-size:.72rem;line-height:1.3;color:var(--muted,#626b83);margin:6px 0 0}
     .content-nav button:focus-visible{outline:3px solid #202642;outline-offset:3px}
@@ -53,9 +53,41 @@
   footer.setAttribute('aria-label','Lesson page navigation');
   footer.appendChild(controls);
 
-  // Book/workbook/vocabulary: one existing content panel per step; no content is rewritten.
-  const panels = Array.from(main.querySelectorAll(':scope > .panel'));
-  if (panels.length >= 2 && !main.querySelector('form#quiz')) {
+  // General lesson content: use direct panels where possible. If a page has one large
+  // panel, split it into semantic heading-led steps without rewriting its content.
+  const quiz = main.querySelector('form#quiz');
+  const directPanels = Array.from(main.children).filter(el => el.classList?.contains('panel'));
+  let panels = directPanels;
+  if (!quiz && panels.length < 2) {
+    const container = panels[0] || main.querySelector('section.panel, .lesson-content, article');
+    if (container) {
+      const headings = Array.from(container.querySelectorAll(':scope > h2, :scope > h3'));
+      if (headings.length > 1) {
+        const groups = [];
+        let currentGroup = null;
+        Array.from(container.children).forEach((node) => {
+          if (/^H[23]$/.test(node.tagName)) {
+            currentGroup = document.createElement('section');
+            currentGroup.className = 'panel lesson-generated-step';
+            currentGroup.appendChild(node);
+            groups.push(currentGroup);
+          } else if (currentGroup) {
+            currentGroup.appendChild(node);
+          } else {
+            if (!groups.length) {
+              currentGroup = document.createElement('section');
+              currentGroup.className = 'panel lesson-generated-step';
+              groups.push(currentGroup);
+            }
+            currentGroup.appendChild(node);
+          }
+        });
+        container.replaceChildren(...groups);
+        panels = groups;
+      }
+    }
+  }
+  if (!quiz && panels.length >= 2) {
     main.insertBefore(nav, panels[0]);
     main.appendChild(footer);
     let active = 0;
@@ -79,16 +111,13 @@
     show(0);
   }
 
-  // Tests: paginate the questions while keeping all answers and scoring logic intact.
-  const quiz = main.querySelector('form#quiz');
+  // Tests: paginate questions while preserving answer controls and scoring logic.
   if (quiz) {
     const questions = Array.from(quiz.querySelectorAll('.question'));
     if (questions.length > 1) {
-      const testNav = nav;
-      // The test has score/teacher panels too; place the navigator immediately before the quiz.
-      if (!testNav.isConnected) main.insertBefore(testNav,quiz);
+      if (!nav.isConnected) main.insertBefore(nav,quiz);
       quiz.insertAdjacentElement('afterend',footer);
-      testNav.querySelector('.content-nav-title').textContent='Your test · one question at a time';
+      nav.querySelector('.content-nav-title').textContent='Your test · one question at a time';
       links.replaceChildren();
       let current=0;
       const qButtons=questions.map((q,i)=>{const b=document.createElement('button');b.type='button';b.textContent=String(i+1);b.setAttribute('aria-label','Go to question '+(i+1));b.addEventListener('click',()=>showQuestion(i));links.appendChild(b);return b});
