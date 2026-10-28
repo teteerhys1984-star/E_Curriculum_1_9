@@ -14,15 +14,25 @@
     .content-nav-links button{background:var(--soft,#eaf5ff);color:var(--ink,#202642);box-shadow:none;border:1px solid transparent;padding:8px 9px;text-align:left;width:100%;font-size:.84rem;line-height:1.25;white-space:normal}
     .content-nav-links button[aria-current=step]{background:var(--accent,#00a896);color:white}
     .content-nav-controls{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:12px;margin:24px 0 10px;padding:14px 16px;background:linear-gradient(120deg,#fff,#f3f7ff);border:1px solid #dfe5f1;border-radius:18px;box-shadow:0 8px 22px #25304a10}.content-nav-controls button{min-width:132px;padding:12px 20px;font-size:.95rem;border-radius:12px}.lesson-step-footer{clear:both;display:flex;justify-content:center;align-items:center;gap:14px;width:100%;margin:28px auto 14px;padding:8px 0}.lesson-step-footer .content-nav-controls{flex:0 1 520px;width:min(100%,520px);margin:0;justify-content:center}.lesson-step-footer .content-nav-controls button{flex:1;max-width:220px}.lesson-step-footer button:disabled{opacity:.45;cursor:not-allowed;transform:none}.lesson-step-footer button[data-prev]{background:#64748b}.lesson-step-footer button[data-next]{background:var(--accent,#00a896)}
-    /* Keep mixed Arabic/English sentences in natural Unicode bidirectional order. */
-    main.wrap :is(p,li,h1,h2,h3,h4,h5,h6,label,summary,blockquote,.question,.panel,.answer,.explanation){unicode-bidi:plaintext}
-    main.wrap :is(input,textarea,select){unicode-bidi:plaintext}
+    /* Let each text block determine its base direction from its first strong character. */
+    main.wrap [dir=auto]{unicode-bidi:plaintext}
+    main.wrap :is(input,textarea){unicode-bidi:plaintext;text-align:start}
+    main.wrap :is(p,li,h1,h2,h3,h4,h5,h6,label,summary,blockquote,.question,.panel,.answer,.explanation){text-align:start}
     .content-step-hidden{display:none!important}
     .content-nav-hint{font-size:.72rem;line-height:1.3;color:var(--muted,#626b83);margin:6px 0 0}
     .content-nav button:focus-visible{outline:3px solid #202642;outline-offset:3px}
     @media(max-width:760px){body{padding-right:0}.content-nav{left:8px;right:8px;top:auto;bottom:8px;width:auto;max-height:34vh}.content-nav-links{flex-direction:row;overflow-x:auto}.content-nav-links button{width:auto;white-space:nowrap}.content-nav-controls{flex-direction:row}.lesson-step-footer{margin-bottom:40vh}.content-nav-hint{display:none}}
   `;
   document.head.appendChild(style);
+
+  // Explicit dir=auto is more reliable than CSS alone for Arabic/English mixed text.
+  const autoDirectionTargets = 'p,li,h1,h2,h3,h4,h5,h6,label,summary,blockquote,td,th,dd,dt,legend,figcaption,.question,.panel,.answer,.explanation';
+  main.querySelectorAll(autoDirectionTargets).forEach((el) => {
+    if (!el.hasAttribute('dir')) el.setAttribute('dir', 'auto');
+  });
+  main.querySelectorAll('input:not([dir]),textarea:not([dir])').forEach((el) => {
+    el.setAttribute('dir', 'auto');
+  });
 
   const titleOf = (node, i) => {
     const h = node.querySelector('h2,h3');
