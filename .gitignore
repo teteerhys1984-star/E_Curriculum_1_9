@@ -1,0 +1,4 @@
+# Source scans and close-up evidence crops for source-intake audits.
+# Kept out of Git: this repo publishes to GitHub Pages from its root, and these are
+# raw scans of a copyrighted textbook. Text findings are recorded in the audit reports.
+source-intake/

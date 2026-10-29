@@ -19,7 +19,9 @@ Reading convention used throughout:
 
 **Status: COMPLETE — with a small number of documented uncertainties and all audio-dependent answers marked pending.**
 
-All ten images were opened individually at native resolution (≈750–770 × 1020–1050 px each) and every dense area (reading passages, key-word boxes, word banks, answer options, grammar tables, writing frames) was additionally re-examined as an enlarged crop. No image is missing, duplicated, misordered, or unreadable at the level needed for transcription. Three narrow items remain unresolved at the character level (superscript "st" in "21st", the alleged bold "they" on p8, and the dangling tails of two answer options on p10); these are listed in §11. No listening audio was supplied, and no answers to listening tasks have been guessed.
+All ten images were opened individually at native resolution (≈750–770 × 1020–1050 px each) and every dense area (reading passages, key-word boxes, word banks, answer options, grammar tables, writing frames) was additionally re-examined as an enlarged crop. No image is missing, duplicated, misordered, or unreadable at the level needed for transcription. No listening audio was supplied, and no answers to listening tasks have been guessed.
+
+**Update 2026-10-29:** the three character-level items that remained open in the first pass — the ordinal in `The 21  century` on p7, the alleged bold `they` on p8, and the two answer options on p10 that appeared truncated — were addressed with three supplemental close-ups and are **all closed**; see **§14**. No page mapping, exercise count or transcription was changed as a result, and no new source page was introduced.
 
 ---
 
@@ -40,6 +42,20 @@ All ten images were opened individually at native resolution (≈750–770 × 10
 
 **Fixed 6 + 4 split confirmed:** Images 1–6 = Student's Book (six consecutive printed pages **6, 7, 8, 9, 10, 11**). Images 7–10 = Workbook (four consecutive printed pages **2, 3, 4, 5**).
 
+### 2.1 Supplemental close-ups (added 2026-10-29 — NOT source pages)
+
+Three additional close-up images were supplied after the first pass. They are **detail crops of pages already in the mapping above**, not new textbook pages, and they do not change any page number, book assignment or exercise count. They were copied out of the upload folder into the working tree at `source-intake/grade8-unit1-lesson1/` so the evidence is not lost when the upload folder is next overwritten.
+
+| Supplement | Working-tree file (not committed) | Crop of | Pixel size | Purpose |
+|---|---|---|---|---|
+| supplement-1 | `source-intake/grade8-unit1-lesson1/supplement-1-p7-gap-after-21.png` | Student's Book **p7**, passage lines 1–7 (≈ "In the past…" to "…A future school combines high-quality") | 1687 × 499 | To settle U-01 (`21  century`) and re-examine U-03 (bold "they") |
+| supplement-2 | `source-intake/grade8-unit1-lesson1/supplement-2-p8-question-2.png` | Student's Book **p8**, questions A-1 to A-2 header zone | 919 × 79 | To capture the exact wording of A-2 |
+| supplement-3 | `source-intake/grade8-unit1-lesson1/supplement-3-p10-listening-b5.png` | Student's Book **p10**, Listening B item 5 with all three options | 1198 × 217 | To settle U-05 (options b and c) |
+
+**[EDITORIAL] Note on file handling — please read:** the upload folder reuses the names `image-1.png`, `image-2.png`, `image-3.png`, so the three supplements replaced the earlier full-page scans of SB p7, p8 and p10 *in that folder*. The full-page readings of those pages recorded in §3–§8 were made before the replacement and stand; the original full-page files are no longer present in the upload directory.
+
+The three close-ups were therefore saved into the working tree, but they are **deliberately excluded from Git** (via a `source-intake/` entry in `.gitignore`) rather than committed: this repository publishes to GitHub Pages from its root, and adding raw scans of a copyrighted textbook to a public site would be a publishing decision for the project owner, not a side effect of an audit. Nothing in this report depends on the images being committed — every finding below is recorded as measured values and quoted text. Say the word if you want them committed instead, or moved to external storage.
+
 **Order check:** within the Student's Book set the printed page numbers run monotonically 6 → 11 in image order 1 → 6; within the Workbook set they run monotonically 2 → 5 in image order 7 → 10. No reshuffling is required, and none was performed.
 
 **[EDITORIAL] Important observation about the two books' pairing:** the two sets are visually and editorially different products. The Student's Book pages are green/orange with a "Module 1 · Unit 1 · Future Plans" layout and use the reading text *"Schools in the Past, Present and Future"*. The Workbook pages are blue with "Module 1 · Schooldays · Unit 1 · Future Plans" and use an entirely different reading text, *"School Life"*, plus a different listening set (jokes). Their page numbering also restarts independently (SB 6–11; WB 2–5). This is normal for a pupil's book + activity book pair, but it means **the two books do not share reading passages, listening scripts or exercise items** — the implementer must keep them as separate strands and must not merge their exercises by topic. Flagged for verification against the printed covers (see §11, U-08).
@@ -59,7 +75,7 @@ All ten images were opened individually at native resolution (≈750–770 × 10
 - Component: Reading.
 - Contents: Reading logo (chain of circles), section heading `Reading`, instruction, boxed reading passage titled `Schools in the Past, Present and Future`, three yellow bullet points, illustration of a flying car.
 - No questions printed on this page (the tasks are on page 8).
-- Quality: good; two character-level issues flagged (U-01, U-02).
+- Quality: good; two character-level issues flagged (U-01, U-02). **Superseded in part:** a high-resolution close-up of this page was later supplied (`supplement-1`) and U-01 is now resolved — see §14.1.
 
 ### Image 3 — Student's Book, printed page **8**
 - Component: Reading comprehension + Key Words.
@@ -75,7 +91,7 @@ All ten images were opened individually at native resolution (≈750–770 × 10
 - Component: Listening.
 - Contents: full-width cartoon illustration (female teacher at a green board, four seated students); instruction; `A- Decide if the statements are True or False.` (5 items); `B-Choose the right answer a, b or c.` (5 items).
 - References: audio, but **no track number or audio icon is printed** anywhere on the page.
-- Quality: good. Layout truncation noted on B-5 options b and c (U-05).
+- Quality: good. Layout truncation noted on B-5 options b and c (U-05) — **superseded:** a close-up (`supplement-3`) shows the options are not truncated at all; U-05 is resolved — see §14.3.
 
 ### Image 6 — Student's Book, printed page **11**
 - Component: Writing.
@@ -138,7 +154,7 @@ Instruction text is transcribed verbatim, including the book's own inconsistent 
   4. `What will classrooms focus on in the future?`
   5. `Mention one of the main features that are expected to be changed in the system of future schools.`
 - **Type:** reading comprehension (open questions).
-- **Dependency:** reading text on p7; item 2 depends on a **bold-word marking that is not visible in the scan** (U-03).
+- **Dependency:** reading text on p7; item 2 depends on a **bold-word marking that is not visible in the scan** (U-03). *Updated 2026-10-29: the close-up `supplement-1` shows the passage contains **no bold "they"**; the only occurrence is regular-weight, sentence-initial `They`. See §14.2 — this is a source inconsistency, not a reading failure.*
 - **Sufficient to answer?** Items 1, 3, 4, 5 = yes (paragraph 2 and the feature bullets). Item 2 = **partially** — the referent can be inferred but the bold token cannot be confirmed.
 - **Sub-items counted:** 5.
 
@@ -219,6 +235,7 @@ Instruction text is transcribed verbatim, including the book's own inconsistent 
 - **Dependency:** **official audio — NOT supplied.** No track number printed.
 - **Sufficient to answer?** **No. Pending audio.**
 - **[EDITORIAL]** Options b and c of item 5 are laid out with the tail of the sentence stranded on the next line ("…in their" / "…for their next"), leaving both visibly unfinished in this scan (U-05). The reading "…in their vacation" / "…for their next vacation" is a reconstruction, not confirmed print.
+  *Corrected 2026-10-29 after inspecting `supplement-3`: this was a misreading of the layout, not a truncation. The options are printed complete, and the word `vacation` in the stem is the shared completion for all three options. See §14.3. The exact printed option strings are: a- `decide where to go on` · b- `write about the places they've visited in their` · c- `plan for their next`.*
 - **Sub-items counted:** 5.
 
 ### SB-EX-10 — page 11 — Writing (gapped paragraph)
@@ -521,7 +538,7 @@ Paragraph breaks are reproduced as printed. Bold words are reproduced with `**bo
 - practical work more than books.
 
 **Transcription notes:**
-- `The 21  century` — the page shows "21" followed by what should be a superscript "st" (ordinal) that is **not legible** in the scan; transcribed as printed with the gap preserved. **(U-01)**
+- `The 21  century` — the page shows "21" followed by what should be a superscript "st" (ordinal) that is **not legible** in the scan; transcribed as printed with the gap preserved. **(U-01)** *Resolved 2026-10-29: `supplement-1` confirms that **nothing is printed** between "21" and "century" — the 41-px gap is empty paper, not an unreadable glyph. The double space in this transcription is therefore an accurate reproduction of a real gap in the printed page. See §14.1.*
 - `**personalized format.**This may mean` — the full stop sits inside the bold run and there is **no space** after it; reproduced exactly. **(U-02)**
 - The word `educators` in ¶3 carries a small raised mark above "u" in the scan, which is most probably a printing/scanning artefact rather than a diacritic. Any diacritic would be an error; recorded here only as an artefact. **(U-02)**
 - `in order **to convey** useful and **practical** knowledge` — "to convey" is bold as a phrase. Reproduced.
@@ -630,11 +647,11 @@ All IDs below refer to the three required categories: **[CONFIRMED]**, **[PROPOS
 
 | ID | Image · book · page · location | Issue | Extent | Category | Evidence needed to resolve |
 |---|---|---|---|---|---|
-| U-01 | img-2 · SB · p7 · ¶2 first sentence | `The 21  century schools` — the ordinal superscript after "21" is not discernible; there is a visible gap. | Partially readable | **[UNRESOLVED]** (character level only) | A higher-resolution scan of that line; alternatively the parallel printed instance on p8 B-1 (`Before the 21st century`) which renders "st" clearly and confirms the intended form. |
+| U-01 | img-2 · SB · p7 · ¶2 first sentence | `The 21  century schools` — the ordinal superscript after "21" is not discernible; there is a visible gap. | **RESOLVED 2026-10-29:** the gap is empty. No glyph of any kind is printed between `21` and `century`; a 41-px blank space separates them where an ordinal ending would sit, and the superscript band above the line contains no ink. | **[CONFIRMED]** — this is what the page prints (verified with `supplement-1`, see §14.1) | Nothing further for transcription. A printed-edition check would only establish whether the missing ordinal is a press error. |
 | U-02 | img-2 · SB · p7 · ¶3 | (a) `format.**This` — no space after the full stop, bold run continues into the next sentence. (b) A small raised mark above "u" in `educators` which is most likely a print/scan artefact. | Readable; formatting ambiguous | (a) **[CONFIRMED]** as printed; (b) **[UNRESOLVED]** nature of the mark | For (b), a fresh scan; for (a), no action — preserve as printed. |
-| U-03 | img-3 · SB · p8 · A-2 | `What does 'they' in bold in the text refer to?` — **no bold token is visible anywhere in the p7 passage** in this scan; the nearest candidate is "They are using the Internet, computers…" (¶2), whose referent would be "teachers and students". | The bold marking is entirely unreadable | **[UNRESOLVED]**; the referent is **[PROPOSED]** only | A colour/higher-DPI scan of p7, or the teacher's guide. Until then the item must not be presented with a definitive key. |
+| U-03 | img-3 · SB · p8 · A-2 | `What does 'they' in bold in the text refer to?` — **no bold token is visible anywhere in the p7 passage** in this scan; the nearest candidate is "They are using the Internet, computers…" (¶2), whose referent would be "teachers and students". | **RESOLVED 2026-10-29 (as a source inconsistency):** the passage contains **no bold "they"**. The single occurrence is sentence-initial, capitalised, and of ordinary text weight — measurably identical to surrounding regular text (see §14.2). | **[CONFIRMED]** that no bold "they" exists; the question's premise is inconsistent with the printed passage. The referent remains **[PROPOSED]** only. | A teacher's guide / answer key, to learn the book's intended answer. The passage text itself is no longer in question. |
 | U-04 | img-3 · SB · p8 · B-5 | Item stem ends `Future education will……………………` with the options carrying their own full stops (`a- … ways.` / `b- … activities.` / `c- … work.`). The stem has no full stop and the options do. | Readable; punctuation inconsistent | **[CONFIRMED]** as printed | None needed; flagged so implementation does not "fix" it silently. |
-| U-05 | img-5 · SB · p10 · Listening B-5 | Options b and c are stranded across lines: `b- write about the places they've visited in their` and `c- plan for their next` — both end mid-phrase; the word "vacation" appears only in the stem. | Partially readable; tail truncated by layout | **[UNRESOLVED]** for options b and c | A scan of the full page footer or the next printing; the natural completion ("…in their vacation" / "…for their next vacation") is **[PROPOSED]**, not printed confirmation. |
+| U-05 | img-5 · SB · p10 · Listening B-5 | Options b and c are stranded across lines: `b- write about the places they've visited in their` and `c- plan for their next` — both end mid-phrase; the word "vacation" appears only in the stem. | **RESOLVED 2026-10-29:** neither option is truncated. Both are printed complete and terminate well inside the text column; the shared word `vacation` sits in the stem and completes each option when substituted into the gap. | **[CONFIRMED]** — verified with `supplement-3`, see §14.3 | Nothing. The earlier "truncation" flag was a layout misreading and is withdrawn. |
 | U-06 | img-6 · SB · p11 · phrase box | The box prints `be done electronically - should be designed - put safety as their major concern` on one line and `in their laboratories - teachers and students` on the second. Whether `put safety as their major concern in their laboratories` is **one** phrase or **two** is a layout ambiguity. | Readable; grouping ambiguous | **[CONFIRMED]** text; **[UNRESOLVED]** grouping | A cleaner scan showing the hyphen separators' alignment. Note: the paragraph has **5 blanks**, which is consistent with 5 phrases (i.e. `put safety as their major concern` and `in their laboratories` as two separate items). |
 | U-07 | img-7/WB p2 `chairs,lockers`; img-9/WB p4 `It's cloudy.I think`; img-10/WB p5 `grade1 teacher` | Missing spaces / missing ordinal marker, printed as such. | Fully readable | **[CONFIRMED]** as printed; suspected typographical errors | None for transcription; flagged so they are not silently corrected. A printed edition check would confirm. |
 | U-08 | img-1…6 vs img-7…10 | The two books differ in layout family, page-number sequence (6–11 vs 2–5), reading text, listening content and even comma conventions. This is normal for pupil's book + workbook, but the pairing is asserted by the brief rather than evidenced on the pages (no cross-references between the two books appear on any supplied page). | — | **[CONFIRMED]** difference; **[UNRESOLVED]** whether they are the same series/edition | Cover pages or title-page imprints for both books. |
@@ -659,7 +676,7 @@ All IDs below refer to the three required categories: **[CONFIRMED]**, **[PROPOS
 - Student's Book (images 1–6): **6/6** accounted for — printed pages **6, 7, 8, 9, 10, 11**.
 - Workbook (images 7–10): **4/4** accounted for — printed pages **2, 3, 4, 5**.
 - Printed page numbers visible on all ten images. None is missing, duplicated or misordered.
-- No image required re-upload for the *content* level; three items need a higher-resolution scan for character-level confirmation (U-01, U-03, U-05).
+- No image required re-upload for the *content* level; three items needed a higher-resolution scan for character-level confirmation (U-01, U-03, U-05). **All three were closed on 2026-10-29 with three supplemental close-ups — see §14.**
 
 ### 12.2 Exercise counts (with counting method stated)
 
@@ -677,6 +694,8 @@ All IDs below refer to the three required categories: **[CONFIRMED]**, **[PROPOS
 
 **Answerability summary:** of the 20 exercises, **16 are fully answerable from the supplied printed material**, **2 are partially answerable** (SB-EX-03 because of U-03; SB-EX-10 because of U-06's grouping ambiguity), and **4 are unanswerable** without official audio (SB-EX-08, SB-EX-09, WB-EX-08, WB-EX-09).
 
+*Updated 2026-10-29:* SB-EX-03's dependency is now characterised differently but the count is unchanged — the blocking issue is no longer "the marking cannot be read" but "the passage contains no bold `they`, so the item is inconsistent with its text". The exercise is still only partially answerable until an answer key confirms the intended answer. SB-EX-09's options are now fully transcribed and unambiguous, but the exercise remains unanswerable without audio.
+
 ### 12.3 Content-coverage checklist
 - Every visible exercise entered in the register: **yes** (20/20).
 - Every readable passage transcribed in full: **yes** (2/2 — SB p7, WB p2). No summaries were substituted.
@@ -687,7 +706,7 @@ All IDs below refer to the three required categories: **[CONFIRMED]**, **[PROPOS
 - Audio-dependent tasks identified and answers **not** guessed: **yes** (§9, 18 items pending).
 - Visual dependencies recorded: **yes** (§10, 7 groups).
 - Uncertainties and omissions explicitly listed: **yes** (§11, U-01 … U-17).
-- Nothing was added to make the report look complete: **yes** — three gaps are left visible (U-01, U-03, U-05) and one is left as a bracketed hypothesis (U-06).
+- Nothing was added to make the report look complete: **yes** — three gaps are left visible (U-01, U-03, U-05) and one is left as a bracketed hypothesis (U-06). *Updated 2026-10-29: U-01, U-03 and U-05 are now closed by the supplemental close-ups (§14), with the evidence for each recorded rather than the gaps being quietly filled.*
 
 ### 12.4 Verbatim transcription of the SB p6 "Unit plan" box and quotations (for completeness)
 > `Unit plan`
@@ -722,8 +741,8 @@ All IDs below refer to the three required categories: **[CONFIRMED]**, **[PROPOS
 
 **Blockers, in priority order:**
 1. **No official listening audio (Blocker).** Four tasks, 18 items (SB p10 A/B; WB p5 A/B), are unanswerable. No track numbers are printed anywhere. Either the audio must be obtained, or the four tasks must be re-scoped as teacher-read scripts with a supplied key — and in neither case may invented answers be presented as the book's key. This alone prevents a "complete lesson" from being certified for the listening strand.
-2. **No answer key / teacher's guide (Blocker for verified answers).** Every "correct answer" the future implementation shows must be either derived by the implementer and labelled as derived, or sourced from the guide. The two books' own keys were not supplied. Related open questions that only a key can settle: the unused `concept` in the p9 word bank (U-09) and the bold "they" referent on p8 (U-03).
-3. **Three character-level gaps need a better scan (Blocker for exact print reproduction, not for teaching).** U-01 (`21  century`), U-03 (bold "they"), U-05 (truncated options b/c of SB Listening B-5). A single higher-resolution re-scan of SB p7 and SB p10 would close all three.
+2. **No answer key / teacher's guide (Blocker for verified answers).** Every "correct answer" the future implementation shows must be either derived by the implementer and labelled as derived, or sourced from the guide. The two books' own keys were not supplied. Related open questions that only a key can settle: the unused `concept` in the p9 word bank (U-09) and the intended answer to the inconsistent p8 A-2 item (U-03).
+3. ~~**Three character-level gaps need a better scan (Blocker for exact print reproduction, not for teaching).**~~ **CLOSED 2026-10-29.** U-01 (`21  century`), U-03 (bold "they") and U-05 (options b/c of SB Listening B-5) were all resolved with three supplemental close-ups; none of them remains a blocker. See §14. The verdict below still stands because blockers 1 and 2 are untouched.
 
 **Non-blocking issues that must be handled deliberately, not silently:**
 - U-10: the SB p6 Unit-plan box advertises a *writing: matching + conjunctions* task that does not exist on pages 6–11. The implementer must decide whether to present the unit plan verbatim (recommended, with a flag) or to omit that line; inventing a conjunctions task would be fabrication.
@@ -733,3 +752,138 @@ All IDs below refer to the three required categories: **[CONFIRMED]**, **[PROPOS
 - U-02, U-04, U-07, U-11, U-12, U-15: typography and spelling as printed (missing spaces, mixed US/UK spellings, `Lattakia`, `grade1`, `everyday`). These must be preserved in the transcription layer and, if changed for the learner-facing layer, marked as editorial normalisations.
 
 **What I have deliberately NOT done (per the task boundaries):** no code, no HTML/CSS, no page design, no games, no lesson restructuring, no invented exercises, vocabulary, grammar rules, answers, or reading passages. Nothing in this document is presented as source content unless it is directly readable in one of the ten supplied images; every inference is tagged **[PROPOSED]**, **[EDITORIAL]** or **[UNRESOLVED]**.
+
+---
+
+## 14. FOLLOW-UP — 2026-10-29: RESOLUTION OF THREE UNCERTAINTIES
+
+This section records the outcome of a supplemental evidence pass. Nothing above has been deleted; the affected entries (U-01, U-03, U-05) were updated in place and cross-reference this section. **No new source pages were added, no exercise counts changed (still 20 exercises / 76 sub-items), and no answers were inferred.**
+
+### 14.0 Which supplemental images were inspected
+
+| Supplement | Detail of | Examined |
+|---|---|---|
+| `supplement-1-p7-gap-after-21.png` (1687 × 499, archived) | SB p7, passage lines 1–7 | Read at native size, plus pixel-level analysis of the region between `21` and `century`, plus a matched-letter typographic weight test against known bold and known regular words on the same page |
+| `supplement-2-p8-question-2.png` (919 × 79, archived) | SB p8, A-1/A-2 zone | Read at native size and at 4× enlargement |
+| `supplement-3-p10-listening-b5.png` (1198 × 217, archived) | SB p10, Listening B item 5 | Read at native size and at 5× enlargement, plus a scan for ink anywhere to the right of each option line |
+
+---
+
+### 14.1 Task 1 — SB p7, the phrase "The 21 … century schools" → **RESOLVED**
+
+**Exact printed phrase, fully transcribed:**
+
+> The 21  century schools have changed with the development of modern technology and the needs of students.
+
+**What is printed after the number 21:** nothing. The characters immediately following `21` are a blank space and then the word `century`.
+
+**Typography preserved:** the full stop of the preceding sentence ends the previous line (`…innovations of our time.`), and the next line begins `The 21`, then a **double-width blank**, then `century`. There is no superscript, no full stop after `21`, and no hyphen. The gap is measured at **41 px**, against a typical inter-word gap on the same page of **10–13 px**.
+
+**Is the ordinal ending legible?** No — and, decisively, no ordinal ending is present to be read. Measurements of the crop:
+
+- The strict interline band above the line (the territory a superscript would occupy): darkest pixel 167 on a 0–255 scale, i.e. no ink at all (3 pixels marginally below 170, none below 150 — that is paper texture).
+- The gap itself inside the text band: no connected glyph shapes; only faint anti-aliasing tails from the neighbouring `1` and `c`.
+- For reference, blank unprinted paper elsewhere on the same page has a minimum of 11, so genuine ink on this page is unmistakable — and none is present in the gap.
+
+**Conclusion (category: [CONFIRMED] as printed):** the page prints `The 21  century`, with an empty space where an ordinal ending belongs.
+
+**Interpretation (category: [PROPOSED], clearly separate from the source):** the width and position of the gap are consistent with a **dropped superscript ordinal** (`st`) in the book's production — roughly 29 px of missing glyph after an ordinary word space. That is an explanation of how the page came to look this way, **not** something the image proves. I have not inserted `st` into the transcription, and §8.1 still reproduces the double space exactly.
+
+**What is still open:** nothing for transcription. A printed-edition check would only tell us whether the omission is a press error or the intended typography.
+
+---
+
+### 14.2 Task 2 — SB p8, question 2 and the word "they" → **RESOLVED (as a source inconsistency)**
+
+**Exact wording of question 2 [CONFIRMED]:**
+
+> 2- What does 'they' in bold in the text refer to?
+
+Note the mechanics of the print: single quotation marks around lower-case `they`, and the phrase `in bold` inside the question itself.
+
+**Relevant occurrence in the passage:** exactly one, in ¶2, sentence 3:
+
+> Nowadays, teachers and students use modern technologies.They are using the Internet, computers, laptops, mobiles and a number of other means which are continually being improved and updated.
+
+(Reproduced in plain text above: the word is **not** bold in the source, so it is deliberately not marked up as bold here.) As printed, it is **sentence-initial and capitalised (`They`), not lower-case**, and there is **no space after the full stop** before it (`technologies.They are`).
+
+**Is that word visibly bold?** Measured, not eyeballed. Three independent comparisons against words on the same page whose weight is not in doubt:
+
+| Test | Regular reference | The passage's `They` | Known bold reference |
+|---|---|---|---|
+| Cap-height `T` dimensions and ink | `The` (line 3): 24 × 30 px, **196** ink px | 23 × 30 px, **212** ink px | — |
+| Letter `h` ink | `The` (**245**) | **235** | — |
+| Letter `e` ink (identical 20 × 22 box) | `The` (**243**) | **244** | — |
+| Vertical stem width of capital `T` | 5 px | **5 px** | — |
+| Isolated `i` stem (letter width = stem width) | `with` **4 px**, 95 ink px | — (no isolated `i` in this occurrence) | `provided` **6 px**, 153 ink px |
+
+The `e` and `h` figures agree to within 4 %, and the two capital-`T` stems are the same 5 px. The calibration against an isolated stem makes the scale explicit: on this page a **regular** stem is 4 px and a **bold** stem is 6 px. The passage's `They` sits at the regular end — a 5 px `T` stem, matching the regular `The` elsewhere on the page, not the bold 6 px of `provided`/`innovations`. In the enlarged side-by-side strip, `provided` and `innovations` are conspicuously heavier with broadened stems and tighter counters, while `They` is indistinguishable from `technological` and `are` on the same lines.
+
+**Result:** `They` in the passage is **ordinary text weight — not bold, not obscured, not faded**. Nothing was lost in scanning: the surrounding bold words on the very same lines render unmistakably bold in this crop, so the crop is capable of showing bold when bold is present.
+
+**The inconsistency, stated without inventing a correction:**
+1. The question quotes lower-case `'they'`; the passage's only instance is capital `They` at the start of a sentence.
+2. The question says the word is "in bold"; the passage prints it in ordinary weight, on a crop perfectly capable of showing bold (the same lines contain unmistakable bold).
+3. No other `they`/`They` occurs in the passage as transcribed in §8.1 (¶3 and the ¶4 bullet list contain none), so there is no second candidate elsewhere on the page that the question could be pointing to.
+
+So the question and the text do not match, and I record that as a defect in the source rather than silently fixing either side — neither by bolding `They` in the transcription nor by rewriting the question.
+
+**Referent:** remains **[PROPOSED] only**, and in any case is an exercise answer, which this stage does not supply. If the intended target is the single printed occurrence (`They are using the Internet…`), the antecedent on the page's own terms would be the compound subject of the preceding sentence; a teacher's guide or answer key is required to confirm what the book intends, and until then the item must not be published with a definitive key.
+
+**Status:** the *uncertainty* ("was there a bold 'they' that the first scan failed to capture?") is **closed — no**. The *source defect* is **open for the book's publisher/answer key**, not for us.
+
+---
+
+### 14.3 Task 3 — SB p10, Listening B item 5 → **RESOLVED; the options are not truncated**
+
+**Item stem [CONFIRMED, verbatim]:**
+
+> 5- The teacher wanted her students to …………… vacation.
+
+**All three options [CONFIRMED, verbatim, with the printed punctuation and lower-case option letters]:**
+
+> a- decide where to go on
+> b- write about the places they've visited in their
+> c- plan for their next
+
+**Nothing is cropped.** Evidence from the close-up:
+
+- The right-most ink anywhere in this crop is at x = 1077, and that is the **stem's own full stop** after `vacation`.
+- Option b is the longest option line and ends at **x = 1048** — some 29 px short of the column's widest line.
+- Option c ends at **x = 561**, far from the edge.
+- The whole region to the right of each option is **uniform background** (RGB 125, 205, 200) with **zero** text pixels; a scan of x = 1080–1197 finds no ink, and a scan of x = 570–1197 within the option-c band finds none either.
+
+**Why the options read as "unfinished":** they are not sentences in their own right. The stem supplies the shared final word `vacation`, and each option fills the gap before it:
+
+- `…wanted her students to` **decide where to go on** `vacation.`
+- `…wanted her students to` **write about the places they've visited in their** `vacation.`
+- `…wanted her students to` **plan for their next** `vacation.`
+
+This is a normal gap-fill layout, not a truncated print.
+
+**Withdrawal of the earlier flag:** U-05 is closed, and the first-pass "truncation" reading is withdrawn as a layout misreading. Note that the earlier *speculative* completion happened to match this layout — but the point now is that **no completion has to be supplied at all**; every printed character is accounted for.
+
+**Instruction line:** the close-up's top edge clips the instruction, leaving only a sliver of one glyph (x 686–692). The instruction `B-Choose the right answer a, b or c.` is therefore **not** re-read from this crop; it stands on the first-pass full-page reading of SB p10 (§5, SB-EX-09), which is unchanged.
+
+**Answer to the item:** still **PENDING OFFICIAL AUDIO**. Resolving the layout does not make the item answerable, and no option has been selected.
+
+---
+
+### 14.4 Status summary
+
+| ID | Issue | Status after this pass | Basis |
+|---|---|---|---|
+| U-01 | `The 21  century` — missing ordinal | **RESOLVED** (the gap is genuinely empty) | supplement-1; pixel analysis + gap-width measurement |
+| U-03 | "they in bold" in the passage | **RESOLVED** as a *source inconsistency*; the intended answer remains **OPEN** pending a key | supplement-1 (weight measurement) + supplement-2 (exact question wording) |
+| U-05 | Listening B-5 options b and c | **RESOLVED** — options are complete, not truncated | supplement-3; right-margin ink scan |
+
+Unchanged and still **open**: U-02(b), U-04, U-06, U-07, U-08, U-09, U-10, U-11, U-12, U-13, U-14, U-15, U-16 (audio), U-17 (answer key).
+
+### 14.5 Remaining blockers
+
+1. **Official listening audio — still missing (Blocker).** Four tasks / 18 items (SB p10 A, SB p10 B, WB p5 A, WB p5 B). No track numbers are printed on any page. §14.3 resolved the *wording* of SB-EX-09 but not a single answer. No listening answer has been guessed in this document.
+2. **No answer key / teacher's guide — still missing (Blocker for verified answers).** This now also carries the p8 A-2 defect: the book's intended answer cannot be established from the printed page.
+
+**Effect on the verdict:** §13 remains **READY WITH BLOCKERS**, but one of its three blockers is now closed. The content specification is materially stronger: the two passages, all 20 exercises and all 76 sub-items are transcribed with no unresolved character-level gaps, and the only open questions are now (a) the audio and (b) the publisher's answer key — neither of which is a transcription problem.
+
+**Boundaries honoured in this pass:** no application code, lesson page, design file, exercise or answer key was written or modified. The only files touched are this report, a three-line `.gitignore` entry that keeps the close-up scans out of the published site, and the close-up copies themselves under `source-intake/grade8-unit1-lesson1/` (working tree only, not committed — see §2.1).
