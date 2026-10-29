@@ -1,0 +1,41 @@
+name: Lesson checks
+
+on:
+  pull_request:
+    paths:
+      - '*.html'
+      - '*.js'
+      - 'grade3-unit1-lesson2.css'
+      - 'assets/**'
+      - 'tests/**'
+      - 'docs/**'
+      - 'package*.json'
+      - '.github/workflows/lesson-checks.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-and-browser-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install locked test dependencies
+        run: npm ci --ignore-scripts
+      - name: Check links, source integrity and JavaScript
+        run: npm test
+      - name: Exercise lesson in Chromium at four viewport sizes
+        run: npm run test:browser
+      - name: Preserve browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: grade3-lesson2-browser-evidence
+          path: test-results/grade3-unit1-lesson2/
+          if-no-files-found: warn

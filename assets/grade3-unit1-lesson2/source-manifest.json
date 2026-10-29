@@ -1,0 +1,56 @@
+[
+  {
+    "source": "image-1.png",
+    "file": "assets/grade3-unit1-lesson2/source/pupil-book-page-6.png",
+    "sha256": "1649b2042a66b4072a84062610db1afa057530152c9885c2935f1a93e1495880",
+    "size": [
+      750,
+      1027
+    ]
+  },
+  {
+    "source": "image-2.png",
+    "file": "assets/grade3-unit1-lesson2/source/pupil-book-page-7.png",
+    "sha256": "5ebd617b1d22ceaa2a32203a82bd93c01fc4c46ef523bbdea13926ad8a76b300",
+    "size": [
+      721,
+      1020
+    ]
+  },
+  {
+    "source": "image-3.png",
+    "file": "assets/grade3-unit1-lesson2/source/pupil-book-page-8.png",
+    "sha256": "6c29383e53b0ed0486cd5bb0c9dac71b948043b7a68ffeeffbc419351978fb61",
+    "size": [
+      721,
+      994
+    ]
+  },
+  {
+    "source": "image-4.png",
+    "file": "assets/grade3-unit1-lesson2/source/workbook-page-6.png",
+    "sha256": "95f7e8d7641d550c406f1c218867a27d20a08a8dd904b1c8e53925238cd5cefa",
+    "size": [
+      729,
+      1033
+    ]
+  },
+  {
+    "source": "image-5.png",
+    "file": "assets/grade3-unit1-lesson2/source/workbook-page-7.png",
+    "sha256": "a8247a91a723ffb7f58599d8d084147d4e78e87c8d308024cb57ebb9634a1bc7",
+    "size": [
+      714,
+      1012
+    ]
+  },
+  {
+    "source": "image-6.png",
+    "file": "assets/grade3-unit1-lesson2/source/workbook-page-8.png",
+    "sha256": "90cde53b229673fe05c4bb495a8acafbb921c64d5b68be5570965214f34a2e50",
+    "size": [
+      717,
+      1012
+    ]
+  }
+]
