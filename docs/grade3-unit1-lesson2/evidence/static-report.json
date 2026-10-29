@@ -1,0 +1,47 @@
+{
+  "suite": "static-site-and-source-integrity",
+  "date": "2026-10-29T22:12:29.404Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "All repository HTML local links and assets resolve",
+      "status": "PASS",
+      "detail": "35 HTML files; 183 references"
+    },
+    {
+      "name": "Five new pages follow LESSON_PAGE_STANDARD.md",
+      "status": "PASS",
+      "detail": "Four content pages load the shared step navigator; menu opts out"
+    },
+    {
+      "name": "Grade 3 listing includes new lesson without removing existing lesson links",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "name": "Source activity counts and blanks",
+      "status": "PASS",
+      "detail": "PB: 5 activities, 6 dialogues, 10 numbers; WB: 6 exercises, 8 listening options, 4 sequence blanks, 4 timetable blanks"
+    },
+    {
+      "name": "Original source images preserved byte-for-byte",
+      "status": "PASS",
+      "detail": "6 SHA-256 matches; 27 derivative illustration crops"
+    },
+    {
+      "name": "Test structure",
+      "status": "PASS",
+      "detail": "20 questions, 60 options, 15 direct readings and 5 explicitly marked inferences; teacher key initially hidden"
+    },
+    {
+      "name": "Exact quiz prompts, choices, references and answer indices",
+      "status": "PASS",
+      "detail": "All 20 questions match the stored source-review fixture"
+    },
+    {
+      "name": "Documentation links and local font assets",
+      "status": "PASS",
+      "detail": "18 Markdown links; every CSS font URL exists"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "number": 1,
+    "prompt": "في حوار الصفحة 6، ما المادتان اللتان لدينا اليوم؟",
+    "options": [
+      "Maths and Science",
+      "Art and Music",
+      "Music and English"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 6 · activity 1",
+    "kind": "explicit"
+  },
+  {
+    "number": 2,
+    "prompt": "ما الدرس المفضّل في حوار الصفحة 6 الذي يتحدث عن الرياضة؟",
+    "options": [
+      "Maths",
+      "Sports",
+      "Art"
+    ],
+    "correct": 1,
+    "reference": "Pupil’s Book · p. 6 · activity 1",
+    "kind": "explicit"
+  },
+  {
+    "number": 3,
+    "prompt": "في حوار العربية، ما المادة التي لدينا بدلًا منها؟",
+    "options": [
+      "English",
+      "Music",
+      "Social Studies"
+    ],
+    "correct": 2,
+    "reference": "Pupil’s Book · p. 6 · activity 1",
+    "kind": "explicit"
+  },
+  {
+    "number": 4,
+    "prompt": "أي جملة وردت في حوار معلمة الإنجليزية؟",
+    "options": [
+      "Open your books.",
+      "We need crayons.",
+      "I like Music."
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 6 · activity 1",
+    "kind": "explicit"
+  },
+  {
+    "number": 5,
+    "prompt": "ما المادة المذكورة مع Tomorrow في حوار الصفحة 6؟",
+    "options": [
+      "Science",
+      "Music",
+      "Arabic"
+    ],
+    "correct": 1,
+    "reference": "Pupil’s Book · p. 6 · activity 1",
+    "kind": "explicit"
+  },
+  {
+    "number": 6,
+    "prompt": "ماذا نحتاج إلى استخدامه في حصة Art يوم الثلاثاء، بحسب الحوار؟",
+    "options": [
+      "Books",
+      "Crayons",
+      "A football"
+    ],
+    "correct": 1,
+    "reference": "Pupil’s Book · p. 6 · activity 1",
+    "kind": "explicit"
+  },
+  {
+    "number": 7,
+    "prompt": "ما الدرس المفضّل في إطار Let’s learn؟",
+    "options": [
+      "Sports",
+      "Science",
+      "Maths"
+    ],
+    "correct": 2,
+    "reference": "Pupil’s Book · p. 7 · activity 2",
+    "kind": "explicit"
+  },
+  {
+    "number": 8,
+    "prompt": "أي مادتين تذكرهما إجابة التلميذ في حوار Wednesday؟",
+    "options": [
+      "Art and English",
+      "Science and Maths",
+      "Music and Arabic"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 7 · activity 3",
+    "kind": "explicit"
+  },
+  {
+    "number": 9,
+    "prompt": "ما المادة الأولى في عمود Monday في جدول كتاب التلميذ؟",
+    "options": [
+      "Science",
+      "Arabic",
+      "English"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 7 · timetable",
+    "kind": "explicit"
+  },
+  {
+    "number": 10,
+    "prompt": "أي مجموعة تطابق عمود Tuesday في جدول كتاب التلميذ؟",
+    "options": [
+      "Science, Maths, Arabic, English",
+      "Arabic, Art, Sports",
+      "Music, Art, English, Arabic"
+    ],
+    "correct": 1,
+    "reference": "Pupil’s Book · p. 7 · timetable",
+    "kind": "explicit"
+  },
+  {
+    "number": 11,
+    "prompt": "أي مادتين تظهران في عمود Wednesday بالإضافة إلى Art وEnglish؟",
+    "options": [
+      "Maths and Science",
+      "Sports and Music",
+      "Music and Arabic"
+    ],
+    "correct": 2,
+    "reference": "Pupil’s Book · p. 7 · timetable",
+    "kind": "explicit"
+  },
+  {
+    "number": 12,
+    "prompt": "أي مادة تظهر في عمود Thursday؟",
+    "options": [
+      "Social Studies",
+      "Sports",
+      "Music"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 7 · timetable",
+    "kind": "explicit"
+  },
+  {
+    "number": 13,
+    "prompt": "في تمرين مطابقة الأعداد، ما العدد الذي يطابق twenty-eight؟",
+    "options": [
+      "22",
+      "28",
+      "30"
+    ],
+    "correct": 1,
+    "reference": "Workbook · p. 7 · exercise 3",
+    "kind": "explicit"
+  },
+  {
+    "number": 14,
+    "prompt": "ما الكلمة التي يطابقها العدد 30؟",
+    "options": [
+      "twenty-three",
+      "twenty-nine",
+      "thirty"
+    ],
+    "correct": 2,
+    "reference": "Pupil’s Book · p. 8 · activity 4; Workbook · p. 7",
+    "kind": "explicit"
+  },
+  {
+    "number": 15,
+    "prompt": "أي كلمتين تظهران مع الصوت ou في نشاط الصفحة 8؟",
+    "options": [
+      "house and mouse",
+      "books and crayons",
+      "Maths and Science"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 8 · activity 5",
+    "kind": "explicit"
+  },
+  {
+    "number": 16,
+    "prompt": "في تمرين Read and match، أي إجابة تناسب سؤال الدرس المفضّل؟",
+    "options": [
+      "a — On Tuesday, I’ve got Maths.",
+      "b — Today, we’ve got Art and Music.",
+      "c — My favourite lesson is English."
+    ],
+    "correct": 2,
+    "reference": "Workbook · p. 6 · exercise 2",
+    "kind": "inferred"
+  },
+  {
+    "number": 17,
+    "prompt": "في التمرين نفسه، أي إجابة تناسب What lessons have we got today?",
+    "options": [
+      "a — On Tuesday, I’ve got Maths.",
+      "b — Today, we’ve got Art and Music.",
+      "c — My favourite lesson is English."
+    ],
+    "correct": 1,
+    "reference": "Workbook · p. 6 · exercise 2",
+    "kind": "inferred"
+  },
+  {
+    "number": 18,
+    "prompt": "في سلسلة التفاح، ما العدد الذي يأتي بعد 24 مباشرة؟",
+    "options": [
+      "23",
+      "25",
+      "29"
+    ],
+    "correct": 1,
+    "reference": "Workbook · p. 7 · exercise 4",
+    "kind": "inferred"
+  },
+  {
+    "number": 19,
+    "prompt": "في جدول Look and complete، ما اسم مادة رمز EN يوم Sunday؟",
+    "options": [
+      "English",
+      "Arabic",
+      "Science"
+    ],
+    "correct": 0,
+    "reference": "Workbook · p. 8 · exercise 5",
+    "kind": "inferred"
+  },
+  {
+    "number": 20,
+    "prompt": "ما المادة التي يمثلها رمز اللاعب في الحصة الثانية يوم Tuesday؟",
+    "options": [
+      "Art",
+      "Music",
+      "Sports"
+    ],
+    "correct": 2,
+    "reference": "Workbook · p. 8 · exercise 5",
+    "kind": "inferred"
+  }
+]
