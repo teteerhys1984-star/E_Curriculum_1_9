@@ -1,7 +1,7 @@
 {
   "suite": "grade3-unit1-lesson2-browser",
   "status": "PASS",
-  "date": "2026-10-29T22:14:12.030Z",
+  "date": "2026-10-30T00:11:26.969Z",
   "browser": "Chromium 153.0.8010.0",
   "originPath": "/E_Curriculum_1_9/",
   "viewports": [
@@ -27,7 +27,7 @@
       "detail": "Every content step reached; previous disabled at first; next wraps; all images decode"
     },
     {
-      "name": "Arabic RTL and source image health on desktop",
+      "name": "English LTR, marked vocabulary meanings, and source image health on desktop",
       "status": "PASS",
       "detail": "1366×900; no page-level horizontal overflow; source disclosures opened"
     },
@@ -52,14 +52,14 @@
       "detail": "Empty/wrong passwords rejected; existing project password accepted; 20 evidence entries; lock and reset close key"
     },
     {
-      "name": "Keyboard and mixed-direction text",
+      "name": "Keyboard and English LTR feedback",
       "status": "PASS",
-      "detail": "Space selects radio; English options LTR; Arabic feedback RTL"
+      "detail": "Space selects radio; English options and feedback are LTR"
     },
     {
       "name": "Responsive browser rendering",
       "status": "PASS",
-      "detail": "All five pages at 320×740, 390×844, 768×1024 and 1366×900; every book/vocabulary step checked; no page-level horizontal overflow"
+      "detail": "All five pages at 320×740, 390×844, 768×1024 and 1366×900; every book/vocabulary step checked; mobile navigation stays in normal flow; no page-level horizontal overflow"
     },
     {
       "name": "Return navigation under GitHub Pages project path",

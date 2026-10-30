@@ -41,7 +41,7 @@
     return input ? input.parentElement.textContent.trim() : '';
   }
   function evidenceLabel(question) {
-    return question.dataset.kind === 'inferred' ? 'مستنتج من المصدر' : 'صريح في المصدر / قراءة مباشرة';
+    return question.dataset.kind === 'inferred' ? 'Inferred from the source' : 'Explicit in the source / direct reading';
   }
   function invalidateScore() {
     score.replaceChildren();
@@ -56,7 +56,7 @@
   // Populate the key with textContent, never with unsanitized pupil input.
   questions.forEach((question, index) => {
     const item = document.createElement('li');
-    item.dir = 'rtl';
+    item.dir = 'ltr';
     const answer = document.createElement('strong');
     answer.textContent = correctLabel(question);
     const kind = document.createElement('p');
@@ -82,7 +82,7 @@
       feedback.className = 'feedback';
       if (!chosen) {
         feedback.classList.add('unanswered');
-        feedback.textContent = 'لم تختر إجابة بعد. هذا السؤال غير مُجاب ولا يُحتسب صحيحًا.';
+        feedback.textContent = 'No answer selected yet. This question is unanswered and does not count as correct.';
         if (!firstIncomplete) firstIncomplete = question;
         return;
       }
@@ -90,19 +90,19 @@
       if (chosen.value === question.dataset.correct) {
         correctCount++;
         feedback.classList.add('correct');
-        feedback.textContent = '✓ إجابة صحيحة. ' + evidenceLabel(question) + '. ' + question.dataset.evidence;
+        feedback.textContent = '✓ Correct answer. ' + evidenceLabel(question) + '. ' + question.dataset.evidence;
       } else {
         feedback.classList.add('incorrect');
-        feedback.textContent = '✗ إجابة غير صحيحة. الإجابة: ' + correctLabel(question) + '. ' + evidenceLabel(question) + '. ' + question.dataset.evidence;
+        feedback.textContent = '✗ Incorrect answer. The answer is: ' + correctLabel(question) + '. ' + evidenceLabel(question) + '. ' + question.dataset.evidence;
         if (!firstIncomplete) firstIncomplete = question;
       }
     });
     const summary = document.createElement('strong');
-    summary.textContent = 'النتيجة: ' + correctCount + ' / ' + questions.length;
+    summary.textContent = 'Score: ' + correctCount + ' / ' + questions.length;
     const details = document.createElement('p');
-    details.textContent = 'الأسئلة المُجابة: ' + answeredCount + ' / ' + questions.length + ' · غير المُجابة: ' + (questions.length - answeredCount) + '. تصحيح آلي للأسئلة العشرين فقط؛ لا يشمل الاستماع أو الكتابة الشخصية.';
+    details.textContent = 'Answered: ' + answeredCount + ' / ' + questions.length + ' · Unanswered: ' + (questions.length - answeredCount) + '. Automatic scoring covers only the 20 questions; it does not include listening or personal writing.';
     const explanation = document.createElement('p');
-    explanation.textContent = 'راجع التغذية الراجعة أسفل كل سؤال من فهرس الأسئلة. مفتاح المعلم يبقى منفصلًا ولا يُفتح عند التصحيح.';
+    explanation.textContent = 'Review the feedback below each question using the question index. The teacher key stays separate and does not open when you score the test.';
     score.replaceChildren(summary, details, explanation);
     score.focus({ preventScroll: true });
     score.scrollIntoView({ behavior: 'auto', block: 'nearest' });
@@ -113,7 +113,7 @@
     if (!event.target.matches('input[type="radio"]')) return;
     invalidateScore();
     const feedback = event.target.closest('.question').querySelector('.feedback');
-    feedback.textContent = 'تم تغيير الإجابة. اضغط «تصحيح إجاباتي» لتحديث النتيجة.';
+    feedback.textContent = 'Answer changed. Select “Check my answers” to update your score.';
     feedback.className = 'feedback';
   });
   quiz.addEventListener('reset', () => {
@@ -122,7 +122,7 @@
       feedback.textContent = ''; feedback.className = 'feedback';
     });
     invalidateScore();
-    lockKey('أُعيد الاختبار وأُغلق مفتاح المعلم.');
+    lockKey('The test was reset and the teacher key was closed.');
   });
 
   // Same existing project password and deliberately client-side-only gate.
@@ -131,14 +131,14 @@
     const expected = String.fromCharCode(115,111,109,101,114,49,55,51);
     if (password.value === expected) {
       guide.hidden = false; lock.hidden = false;
-      gateFeedback.textContent = 'تم إظهار المفتاح. هذه ليست مصادقة آمنة على خادم.';
+      gateFeedback.textContent = 'The answer key is open. This is not secure server-side authentication.';
     } else {
-      lockKey(password.value ? 'كلمة المرور غير صحيحة. حاول مرة أخرى.' : 'أدخل كلمة المرور أولًا.');
+      lockKey(password.value ? 'Incorrect password. Please try again.' : 'Enter the password first.');
     }
   }
   document.getElementById('unlock-solutions').addEventListener('click', unlockKey);
   password.addEventListener('keydown', event => {
     if (event.key === 'Enter') { event.preventDefault(); unlockKey(); }
   });
-  lock.addEventListener('click', () => lockKey('أُخفي المفتاح.'));
+  lock.addEventListener('click', () => lockKey('The answer key is hidden.'));
 })();

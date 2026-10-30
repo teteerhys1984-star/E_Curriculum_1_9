@@ -1,0 +1,92 @@
+{
+  "suite": "grade3-unit1-lesson2-browser",
+  "status": "PASS",
+  "date": "2026-10-30T00:11:26.969Z",
+  "browser": "Chromium 153.0.8010.0",
+  "originPath": "/E_Curriculum_1_9/",
+  "viewports": [
+    "1366×900",
+    "768×1024",
+    "390×844",
+    "320×740"
+  ],
+  "checks": [
+    {
+      "name": "Rendered Grade 3 list opens Lesson 2",
+      "status": "PASS",
+      "detail": "Existing Lesson 1 link still present; four lesson section cards"
+    },
+    {
+      "name": "Other grade menus still render",
+      "status": "PASS",
+      "detail": "Grades 1, 2, 4, 5, 6, 7, 8, 9; Grade 5 Lesson 2 retained"
+    },
+    {
+      "name": "All five pages, shared step indexes and Previous/Next",
+      "status": "PASS",
+      "detail": "Every content step reached; previous disabled at first; next wraps; all images decode"
+    },
+    {
+      "name": "English LTR, marked vocabulary meanings, and source image health on desktop",
+      "status": "PASS",
+      "detail": "1366×900; no page-level horizontal overflow; source disclosures opened"
+    },
+    {
+      "name": "Exact source transcription audit",
+      "status": "PASS",
+      "detail": "Six PB dialogues; learn/ask sentences; ten numbers; phonics words; all WB questions/options; number order; four+four blank positions; personal writing prompt"
+    },
+    {
+      "name": "Workbook interactions",
+      "status": "PASS",
+      "detail": "Listening not scored/resettable; four inferred keys toggle/reset; 8 written blanks and personal response retained across steps"
+    },
+    {
+      "name": "Quiz scoring and question navigation",
+      "status": "PASS",
+      "detail": "0/20 empty; 0/20 all wrong; 20/20 all correct; 19/20 one wrong; 1/20 partial; stale score cleared; reset clears all"
+    },
+    {
+      "name": "Teacher answer key gate",
+      "status": "PASS",
+      "detail": "Empty/wrong passwords rejected; existing project password accepted; 20 evidence entries; lock and reset close key"
+    },
+    {
+      "name": "Keyboard and English LTR feedback",
+      "status": "PASS",
+      "detail": "Space selects radio; English options and feedback are LTR"
+    },
+    {
+      "name": "Responsive browser rendering",
+      "status": "PASS",
+      "detail": "All five pages at 320×740, 390×844, 768×1024 and 1366×900; every book/vocabulary step checked; mobile navigation stays in normal flow; no page-level horizontal overflow"
+    },
+    {
+      "name": "Return navigation under GitHub Pages project path",
+      "status": "PASS",
+      "detail": "All routes served below /E_Curriculum_1_9/; each subpage returns to Grade 3 and lesson menu by click"
+    },
+    {
+      "name": "Browser console and HTTP health",
+      "status": "PASS",
+      "detail": "No JavaScript page errors or HTTP >=400 responses during tested routes"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "menu-desktop-1366.png",
+    "menu-mobile-390.png",
+    "pupil-book-desktop-1366.png",
+    "pupil-book-mobile-390.png",
+    "pupil-book-table-mobile-viewport.png",
+    "quiz-score-20-of-20.png",
+    "teacher-key-open.png",
+    "test-desktop-1366.png",
+    "test-mobile-390.png",
+    "vocabulary-desktop-1366.png",
+    "vocabulary-mobile-390.png",
+    "workbook-desktop-1366.png",
+    "workbook-mobile-390.png",
+    "workbook-table-mobile-viewport.png"
+  ]
+}

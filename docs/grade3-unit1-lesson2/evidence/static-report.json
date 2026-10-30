@@ -1,12 +1,22 @@
 {
   "suite": "static-site-and-source-integrity",
-  "date": "2026-10-29T22:12:29.404Z",
+  "date": "2026-10-30T00:13:00.282Z",
   "status": "PASS",
   "checks": [
     {
       "name": "All repository HTML local links and assets resolve",
       "status": "PASS",
-      "detail": "35 HTML files; 183 references"
+      "detail": "35 HTML files; 181 references"
+    },
+    {
+      "name": "English-only content and language direction",
+      "status": "PASS",
+      "detail": "Every HTML root is lang=en and dir=ltr; Arabic appears only as explicitly marked RTL word meanings on Vocabulary pages."
+    },
+    {
+      "name": "Documentation, tests, and other repository text are English",
+      "status": "PASS",
+      "detail": "55 non-Vocabulary text files scanned; no Arabic script found"
     },
     {
       "name": "Five new pages follow LESSON_PAGE_STANDARD.md",
@@ -26,7 +36,7 @@
     {
       "name": "Original source images preserved byte-for-byte",
       "status": "PASS",
-      "detail": "6 SHA-256 matches; 27 derivative illustration crops"
+      "detail": "6 SHA-256 matches; 27 original source crops plus one clearly named English-normalised display derivative"
     },
     {
       "name": "Test structure",
@@ -41,7 +51,7 @@
     {
       "name": "Documentation links and local font assets",
       "status": "PASS",
-      "detail": "18 Markdown links; every CSS font URL exists"
+      "detail": "43 Markdown links; 11 local CSS assets resolve"
     }
   ]
 }

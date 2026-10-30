@@ -1,7 +1,7 @@
 [
   {
     "number": 1,
-    "prompt": "في حوار الصفحة 6، ما المادتان اللتان لدينا اليوم؟",
+    "prompt": "In the page 6 dialogue, which two lessons do they have today?",
     "options": [
       "Maths and Science",
       "Art and Music",
@@ -13,7 +13,7 @@
   },
   {
     "number": 2,
-    "prompt": "ما الدرس المفضّل في حوار الصفحة 6 الذي يتحدث عن الرياضة؟",
+    "prompt": "In the page 6 dialogue, what is the speaker’s favourite lesson?",
     "options": [
       "Maths",
       "Sports",
@@ -25,7 +25,7 @@
   },
   {
     "number": 3,
-    "prompt": "في حوار العربية، ما المادة التي لدينا بدلًا منها؟",
+    "prompt": "In the dialogue about Arabic, which subject do they have instead?",
     "options": [
       "English",
       "Music",
@@ -37,7 +37,7 @@
   },
   {
     "number": 4,
-    "prompt": "أي جملة وردت في حوار معلمة الإنجليزية؟",
+    "prompt": "Which sentence does the English teacher say?",
     "options": [
       "Open your books.",
       "We need crayons.",
@@ -49,7 +49,7 @@
   },
   {
     "number": 5,
-    "prompt": "ما المادة المذكورة مع Tomorrow في حوار الصفحة 6؟",
+    "prompt": "Which subject is mentioned with “Tomorrow” in the page 6 dialogue?",
     "options": [
       "Science",
       "Music",
@@ -61,7 +61,7 @@
   },
   {
     "number": 6,
-    "prompt": "ماذا نحتاج إلى استخدامه في حصة Art يوم الثلاثاء، بحسب الحوار؟",
+    "prompt": "What do they need for Art on Tuesday, according to the dialogue?",
     "options": [
       "Books",
       "Crayons",
@@ -73,7 +73,7 @@
   },
   {
     "number": 7,
-    "prompt": "ما الدرس المفضّل في إطار Let’s learn؟",
+    "prompt": "What is the favourite lesson in the Let’s learn box?",
     "options": [
       "Sports",
       "Science",
@@ -85,7 +85,7 @@
   },
   {
     "number": 8,
-    "prompt": "أي مادتين تذكرهما إجابة التلميذ في حوار Wednesday؟",
+    "prompt": "Which two subjects does the pupil mention in the Wednesday dialogue answer?",
     "options": [
       "Art and English",
       "Science and Maths",
@@ -97,7 +97,7 @@
   },
   {
     "number": 9,
-    "prompt": "ما المادة الأولى في عمود Monday في جدول كتاب التلميذ؟",
+    "prompt": "Which subject appears first in the Monday column of the Pupil’s Book timetable?",
     "options": [
       "Science",
       "Arabic",
@@ -109,7 +109,7 @@
   },
   {
     "number": 10,
-    "prompt": "أي مجموعة تطابق عمود Tuesday في جدول كتاب التلميذ؟",
+    "prompt": "Which set matches the Tuesday column in the Pupil’s Book timetable?",
     "options": [
       "Science, Maths, Arabic, English",
       "Arabic, Art, Sports",
@@ -121,7 +121,7 @@
   },
   {
     "number": 11,
-    "prompt": "أي مادتين تظهران في عمود Wednesday بالإضافة إلى Art وEnglish؟",
+    "prompt": "Which two subjects appear in the Wednesday column besides Art and English?",
     "options": [
       "Maths and Science",
       "Sports and Music",
@@ -133,7 +133,7 @@
   },
   {
     "number": 12,
-    "prompt": "أي مادة تظهر في عمود Thursday؟",
+    "prompt": "Which subject appears in the Thursday column?",
     "options": [
       "Social Studies",
       "Sports",
@@ -145,7 +145,7 @@
   },
   {
     "number": 13,
-    "prompt": "في تمرين مطابقة الأعداد، ما العدد الذي يطابق twenty-eight؟",
+    "prompt": "In the number-matching exercise, which number matches twenty-eight?",
     "options": [
       "22",
       "28",
@@ -157,7 +157,7 @@
   },
   {
     "number": 14,
-    "prompt": "ما الكلمة التي يطابقها العدد 30؟",
+    "prompt": "Which word matches 30?",
     "options": [
       "twenty-three",
       "twenty-nine",
@@ -169,7 +169,7 @@
   },
   {
     "number": 15,
-    "prompt": "أي كلمتين تظهران مع الصوت ou في نشاط الصفحة 8؟",
+    "prompt": "Which two words appear with the sound ou in the page 8 activity?",
     "options": [
       "house and mouse",
       "books and crayons",
@@ -181,7 +181,7 @@
   },
   {
     "number": 16,
-    "prompt": "في تمرين Read and match، أي إجابة تناسب سؤال الدرس المفضّل؟",
+    "prompt": "In the Read and match exercise, which answer matches the question about a favourite lesson?",
     "options": [
       "a — On Tuesday, I’ve got Maths.",
       "b — Today, we’ve got Art and Music.",
@@ -193,7 +193,7 @@
   },
   {
     "number": 17,
-    "prompt": "في التمرين نفسه، أي إجابة تناسب What lessons have we got today?",
+    "prompt": "In the same exercise, which answer matches “What lessons have we got today?”",
     "options": [
       "a — On Tuesday, I’ve got Maths.",
       "b — Today, we’ve got Art and Music.",
@@ -205,7 +205,7 @@
   },
   {
     "number": 18,
-    "prompt": "في سلسلة التفاح، ما العدد الذي يأتي بعد 24 مباشرة؟",
+    "prompt": "In the apple sequence, which number comes immediately after 24?",
     "options": [
       "23",
       "25",
@@ -217,7 +217,7 @@
   },
   {
     "number": 19,
-    "prompt": "في جدول Look and complete، ما اسم مادة رمز EN يوم Sunday؟",
+    "prompt": "In the Look and complete table, which subject does the EN symbol represent on Sunday?",
     "options": [
       "English",
       "Arabic",
@@ -229,7 +229,7 @@
   },
   {
     "number": 20,
-    "prompt": "ما المادة التي يمثلها رمز اللاعب في الحصة الثانية يوم Tuesday؟",
+    "prompt": "Which subject is represented by the player icon in Tuesday’s second lesson?",
     "options": [
       "Art",
       "Music",
