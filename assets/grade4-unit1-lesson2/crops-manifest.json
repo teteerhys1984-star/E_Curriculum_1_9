@@ -1,0 +1,44 @@
+[
+  {
+    "file": "assets/grade4-unit1-lesson2/crops/pupil-book-page-6-family-labels.png",
+    "sha256": "b6f12244a88fe8c2bd46a64e7e2f06f751db7862691eef63efa21a169cc32df0",
+    "width": 672,
+    "height": 296
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/crops/pupil-book-page-6-family-photo.png",
+    "sha256": "f4f61db23fdd32b56816f8e36c52354fc814a140077b9448c06a1fa93b46a10d",
+    "width": 348,
+    "height": 264
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/crops/pupil-book-page-7-read-and-match.png",
+    "sha256": "e84c3cac7578092dfd11243a4e5046f2e053af96f7d481e4284d2a769b6cc3af",
+    "width": 656,
+    "height": 274
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/crops/pupil-book-page-7-reading-photo.png",
+    "sha256": "5593423c83569a5865ee1e66bc696f36fe7a7ef149bacec44064a053046595f4",
+    "width": 280,
+    "height": 217
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/crops/workbook-page-8-family-tree.png",
+    "sha256": "2348ab8a3bff89b973a862a9dc9781211bf3329fe298c245c636374d68cac278",
+    "width": 643,
+    "height": 287
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/crops/workbook-page-9-describe-family.png",
+    "sha256": "5f0725872f8763532fe618234f28a995a315b3da21409295ad4986d03bc6d954",
+    "width": 662,
+    "height": 250
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/crops/workbook-page-9-listen-pictures.png",
+    "sha256": "9c8203b18bf53041407aee0ea6d19a6e970bf98ae37ca13ef5751cdc5e6c4465",
+    "width": 610,
+    "height": 240
+  }
+]

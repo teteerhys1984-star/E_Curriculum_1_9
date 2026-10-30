@@ -1,0 +1,68 @@
+[
+  {
+    "file": "assets/grade4-unit1-lesson2/source/pupil-book-page-6.png",
+    "originalUpload": "image-1.png",
+    "uploadIndex": 1,
+    "book": "pupil-book",
+    "sourcePage": 6,
+    "sha256": "506da15e78a41a9942be5971a31bcafa198889ecaaf7590e2955746a58e52a18",
+    "bytes": 658166,
+    "width": 744,
+    "height": 1017
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/source/pupil-book-page-7.png",
+    "originalUpload": "image-2.png",
+    "uploadIndex": 2,
+    "book": "pupil-book",
+    "sourcePage": 7,
+    "sha256": "cc7eb57373e244ba2532176dc83411454f46a60b25caa69ae1b002af802d6dd8",
+    "bytes": 547766,
+    "width": 726,
+    "height": 1023
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/source/pupil-book-page-8.png",
+    "originalUpload": "image-3.png",
+    "uploadIndex": 3,
+    "book": "pupil-book",
+    "sourcePage": 8,
+    "sha256": "b940a145fd9ec648157cd15467833b7df02f36d42e34c85e07ab8e0c1bc5e566",
+    "bytes": 183735,
+    "width": 735,
+    "height": 1017
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/source/workbook-page-8.png",
+    "originalUpload": "image-4.png",
+    "uploadIndex": 4,
+    "book": "workbook",
+    "sourcePage": 8,
+    "sha256": "2d4d8e9c7f084c8afbc298f38dc1776c1f641c326e6eb870c7f36189ede33fea",
+    "bytes": 373696,
+    "width": 738,
+    "height": 1017
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/source/workbook-page-9.png",
+    "originalUpload": "image-5.png",
+    "uploadIndex": 5,
+    "book": "workbook",
+    "sourcePage": 9,
+    "sha256": "6aa23d93278fb2352260a404b16ba19d45ac5c7336e5c84c33bcfc0049367a08",
+    "bytes": 270455,
+    "width": 739,
+    "height": 1011
+  },
+  {
+    "file": "assets/grade4-unit1-lesson2/source/workbook-page-10.png",
+    "originalUpload": "image-6.png",
+    "uploadIndex": 6,
+    "book": "workbook",
+    "sourcePage": 10,
+    "sha256": "0f14aea67f3276440b48a48e9f018957688d85b98f687bb534d85c0c1947b6dd",
+    "bytes": 138894,
+    "width": 730,
+    "height": 1009
+  }
+]

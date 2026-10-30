@@ -1,0 +1,262 @@
+[
+  {
+    "number": 1,
+    "prompt": "What does the boy in the speech bubble on page 6 say?",
+    "options": [
+      "This is my family.",
+      "This is my school.",
+      "This is my friend."
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 6 · activity 1",
+    "kind": "explicit",
+    "evidence": "The speech bubble prints “This is my family.”"
+  },
+  {
+    "number": 2,
+    "prompt": "Which question is printed in the same speech bubble?",
+    "options": [
+      "Where do they live?",
+      "What do they look like?",
+      "How old are they?"
+    ],
+    "correct": 1,
+    "reference": "Pupil’s Book · p. 6 · activity 1",
+    "kind": "explicit",
+    "evidence": "The speech bubble prints “What do they look like?”"
+  },
+  {
+    "number": 3,
+    "prompt": "Where is Sanaa from?",
+    "options": [
+      "Lattakia",
+      "London",
+      "Damascus"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 7 · activity 7",
+    "kind": "explicit",
+    "evidence": "The text begins “Hi, I am Sanaa from Lattakia.”"
+  },
+  {
+    "number": 4,
+    "prompt": "How old is Sanaa?",
+    "options": [
+      "eight",
+      "ten",
+      "thirty-five"
+    ],
+    "correct": 2,
+    "reference": "Pupil’s Book · p. 7 · activity 7",
+    "kind": "explicit",
+    "evidence": "The text says “I’m thirty-five years old.”"
+  },
+  {
+    "number": 5,
+    "prompt": "How old is Dani?",
+    "options": [
+      "eight",
+      "ten",
+      "thirty-five"
+    ],
+    "correct": 1,
+    "reference": "Pupil’s Book · p. 7 · activity 7",
+    "kind": "explicit",
+    "evidence": "The text says “My son Dani is ten years old.”"
+  },
+  {
+    "number": 6,
+    "prompt": "What colour are Dani’s eyes, according to the text?",
+    "options": [
+      "blue",
+      "brown",
+      "green"
+    ],
+    "correct": 2,
+    "reference": "Pupil’s Book · p. 7 · activity 7",
+    "kind": "explicit",
+    "evidence": "The text says “He’s got brown hair and green eyes.”"
+  },
+  {
+    "number": 7,
+    "prompt": "What does the text say about Tina’s hair and eyes?",
+    "options": [
+      "blond hair and big blue eyes",
+      "brown hair and green eyes",
+      "short black hair"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 7 · activity 7",
+    "kind": "explicit",
+    "evidence": "The text says “She’s got blond hair and big blue eyes.”"
+  },
+  {
+    "number": 8,
+    "prompt": "What do the family usually do together?",
+    "options": [
+      "read stories",
+      "write stories",
+      "draw pictures"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 7 · activity 7",
+    "kind": "explicit",
+    "evidence": "The text says “We usually read stories together.”"
+  },
+  {
+    "number": 9,
+    "prompt": "In task a, what should go in the box for “Dani is eight years old.”?",
+    "options": [
+      "✓ Tick",
+      "× Cross",
+      "The text does not say how old Dani is."
+    ],
+    "correct": 1,
+    "reference": "Pupil’s Book · p. 7 · activity 7a",
+    "kind": "inferred",
+    "evidence": "The statement is false: the text gives Dani’s age as ten, so the box takes a cross. The book prints no key for this item."
+  },
+  {
+    "number": 10,
+    "prompt": "In task a, what should go in the box for “Tina has got two children.”?",
+    "options": [
+      "✓ Tick",
+      "× Cross",
+      "The text does not say who has children."
+    ],
+    "correct": 1,
+    "reference": "Pupil’s Book · p. 7 · activity 7a",
+    "kind": "inferred",
+    "evidence": "The statement is false: Sanaa has got two children; Tina is an eight-year-old child. The book prints no key for this item."
+  },
+  {
+    "number": 11,
+    "prompt": "Choose the correct word: “Tina ………… got blond hair.”",
+    "options": [
+      "has",
+      "have",
+      "is"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 7 · activity 7b",
+    "kind": "explicit",
+    "evidence": "The text says “She’s got blond hair”; Tina is one person, so “has got” is used."
+  },
+  {
+    "number": 12,
+    "prompt": "Choose the correct word: “They usually ………… stories.”",
+    "options": [
+      "read",
+      "write",
+      "reads"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 7 · activity 7b",
+    "kind": "explicit",
+    "evidence": "The text says “We usually read stories together.”"
+  },
+  {
+    "number": 13,
+    "prompt": "Complete with is or has got: “She ………… long hair.”",
+    "options": [
+      "is",
+      "has got",
+      "have got"
+    ],
+    "correct": 1,
+    "reference": "Pupil’s Book · p. 8 · exercise 8",
+    "kind": "inferred",
+    "evidence": "Hair is described with “has got”, and “she” takes “has got”. The book prints no key for exercise 8."
+  },
+  {
+    "number": 14,
+    "prompt": "Complete with is or has got: “My grandmother’s hair ………… white.”",
+    "options": [
+      "is",
+      "has got",
+      "have got"
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 8 · exercise 8",
+    "kind": "inferred",
+    "evidence": "The subject is “hair”, not the person, so the sentence takes “is”. The book prints no key for exercise 8."
+  },
+  {
+    "number": 15,
+    "prompt": "Reorder the words: “has / He / got / hair / black”",
+    "options": [
+      "He has got black hair.",
+      "He has got hair black.",
+      "He got has black hair."
+    ],
+    "correct": 0,
+    "reference": "Pupil’s Book · p. 8 · exercise 9",
+    "kind": "inferred",
+    "evidence": "Using every word once in the printed example word order gives “He has got black hair.” Only item a is printed with its answer in the book."
+  },
+  {
+    "number": 16,
+    "prompt": "Where is John from?",
+    "options": [
+      "London",
+      "Lattakia",
+      "Damascus"
+    ],
+    "correct": 0,
+    "reference": "Workbook · p. 8 · exercise 1",
+    "kind": "explicit",
+    "evidence": "John’s text begins “I am from London.”"
+  },
+  {
+    "number": 17,
+    "prompt": "What is John’s grandfather’s name?",
+    "options": [
+      "Robert",
+      "James",
+      "Daniel"
+    ],
+    "correct": 0,
+    "reference": "Workbook · p. 8 · exercise 1",
+    "kind": "explicit",
+    "evidence": "The text says “My grandfather, Robert, is next to me.”"
+  },
+  {
+    "number": 18,
+    "prompt": "Who is Mary?",
+    "options": [
+      "John’s mother",
+      "John’s grandmother",
+      "John’s sister"
+    ],
+    "correct": 0,
+    "reference": "Workbook · p. 8 · exercise 1",
+    "kind": "explicit",
+    "evidence": "The text says “My mum Mary is behind my grandmother.”"
+  },
+  {
+    "number": 19,
+    "prompt": "In the Read and match exercise, which answer matches “What does your father do?”",
+    "options": [
+      "He is a pilot.",
+      "In Damascus.",
+      "her new dress."
+    ],
+    "correct": 0,
+    "reference": "Workbook · p. 8 · exercise 2",
+    "kind": "inferred",
+    "evidence": "“What does your father do?” asks about a job, and “He is a pilot.” names a job. The book prints no key for this exercise."
+  },
+  {
+    "number": 20,
+    "prompt": "Choose the right word: “They live ………… Lattakia.”",
+    "options": [
+      "on",
+      "at",
+      "in"
+    ],
+    "correct": 2,
+    "reference": "Workbook · p. 10 · exercise 7",
+    "kind": "inferred",
+    "evidence": "“In” is used before a town or city. The book prints no key for this exercise."
+  }
+]
