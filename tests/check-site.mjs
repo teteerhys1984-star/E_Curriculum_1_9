@@ -247,11 +247,44 @@ assert.equal((g4Pb.match(/id="pb8-\d"/g) || []).length, 3, 'Pupil’s Book exerc
 assert.equal((g4Pb.match(/id="pb9-[bcd]"/g) || []).length, 3, 'Pupil’s Book exercise 9 keeps b, c and d; a is printed answered');
 assert.equal((g4Pb.match(/id="pb10-(mother|sister|brother)"/g) || []).length, 3, 'Pupil’s Book exercise 10 keeps three lines');
 assert.equal(new Set(g4Wb.match(/id="wb8-[a-z0-9]+"/g)).size, 10, 'Workbook exercise 8 keeps eight in-sentence blanks plus two unlabelled lines');
+assert.equal((g4Wb.match(/<form\b/g) || []).length, (g4Wb.match(/<\/form>/g) || []).length, 'Workbook forms must all be closed');
+assert.equal((g4Pb.match(/<form\b/g) || []).length, (g4Pb.match(/<\/form>/g) || []).length, 'Pupil’s Book forms must all be closed');
+assert.equal((read(`${g4}-test.html`).match(/<form\b/g) || []).length, (read(`${g4}-test.html`).match(/<\/form>/g) || []).length, 'Test form must be closed');
+// Exercise 8 must keep the printed sentences intact around the blanks, not a stack of
+// labelled boxes. Rebuild each printed sentence, replacing every field with a gap mark.
+const g4Ex8 = g4Wb.match(/<form class="practice-form" id="wb-ex8">([\s\S]*?)<\/form>/)[1];
+const g4Ex8Body = g4Ex8.match(/<div class="activity fill-lines">([\s\S]*?)<\/div>/);
+assert.ok(g4Ex8Body, 'Workbook exercise 8 must keep a fill-lines block');
+const rebuild = paragraph => paragraph
+  .replace(/<input[^>]*>/g, '\u2026')
+  .replace(/<label[^>]*>([\s\S]*?)<\/label>/g, '$1')
+  .replace(/<[^>]+>/g, '')
+  .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+  .replace(/&#39;/g, "'").replace(/[\u2019]/g, '\u2019')
+  .replace(/\s+/g, ' ')
+  .trim();
+const g4Ex8Sentences = Array.from(g4Ex8Body[1].matchAll(/<p>([\s\S]*?)<\/p>/g), m => rebuild(m[1]));
+assert.deepEqual(g4Ex8Sentences, [
+  'My name \u2026 I\u2019m \u2026.',
+  'I live in \u2026.',
+  'I\u2019ve got \u2026 sisters and \u2026 brothers.',
+  'My father is an/a \u2026',
+  'He\u2019s got \u2026 and \u2026.'
+], 'Workbook exercise 8 must print the five original sentences with a field at each gap');
 pass('Grade 4 Lesson 2 blank and option counts', 'PB 7a ×2, 7b ×3, ex8 ×3, ex9 ×3, ex10 ×3; WB tree ×6, ex3 ×4, ex5 ×5, ex8 ×10');
 
+// Crops are pinned by hash and size so a re-crop with wrong boundaries cannot pass
+// silently. The framing itself was checked against the source pages by eye; the hash
+// makes any later change to these files a deliberate, reviewable act.
 const g4Crops = fs.readdirSync(path.join(root, `assets/${g4}/crops`)).filter(f => f.endsWith('.png')).sort();
-assert.equal(g4Crops.length, 7, 'Expected seven original source crops and no generated imagery');
-pass('Grade 4 Lesson 2 crops', g4Crops.join(', '));
+assert.equal(g4Crops.length, 7, 'Expected seven source crops and no generated imagery');
+const g4CropManifest = JSON.parse(read(`assets/${g4}/crops-manifest.json`));
+assert.equal(g4CropManifest.length, 7);
+for (const item of g4CropManifest) {
+  const bytes = fs.readFileSync(path.join(root, item.file));
+  assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), item.sha256, `Crop changed: ${item.file}`);
+}
+pass('Grade 4 Lesson 2 crops are pinned', 'Seven source crops match their recorded SHA-256 hashes and sizes');
 
 const g4Manifest = JSON.parse(read(`assets/${g4}/source-manifest.json`));
 assert.equal(g4Manifest.length, 6);
