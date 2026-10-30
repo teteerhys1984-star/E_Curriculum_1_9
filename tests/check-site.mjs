@@ -268,9 +268,8 @@ assert.deepEqual(g4Ex8Sentences, [
   'My name \u2026 I\u2019m \u2026.',
   'I live in \u2026.',
   'I\u2019ve got \u2026 sisters and \u2026 brothers.',
-  'My father is an/a \u2026',
-  'He\u2019s got \u2026 and \u2026.'
-], 'Workbook exercise 8 must print the five original sentences with a field at each gap');
+  'My father is an/a \u2026 He\u2019s got \u2026 and \u2026.'
+], 'Workbook exercise 8 must print the four original lines with a field at each gap');
 pass('Grade 4 Lesson 2 blank and option counts', 'PB 7a ×2, 7b ×3, ex8 ×3, ex9 ×3, ex10 ×3; WB tree ×6, ex3 ×4, ex5 ×5, ex8 ×10');
 
 // Crops are pinned by hash and size so a re-crop with wrong boundaries cannot pass

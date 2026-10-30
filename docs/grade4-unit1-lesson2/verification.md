@@ -48,10 +48,29 @@ The Grade 4 lesson list in `lessons.html` now shows `Lesson 2 · My Family` besi
 A strict re-read of the six images against the rendered pages found five defects, all fixed on this branch:
 
 1. **Workbook exercise 5** prints **five** dotted lines under the example; the page had four fields. A fifth field was added and the printed count is now asserted by both suites.
-2. **Workbook exercise 8** had been flattened into a stack of labelled boxes. It now keeps each printed sentence intact with one field per dotted gap, and the two unlabelled end lines are labelled as unlabelled.
+2. **Workbook exercise 8** had been flattened into a stack of labelled boxes. It now keeps each printed sentence intact with one field per dotted gap, and the two end lines are kept as plain writing lines (see the next section).
 3. **Crop defects.** Four crops were mis-framed: PB activity 1 clipped the heads of the standing parents; PB activity 3 included a clipped copy of the printed bullets; PB activity 5 included the clipped heading "6 Before you read"; WB exercise 1 started inside the reading passage and cut the "John's Family" panel. All four were re-cropped from the unchanged source scans.
 4. **Vocabulary examples.** In three entries the example used textbook wording that the page had completed, for example "We usually read stories together" presented as the example for "write". Those examples now quote the printed frames with their dotted gaps.
 5. **Alt text.** The Workbook exercise 5 illustration was described as "the family"; it is described now by the four people actually drawn.
+
+## Two open source-fidelity questions, resolved against the scans
+
+Both questions were settled by putting the supplied scan beside a screenshot of the rendered section, and by measuring the printed dots rather than relying on the transcription.
+
+### Workbook exercise 8 — are the two extra fields real?
+
+**Yes.** Measuring Workbook p. 10 shows eight dotted gaps *inside* the four printed sentences (each about 90 px wide) and then two more dotted rules below them at y = 761 and y = 792 that run the full width of the text column (613 px). The eight are answer gaps; the two are full-width writing lines printed under the last sentence with no words beside them. Keeping two fields for them is therefore faithful, and each is rendered at full width like the printed rule.
+
+Two defects of our own were found in the same comparison and are fixed:
+
+- The book prints “My father is an/a … He’s got … and … .” as **one** line. The page had split it into two paragraphs, which changed the printed sentence structure. It is now one paragraph holding the three gaps.
+- The two end fields carried the visible wording “Unlabelled writing line 1 printed in the book”, which is text the book does not print. They now use the same “Writing line” label as Workbook exercise 5, with the fact that the book prints no words recorded in the source note instead of in a control label.
+
+### Pupil’s Book exercise 5 — is the duplication printed?
+
+**No, it is introduced by the page.** The book prints each of the four descriptions exactly once, on a coloured strip between the faces: Long blond hair, Short black hair, brown eyes, green eyes. The page uses the scanned picture, which already contains those strips, and then repeats the same four words as the label of each matching menu, so on screen each description appears twice.
+
+No wording was invented and the four labels are in the printed top-to-bottom order, so this is a presentation artefact rather than a transcription error. It is now disclosed in the figure caption: the book prints each description once, and the rows below repeat the words so each can be matched from a menu. The menu width was also corrected, because “Choose a picture” was being clipped to “Choose a pictu”.
 
 ## Not verified
 

@@ -37,7 +37,7 @@ button{border:0;border-radius:10px;padding:10px 16px;background:var(--accent);co
 .label-chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:14px 0}
 .label-chips li{padding:8px 14px;border-radius:8px;background:var(--soft);border:1px solid var(--line);font-weight:700;font-size:14px}
 .match-list{display:grid;gap:10px;margin:14px 0}
-.match-item{display:grid;grid-template-columns:minmax(0,1fr) minmax(110px,150px);align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fbfcff}
+.match-item{display:grid;grid-template-columns:minmax(0,1fr) minmax(140px,200px);align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fbfcff}
 .match-item select,.match-item input{width:100%;min-height:42px}
 .tree{min-width:560px;table-layout:fixed;text-align:center}
 .tree th{font-size:13px;letter-spacing:.4px;text-transform:uppercase}
@@ -48,6 +48,7 @@ button{border:0;border-radius:10px;padding:10px 16px;background:var(--accent);co
 .writing-lines{display:grid;gap:10px;margin:14px 0}
 .writing-lines input{width:100%}
 .fill-lines p{margin:10px 0;line-height:2.6}
+.fill-lines label{white-space:nowrap}
 .blank-inline{width:150px;max-width:100%;min-height:42px}
 @media(max-width:540px){.blank-inline{width:120px}}
 .option-row{display:grid;gap:8px;margin:10px 0}

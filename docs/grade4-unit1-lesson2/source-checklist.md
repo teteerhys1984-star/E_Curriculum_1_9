@@ -46,7 +46,7 @@
 | 9 | 5 — `Describe this family.` | Example `The father has got short hair.` plus five dotted lines and a family drawing | Preserved with five writing fields and the original crop |
 | 9 | 6 — `Ask and answer.` | A / B frame with the question printed | Preserved |
 | 10 | 7 — `Choose the right word.` | Five dialogues with options a/b/c | All five with all fifteen options |
-| 10 | 8 — `Complete about your family.` | Eight dotted gaps inside the printed sentences (name, age, town, sisters, brothers, job, `He’s got … and …`) plus two unlabelled dotted lines | Preserved in place as personal writing |
+| 10 | 8 — `Complete about your family.` | Eight dotted gaps inside the printed sentences (name, age, town, sisters, brothers, job, `He’s got … and …`) plus two full-width dotted lines with no printed words | Preserved in place as personal writing |
 
 ## Listening activities
 
@@ -61,7 +61,7 @@ Only two answers are printed in the six images: the tick in Pupil’s Book 7a it
 1. **Pupil’s Book activity 3, third bullet** is printed as `His ………………` with a dotted line. The book does not print the completed sentence and the picture alone does not fix which sentence the learner should write, so the page asks the learner to complete it and supplies no answer.
 2. **Pupil’s Book activity 5** can be read more than one way: the top-right girl clearly fits “Long blond hair”, and the top-left boy clearly fits “Short black hair”, but the top-left boy also has brown eyes and the bottom-left woman has brown hair and brown eyes. The exercise is therefore kept as a classroom task, is not scored, and the ambiguity is stated on the page.
 3. **Workbook exercise 1** mixes two things in one branch of the table: the left-hand box in the second row reads `His …………` above the name `Mary` (a relationship word, answered by the text “My mum Mary”), while the right-hand box reads `His father` above a dotted line (a name, answered by “My dad, James”). The transcription notes each blank type separately and does not merge the two.
-4. **Workbook exercise 8** ends with two dotted lines that have no printed words beside them. They are reproduced as two unlabelled writing fields with an explanatory note, not as invented prompts. The eight in-sentence gaps keep the printed sentences around them.
+4. **Workbook exercise 8** ends with two dotted lines that have no printed words beside them. They are reproduced as two full-width writing fields labelled only "Writing line 1/2", with the fact that the book prints no words given in the note, not as invented prompts. The eight in-sentence gaps keep the printed sentences around them.
 5. **Workbook exercise 5** is a free description of a drawing with five dotted lines. No answer is supplied, because several true sentences are possible.
 6. **Workbook exercises 3 and 4** cannot be completed without the recording, so their answers are explicitly left absent.
 
