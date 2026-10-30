@@ -57,6 +57,36 @@ try {
     const dimensions = await page.evaluate(() => ({ viewport: innerWidth, document: document.documentElement.scrollWidth, body: document.body.scrollWidth }));
     assert.ok(dimensions.document <= dimensions.viewport + 1 && dimensions.body <= dimensions.viewport + 1, `${label}: horizontal overflow ${JSON.stringify(dimensions)}`);
   };
+  const assertRenderedLanguage = async label => {
+    const result = await page.evaluate(() => {
+      const arabic = /[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]/;
+      const violations = [];
+      let arabicNodes = 0;
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        if (/^(SCRIPT|STYLE)$/.test(node.parentElement?.tagName || '') || !arabic.test(node.nodeValue || '')) continue;
+        arabicNodes++;
+        if (!node.parentElement?.closest('.ar[lang="ar"][dir="rtl"]')) violations.push('unmarked Arabic text');
+      }
+      for (const element of document.querySelectorAll('*')) {
+        for (const attribute of element.getAttributeNames()) {
+          if (arabic.test(element.getAttribute(attribute) || '')) violations.push(`Arabic in ${element.tagName.toLowerCase()}[${attribute}]`);
+        }
+        const direction = element.getAttribute('dir');
+        if (direction && direction !== 'ltr' && !(direction === 'rtl' && element.matches('.ar[lang="ar"][dir="rtl"]'))) violations.push(`unexpected dir=${direction}`);
+        const computedDirection = getComputedStyle(element).direction;
+        if (computedDirection !== 'ltr' && !(computedDirection === 'rtl' && element.closest('.ar[lang="ar"][dir="rtl"]'))) violations.push(`unexpected computed direction=${computedDirection}`);
+        const language = element.getAttribute('lang');
+        if (language && language !== 'en' && !(language === 'ar' && element.matches('.ar[dir="rtl"]'))) violations.push(`unexpected lang=${language}`);
+      }
+      return { lang: document.documentElement.lang, dir: document.documentElement.dir, arabicNodes, violations };
+    });
+    assert.equal(result.lang, 'en', `${label}: html lang`);
+    assert.equal(result.dir, 'ltr', `${label}: html direction`);
+    assert.deepEqual(result.violations, [], `${label}: language/direction violations`);
+    return result.arabicNodes;
+  };
   const clickStep = async index => {
     await page.locator('.content-nav-links button').nth(index).click();
   };
@@ -102,8 +132,12 @@ try {
   ];
   for (const item of pages) {
     await go(item.file);
-    assert.equal(await page.locator('html').getAttribute('dir'), 'rtl');
-    assert.equal(await page.locator('main').evaluate(el => getComputedStyle(el).direction), 'rtl');
+    assert.equal(await page.locator('html').getAttribute('lang'), 'en');
+    assert.equal(await page.locator('html').getAttribute('dir'), 'ltr');
+    assert.equal(await page.locator('main').evaluate(el => getComputedStyle(el).direction), 'ltr');
+    const arabicNodes = await assertRenderedLanguage(item.file);
+    if (item.short === 'vocabulary') assert.ok(arabicNodes > 0, 'Vocabulary meanings should be present');
+    else assert.equal(arabicNodes, 0, `${item.file}: no Arabic outside the Vocabulary page`);
     if (item.short !== 'menu') {
       for (const link of await page.locator('.section-links a').all()) {
         const href = await link.getAttribute('href');
@@ -141,7 +175,7 @@ try {
     await page.screenshot({ path: path.join(evidence, `${item.short}-desktop-1366.png`), fullPage: true, timeout: 30000 });
   }
   pass('All five pages, shared step indexes and Previous/Next', 'Every content step reached; previous disabled at first; next wraps; all images decode');
-  pass('Arabic RTL and source image health on desktop', '1366×900; no page-level horizontal overflow; source disclosures opened');
+  pass('English LTR, marked vocabulary meanings, and source image health on desktop', '1366×900; no page-level horizontal overflow; source disclosures opened');
 
   // Exact source transcription checks, including all choices and blank positions.
   await go(`${base}-pupil-book.html`);
@@ -166,10 +200,14 @@ try {
   assert.deepEqual(await page.locator('.number-list li').evaluateAll(nodes => nodes.map(node => [node.querySelector('b').textContent,node.querySelector('span').textContent])), [['21','twenty-one'],['22','twenty-two'],['23','twenty-three'],['24','twenty-four'],['25','twenty-five'],['26','twenty-six'],['27','twenty-seven'],['28','twenty-eight'],['29','twenty-nine'],['30','thirty']]);
   assert.deepEqual(await normalizedText('.phonics-pair .sound-word'), ['house','mouse']);
   await go(`${base}-workbook.html`);
+  assert.equal(await page.locator('img[src$="workbook-page-6-listen-row-2-english-display.png"]').count(), 1);
+  assert.equal(await page.locator('img[src$="workbook-page-6-listen-row-2.png"]').count(), 0, 'The original calligraphy item crop must not appear in learner-facing markup');
+  assert.equal(await page.locator('img[src$="workbook-page-6-listen-and-tick.png"]').count(), 0, 'The original calligraphy activity crop must not appear in learner-facing markup');
+  assert.equal(await page.locator('img[src$="source/workbook-page-6.png"]').count(), 0, 'The preserved source scan must remain undisplayed on the learner-facing page');
   assert.deepEqual(await normalizedText('.match-options.en li'), ['What lessons have we got today?', "What's your favourite lesson?", 'What have you got on Tuesday?', "a — On Tuesday, I've got Maths.", "b — Today, we've got Art and Music.", 'c — My favourite lesson is English.']);
   assert.deepEqual(await normalizedText('#wb-number-match .match-row label'), ['twenty-nine','twenty-two','thirty','twenty-one','twenty-eight','twenty-three']);
   assert.deepEqual(await page.locator('#wb-number-match select').evaluateAll(nodes => nodes.map(node => Array.from(node.options).slice(1).map(option => option.value))), Array(6).fill(['21','30','29','28','23','22']));
-  assert.deepEqual(await normalizedText('#wb-4 > p'), ['الأعداد المطبوعة بالترتيب: 21 → 22 → … → 24 → … → … → 27 → 28 → … → 30.']);
+  assert.deepEqual(await normalizedText('#wb-4 > p'), ['Printed numbers in order: 21 → 22 → … → 24 → … → … → 27 → 28 → … → 30.']);
   assert.deepEqual(await page.locator('.schedule-table tbody tr').evaluateAll(rows => rows.map(row => Array.from(row.cells).map(cell => cell.querySelector('input') ? '[blank]' : cell.textContent.trim()))), [
     ['Sunday','Maths','Art','[blank]','Arabic'], ['Monday','[blank]','Music','Arabic','English'], ['Tuesday','Arabic','[blank]','Social Studies','[blank]']
   ]);
@@ -237,8 +275,8 @@ try {
   await page.locator('.lesson-step-footer [data-next]').click();
   await visiblePanel('q1');
   await page.locator('#check-answers').click();
-  assert.match(await page.locator('#score').textContent(), /النتيجة: 0 \/ 20/);
-  assert.match(await page.locator('#score').textContent(), /غير المُجابة: 20/);
+  assert.match(await page.locator('#score').textContent(), /Score: 0 \/ 20/);
+  assert.match(await page.locator('#score').textContent(), /Unanswered: 20/);
   assert.equal(await page.locator('#answer-guide').isVisible(), false);
   const correct = await page.locator('#quiz .question').evaluateAll(questions => questions.map(q => q.dataset.correct));
   for (let i=0;i<count;i++) {
@@ -246,8 +284,8 @@ try {
     await page.locator(`#q${i+1} input[value="${(Number(correct[i])+1)%3}"]`).check();
   }
   await page.locator('#check-answers').click();
-  assert.match(await page.locator('#score').textContent(), /النتيجة: 0 \/ 20/);
-  assert.match(await page.locator('#score').textContent(), /الأسئلة المُجابة: 20 \/ 20/);
+  assert.match(await page.locator('#score').textContent(), /Score: 0 \/ 20/);
+  assert.match(await page.locator('#score').textContent(), /Answered: 20 \/ 20/);
   assert.equal(await page.locator('.feedback.incorrect').count(), 20);
   for (let i=0;i<count;i++) {
     await clickStep(i);
@@ -255,7 +293,7 @@ try {
   }
   assert.equal(await page.locator('#score').textContent(), '');
   await page.locator('#check-answers').click();
-  assert.match(await page.locator('#score').textContent(), /النتيجة: 20 \/ 20/);
+  assert.match(await page.locator('#score').textContent(), /Score: 20 \/ 20/);
   assert.equal(await page.locator('.feedback.correct').count(), 20);
   assert.equal(await page.locator('#answer-guide').isVisible(), false);
   await page.locator('#score').scrollIntoViewIfNeeded();
@@ -264,15 +302,15 @@ try {
   assert.equal(await page.locator('#q1 input:checked').inputValue(), correct[0]);
   await page.locator(`#q1 input[value="${(Number(correct[0])+1)%3}"]`).check();
   await page.locator('#check-answers').click();
-  assert.match(await page.locator('#score').textContent(), /النتيجة: 19 \/ 20/);
+  assert.match(await page.locator('#score').textContent(), /Score: 19 \/ 20/);
   await page.locator('#reset-test').click();
   assert.equal(await page.locator('#quiz input:checked').count(), 0);
   assert.equal(await page.locator('#score').textContent(), '');
   assert.equal(await page.locator('.feedback').evaluateAll(nodes => nodes.filter(n => n.textContent).length), 0);
   await page.locator('#q1 input[value="'+correct[0]+'"]').check();
   await page.locator('#check-answers').click();
-  assert.match(await page.locator('#score').textContent(), /النتيجة: 1 \/ 20/);
-  assert.match(await page.locator('#score').textContent(), /غير المُجابة: 19/);
+  assert.match(await page.locator('#score').textContent(), /Score: 1 \/ 20/);
+  assert.match(await page.locator('#score').textContent(), /Unanswered: 19/);
   pass('Quiz scoring and question navigation', '0/20 empty; 0/20 all wrong; 20/20 all correct; 19/20 one wrong; 1/20 partial; stale score cleared; reset clears all');
 
   // Use the already-existing project password without printing it into test logs.
@@ -288,7 +326,7 @@ try {
   await page.locator('#unlock-solutions').click();
   assert.equal(await page.locator('#answer-guide').isVisible(), true);
   assert.equal(await page.locator('#teacher-key > li').count(), 20);
-  assert.match(await page.locator('#teacher-key').textContent(), /مستنتج من المصدر/);
+  assert.match(await page.locator('#teacher-key').textContent(), /Inferred from the source/);
   await page.locator('#answer-guide').scrollIntoViewIfNeeded();
   await page.screenshot({ path: path.join(evidence, 'teacher-key-open.png'), timeout: 30000 });
   await page.locator('#lock-solutions').click();
@@ -301,14 +339,14 @@ try {
   assert.equal(await page.locator('#teacher-password').inputValue(), '');
   pass('Teacher answer key gate', 'Empty/wrong passwords rejected; existing project password accepted; 20 evidence entries; lock and reset close key');
 
-  // Keyboard operation and mixed English/Arabic direction.
+  // Keyboard operation and English direction.
   await clickStep(0);
   await page.locator('#q1 input').first().focus();
   await page.keyboard.press('Space');
   assert.equal(await page.locator('#q1 input').first().isChecked(), true);
   assert.equal(await page.locator('#q1 .options .en').first().evaluate(el => getComputedStyle(el).direction), 'ltr');
-  assert.equal(await page.locator('#q1 .feedback').evaluate(el => getComputedStyle(el).direction), 'rtl');
-  pass('Keyboard and mixed-direction text', 'Space selects radio; English options LTR; Arabic feedback RTL');
+  assert.equal(await page.locator('#q1 .feedback').evaluate(el => getComputedStyle(el).direction), 'ltr');
+  pass('Keyboard and English LTR feedback', 'Space selects radio; English options and feedback are LTR');
 
   // Laptop, tablet-boundary and mobile rendering. Full-page screenshots are evidence, not CSS-only checks.
   for (const viewport of [{width:390,height:844},{width:320,height:740},{width:768,height:1024}]) {
@@ -316,6 +354,9 @@ try {
     for (const item of pages) {
       await go(item.file);
       await noPageOverflow(`${item.short} ${viewport.width}`);
+      if (viewport.width < 761 && await page.locator('.content-nav').count()) {
+        assert.equal(await page.locator('.content-nav').evaluate(el => getComputedStyle(el).position), 'static', `${item.short}: mobile navigator stays in normal flow`);
+      }
       if (item.panels.length) {
         for (let i=0;i<item.panels.length;i++) { await clickStep(i); await visiblePanel(item.panels[i]); await noPageOverflow(`${item.short} step ${i+1} at ${viewport.width}`); }
         await clickStep(0);
@@ -358,7 +399,7 @@ try {
       if (viewport.width === 390) { await page.evaluate(() => window.scrollTo(0, 0)); await page.screenshot({ path: path.join(evidence, `${item.short}-mobile-390.png`), fullPage: true, timeout: 30000 }); }
     }
   }
-  pass('Responsive browser rendering', 'All five pages at 320×740, 390×844, 768×1024 and 1366×900; every book/vocabulary step checked; no page-level horizontal overflow');
+  pass('Responsive browser rendering', 'All five pages at 320×740, 390×844, 768×1024 and 1366×900; every book/vocabulary step checked; mobile navigation stays in normal flow; no page-level horizontal overflow');
 
   // Check return/menu links by actual clicks from each subpage.
   for (const section of ['pupil-book','workbook','vocabulary','test']) {

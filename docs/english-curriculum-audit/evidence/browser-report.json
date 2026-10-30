@@ -1,0 +1,109 @@
+{
+  "suite": "full-curriculum-english-browser-audit",
+  "status": "PASS",
+  "date": "2026-10-30T00:12:08.481Z",
+  "browser": "Chromium 153.0.8010.0",
+  "projectPath": "/E_Curriculum_1_9/",
+  "pages": [
+    "grade3-unit1-lesson1-pupil-book.html",
+    "grade3-unit1-lesson1-test.html",
+    "grade3-unit1-lesson1-vocabulary.html",
+    "grade3-unit1-lesson1-workbook.html",
+    "grade3-unit1-lesson1.html",
+    "grade3-unit1-lesson2-pupil-book.html",
+    "grade3-unit1-lesson2-test.html",
+    "grade3-unit1-lesson2-vocabulary.html",
+    "grade3-unit1-lesson2-workbook.html",
+    "grade3-unit1-lesson2.html",
+    "grade4-unit1-lesson1-pupil-book.html",
+    "grade4-unit1-lesson1-test.html",
+    "grade4-unit1-lesson1-vocabulary.html",
+    "grade4-unit1-lesson1-workbook.html",
+    "grade4-unit1-lesson1.html",
+    "grade5-unit1-lesson1-pupil-book.html",
+    "grade5-unit1-lesson1-test.html",
+    "grade5-unit1-lesson1-vocabulary.html",
+    "grade5-unit1-lesson1-workbook.html",
+    "grade5-unit1-lesson1.html",
+    "grade5-unit1-lesson2-pupil-book.html",
+    "grade5-unit1-lesson2-test.html",
+    "grade5-unit1-lesson2-vocabulary.html",
+    "grade5-unit1-lesson2-workbook.html",
+    "grade5-unit1-lesson2.html",
+    "grade8-unit1-lesson1-pupil-book.html",
+    "grade8-unit1-lesson1-test.html",
+    "grade8-unit1-lesson1-vocabulary.html",
+    "grade8-unit1-lesson1-workbook.html",
+    "grade8-unit1-lesson1.html",
+    "index.html",
+    "lesson-menu.html",
+    "lesson.html",
+    "lessons.html",
+    "round-tests.html"
+  ],
+  "pageCount": 35,
+  "viewports": [
+    "1366×900",
+    "390×844"
+  ],
+  "decodedImages": 31,
+  "vocabularyPagesWithMarkedArabicMeanings": [
+    "grade3-unit1-lesson1-vocabulary.html",
+    "grade3-unit1-lesson2-vocabulary.html",
+    "grade4-unit1-lesson1-vocabulary.html",
+    "grade5-unit1-lesson1-vocabulary.html",
+    "grade5-unit1-lesson2-vocabulary.html",
+    "grade8-unit1-lesson1-vocabulary.html"
+  ],
+  "checks": [
+    {
+      "name": "Rendered all root pages on desktop",
+      "status": "PASS",
+      "detail": "35 HTML pages loaded at 1366×900; root lang=en, dir=ltr; local Noto Sans Arabic verified on all six Vocabulary pages; no unmarked Arabic or horizontal overflow"
+    },
+    {
+      "name": "Images and source disclosures",
+      "status": "PASS",
+      "detail": "31 rendered images decoded; all images have alt text; all disclosure images were opened during inspection"
+    },
+    {
+      "name": "Rendered all root pages on a mobile viewport",
+      "status": "PASS",
+      "detail": "35 HTML pages loaded at 390×844; mobile navigation stays in normal flow; no page-level horizontal overflow; Arabic remains restricted to marked vocabulary meanings"
+    },
+    {
+      "name": "Legacy assessment scoring and teacher-key gates",
+      "status": "PASS",
+      "detail": "Selected one option in every multiple-choice group across five existing quizzes; each produced scoring feedback and kept teacher answers hidden"
+    },
+    {
+      "name": "Workbook source-image exception",
+      "status": "PASS",
+      "detail": "The English-normalised item-2 display is rendered; the original scan, full activity crop, and original item crop are not rendered."
+    },
+    {
+      "name": "Targeted Grade 8 and Grade 5 content verification",
+      "status": "PASS",
+      "detail": "Grade 8 photo, vocabulary, grammar, and audio notes rendered; Grade 5 “don’t have to” remains unnecessary, not forbidden"
+    },
+    {
+      "name": "Local browser console and HTTP health",
+      "status": "PASS",
+      "detail": "No JavaScript page errors or local HTTP >=400 responses across the audit"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "grade8-students-book-desktop.png",
+    "grade8-students-book-key-words-desktop.png",
+    "grade8-students-book-grammar-desktop.png",
+    "grade8-students-book-listening-desktop.png",
+    "grade8-vocabulary-table-desktop.png",
+    "grade8-vocabulary-grammar-desktop.png",
+    "grade8-vocabulary-present-progressive-desktop.png",
+    "grade8-vocabulary-future-tense-desktop.png",
+    "grade5-pupil-book-desktop.png",
+    "grade3-workbook-display-desktop.png",
+    "grade8-students-book-mobile-390.png"
+  ]
+}

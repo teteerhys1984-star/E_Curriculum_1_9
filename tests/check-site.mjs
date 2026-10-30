@@ -16,12 +16,50 @@ const localUrl = url => url && !/^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i.test(url);
 const fileOfUrl = url => decodeURIComponent(url.split(/[?#]/)[0]);
 const htmlFiles = fs.readdirSync(root).filter(f => f.endsWith('.html')).sort();
 const newPages = ['menu', 'pupil-book', 'workbook', 'vocabulary', 'test'].map(section => base + (section === 'menu' ? '' : '-' + section) + '.html');
+const arabicPattern = /[\u0600-\u06ff\u0750-\u077f\u08a0-\u08ff\ufb50-\ufdff\ufe70-\ufeff]/;
+const isVocabularyPage = file => /-vocabulary\.html$/i.test(file);
+function checkEnglishMarkup(file, html) {
+  const rootTag = html.match(/<html\b[^>]*>/i)?.[0] || '';
+  const rootAttrs = attrs(rootTag);
+  assert.equal(rootAttrs.lang, 'en', `${file}: root language must be English`);
+  assert.equal(rootAttrs.dir, 'ltr', `${file}: root direction must be LTR`);
+  if (!isVocabularyPage(file)) {
+    assert.ok(!arabicPattern.test(html), `${file}: Arabic is not allowed outside vocabulary meanings`);
+    return;
+  }
+  // Inline script data may contain Arabic word meanings for vocabulary recall, but
+  // visible text and attributes may contain it only in explicitly marked RTL spans.
+  const visible = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, '');
+  const tokens = visible.match(/<!--[\s\S]*?-->|<[^>]+>|[^<]+/g) || [];
+  const stack = [];
+  const voidTags = new Set(['area','base','br','col','embed','hr','img','input','link','meta','param','source','track','wbr']);
+  for (const token of tokens) {
+    if (token.startsWith('<!--')) continue;
+    if (token.startsWith('</')) {
+      const name = token.match(/^<\/([\w:-]+)/)?.[1]?.toLowerCase();
+      for (let i = stack.length - 1; i >= 0; i--) if (stack[i].name === name) { stack.length = i; break; }
+      continue;
+    }
+    if (token.startsWith('<')) {
+      const name = token.match(/^<([\w:-]+)/)?.[1]?.toLowerCase();
+      if (!name) continue;
+      const tagAttrs = attrs(token);
+      for (const [key, value] of Object.entries(tagAttrs)) assert.ok(!arabicPattern.test(value), `${file}: Arabic in ${name}[${key}]`);
+      if (!voidTags.has(name) && !token.endsWith('/>')) stack.push({ name, attrs: tagAttrs });
+      continue;
+    }
+    if (!arabicPattern.test(token)) continue;
+    const allowed = stack.some(({ attrs: a }) => a.class?.split(/\s+/).includes('ar') && a.lang === 'ar' && a.dir === 'rtl');
+    assert.ok(allowed, `${file}: unmarked Arabic text: ${token.trim()}`);
+  }
+}
 
 // All repository HTML, not just new files: relative links and assets must exist.
 let localLinks = 0;
 let assetReferences = 0;
 for (const file of htmlFiles) {
   const html = read(file);
+  checkEnglishMarkup(file, html);
   // Existing menu pages build links in inline JavaScript. Inspect actual HTML tags,
   // not template strings; the browser suite clicks the dynamically rendered links.
   const markup = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, match => /\bsrc\s*=/.test(match) ? match : '');
@@ -45,11 +83,31 @@ for (const file of htmlFiles) {
   }
 }
 pass('All repository HTML local links and assets resolve', `${htmlFiles.length} HTML files; ${localLinks} references`);
+pass('English-only content and language direction', 'Every HTML root is lang=en and dir=ltr; Arabic appears only as explicitly marked RTL word meanings on Vocabulary pages.');
+const textExtensions = new Set(['.html','.css','.js','.mjs','.json','.md','.yml','.yaml','.txt','.py','.sh','.svg']);
+const excludedDirectories = new Set(['.git','node_modules','test-results','build','dist','coverage','.cache']);
+let auditedTextFiles = 0;
+function scanTextFiles(directory) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    if (entry.isDirectory()) {
+      if (!excludedDirectories.has(entry.name)) scanTextFiles(path.join(directory, entry.name));
+      continue;
+    }
+    const file = path.join(directory, entry.name);
+    const extension = path.extname(entry.name).toLowerCase();
+    if (!textExtensions.has(extension) || (extension === '.html' && isVocabularyPage(entry.name))) continue;
+    const contents = fs.readFileSync(file, 'utf8');
+    assert.ok(!arabicPattern.test(contents), `${path.relative(root, file)}: Arabic text is not allowed in code, tests, documentation, or non-Vocabulary pages`);
+    auditedTextFiles++;
+  }
+}
+scanTextFiles(root);
+pass('Documentation, tests, and other repository text are English', `${auditedTextFiles} non-Vocabulary text files scanned; no Arabic script found`);
 
 for (const file of newPages) {
   assert.ok(exists(file), `Missing ${file}`);
   const html = read(file);
-  assert.match(html, /<html lang="ar" dir="rtl">/, `${file}: Arabic RTL root`);
+  assert.match(html, /<html lang="en" dir="ltr">/, `${file}: English LTR root`);
   assert.match(html, /<main class="wrap">/, `${file}: shared content wrapper`);
   assert.ok(html.includes('href="lessons.html?grade=3"'), `${file}: Grade 3 return link`);
   assert.ok(html.includes(`href="${base}.html"`), `${file}: lesson home link`);
@@ -96,8 +154,8 @@ for (const item of manifest) {
   assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), item.sha256, `Original changed: ${item.file}`);
 }
 const crops = fs.readdirSync(path.join(root, 'assets/grade3-unit1-lesson2/crops')).filter(f => f.endsWith('.png'));
-assert.equal(crops.length, 27);
-pass('Original source images preserved byte-for-byte', '6 SHA-256 matches; 27 derivative illustration crops');
+assert.equal(crops.length, 28);
+pass('Original source images preserved byte-for-byte', '6 SHA-256 matches; 27 original source crops plus one clearly named English-normalised display derivative');
 
 const test = read(`${base}-test.html`);
 const expectedQuiz = JSON.parse(read('tests/grade3-unit1-lesson2.quiz.json'));
@@ -127,21 +185,43 @@ assert.ok(!test.includes('<audio'));
 pass('Test structure', '20 questions, 60 options, 15 direct readings and 5 explicitly marked inferences; teacher key initially hidden');
 pass('Exact quiz prompts, choices, references and answer indices', 'All 20 questions match the stored source-review fixture');
 
-const docsDir = path.join(root, 'docs', base);
+function collectFiles(directory, extension, files = []) {
+  for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+    if (entry.isDirectory()) {
+      if (!excludedDirectories.has(entry.name)) collectFiles(path.join(directory, entry.name), extension, files);
+    } else if (path.extname(entry.name).toLowerCase() === extension) files.push(path.join(directory, entry.name));
+  }
+  return files;
+}
 let docLinks = 0;
-for (const file of fs.readdirSync(docsDir).filter(f => f.endsWith('.md'))) {
-  const markdown = fs.readFileSync(path.join(docsDir, file), 'utf8');
+for (const file of collectFiles(root, '.md')) {
+  const markdown = fs.readFileSync(file, 'utf8');
   for (const match of markdown.matchAll(/\[[^\]]*\]\(([^)]+)\)/g)) {
     const url = match[1];
     if (/^(?:https?:|#)/.test(url)) continue;
-    assert.ok(fs.existsSync(path.resolve(docsDir, fileOfUrl(url))), `${file}: broken documentation link ${url}`);
+    const resolved = path.resolve(path.dirname(file), fileOfUrl(url));
+    assert.ok(resolved.startsWith(root + path.sep), `${path.relative(root, file)}: documentation link leaves project: ${url}`);
+    assert.ok(fs.existsSync(resolved), `${path.relative(root, file)}: broken documentation link ${url}`);
     docLinks++;
   }
 }
-for (const match of read(`${base}.css`).matchAll(/url\(['"]?([^'")]+)['"]?\)/g)) {
-  assert.ok(exists(match[1]), `Missing CSS asset: ${match[1]}`);
+let cssReferences = 0;
+function checkCssAssets(css, owner) {
+  for (const match of css.matchAll(/url\(['"]?([^'")]+)['"]?\)/g)) {
+    const url = match[1].trim();
+    if (!localUrl(url)) continue;
+    const resolved = path.resolve(path.dirname(owner), fileOfUrl(url));
+    assert.ok(resolved.startsWith(root + path.sep), `${path.relative(root, owner)}: CSS asset leaves project: ${url}`);
+    assert.ok(fs.existsSync(resolved), `${path.relative(root, owner)}: missing CSS asset: ${url}`);
+    cssReferences++;
+  }
 }
-pass('Documentation links and local font assets', `${docLinks} Markdown links; every CSS font URL exists`);
+for (const file of collectFiles(root, '.css')) checkCssAssets(fs.readFileSync(file, 'utf8'), file);
+for (const file of htmlFiles) {
+  const html = read(file);
+  for (const match of html.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style>/gi)) checkCssAssets(match[1], path.join(root, file));
+}
+pass('Documentation links and local font assets', `${docLinks} Markdown links; ${cssReferences} local CSS assets resolve`);
 
 const result = { suite: 'static-site-and-source-integrity', date: new Date().toISOString(), status: 'PASS', checks };
 console.log(JSON.stringify(result, null, 2));
