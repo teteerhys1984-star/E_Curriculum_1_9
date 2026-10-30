@@ -212,7 +212,7 @@ try {
   assert.match(await page.locator('#wb-4 h2').textContent(), /Listen and match\. \(Adam’s family – Tom’s family\)/);
   assert.equal(await page.locator('#wb-4 .notice').count(), 1);
   await clickStep(4);
-  assert.equal(await page.locator('#wb-5 .writing-lines input').count(), 4);
+  assert.equal(await page.locator('#wb-5 .writing-lines input').count(), 5, 'one field per printed dotted line');
   await page.locator('#wb5-1').fill('The mother has got long hair.');
   await clickStep(6);
   assert.equal(await page.locator('#wb-ex7 input[type="radio"]').count(), 15);
@@ -221,6 +221,8 @@ try {
   await page.locator('#wb-7 button.reveal').click();
   await clickStep(7);
   assert.equal(await page.locator('#wb-8 input').count(), 10);
+  assert.equal(await page.locator('#wb-ex8 .activity input').count(), 8, 'eight in-sentence blanks');
+  assert.equal(await page.locator('#wb-8 .writing-lines input').count(), 2, 'two unlabelled printed lines');
   await clickStep(4);
   assert.equal(await page.locator('#wb5-1').inputValue(), 'The mother has got long hair.');
   await clickStep(0);

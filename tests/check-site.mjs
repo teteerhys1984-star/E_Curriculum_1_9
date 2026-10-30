@@ -236,6 +236,23 @@ assert.ok(!g4Pb.includes('wb5-'), 'Pupil’s Book must not contain Workbook cont
 assert.ok(!g4Wb.includes('pb7a'), 'Workbook must not contain Pupil’s Book controls');
 pass('Grade 4 Lesson 2 source coverage', 'Pupil’s Book activities 1–10 and Let’s Learn; Workbook exercises 1–8; listening items retained and marked');
 
+// Counts that mirror the printed pages exactly.
+assert.equal((g4Wb.match(/id="wb5-\d"/g) || []).length, 5, 'Workbook exercise 5 must have one field per printed dotted line (five)');
+assert.equal((g4Wb.match(/class="tree"[\s\S]*?<\/table>/)[0].match(/<input/g) || []).length, 6, 'Workbook exercise 1 table keeps six printed dotted lines');
+assert.equal((g4Pb.match(/name="wb3-/g) || []).length, 0, 'listening controls belong to the Workbook only');
+assert.equal(new Set(g4Wb.match(/name="wb3-\d"/g)).size, 4, 'Workbook exercise 3 keeps four listening items');
+assert.equal(new Set(g4Pb.match(/name="pb7a\d"/g)).size, 2, 'Pupil’s Book 7a keeps items 2 and 3 answerable; item 1 is printed as a tick');
+assert.equal(new Set(g4Pb.match(/name="pb7b\d"/g)).size, 3, 'Pupil’s Book 7b keeps three choices');
+assert.equal((g4Pb.match(/id="pb8-\d"/g) || []).length, 3, 'Pupil’s Book exercise 8 keeps three blanks');
+assert.equal((g4Pb.match(/id="pb9-[bcd]"/g) || []).length, 3, 'Pupil’s Book exercise 9 keeps b, c and d; a is printed answered');
+assert.equal((g4Pb.match(/id="pb10-(mother|sister|brother)"/g) || []).length, 3, 'Pupil’s Book exercise 10 keeps three lines');
+assert.equal(new Set(g4Wb.match(/id="wb8-[a-z0-9]+"/g)).size, 10, 'Workbook exercise 8 keeps eight in-sentence blanks plus two unlabelled lines');
+pass('Grade 4 Lesson 2 blank and option counts', 'PB 7a ×2, 7b ×3, ex8 ×3, ex9 ×3, ex10 ×3; WB tree ×6, ex3 ×4, ex5 ×5, ex8 ×10');
+
+const g4Crops = fs.readdirSync(path.join(root, `assets/${g4}/crops`)).filter(f => f.endsWith('.png')).sort();
+assert.equal(g4Crops.length, 7, 'Expected seven original source crops and no generated imagery');
+pass('Grade 4 Lesson 2 crops', g4Crops.join(', '));
+
 const g4Manifest = JSON.parse(read(`assets/${g4}/source-manifest.json`));
 assert.equal(g4Manifest.length, 6);
 for (const item of g4Manifest) {

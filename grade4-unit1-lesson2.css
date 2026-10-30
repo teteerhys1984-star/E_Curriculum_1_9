@@ -47,6 +47,9 @@ button{border:0;border-radius:10px;padding:10px 16px;background:var(--accent);co
 .tree-blank{color:var(--muted);letter-spacing:1px}
 .writing-lines{display:grid;gap:10px;margin:14px 0}
 .writing-lines input{width:100%}
+.fill-lines p{margin:10px 0;line-height:2.6}
+.blank-inline{width:150px;max-width:100%;min-height:42px}
+@media(max-width:540px){.blank-inline{width:120px}}
 .option-row{display:grid;gap:8px;margin:10px 0}
 .option-row .options{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
 .given-answer{display:inline-block;margin-inline-start:8px;padding:2px 10px;border-radius:99px;background:#e6fbf5;border:1px solid #a9e5d7;color:#20594d;font-size:12px;font-weight:700;vertical-align:middle}

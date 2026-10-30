@@ -43,6 +43,16 @@ The Grade 4 lesson list in `lessons.html` now shows `Lesson 2 · My Family` besi
 - `node tests/grade3-unit1-lesson2.browser.mjs` — all checks still pass.
 - `node tests/english-curriculum.browser.mjs` — 40 root pages at 1366×900 and 390×844, images, language audit and the legacy quiz gates still pass; the new test page was added to its assessment loop.
 
+## Corrections made during the independent audit
+
+A strict re-read of the six images against the rendered pages found five defects, all fixed on this branch:
+
+1. **Workbook exercise 5** prints **five** dotted lines under the example; the page had four fields. A fifth field was added and the printed count is now asserted by both suites.
+2. **Workbook exercise 8** had been flattened into a stack of labelled boxes. It now keeps each printed sentence intact with one field per dotted gap, and the two unlabelled end lines are labelled as unlabelled.
+3. **Crop defects.** Four crops were mis-framed: PB activity 1 clipped the heads of the standing parents; PB activity 3 included a clipped copy of the printed bullets; PB activity 5 included the clipped heading "6 Before you read"; WB exercise 1 started inside the reading passage and cut the "John's Family" panel. All four were re-cropped from the unchanged source scans.
+4. **Vocabulary examples.** In three entries the example used textbook wording that the page had completed, for example "We usually read stories together" presented as the example for "write". Those examples now quote the printed frames with their dotted gaps.
+5. **Alt text.** The Workbook exercise 5 illustration was described as "the family"; it is described now by the four people actually drawn.
+
 ## Not verified
 
 - **Audio activities.** Pupil’s Book 1 and 2 and Workbook 3 and 4 need the official recordings, which were not supplied. Their instructions and items are preserved, no answer is given, and they are not scored. No listening behaviour could be tested.

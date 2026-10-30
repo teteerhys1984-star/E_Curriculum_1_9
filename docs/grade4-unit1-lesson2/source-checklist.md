@@ -43,10 +43,10 @@
 | 8 | 2 — `Read and match.` | Four sentences (1–4) and four endings (a–d) | All eight items kept with four selects |
 | 9 | 3 — `Listen and tick ✓ or cross ×.` | Four statements: Hani’s age, Maha, father’s workplace, Maha’s hair | All four kept; no answer assumed |
 | 9 | 4 — `Listen and match. (Adam’s family – Tom’s family)` | Two pictures with a blank label under each | Both pictures and both blanks kept; original crop shown |
-| 9 | 5 — `Describe this family.` | Example `The father has got short hair.` plus four dotted lines and a family drawing | Preserved with four writing lines and the original crop |
+| 9 | 5 — `Describe this family.` | Example `The father has got short hair.` plus five dotted lines and a family drawing | Preserved with five writing fields and the original crop |
 | 9 | 6 — `Ask and answer.` | A / B frame with the question printed | Preserved |
 | 10 | 7 — `Choose the right word.` | Five dialogues with options a/b/c | All five with all fifteen options |
-| 10 | 8 — `Complete about your family.` | Name, age, town, sisters, brothers, father’s job, `He’s got … and …`, plus two dotted lines | Preserved as personal writing |
+| 10 | 8 — `Complete about your family.` | Eight dotted gaps inside the printed sentences (name, age, town, sisters, brothers, job, `He’s got … and …`) plus two unlabelled dotted lines | Preserved in place as personal writing |
 
 ## Listening activities
 
@@ -61,8 +61,8 @@ Only two answers are printed in the six images: the tick in Pupil’s Book 7a it
 1. **Pupil’s Book activity 3, third bullet** is printed as `His ………………` with a dotted line. The book does not print the completed sentence and the picture alone does not fix which sentence the learner should write, so the page asks the learner to complete it and supplies no answer.
 2. **Pupil’s Book activity 5** can be read more than one way: the top-right girl clearly fits “Long blond hair”, and the top-left boy clearly fits “Short black hair”, but the top-left boy also has brown eyes and the bottom-left woman has brown hair and brown eyes. The exercise is therefore kept as a classroom task, is not scored, and the ambiguity is stated on the page.
 3. **Workbook exercise 1** mixes two things in one branch of the table: the left-hand box in the second row reads `His …………` above the name `Mary` (a relationship word, answered by the text “My mum Mary”), while the right-hand box reads `His father` above a dotted line (a name, answered by “My dad, James”). The transcription notes each blank type separately and does not merge the two.
-4. **Workbook exercise 8** ends with two dotted lines that have no printed words beside them. They are reproduced as two unlabelled writing fields with an explanatory note, not as invented prompts.
-5. **Workbook exercise 5** is a free description of a drawing. No answer is supplied, because several true sentences are possible.
+4. **Workbook exercise 8** ends with two dotted lines that have no printed words beside them. They are reproduced as two unlabelled writing fields with an explanatory note, not as invented prompts. The eight in-sentence gaps keep the printed sentences around them.
+5. **Workbook exercise 5** is a free description of a drawing with five dotted lines. No answer is supplied, because several true sentences are possible.
 6. **Workbook exercises 3 and 4** cannot be completed without the recording, so their answers are explicitly left absent.
 
 All other wording in the six images was readable at full size and is transcribed without change.
