@@ -64,13 +64,13 @@ Both questions were settled by putting the supplied scan beside a screenshot of 
 Two defects of our own were found in the same comparison and are fixed:
 
 - The book prints “My father is an/a … He’s got … and … .” as **one** line. The page had split it into two paragraphs, which changed the printed sentence structure. It is now one paragraph holding the three gaps.
-- The two end fields carried the visible wording “Unlabelled writing line 1 printed in the book”, which is text the book does not print. They now use the same “Writing line” label as Workbook exercise 5, with the fact that the book prints no words recorded in the source note instead of in a control label.
+- The two end fields carried the visible wording “Unlabelled writing line 1 printed in the book”, which is text the book does not print. The two fields are now shown exactly as printed — two full-width blanks with no visible label — and carry only a `sr-only` label for assistive technology. The explanation of what they stand for lives in the page's source note and here, not in learner-facing text.
 
 ### Pupil’s Book exercise 5 — is the duplication printed?
 
 **No, it is introduced by the page.** The book prints each of the four descriptions exactly once, on a coloured strip between the faces: Long blond hair, Short black hair, brown eyes, green eyes. The page uses the scanned picture, which already contains those strips, and then repeats the same four words as the label of each matching menu, so on screen each description appears twice.
 
-No wording was invented and the four labels are in the printed top-to-bottom order, so this is a presentation artefact rather than a transcription error. It is now disclosed in the figure caption: the book prints each description once, and the rows below repeat the words so each can be matched from a menu. The menu width was also corrected, because “Choose a picture” was being clipped to “Choose a pictu”.
+No wording was invented and the order matched the printed strips, so this was a presentation artefact rather than a transcription error. The duplication has now been removed: the scanned strips stay exactly as printed and remain the only visible copies of the four descriptions. The four matching rows show only their number (1–4, the same order as the strips) with a one-line instruction above them, and each menu keeps its description as a `sr-only` accessible name so screen-reader users still hear which description they are matching. The menu width was also corrected, because “Choose a picture” was being clipped to “Choose a pictu”.
 
 ## Not verified
 

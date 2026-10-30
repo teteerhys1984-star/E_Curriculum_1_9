@@ -247,6 +247,18 @@ assert.equal((g4Pb.match(/id="pb8-\d"/g) || []).length, 3, 'Pupil’s Book exerc
 assert.equal((g4Pb.match(/id="pb9-[bcd]"/g) || []).length, 3, 'Pupil’s Book exercise 9 keeps b, c and d; a is printed answered');
 assert.equal((g4Pb.match(/id="pb10-(mother|sister|brother)"/g) || []).length, 3, 'Pupil’s Book exercise 10 keeps three lines');
 assert.equal(new Set(g4Wb.match(/id="wb8-[a-z0-9]+"/g)).size, 10, 'Workbook exercise 8 keeps eight in-sentence blanks plus two unlabelled lines');
+// The two end lines print no words, so their labels must stay out of sight: any visible
+// wording here would be text the book does not print.
+assert.match(g4Wb, /<label class="sr-only" for="wb8-line1">/, 'Workbook exercise 8 end line 1 needs a hidden label');
+assert.match(g4Wb, /<label class="sr-only" for="wb8-line2">/, 'Workbook exercise 8 end line 2 needs a hidden label');
+assert.doesNotMatch(g4Wb, /<label(?![^>]*class="sr-only")[^>]*for="wb8-line[12]"/, 'Workbook exercise 8 end lines must not show a visible label');
+// Pupil’s Book 5: the four descriptions are printed on the strips in the picture, so the
+// menus carry them as accessible names only and the visible rows are just the numbers.
+for (const n of [1, 2, 3, 4]) {
+  assert.match(g4Pb, new RegExp(`<label class="sr-only" for="pb5-${n}">`), `Pupil’s Book 5 item ${n} needs a hidden description label`);
+  assert.doesNotMatch(g4Pb, new RegExp(`<label(?![^>]*class="sr-only")[^>]*for="pb5-${n}"`), `Pupil’s Book 5 item ${n} must not repeat its printed description visibly`);
+  assert.match(g4Pb, new RegExp(`<span class="match-num" aria-hidden="true">${n}</span>`), `Pupil’s Book 5 item ${n} needs its visible number`);
+}
 assert.equal((g4Wb.match(/<form\b/g) || []).length, (g4Wb.match(/<\/form>/g) || []).length, 'Workbook forms must all be closed');
 assert.equal((g4Pb.match(/<form\b/g) || []).length, (g4Pb.match(/<\/form>/g) || []).length, 'Pupil’s Book forms must all be closed');
 assert.equal((read(`${g4}-test.html`).match(/<form\b/g) || []).length, (read(`${g4}-test.html`).match(/<\/form>/g) || []).length, 'Test form must be closed');

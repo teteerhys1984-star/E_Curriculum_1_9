@@ -176,7 +176,24 @@ try {
   await clickStep(1);
   assert.deepEqual(await page.locator('#pb-2 .label-chips li').allTextContents(), ['brown hair', 'blond hair', 'black hair', 'brown eyes', 'green eyes', 'blue eyes']);
   await clickStep(5);
-  assert.deepEqual(await page.locator('#pb-5 .match-item label').allTextContents(), ['Long blond hair', 'Short black hair', 'brown eyes', 'green eyes']);
+  // The printed strips carry the only visible copies of the four descriptions; the menus
+  // keep them as accessible names, so screen readers still hear them without the page
+  // repeating them as visible text.
+  assert.deepEqual(await page.locator('#pb-5 .match-item select').evaluateAll(selects => selects.map(select => select.labels[0] && select.labels[0].textContent.trim())), ['Description 1, Long blond hair: choose the picture it describes', 'Description 2, Short black hair: choose the picture it describes', 'Description 3, brown eyes: choose the picture it describes', 'Description 4, green eyes: choose the picture it describes']);
+  assert.deepEqual(await page.locator('#pb-5 .match-item label').evaluateAll(labels => labels.map(label => getComputedStyle(label).position)), ['absolute', 'absolute', 'absolute', 'absolute']);
+  assert.deepEqual(await page.locator('#pb-5 .match-item').evaluateAll(rows => rows.map(row => {
+    const clone = row.cloneNode(true);
+    clone.querySelectorAll('.sr-only, select').forEach(node => node.remove());
+    return clone.textContent.replace(/\s+/g, ' ').trim();
+  })), ['1', '2', '3', '4']);
+  // The strips in the scanned picture must stay the only visible copies of the descriptions
+  // inside the matching block; the note below may of course discuss eyes and hair in prose.
+  assert.deepEqual(await page.evaluate(() => {
+    const clone = document.querySelector('#pb-5 .match-list').cloneNode(true);
+    clone.querySelectorAll('.sr-only').forEach(node => node.remove());
+    const text = (clone.textContent || '').replace(/\s+/g, ' ');
+    return ['Long blond hair', 'Short black hair', 'brown eyes', 'green eyes'].filter(word => text.includes(word));
+  }), []);
   await clickStep(6);
   assert.deepEqual(await normalizedText('#pb-7 .source-quote p'), ['Hi, I am Sanaa from Lattakia. I\'m thirty-five years old. I\'ve got two children, a son and a daughter. My son Dani is ten years old. He\'s got brown hair and green eyes. My daughter Tina is eight years old. She\'s got blond hair and big blue eyes. We usually read stories together. We are a happy family.']);
   assert.match(await page.locator('#pb-7 .given-answer').first().textContent(), /printed in the source/);
