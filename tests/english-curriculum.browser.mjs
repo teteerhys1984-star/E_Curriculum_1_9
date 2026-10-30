@@ -139,7 +139,7 @@ try {
     const result = await renderAt(file, { width: 1366, height: 900 }, true);
     desktopArabicNodes.set(file, result.markedArabicTextNodes);
   }
-  pass('Rendered all root pages on desktop', `${htmlFiles.length} HTML pages loaded at 1366×900; root lang=en, dir=ltr; local Noto Sans Arabic verified on all six Vocabulary pages; no unmarked Arabic or horizontal overflow`);
+  pass('Rendered all root pages on desktop', `${htmlFiles.length} HTML pages loaded at 1366×900; root lang=en, dir=ltr; local Noto Sans Arabic verified on all ${htmlFiles.filter(file => file.endsWith('-vocabulary.html')).length} Vocabulary pages; no unmarked Arabic or horizontal overflow`);
   pass('Images and source disclosures', `${imageCount} rendered images decoded; all images have alt text; all disclosure images were opened during inspection`);
 
   for (const file of htmlFiles) {
@@ -195,6 +195,7 @@ try {
   screenshots.push('grade5-pupil-book-desktop.png');
 
   const assessmentCases = [
+    { file: 'grade4-unit1-lesson2-test.html', submit: '#check-answers', result: '#score', hiddenKey: '#answer-guide' },
     { file: 'grade3-unit1-lesson1-test.html', submit: '#check', result: '#result', hiddenKey: '#answer-guide' },
     { file: 'grade4-unit1-lesson1-test.html', submit: 'button[type="submit"]', result: '#score' },
     { file: 'grade5-unit1-lesson1-test.html', submit: '#check', result: '#score', hiddenKey: '#answer-key' },
@@ -226,7 +227,7 @@ try {
     assert.ok((await page.locator(test.result).innerText()).trim().length > 0, `${test.file}: scoring feedback rendered`);
     if (test.hiddenKey) assert.equal(await page.locator(test.hiddenKey).isVisible(), false, `${test.file}: scoring does not unlock teacher answers`);
   }
-  pass('Legacy assessment scoring and teacher-key gates', 'Selected one option in every multiple-choice group across five existing quizzes; each produced scoring feedback and kept teacher answers hidden');
+  pass('Legacy assessment scoring and teacher-key gates', `Selected one option in every multiple-choice group across ${assessmentCases.length} quizzes; each produced scoring feedback and kept teacher answers hidden`);
 
   await page.goto(origin + 'grade3-unit1-lesson2-workbook.html', { waitUntil: 'domcontentloaded' });
   assert.equal(await page.locator('img[src$="workbook-page-6-listen-row-2-english-display.png"]').count(), 1);
