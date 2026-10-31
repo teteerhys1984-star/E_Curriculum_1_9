@@ -22,7 +22,7 @@ Adding a new verified lesson (for example `grade4-unit1-lesson3`) requires zero 
 1. Create the 5 standard HTML files (`<slug>.html`, `-pupil-book.html`, `-workbook.html`, `-vocabulary.html`, `-test.html`) following [`LESSON_PAGE_STANDARD.md`](../../LESSON_PAGE_STANDARD.md).
 2. Include `<link rel="stylesheet" href="design-system.css">` and `<script src="platform-shell.js" defer></script>` in `<head>`.
 3. Mark the lesson hub `<body data-nav-page="menu">` and load `<script src="lesson-content-navigation.js" defer></script>` on the four content subpages.
-4. Register the new lesson metadata once in `PREPARED_LESSONS` inside [`platform-shell.js`](../../platform-shell.js) and in the Grade curriculum list in [`lessons.html`](../../lessons.html). Breadcrumbs, 5-tab section links, status badges, and browser-local Continue Learning support activate automatically.
+4. Register the new lesson metadata once in `LESSONS` inside [`platform-shell.js`](../../platform-shell.js) (`window.EFCPlatform.LESSONS`) and in the Grade curriculum list in [`lessons.html`](../../lessons.html) and [`index.html`](../../index.html). Breadcrumbs, 5-tab section links, status badges, and browser-local Continue Learning support activate automatically.
 
 ---
 
@@ -40,7 +40,7 @@ In accordance with Phase 1 governance and academic integrity rules, the followin
 ## 4. Clean Extension Seams for Future Phases
 
 ### Phase 2 — Curriculum Expansion & Official Audio Pipeline
-- **Lesson Scaling**: Populate remaining Unit 1 lessons across Grades 1–9 using the shared 5-page template; once 5 lessons in a round are verified, unlock the corresponding 20-question Round Test in [`round-tests.html`](../../round-tests.html).
+- **Lesson Scaling**: Populate remaining Unit 1 lessons across Grades 1–9 using the shared 5-page template; once 5 lessons in a round are verified, unlock the corresponding 40-question Round Test in [`round-tests.html`](../../round-tests.html).
 - **Verified Audio Integration**: Replace `.notice` / `.answer.pending` placeholders with a shared `<audio>` component styled in `design-system.css` only when official textbook recordings and verified listening keys are supplied.
 
 ### Phase 3 — Backend API, Real Authentication & Teacher Workflows

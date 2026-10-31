@@ -110,7 +110,8 @@
       }
     };
 
-    const current = sections[section] || sections['pupil-book'];
+    const activeSection = sections[section] ? section : 'pupil-book';
+    const current = sections[activeSection];
     document.body.classList.add(current.bodyClass);
     document.title = `English Full Curriculum | Grade ${grade} Lesson ${lesson} · ${current.title}`;
     document.getElementById('meta').textContent = `Grade ${grade} · Lesson ${lesson} · ${current.title} Preview`;
@@ -132,7 +133,7 @@
       ['test', 'Lesson Test', `lesson.html?grade=${grade}&lesson=${lesson}&section=test`]
     ];
     navEl.innerHTML = tabEntries.map(([key, label, href]) =>
-      `<a class="section-link" href="${href}"${key === section ? ' aria-current="page"' : ''}>${label}</a>`
+      `<a class="section-link" href="${href}"${key === activeSection ? ' aria-current="page"' : ''}>${label}</a>`
     ).join('');
 
     document.querySelectorAll('[data-toggle-answer]').forEach(button => {

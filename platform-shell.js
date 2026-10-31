@@ -224,7 +224,7 @@
     }
     if (ctx.type === 'template-section') {
       const secTitles = {
-        'pupil-book': "Pupil's Book",
+        'pupil-book': ctx.grade >= 7 ? "Student's Book" : "Pupil's Book",
         'workbook': 'Workbook',
         'vocabulary': 'Vocabulary',
         'test': 'Lesson Test'
@@ -323,7 +323,13 @@
       nav.appendChild(a);
     });
 
-    const anchor = main.querySelector(':scope > .hero') || main.querySelector(':scope > h1') || main.querySelector(':scope > .top');
+    let anchor = main.querySelector(':scope > .hero') || main.querySelector(':scope > h1') || main.querySelector(':scope > .top');
+    if (anchor && anchor.tagName === 'H1') {
+      while (anchor.nextElementSibling && anchor.nextElementSibling.tagName === 'P') {
+        anchor = anchor.nextElementSibling;
+        anchor.classList.add('page-lead');
+      }
+    }
     if (anchor) {
       anchor.insertAdjacentElement('afterend', nav);
     } else {
@@ -374,8 +380,13 @@
       const meta = LESSONS[parsed.slug];
       if (!meta) return null;
       const validSuffixes = ['', '-pupil-book', '-workbook', '-vocabulary', '-test'];
-      const expectedFiles = validSuffixes.map(s => `${parsed.slug}${s}.html`);
-      if (!expectedFiles.includes(parsed.href)) return null;
+      const suffixIdx = validSuffixes.findIndex(s => `${parsed.slug}${s}.html` === parsed.href);
+      if (suffixIdx === -1) return null;
+      const suffixKey = validSuffixes[suffixIdx].replace(/^-/, '');
+      const canonicalLabel =
+        suffixKey === '' ? 'Lesson Menu'
+        : suffixKey === 'pupil-book' ? meta.bookLabel
+        : SECTION_META[suffixKey].label;
       return {
         href: parsed.href,
         lessonHref: `${parsed.slug}.html`,
@@ -383,7 +394,7 @@
         unit: meta.unit,
         lesson: meta.lesson,
         lessonTitle: meta.title,
-        sectionLabel: String(parsed.sectionLabel || 'Lesson Menu')
+        sectionLabel: canonicalLabel
       };
     } catch {
       return null;

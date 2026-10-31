@@ -413,7 +413,23 @@ for (const cssFile of collectFiles(root, '.css')) {
   const cssText = fs.readFileSync(cssFile, 'utf8');
   assert.ok(!/fonts\.googleapis\.com|fonts\.gstatic\.com/i.test(cssText), `${path.relative(root, cssFile)}: external web-font import forbidden`);
 }
-pass('Phase 1 shared design system and local-font invariants', `All ${htmlFiles.length} HTML files load design-system.css and platform-shell.js with unique IDs and zero external font imports`);
+const expectedFontFiles = [
+  'assets/fonts/dm-sans-latin-wght-normal.woff2',
+  'assets/fonts/space-grotesk-latin-wght-normal.woff2',
+  'assets/fonts/noto-sans-arabic-arabic-wght-normal.woff2',
+  'assets/fonts/curriculum-symbols.woff2',
+  'assets/fonts/noto-emoji-2-400-normal.woff2',
+  'assets/fonts/noto-emoji-3-400-normal.woff2'
+];
+for (const fontRel of expectedFontFiles) {
+  assert.ok(designCss.includes(`url('${fontRel}')`), `design-system.css missing @font-face url('${fontRel}')`);
+  const fontStat = fs.statSync(path.join(root, fontRel));
+  assert.ok(fontStat.isFile() && fontStat.size > 0, `${fontRel}: font file missing or empty`);
+}
+const designDoc = read('docs/phase1-design-foundation/design-system.md');
+assert.ok(!/Fraunces/i.test(designDoc), 'design-system.md must match implemented Space Grotesk typography');
+assert.ok(designDoc.includes('Space Grotesk') && designDoc.includes('DM Sans') && designDoc.includes('Noto Sans Arabic'), 'design-system.md must document implemented font families');
+pass('Phase 1 shared design system and local-font invariants', `All ${htmlFiles.length} HTML files load design-system.css and platform-shell.js with unique IDs, 6 verified local WOFF2 fonts, and zero external font imports`);
 
 const result = { suite: 'static-site-and-source-integrity', date: new Date().toISOString(), status: 'PASS', checks };
 console.log(JSON.stringify(result, null, 2));

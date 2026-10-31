@@ -272,19 +272,31 @@ try {
   assert.equal(await page.locator('#continue-learning-panel.has-progress').count(), 0);
   assert.equal(await page.evaluate(() => localStorage.getItem('efc_recent_visit_v1')), null);
 
-  // Forged payload must be safely rejected
+  // Forged payload must be safely rejected, and tampered sectionLabel must be canonically normalized
   const forgedResult = await page.evaluate(() => {
     localStorage.setItem('efc_recent_visit_v1', JSON.stringify({ slug: 'grade99-fake', href: 'javascript:alert(1)' }));
     return window.EFCPlatform.readRecentVisit();
   });
   assert.equal(forgedResult, null, 'Forged localStorage visit entry must be rejected');
+
+  const sanitizedLabel = await page.evaluate(() => {
+    localStorage.setItem(
+      'efc_recent_visit_v1',
+      JSON.stringify({ slug: 'grade4-unit1-lesson2', href: 'grade4-unit1-lesson2-workbook.html', sectionLabel: 'Synced Cloud Account' })
+    );
+    return window.EFCPlatform.readRecentVisit()?.sectionLabel;
+  });
+  assert.equal(sanitizedLabel, 'Workbook', 'Tampered sectionLabel must be replaced with canonical section label');
   await page.evaluate(() => localStorage.clear());
+
+  await go('lesson.html?grade=8&lesson=2&section=pupil-book');
+  assert.match(await page.locator('.breadcrumbs').textContent(), /Student's Book/);
   pass(
-    'Honest device-local Continue Learning state',
-    'Default Quick Start verified; real lesson visit persisted locally; Clear button resets state; forged payload rejected'
+    'Honest device-local Continue Learning state & canonical metadata',
+    'Default Quick Start verified; real lesson visit persisted locally; Clear button resets state; forged payload rejected; tampered label normalized'
   );
 
-  // 5. Compact 5-column quiz navigator & answered-question state on both Lesson 2 and Grade 5 Lesson 1 tests
+  // 5. Compact 5-column quiz navigator, stepper placement & answered-question state across radio + written tests
   for (const quizPage of ['grade4-unit1-lesson2-test.html', 'grade5-unit1-lesson1-test.html']) {
     await go(quizPage);
     assert.equal(await page.locator('.content-nav.is-quiz-nav .content-nav-links button').count(), 20);
@@ -292,13 +304,32 @@ try {
     await page.locator('form#quiz .question').first().locator('input[type="radio"]').first().check();
     assert.equal(await page.locator('.content-nav-links button.is-answered').count(), 1);
   }
+  await go('grade3-unit1-lesson1-test.html');
+  const stepperAboveCheck = await page.evaluate(() => {
+    const stepTop = document.querySelector('.lesson-step-footer').getBoundingClientRect().top;
+    const checkTop = document.getElementById('check').getBoundingClientRect().top;
+    return stepTop < checkTop;
+  });
+  assert.equal(stepperAboveCheck, true, 'Question stepper must appear above Check my answers button');
+  await page.locator('.content-nav-links button').nth(15).click();
+  await page.locator('textarea[name="w16"]').fill('She has got brown eyes.');
+  assert.equal(await page.locator('.content-nav-links button').nth(15).evaluate(el => el.classList.contains('is-answered')), true);
   pass(
-    'Compact 20-question test grid and answered-state indicator',
-    'Verified 20 numbered step buttons and live .is-answered highlight on Grade 4 Lesson 2 and Grade 5 Lesson 1 tests'
+    'Compact 20-question test grid, stepper order & answered-state indicator',
+    'Verified 20 numbered buttons, stepper above Check button, and live .is-answered highlight on choice and written questions'
   );
 
-  // 6. Keyboard skip-link, focus-visible ring, WCAG AA contrast & prefers-reduced-motion
+  // 6. Bundled local WOFF2 font decoding, keyboard focus, WCAG AA contrast & prefers-reduced-motion
   await go('index.html');
+  const fontAudit = await page.evaluate(async () => {
+    const faces = Array.from(document.fonts);
+    await Promise.all(faces.map(f => f.load()));
+    return faces.map(f => ({ family: f.family, status: f.status }));
+  });
+  assert.equal(fontAudit.length, 6, 'Expected all 6 @font-face declarations in design-system.css');
+  for (const face of fontAudit) {
+    assert.equal(face.status, 'loaded', `Bundled local font ${face.family} failed to load: ${face.status}`);
+  }
   await page.keyboard.press('Tab');
   const firstFocusedClass = await page.evaluate(() => document.activeElement?.className || '');
   assert.equal(firstFocusedClass, 'skip-link', 'First Tab stop should focus .skip-link');

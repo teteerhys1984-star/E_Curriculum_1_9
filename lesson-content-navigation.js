@@ -9,7 +9,7 @@
   }
 
   const FULL_WIDTH_SELECTOR =
-    '.breadcrumbs, .top, .nav, .lesson-menu-row, .brand, .hero, h1, .section-links, .footer, .foot, footer';
+    '.breadcrumbs, .top, .nav, .lesson-menu-row, .brand, .hero, h1, .page-lead, .section-links, .notice, .note, a.back:last-child, .footer, .foot, footer';
 
   if (!document.getElementById('lesson-content-navigation-styles')) {
     const style = document.createElement('style');
@@ -196,8 +196,12 @@
         }
         main.insertBefore(nav, insertionTarget);
       }
-      quiz.insertAdjacentElement('afterend', footer);
+      questions[questions.length - 1].insertAdjacentElement('afterend', footer);
       nav.querySelector('.content-nav-title').textContent = 'Test questions · 1 to ' + questions.length;
+      const hintEl = nav.querySelector('.content-nav-hint');
+      if (hintEl) {
+        hintEl.textContent = 'Select any question number, or use Previous and Next. Answered items highlight automatically.';
+      }
       links.replaceChildren();
 
       let current = 0;
@@ -211,9 +215,16 @@
         return b;
       });
 
+      function isQuestionAnswered(q) {
+        if (q.querySelector('input:checked')) return true;
+        return Array.from(
+          q.querySelectorAll('textarea, input:not([type="radio"]):not([type="checkbox"]):not([type="hidden"]), select')
+        ).some(el => String(el.value || '').trim().length > 0);
+      }
+
       function syncAnswered() {
         questions.forEach((q, idx) => {
-          qButtons[idx].classList.toggle('is-answered', Boolean(q.querySelector('input:checked')));
+          qButtons[idx].classList.toggle('is-answered', isQuestionAnswered(q));
         });
       }
 
@@ -232,6 +243,7 @@
       }
 
       quiz.addEventListener('change', syncAnswered);
+      quiz.addEventListener('input', syncAnswered);
       quiz.addEventListener('reset', () => window.setTimeout(syncAnswered, 0));
       syncAnswered();
 
