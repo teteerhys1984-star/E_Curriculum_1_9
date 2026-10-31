@@ -5,7 +5,7 @@
   "description": "Static English curriculum with source-checked lesson tests",
   "scripts": {
     "test": "node tests/check-site.mjs && node --check platform-shell.js && node --check grade3-unit1-lesson2.js && node --check grade4-unit1-lesson2.js && node --check lesson-content-navigation.js",
-    "test:browser": "node tests/grade4-unit1-lesson2.browser.mjs && node tests/grade3-unit1-lesson2.browser.mjs && node tests/english-curriculum.browser.mjs && node tests/phase1-design-foundation.browser.mjs",
+    "test:browser": "node tests/grade4-unit1-lesson2.browser.mjs && node tests/grade3-unit1-lesson2.browser.mjs && node tests/english-curriculum.browser.mjs && node tests/phase1-design-foundation.browser.mjs && node tests/phase2-a-navigation.browser.mjs",
     "serve": "python3 -m http.server 8000 --bind 0.0.0.0"
   },
   "engines": {
