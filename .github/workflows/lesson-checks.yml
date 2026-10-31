@@ -5,8 +5,7 @@ on:
     paths:
       - '*.html'
       - '*.js'
-      - 'grade3-unit1-lesson2.css'
-      - 'grade4-unit1-lesson2.css'
+      - '*.css'
       - 'assets/**'
       - 'tests/**'
       - 'docs/**'

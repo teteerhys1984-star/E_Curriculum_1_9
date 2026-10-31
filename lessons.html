@@ -1,15 +1,149 @@
 <!doctype html>
-<html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101827"><meta name="description" content="Browse lessons for English curriculum Grades 1–9."><title>Choose a Lesson | English Full Curriculum</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-:root{color-scheme:dark;--bg:#0c0b1b;--panel:#17152d;--line:#39345b;--text:#fbf9ff;--muted:#c0bdd9;--mint:#73f5d0;--blue:#9caeff;--pink:#ff8fcf;--orange:#ffc17e}*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--text);font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 10% 0%,#5d2b8940,transparent 34%),radial-gradient(ellipse at 95% 20%,#145c8040,transparent 30%),var(--bg)}a{color:inherit}.wrap{max-width:1050px;margin:auto;padding:24px 20px 44px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.brand{font:700 13px 'Space Grotesk';letter-spacing:2px;color:var(--mint)}.back{border:1px solid #514777;border-radius:99px;padding:10px 14px;text-decoration:none;color:#ded8f6;font-size:13px}.hero{padding:46px 0 26px}.eyebrow{color:var(--mint);font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}.hero h1{font:700 clamp(36px,6vw,62px)/1.05 'Space Grotesk';letter-spacing:-2px;margin:12px 0;background:linear-gradient(100deg,#fff,#c7d0ff 52%,#ffb8df);color:transparent;background-clip:text}.hero p{color:var(--muted);line-height:1.8;max-width:700px}.meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.pill{font-size:12px;color:#e7e1ff;border:1px solid #454066;background:#ffffff08;padding:8px 12px;border-radius:99px}.section-title{font:700 24px 'Space Grotesk';margin:22px 0 14px}.lesson-list{display:grid;gap:12px}.lesson{display:flex;align-items:center;justify-content:space-between;gap:14px;text-decoration:none;background:linear-gradient(145deg,#211d3d,#141329);border:1px solid var(--line);border-radius:18px;padding:20px;transition:transform .18s,border-color .18s;min-height:94px}.lesson:hover,.lesson:focus-visible{transform:translateY(-2px);border-color:var(--mint);outline:2px solid #73f5d055;outline-offset:2px}.lesson strong{font:700 18px 'Space Grotesk';display:block;margin-bottom:6px}.lesson small{color:var(--muted);font-size:13px;line-height:1.6}.arrow{color:var(--mint);font-size:20px;flex-shrink:0}.note{margin-top:20px;padding:16px 18px;border:1px solid #454066;background:#ffffff06;border-radius:14px;color:var(--muted);font-size:13px;line-height:1.8}.foot{margin-top:30px;padding-top:20px;border-top:1px solid #343052;color:#9995b8;font-size:12px}@media(max-width:600px){.wrap{padding:18px 14px 32px}.hero{padding-top:34px}.lesson{padding:16px}.lesson strong{font-size:16px}}
-</style><style id="sitewide-engineer-contact">.engineer-contact-banner{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;width:100%;padding:12px 16px;margin:0;background:linear-gradient(110deg,#17152d 0%,#34306a 48%,#8b367c 100%);color:#fff;border-bottom:2px solid #f4c96b;box-shadow:0 5px 18px #14102d30;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;text-align:center;line-height:1.45}.engineer-contact-banner .engineer-contact-label{font-size:14px;font-weight:800;letter-spacing:.2px}.engineer-contact-banner a{display:inline-flex;align-items:center;gap:7px;padding:6px 12px;border:1px solid #ffffff80;border-radius:999px;background:#ffffff17;color:#fff!important;text-decoration:none!important;font-size:14px;font-weight:800;white-space:nowrap}.engineer-contact-banner a:hover{background:#ffffff2b;transform:translateY(-1px)}.engineer-contact-banner .engineer-contact-icon{font-size:17px}@media(max-width:480px){.engineer-contact-banner{gap:7px;padding:10px 8px}.engineer-contact-banner .engineer-contact-label,.engineer-contact-banner a{font-size:12px}}</style>
-</head><body>
-<div class="engineer-contact-banner" role="complementary" aria-label="Contact information"><span class="engineer-contact-icon" aria-hidden="true">✦</span><span class="engineer-contact-label">Engineer Somer Shaheen:</span><a href="tel:0930215022" aria-label="Call Engineer Somer Shaheen at 0930215022">0930215022</a></div><main class="wrap"><header class="top"><div class="brand">✦ ENGLISH FULL CURRICULUM</div><a class="back" href="index.html">← All Grades</a></header>
-<section class="hero"><div class="eyebrow">YOUR LEARNING SPACE</div><h1 id="grade-title">Choose your lesson.</h1><p id="grade-description">Choose a lesson first. Its learning sections open only after you select it.</p><div class="meta"><span class="pill" id="book-type">Grades 1–9</span><span class="pill">Learn · Practise · Test</span><span class="pill">Lesson-first navigation</span></div></section>
-<section><h2 class="section-title">Lessons</h2><div class="lesson-list" id="lesson-list"></div></section>
-<section style="margin-top:24px"><h2 class="section-title">Round Tests</h2><a class="lesson" id="round-tests-link" href="round-tests.html"><span><strong>Round Tests · 40 Questions Each</strong><small>Comprehensive review after every five prepared lessons, covering vocabulary, grammar, reading and language use.</small></span><span class="arrow">↗</span></a></section>
-<div class="note"><strong>Content accuracy:</strong> Lesson titles and materials are published when verified source pages are available. Unprepared lessons use a clearly labelled learning template rather than invented textbook content.</div><footer class="foot">ENGLISH FULL CURRICULUM · Learn · Practise · Test Yourself</footer></main>
-<script>
-(function(){const p=new URLSearchParams(location.search);const n=Number(p.get('grade'));const grade=Number.isInteger(n)&&n>=1&&n<=9?n:null;const title=document.getElementById('grade-title'),desc=document.getElementById('grade-description'),type=document.getElementById('book-type'),list=document.getElementById('lesson-list');if(!grade){title.textContent='Choose your learning path.';desc.textContent='Please choose one of the nine grades from the home page.';type.textContent='Grade not selected';list.innerHTML='<a class="lesson" href="index.html"><span><strong>Choose a grade</strong><small>Return to the grade selection page.</small></span><span class="arrow">↗</span></a>';return;}document.title='Grade '+grade+' Lessons | English Full Curriculum';document.getElementById('round-tests-link').href='round-tests.html?grade='+grade;title.textContent='Grade '+grade+' · Choose a lesson';desc.textContent='Start by choosing a lesson. Only then will its book, workbook, vocabulary and test sections appear.';type.textContent=grade<=6?'Pupil’s Book + Workbook':'Student’s Book + Workbook';const known=grade===3||grade===4||grade===5||grade===8;const lessonName=grade===3?'Lesson 1 · Back to School':grade===4?'Lesson 1 · Nice to Meet You':grade===5?'Lesson 1 · At School':grade===8?'Lesson 1 · Future Plans':'Lesson 1';const href=grade===3?'grade3-unit1-lesson1.html':grade===4?'grade4-unit1-lesson1.html':grade===5?'grade5-unit1-lesson1.html':grade===8?'grade8-unit1-lesson1.html':'lesson-menu.html?grade='+grade+'&lesson=1';list.innerHTML='<a class="lesson" href="'+href+'"><span><strong>'+lessonName+'</strong><small>'+(grade===8?'Open Student’s Book, Workbook, vocabulary and the lesson test.':grade===3?'Open the lesson sections. Check each lesson’s source notes for availability and verification details.':known?'Open the verified lesson sections.':'Open lesson sections. Textbook content will be added after source review.')+'</small></span><span class="arrow">↗</span></a>'+(grade===4?'<a class="lesson" href="grade4-unit1-lesson2.html"><span><strong>Lesson 2 · My Family</strong><small>Lesson 2 · My Family — Pupil’s Book and Workbook pages, vocabulary, and a 20-question test.</small></span><span class="arrow">↗</span></a>':'')+(grade===3?'<a class="lesson" href="grade3-unit1-lesson2.html"><span><strong>Lesson 2 · School Subjects</strong><small>Lesson 2 · School Subjects — Pupil’s Book and Workbook pages 6–8, vocabulary, and a 20-question test.</small></span><span class="arrow">↗</span></a>':'')+(grade===5?'<a class="lesson" href="grade5-unit1-lesson2.html"><span><strong>Lesson 2 · Family</strong><small>Open Pupil’s Book, Workbook, vocabulary and the 20-question test.</small></span><span class="arrow">↗</span></a>':'')+'<div class="note">More lessons will be added here as their source pages are reviewed. No lesson titles or official answers are invented.</div>';})();
-</script></body></html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Full Curriculum | Grade Lessons</title>
+  <link rel="stylesheet" href="design-system.css">
+  <script src="platform-shell.js" defer></script>
+</head>
+<body data-nav-page="menu">
+  <div class="engineer-contact-banner" dir="ltr">
+    <span class="engineer-contact-icon" aria-hidden="true">✦</span>
+    <span>This work was prepared by Eng. Somer Al-Holou — Contact / WhatsApp:</span>
+    <a href="https://wa.me/963930215022" target="_blank" rel="noopener noreferrer">0930215022 →</a>
+  </div>
+
+  <main class="wrap wrap-wide" id="main-content" lang="en" dir="ltr">
+    <div class="top">
+      <div class="brand">English Full Curriculum · Curriculum Directory</div>
+      <a class="back" href="index.html">← All Grades</a>
+    </div>
+
+    <nav class="grade-switcher" id="grade-switcher" aria-label="Switch school grade"></nav>
+
+    <header class="hero">
+      <div class="eyebrow" id="grade-stage">School Curriculum</div>
+      <h1 id="title">Grade Lessons</h1>
+      <p id="grade-summary">
+        Select a lesson below to open its Pupil’s or Student’s Book study pages, Workbook exercises, Vocabulary reference, and 20-question Lesson Test.
+      </p>
+      <div class="pills" id="grade-badges"></div>
+    </header>
+
+    <div class="section-head">
+      <div>
+        <h2 id="unit-heading">Unit 1 Lessons</h2>
+        <p id="unit-subheading">Verified book-based lessons are marked Available; upcoming units open a structured template preview.</p>
+      </div>
+    </div>
+
+    <section class="lesson-list" id="lesson-list" aria-label="Grade lessons"></section>
+
+    <section class="bottom-grid" aria-label="Round assessments and study workflow">
+      <div class="mini-panel">
+        <div class="eyebrow">Lesson Study Workflow</div>
+        <h2>Four clear steps per lesson</h2>
+        <div class="steps">
+          <div class="step"><b>01</b>Read the Pupil’s or Student’s Book pages.</div>
+          <div class="step"><b>02</b>Practise every Workbook exercise.</div>
+          <div class="step"><b>03</b>Review word-level Vocabulary meanings.</div>
+          <div class="step"><b>04</b>Check mastery in the 20-question Test.</div>
+        </div>
+      </div>
+
+      <div class="mini-panel">
+        <div class="eyebrow">Cumulative Checkpoints</div>
+        <h2>Round Tests</h2>
+        <p class="muted" id="round-copy">
+          Each cumulative Round Test covers five verified lessons in sequence. Check current preparation status for this grade.
+        </p>
+        <div class="practice-actions">
+          <a class="btn btn-secondary" id="round-link" href="round-tests.html">View Round Tests Status →</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="site-footer-grid">
+        <div>
+          <div class="footer-brand">English Full Curriculum · Grades 1–9</div>
+          <div><a href="index.html">All Grades</a> · <a id="footer-round-link" href="round-tests.html">Round Tests</a></div>
+        </div>
+        <a class="contact" href="https://wa.me/963930215022" target="_blank" rel="noopener noreferrer" aria-label="Contact Engineer Somer Al-Holou on WhatsApp 0930215022">
+          <span class="contact-copy">
+            <span class="wa-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.86 11.86 0 0 0 12.06 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.6 5.95L0 24l6.33-1.66a11.87 11.87 0 0 0 5.73 1.46h.01c6.55 0 11.89-5.34 11.9-11.9a11.82 11.82 0 0 0-3.45-8.42Zm-8.46 18.3h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.76.99 1-3.66-.24-.38a9.88 9.88 0 0 1-1.52-5.25C2.13 6.43 6.59 1.98 12.07 1.98a9.86 9.86 0 0 1 9.89 9.9c0 5.47-4.45 9.9-9.9 9.9Zm5.43-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"/></svg>
+            </span>
+            <span>
+              <span class="contact-name">Eng. Somer Al-Holou</span>
+              <span class="contact-number">WhatsApp: 0930215022</span>
+            </span>
+          </span>
+          <span class="contact-cta">Message →</span>
+        </a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const parsedGrade = Number(params.get('grade'));
+    const grade = Number.isInteger(parsedGrade) && parsedGrade >= 1 && parsedGrade <= 9 ? parsedGrade : 1;
+
+    const preparedCounts = { 3: 2, 4: 2, 5: 2, 8: 1 };
+    const count = preparedCounts[grade] || 0;
+    const stageLabel = grade <= 6 ? `Primary Stage · Grade ${grade}` : `Intermediate Stage · Grade ${grade}`;
+
+    document.title = `English Full Curriculum | Grade ${grade} Lessons`;
+    document.getElementById('grade-stage').textContent = stageLabel;
+    document.getElementById('title').textContent = `Grade ${grade} Curriculum`;
+    document.getElementById('round-link').href = `round-tests.html?grade=${grade}`;
+    document.getElementById('footer-round-link').href = `round-tests.html?grade=${grade}`;
+
+    const switcher = document.getElementById('grade-switcher');
+    let switcherHtml = '<span class="grade-switcher-label">Grades:</span>';
+    for (let g = 1; g <= 9; g++) {
+      const hasReady = Boolean(preparedCounts[g]);
+      const currentAttr = g === grade ? ' aria-current="page"' : '';
+      const dot = hasReady && g !== grade ? '<span class="grade-chip-dot" title="Prepared lessons available"></span>' : '';
+      switcherHtml += `<a class="grade-chip" href="lessons.html?grade=${g}"${currentAttr}>Grade ${g}${dot}</a>`;
+    }
+    switcher.innerHTML = switcherHtml;
+
+    const badgesEl = document.getElementById('grade-badges');
+    if (count > 0) {
+      badgesEl.innerHTML = `<span class="badge badge-available">${count} prepared ${count === 1 ? 'lesson' : 'lessons'} available</span><span class="badge badge-strand">Unit 1 active</span>`;
+      document.getElementById('grade-summary').textContent =
+        `Grade ${grade} currently includes ${count} complete, source-verified Unit 1 ${count === 1 ? 'lesson' : 'lessons'}. Open a lesson below to study the book pages, complete Workbook activities, review Vocabulary, or take the 20-question Lesson Test.`;
+      document.getElementById('round-copy').textContent =
+        `Grade ${grade} currently has ${count} of the 5 verified lessons required to unlock Round 1 Assessment.`;
+    } else {
+      badgesEl.innerHTML = '<span class="badge badge-upcoming">Curriculum in preparation</span><span class="badge badge-strand">Template structure preview</span>';
+      document.getElementById('grade-summary').textContent =
+        `Verified textbook scans for Grade ${grade} are currently in preparation. You can preview the standard 4-part lesson layout below or switch to Grades 3, 4, 5, or 8 for complete live lessons.`;
+      document.getElementById('round-copy').textContent =
+        `Grade ${grade} Round 1 Assessment will unlock once the first 5 verified lessons for this grade are published.`;
+    }
+
+    const lesson1 = grade === 3
+      ? '<a class="lesson" href="grade3-unit1-lesson1.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 1 · Back to School</strong><small>Pupil’s Book (pp. 7–8) · Workbook (pp. 4–5) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      : grade === 4
+      ? '<a class="lesson" href="grade4-unit1-lesson1.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 1 · Nice to Meet You</strong><small>Pupil’s Book (pp. 6–8) · Workbook (pp. 4–5) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      : grade === 5
+      ? '<a class="lesson" href="grade5-unit1-lesson1.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 1 · At School</strong><small>Pupil’s Book (pp. 7–8) · Workbook (pp. 4–5) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      : grade === 8
+      ? '<a class="lesson" href="grade8-unit1-lesson1.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 1 · Future Plans</strong><small>Student’s Book (pp. 8–10) · Workbook (pp. 2–5) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      : `<a class="lesson is-template" href="lesson-menu.html?grade=${grade}&lesson=1"><div><span class="badge badge-upcoming">In preparation · Template preview</span><strong>Lesson 1</strong><small>Preview the 4-part lesson hub: Pupil’s Book · Workbook · Vocabulary · Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>`;
+
+    const lesson2 = grade===3?'<a class="lesson" href="grade3-unit1-lesson2.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 2 · School Subjects</strong><small>Pupil’s Book (pp. 9–11) · Workbook (pp. 6–8) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      : grade===4?'<a class="lesson" href="grade4-unit1-lesson2.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 2 · My Family</strong><small>Pupil’s Book (pp. 9–12) · Workbook (pp. 6–8) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      : grade===5?'<a class="lesson" href="grade5-unit1-lesson2.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 2 · Family</strong><small>Pupil’s Book (pp. 9–11) · Workbook (pp. 6–7) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      : `<a class="lesson is-template" href="lesson-menu.html?grade=${grade}&lesson=2"><div><span class="badge badge-upcoming">In preparation · Template preview</span><strong>Lesson 2</strong><small>Upcoming lesson slot · Opens standard 4-section curriculum template</small></div><span class="arrow" aria-hidden="true">→</span></a>`;
+
+    const lesson3 = `<a class="lesson is-template" href="lesson-menu.html?grade=${grade}&lesson=3"><div><span class="badge badge-upcoming">In preparation · Template preview</span><strong>Lesson 3</strong><small>Upcoming lesson slot · Opens standard 4-section curriculum template</small></div><span class="arrow" aria-hidden="true">→</span></a>`;
+
+    document.getElementById('lesson-list').innerHTML = lesson1 + lesson2 + lesson3;
+  </script>
+</body>
+</html>

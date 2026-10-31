@@ -1,31 +1,150 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101827">
-<meta name="description" content="Interactive English lesson workspace with explanations, vocabulary, practice and a lesson test.">
-<title>Interactive Lesson | English Full Curriculum</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-:root{color-scheme:dark;--bg:#0c0b1b;--panel:#17152d;--line:#39345b;--text:#fbf9ff;--muted:#c0bdd9;--mint:#73f5d0;--blue:#9caeff;--pink:#ff8fcf;--orange:#ffc17e}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--text);font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 8% 0%,#5d2b8940,transparent 34%),radial-gradient(ellipse at 95% 20%,#145c8040,transparent 30%),var(--bg)}a{color:inherit}.wrap{max-width:1000px;margin:auto;padding:24px 20px 44px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.brand{font:700 13px 'Space Grotesk',sans-serif;letter-spacing:2px;color:var(--mint)}.back{border:1px solid #514777;border-radius:99px;padding:10px 14px;text-decoration:none;color:#ded8f6;font-size:13px}.hero{padding:44px 0 26px}.eyebrow{color:var(--mint);font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}.hero h1{font:700 clamp(36px,6vw,58px)/1.06 'Space Grotesk',sans-serif;letter-spacing:-2px;margin:12px 0;background:linear-gradient(100deg,#fff,#c7d0ff 52%,#ffb8df);color:transparent;background-clip:text}.hero p,.muted{color:var(--muted);line-height:1.75}.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{font-size:12px;color:#e7e1ff;border:1px solid #454066;background:#ffffff08;padding:8px 12px;border-radius:99px}.notice{border:1px solid #775a2b;background:#2c241b;border-radius:15px;padding:14px 16px;color:#ffe3b1;font-size:13px;line-height:1.7;margin-bottom:22px}.section{border:1px solid var(--line);background:linear-gradient(145deg,#211d3d,#141329);border-radius:20px;padding:22px;margin:14px 0}.section h2{font:700 23px 'Space Grotesk',sans-serif;margin:0 0 12px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:1.4px;font-weight:800;color:var(--mint);margin-bottom:7px}.vocab{width:100%;border-collapse:collapse;margin-top:12px}.vocab th,.vocab td{text-align:left;padding:12px 10px;border-bottom:1px solid #39345b;font-size:13px}.vocab th{color:var(--blue);font-size:11px;text-transform:uppercase;letter-spacing:1px}.activity{border:1px solid #454066;border-radius:14px;padding:16px;margin-top:12px;background:#ffffff05}.activity p{line-height:1.7}.answer{margin-top:12px;border-left:3px solid var(--mint);padding:10px 13px;background:#73f5d012;border-radius:0 10px 10px 0;line-height:1.7}.answer[hidden]{display:none}button{font:700 13px 'DM Sans',sans-serif;border:1px solid #5b5680;border-radius:10px;padding:10px 14px;background:#282345;color:#fff;cursor:pointer}button:hover,button:focus-visible{border-color:var(--mint);outline:2px solid #73f5d055;outline-offset:2px}.primary{background:linear-gradient(100deg,#4a2f75,#224e59);border-color:#74639d}.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.step{padding:12px;border:1px solid #39345b;border-radius:12px;font-size:12px;color:#d9d5ee}.step b{display:block;color:var(--mint);font:700 16px 'Space Grotesk',sans-serif;margin-bottom:5px}.test-row{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.footer{margin-top:28px;border-top:1px solid #343052;padding-top:20px;color:#aaa5c5;font-size:12px;line-height:1.8}.footer a{color:#a7ffd0}
-@media(max-width:650px){.wrap{padding:18px 14px 32px}.section{padding:17px}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.hero h1{letter-spacing:-1.2px}.vocab th,.vocab td{padding:10px 6px}}
-</style>
-<style id="sitewide-engineer-contact">.engineer-contact-banner{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:12px 16px;background:linear-gradient(110deg,#17152d,#34306a 48%,#8b367c);color:#fff;border-bottom:2px solid #f4c96b;box-shadow:0 5px 18px #14102d30;font-family:system-ui,sans-serif;text-align:center}.engineer-contact-banner span,.engineer-contact-banner a{font-size:15px;font-weight:800}.engineer-contact-banner a{padding:6px 12px;border:1px solid #ffffff80;border-radius:999px;background:#ffffff17;color:#fff;text-decoration:none}</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Full Curriculum | Lesson Section Preview</title>
+  <link rel="stylesheet" href="design-system.css">
+  <script src="platform-shell.js" defer></script>
+  <script src="lesson-content-navigation.js" defer></script>
 </head>
 <body>
-<div class="engineer-contact-banner" role="complementary"><span>Engineer Somer Shaheen:</span><a href="tel:0930215022">0930215022</a></div><main class="wrap">
-<header class="top"><div class="brand">✦ ENGLISH FULL CURRICULUM</div><a class="back" id="back-link" href="lessons.html">← Back to Lessons</a></header>
-<section class="hero"><div class="eyebrow">INTERACTIVE LEARNING SPACE</div><h1 id="page-title">Your lesson, step by step.</h1><p id="page-description">A consistent learning path designed to help you understand, practise, and check your progress.</p><div class="pills"><span class="pill" id="grade-pill">Grade —</span><span class="pill" id="book-pill">Book —</span><span class="pill">Learn · Practise · Test</span></div></section>
-<div class="notice"><strong>Template preview — not official textbook content.</strong> This page demonstrates the lesson layout and answer-reveal interaction. Verified lesson explanations, vocabulary, exercises, and answer keys will be added only after the source pages have been reviewed.</div>
-<div class="section"><div class="kicker">01 · Learning goals</div><h2>What you will learn</h2><p class="muted">Each published lesson will begin with clear learning goals written for the learner, followed by a step-by-step explanation based on the verified textbook pages.</p><div class="steps"><div class="step"><b>01</b>Understand the idea</div><div class="step"><b>02</b>Explore examples</div><div class="step"><b>03</b>Practise actively</div><div class="step"><b>04</b>Check your progress</div></div></div>
-<div class="section"><div class="kicker">02 · Lesson explanation</div><h2>Clear explanations</h2><p class="muted">The final lesson will explain every key point in manageable steps, include worked examples, highlight common mistakes, and connect the explanation to the correct book and page.</p><div class="activity"><strong>Example of the answer-reveal pattern</strong><p>Complete the sentence: “She ___ a student.”</p><button type="button" class="primary" aria-expanded="false" aria-controls="sample-answer" data-toggle-answer>Show Answer</button><div class="answer" id="sample-answer" hidden><strong>Answer:</strong> “She <em>is</em> a student.” The verb <em>is</em> agrees with the subject “she”. <span class="muted">This is an illustrative example, not a textbook exercise.</span></div></div></div>
-<div class="section"><div class="kicker">03 · Key vocabulary</div><h2>Words to remember</h2><p class="muted">Each real lesson will include at least five important words, Arabic meanings, and contextual examples verified against the lesson.</p><table class="vocab"><thead><tr><th>English word</th><th>Arabic meaning</th><th>Example / note</th></tr></thead><tbody><tr><td colspan="3" class="muted">Verified vocabulary will appear here when source pages are reviewed.</td></tr></tbody></table></div>
-<div class="section"><div class="kicker">04 · Workbook practice</div><h2>Practise what you learned</h2><p class="muted">Activities will be grouped by the matching lesson in the Workbook. Each question will have its own answer reveal and a clear explanation, without showing answers by default.</p><div class="activity"><strong>Practice set</strong><p>Workbook questions are not loaded yet. They will be added after the relevant Workbook pages are checked for completeness and order.</p></div></div>
-<div class="section"><div class="kicker">05 · Lesson test</div><div class="test-row"><div><h2>Check your understanding</h2><p class="muted">A 20-question test will cover the full lesson. Model answers will remain separate from the learner-facing page.</p></div><span class="pill">20 questions · Coming with verified content</span></div></div>
-<footer class="footer">ENGLISH FULL CURRICULUM · Learn · Practise · Test Yourself<br>Questions or feedback? <a href="https://wa.me/963930215022" target="_blank" rel="noopener noreferrer">Contact the project team on WhatsApp ↗</a></footer>
-</main>
-<script>
-(function(){const p=new URLSearchParams(location.search);const n=Number(p.get('grade'));const grade=Number.isInteger(n)&&n>=1&&n<=9?n:null;const book=p.get('book')==='workbook'?'Workbook':(grade&&grade>=7?'Student’s Book':'Pupil’s Book');document.getElementById('grade-pill').textContent=grade?'Grade '+grade:'Grade preview';document.getElementById('book-pill').textContent=book;document.getElementById('page-title').textContent=grade?'Grade '+grade+' · Lesson template':'Your lesson, step by step.';document.getElementById('page-description').textContent='A reusable lesson structure for '+(grade?'Grade '+grade:'your selected grade')+', with clear explanations, Arabic-supported vocabulary, practice, and a comprehensive test.';document.getElementById('back-link').href=grade?'lessons.html?grade='+grade:'lessons.html';document.querySelectorAll('[data-toggle-answer]').forEach(function(button){button.addEventListener('click',function(){const panel=document.getElementById(button.getAttribute('aria-controls'));const willShow=panel.hidden;panel.hidden=!willShow;button.setAttribute('aria-expanded',String(willShow));button.textContent=willShow?'Hide Answer':'Show Answer';});});})();
-</script>
-<script src="lesson-content-navigation.js" defer></script>
-</body></html>
+  <div class="engineer-contact-banner" dir="ltr">
+    <span class="engineer-contact-icon" aria-hidden="true">✦</span>
+    <span>This work was prepared by Eng. Somer Al-Holou — Contact / WhatsApp:</span>
+    <a href="https://wa.me/963930215022" target="_blank" rel="noopener noreferrer">0930215022 →</a>
+  </div>
+
+  <main class="wrap" id="main-content" lang="en" dir="ltr">
+    <div class="top">
+      <div class="brand">English Full Curriculum · Template Preview</div>
+      <a class="back" id="back" href="lesson-menu.html">← Back to Lesson Menu</a>
+    </div>
+
+    <header class="hero">
+      <div class="eyebrow" id="meta">Grade 1 · Lesson 1 · Section Preview</div>
+      <h1 id="title">Pupil’s Book</h1>
+      <p id="lead">
+        This preview shows how each verified lesson section is structured once printed textbook pages for this grade and unit are supplied.
+      </p>
+      <div class="pills">
+        <span class="badge badge-upcoming">Template preview · Source scans pending</span>
+      </div>
+    </header>
+
+    <nav class="section-links" id="section-links" aria-label="Lesson sections"></nav>
+
+    <section class="panel" id="tpl-1">
+      <span class="pill">01 · Source Verification Standard</span>
+      <h2 id="section-heading">What appears in this section</h2>
+      <p id="section-copy">
+        Every published page in the platform is built strictly from verified textbook scans, keeping exact exercise numbering, page references, and classroom instructions without invented text.
+      </p>
+      <div class="alert alert-info">
+        <strong>Looking for published lessons?</strong> Complete lessons are currently ready in <a href="lessons.html?grade=3">Grade 3</a>, <a href="lessons.html?grade=4">Grade 4</a>, <a href="lessons.html?grade=5">Grade 5</a>, and <a href="lessons.html?grade=8">Grade 8</a>.
+      </div>
+    </section>
+
+    <section class="panel" id="tpl-2">
+      <span class="pill">02 · Interactive Self-Check Pattern</span>
+      <h2>Guided practice with optional answer reveal</h2>
+      <p>
+        Students always attempt exercises first. Optional answer explanations remain hidden until requested so classroom and home practice stay distraction-free.
+      </p>
+      <div class="activity">
+        <p><strong>Sample grammar check (illustrative format only):</strong> Complete the sentence: “She ___ a student.”</p>
+        <button type="button" class="secondary" aria-expanded="false" aria-controls="sample-answer" data-toggle-answer>Show Answer</button>
+        <div class="answer" id="sample-answer" hidden>
+          <strong>Answer:</strong> “She <em>is</em> a student.” The singular verb <em>is</em> agrees with the subject pronoun “she”.
+          <span class="source-note">(Illustrative UI example, not a textbook item.)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="tpl-3">
+      <span class="pill">03 · Audio &amp; Assessment Integrity</span>
+      <h2>Clear handling of listening tasks and scoring</h2>
+      <p>
+        Whenever a printed exercise depends on an official classroom audio track that is not bundled in the repository, the activity is clearly labelled as unscored and no transcript or answer key is invented.
+      </p>
+    </section>
+
+    <footer class="footer">
+      Learn · Practise · Test yourself — <a id="footer-menu-link" href="lesson-menu.html">Lesson Menu</a> · <a id="footer-grade-link" href="lessons.html">Grade Curriculum</a>
+    </footer>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const parsedGrade = Number(params.get('grade'));
+    const grade = Number.isInteger(parsedGrade) && parsedGrade >= 1 && parsedGrade <= 9 ? parsedGrade : 1;
+    const parsedLesson = Number(params.get('lesson'));
+    const lesson = Number.isInteger(parsedLesson) && parsedLesson >= 1 ? parsedLesson : 1;
+    const section = params.get('section') || 'pupil-book';
+    const bookName = grade >= 7 ? 'Student’s Book' : 'Pupil’s Book';
+
+    const sections = {
+      'pupil-book': {
+        title: bookName,
+        bodyClass: 'book-pupil',
+        heading: `${bookName} study pages`,
+        copy: `Published ${bookName} pages present every dialogue, reading text, table, and grammar box with exact printed page numbers and step-by-step navigation.`
+      },
+      'workbook': {
+        title: 'Workbook',
+        bodyClass: 'book-workbook',
+        heading: 'Workbook exercises and guided self-check',
+        copy: 'Published Workbook pages separate written and matching practice cleanly from the main reading book, with resettable inputs and optional answer guidance.'
+      },
+      'vocabulary': {
+        title: 'Vocabulary',
+        bodyClass: 'book-vocabulary',
+        heading: 'Structured topic vocabulary tables',
+        copy: 'Published Vocabulary pages organize core words, numbers, and classroom expressions into clean tables with isolated word-level Arabic meanings.'
+      },
+      'test': {
+        title: 'Lesson Test',
+        bodyClass: 'book-test',
+        heading: '20-question lesson check',
+        copy: 'Published Lesson Tests present 20 multiple-choice items verified against the lesson books, navigated one question at a time with instant scoring.'
+      }
+    };
+
+    const current = sections[section] || sections['pupil-book'];
+    document.body.classList.add(current.bodyClass);
+    document.title = `English Full Curriculum | Grade ${grade} Lesson ${lesson} · ${current.title}`;
+    document.getElementById('meta').textContent = `Grade ${grade} · Lesson ${lesson} · ${current.title} Preview`;
+    document.getElementById('title').textContent = current.title;
+    document.getElementById('section-heading').textContent = current.heading;
+    document.getElementById('section-copy').textContent = current.copy;
+
+    const menuHref = `lesson-menu.html?grade=${grade}&lesson=${lesson}`;
+    document.getElementById('back').href = menuHref;
+    document.getElementById('footer-menu-link').href = menuHref;
+    document.getElementById('footer-grade-link').href = `lessons.html?grade=${grade}`;
+
+    const navEl = document.getElementById('section-links');
+    const tabEntries = [
+      ['menu', 'Lesson menu', menuHref],
+      ['pupil-book', bookName, `lesson.html?grade=${grade}&lesson=${lesson}&section=pupil-book`],
+      ['workbook', 'Workbook', `lesson.html?grade=${grade}&lesson=${lesson}&section=workbook`],
+      ['vocabulary', 'Vocabulary', `lesson.html?grade=${grade}&lesson=${lesson}&section=vocabulary`],
+      ['test', 'Lesson Test', `lesson.html?grade=${grade}&lesson=${lesson}&section=test`]
+    ];
+    navEl.innerHTML = tabEntries.map(([key, label, href]) =>
+      `<a class="section-link" href="${href}"${key === section ? ' aria-current="page"' : ''}>${label}</a>`
+    ).join('');
+
+    document.querySelectorAll('[data-toggle-answer]').forEach(button => {
+      button.addEventListener('click', () => {
+        const panel = document.getElementById(button.getAttribute('aria-controls'));
+        if (!panel) return;
+        const nextHidden = !panel.hidden;
+        panel.hidden = nextHidden;
+        button.setAttribute('aria-expanded', String(!nextHidden));
+        button.textContent = nextHidden ? 'Show Answer' : 'Hide Answer';
+      });
+    });
+  </script>
+</body>
+</html>
