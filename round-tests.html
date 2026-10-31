@@ -1,21 +1,130 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101827">
-<meta name="description" content="Round Tests: comprehensive 40-question assessments after every five prepared lessons.">
-<title>Round Tests | English Full Curriculum</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-:root{color-scheme:dark;--bg:#0c0b1b;--line:#39345b;--text:#fbf9ff;--muted:#c0bdd9;--mint:#73f5d0;--blue:#9caeff}*{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--text);font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 10% 0%,#5d2b8940,transparent 34%),radial-gradient(ellipse at 95% 20%,#145c8040,transparent 30%),var(--bg)}a{color:inherit}.wrap{max-width:950px;margin:auto;padding:24px 20px 44px}.top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.brand{font:700 13px 'Space Grotesk';letter-spacing:2px;color:var(--mint)}.back{border:1px solid #514777;border-radius:99px;padding:10px 14px;text-decoration:none;color:#ded8f6;font-size:13px}.hero{padding:42px 0 24px}.eyebrow{color:var(--mint);font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}.hero h1{font:700 clamp(34px,6vw,54px)/1.06 'Space Grotesk';margin:12px 0;background:linear-gradient(100deg,#fff,#c7d0ff 52%,#ffb8df);color:transparent;background-clip:text}.hero p,.card p{color:var(--muted);line-height:1.8}.panel{background:linear-gradient(145deg,#211d3d,#141329);border:1px solid var(--line);border-radius:18px;padding:20px;margin:14px 0}.panel h2{font:700 21px 'Space Grotesk';margin:0 0 10px}.status{display:inline-block;border:1px solid #454066;border-radius:99px;padding:7px 11px;font-size:12px;color:#e7e1ff}.progress{height:8px;background:#ffffff12;border-radius:99px;overflow:hidden;margin:14px 0}.progress span{display:block;height:100%;background:linear-gradient(90deg,#73f5d0,#9caeff);width:0}.note{border-left:3px solid var(--mint);padding:12px 15px;background:#ffffff08;color:var(--muted);line-height:1.8;border-radius:0 12px 12px 0}.foot{margin-top:30px;padding-top:20px;border-top:1px solid #343052;color:#9995b8;font-size:12px}@media(max-width:600px){.wrap{padding:18px 14px 32px}}
-</style><style id="sitewide-engineer-contact">.engineer-contact-banner{position:sticky;top:0;z-index:9999;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:12px 16px;background:linear-gradient(110deg,#17152d,#34306a 48%,#8b367c);color:#fff;border-bottom:2px solid #f4c96b;box-shadow:0 5px 18px #14102d30;font-family:system-ui,sans-serif;text-align:center}.engineer-contact-banner span,.engineer-contact-banner a{font-size:15px;font-weight:800}.engineer-contact-banner a{padding:6px 12px;border:1px solid #ffffff80;border-radius:999px;background:#ffffff17;color:#fff;text-decoration:none}</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Full Curriculum | Round Tests</title>
+  <link rel="stylesheet" href="design-system.css">
+  <script src="platform-shell.js" defer></script>
 </head>
-<body>
-<div class="engineer-contact-banner" role="complementary"><span>Engineer Somer Shaheen:</span><a href="tel:0930215022">0930215022</a></div><main class="wrap"><header class="top"><div class="brand">✦ ENGLISH FULL CURRICULUM</div><a class="back" id="back-link" href="index.html">← All Grades</a></header>
-<section class="hero"><div class="eyebrow">ASSESS · REVIEW · IMPROVE</div><h1 id="title">Round Tests</h1><p id="intro">A comprehensive 40-question test follows every five prepared lessons. Each test reviews the full group, not just one lesson.</p></section>
-<section class="panel"><h2>How Round Tests work</h2><p>Round Test 1 covers Lessons 1–5; Round Test 2 covers Lessons 6–10; Round Test 3 covers Lessons 11–15, and so on. Every test contains 40 questions based on the actual material taught in that group.</p><p>The test blueprint will include vocabulary, grammar and language use, reading comprehension, and appropriate writing or functional-English tasks, according to the content of the five lessons.</p></section>
-<section class="panel"><h2 id="status-heading">Preparing your grade's first round</h2><div class="status" id="status">Waiting for five verified lessons</div><div class="progress"><span id="progress-bar"></span></div><p id="progress-text">0 of 5 lessons prepared for a complete round test.</p></section>
-<div class="note"><strong>Accuracy matters:</strong> A round test is published only when the five lessons it assesses have been prepared and checked. This prevents invented questions or answers that do not match the curriculum. Each test will have 40 questions and answer feedback suitable for students; teacher answer keys should remain in the Teacher Area.</div>
-<footer class="foot">ENGLISH FULL CURRICULUM · Round Tests · Grades 1–9</footer></main>
-<script>
-(function(){const p=new URLSearchParams(location.search),n=Number(p.get('grade')),g=Number.isInteger(n)&&n>=1&&n<=9?n:null;const title=document.getElementById('title'),intro=document.getElementById('intro'),back=document.getElementById('back-link'),status=document.getElementById('status'),head=document.getElementById('status-heading'),bar=document.getElementById('progress-bar'),text=document.getElementById('progress-text');if(!g){title.textContent='Choose a grade';intro.textContent='Open Round Tests from a grade page to see the assessment plan for that grade.';head.textContent='Select a grade first';status.textContent='No grade selected';back.href='index.html';return;}document.title='Grade '+g+' Round Tests | English Full Curriculum';title.textContent='Grade '+g+' · Round Tests';back.href='lessons.html?grade='+g;/* Only fully prepared lesson sets count. Current verified lesson inventory is not yet five lessons for any grade. */const preparedLessons=(g===3||g===5)?1:0;const progress=preparedLessons%5;bar.style.width=(progress/5*100)+'%';status.textContent=preparedLessons>=5?'Round Test 1 ready':'Waiting for five verified lessons';head.textContent='Round Test 1 · Lessons 1–5';text.textContent=progress+' of 5 lessons prepared for a complete round test. As lesson content is verified, the test will be built from those exact lessons.';})();
-</script></body></html>
+<body data-nav-page="menu">
+  <div class="engineer-contact-banner" dir="ltr">
+    <span class="engineer-contact-icon" aria-hidden="true">✦</span>
+    <span>This work was prepared by Eng. Somer Al-Holou — Contact / WhatsApp:</span>
+    <a href="https://wa.me/963930215022" target="_blank" rel="noopener noreferrer">0930215022 →</a>
+  </div>
+
+  <main class="wrap wrap-wide" id="main-content" lang="en" dir="ltr">
+    <div class="top">
+      <div class="brand">English Full Curriculum · Cumulative Checkpoints</div>
+      <a class="back" id="back" href="lessons.html">← Back to Grade Lessons</a>
+    </div>
+
+    <nav class="grade-switcher" id="grade-switcher" aria-label="Select grade for Round Tests"></nav>
+
+    <header class="hero">
+      <div class="eyebrow" id="meta">Grade 1 · Cumulative Assessment</div>
+      <h1 id="title">Round Tests</h1>
+      <p id="summary">
+        Each Round Test is a cumulative 40-question checkpoint built strictly from five verified lessons in sequence so students are never tested on material not yet published.
+      </p>
+      <div class="pills" id="status-pills"></div>
+    </header>
+
+    <section class="panel" id="available-tests-panel" hidden>
+      <span class="badge badge-available">Available Now · Individual Lesson Tests</span>
+      <h2 id="available-tests-heading">Take a verified 20-question Lesson Test in this grade</h2>
+      <p class="muted">While cumulative 5-lesson Round Tests are awaiting the remaining Unit 1–2 lessons, these individual 20-question Lesson Tests are ready now:</p>
+      <div class="practice-actions" id="available-tests-links"></div>
+    </section>
+
+    <div class="section-head">
+      <div>
+        <h2>Round Checkpoint Schedule</h2>
+        <p>Rounds unlock automatically as each group of five consecutive lessons is verified from printed school books.</p>
+      </div>
+    </div>
+
+    <section class="cards" id="round-cards" aria-label="Round test checkpoints"></section>
+
+    <footer class="footer">
+      Learn · Practise · Test yourself — <a id="footer-grade-link" href="lessons.html">Grade Curriculum</a> · <a href="index.html">All Grades</a>
+    </footer>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const parsedGrade = Number(params.get('grade'));
+    const grade = Number.isInteger(parsedGrade) && parsedGrade >= 1 && parsedGrade <= 9 ? parsedGrade : 1;
+
+    const gradeTests = {
+      3: [
+        { label: 'Lesson 1 Test · Back to School', href: 'grade3-unit1-lesson1-test.html' },
+        { label: 'Lesson 2 Test · School Subjects', href: 'grade3-unit1-lesson2-test.html' }
+      ],
+      4: [
+        { label: 'Lesson 1 Test · Nice to Meet You', href: 'grade4-unit1-lesson1-test.html' },
+        { label: 'Lesson 2 Test · My Family', href: 'grade4-unit1-lesson2-test.html' }
+      ],
+      5: [
+        { label: 'Lesson 1 Test · At School', href: 'grade5-unit1-lesson1-test.html' },
+        { label: 'Lesson 2 Test · Family', href: 'grade5-unit1-lesson2-test.html' }
+      ],
+      8: [
+        { label: 'Lesson 1 Test · Future Plans', href: 'grade8-unit1-lesson1-test.html' }
+      ]
+    };
+
+    const readyTests = gradeTests[grade] || [];
+    const readyCount = readyTests.length;
+
+    document.title = `English Full Curriculum | Grade ${grade} Round Tests`;
+    document.getElementById('meta').textContent = `Grade ${grade} · Cumulative Checkpoints`;
+    document.getElementById('title').textContent = `Grade ${grade} Round Tests`;
+    document.getElementById('back').href = `lessons.html?grade=${grade}`;
+    document.getElementById('footer-grade-link').href = `lessons.html?grade=${grade}`;
+
+    const switcher = document.getElementById('grade-switcher');
+    let switcherHtml = '<span class="grade-switcher-label">Grades:</span>';
+    for (let g = 1; g <= 9; g++) {
+      const hasReady = Boolean(gradeTests[g]);
+      const currentAttr = g === grade ? ' aria-current="page"' : '';
+      const dot = hasReady && g !== grade ? '<span class="grade-chip-dot" title="Individual lesson tests available"></span>' : '';
+      switcherHtml += `<a class="grade-chip" href="round-tests.html?grade=${g}"${currentAttr}>Grade ${g}${dot}</a>`;
+    }
+    switcher.innerHTML = switcherHtml;
+
+    const pills = document.getElementById('status-pills');
+    pills.innerHTML = `<span class="badge ${readyCount > 0 ? 'badge-available' : 'badge-upcoming'}">${readyCount} of 5 Round 1 lessons prepared</span><span class="badge badge-strand">5 lessons per round</span>`;
+
+    if (readyCount > 0) {
+      const panel = document.getElementById('available-tests-panel');
+      const links = document.getElementById('available-tests-links');
+      panel.hidden = false;
+      links.innerHTML = readyTests.map(t => `<a class="btn btn-accent" href="${t.href}">${t.label}</a>`).join('');
+    }
+
+    const rounds = [
+      { num: 1, range: 'Lessons 1–5', ready: readyCount },
+      { num: 2, range: 'Lessons 6–10', ready: 0 },
+      { num: 3, range: 'Lessons 11–15', ready: 0 },
+      { num: 4, range: 'Lessons 16–20', ready: 0 }
+    ];
+
+    document.getElementById('round-cards').innerHTML = rounds.map(r => {
+      const pct = Math.min(100, Math.round((r.ready / 5) * 100));
+      return `
+        <article class="card">
+          <div>
+            <span class="badge badge-upcoming">Pending · ${r.ready}/5 lessons ready</span>
+            <h2>Round ${r.num} · ${r.range}</h2>
+            <p>Cumulative comprehension, grammar, and vocabulary checkpoint covering verified content from ${r.range.toLowerCase()} in Grade ${grade}.</p>
+            <div class="progress" aria-label="Round ${r.num} lesson preparation progress: ${r.ready} of 5 lessons"><span style="width:${pct}%"></span></div>
+          </div>
+          <div class="source-note">Unlocks after all 5 lessons in ${r.range} are verified.</div>
+        </article>
+      `;
+    }).join('');
+  </script>
+</body>
+</html>

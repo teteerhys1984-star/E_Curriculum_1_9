@@ -377,5 +377,59 @@ for (const file of htmlFiles) {
 }
 pass('Documentation links and local font assets', `${docLinks} Markdown links; ${cssReferences} local CSS assets resolve`);
 
+// Phase 1 Design Foundation static checks: shared design-system.css, platform-shell.js, local-only fonts, and unique IDs.
+const designCss = read('design-system.css');
+const requiredTokens = [
+  '--color-brand-900',
+  '--color-accent-600',
+  '--color-bg-canvas',
+  '--color-bg-subtle',
+  '--color-text-primary',
+  '--font-display',
+  '--font-sans',
+  '--font-arabic',
+  '--space-4',
+  '--radius-lg',
+  '--shadow-sm',
+  '--container-max'
+];
+for (const token of requiredTokens) {
+  assert.ok(designCss.includes(`${token}:`), `design-system.css missing token ${token}`);
+}
+for (const file of htmlFiles) {
+  const html = read(file);
+  assert.ok(html.includes('href="design-system.css"'), `${file}: must load shared design-system.css`);
+  assert.ok(html.includes('src="platform-shell.js"'), `${file}: must load shared platform-shell.js`);
+  assert.ok(!/fonts\.googleapis\.com|fonts\.gstatic\.com/i.test(html), `${file}: external web-font URL is forbidden; use local WOFF2 fonts`);
+
+  const ids = new Set();
+  for (const idMatch of html.matchAll(/\bid="([^"]+)"/g)) {
+    const idVal = idMatch[1];
+    assert.ok(!ids.has(idVal), `${file}: duplicate id="${idVal}"`);
+    ids.add(idVal);
+  }
+}
+for (const cssFile of collectFiles(root, '.css')) {
+  const cssText = fs.readFileSync(cssFile, 'utf8');
+  assert.ok(!/fonts\.googleapis\.com|fonts\.gstatic\.com/i.test(cssText), `${path.relative(root, cssFile)}: external web-font import forbidden`);
+}
+const expectedFontFiles = [
+  'assets/fonts/dm-sans-latin-wght-normal.woff2',
+  'assets/fonts/space-grotesk-latin-wght-normal.woff2',
+  'assets/fonts/noto-sans-arabic-arabic-wght-normal.woff2',
+  'assets/fonts/curriculum-symbols.woff2',
+  'assets/fonts/noto-emoji-2-400-normal.woff2',
+  'assets/fonts/noto-emoji-3-400-normal.woff2'
+];
+for (const fontRel of expectedFontFiles) {
+  assert.ok(designCss.includes(`url('${fontRel}')`), `design-system.css missing @font-face url('${fontRel}')`);
+  const fontStat = fs.statSync(path.join(root, fontRel));
+  assert.ok(fontStat.isFile() && fontStat.size > 0, `${fontRel}: font file missing or empty`);
+}
+const designDoc = read('docs/phase1-design-foundation/design-system.md');
+assert.ok(!/Fraunces/i.test(designDoc), 'design-system.md must match implemented Space Grotesk typography');
+assert.ok(designDoc.includes('Space Grotesk') && designDoc.includes('DM Sans') && designDoc.includes('Noto Sans Arabic'), 'design-system.md must document implemented font families');
+pass('Phase 1 shared design system and local-font invariants', `All ${htmlFiles.length} HTML files load design-system.css and platform-shell.js with unique IDs, 6 verified local WOFF2 fonts, and zero external font imports`);
+
 const result = { suite: 'static-site-and-source-integrity', date: new Date().toISOString(), status: 'PASS', checks };
 console.log(JSON.stringify(result, null, 2));
