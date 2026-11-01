@@ -90,6 +90,12 @@
       const sec = params.get('section') || 'pupil-book';
       return { type: 'template-section', file, grade: queryGrade || 1, lesson: lessonNum, sectionKey: sec };
     }
+    if (file === 'teacher.html') {
+      return { type: 'teacher', file };
+    }
+    if (file === 'teacher-resources.html') {
+      return { type: 'teacher-resources', file };
+    }
     return { type: 'home', file, grade: queryGrade };
   }
 
@@ -132,10 +138,13 @@
     header.className = 'site-header';
     header.setAttribute('dir', 'ltr');
 
+    const isTeacher = ctx.type === 'teacher' || ctx.type === 'teacher-resources';
+
     const navItems = [
       { href: 'index.html', label: 'Home', active: isHome },
       { href: curriculumHref, label: activeGrade ? `Grade ${activeGrade} Curriculum` : 'Grades 1–9 Curriculum', active: isCurriculum },
-      { href: roundHref, label: 'Round Tests', active: isRoundTests }
+      { href: roundHref, label: 'Round Tests', active: isRoundTests },
+      { href: 'teacher.html', label: 'Teachers', active: isTeacher }
     ];
 
     const desktopLinksHtml = navItems.map(item =>
@@ -243,6 +252,15 @@
       items.push({ label: `Grade ${ctx.grade} · Unit ${ctx.unit}`, href: `lessons.html?grade=${ctx.grade}` });
       items.push({ label: `Lesson ${ctx.lesson}: ${ctx.lessonTitle}`, href: `${ctx.slug}.html` });
       items.push({ label: ctx.sectionLabel });
+      return items;
+    }
+    if (ctx.type === 'teacher') {
+      items.push({ label: 'Teacher Portal' });
+      return items;
+    }
+    if (ctx.type === 'teacher-resources') {
+      items.push({ label: 'Teacher Portal', href: 'teacher.html' });
+      items.push({ label: 'Teacher Resources' });
       return items;
     }
     return null;

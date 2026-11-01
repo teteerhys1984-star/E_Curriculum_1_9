@@ -1,0 +1,100 @@
+{
+  "suite": "phase2-b-teacher-portal-browser",
+  "status": "PASS",
+  "date": "2026-11-01T09:41:58.756Z",
+  "browser": "Chromium 153.0.8010.0",
+  "originPath": "/E_Curriculum_1_9/",
+  "viewports": [
+    "1440×900",
+    "1366×768",
+    "1024×768",
+    "768×1024",
+    "390×844",
+    "320×740"
+  ],
+  "routes": [
+    "teacher.html",
+    "teacher-resources.html"
+  ],
+  "checks": [
+    {
+      "name": "Six approved viewports",
+      "status": "PASS",
+      "detail": "12 teacher page/viewport combinations at 1440, 1366, 1024, 768, 390 and 320px with no horizontal overflow, no clipped controls and a full-width header"
+    },
+    {
+      "name": "Header at the narrowest desktop width",
+      "status": "PASS",
+      "detail": "Four header items stay on one row at 768px on index, lessons, teacher and teacher-resources pages with 66–120px between brand and navigation, no internal scrolling and exactly one current item"
+    },
+    {
+      "name": "Mobile drawer",
+      "status": "PASS",
+      "detail": "Below 768px both teacher pages hide the desktop bar, open a four-destination drawer that marks Teachers as current, and close on Escape with focus restored"
+    },
+    {
+      "name": "Breadcrumb trail",
+      "status": "PASS",
+      "detail": "teacher.html shows Home → Teacher Portal and teacher-resources.html shows Home → Teacher Portal → Teacher Resources, with the correct parent links"
+    },
+    {
+      "name": "Teacher link resolution",
+      "status": "PASS",
+      "detail": "64 distinct local destinations from the two teacher pages all returned HTTP 200, including every lesson page and every template route"
+    },
+    {
+      "name": "Published key anchors",
+      "status": "PASS",
+      "detail": "Four lesson tests deep-link to #teacher-gate, each lands with the key area in view and keeps the answer container hidden until it is unlocked"
+    },
+    {
+      "name": "Pages without a key anchor",
+      "status": "PASS",
+      "detail": "Grade 4 Lesson 1 has no key area, and the Grade 5 Lesson 2 and Grade 8 Lesson 1 key areas keep their existing heading and password field untouched, with no anchor invented"
+    },
+    {
+      "name": "No prompts and no storage writes",
+      "status": "PASS",
+      "detail": "Both teacher pages contain zero inputs and zero forms, and the Continue-learning key in browser storage is byte-identical after visiting them"
+    },
+    {
+      "name": "Honest disclosure",
+      "status": "PASS",
+      "detail": "Both pages state that the shared classroom password is not authentication, neither claims protection, and the open answer reveals are disclosed as visible to pupils"
+    },
+    {
+      "name": "Rendered status matrix",
+      "status": "PASS",
+      "detail": "Seven rows with the expected columns, one “Not published” key and “None” for every listening key"
+    },
+    {
+      "name": "Keyboard access",
+      "status": "PASS",
+      "detail": "The skip link is the first Tab stop and targets the main landmark; header links, the Teachers item and page buttons are all reachable and show a visible focus outline"
+    },
+    {
+      "name": "Reduced motion and print",
+      "status": "PASS",
+      "detail": "Reduced motion removes smooth scrolling and button transitions; print hides the header and contact strip so the directory prints cleanly"
+    },
+    {
+      "name": "Screenshots captured",
+      "status": "PASS",
+      "detail": "6 images written to docs/phase2-b-teacher-portal/evidence/"
+    },
+    {
+      "name": "Browser and HTTP health",
+      "status": "PASS",
+      "detail": "Zero JavaScript page errors, zero console errors and no HTTP status of 400 or above on any tested route"
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "teacher-desktop-1440.png",
+    "header-768-teacher.png",
+    "teacher-mobile-390.png",
+    "teacher-resources-desktop-1440.png",
+    "teacher-resources-matrix.png",
+    "teacher-resources-mobile-390.png"
+  ]
+}
