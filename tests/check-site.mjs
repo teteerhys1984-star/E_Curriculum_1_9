@@ -506,18 +506,19 @@ for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '4 · 2 
   assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
 }
 
-const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1'];
+const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade8-unit1-lesson1'];
 for (const slug of anchoredKeys) {
   assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
   assert.ok(read(`${slug}-test.html`).includes('id="teacher-gate"'), `${slug}-test.html: documented key anchor is missing`);
 }
-const unanchoredKeys = ['grade4-unit1-lesson1', 'grade5-unit1-lesson2', 'grade8-unit1-lesson1'];
-for (const slug of unanchoredKeys) {
-  assert.ok(!teacherPage.includes(`${slug}-test.html#`), `teacher-resources.html: ${slug} has no key anchor and must not be linked with a fragment`);
+// Grade 4 Lesson 1 is the deliberate exception: its test publishes no answer key, so it must
+// gain neither a gate on the page nor a deep link in the directory.
+const keylessTests = ['grade4-unit1-lesson1'];
+for (const slug of keylessTests) {
+  assert.ok(!teacherPage.includes(`${slug}-test.html#`), `teacher-resources.html: ${slug} has no key area and must not be linked with a fragment`);
   assert.ok(teacherPage.includes(`href="${slug}-test.html"`), `teacher-resources.html: missing link to ${slug}-test.html`);
-}
-for (const slug of ['grade4-unit1-lesson1', 'grade5-unit1-lesson2', 'grade8-unit1-lesson1']) {
-  assert.ok(!read(`${slug}-test.html`).includes('id="teacher-gate"'), `${slug}-test.html: an anchor was added that this phase must not create`);
+  assert.ok(!read(`${slug}-test.html`).includes('id="teacher-gate"'), `${slug}-test.html: this lesson publishes no answer key and must not gain a gate`);
+  assert.ok(!read(`${slug}-test.html`).includes('type="password"'), `${slug}-test.html: no password gate may be invented for this lesson`);
 }
 
 for (const grade of [1, 2, 6, 7, 9]) {
@@ -528,7 +529,7 @@ for (const grade of [1, 2, 6, 7, 9]) {
 for (const match of teacherPage.matchAll(/href="(grade\d+-unit\d+-lesson\d+)/g)) {
   assert.ok(teacherCounts[match[1]], `teacher-resources.html: link to an unknown lesson slug ${match[1]}`);
 }
-pass('Teacher resource links and counts are verified', 'All 35 lesson-page links resolve; 7 matrix rows match the actual test-item and reveal counts computed from the pages; 4 key anchors deep-link successfully and the 3 pages without an anchor are linked without a fragment');
+pass('Teacher resource links and counts are verified', 'All 35 lesson-page links resolve; 7 matrix rows match the actual test-item and reveal counts computed from the pages; all 6 published key areas deep-link to a #teacher-gate that exists on the target page, and the one keyless test is linked without a fragment');
 
 const homePage = read('index.html');
 assert.ok(homePage.includes('href="teacher.html"'), 'index.html: missing teacher portal entry link');
