@@ -431,5 +431,114 @@ assert.ok(!/Fraunces/i.test(designDoc), 'design-system.md must match implemented
 assert.ok(designDoc.includes('Space Grotesk') && designDoc.includes('DM Sans') && designDoc.includes('Noto Sans Arabic'), 'design-system.md must document implemented font families');
 pass('Phase 1 shared design system and local-font invariants', `All ${htmlFiles.length} HTML files load design-system.css and platform-shell.js with unique IDs, 6 verified local WOFF2 fonts, and zero external font imports`);
 
+// Phase 2-B Teacher Portal: verified links, verified counts, honest disclosure, no fake security.
+const teacherPages = ['teacher.html', 'teacher-resources.html'];
+for (const file of teacherPages) {
+  assert.ok(exists(file), `Missing ${file}`);
+  const html = read(file);
+  assert.match(html, /<html lang="en" dir="ltr">/, `${file}: English LTR root`);
+  assert.ok(!/<input\b/i.test(html), `${file}: teacher pages must not contain input controls`);
+  assert.ok(!/<form\b/i.test(html), `${file}: teacher pages must not contain forms`);
+  assert.ok(!/type="password"|fromCharCode|somer173/i.test(html), `${file}: no password prompt and no embedded password`);
+  assert.ok(!/<progress\b|role="progressbar"|aria-valuenow/i.test(html), `${file}: no progress or completion widgets`);
+  assert.ok(!/localStorage/i.test(html), `${file}: teacher pages must not use browser storage`);
+  assert.ok(!/docs\//.test(html), `${file}: engineering audit documents must not be presented as teaching resources`);
+  assert.match(html, /not authentication/i, `${file}: must state the shared password is not authentication`);
+  assert.match(html, /shared classroom password/i, `${file}: must describe the shared classroom password`);
+  for (const [pattern, label] of [
+    [/password[- ]protected/i, 'password-protected claim'],
+    [/encrypted/i, 'encryption claim'],
+    [/only teachers (?:can|may)/i, 'exclusive-access claim'],
+    [/restricted access/i, 'restricted-access claim'],
+    [/\bauthenticated\b/i, 'authentication claim']
+  ]) {
+    assert.ok(!pattern.test(html), `${file}: must not make a ${label}`);
+  }
+}
+pass('Teacher portal pages are directory-only', 'teacher.html and teacher-resources.html contain no inputs, forms, password prompts, progress widgets, storage calls or protection claims, and state that the shared classroom password is not authentication');
+
+const teacherPage = read('teacher-resources.html');
+assert.match(teacherPage, /visible to pupils/i, 'teacher-resources.html: in-page reveals must be disclosed as visible to pupils');
+
+const teacherCounts = {
+  'grade3-unit1-lesson1': '3 · 1 Back to School',
+  'grade3-unit1-lesson2': '3 · 2 School Subjects',
+  'grade4-unit1-lesson1': '4 · 1 Nice to Meet You',
+  'grade4-unit1-lesson2': '4 · 2 My Family',
+  'grade5-unit1-lesson1': '5 · 1 At School',
+  'grade5-unit1-lesson2': '5 · 2 Family',
+  'grade8-unit1-lesson1': '8 · 1 Future Plans'
+};
+const countTestItems = file => {
+  const html = read(file);
+  const staticQuestions = (html.match(/class="question"/g) || []).length;
+  if (staticQuestions) return staticQuestions;
+  const block = html.match(/const qs=\[([\s\S]*?)\n\];/);
+  return block ? (block[1].match(/^\s*\["/gm) || []).length : 0;
+};
+const countReveals = file =>
+  (read(file).match(/<button[^>]*(?:data-answer=|data-a=|class="[^"]*\breveal\b|onclick="document\.getElementById)/g) || []).length;
+
+const matrixRows = new Map(
+  Array.from(teacherPage.matchAll(/<tr>\s*<th scope="row">([^<]+)<\/th>([\s\S]*?)<\/tr>/g), match => [
+    match[1].trim(),
+    Array.from(match[2].matchAll(/<td>([\s\S]*?)<\/td>/g), cell => cell[1].replace(/<[^>]+>/g, '').trim())
+  ])
+);
+assert.equal(matrixRows.size, 7, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
+
+for (const [slug, label] of Object.entries(teacherCounts)) {
+  for (const suffix of ['', '-pupil-book', '-workbook', '-vocabulary', '-test']) {
+    assert.ok(teacherPage.includes(`href="${slug}${suffix}.html`), `teacher-resources.html: missing verified link to ${slug}${suffix}.html`);
+    assert.ok(exists(`${slug}${suffix}.html`), `teacher-resources.html: linked file does not exist: ${slug}${suffix}.html`);
+  }
+
+  const cells = matrixRows.get(label);
+  assert.ok(cells, `teacher-resources.html: missing matrix row "${label}"`);
+  assert.equal(cells.length, 5, `${label}: matrix row must have five value cells`);
+  assert.equal(cells[0], String(countTestItems(`${slug}-test.html`)), `${label}: displayed test-item count must match the actual page`);
+  assert.equal(cells[2], String(countReveals(`${slug}-pupil-book.html`)), `${label}: displayed book-reveal count must match the actual page`);
+  assert.equal(cells[3], String(countReveals(`${slug}-workbook.html`)), `${label}: displayed Workbook-reveal count must match the actual page`);
+  assert.equal(cells[4], 'None', `${label}: listening key must be reported as unavailable`);
+}
+assert.match(matrixRows.get('4 · 1 Nice to Meet You')[1], /Not published/, 'Grade 4 Lesson 1 must be listed as having no answer key');
+for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '8 · 1 Future Plans']) {
+  assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
+}
+
+const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1'];
+for (const slug of anchoredKeys) {
+  assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
+  assert.ok(read(`${slug}-test.html`).includes('id="teacher-gate"'), `${slug}-test.html: documented key anchor is missing`);
+}
+const unanchoredKeys = ['grade4-unit1-lesson1', 'grade5-unit1-lesson2', 'grade8-unit1-lesson1'];
+for (const slug of unanchoredKeys) {
+  assert.ok(!teacherPage.includes(`${slug}-test.html#`), `teacher-resources.html: ${slug} has no key anchor and must not be linked with a fragment`);
+  assert.ok(teacherPage.includes(`href="${slug}-test.html"`), `teacher-resources.html: missing link to ${slug}-test.html`);
+}
+for (const slug of ['grade4-unit1-lesson1', 'grade5-unit1-lesson2', 'grade8-unit1-lesson1']) {
+  assert.ok(!read(`${slug}-test.html`).includes('id="teacher-gate"'), `${slug}-test.html: an anchor was added that this phase must not create`);
+}
+
+for (const grade of [1, 2, 6, 7, 9]) {
+  assert.ok(teacherPage.includes(`href="lessons.html?grade=${grade}"`), `teacher-resources.html: missing template-only link for Grade ${grade}`);
+  assert.ok(teacherPage.includes(`href="lesson-menu.html?grade=${grade}&amp;lesson=1"`), `teacher-resources.html: missing lesson-template link for Grade ${grade}`);
+  assert.ok(!new RegExp(`href="grade${grade}-unit`).test(teacherPage), `teacher-resources.html: Grade ${grade} has no prepared lesson and must not link to one`);
+}
+for (const match of teacherPage.matchAll(/href="(grade\d+-unit\d+-lesson\d+)/g)) {
+  assert.ok(teacherCounts[match[1]], `teacher-resources.html: link to an unknown lesson slug ${match[1]}`);
+}
+pass('Teacher resource links and counts are verified', 'All 35 lesson-page links resolve; 7 matrix rows match the actual test-item and reveal counts computed from the pages; 4 key anchors deep-link successfully and the 3 pages without an anchor are linked without a fragment');
+
+const homePage = read('index.html');
+assert.ok(homePage.includes('href="teacher.html"'), 'index.html: missing teacher portal entry link');
+assert.ok(homePage.includes('href="teacher-resources.html"'), 'index.html: missing teacher resources entry link');
+const shell = read('platform-shell.js');
+assert.ok(shell.includes("href: 'teacher.html', label: 'Teachers'"), 'platform-shell.js: missing Teachers header navigation item');
+assert.ok(shell.includes("type: 'teacher-resources'") && shell.includes("type: 'teacher'"), 'platform-shell.js: missing teacher page contexts');
+pass('Teacher entry points and page contexts', 'Homepage links to both teacher pages; the shared header exposes one Teachers item; platform-shell resolves both teacher routes for breadcrumbs and active state');
+
+assert.ok(exists('docs/phase2-b-teacher-portal/verification.md'), 'Missing Phase 2-B verification documentation');
+
 const result = { suite: 'static-site-and-source-integrity', date: new Date().toISOString(), status: 'PASS', checks };
 console.log(JSON.stringify(result, null, 2));
