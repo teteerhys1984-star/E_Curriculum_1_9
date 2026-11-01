@@ -572,6 +572,8 @@ assert.equal((listing.match(/\d+-question Lesson Test<\/small>/g) || []).length,
 assert.doesNotMatch(listing.replace(/<script>[\s\S]*?<\/script>/g, ''), /\d+-question Lesson Test/,
   'lessons.html: static page copy must not claim a fixed question count');
 pass('Pupil-facing lesson-test counts match the published tests', `${lessonSlugs.length} lessons; index.html and lessons.html each state the real per-test count (${Object.entries(publishedTestCounts).map(([s, n]) => `${s}=${n}`).join(', ')}); generic copy shows the ${countRange} range and makes no fixed-count claim`);
+const roundPage = read('round-tests.html');
+assert.doesNotMatch(roundPage, /\d+-question Lesson Test/, 'round-tests.html: the links to individual lesson tests must not claim a question count that differs from the graded pages');
 
 assert.ok(exists('docs/phase2-b-teacher-portal/verification.md'), 'Missing Phase 2-B verification documentation');
 
