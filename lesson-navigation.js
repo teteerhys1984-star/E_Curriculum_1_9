@@ -24,19 +24,15 @@
   const gradeNum = gradeMatch ? gradeMatch[1] : '1';
   const gradeUrl = "lessons.html?grade=" + gradeNum;
 
-  const progress = Math.round(((current + 1) / pages.length) * 100);
-
   const style = document.createElement("style");
   style.textContent = `
-    .lesson-flow{position:sticky;bottom:0;z-index:1000;margin:28px auto 0;padding:14px 16px;max-width:1080px;border:1px solid var(--color-border-default);border-radius:var(--radius-lg);background:var(--color-bg-elevated);box-shadow:var(--shadow-sm);color:var(--color-text-primary);font-family:var(--font-sans)}
+    .lesson-flow{position:relative;margin:28px auto 0;padding:14px 16px;max-width:1080px;border:1px solid var(--color-border-default);border-radius:var(--radius-lg);background:var(--color-bg-elevated);box-shadow:var(--shadow-sm);color:var(--color-text-primary);font-family:var(--font-sans)}
     .lesson-flow-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px;font-size:var(--text-xs);color:var(--color-text-muted)}
-    .lesson-flow-progress{height:5px;overflow:hidden;border-radius:99px;background:var(--color-bg-subtle);flex:1;max-width:240px}
-    .lesson-flow-progress span{display:block;height:100%;border-radius:99px;background:var(--color-accent-700);transition:width .2s}
     .lesson-flow-actions{display:flex;justify-content:space-between;gap:10px}
-    .lesson-flow-action{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 14px;border:1px solid var(--color-border-default);border-radius:var(--radius-md);color:var(--color-text-primary);text-decoration:none;font-size:var(--text-xs);font-weight:600;background:var(--color-bg-surface);transition:transform .15s,border-color .15s,background .15s}
+    .lesson-flow-action{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;min-width:44px;padding:9px 14px;border:1px solid var(--color-border-default);border-radius:var(--radius-md);color:var(--color-text-primary);text-decoration:none;font-size:var(--text-xs);font-weight:600;background:var(--color-bg-surface);transition:transform .15s,border-color .15s,background .15s}
     .lesson-flow-action:hover{transform:translateY(-2px);border-color:var(--color-accent-600);background:var(--color-accent-50)}
     .lesson-flow-action[aria-disabled="true"]{opacity:.45;pointer-events:none}
-    @media(prefers-reduced-motion:reduce){.lesson-flow-action,.lesson-flow-progress span{transition:none}}
+    @media(prefers-reduced-motion:reduce){.lesson-flow-action{transition:none}}
   `;
   document.head.appendChild(style);
 
@@ -48,8 +44,11 @@
   const nav = document.createElement("nav");
   nav.className = "lesson-flow";
   nav.setAttribute("aria-label", "Lesson section navigation");
+  const previousControl = prevDisabled
+    ? '<span class="lesson-flow-action" aria-disabled="true">← Previous</span>'
+    : '<a class="lesson-flow-action" href="' + prevHref + '">← Previous</a>';
   nav.innerHTML =
-    '<div class="lesson-flow-top"><strong>YOUR LESSON PATH · ' + (current + 1) + ' / ' + pages.length + '</strong><div class="lesson-flow-progress" role="progressbar" aria-label="Lesson progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + progress + '"><span style="width:' + progress + '%"></span></div><span>' + progress + '%</span></div>' +
-    '<div class="lesson-flow-actions"><a class="lesson-flow-action" href="' + prevHref + '" ' + (prevDisabled ? 'aria-disabled="true"' : '') + '>← Previous</a><a class="lesson-flow-action" href="' + nextHref + '">' + (nextDisabled ? 'Finish lesson ✓' : 'Next section →') + '</a></div>';
+    '<div class="lesson-flow-top"><strong>CURRENT SECTION: ' + pages[current].short + '</strong></div>' +
+    '<div class="lesson-flow-actions">' + previousControl + '<a class="lesson-flow-action" href="' + nextHref + '">' + (nextDisabled ? 'Finish lesson' : 'Next section →') + '</a></div>';
   document.body.appendChild(nav);
 })();

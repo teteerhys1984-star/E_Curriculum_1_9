@@ -123,7 +123,7 @@ try {
         assert.equal(await control.getAttribute('href'), destination, `${route}: action ${actionIndex} destination`);
         assert.notEqual(await control.getAttribute('aria-disabled'), 'true', `${route}: working link must not be disabled`);
         assert.equal(await control.evaluate(el => el.tabIndex), 0, `${route}: keyboard focusable`);
-        assert.equal((await control.textContent()).trim(), actionIndex === 0 ? '← Previous' : index === sections.length - 1 ? 'Finish lesson ✓' : 'Next section →');
+        assert.equal((await control.textContent()).trim(), actionIndex === 0 ? '← Previous' : index === sections.length - 1 ? 'Finish lesson' : 'Next section →');
         await control.focus();
         assert.equal(await control.evaluate(el => document.activeElement === el), true);
         await Promise.all([
@@ -138,6 +138,73 @@ try {
       pagesChecked++;
     }
   }
+
+  // A future hub opt-in must not create a keyboard-activatable unavailable link.
+  await go('grade3-unit1-lesson2.html');
+  await page.addScriptTag({ url: origin + 'lesson-navigation.js' });
+  const unavailable = page.locator('.lesson-flow-action').first();
+  assert.equal(await unavailable.evaluate(el => el.tagName), 'SPAN');
+  assert.equal(await unavailable.getAttribute('href'), null);
+  assert.equal(await unavailable.evaluate(el => el.tabIndex), -1);
+  assert.equal(await unavailable.getAttribute('aria-disabled'), 'true');
+
+  let responsivePages = 0;
+  for (const width of [320, 390, 768, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const grade of grades) {
+      const slug = `grade${grade}-unit1-lesson${grade === 8 ? 1 : 2}`;
+      for (const section of sections) {
+        await go(`${slug}-${section}.html`);
+        const nav = page.locator('.lesson-flow');
+        assert.equal(await nav.locator('[role="progressbar"], [aria-valuenow], .lesson-flow-progress').count(), 0);
+        assert.doesNotMatch(await nav.textContent(), /%|YOUR LESSON PATH|complete|completed|✓/i);
+        assert.match(await nav.locator('.lesson-flow-top').textContent(), /^CURRENT SECTION:/);
+        assert.equal(await nav.evaluate(el => getComputedStyle(el).position), 'relative');
+        assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+        // Begin at the document, then reach both links using actual sequential Tab presses.
+        await page.evaluate(() => { document.activeElement?.blur(); window.scrollTo(0, 0); });
+        let reachedPrevious = false;
+        for (let step = 0; step < 500; step++) {
+          await page.keyboard.press('Tab');
+          if (await nav.locator('a').first().evaluate(el => el === document.activeElement)) {
+            reachedPrevious = true;
+            break;
+          }
+        }
+        assert.equal(reachedPrevious, true, 'Previous reachable by Tab');
+        await page.keyboard.press('Tab');
+        const next = nav.locator('a').nth(1);
+        assert.equal(await next.evaluate(el => el === document.activeElement), true, 'Next follows Previous');
+        for (const link of await nav.locator('a').all()) {
+          await link.focus();
+          const focus = await link.evaluate(el => {
+            const style = getComputedStyle(el), rect = el.getBoundingClientRect();
+            return { outline: style.outlineStyle, width: parseFloat(style.outlineWidth), height: rect.height, size: rect.width };
+          });
+          assert.notEqual(focus.outline, 'none');
+          assert.ok(focus.width >= 2);
+          assert.ok(focus.height >= 44 && focus.size >= 44);
+        }
+        const toggle = page.locator('.site-mobile-toggle');
+        if (await toggle.isVisible()) {
+          await toggle.click();
+          const drawer = page.locator('#site-mobile-drawer');
+          assert.equal(await drawer.isVisible(), true);
+          const drawerBox = await drawer.boundingBox(), navBox = await nav.boundingBox();
+          assert.ok(drawerBox.y + drawerBox.height <= navBox.y || navBox.y + navBox.height <= drawerBox.y, 'Drawer and bottom bar do not overlap');
+          await page.keyboard.press('Escape');
+          assert.equal(await drawer.isVisible(), false);
+        }
+        if (section === 'test') {
+          await next.focus();
+          await page.screenshot({ path: path.join(screenshotsDir, `grade${grade}-focus-${width}.png`), fullPage: true });
+        }
+        responsivePages++;
+      }
+    }
+  }
+  pass('Neutral position and unavailable hub control', 'No percentages, completion claims or progressbar; unavailable Previous is a non-focusable span');
+  pass('Desktop/mobile/tablet sequential Tab, focus and layout', `${responsivePages} page/viewport checks at 320, 390, 768 and 1440px; 44px targets, visible outlines, drawer separation and Escape`);
 
   assert.deepEqual(errors, [], 'No browser, console or local HTTP errors');
   pass('Previous/Next and Finish lesson behaviour', `${grades.length} grades × ${sections.length} sections; ${transitionsChecked} keyboard-activated transitions`);
