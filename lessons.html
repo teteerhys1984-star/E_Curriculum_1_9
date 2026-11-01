@@ -26,7 +26,7 @@
       <div class="eyebrow" id="grade-stage">School Curriculum</div>
       <h1 id="title">Grade Lessons</h1>
       <p id="grade-summary">
-        Select a lesson below to open its Pupil’s or Student’s Book study pages, Workbook exercises, Vocabulary reference, and 20-question Lesson Test.
+        Select a lesson below to open its Pupil’s or Student’s Book study pages, Workbook exercises, Vocabulary reference, and the Lesson Test.
       </p>
       <div class="pills" id="grade-badges"></div>
     </header>
@@ -48,7 +48,7 @@
           <div class="step"><b>01</b>Read the Pupil’s or Student’s Book pages.</div>
           <div class="step"><b>02</b>Practise every Workbook exercise.</div>
           <div class="step"><b>03</b>Review word-level Vocabulary meanings.</div>
-          <div class="step"><b>04</b>Check mastery in the 20-question Test.</div>
+          <div class="step"><b>04</b>Check mastery in the Lesson Test.</div>
         </div>
       </div>
 
@@ -115,7 +115,7 @@
     if (count > 0) {
       badgesEl.innerHTML = `<span class="badge badge-available">${count} prepared ${count === 1 ? 'lesson' : 'lessons'} available</span><span class="badge badge-strand">Unit 1 active</span>`;
       document.getElementById('grade-summary').textContent =
-        `Grade ${grade} currently includes ${count} complete, source-verified Unit 1 ${count === 1 ? 'lesson' : 'lessons'}. Open a lesson below to study the book pages, complete Workbook activities, review Vocabulary, or take the 20-question Lesson Test.`;
+        `Grade ${grade} currently includes ${count} complete, source-verified Unit 1 ${count === 1 ? 'lesson' : 'lessons'}. Open a lesson below to study the book pages, complete Workbook activities, review Vocabulary, or take the Lesson Test.`;
       document.getElementById('round-copy').textContent =
         `Grade ${grade} currently has ${count} of the 5 verified lessons required to unlock Round 1 Assessment.`;
     } else {
@@ -129,11 +129,11 @@
     const lesson1 = grade === 3
       ? '<a class="lesson" href="grade3-unit1-lesson1.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 1 · Back to School</strong><small>Pupil’s Book · Workbook (pp. 3–5) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
       : grade === 4
-      ? '<a class="lesson" href="grade4-unit1-lesson1.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 1 · Nice to Meet You</strong><small>Pupil’s Book (pp. 3–5) · Workbook (pp. 5–7) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      ? '<a class="lesson" href="grade4-unit1-lesson1.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 1 · Nice to Meet You</strong><small>Pupil’s Book (pp. 3–5) · Workbook (pp. 5–7) · Vocabulary · 10-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
       : grade === 5
       ? '<a class="lesson" href="grade5-unit1-lesson1.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 1 · At School</strong><small>Pupil’s Book (pp. 3–5) · Workbook (pp. 5–7) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
       : grade === 8
-      ? '<a class="lesson" href="grade8-unit1-lesson1.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 1 · Future Plans</strong><small>Student’s Book (pp. 6–11) · Workbook (pp. 2–5) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      ? '<a class="lesson" href="grade8-unit1-lesson1.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 1 · Future Plans</strong><small>Student’s Book (pp. 6–11) · Workbook (pp. 2–5) · Vocabulary · 16-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
       : `<a class="lesson is-template" href="lesson-menu.html?grade=${grade}&lesson=1"><div><span class="badge badge-upcoming">In preparation · Template preview</span><strong>Lesson 1</strong><small>Preview the 4-part lesson hub: Pupil’s Book · Workbook · Vocabulary · Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>`;
 
     const lesson2 = grade===3?'<a class="lesson" href="grade3-unit1-lesson2.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 2 · School Subjects</strong><small>Pupil’s Book (pp. 6–8) · Workbook (pp. 6–8) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'

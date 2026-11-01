@@ -538,6 +538,41 @@ assert.ok(shell.includes("href: 'teacher.html', label: 'Teachers'"), 'platform-s
 assert.ok(shell.includes("type: 'teacher-resources'") && shell.includes("type: 'teacher'"), 'platform-shell.js: missing teacher page contexts');
 pass('Teacher entry points and page contexts', 'Homepage links to both teacher pages; the shared header exposes one Teachers item; platform-shell resolves both teacher routes for breadcrumbs and active state');
 
+// Phase 2-C batch C-1: every question count shown to pupils must equal the count published
+// on that lesson’s own test page, and copy that is not tied to one lesson must not claim a
+// fixed count at all. Counts are computed from the pages, never from this test.
+const lessonSlugs = Object.keys(teacherCounts);
+const publishedTestCounts = Object.fromEntries(lessonSlugs.map(slug => [slug, countTestItems(`${slug}-test.html`)]));
+const countRange = `${Math.min(...Object.values(publishedTestCounts))}\u2013${Math.max(...Object.values(publishedTestCounts))}`;
+
+const homeDirectory = read('index.html');
+const homeCountClaims = new Map();
+for (const match of homeDirectory.matchAll(/<span>[^<]*?(\d+)-question Test<\/span>\s*<\/div>\s*<div class="directory-quick-links">\s*<a href="(grade\d+-unit\d+-lesson\d+)\.html">/g))
+  homeCountClaims.set(match[2], Number(match[1]));
+assert.equal(homeCountClaims.size, lessonSlugs.length, 'index.html: one counted lesson row expected per prepared lesson');
+for (const slug of lessonSlugs)
+  assert.equal(homeCountClaims.get(slug), publishedTestCounts[slug],
+    `index.html: Grade ${slug} row must state ${publishedTestCounts[slug]} questions, not ${homeCountClaims.get(slug)}`);
+assert.equal((homeDirectory.match(/\d+-question Test<\/span>/g) || []).length, lessonSlugs.length,
+  'index.html: question counts belong only to the per-lesson directory rows');
+assert.doesNotMatch(homeDirectory.replace(/<section class="curriculum-directory"[\s\S]*?<\/section>/, '').replace(/10\s*(?:to|and|[\u2013-])\s*20[- ]questions?/gi, ''), /20[- ]question|20 multiple-choice/,
+  'index.html: copy not tied to one lesson must not claim a fixed 20-question test; only the verified range is allowed');
+assert.ok(homeDirectory.includes(`<b>${countRange}</b><span>Questions in each lesson test</span>`),
+  `index.html: the published summary must show the real ${countRange} range computed from the test pages`);
+
+const gradeCountClaims = new Map();
+for (const match of listing.matchAll(/href="(grade\d+-unit\d+-lesson\d+)\.html"[\s\S]{0,400}?<small>[^<]*?(\d+)-question Lesson Test<\/small>/g))
+  gradeCountClaims.set(match[1], Number(match[2]));
+assert.equal(gradeCountClaims.size, lessonSlugs.length, 'lessons.html: one counted lesson entry expected per prepared lesson');
+for (const slug of lessonSlugs)
+  assert.equal(gradeCountClaims.get(slug), publishedTestCounts[slug],
+    `lessons.html: ${slug} entry must state ${publishedTestCounts[slug]} questions, not ${gradeCountClaims.get(slug)}`);
+assert.equal((listing.match(/\d+-question Lesson Test<\/small>/g) || []).length, lessonSlugs.length,
+  'lessons.html: question counts belong only to the per-lesson entries');
+assert.doesNotMatch(listing.replace(/<script>[\s\S]*?<\/script>/g, ''), /\d+-question Lesson Test/,
+  'lessons.html: static page copy must not claim a fixed question count');
+pass('Pupil-facing lesson-test counts match the published tests', `${lessonSlugs.length} lessons; index.html and lessons.html each state the real per-test count (${Object.entries(publishedTestCounts).map(([s, n]) => `${s}=${n}`).join(', ')}); generic copy shows the ${countRange} range and makes no fixed-count claim`);
+
 assert.ok(exists('docs/phase2-b-teacher-portal/verification.md'), 'Missing Phase 2-B verification documentation');
 
 const result = { suite: 'static-site-and-source-integrity', date: new Date().toISOString(), status: 'PASS', checks };
