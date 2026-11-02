@@ -59,13 +59,12 @@ const anchoredKeyLinks = [
   'grade3-unit1-lesson1-test.html#teacher-gate',
   'grade3-unit1-lesson2-test.html#teacher-gate',
   'grade4-unit1-lesson2-test.html#teacher-gate',
-  'grade5-unit1-lesson1-test.html#teacher-gate'
+  'grade5-unit1-lesson1-test.html#teacher-gate',
+  'grade5-unit1-lesson2-test.html#teacher-gate',
+  'grade8-unit1-lesson1-test.html#teacher-gate'
 ];
-const unanchoredTests = [
-  { slug: 'grade4-unit1-lesson1', hasKeyArea: false },
-  { slug: 'grade5-unit1-lesson2', hasKeyArea: true },
-  { slug: 'grade8-unit1-lesson1', hasKeyArea: true }
-];
+// The one lesson test that publishes no answer key at all. It must gain neither a gate nor a link.
+const keylessTests = ['grade4-unit1-lesson1'];
 const viewports = [
   { width: 1440, height: 900 },
   { width: 1366, height: 768 },
@@ -256,7 +255,7 @@ try {
   assert.deepEqual(brokenLinks, [], 'broken teacher links');
   pass('Teacher link resolution', `${localLinks.size} distinct local destinations from the two teacher pages all returned HTTP 200, including every lesson page and every template route`);
 
-  // 5. Key anchors: the four published areas deep-link, the others are linked without a fragment.
+  // 5. Key anchors: every published key area deep-links to a gate that is in view on arrival.
   for (const href of anchoredKeyLinks) {
     await go(href);
     const gate = page.locator('#teacher-gate');
@@ -272,29 +271,23 @@ try {
     const view = await gate.evaluate(el => ({ top: el.getBoundingClientRect().top, vh: window.innerHeight }));
     assert.ok(view.top >= -2 && view.top < view.vh - 40, `${href}: hash navigation must bring the key area into view (top ${Math.round(view.top)} of ${view.vh})`);
     const keyId = await page.evaluate(() => {
-      const guide = document.querySelector('#answer-guide, #answer-key');
+      const guide = document.querySelector('#answer-guide, #answer-key, #key');
       return guide ? guide.id : '';
     });
     assert.ok(keyId.length > 0, `${href}: no answer container found`);
     assert.equal(await page.locator(`#${keyId}`).isVisible(), false, `${href}: the key must stay hidden until it is unlocked`);
     assert.equal(await page.locator('[id="teacher-password"]').count() + await page.locator('#pw').count() > 0, true, `${href}: the existing key area must keep its password field`);
   }
-  pass('Published key anchors', 'Four lesson tests deep-link to #teacher-gate, each lands with the key area in view and keeps the answer container hidden until it is unlocked');
+  pass('Published key anchors', `${anchoredKeyLinks.length} lesson tests deep-link to #teacher-gate, each lands with the key area in view and keeps the answer container hidden until it is unlocked`);
 
-  for (const { slug, hasKeyArea } of unanchoredTests) {
+  for (const slug of keylessTests) {
     await go(`${slug}-test.html`);
-    assert.equal(await page.locator('#teacher-gate').count(), 0, `${slug}: this phase must not add a key anchor`);
-    if (hasKeyArea) {
-      const heading = await page.locator('h2', { hasText: 'Teacher Area · Answer Key' }).count();
-      assert.equal(heading, 1, `${slug}: expected the existing heading without an anchor`);
-      assert.equal(await page.locator('input[type="password"]').count(), 1, `${slug}: expected the existing password field`);
-    } else {
-      assert.equal(await page.locator('input[type="password"]').count(), 0, `${slug}: this test has no key area at all`);
-      const text = await page.locator('body').innerText();
-      assert.doesNotMatch(text, /Teacher Area|teacher password/i, `${slug}: no key area may be claimed`);
-    }
+    assert.equal(await page.locator('#teacher-gate').count(), 0, `${slug}: this test publishes no key and must not carry a gate`);
+    assert.equal(await page.locator('input[type="password"]').count(), 0, `${slug}: this test has no key area at all`);
+    const text = await page.locator('body').innerText();
+    assert.doesNotMatch(text, /Teacher Area|teacher password/i, `${slug}: no key area may be claimed`);
   }
-  pass('Pages without a key anchor', 'Grade 4 Lesson 1 has no key area, and the Grade 5 Lesson 2 and Grade 8 Lesson 1 key areas keep their existing heading and password field untouched, with no anchor invented');
+  pass('Tests without a key area', 'Grade 4 Lesson 1 keeps no gate, no password field and no key claim, exactly as published');
 
   // 6. The teacher pages ask for nothing and record nothing.
   await go('teacher.html');

@@ -506,18 +506,19 @@ for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '4 · 2 
   assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
 }
 
-const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1'];
+const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade8-unit1-lesson1'];
 for (const slug of anchoredKeys) {
   assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
   assert.ok(read(`${slug}-test.html`).includes('id="teacher-gate"'), `${slug}-test.html: documented key anchor is missing`);
 }
-const unanchoredKeys = ['grade4-unit1-lesson1', 'grade5-unit1-lesson2', 'grade8-unit1-lesson1'];
-for (const slug of unanchoredKeys) {
-  assert.ok(!teacherPage.includes(`${slug}-test.html#`), `teacher-resources.html: ${slug} has no key anchor and must not be linked with a fragment`);
+// Grade 4 Lesson 1 is the deliberate exception: its test publishes no answer key, so it must
+// gain neither a gate on the page nor a deep link in the directory.
+const keylessTests = ['grade4-unit1-lesson1'];
+for (const slug of keylessTests) {
+  assert.ok(!teacherPage.includes(`${slug}-test.html#`), `teacher-resources.html: ${slug} has no key area and must not be linked with a fragment`);
   assert.ok(teacherPage.includes(`href="${slug}-test.html"`), `teacher-resources.html: missing link to ${slug}-test.html`);
-}
-for (const slug of ['grade4-unit1-lesson1', 'grade5-unit1-lesson2', 'grade8-unit1-lesson1']) {
-  assert.ok(!read(`${slug}-test.html`).includes('id="teacher-gate"'), `${slug}-test.html: an anchor was added that this phase must not create`);
+  assert.ok(!read(`${slug}-test.html`).includes('id="teacher-gate"'), `${slug}-test.html: this lesson publishes no answer key and must not gain a gate`);
+  assert.ok(!read(`${slug}-test.html`).includes('type="password"'), `${slug}-test.html: no password gate may be invented for this lesson`);
 }
 
 for (const grade of [1, 2, 6, 7, 9]) {
@@ -528,7 +529,7 @@ for (const grade of [1, 2, 6, 7, 9]) {
 for (const match of teacherPage.matchAll(/href="(grade\d+-unit\d+-lesson\d+)/g)) {
   assert.ok(teacherCounts[match[1]], `teacher-resources.html: link to an unknown lesson slug ${match[1]}`);
 }
-pass('Teacher resource links and counts are verified', 'All 35 lesson-page links resolve; 7 matrix rows match the actual test-item and reveal counts computed from the pages; 4 key anchors deep-link successfully and the 3 pages without an anchor are linked without a fragment');
+pass('Teacher resource links and counts are verified', 'All 35 lesson-page links resolve; 7 matrix rows match the actual test-item and reveal counts computed from the pages; all 6 published key areas deep-link to a #teacher-gate that exists on the target page, and the one keyless test is linked without a fragment');
 
 const homePage = read('index.html');
 assert.ok(homePage.includes('href="teacher.html"'), 'index.html: missing teacher portal entry link');
@@ -537,6 +538,43 @@ const shell = read('platform-shell.js');
 assert.ok(shell.includes("href: 'teacher.html', label: 'Teachers'"), 'platform-shell.js: missing Teachers header navigation item');
 assert.ok(shell.includes("type: 'teacher-resources'") && shell.includes("type: 'teacher'"), 'platform-shell.js: missing teacher page contexts');
 pass('Teacher entry points and page contexts', 'Homepage links to both teacher pages; the shared header exposes one Teachers item; platform-shell resolves both teacher routes for breadcrumbs and active state');
+
+// Phase 2-C batch C-1: every question count shown to pupils must equal the count published
+// on that lesson’s own test page, and copy that is not tied to one lesson must not claim a
+// fixed count at all. Counts are computed from the pages, never from this test.
+const lessonSlugs = Object.keys(teacherCounts);
+const publishedTestCounts = Object.fromEntries(lessonSlugs.map(slug => [slug, countTestItems(`${slug}-test.html`)]));
+const countRange = `${Math.min(...Object.values(publishedTestCounts))}\u2013${Math.max(...Object.values(publishedTestCounts))}`;
+
+const homeDirectory = read('index.html');
+const homeCountClaims = new Map();
+for (const match of homeDirectory.matchAll(/<span>[^<]*?(\d+)-question Test<\/span>\s*<\/div>\s*<div class="directory-quick-links">\s*<a href="(grade\d+-unit\d+-lesson\d+)\.html">/g))
+  homeCountClaims.set(match[2], Number(match[1]));
+assert.equal(homeCountClaims.size, lessonSlugs.length, 'index.html: one counted lesson row expected per prepared lesson');
+for (const slug of lessonSlugs)
+  assert.equal(homeCountClaims.get(slug), publishedTestCounts[slug],
+    `index.html: Grade ${slug} row must state ${publishedTestCounts[slug]} questions, not ${homeCountClaims.get(slug)}`);
+assert.equal((homeDirectory.match(/\d+-question Test<\/span>/g) || []).length, lessonSlugs.length,
+  'index.html: question counts belong only to the per-lesson directory rows');
+assert.doesNotMatch(homeDirectory.replace(/<section class="curriculum-directory"[\s\S]*?<\/section>/, '').replace(/10\s*(?:to|and|[\u2013-])\s*20[- ]questions?/gi, ''), /20[- ]question|20 multiple-choice/,
+  'index.html: copy not tied to one lesson must not claim a fixed 20-question test; only the verified range is allowed');
+assert.ok(homeDirectory.includes(`<b>${countRange}</b><span>Questions in each lesson test</span>`),
+  `index.html: the published summary must show the real ${countRange} range computed from the test pages`);
+
+const gradeCountClaims = new Map();
+for (const match of listing.matchAll(/href="(grade\d+-unit\d+-lesson\d+)\.html"[\s\S]{0,400}?<small>[^<]*?(\d+)-question Lesson Test<\/small>/g))
+  gradeCountClaims.set(match[1], Number(match[2]));
+assert.equal(gradeCountClaims.size, lessonSlugs.length, 'lessons.html: one counted lesson entry expected per prepared lesson');
+for (const slug of lessonSlugs)
+  assert.equal(gradeCountClaims.get(slug), publishedTestCounts[slug],
+    `lessons.html: ${slug} entry must state ${publishedTestCounts[slug]} questions, not ${gradeCountClaims.get(slug)}`);
+assert.equal((listing.match(/\d+-question Lesson Test<\/small>/g) || []).length, lessonSlugs.length,
+  'lessons.html: question counts belong only to the per-lesson entries');
+assert.doesNotMatch(listing.replace(/<script>[\s\S]*?<\/script>/g, ''), /\d+-question Lesson Test/,
+  'lessons.html: static page copy must not claim a fixed question count');
+pass('Pupil-facing lesson-test counts match the published tests', `${lessonSlugs.length} lessons; index.html and lessons.html each state the real per-test count (${Object.entries(publishedTestCounts).map(([s, n]) => `${s}=${n}`).join(', ')}); generic copy shows the ${countRange} range and makes no fixed-count claim`);
+const roundPage = read('round-tests.html');
+assert.doesNotMatch(roundPage, /\d+-question Lesson Test/, 'round-tests.html: the links to individual lesson tests must not claim a question count that differs from the graded pages');
 
 assert.ok(exists('docs/phase2-b-teacher-portal/verification.md'), 'Missing Phase 2-B verification documentation');
 
