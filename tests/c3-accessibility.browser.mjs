@@ -17,7 +17,7 @@ const errors = [];
 // Optional focused runs make the pre-fix failures reproducible without changing main.
 // The default and CI always run every section.
 const section = process.env.C3_SECTION || 'all';
-const sections = ['all', 'semantics', 'names', 'disclosures', 'keyboard', 'answered', 'gates', 'layout'];
+const sections = ['all', 'semantics', 'names', 'disclosures', 'keyboard', 'answered', 'gates', 'layout', 'print'];
 if (!sections.includes(section)) throw new Error(`Unknown C3_SECTION: ${section}`);
 const enabled = name => section === 'all' || section === name;
 const pass = (name, detail) => { checks.push({ name, status: 'PASS', detail }); console.log('PASS', name, detail); };
@@ -281,6 +281,26 @@ try {
       }
     }
     pass('Teacher gate accessibility', 'Six existing keyed tests keep the C-2 separation, expose aria-expanded, reject wrong passwords and synchronize the open/closed state');
+  }
+
+  if (enabled('print')) {
+    // Screen-reader status spans are interface-only and must not create print boxes.
+    let statusPages = 0;
+    let statusSpans = 0;
+    for (const file of htmlFiles) {
+      await go(file);
+      const screenCount = await page.locator('[data-reveal-status], [data-question-index-status]').count();
+      await page.emulateMedia({ media: 'print' });
+      const printState = await page.evaluate(() => Array.from(document.querySelectorAll('[data-reveal-status], [data-question-index-status]')).map(el => ({
+        display: getComputedStyle(el).display,
+        boxes: el.getClientRects().length
+      })));
+      assert.ok(printState.every(item => item.display === 'none' && item.boxes === 0), `${file}: live-status spans must be hidden in print ${JSON.stringify(printState.filter(item => item.display !== 'none' || item.boxes !== 0).slice(0, 3))}`);
+      await page.emulateMedia({ media: 'screen' });
+      assert.equal(await page.locator('[data-reveal-status], [data-question-index-status]').count(), screenCount, `${file}: print emulation must not remove screen live regions`);
+      if (screenCount) { statusPages++; statusSpans += screenCount; }
+    }
+    pass('Print status suppression', `${htmlFiles.length} pages: ${statusSpans} reveal/question-index live-status spans on ${statusPages} pages create no print boxes and remain available on screen`);
   }
 
   if (enabled('layout')) {

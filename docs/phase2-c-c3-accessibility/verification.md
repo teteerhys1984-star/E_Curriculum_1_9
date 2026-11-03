@@ -4,6 +4,8 @@
 
 C-3 only: accessibility improvements for the existing English Full Curriculum site. No C-4 work, navigation redesign, lesson/question/answer/key text edits, scoring-formula changes, deployment, or merge.
 
+The pre-merge follow-up is limited to the two requested review fixes: exact numeric scoring regression coverage for all seven lesson tests, and explicit print suppression of the two C-3 live-status span types. The optional idempotence guard, narrower gate selector and more specific reveal announcement wording were **not** implemented.
+
 Verified before application edits in this round:
 
 - `origin/main`: `451761991899793097c7bb7156ac2f969a74eaf2`.
@@ -37,7 +39,7 @@ Verified before application edits in this round:
 
 ## Files changed and reasons
 
-The PR changes 57 files: 47 application files, six test/configuration files, and four C-3 documentation/evidence files. Most HTML changes are repeated script includes or small accessibility attributes, not content rewrites.
+The PR changes 61 files after the pre-merge follow-up: 47 application files, eight test/configuration files, and six C-3 documentation/evidence files. Most HTML changes are repeated script includes or small accessibility attributes, not content rewrites.
 
 ### Shared application code and styling
 
@@ -61,13 +63,16 @@ The PR changes 57 files: 47 application files, six test/configuration files, and
 
 | File | Reason |
 |---|---|
-| `tests/c3-accessibility.browser.mjs` | Full-site semantic audit, Chromium computed-name audit across every step, disclosure/live-region checks, keyboard checks, answered-state/reset checks, gate checks and forced-colors check. Optional `C3_SECTION` runs reproduce focused failures; the default and CI run everything. |
+| `tests/c3-accessibility.browser.mjs` | Full-site semantic audit, Chromium computed-name audit across every step, disclosure/live-region checks, keyboard checks, answered-state/reset checks, gate checks, print-status suppression and forced-colors check. Optional `C3_SECTION` runs reproduce focused failures; the default and CI run everything. |
+| `tests/c3-scoring.browser.mjs`, `tests/c3-scoring.fixture.json` | Exact numeric scoring regression for all seven lesson tests, using keys pinned to `origin/main`, plus seven in-memory scoring-formula mutation checks. |
 | `tests/c3-content-integrity.mjs`, `tests/c3-content-baseline.json` | Protect educational text, legacy quiz/recall arrays and modern assessment evidence against the verified C-2 baseline. |
 | `tests/check-site.mjs` | Existing teacher-resource reveal counts also recognize the accessible `data-reveal` buttons. No existing assertion was removed. |
-| `package.json` | Run content integrity, helper syntax and the C-3 browser suite in the existing commands. |
-| `.github/workflows/lesson-checks.yml` | Preserve C-3 browser evidence as an Actions artifact. |
+| `package.json` | Run content integrity, helper syntax, the C-3 accessibility suite and the C-3 scoring suite in the existing commands. |
+| `.github/workflows/lesson-checks.yml` | Preserve C-3 accessibility and scoring evidence as Actions artifacts. |
 | `docs/phase2-c-c3-accessibility/verification.md` | This report. |
-| `docs/phase2-c-c3-accessibility/evidence/browser-report.json` | Fresh final C-3 browser result. |
+| `docs/phase2-c-c3-accessibility/evidence/browser-report.json` | Fresh final C-3 accessibility browser result. |
+| `docs/phase2-c-c3-accessibility/evidence/scoring-report.json` | Exact numeric scoring results and mutation-rejection evidence for all seven tests. |
+| `docs/phase2-c-c3-accessibility/evidence/followup-print-red-green.json` | Print-status regression before and after the two CSS selectors were added. |
 | `docs/phase2-c-c3-accessibility/evidence/red-checks.json` | Eight actual pre-fix failures against exact `main` and pre-fix PR snapshots. |
 | `docs/phase2-c-c3-accessibility/evidence/answered-state-forced-colors-390.png` | Automated Chromium forced-colors screenshot at 390px. |
 
@@ -93,6 +98,50 @@ C3_SECTION=layout node tests/c3-accessibility.browser.mjs
 
 These focused options are for diagnosis. `npm run test:browser` does not set a filter and runs all C-3 sections.
 
+## Pre-merge follow-up: exact scoring and print-status fixes
+
+### Exact numeric scoring coverage
+
+`tests/c3-scoring.browser.mjs` now checks the actual published numbers for all seven lesson tests. Expected values come from `tests/c3-scoring.fixture.json`, pinned to `origin/main` at `4517619…`, not from the page under test. The modern Grade 3/Grade 4 Lesson 2 keys also match the existing source-reviewed quiz fixtures.
+
+Every test is checked with: empty submission, all wrong, all correct, one wrong, first-only correct, and alternating correct/wrong. Where the page has a reset control, the suite also resets and resubmits an empty test. Grade 3 Lesson 1 additionally checks written completion counts and whitespace-only writing; Grade 4 Lesson 1 additionally checks the existing written-answer length/regex boundaries and case-insensitive matching.
+
+Actual full-marks results:
+
+| Test | Exact full-marks result |
+|---|---|
+| `grade3-unit1-lesson1-test.html` | `15 / 15` objective, `15 / 15` answered, written completion separately `0–5 / 5` |
+| `grade3-unit1-lesson2-test.html` | `20 / 20`, answered `20 / 20`, unanswered `0` |
+| `grade4-unit1-lesson1-test.html` | `10/10` with eight objective answers and both existing written rules satisfied |
+| `grade4-unit1-lesson2-test.html` | `20 / 20`, answered `20 / 20`, unanswered `0` |
+| `grade5-unit1-lesson1-test.html` | `20 / 20`, answered `20 / 20` |
+| `grade5-unit1-lesson2-test.html` | `20 / 20`, answered `20 / 20` |
+| `grade8-unit1-lesson1-test.html` | `16 / 16`, answered `16 / 16`; listening remains excluded |
+
+The suite recorded **57 exact numeric result assertions** and **zero browser/HTTP errors**. No expected result was invented for an unavailable key: all seven keys were available from the pinned main baseline or the existing source-reviewed fixtures.
+
+### Scoring-formula mutation regression
+
+The same suite serves seven temporary mutated copies through Chromium request interception only. Repository scoring files are not edited. Each mutation doubles the objective-score increment, and the suite requires the exact numeric assertion to reject the mutated page:
+
+| Test | Expected full marks | Mutated result | Rejected |
+|---|---:|---:|---|
+| Grade 3 Lesson 1 | 15 | 30 | yes |
+| Grade 3 Lesson 2 | 20 | 40 | yes |
+| Grade 4 Lesson 1 | 10 | 18 | yes |
+| Grade 4 Lesson 2 | 20 | 40 | yes |
+| Grade 5 Lesson 1 | 20 | 40 | yes |
+| Grade 5 Lesson 2 | 20 | 40 | yes |
+| Grade 8 Lesson 1 | 16 | 32 | yes |
+
+This proves the new numeric assertions fail when a scoring formula changes, rather than merely checking that a result message appears.
+
+### Print-status regression
+
+`design-system.css` now explicitly hides `[data-reveal-status]` and `[data-question-index-status]` inside `@media print`. The new `C3_SECTION=print` regression first failed on the pre-fix CSS because status spans still produced print boxes, then passed after the two selectors were added. Final result: **42 pages**, **132 status spans on 21 pages**, zero print boxes, and the screen live regions remain present.
+
+Evidence: [scoring-report.json](evidence/scoring-report.json) and [followup-print-red-green.json](evidence/followup-print-red-green.json).
+
 ## Automated checks actually run
 
 ### Static, source and syntax checks
@@ -117,7 +166,7 @@ Result: **PASS**.
 npm run test:browser
 ```
 
-Result: **PASS**, exit code **0**, in headless Chromium. All seven suites passed, with 69 named PASS checks:
+Result: **PASS**, exit code **0**, in headless Chromium. All eight suites passed, with 78 named PASS checks:
 
 | Suite | Result |
 |---|---|
@@ -127,7 +176,8 @@ Result: **PASS**, exit code **0**, in headless Chromium. All seven suites passed
 | `phase1-design-foundation.browser.mjs` | PASS — 7 checks |
 | `phase2-a-navigation.browser.mjs` | PASS — 7 checks |
 | `teacher-portal.browser.mjs` | PASS — 14 checks |
-| `c3-accessibility.browser.mjs` | PASS — 7 checks |
+| `c3-accessibility.browser.mjs` | PASS — 8 checks |
+| `c3-scoring.browser.mjs` | PASS — 8 checks |
 
 Final C-3 coverage:
 
@@ -138,9 +188,11 @@ Final C-3 coverage:
 - **Seven tests:** visible answered mark, accessible state, live status, reset and whitespace handling.
 - **Six keyed tests:** C-2 separation, wrong-password rejection, hidden initial key and synchronized open/closed state.
 - **Layout:** all 42 pages at 320px and 1440px in the existing design suite; all 42 at 390px in the curriculum suite; seven tests additionally at 390px in C-3. The answered mark survives forced-colors emulation.
+- **Print:** all 42 pages were checked under print emulation; the 132 reveal/question-index status spans on 21 pages create no print boxes, while existing C-2 checks still hide keys, gates, buttons and step navigation.
+- **Scoring:** all seven lesson tests have exact numeric assertions from pinned keys, including empty/wrong/correct/partial/reset cases and the two legacy written-answer behaviours; seven in-memory scoring-formula mutations were rejected.
 - **Health:** no JavaScript page errors, console errors or local HTTP errors in the C-3 suite; existing suites also passed their health checks.
 
-Fresh evidence: [browser-report.json](evidence/browser-report.json) and [answered-state-forced-colors-390.png](evidence/answered-state-forced-colors-390.png). Unrelated teacher-portal screenshots regenerated by the old suite were restored so they do not pollute this PR.
+Fresh evidence: [browser-report.json](evidence/browser-report.json), [scoring-report.json](evidence/scoring-report.json), [followup-print-red-green.json](evidence/followup-print-red-green.json) and [answered-state-forced-colors-390.png](evidence/answered-state-forced-colors-390.png). Unrelated teacher-portal screenshots regenerated by the old suite were restored so they do not pollute this PR.
 
 ## Limits and remaining risks
 

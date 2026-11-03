@@ -2797,6 +2797,8 @@ footer a {
   #answer-guide,
   #answer-key,
   #key,
+  [data-reveal-status],
+  [data-question-index-status],
   .no-js {
     display: none !important;
   }

@@ -1,6 +1,6 @@
 {
   "suite": "c3-accessibility-browser",
-  "date": "2026-11-03T20:55:12.310Z",
+  "date": "2026-11-03T21:47:48.626Z",
   "section": "all",
   "status": "PASS",
   "checks": [
@@ -33,6 +33,11 @@
       "name": "Teacher gate accessibility",
       "status": "PASS",
       "detail": "Six existing keyed tests keep the C-2 separation, expose aria-expanded, reject wrong passwords and synchronize the open/closed state"
+    },
+    {
+      "name": "Print status suppression",
+      "status": "PASS",
+      "detail": "42 pages: 132 reveal/question-index live-status spans on 21 pages create no print boxes and remain available on screen"
     },
     {
       "name": "Mobile and forced-colors regression",
