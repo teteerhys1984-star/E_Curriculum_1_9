@@ -40,4 +40,5 @@ jobs:
           path: |
             test-results/grade3-unit1-lesson2/
             test-results/grade4-unit1-lesson2/
+            test-results/english-curriculum/
           if-no-files-found: warn

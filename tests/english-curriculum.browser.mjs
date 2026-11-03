@@ -229,6 +229,95 @@ try {
   }
   pass('Legacy assessment scoring and teacher-key gates', `Selected one option in every multiple-choice group across ${assessmentCases.length} quizzes; each produced scoring feedback and kept teacher answers hidden`);
 
+  // Phase 2-C C-2: the teacher gate is not part of the pupil quiz form, the shared
+  // password is disclosed as a display aid only, and print never leaks a test key.
+  const printState = () => page.evaluate(() => {
+    const visible = el => Boolean(el) && getComputedStyle(el).display !== 'none' && el.getClientRects().length > 0;
+    const questions = Array.from(document.querySelectorAll('#quiz .question'));
+    const key = document.querySelector('#answer-guide, #answer-key, #key');
+    return {
+      questions: questions.length,
+      visibleQuestions: questions.filter(visible).length,
+      gateVisible: visible(document.querySelector('#teacher-gate')),
+      keyVisible: visible(key),
+      visibleButtons: Array.from(document.querySelectorAll('main button')).filter(visible).length,
+      navVisible: visible(document.querySelector('.content-nav'))
+    };
+  });
+  const assertTestPrint = async (file, label) => {
+    await page.emulateMedia({ media: 'print' });
+    const state = await printState();
+    assert.ok(state.questions > 0, `${file}: questions rendered`);
+    assert.equal(state.visibleQuestions, state.questions, `${file} (${label}): every question must print, not only the active step`);
+    assert.equal(state.gateVisible, false, `${file} (${label}): the teacher gate must not print`);
+    assert.equal(state.keyVisible, false, `${file} (${label}): the test answer key must not print`);
+    assert.equal(state.visibleButtons, 0, `${file} (${label}): screen-only buttons must not print`);
+    assert.equal(state.navVisible, false, `${file} (${label}): the step navigator must not print`);
+    await page.emulateMedia({ media: 'screen' });
+    return state;
+  };
+  const sharedCodes = fs.readFileSync(path.join(root, 'grade3-unit1-lesson1-test.html'), 'utf8').match(/String\.fromCharCode\(([\d,]+)\)/)[1].split(',').map(Number);
+  const sharedPassword = String.fromCharCode(...sharedCodes);
+  const keyedPrintCases = [
+    { file: 'grade3-unit1-lesson1-test.html', password: '#teacher-password', unlock: '#unlock-solutions', key: '#answer-guide' },
+    { file: 'grade3-unit1-lesson2-test.html', password: '#teacher-password', unlock: '#unlock-solutions', key: '#answer-guide' },
+    { file: 'grade4-unit1-lesson2-test.html', password: '#teacher-password', unlock: '#unlock-solutions', key: '#answer-guide' },
+    { file: 'grade5-unit1-lesson1-test.html', password: '#teacher-password', unlock: '#verify-password', key: '#answer-key' },
+    { file: 'grade5-unit1-lesson2-test.html', password: '#pw', unlock: '#unlock', key: '#key' },
+    { file: 'grade8-unit1-lesson1-test.html', password: '#pw', unlock: '#unlock', key: '#key' }
+  ];
+  for (const test of keyedPrintCases) {
+    await page.goto(origin + test.file, { waitUntil: 'load' });
+    assert.equal(await page.locator('#teacher-gate').evaluate(el => Boolean(el.closest('form#quiz'))), false, `${test.file}: gate must be outside form#quiz`);
+    assert.equal(await page.locator(test.password).evaluate(el => Boolean(el.closest('form'))), false, `${test.file}: password field must not be reset by the pupil quiz form`);
+    const gateText = await page.locator('#teacher-gate').innerText();
+    assert.match(gateText, /not (?:secure )?authentication/i, `${test.file}: gate must disclose that the password is not authentication`);
+    assert.match(gateText, /page source can be read|published page source/i, `${test.file}: gate must disclose that the key is already in the page source`);
+    assert.equal(await page.locator(test.key).isVisible(), false, `${test.file}: key starts hidden`);
+    await assertTestPrint(test.file, 'locked');
+    await page.locator(test.password).fill(sharedPassword);
+    await page.locator(test.unlock).click();
+    assert.equal(await page.locator(test.key).isVisible(), true, `${test.file}: the existing shared password still reveals the key on screen`);
+    await assertTestPrint(test.file, 'unlocked');
+    assert.equal(await page.locator(test.key).isVisible(), true, `${test.file}: returning to screen keeps the deliberate on-screen reveal`);
+  }
+  await page.goto(origin + 'grade3-unit1-lesson1-test.html', { waitUntil: 'load' });
+  await page.locator('#teacher-password').fill('reset-isolation-check');
+  await page.locator('#clear').click();
+  assert.equal(await page.locator('#teacher-password').inputValue(), 'reset-isolation-check', 'Grade 3 Lesson 1: clearing the pupil test must not reset the separate teacher gate');
+  assert.equal(await page.locator('#answer-guide').isVisible(), false, 'Grade 3 Lesson 1: clearing the test still closes the answer guide');
+  await page.goto(origin + 'grade4-unit1-lesson1-test.html', { waitUntil: 'load' });
+  assert.equal(await page.locator('#teacher-gate, input[type="password"], #answer-guide, #answer-key, #key').count(), 0, 'Grade 4 Lesson 1 must remain the published keyless exception');
+  await assertTestPrint('grade4-unit1-lesson1-test.html', 'keyless');
+  pass('C-2 teacher gate separation, disclosure and reset isolation', 'Six keyed tests keep the gate and password outside form#quiz and disclose the source-readable, non-authentication password; Grade 3 Lesson 1 reset no longer touches the gate; Grade 4 Lesson 1 remains keyless');
+  pass('C-2 lesson-test print cleanup', 'All 7 tests print every question while the gate, answer key, buttons and step navigator stay hidden, both before and after any on-screen key reveal');
+
+  const bookPrintCases = ['grade3-unit1-lesson2-pupil-book.html', 'grade4-unit1-lesson1-workbook.html', 'grade8-unit1-lesson1-workbook.html'];
+  for (const file of bookPrintCases) {
+    await page.goto(origin + file, { waitUntil: 'load' });
+    await page.emulateMedia({ media: 'print' });
+    const state = await page.evaluate(() => {
+      const visible = el => getComputedStyle(el).display !== 'none' && el.getClientRects().length > 0;
+      const steps = Array.from(document.querySelectorAll('main > .panel, main > section.panel'));
+      const answers = Array.from(document.querySelectorAll('.answer, .answers, .answer-key'));
+      const isClosed = el => el.hidden ||
+        (el.classList.contains('answers') && !el.classList.contains('show')) ||
+        (document.body.dataset.answerToggle === 'class' && el.classList.contains('answer') && !el.classList.contains('show'));
+      return {
+        steps: steps.length,
+        visibleSteps: steps.filter(visible).length,
+        visibleClosedAnswers: answers.filter(el => isClosed(el) && visible(el)).length,
+        visibleButtons: Array.from(document.querySelectorAll('main button')).filter(visible).length
+      };
+    });
+    assert.ok(state.steps > 1, `${file}: stepped book content rendered`);
+    assert.equal(state.visibleSteps, state.steps, `${file}: every book/workbook step must print`);
+    assert.equal(state.visibleClosedAnswers, 0, `${file}: closed practice answers must stay hidden in print`);
+    assert.equal(state.visibleButtons, 0, `${file}: reveal buttons must not print`);
+    await page.emulateMedia({ media: 'screen' });
+  }
+  pass('C-2 book and workbook print cleanup', 'Representative Grade 3, Grade 4 and Grade 8 book/workbook pages print every step, keep closed practice answers hidden and omit reveal buttons');
+
   await page.goto(origin + 'grade3-unit1-lesson2-workbook.html', { waitUntil: 'domcontentloaded' });
   assert.equal(await page.locator('img[src$="workbook-page-6-listen-row-2-english-display.png"]').count(), 1);
   assert.equal(await page.locator('img[src$="workbook-page-6-listen-row-2.png"]').count(), 0);

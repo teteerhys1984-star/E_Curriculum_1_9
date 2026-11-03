@@ -509,8 +509,24 @@ for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '4 · 2 
 const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade8-unit1-lesson1'];
 for (const slug of anchoredKeys) {
   assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
-  assert.ok(read(`${slug}-test.html`).includes('id="teacher-gate"'), `${slug}-test.html: documented key anchor is missing`);
+  const testHtml = read(`${slug}-test.html`);
+  assert.ok(testHtml.includes('id="teacher-gate"'), `${slug}-test.html: documented key anchor is missing`);
+  const quizMatch = testHtml.match(/<form id="quiz"[^>]*>([\s\S]*?)<\/form>/);
+  assert.ok(quizMatch, `${slug}-test.html: the pupil quiz form must exist`);
+  assert.ok(!quizMatch[1].includes('id="teacher-gate"'), `${slug}-test.html: the teacher gate must stay outside the pupil quiz form`);
+  const gateBlock = testHtml.match(/<section[^>]*id="teacher-gate"[^>]*>([\s\S]*?)<\/section>/)?.[1] || '';
+  assert.match(gateBlock, /not (?:secure )?authentication/i, `${slug}-test.html: the gate must disclose that the password is not authentication`);
+  assert.match(gateBlock, /page source can be read|published page source/i, `${slug}-test.html: the gate must disclose that the key is already in the page source`);
 }
+const g3l1Test = read('grade3-unit1-lesson1-test.html');
+const g3l1Quiz = g3l1Test.match(/<form id="quiz"[^>]*>([\s\S]*?)<\/form>/);
+assert.ok(g3l1Quiz, 'grade3-unit1-lesson1-test.html: the pupil quiz form must exist');
+assert.ok(!g3l1Quiz[1].includes('id="answer-guide"'), 'grade3-unit1-lesson1-test.html: the answer guide must stay outside the pupil quiz form');
+assert.match(designCss, /body \.content-step-hidden\s*\{\s*display:\s*block !important;/, 'design-system.css: print must override the injected step-hiding rule');
+for (const selector of ['#teacher-gate', '#answer-guide', '#answer-key', '#key', '.answers:not(.show)', 'body[data-answer-toggle="class"] .answer:not(.show)']) {
+  assert.ok(designCss.includes(selector), `design-system.css: print cleanup is missing ${selector}`);
+}
+pass('C-2 gate separation, disclosure and print selectors', 'Six keyed tests keep the gate outside form#quiz and disclose the source-readable, non-authentication password; Grade 3 Lesson 1 also keeps its answer guide outside the form; print CSS covers every published key and legacy hidden-answer pattern');
 // Grade 4 Lesson 1 is the deliberate exception: its test publishes no answer key, so it must
 // gain neither a gate on the page nor a deep link in the directory.
 const keylessTests = ['grade4-unit1-lesson1'];
