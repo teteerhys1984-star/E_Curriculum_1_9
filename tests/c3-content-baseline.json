@@ -1,0 +1,191 @@
+{
+  "note": "C-3 baseline captured from main at 451761991899793097c7bb7156ac2f969a74eaf2 before accessibility edits. Educational text excludes button labels; data hashes protect legacy quiz/recall arrays and modern assessment evidence attributes.",
+  "files": {
+    "grade3-unit1-lesson1-pupil-book.html": {
+      "text": "c4587d6942b311d31aeecf54fc2fdec46b98917a34dd496bc89d5316e3f4cacd",
+      "data": {}
+    },
+    "grade3-unit1-lesson1-test.html": {
+      "text": "e8164f94858d8393dd78d8dbf942967ca6d45d53f7f755d66c7b39bdc9e357d5",
+      "data": {
+        "key": "58307ce2425ee564d8f408714903ed261c95057bf1beb1c99330d5c995fadd3a"
+      }
+    },
+    "grade3-unit1-lesson1-vocabulary.html": {
+      "text": "61fcc7f6e57ac20c05669f8d4280eaae5f5c0cab0bfa79b8df4bb1babfdfa945",
+      "data": {
+        "words": "2010fe9755f295e2878f12393f0057491f058baac153cc8f70abb56077cc6ca7"
+      }
+    },
+    "grade3-unit1-lesson1-workbook.html": {
+      "text": "0f7d3963c7a00ec2c88f19bc8fe123ee1d536281f775b5423c4f443bb1e92c8a",
+      "data": {}
+    },
+    "grade3-unit1-lesson1.html": {
+      "text": "81955a8849e9276c51a81492f8719ce4ebe813055882068bb268e10ee6ca35af",
+      "data": {}
+    },
+    "grade3-unit1-lesson2-pupil-book.html": {
+      "text": "eb890f2b1e286cafc89eae1351c71533e30945d5cb06935baf18b679442d742e",
+      "data": {}
+    },
+    "grade3-unit1-lesson2-test.html": {
+      "text": "9d91da3124122fa909e0762a1a6bde094d37612bcc6197c67cd27f5e3b0fff98",
+      "data": {
+        "assessmentData": "db0abb9b278ebff6f073ca04ce2cb6aa4f523cf4569f3d3e2a53b921edb83047"
+      }
+    },
+    "grade3-unit1-lesson2-vocabulary.html": {
+      "text": "e53b50e8f0aa9f66ac8d5a7e353d9d034a3e61565f4ec0b4b460bca5c19784cd",
+      "data": {}
+    },
+    "grade3-unit1-lesson2-workbook.html": {
+      "text": "3973405f506dc8ae4949f304f0c55ee151680a79a2c0d3bccde1174539ab53b5",
+      "data": {}
+    },
+    "grade3-unit1-lesson2.html": {
+      "text": "b9ebf77d084cdfafc25d5df8a3dab7586be974774440b48a88241f2f59e3d5dc",
+      "data": {}
+    },
+    "grade4-unit1-lesson1-pupil-book.html": {
+      "text": "64d22ba03bb01c1d2d84b5521d70670699b855d475aa1d1681c7146b9210777d",
+      "data": {}
+    },
+    "grade4-unit1-lesson1-test.html": {
+      "text": "e34e9a499143ef7c63c2e5bb2f41e861d49173bd88529f52b7d7e01801e7e4a6",
+      "data": {
+        "correct": "d59641a8ff9df7ae4d38fe6fd373f8282669136ce1ee376662e6a0854f1d9284"
+      }
+    },
+    "grade4-unit1-lesson1-vocabulary.html": {
+      "text": "38b94249372ae1e6d3082e7781ec84dd1eca1fbb3467e25beb8b15e8d69b18af",
+      "data": {}
+    },
+    "grade4-unit1-lesson1-workbook.html": {
+      "text": "9e362c5bd78aee37c3d9085865a375cae699f6c0488c30e30fc6b69f3f6f6f92",
+      "data": {}
+    },
+    "grade4-unit1-lesson1.html": {
+      "text": "7c33c3016b6c64884fb9ed187083357409102bf922bec48db57c4cf5934207df",
+      "data": {}
+    },
+    "grade4-unit1-lesson2-pupil-book.html": {
+      "text": "f67efcbc33cde884b84537ae54c50de5f5b9b0dd4954cc9183279f28ec5025df",
+      "data": {}
+    },
+    "grade4-unit1-lesson2-test.html": {
+      "text": "13e62214a93edff2763b3a695b224889cb13f4ae12892c75992348991698f39f",
+      "data": {
+        "assessmentData": "b033c03782a039e86345428e7e0e12533a2de98463fbc53a0d53fdc1d131966b"
+      }
+    },
+    "grade4-unit1-lesson2-vocabulary.html": {
+      "text": "b8bf9990f6fa02a9590bbe471950b179523c2b39bdb23b91639f677968a3d2ee",
+      "data": {}
+    },
+    "grade4-unit1-lesson2-workbook.html": {
+      "text": "67d9c6afb43f2acbd5c64f584ddd802a652ed7151b42a308aaaa0b874e4fd3e0",
+      "data": {}
+    },
+    "grade4-unit1-lesson2.html": {
+      "text": "85afb30d6d00c3b497fee3e6f9773ebf991254bd75c887bac2ae0c50ea7e84f2",
+      "data": {}
+    },
+    "grade5-unit1-lesson1-pupil-book.html": {
+      "text": "2983f79cfec97f4ea941253fb9a5f26a81dc4d509f643aaaa7f5ffe37ccc1d45",
+      "data": {}
+    },
+    "grade5-unit1-lesson1-test.html": {
+      "text": "94d87c232a8605ac363cc476f8497b69b0564bb7d8d043d0b0178b4630f229c3",
+      "data": {
+        "qs": "e49e975539af311d5a235f9c4ab00de0d6c5394e13ec5339158b7aaa3aad991a"
+      }
+    },
+    "grade5-unit1-lesson1-vocabulary.html": {
+      "text": "40d2efb1b936939bd57518a1ba16005da1402e28bf05b762f9b1f50fe975e4d2",
+      "data": {
+        "ws": "c130faeb601fc23da90fdd6a3445fb60f28850573c074a5dfaec35ec52b8f065"
+      }
+    },
+    "grade5-unit1-lesson1-workbook.html": {
+      "text": "8101f755b1696220c3574b75427c7f9da6656104fa855884a68014205e0d419c",
+      "data": {}
+    },
+    "grade5-unit1-lesson1.html": {
+      "text": "4ceb4993b13eb602be822660604a2b02516c3a3fe6aa0c75ffd540ab0cb257ed",
+      "data": {}
+    },
+    "grade5-unit1-lesson2-pupil-book.html": {
+      "text": "b9eab9cffe6cca4809d5b1ad75661f5e550bdc683c4df5b1b8224ab9d32bdc57",
+      "data": {}
+    },
+    "grade5-unit1-lesson2-test.html": {
+      "text": "9b43643e2887df3f22608b07291b77967e990abcc4167bbd371e6a324b1e49bb",
+      "data": {
+        "qs": "ae1e1800d362d8e2f100eaa97a6a68844363f90e58e1b865ae1fe43c9c271796"
+      }
+    },
+    "grade5-unit1-lesson2-vocabulary.html": {
+      "text": "eba276aec3df53f860418510c6f56005eff25b4a59629f3e747842082a5ff7d2",
+      "data": {}
+    },
+    "grade5-unit1-lesson2-workbook.html": {
+      "text": "e6cfa8ae23aa0fe76bda552474a038d93acfd216db975b7d486a77c99bca6ac7",
+      "data": {}
+    },
+    "grade5-unit1-lesson2.html": {
+      "text": "95ffaea56592afd7c5c0a05bee43e303531491f9e9a7470e340cbc674f79809c",
+      "data": {}
+    },
+    "grade8-unit1-lesson1-pupil-book.html": {
+      "text": "9957f9e5e8dc2ce54985ed672eb92ffdb182a1b3dfca60a6f91ac897e13e7d90",
+      "data": {}
+    },
+    "grade8-unit1-lesson1-test.html": {
+      "text": "1434379ebc5dadb18b36a8203f4693787cd177ffdc96c4e8a399c4fcaba706f5",
+      "data": {
+        "qs": "6637b89ff451d7936dca99bc590e1ececf23661e10a263d5ca76db5685c118e3"
+      }
+    },
+    "grade8-unit1-lesson1-vocabulary.html": {
+      "text": "845b1a01b1efbfcadcb693f21a4a337c1fe4d2cd05477199f0114dc29d456a3d",
+      "data": {}
+    },
+    "grade8-unit1-lesson1-workbook.html": {
+      "text": "0397b9332619d6b2cd5b8f85af0bb718c7594dfd5006172d2e8c724414266c9b",
+      "data": {}
+    },
+    "grade8-unit1-lesson1.html": {
+      "text": "d0ac475e1bc6d03d5d1c9a043dc7f6b516688fa787c4aff0d088443c02fd0e62",
+      "data": {}
+    },
+    "index.html": {
+      "text": "aedc5665fe32d1d01a36b188aabf9161ad61da3253efd7abc388f9e24f88b0e6",
+      "data": {}
+    },
+    "lesson-menu.html": {
+      "text": "c7fb427684d344cccc6a3c7dc5f4a47ae459179c0ee8b3f04db460a0b2f7b040",
+      "data": {}
+    },
+    "lesson.html": {
+      "text": "c7583eeb874799aceefd790a628fbb7e16291b875331be38b4c6b7450598f36f",
+      "data": {}
+    },
+    "lessons.html": {
+      "text": "9592d8cb683697a0c10b1357ca592b43f30df5625134e8a58b3bc782d0710e8b",
+      "data": {}
+    },
+    "round-tests.html": {
+      "text": "d1bda2ef2b49d39f645a5c29690a36ec1c69e61bae8379a505cbd5d90ea37f3e",
+      "data": {}
+    },
+    "teacher-resources.html": {
+      "text": "87ce7fc084edf95b6c3b73bf9698201150b302b15e3c93a5d8444abd0f92cc92",
+      "data": {}
+    },
+    "teacher.html": {
+      "text": "c9f4770500384e08ef11ba30e5ddb3d5ef18f927e8d82bc922c9def7f06f4de5",
+      "data": {}
+    }
+  }
+}

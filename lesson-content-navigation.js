@@ -52,7 +52,7 @@
   nav.innerHTML =
     '<div class="content-nav-head"><span class="content-nav-title">Explore this lesson step by step</span><span class="content-nav-count" aria-live="polite"></span></div>' +
     '<div class="content-nav-track"><span></span></div>' +
-    '<div class="content-nav-links" aria-label="Lesson parts"></div>' +
+    '<div class="content-nav-links" role="group" aria-label="Lesson parts"></div>' +
     '<p class="content-nav-hint">Choose a part, or use Previous and Next. Answers stay hidden until you reveal them.</p>' +
     '<div class="content-nav-controls"><button type="button" data-prev>← Previous</button><button type="button" data-next>Next →</button></div>';
 
@@ -64,6 +64,7 @@
   const next = nav.querySelector('[data-next]');
   const footer = document.createElement('div');
   footer.className = 'lesson-step-footer';
+  footer.setAttribute('role', 'group');
   footer.setAttribute('aria-label', 'Lesson page navigation');
   footer.setAttribute('dir', 'ltr');
   footer.appendChild(controls);
@@ -198,6 +199,12 @@
       }
       questions[questions.length - 1].insertAdjacentElement('afterend', footer);
       nav.querySelector('.content-nav-title').textContent = 'Test questions · 1 to ' + questions.length;
+      const indexStatus = document.createElement('span');
+      indexStatus.className = 'sr-only';
+      indexStatus.setAttribute('role', 'status');
+      indexStatus.setAttribute('aria-live', 'polite');
+      indexStatus.setAttribute('data-question-index-status', '');
+      nav.appendChild(indexStatus);
       const hintEl = nav.querySelector('.content-nav-hint');
       if (hintEl) {
         hintEl.textContent = 'Select any question number, or use Previous and Next. Answered items highlight automatically.';
@@ -209,7 +216,12 @@
         const b = document.createElement('button');
         b.type = 'button';
         b.textContent = String(i + 1);
-        b.setAttribute('aria-label', 'Go to question ' + (i + 1));
+        const mark = document.createElement('span');
+        mark.className = 'question-state';
+        mark.setAttribute('aria-hidden', 'true');
+        mark.textContent = '✓';
+        b.appendChild(mark);
+        b.setAttribute('aria-label', 'Go to question ' + (i + 1) + ', not answered');
         b.addEventListener('click', () => showQuestion(i));
         links.appendChild(b);
         return b;
@@ -222,10 +234,15 @@
         ).some(el => String(el.value || '').trim().length > 0);
       }
 
-      function syncAnswered() {
+      function syncAnswered(announceCurrent = false) {
         questions.forEach((q, idx) => {
-          qButtons[idx].classList.toggle('is-answered', isQuestionAnswered(q));
+          const answered = isQuestionAnswered(q);
+          qButtons[idx].classList.toggle('is-answered', answered);
+          qButtons[idx].setAttribute('aria-label', 'Go to question ' + (idx + 1) + ', ' + (answered ? 'answered' : 'not answered'));
         });
+        if (announceCurrent) {
+          indexStatus.textContent = 'Question ' + (current + 1) + ': ' + (isQuestionAnswered(questions[current]) ? 'Answered.' : 'Not answered.');
+        }
       }
 
       function showQuestion(i) {
@@ -242,9 +259,9 @@
         syncGridPlacement();
       }
 
-      quiz.addEventListener('change', syncAnswered);
-      quiz.addEventListener('input', syncAnswered);
-      quiz.addEventListener('reset', () => window.setTimeout(syncAnswered, 0));
+      quiz.addEventListener('change', () => syncAnswered(true));
+      quiz.addEventListener('input', () => syncAnswered(false));
+      quiz.addEventListener('reset', () => window.setTimeout(() => syncAnswered(true), 0));
       syncAnswered();
 
       prev.onclick = () => showQuestion(current - 1);

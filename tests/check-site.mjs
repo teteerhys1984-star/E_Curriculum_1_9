@@ -477,7 +477,7 @@ const countTestItems = file => {
   return block ? (block[1].match(/^\s*\["/gm) || []).length : 0;
 };
 const countReveals = file =>
-  (read(file).match(/<button[^>]*(?:data-answer=|data-a=|class="[^"]*\breveal\b|onclick="document\.getElementById)/g) || []).length;
+  (read(file).match(/<button[^>]*(?:data-answer=|data-a=|data-reveal=|class="[^"]*\breveal\b|onclick="document\.getElementById)/g) || []).length;
 
 const matrixRows = new Map(
   Array.from(teacherPage.matchAll(/<tr>\s*<th scope="row">([^<]+)<\/th>([\s\S]*?)<\/tr>/g), match => [

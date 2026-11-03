@@ -7,6 +7,7 @@
   <meta name="description" content="Teacher entry point for the published Grades 1–9 English curriculum: lesson directories, answer-key areas, and honest status notes for prepared, template-only, and unavailable material. This is not a login and not a secure key store.">
   <link rel="stylesheet" href="design-system.css">
   <script src="platform-shell.js" defer></script>
+<script src="lesson-accessibility.js" defer></script>
 </head>
 <body data-nav-page="menu">
   <div class="engineer-contact-banner" dir="ltr">
@@ -31,7 +32,7 @@
             <a class="btn btn-secondary" href="lessons.html">Browse the Curriculum</a>
             <a class="btn btn-ghost" href="round-tests.html">Round Test Status</a>
           </div>
-          <div class="stats" aria-label="Published material summary">
+          <div class="stats" role="group" aria-label="Published material summary">
             <div class="stat"><b>7</b><span>Prepared lessons</span></div>
             <div class="stat"><b>35</b><span>Verified lesson pages</span></div>
             <div class="stat"><b>6</b><span>Answer-key areas</span></div>
@@ -96,7 +97,7 @@
         <h2>Grade readiness</h2>
         <p>Prepared lessons are verified from printed book pages. Template-only grades have no verified lesson content and nothing to review yet.</p>
       </div>
-      <div class="pills" aria-label="Availability key">
+      <div class="pills" role="group" aria-label="Availability key">
         <span class="badge badge-available">Prepared lessons</span>
         <span class="badge badge-upcoming">Template only</span>
       </div>

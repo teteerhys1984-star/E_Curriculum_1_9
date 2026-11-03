@@ -41,4 +41,6 @@ jobs:
             test-results/grade3-unit1-lesson2/
             test-results/grade4-unit1-lesson2/
             test-results/english-curriculum/
+            test-results/c3-accessibility/
+            test-results/c3-scoring/
           if-no-files-found: warn

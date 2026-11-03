@@ -1,0 +1,49 @@
+{
+  "suite": "c3-accessibility-browser",
+  "date": "2026-11-03T21:47:48.626Z",
+  "section": "all",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Rendered names, references and roles",
+      "status": "PASS",
+      "detail": "All 42 pages: no unnamed controls, duplicate IDs, broken ARIA/label references, named generic containers or unnamed/missing quiz radio groups"
+    },
+    {
+      "name": "Chromium computed accessible names",
+      "status": "PASS",
+      "detail": "685 unique controls across all 42 pages and every lesson step have a non-empty accessibility-tree name; placeholders alone are insufficient"
+    },
+    {
+      "name": "Practice reveal controls",
+      "status": "PASS",
+      "detail": "125 legacy and modern reveals have a pre-registered live region, valid controlled panel, synchronized aria-expanded and shown/hidden announcements"
+    },
+    {
+      "name": "Keyboard reveal operation",
+      "status": "PASS",
+      "detail": "Enter and Space toggle legacy and modern practice reveals without moving focus away from the button"
+    },
+    {
+      "name": "Answered-state regression",
+      "status": "PASS",
+      "detail": "All 7 tests expose a visible check mark, accessible answered/not-answered name and live state; reset and whitespace-only writing clear the state"
+    },
+    {
+      "name": "Teacher gate accessibility",
+      "status": "PASS",
+      "detail": "Six existing keyed tests keep the C-2 separation, expose aria-expanded, reject wrong passwords and synchronize the open/closed state"
+    },
+    {
+      "name": "Print status suppression",
+      "status": "PASS",
+      "detail": "42 pages: 132 reveal/question-index live-status spans on 21 pages create no print boxes and remain available on screen"
+    },
+    {
+      "name": "Mobile and forced-colors regression",
+      "status": "PASS",
+      "detail": "Seven test pages avoid horizontal overflow at 390px; the answered check mark remains visible in forced-colors mode"
+    }
+  ],
+  "errors": []
+}

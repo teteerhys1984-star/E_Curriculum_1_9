@@ -1,0 +1,76 @@
+{
+  "suite": "c3-red-before-fixes",
+  "date": "2026-11-03T20:57:39.930617+00:00",
+  "regressionTestBlob": "13ab7c05625e028506a0e405dd0d97d1c648b161",
+  "note": "Exact main and pre-fix PR snapshots were materialized under ignored test-results directories with git archive; the final regression test was copied into each snapshot. Every run below exited 1 for the listed assertion. These are automated browser checks, not screen-reader testing.",
+  "baselinePlaceholderOnlyControls": 28,
+  "runs": [
+    {
+      "snapshot": "origin/main",
+      "commit": "451761991899793097c7bb7156ac2f969a74eaf2",
+      "command": "C3_SECTION=semantics node tests/c3-accessibility.browser.mjs",
+      "exitCode": 1,
+      "assertion": "grade3-unit1-lesson1-pupil-book.html: aria-label on generic elements needs a supporting role"
+    },
+    {
+      "snapshot": "origin/main",
+      "commit": "451761991899793097c7bb7156ac2f969a74eaf2",
+      "command": "C3_SECTION=names node tests/c3-accessibility.browser.mjs",
+      "exitCode": 1,
+      "assertion": "Chromium accessibility-tree names are required; placeholders alone are insufficient"
+    },
+    {
+      "snapshot": "origin/main",
+      "commit": "451761991899793097c7bb7156ac2f969a74eaf2",
+      "command": "C3_SECTION=disclosures node tests/c3-accessibility.browser.mjs",
+      "exitCode": 1,
+      "assertion": "grade3-unit1-lesson2-workbook.html: reveal 0 needs an empty live region registered before its first activation"
+    },
+    {
+      "snapshot": "origin/main",
+      "commit": "451761991899793097c7bb7156ac2f969a74eaf2",
+      "command": "C3_SECTION=answered node tests/c3-accessibility.browser.mjs",
+      "exitCode": 1,
+      "assertion": "grade3-unit1-lesson1-test.html: initial accessible state"
+    },
+    {
+      "snapshot": "origin/main",
+      "commit": "451761991899793097c7bb7156ac2f969a74eaf2",
+      "command": "C3_SECTION=gates node tests/c3-accessibility.browser.mjs",
+      "exitCode": 1,
+      "assertion": "grade3-unit1-lesson1-test.html: gate button controls key"
+    },
+    {
+      "snapshot": "origin/main",
+      "commit": "451761991899793097c7bb7156ac2f969a74eaf2",
+      "command": "C3_SECTION=layout node tests/c3-accessibility.browser.mjs",
+      "exitCode": 1,
+      "assertion": "forced colors keeps the answered check mark"
+    },
+    {
+      "snapshot": "existing PR head before this round",
+      "commit": "eb789158b3e654dfcbfc2c79be51d8aeccc9e2d1",
+      "command": "C3_SECTION=semantics node tests/c3-accessibility.browser.mjs",
+      "exitCode": 1,
+      "assertion": "grade4-unit1-lesson1-test.html: every quiz radio group needs a named group ancestor"
+    },
+    {
+      "snapshot": "existing PR head before this round",
+      "commit": "eb789158b3e654dfcbfc2c79be51d8aeccc9e2d1",
+      "command": "C3_SECTION=disclosures node tests/c3-accessibility.browser.mjs",
+      "exitCode": 1,
+      "assertion": "grade3-unit1-lesson1-pupil-book.html: reveal 0 needs an empty live region registered before its first activation"
+    }
+  ],
+  "baselinePlaceholderOnlyByFile": {
+    "grade3-unit1-lesson1-test.html": 5,
+    "grade3-unit1-lesson1-vocabulary.html": 1,
+    "grade3-unit1-lesson1-workbook.html": 1,
+    "grade4-unit1-lesson1-test.html": 2,
+    "grade5-unit1-lesson1-pupil-book.html": 7,
+    "grade5-unit1-lesson1-vocabulary.html": 1,
+    "grade8-unit1-lesson1-pupil-book.html": 5,
+    "grade8-unit1-lesson1-test.html": 1,
+    "grade8-unit1-lesson1-workbook.html": 5
+  }
+}

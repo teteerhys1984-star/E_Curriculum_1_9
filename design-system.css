@@ -2295,6 +2295,23 @@ main.wrap.has-step-nav {
   color: var(--color-brand-900);
 }
 
+.content-nav-links button .question-state {
+  display: none;
+  margin-inline-start: 4px;
+  font-weight: 800;
+}
+
+.content-nav-links button.is-answered .question-state {
+  display: inline;
+}
+
+@media (forced-colors: active) {
+  .content-nav-links button.is-answered .question-state {
+    display: inline;
+    color: CanvasText;
+  }
+}
+
 .content-nav-links button.is-answered:not([aria-current="step"]) {
   background-color: var(--color-accent-50);
   border-color: var(--color-accent-200);
@@ -2780,6 +2797,8 @@ footer a {
   #answer-guide,
   #answer-key,
   #key,
+  [data-reveal-status],
+  [data-question-index-status],
   .no-js {
     display: none !important;
   }

@@ -7,6 +7,7 @@
   <meta name="description" content="Verified teacher resource directory: every prepared lesson page, its published answer-key area where one exists, the in-page answer reveals, and the material that is genuinely unavailable.">
   <link rel="stylesheet" href="design-system.css">
   <script src="platform-shell.js" defer></script>
+<script src="lesson-accessibility.js" defer></script>
 </head>
 <body data-nav-page="menu">
   <div class="engineer-contact-banner" dir="ltr">
@@ -30,7 +31,7 @@
         audio keys, cumulative round tests, Grades 1, 2, 6, 7 and 9 content — this page says so instead of offering a
         placeholder.
       </p>
-      <div class="pills" aria-label="Status key">
+      <div class="pills" role="group" aria-label="Status key">
         <span class="badge badge-available">Answer key published</span>
         <span class="badge badge-upcoming">Not published</span>
         <span class="badge badge-strand">In-page reveal</span>

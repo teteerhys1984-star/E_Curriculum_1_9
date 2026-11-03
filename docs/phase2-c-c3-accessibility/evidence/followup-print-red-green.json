@@ -1,0 +1,19 @@
+{
+  "round": "pre-merge follow-up",
+  "baseCommit": "451761991899793097c7bb7156ac2f969a74eaf2",
+  "checks": [
+    {
+      "command": "C3_SECTION=print node tests/c3-accessibility.browser.mjs",
+      "stage": "before adding the two print selectors",
+      "exitCode": 1,
+      "failure": "grade3-unit1-lesson1-pupil-book.html: live-status spans must be hidden in print [{\"display\":\"block\",\"boxes\":1},{\"display\":\"block\",\"boxes\":1}]",
+      "meaning": "The new print regression detected that reveal live-status spans still generated print boxes."
+    },
+    {
+      "command": "C3_SECTION=print node tests/c3-accessibility.browser.mjs",
+      "stage": "after adding [data-reveal-status] and [data-question-index-status] to the print hide list",
+      "exitCode": 0,
+      "result": "42 pages; 132 status spans on 21 pages; zero print boxes; screen live regions retained."
+    }
+  ]
+}

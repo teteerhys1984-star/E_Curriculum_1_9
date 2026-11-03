@@ -6,6 +6,7 @@
   <title>English Full Curriculum | Round Tests</title>
   <link rel="stylesheet" href="design-system.css">
   <script src="platform-shell.js" defer></script>
+<script src="lesson-accessibility.js" defer></script>
 </head>
 <body data-nav-page="menu">
   <div class="engineer-contact-banner" dir="ltr">
@@ -119,7 +120,7 @@
             <span class="badge badge-upcoming">Pending · ${r.ready}/5 lessons ready</span>
             <h2>Round ${r.num} · ${r.range}</h2>
             <p>Cumulative comprehension, grammar, and vocabulary checkpoint covering verified content from ${r.range.toLowerCase()} in Grade ${grade}.</p>
-            <div class="progress" aria-label="Round ${r.num} lesson preparation progress: ${r.ready} of 5 lessons"><span style="width:${pct}%"></span></div>
+            <div class="progress" role="group" aria-label="Round ${r.num} lesson preparation progress: ${r.ready} of 5 lessons"><span style="width:${pct}%"></span></div>
           </div>
           <div class="source-note">Unlocks after all 5 lessons in ${r.range} are verified.</div>
         </article>
