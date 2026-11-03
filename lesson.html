@@ -6,6 +6,7 @@
   <title>English Full Curriculum | Lesson Section Preview</title>
   <link rel="stylesheet" href="design-system.css">
   <script src="platform-shell.js" defer></script>
+<script src="lesson-accessibility.js" defer></script>
   <script src="lesson-content-navigation.js" defer></script>
 </head>
 <body>
@@ -136,16 +137,6 @@
       `<a class="section-link" href="${href}"${key === activeSection ? ' aria-current="page"' : ''}>${label}</a>`
     ).join('');
 
-    document.querySelectorAll('[data-toggle-answer]').forEach(button => {
-      button.addEventListener('click', () => {
-        const panel = document.getElementById(button.getAttribute('aria-controls'));
-        if (!panel) return;
-        const nextHidden = !panel.hidden;
-        panel.hidden = nextHidden;
-        button.setAttribute('aria-expanded', String(!nextHidden));
-        button.textContent = nextHidden ? 'Show Answer' : 'Hide Answer';
-      });
-    });
   </script>
 </body>
 </html>

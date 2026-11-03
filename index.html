@@ -7,6 +7,7 @@
   <meta name="description" content="Structured school English learning platform for Grades 1 to 9: Pupil's and Student's Books, Workbooks, bilingual Vocabulary references, and Lesson Tests of 10 to 20 questions.">
   <link rel="stylesheet" href="design-system.css">
   <script src="platform-shell.js" defer></script>
+<script src="lesson-accessibility.js" defer></script>
 </head>
 <body data-nav-page="menu">
   <div class="engineer-contact-banner" dir="ltr">
@@ -29,7 +30,7 @@
             <a class="btn btn-primary" href="#prepared-lessons">Open Prepared Lessons</a>
             <a class="btn btn-secondary" href="#grades">Browse All 9 Grades</a>
           </div>
-          <div class="stats" aria-label="Platform summary">
+          <div class="stats" role="group" aria-label="Platform summary">
             <div class="stat"><b>9</b><span>School grades</span></div>
             <div class="stat"><b>7</b><span>Prepared lessons</span></div>
             <div class="stat"><b>35</b><span>Verified lesson pages</span></div>
@@ -59,7 +60,7 @@
         <h2>Choose a Grade</h2>
         <p>Grades 3, 4, 5, and 8 include complete verified Unit 1 lessons. Remaining grades show structured curriculum previews while source scans are prepared.</p>
       </div>
-      <div class="pills" aria-label="Availability key">
+      <div class="pills" role="group" aria-label="Availability key">
         <span class="badge badge-available">Available lessons ready</span>
         <span class="badge badge-upcoming">In preparation</span>
       </div>

@@ -4,22 +4,7 @@
   const main = document.querySelector('main.wrap');
   if (!main) return;
 
-  function setReveal(button, open) {
-    const answer = document.getElementById(button.getAttribute('aria-controls'));
-    if (!answer) return;
-    answer.hidden = !open;
-    button.setAttribute('aria-expanded', String(open));
-    button.textContent = open ? button.dataset.hide : button.dataset.show;
-  }
-  document.querySelectorAll('button.reveal').forEach(button => {
-    button.addEventListener('click', () => setReveal(button, button.getAttribute('aria-expanded') !== 'true'));
-  });
-  document.querySelectorAll('form.practice-form').forEach(form => {
-    form.addEventListener('submit', event => event.preventDefault());
-    form.addEventListener('reset', () => {
-      form.querySelectorAll('button.reveal').forEach(button => setReveal(button, false));
-    });
-  });
+  // Practice answer reveals and form resets are owned by lesson-accessibility.js.
 
   const quiz = document.getElementById('quiz');
   if (!quiz) return;
@@ -140,5 +125,5 @@
   password.addEventListener('keydown', event => {
     if (event.key === 'Enter') { event.preventDefault(); unlockKey(); }
   });
-  lock.addEventListener('click', () => lockKey('The answer key is hidden.'));
+  lock.addEventListener('click', () => { lockKey('The answer key is hidden.'); document.getElementById('unlock-solutions').focus(); });
 })();

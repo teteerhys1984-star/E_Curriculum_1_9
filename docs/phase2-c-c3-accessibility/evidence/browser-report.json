@@ -1,0 +1,38 @@
+{
+  "suite": "c3-accessibility-browser",
+  "date": "2026-11-03T18:43:06.163Z",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "Rendered names, references and roles",
+      "status": "PASS",
+      "detail": "All 42 pages: no unnamed controls, duplicate IDs, broken ARIA/label references, named generic containers or unnamed quiz radio groups"
+    },
+    {
+      "name": "Practice reveal controls",
+      "status": "PASS",
+      "detail": "125 legacy and modern reveals expose a valid controlled panel, synchronize aria-expanded and announce shown/hidden state"
+    },
+    {
+      "name": "Keyboard reveal operation",
+      "status": "PASS",
+      "detail": "Enter and Space toggle legacy and modern practice reveals without moving focus away from the button"
+    },
+    {
+      "name": "Answered-state regression",
+      "status": "PASS",
+      "detail": "All 7 tests expose a visible check mark, accessible answered/not-answered name and live state; reset and whitespace-only writing clear the state"
+    },
+    {
+      "name": "Teacher gate accessibility",
+      "status": "PASS",
+      "detail": "Six existing keyed tests keep the C-2 separation, expose aria-expanded, reject wrong passwords and synchronize the open/closed state"
+    },
+    {
+      "name": "Mobile and forced-colors regression",
+      "status": "PASS",
+      "detail": "Seven test pages avoid horizontal overflow at 390px; the answered check mark remains visible in forced-colors mode"
+    }
+  ],
+  "errors": []
+}
