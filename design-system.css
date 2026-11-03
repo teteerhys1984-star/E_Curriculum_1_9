@@ -2773,7 +2773,13 @@ footer a {
   .practice-actions,
   .quiz-actions,
   .actions,
+  .gate-actions,
+  button,
   #teacher-gate,
+  /* Lesson-test keys are review-only on paper, even after an on-screen reveal. */
+  #answer-guide,
+  #answer-key,
+  #key,
   .no-js {
     display: none !important;
   }
@@ -2791,12 +2797,18 @@ footer a {
     break-inside: avoid;
   }
 
-  .content-step-hidden {
+  /* The navigator injects its screen-only hiding rule after this stylesheet.
+     Match its specificity here so every question/step prints, not just the active one. */
+  body .content-step-hidden {
     display: block !important;
   }
 
   .source-page,
-  .answer[hidden] {
+  .answer[hidden],
+  .answers[hidden],
+  .answer-key[hidden],
+  .answers:not(.show),
+  body[data-answer-toggle="class"] .answer:not(.show) {
     display: none !important;
   }
 
