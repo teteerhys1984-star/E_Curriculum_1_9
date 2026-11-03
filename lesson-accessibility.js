@@ -61,6 +61,9 @@
     }
     const panel = document.getElementById(button.getAttribute('aria-controls'));
     if (!panel) return;
+    // Register the empty live region before the first interaction. Creating a
+    // live region and filling it in the same click is not reliably announced.
+    ensureStatus(button);
     if (!button.hasAttribute('aria-expanded')) button.setAttribute('aria-expanded', String(panelIsOpen(panel)));
     syncReveal(button, false);
     button.addEventListener('click', () => {
