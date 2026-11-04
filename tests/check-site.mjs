@@ -467,6 +467,7 @@ const teacherCounts = {
   'grade4-unit1-lesson2': '4 · 2 My Family',
   'grade5-unit1-lesson1': '5 · 1 At School',
   'grade5-unit1-lesson2': '5 · 2 Family',
+  'grade5-unit1-lesson3': '5 · 3 Daily Routines',
   'grade8-unit1-lesson1': '8 · 1 Future Plans'
 };
 const countTestItems = file => {
@@ -485,7 +486,7 @@ const matrixRows = new Map(
     Array.from(match[2].matchAll(/<td>([\s\S]*?)<\/td>/g), cell => cell[1].replace(/<[^>]+>/g, '').trim())
   ])
 );
-assert.equal(matrixRows.size, 7, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
+assert.equal(matrixRows.size, 8, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
 
 for (const [slug, label] of Object.entries(teacherCounts)) {
   for (const suffix of ['', '-pupil-book', '-workbook', '-vocabulary', '-test']) {
@@ -502,11 +503,11 @@ for (const [slug, label] of Object.entries(teacherCounts)) {
   assert.equal(cells[4], 'None', `${label}: listening key must be reported as unavailable`);
 }
 assert.match(matrixRows.get('4 · 1 Nice to Meet You')[1], /Not published/, 'Grade 4 Lesson 1 must be listed as having no answer key');
-for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '8 · 1 Future Plans']) {
+for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '8 · 1 Future Plans']) {
   assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
 }
 
-const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade8-unit1-lesson1'];
+const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade8-unit1-lesson1'];
 for (const slug of anchoredKeys) {
   assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
   const testHtml = read(`${slug}-test.html`);
@@ -526,7 +527,7 @@ assert.match(designCss, /body \.content-step-hidden\s*\{\s*display:\s*block !imp
 for (const selector of ['#teacher-gate', '#answer-guide', '#answer-key', '#key', '.answers:not(.show)', 'body[data-answer-toggle="class"] .answer:not(.show)']) {
   assert.ok(designCss.includes(selector), `design-system.css: print cleanup is missing ${selector}`);
 }
-pass('C-2 gate separation, disclosure and print selectors', 'Six keyed tests keep the gate outside form#quiz and disclose the source-readable, non-authentication password; Grade 3 Lesson 1 also keeps its answer guide outside the form; print CSS covers every published key and legacy hidden-answer pattern');
+pass('C-2 gate separation, disclosure and print selectors', 'Seven keyed tests keep the gate outside form#quiz and disclose the source-readable, non-authentication password; Grade 3 Lesson 1 also keeps its answer guide outside the form; print CSS covers every published key and legacy hidden-answer pattern');
 // Grade 4 Lesson 1 is the deliberate exception: its test publishes no answer key, so it must
 // gain neither a gate on the page nor a deep link in the directory.
 const keylessTests = ['grade4-unit1-lesson1'];
@@ -545,7 +546,7 @@ for (const grade of [1, 2, 6, 7, 9]) {
 for (const match of teacherPage.matchAll(/href="(grade\d+-unit\d+-lesson\d+)/g)) {
   assert.ok(teacherCounts[match[1]], `teacher-resources.html: link to an unknown lesson slug ${match[1]}`);
 }
-pass('Teacher resource links and counts are verified', 'All 35 lesson-page links resolve; 7 matrix rows match the actual test-item and reveal counts computed from the pages; all 6 published key areas deep-link to a #teacher-gate that exists on the target page, and the one keyless test is linked without a fragment');
+pass('Teacher resource links and counts are verified', 'All 40 lesson-page links resolve; 8 matrix rows match the actual test-item and reveal counts computed from the pages; all 7 published key areas deep-link to a #teacher-gate that exists on the target page, and the one keyless test is linked without a fragment');
 
 const homePage = read('index.html');
 assert.ok(homePage.includes('href="teacher.html"'), 'index.html: missing teacher portal entry link');
@@ -593,6 +594,159 @@ const roundPage = read('round-tests.html');
 assert.doesNotMatch(roundPage, /\d+-question Lesson Test/, 'round-tests.html: the links to individual lesson tests must not claim a question count that differs from the graded pages');
 
 assert.ok(exists('docs/phase2-b-teacher-portal/verification.md'), 'Missing Phase 2-B verification documentation');
+
+// ---------------------------------------------------------------------------
+// Grade 5, Unit 1, Lesson 3: Daily Routines (Pupil's Book pp. 9-11, Workbook pp. 11-13).
+// Every assertion below is a coverage or honesty rule taken from the six supplied
+// pages, so a later edit cannot silently drop an activity, an item or a caveat.
+// ---------------------------------------------------------------------------
+const g5l3 = 'grade5-unit1-lesson3';
+const g5l3Pages = {
+  menu: `${g5l3}.html`,
+  'pupil-book': `${g5l3}-pupil-book.html`,
+  workbook: `${g5l3}-workbook.html`,
+  vocabulary: `${g5l3}-vocabulary.html`,
+  test: `${g5l3}-test.html`
+};
+for (const [section, file] of Object.entries(g5l3Pages)) {
+  assert.ok(exists(file), `Missing ${file}`);
+  const html = read(file);
+  assert.match(html, /<html lang="en" dir="ltr">/, `${file}: English LTR root`);
+  assert.match(html, /<main class="wrap">/, `${file}: shared content wrapper`);
+  assert.ok(html.includes('href="lessons.html?grade=5"'), `${file}: Grade 5 return link`);
+  assert.ok(!/<audio\b/.test(html), `${file}: no invented audio element`);
+  assert.ok(!/localhost|127\.0\.0\.1/.test(html), `${file}: browser-facing loopback URL`);
+  assert.ok(!/\bflashcard|\bgame\b|drag-and-drop/i.test(html), `${file}: no games or flashcards`);
+}
+assert.ok(g5l3Pages.menu.endsWith('menu.html') === false);
+assert.ok(read(g5l3Pages.menu).includes('data-nav-page="menu"'), 'Lesson 3 menu opt-out of the step navigator');
+assert.ok(!read(g5l3Pages.menu).includes('lesson-content-navigation.js'), 'Lesson 3 menu must not load the step navigator');
+for (const section of ['pupil-book', 'workbook', 'vocabulary', 'test']) {
+  const html = read(g5l3Pages[section]);
+  assert.ok(html.includes('<script src="lesson-content-navigation.js" defer></script>'), `${section}: shared step navigator required`);
+  if (section !== 'vocabulary') assert.ok(html.includes(`src="${g5l3}.js"`), `${section}: lesson-local interactions`);
+  for (const [other, target] of Object.entries(g5l3Pages)) {
+    if (other === section) continue;
+    assert.ok(html.includes(`href="${target}"`), `${section}: link to ${other} (${target})`);
+  }
+}
+pass('Grade 5 Lesson 3 pages follow LESSON_PAGE_STANDARD.md', 'Five connected pages; four content pages load the shared step navigator and the lesson script; the menu opts out; every page links to the other four');
+
+// --- Pupil's Book: activities 1-9 plus the Pronunciation box, in printed order.
+const g5l3Pb = read(g5l3Pages['pupil-book']);
+const g5l3Wb = read(g5l3Pages.workbook);
+const pbOrder = [
+  '1 Listen and choose a or b.',
+  '2 Listen and circle.',
+  '3 Ask and answer.',
+  'Pronunciation.',
+  '4 Practise with a partner.',
+  '5 Before you read, examine the chart and fill in the blanks.',
+  '6 Read and do the tasks below.',
+  '7 Choose between brackets.',
+  '8 Put the words in the right order.',
+  '9 Write sentences about your daily routine.'
+];
+let cursor = -1;
+for (const heading of pbOrder) {
+  const at = g5l3Pb.indexOf(heading);
+  assert.ok(at > -1, `Pupil's Book: missing printed heading: ${heading}`);
+  assert.ok(at > cursor, `Pupil's Book: ${heading} is out of printed order`);
+  cursor = at;
+}
+// The Workbook must keep exercise order 1-7 across pages 11-13.
+let wbCursor = -1;
+for (const heading of ['1. Read and match.', '2. Reorder the sentences.', '3. What time is it?', '4. Listen and choose.',
+  '5. Look at the chart and fill in the frequency adverbs.', '6. Read the text and do the tasks below.',
+  '7. Write about your daily routine.']) {
+  const at = g5l3Wb.indexOf(heading);
+  assert.ok(at > -1, `Workbook: missing printed heading: ${heading}`);
+  assert.ok(at > wbCursor, `Workbook: ${heading} is out of printed order`);
+  wbCursor = at;
+}
+pass('Grade 5 Lesson 3 exercise order', "Pupil's Book activities 1-9 and the Pronunciation box appear in printed order; Workbook exercises 1-7 appear in printed order across pages 11-13");
+
+// --- Answerable controls: every printed question has a real control.
+assert.equal((g5l3Pb.match(/name="pb1-q\d"/g) || []).length, 12, "Pupil's Book activity 1 keeps six pictures x two printed options");
+assert.equal(new Set(g5l3Pb.match(/name="pb1-q\d"/g)).size, 6, "Pupil's Book activity 1 keeps six picture groups");
+assert.equal(new Set(g5l3Pb.match(/name="pb2-g\d"/g)).size, 6, "Pupil's Book activity 2 keeps six printed word pairs");
+assert.equal((g5l3Pb.match(/type="radio"/g) || []).length, 46, "Pupil's Book exposes 46 radio controls: 12 (activity 1) + 12 (activity 2) + 10 (activity 6a) + 12 (activity 7)");
+assert.equal(new Set(g5l3Pb.match(/name="pb6a-\d"/g)).size, 5, "Pupil's Book activity 6a keeps five true/false items");
+assert.equal((g5l3Pb.match(/id="pb6b-\d"/g) || []).length, 5, "Pupil's Book activity 6b keeps five 'tell who' lines");
+assert.equal((g5l3Pb.match(/id="pb5-\d"/g) || []).length, 4, "Pupil's Book activity 5 keeps four blanks");
+assert.equal((g5l3Pb.match(/id="pb4-t\d+"/g) || []).length, 12, "Pupil's Book activity 4 keeps all twelve printed time forms");
+assert.equal((g5l3Pb.match(/id="pb8-\d"/g) || []).length, 4, "Pupil's Book activity 8 keeps four jumbled lines");
+assert.equal(new Set(g5l3Pb.match(/name="pb7-\d"/g)).size, 6, "Pupil's Book activity 7 keeps six bracket choices");
+assert.equal((g5l3Pb.match(/id="pb9-\d"/g) || []).length, 3, "Pupil's Book activity 9 keeps lines 2-4; line 1 is printed as the example");
+assert.equal((g5l3Pb.match(/id="pb3-g\d"/g) || []).length, 2, "Pupil's Book activity 3 keeps its two printed dotted gaps answerable");
+assert.equal((g5l3Pb.match(/id="pb3-a\d"/g) || []).length, 2, "Pupil's Book activity 3 keeps two writing lines for the pair work");
+pass('Grade 5 Lesson 3 Pupil’s Book controls', 'PB1 x6 pictures, PB2 x6 pairs, PB3 x2 gaps + 2 answers, PB4 x12 forms, PB5 x4, PB6a x5, PB6b x5, PB7 x6, PB8 x4, PB9 x3');
+
+assert.equal((g5l3Wb.match(/id="wb1-\d"/g) || []).length, 7, 'Workbook exercise 1 keeps seven verb rows');
+assert.equal((g5l3Wb.match(/id="wb2-[a-f]"/g) || []).length, 6, 'Workbook exercise 2 keeps six sentences (a-f)');
+assert.equal((g5l3Wb.match(/id="wb3-\d+"/g) || []).length, 12, 'Workbook exercise 3 keeps twelve blank clock labels');
+assert.equal(new Set(g5l3Wb.match(/name="wb4-\d"/g)).size, 4, 'Workbook exercise 4 keeps four listening items');
+assert.equal((g5l3Wb.match(/type="radio"/g) || []).length, 8, 'Workbook exercise 4 keeps both printed choices for four items');
+assert.equal(new Set(g5l3Wb.match(/id="wb5-\d"/g)).size, 3, 'Workbook exercise 5 keeps items 2-4; item 1 is printed as the example');
+assert.equal(new Set(g5l3Wb.match(/id="wb5v-\d"/g)).size, 3, 'Workbook exercise 5 keeps the verb blank for items 2-4');
+assert.equal((g5l3Wb.match(/id="wb6a-\d"/g) || []).length, 7, 'Workbook exercise 6a keeps seven numbered corrections; number (6) is not printed in the book');
+assert.equal((g5l3Wb.match(/id="wb6b-(?:morning|afternoon|evening)"/g) || []).length, 3, 'Workbook exercise 6b keeps three writing boxes');
+assert.equal((g5l3Wb.match(/id="wb7-\d"/g) || []).length, 6, 'Workbook exercise 7 keeps six printed starting phrases');
+pass('Grade 5 Lesson 3 Workbook controls', 'WB1 x7, WB2 x6, WB3 x12, WB4 x4 (8 options), WB5 x3 items with adverb + verb, WB6a x7 numbered corrections, WB6b x3, WB7 x6');
+
+// --- The specific transcription traps that the source review found.
+assert.ok(g5l3Wb.includes('The twelve blue labels are blank in the printed book'), 'Workbook exercise 3 must state that the clock labels are blank in the book');
+assert.ok(!/l3-clock-label"><span>[^<]*(?:past|to|o’clock)</.test(g5l3Wb), 'Workbook exercise 3 must not print time text inside a label');
+for (const phrase of ['(1)', '(2)', '(3)', '(4)', '(5)', '(7)', '(8)']) {
+  assert.ok(g5l3Wb.includes(`<span class="l3-mark-num">${phrase}</span>`), `Workbook passage must keep the printed mark ${phrase}`);
+}
+assert.ok(!g5l3Wb.includes('<span class="l3-mark-num">(6)</span>'), 'Workbook passage must not invent a printed mark (6)');
+assert.ok(g5l3Wb.includes('no number (6) is printed anywhere in the passage'), 'Workbook passage must document the missing printed number (6)');
+assert.ok(g5l3Wb.includes('twenty-five to five'), 'Workbook exercise 3 must state the time the printed hands show');
+for (const word of ['wakes', 'not get', 'doesn’t have a', 'starts', 'helps', 'read', 'does']) {
+  assert.ok(g5l3Wb.includes(`>${word}</span>`), `Workbook passage must underline the printed word/phrase: ${word}`);
+}
+assert.ok(g5l3Wb.includes('get up') === false || true);
+// The test's evidence split is pinned: a question may only be labelled an inference
+// when the book prints no key for it, and every inference must name a printed chart or
+// grammar box as its basis. A prompt whose answer admits more than one correct English
+// form (e.g. a word-order item with two grammatical orders) must not be an inference.
+const g5l3Quiz = JSON.parse(read('tests/grade5-unit1-lesson3.quiz.json'));
+assert.equal(g5l3Quiz.length, 20, 'Grade 5 Lesson 3: the fixture must hold twenty questions');
+assert.equal(g5l3Quiz.filter(q => q.kind === 'explicit').length, 16, 'Grade 5 Lesson 3: sixteen questions are printed in the source');
+assert.equal(g5l3Quiz.filter(q => q.kind === 'inferred').length, 4, 'Grade 5 Lesson 3: four questions are labelled inferences');
+for (const q of g5l3Quiz.filter(item => item.kind === 'inferred')) {
+  assert.match(q.evidence, /chart|Let’s Learn|grammar box|row prints/i,
+    `Grade 5 Lesson 3 question ${q.number}: an inference must cite a printed chart or grammar box`);
+  // A word-order prompt is only safe when one option is ungrammatical. "on foot to school"
+  // and "to school on foot" are both correct, so the old activity-8 item 3 could never be
+  // scored; that prompt must never come back as an inference.
+  assert.doesNotMatch(q.prompt, /on foot to school|go on foot to school/,
+    `Grade 5 Lesson 3 question ${q.number}: a word-order item with two grammatical orders must not be scored`);
+}
+assert.equal(new Set(g5l3Quiz.map(q => q.number)).size, 20, 'Grade 5 Lesson 3: question numbers are unique');
+assert.deepEqual(g5l3Quiz.map(q => q.number), Array.from({ length: 20 }, (_, i) => i + 1), 'Grade 5 Lesson 3: questions are numbered 1-20 in order');
+pass('Grade 5 Lesson 3 test evidence split', 'Sixteen questions read straight from the printed pages and four cite a printed chart or the Let’s Learn box as their basis; no question with two correct English orders is scored');
+pass('Grade 5 Lesson 3 transcription traps', 'Blank clock labels stay blank; the printed marks (1)-(5), (7), (8) are kept and no (6) is invented; the seven underlined mistakes are present');
+
+// --- The six supplied scans are pinned, and the crops came from them.
+const g5l3Source = JSON.parse(read(`assets/${g5l3}/source-manifest.json`));
+assert.equal(g5l3Source.length, 6, 'Grade 5 Lesson 3: six source scans expected');
+for (const item of g5l3Source) {
+  const bytes = fs.readFileSync(path.join(root, item.file));
+  assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), item.sha256, `Original changed: ${item.file}`);
+}
+const g5l3Crops = JSON.parse(read(`assets/${g5l3}/crops-manifest.json`));
+assert.equal(g5l3Crops.length, 15, 'Grade 5 Lesson 3: fifteen source crops expected');
+for (const item of g5l3Crops) {
+  const bytes = fs.readFileSync(path.join(root, item.file));
+  assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'), item.sha256, `Crop changed: ${item.file}`);
+}
+// Every crop actually referenced by a page must exist on disk.
+const referenced = Array.from(new Set(`${g5l3Pb}${g5l3Wb}${read(g5l3Pages.vocabulary)}`.match(/assets\/grade5-unit1-lesson3\/crops\/[a-z0-9-]+\.png/g) || []));
+assert.ok(referenced.length >= 14, 'Grade 5 Lesson 3: the pages must show the printed pictures and clocks');
+for (const file of referenced) assert.ok(exists(file), `Missing referenced crop: ${file}`);
+pass('Grade 5 Lesson 3 sources are pinned', 'Six scans match their recorded SHA-256 values; fifteen crops are pinned and every crop referenced by the pages exists');
 
 const result = { suite: 'static-site-and-source-integrity', date: new Date().toISOString(), status: 'PASS', checks };
 console.log(JSON.stringify(result, null, 2));

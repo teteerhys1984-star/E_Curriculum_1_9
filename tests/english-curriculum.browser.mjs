@@ -200,6 +200,7 @@ try {
     { file: 'grade4-unit1-lesson1-test.html', submit: 'button[type="submit"]', result: '#score' },
     { file: 'grade5-unit1-lesson1-test.html', submit: '#check', result: '#score', hiddenKey: '#answer-key' },
     { file: 'grade5-unit1-lesson2-test.html', submit: '#check', result: '#score', hiddenKey: '#key' },
+    { file: 'grade5-unit1-lesson3-test.html', submit: '#check-answers', result: '#score', hiddenKey: '#answer-key' },
     { file: 'grade8-unit1-lesson1-test.html', submit: '#check', result: '#score', hiddenKey: '#key' }
   ];
   for (const test of assessmentCases) {
@@ -264,6 +265,7 @@ try {
     { file: 'grade4-unit1-lesson2-test.html', password: '#teacher-password', unlock: '#unlock-solutions', key: '#answer-guide' },
     { file: 'grade5-unit1-lesson1-test.html', password: '#teacher-password', unlock: '#verify-password', key: '#answer-key' },
     { file: 'grade5-unit1-lesson2-test.html', password: '#pw', unlock: '#unlock', key: '#key' },
+    { file: 'grade5-unit1-lesson3-test.html', password: '#teacher-password', unlock: '#unlock-key', key: '#answer-key' },
     { file: 'grade8-unit1-lesson1-test.html', password: '#pw', unlock: '#unlock', key: '#key' }
   ];
   for (const test of keyedPrintCases) {
@@ -289,8 +291,8 @@ try {
   await page.goto(origin + 'grade4-unit1-lesson1-test.html', { waitUntil: 'load' });
   assert.equal(await page.locator('#teacher-gate, input[type="password"], #answer-guide, #answer-key, #key').count(), 0, 'Grade 4 Lesson 1 must remain the published keyless exception');
   await assertTestPrint('grade4-unit1-lesson1-test.html', 'keyless');
-  pass('C-2 teacher gate separation, disclosure and reset isolation', 'Six keyed tests keep the gate and password outside form#quiz and disclose the source-readable, non-authentication password; Grade 3 Lesson 1 reset no longer touches the gate; Grade 4 Lesson 1 remains keyless');
-  pass('C-2 lesson-test print cleanup', 'All 7 tests print every question while the gate, answer key, buttons and step navigator stay hidden, both before and after any on-screen key reveal');
+  pass('C-2 teacher gate separation, disclosure and reset isolation', 'Seven keyed tests keep the gate and password outside form#quiz and disclose the source-readable, non-authentication password; Grade 3 Lesson 1 reset no longer touches the gate; Grade 4 Lesson 1 remains keyless');
+  pass('C-2 lesson-test print cleanup', 'All 8 tests print every question while the gate, answer key, buttons and step navigator stay hidden, both before and after any on-screen key reveal');
 
   const bookPrintCases = ['grade3-unit1-lesson2-pupil-book.html', 'grade4-unit1-lesson1-workbook.html', 'grade8-unit1-lesson1-workbook.html'];
   for (const file of bookPrintCases) {

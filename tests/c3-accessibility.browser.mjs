@@ -260,6 +260,7 @@ try {
       { file: 'grade4-unit1-lesson2-test.html', password: '#teacher-password', unlock: '#unlock-solutions', panel: '#answer-guide', lock: '#lock-solutions' },
       { file: 'grade5-unit1-lesson1-test.html', password: '#teacher-password', unlock: '#verify-password', panel: '#answer-key' },
       { file: 'grade5-unit1-lesson2-test.html', password: '#pw', unlock: '#unlock', panel: '#key' },
+      { file: 'grade5-unit1-lesson3-test.html', password: '#teacher-password', unlock: '#unlock-key', panel: '#answer-key', lock: '#lock-key' },
       { file: 'grade8-unit1-lesson1-test.html', password: '#pw', unlock: '#unlock', panel: '#key' }
     ];
     for (const item of keyedTests) {
@@ -280,7 +281,7 @@ try {
         assert.equal(await unlock.evaluate(el => document.activeElement === el), true, `${item.file}: lock returns focus to unlock`);
       }
     }
-    pass('Teacher gate accessibility', 'Six existing keyed tests keep the C-2 separation, expose aria-expanded, reject wrong passwords and synchronize the open/closed state');
+    pass('Teacher gate accessibility', 'Seven existing keyed tests keep the C-2 separation, expose aria-expanded, reject wrong passwords and synchronize the open/closed state');
   }
 
   if (enabled('print')) {

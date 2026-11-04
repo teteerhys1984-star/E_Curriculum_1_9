@@ -330,12 +330,12 @@ try {
       wrapped: Boolean(document.querySelector('.table-scroll')?.classList.contains('table-scroll'))
     };
   });
-  assert.equal(matrix.rows.length, 7, 'the matrix must list all seven prepared lessons');
+  assert.equal(matrix.rows.length, 8, 'the matrix must list all eight prepared lessons');
   assert.deepEqual(matrix.headers, ['Grade · Lesson', 'Test items', 'Answer-key area', 'Book reveals', 'Workbook reveals', 'Listening key']);
-  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 7, 'every lesson must report no listening key');
+  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 8, 'every lesson must report no listening key');
   assert.equal(matrix.rows.filter(row => /^Not published$/.test(row.cells[1])).length, 1, 'exactly one lesson has no published key');
   assert.match(matrix.rows.find(row => row.label.startsWith('4 · 1')).cells[1], /Not published/);
-  pass('Rendered status matrix', 'Seven rows with the expected columns, one “Not published” key and “None” for every listening key');
+  pass('Rendered status matrix', 'Eight rows with the expected columns, one “Not published” key and “None” for every listening key');
 
   // 9. Keyboard access and skip link (desktop width, where the header bar is visible).
   await page.setViewportSize({ width: 1440, height: 900 });

@@ -1,0 +1,242 @@
+[
+  {
+    "number": 1,
+    "prompt": "Activity 1, picture 4 prints two sentences. Which one is the printed option “a”?",
+    "options": [
+      "She sets the table.",
+      "She doesn’t set the table."
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 9 · activity 1, picture 4",
+    "evidence": "Picture 4 prints “a. She sets the table.” and “b. She doesn’t set the table.”"
+  },
+  {
+    "number": 2,
+    "prompt": "Activity 1, picture 3 prints two sentences. Which one is the printed option “a”?",
+    "options": [
+      "I don’t pack my bag.",
+      "I pack my bag."
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 9 · activity 1, picture 3",
+    "evidence": "Picture 3 prints “a. I don’t pack my bag.” and “b. I pack my bag.”"
+  },
+  {
+    "number": 3,
+    "prompt": "In Eve’s text, which two words are printed in brackets as pair (1)?",
+    "options": [
+      "always / never",
+      "usually / always"
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 9 · activity 2, pair (1)",
+    "evidence": "The text prints “My mum (1) always / never wakes me up at six o’clock.”"
+  },
+  {
+    "number": 4,
+    "prompt": "In Eve’s text, which two words are printed in brackets as pair (5)?",
+    "options": [
+      "never / sometimes",
+      "sometimes / usually"
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 9 · activity 2, pair (5)",
+    "evidence": "The text prints “I (5) never / sometimes go to bed late.”"
+  },
+  {
+    "number": 5,
+    "prompt": "Activity 2 pair (6) prints two adverbs. Which pair is it?",
+    "options": [
+      "always / usually",
+      "sometimes / never"
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 9 · activity 2, pair (6)",
+    "evidence": "The text prints “I (6) always / usually sleep at nine o’clock.”"
+  },
+  {
+    "number": 6,
+    "prompt": "Which three time phrases does activity 3 print under the two questions?",
+    "options": [
+      "In the morning · In the afternoon · In the evening",
+      "At night · At noon · At midnight"
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 9 · activity 3",
+    "evidence": "Three printed phrases sit under the questions: “In the morning”, “In the afternoon” and “In the evening”."
+  },
+  {
+    "number": 7,
+    "prompt": "The Pronunciation box on page 9 prints two sound groups. Which words belong to the first group?",
+    "options": [
+      "not · hot · bomb",
+      "horse · law · caught"
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 9 · Pronunciation",
+    "evidence": "The first printed group is “not hot bomb”; the second is “horse law caught”."
+  },
+  {
+    "number": 8,
+    "prompt": "The printed answer bubble in activity 4 says what time the speaker goes to school. Which is it?",
+    "options": [
+      "At twenty to eight.",
+      "At twenty past eight."
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 10 · activity 4",
+    "evidence": "The printed bubble reads “I go to school at twenty to eight.”"
+  },
+  {
+    "number": 9,
+    "prompt": "How many spoken time forms are printed around the clock in activity 4?",
+    "options": [
+      "Twelve",
+      "Eight"
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 10 · activity 4",
+    "evidence": "Twelve forms are printed around the dial: o’clock, five past, ten past, quarter past, twenty past, twenty-five past, it’s half past, twenty-five to, twenty to, quarter to, ten to and five to."
+  },
+  {
+    "number": 10,
+    "prompt": "In the chart of activity 5, which row has a tick on every day from Sun to Thur?",
+    "options": [
+      "Always",
+      "Sometimes"
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 10 · activity 5 chart",
+    "evidence": "The “Always” row prints ✓ ✓ ✓ ✓ ✓; the “Sometimes” row prints ✓ ✕ ✓ ✕ ✓."
+  },
+  {
+    "number": 11,
+    "prompt": "Activity 5 sentence 2 is printed with the marks ✓ ✓ ✓ ✓ ✕. Which chart row matches them?",
+    "options": [
+      "Usually",
+      "Never"
+    ],
+    "correct": 0,
+    "kind": "inferred",
+    "reference": "Pupil’s Book · p. 10 · activity 5",
+    "evidence": "The “Usually” row prints ✓ ✓ ✓ ✓ ✕ and the “Never” row prints ✕ on every day."
+  },
+  {
+    "number": 12,
+    "prompt": "In Mira’s text, who cleans the grage?",
+    "options": [
+      "Mira’s brother",
+      "Mira"
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 10 · activity 6 reading text",
+    "evidence": "The text says “Then I tidy my room and my brother cleans the grage”."
+  },
+  {
+    "number": 13,
+    "prompt": "In Mira’s text, who does not watch the news?",
+    "options": [
+      "Mira’s mother",
+      "Mira’s father"
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 10 · activity 6 reading text",
+    "evidence": "The text says “my father watches the news. My mother doesn’t watch the news”."
+  },
+  {
+    "number": 14,
+    "prompt": "In the Let’s Learn box on page 11, which negative form is printed for he / she / it?",
+    "options": [
+      "He doesn’t drink milk in the morning.",
+      "He don’t drink milk in the morning."
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 11 · Let’s Learn",
+    "evidence": "The printed line is “He doesn’t drink milk in the morning.”"
+  },
+  {
+    "number": 15,
+    "prompt": "Activity 7 item 2: “(Does – Do) they go to the swimming pool on Fridays?” Which word is correct?",
+    "options": [
+      "Do",
+      "Does"
+    ],
+    "correct": 0,
+    "kind": "inferred",
+    "reference": "Pupil’s Book · p. 11 · activity 7 item 2",
+    "evidence": "The subject is “they”, and the Let’s Learn box on the same page uses Do with I / you / we / they."
+  },
+  {
+    "number": 16,
+    "prompt": "Activity 7 item 5: “We (doesn’t – don’t) go to school by bus.” Which word is correct?",
+    "options": [
+      "don’t",
+      "doesn’t"
+    ],
+    "correct": 0,
+    "kind": "inferred",
+    "reference": "Pupil’s Book · p. 11 · activity 7 item 5",
+    "evidence": "The subject is “we”, and the Let’s Learn box uses don’t with I / you / we / they."
+  },
+  {
+    "number": 17,
+    "prompt": "Activity 8 item 1 prints these words: evening. / usually / pack / the / I / bag / my / in. Which sentence uses all of them?",
+    "options": [
+      "I usually pack my bag in the evening.",
+      "I pack usually my bag in the evening."
+    ],
+    "correct": 0,
+    "kind": "inferred",
+    "reference": "Pupil’s Book · p. 11 · activity 8 item 1",
+    "evidence": "The capital “I” and the full stop on “evening.” fix the two ends, and the printed grammar box puts the frequency adverb before the main verb."
+  },
+  {
+    "number": 18,
+    "prompt": "In Emma’s text, what time does she wake up?",
+    "options": [
+      "At 6:30.",
+      "At 8:00."
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Workbook · p. 13 · exercise 6, Emma’s text",
+    "evidence": "The passage says “I usually wakes up at 6:30”; 8:00 is the time she and Sally start work, not the time she wakes up."
+  },
+  {
+    "number": 19,
+    "prompt": "Activity 9 prints sentence 1 as the worked example. What is it?",
+    "options": [
+      "I usually wake up at six o’clock in the morning.",
+      "I usually get up at six o’clock in the morning."
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Pupil’s Book · p. 11 · activity 9",
+    "evidence": "The printed example is “I usually wake up at six o’clock in the morning.”"
+  },
+  {
+    "number": 20,
+    "prompt": "Workbook exercise 1 prints seven verbs. Which verb is number 3 in that list?",
+    "options": [
+      "Pack a bag",
+      "Go to bed"
+    ],
+    "correct": 0,
+    "kind": "explicit",
+    "reference": "Workbook · p. 11 · exercise 1",
+    "evidence": "The printed list reads: 1. Get up · 2. Have a shower · 3. Pack a bag · 4. Go to bed · 5. Chat online · 6. Get dressed · 7. Set the table."
+  }
+]

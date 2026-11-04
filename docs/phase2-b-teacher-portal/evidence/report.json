@@ -1,7 +1,7 @@
 {
   "suite": "phase2-b-teacher-portal-browser",
   "status": "PASS",
-  "date": "2026-11-01T09:41:58.756Z",
+  "date": "2026-11-04T21:52:23.412Z",
   "browser": "Chromium 153.0.8010.0",
   "originPath": "/E_Curriculum_1_9/",
   "viewports": [
@@ -40,17 +40,17 @@
     {
       "name": "Teacher link resolution",
       "status": "PASS",
-      "detail": "64 distinct local destinations from the two teacher pages all returned HTTP 200, including every lesson page and every template route"
+      "detail": "72 distinct local destinations from the two teacher pages all returned HTTP 200, including every lesson page and every template route"
     },
     {
       "name": "Published key anchors",
       "status": "PASS",
-      "detail": "Four lesson tests deep-link to #teacher-gate, each lands with the key area in view and keeps the answer container hidden until it is unlocked"
+      "detail": "6 lesson tests deep-link to #teacher-gate, each lands with the key area in view and keeps the answer container hidden until it is unlocked"
     },
     {
-      "name": "Pages without a key anchor",
+      "name": "Tests without a key area",
       "status": "PASS",
-      "detail": "Grade 4 Lesson 1 has no key area, and the Grade 5 Lesson 2 and Grade 8 Lesson 1 key areas keep their existing heading and password field untouched, with no anchor invented"
+      "detail": "Grade 4 Lesson 1 keeps no gate, no password field and no key claim, exactly as published"
     },
     {
       "name": "No prompts and no storage writes",
@@ -65,7 +65,7 @@
     {
       "name": "Rendered status matrix",
       "status": "PASS",
-      "detail": "Seven rows with the expected columns, one “Not published” key and “None” for every listening key"
+      "detail": "Eight rows with the expected columns, one “Not published” key and “None” for every listening key"
     },
     {
       "name": "Keyboard access",
