@@ -205,15 +205,15 @@
   },
   {
     "number": 18,
-    "prompt": "Activity 8 item 3 prints: they / Do / go / on / school / to / foot? Which sentence uses all of them?",
+    "prompt": "In Emma’s text, what time does she wake up?",
     "options": [
-      "Do they go to school on foot?",
-      "Do they go on foot to school?"
+      "At 6:30.",
+      "At 8:00."
     ],
     "correct": 0,
-    "kind": "inferred",
-    "reference": "Pupil’s Book · p. 11 · activity 8 item 3",
-    "evidence": "The capital on “Do” opens the question and the question mark on “foot?” closes it, which fixes “Do … on foot?” as the printed arrangement runs."
+    "kind": "explicit",
+    "reference": "Workbook · p. 13 · exercise 6, Emma’s text",
+    "evidence": "The passage says “I usually wakes up at 6:30”; 8:00 is the time she and Sally start work, not the time she wakes up."
   },
   {
     "number": 19,

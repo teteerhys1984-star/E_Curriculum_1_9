@@ -34,7 +34,7 @@ Result: **PASS**, exit 0, **31** checks.
 | Shared page standard | PASS — four content pages load the step navigator; menu opts out |
 | Source activity counts and blanks | PASS |
 | Original source images preserved byte-for-byte | PASS — 6 SHA-256 matches |
-| Test structure / exact quiz fixture | PASS — 20 questions, 60 options, 15 explicit, 5 inferred |
+| Test structure / exact quiz fixture | PASS — 20 questions, 60 options, 16 explicit, 4 inferred |
 | Teacher resource links and counts | PASS — 40 links resolve, 8 matrix rows match the pages |
 | Teacher portal pages are directory-only | PASS |
 | C-2 gate separation, disclosure, print selectors | PASS — seven keyed tests |
@@ -91,5 +91,5 @@ Also in `npm test`: `node --check` on the shared scripts and on `grade5-unit1-le
 3. **Workbook exercise 6a number (6).** Not printed in the book. Seven corrections are given for the seven visible markers; the eighth box has no invented content.
 4. **Pupil’s Book 6a items 1 and 5.** The passage does not mention weekends or Saturdays, so these two are reported as not settled by the text.
 5. **Teacher gate is a display aid.** As in every other lesson in this project the password is client-side and the key is present in the page source; the page says so.
-6. **The test’s inferred questions.** Five of the twenty are labelled as inferences, where the book prints no key and the answer follows from a printed chart or the printed grammar box. Each one says so in its feedback and in the teacher key.
+6. **The test’s inferred questions.** Four of the twenty are labelled as inferences, where the book prints no key and the answer follows from a printed chart or the printed grammar box. Each one says so in its feedback and in the teacher key. A fifth candidate — "which order makes *Do they go to school on foot?*" — was **removed** in final review: both *to school on foot* and *on foot to school* are correct English, so the item had no single unambiguous answer. It was replaced by a direct comprehension question from Emma's passage (the time she wakes up), not by an invented one.
 7. **Print.** The lesson-page link strip and the reveal buttons are hidden in print, matching the rest of the project.

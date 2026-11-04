@@ -707,6 +707,26 @@ for (const word of ['wakes', 'not get', 'doesn’t have a', 'starts', 'helps', '
   assert.ok(g5l3Wb.includes(`>${word}</span>`), `Workbook passage must underline the printed word/phrase: ${word}`);
 }
 assert.ok(g5l3Wb.includes('get up') === false || true);
+// The test's evidence split is pinned: a question may only be labelled an inference
+// when the book prints no key for it, and every inference must name a printed chart or
+// grammar box as its basis. A prompt whose answer admits more than one correct English
+// form (e.g. a word-order item with two grammatical orders) must not be an inference.
+const g5l3Quiz = JSON.parse(read('tests/grade5-unit1-lesson3.quiz.json'));
+assert.equal(g5l3Quiz.length, 20, 'Grade 5 Lesson 3: the fixture must hold twenty questions');
+assert.equal(g5l3Quiz.filter(q => q.kind === 'explicit').length, 16, 'Grade 5 Lesson 3: sixteen questions are printed in the source');
+assert.equal(g5l3Quiz.filter(q => q.kind === 'inferred').length, 4, 'Grade 5 Lesson 3: four questions are labelled inferences');
+for (const q of g5l3Quiz.filter(item => item.kind === 'inferred')) {
+  assert.match(q.evidence, /chart|Let’s Learn|grammar box|row prints/i,
+    `Grade 5 Lesson 3 question ${q.number}: an inference must cite a printed chart or grammar box`);
+  // A word-order prompt is only safe when one option is ungrammatical. "on foot to school"
+  // and "to school on foot" are both correct, so the old activity-8 item 3 could never be
+  // scored; that prompt must never come back as an inference.
+  assert.doesNotMatch(q.prompt, /on foot to school|go on foot to school/,
+    `Grade 5 Lesson 3 question ${q.number}: a word-order item with two grammatical orders must not be scored`);
+}
+assert.equal(new Set(g5l3Quiz.map(q => q.number)).size, 20, 'Grade 5 Lesson 3: question numbers are unique');
+assert.deepEqual(g5l3Quiz.map(q => q.number), Array.from({ length: 20 }, (_, i) => i + 1), 'Grade 5 Lesson 3: questions are numbered 1-20 in order');
+pass('Grade 5 Lesson 3 test evidence split', 'Sixteen questions read straight from the printed pages and four cite a printed chart or the Let’s Learn box as their basis; no question with two correct English orders is scored');
 pass('Grade 5 Lesson 3 transcription traps', 'Blank clock labels stay blank; the printed marks (1)-(5), (7), (8) are kept and no (6) is invented; the seven underlined mistakes are present');
 
 // --- The six supplied scans are pinned, and the crops came from them.
