@@ -217,6 +217,39 @@
       "submit": "#check",
       "result": "#score",
       "reset": null
+    },
+    {
+      "file": "grade5-unit1-lesson3-test.html",
+      "kind": "modern",
+      "totalQuestions": 20,
+      "objectiveTotal": 20,
+      "optionCount": 2,
+      "correct": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "submit": "#check-answers",
+      "result": "#score",
+      "reset": "#reset-test",
+      "sourceFixture": "tests/grade5-unit1-lesson3.quiz.json"
     }
   ]
 }

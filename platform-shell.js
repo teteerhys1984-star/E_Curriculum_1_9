@@ -10,6 +10,7 @@
     'grade4-unit1-lesson2': { grade: 4, unit: 1, lesson: 2, title: 'My Family', bookLabel: "Pupil's Book" },
     'grade5-unit1-lesson1': { grade: 5, unit: 1, lesson: 1, title: 'At School', bookLabel: "Pupil's Book" },
     'grade5-unit1-lesson2': { grade: 5, unit: 1, lesson: 2, title: 'Family', bookLabel: "Pupil's Book" },
+    'grade5-unit1-lesson3': { grade: 5, unit: 1, lesson: 3, title: 'Daily Routines', bookLabel: "Pupil's Book" },
     'grade8-unit1-lesson1': { grade: 8, unit: 1, lesson: 1, title: 'Future Plans', bookLabel: "Student's Book" }
   };
 

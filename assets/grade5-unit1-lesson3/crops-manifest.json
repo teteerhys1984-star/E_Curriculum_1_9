@@ -1,0 +1,107 @@
+[
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/pb10-clock.png",
+    "width": 132,
+    "height": 180,
+    "bytes": 21197,
+    "sha256": "3b85faacf4e9e2877cfd305459a05037dd4276b28cd03833d649692361b53de8"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/pb9-pic-1-get-up.png",
+    "width": 104,
+    "height": 88,
+    "bytes": 16066,
+    "sha256": "765d3dbc33710c0abe4e3a6be9c6bc3bef6cd118f75807cb15191dcce1baf550"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/pb9-pic-2-shower.png",
+    "width": 103,
+    "height": 88,
+    "bytes": 9077,
+    "sha256": "2695a0b50ef6c63c472e075f1581e3ee4bf7fa6b2e24c244112790c351cd54b1"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/pb9-pic-3-pack-bag.png",
+    "width": 103,
+    "height": 88,
+    "bytes": 9980,
+    "sha256": "bf74e59e04f6b39dd683d2152a60f5678309f1b685aa8e196bd68da3f76e7c2f"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/pb9-pic-4-set-table.png",
+    "width": 103,
+    "height": 88,
+    "bytes": 14039,
+    "sha256": "c2a7a5b4422d81ce20954661827493f98a4bc4ec205f43c2096bb0a446e63e15"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/pb9-pic-5-chat-online.png",
+    "width": 103,
+    "height": 88,
+    "bytes": 16493,
+    "sha256": "59ab78cad52f0d6657998b8139136f226f804d561f64df21d1131bf1b83bd17e"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/pb9-pic-6-go-to-bed.png",
+    "width": 103,
+    "height": 88,
+    "bytes": 8438,
+    "sha256": "e4c78defe1c31f5059699e7ca85ad109a00712d47e91b7f86b94894422b6fcf8"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/wb11-pic-1.png",
+    "width": 120,
+    "height": 88,
+    "bytes": 6134,
+    "sha256": "c4deb5795045da2e53c3b4da32efbd76db0381d212bd879dcb19f1fa9be7ed05"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/wb11-pic-2.png",
+    "width": 120,
+    "height": 66,
+    "bytes": 5018,
+    "sha256": "0ffa35d344522256c119bcce9c7fe5efb991f0675196353e0fa423346b949dd4"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/wb11-pic-3.png",
+    "width": 120,
+    "height": 56,
+    "bytes": 3902,
+    "sha256": "0ab98e56064b9a755b6fb0d127224297f764887d59a8b79bcc4276309e918832"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/wb11-pic-4.png",
+    "width": 120,
+    "height": 74,
+    "bytes": 5658,
+    "sha256": "44d81008cab90ec962924dda98168ed7788ec1974a539e8919a5ab99a4d3af4a"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/wb11-pic-5.png",
+    "width": 120,
+    "height": 70,
+    "bytes": 3987,
+    "sha256": "df7af857a269461211320e0b66f02d2f1895eb054215a0f3a150e13cbf7eb59e"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/wb11-pic-6.png",
+    "width": 120,
+    "height": 57,
+    "bytes": 2649,
+    "sha256": "0fa6653e560a0dfd923809a3d02ce028d39e8a8920bbd5c5c2731c40ae4bb775"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/wb11-pic-7.png",
+    "width": 120,
+    "height": 66,
+    "bytes": 5533,
+    "sha256": "504a9aa87e309beee8ac273be0722e3824be00ec5ea34ca0091c6376c3657e5d"
+  },
+  {
+    "file": "assets/grade5-unit1-lesson3/crops/wb12-clock.png",
+    "width": 280,
+    "height": 300,
+    "bytes": 59295,
+    "sha256": "15f3ea339a1d7649c3f0b6cb33f16ef77db1462b8db726a600e42f2939ef2b28"
+  }
+]
