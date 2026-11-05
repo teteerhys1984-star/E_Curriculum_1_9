@@ -2,7 +2,7 @@
   "name": "english-full-curriculum",
   "version": "1.0.0",
   "private": true,
-  "description": "Static English curriculum with source-checked lesson tests",
+  "description": "Static English curriculum for Grades 1-9 with source-faithful textbook pages and independent lesson assessments",
   "scripts": {
     "test": "node tests/check-site.mjs && node tests/c3-content-integrity.mjs && node --check platform-shell.js && node --check lesson-accessibility.js && node --check grade3-unit1-lesson2.js && node --check grade4-unit1-lesson2.js && node --check grade5-unit1-lesson3.js && node --check lesson-content-navigation.js",
     "test:browser": "node tests/grade4-unit1-lesson2.browser.mjs && node tests/grade3-unit1-lesson2.browser.mjs && node tests/grade5-unit1-lesson3.browser.mjs && node tests/english-curriculum.browser.mjs && node tests/phase1-design-foundation.browser.mjs && node tests/phase2-a-navigation.browser.mjs && node tests/teacher-portal.browser.mjs && node tests/c3-accessibility.browser.mjs && node tests/c3-scoring.browser.mjs",

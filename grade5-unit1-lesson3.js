@@ -4,8 +4,7 @@
      1. keeps the small "n of n answered" counters in step with the controls on the page;
      2. remembers every answer typed or chosen on these pages, so a learner who moves between
         the steps, reloads, or opens another lesson-3 page and comes back finds the same work;
-     3. scores the twenty-question lesson test from the data-correct attributes in its markup.
-   No answer key, prompt or option is ever written by this file. */
+     3. scores, persists, and resets the independent eighteen-question lesson test. */
 (() => {
   'use strict';
 
@@ -29,9 +28,17 @@
     }
   };
 
+  const clearStore = () => {
+    try {
+      window.localStorage.removeItem(pageKey);
+    } catch (error) {
+      /* Ignore storage failure. */
+    }
+  };
+
   const store = readStore();
 
-  /* ---------- 1. Remember every answer control ---------- */
+  /* ---------- 1. Remember every answer control on Pupil’s Book and Workbook ---------- */
   const controls = Array.from(
     document.querySelectorAll(
       'main input[type="radio"][name], main input[type="text"][id], main textarea[id], main select[id]'
@@ -43,8 +50,6 @@
   controls.forEach(element => {
     const key = keyOf(element);
     if (!key) return;
-    // A <select> has no .type of "radio", but it does have a .value, so both the restore
-    // and the record paths below work for any control that holds one value.
     if (element.type === 'radio') {
       if (store[key] === element.value) element.checked = true;
     } else if (store[key] !== undefined) {
@@ -64,9 +69,6 @@
 
   /* ---------- 2. Counters that describe the copied work ---------- */
   const countRadioGroups = group => {
-    // Radios are counted per group name; text inputs, selects and textareas are counted
-    // one by one. A counter therefore describes exactly the controls inside its own
-    // printed activity, whatever kind of control the book's task needs.
     const names = Array.from(group.querySelectorAll('input[type="radio"][name]'), input => input.name);
     const unique = Array.from(new Set(names));
     const radioAnswered = unique.filter(name => group.querySelector('input[name="' + name + '"]:checked')).length;
@@ -77,8 +79,6 @@
 
   const syncStatus = () => {
     document.querySelectorAll('[data-status-for]').forEach(status => {
-      // Each counter describes the printed activity it sits in, so it counts the radio
-      // groups of its own panel only and never the whole lesson.
       const scope = document.querySelector('[data-scope="' + status.dataset.statusFor + '"]');
       if (!scope) {
         status.hidden = true;
@@ -107,31 +107,111 @@
     syncStatus();
   }
 
-  /* ---------- 3. The lesson test ---------- */
+  /* ---------- 3. The independent lesson test ---------- */
   const quiz = document.getElementById('quiz');
   if (!quiz) return;
 
   const questions = Array.from(quiz.querySelectorAll('.question'));
   const scoreBox = document.getElementById('score');
-  const gate = document.getElementById('teacher-gate');
   const password = document.getElementById('teacher-password');
   const gateFeedback = document.getElementById('gate-feedback');
   const key = document.getElementById('answer-key');
   const lock = document.getElementById('lock-key');
   const unlock = document.getElementById('unlock-key');
 
-  const answerOf = question => question.querySelector('input[type="radio"]:checked');
+  const FORMAT_LABELS = {
+    'multiple-choice': 'Multiple choice',
+    'true-false': 'True or False',
+    'short-answer': 'Written response'
+  };
+
+  const isShortAnswer = question => question.dataset.format === 'short-answer';
+
+  const normalizeWritten = value =>
+    String(value || '')
+      .replace(/[\u2018\u2019`]/g, "'")
+      .trim()
+      .replace(/\s+/g, ' ')
+      .replace(/\s+([?.!,])/g, '$1')
+      .replace(/[.?!]+$/, '')
+      .trim()
+      .toLowerCase();
 
   const correctLabel = question => {
-    const input = question.querySelector('input[value="' + question.dataset.correct + '"]');
+    if (isShortAnswer(question)) {
+      return question.dataset.correct || '';
+    }
+    const input = question.querySelector('input[type="radio"][value="' + question.dataset.correct + '"]');
     return input ? input.parentElement.textContent.trim() : '';
   };
 
-  const evidenceLabel = question =>
-    question.dataset.kind === 'inferred' ? 'Inferred from the source' : 'Explicit in the source / direct reading';
+  const formatLabelFor = question => {
+    const format = question.dataset.format || 'multiple-choice';
+    return FORMAT_LABELS[format] || format;
+  };
+
+  const evaluateQuestion = question => {
+    if (isShortAnswer(question)) {
+      const textInput = question.querySelector('input[type="text"]');
+      const raw = textInput ? textInput.value : '';
+      if (raw.trim().length === 0) {
+        return { answered: false, correct: false };
+      }
+      const accepted = String(question.dataset.accepted || question.dataset.correct || '')
+        .split('|')
+        .map(normalizeWritten)
+        .filter(Boolean);
+      return {
+        answered: true,
+        correct: accepted.includes(normalizeWritten(raw))
+      };
+    }
+
+    const chosen = question.querySelector('input[type="radio"]:checked');
+    if (!chosen) {
+      return { answered: false, correct: false };
+    }
+    return {
+      answered: true,
+      correct: chosen.value === question.dataset.correct
+    };
+  };
+
+  let testState = {
+    answers: store && typeof store.answers === 'object' && store.answers ? { ...store.answers } : {},
+    submitted: Boolean(store && store.submitted)
+  };
+
+  const persistTestState = () => {
+    writeStore(testState);
+  };
+
+  const restoreSavedTestInputs = () => {
+    Object.entries(testState.answers).forEach(([name, value]) => {
+      if (typeof value !== 'string') return;
+      const radios = Array.from(quiz.querySelectorAll('input[type="radio"]')).filter(
+        el => el.name === name
+      );
+      if (radios.length > 0) {
+        radios.forEach(radio => {
+          radio.checked = radio.value === value;
+        });
+        return;
+      }
+      const textInputs = Array.from(quiz.querySelectorAll('input[type="text"]')).filter(
+        el => el.name === name
+      );
+      textInputs.forEach(input => {
+        input.value = value;
+      });
+    });
+  };
 
   const clearScore = () => {
-    if (scoreBox) scoreBox.replaceChildren();
+    if (scoreBox) {
+      scoreBox.classList.remove('visible');
+      scoreBox.replaceChildren();
+    }
   };
 
   // The shared stylesheet hides .answer either through the [hidden] attribute or, because
@@ -141,6 +221,8 @@
     if (!key) return;
     key.hidden = !open;
     key.classList.toggle('show', open);
+    if (unlock) unlock.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if (lock) lock.setAttribute('aria-expanded', open ? 'true' : 'false');
   };
 
   const closeKey = (message = '') => {
@@ -155,49 +237,53 @@
     const list = key.querySelector('ol');
     if (!list) return;
     list.replaceChildren();
-    questions.forEach((question, index) => {
+    questions.forEach(question => {
       const item = document.createElement('li');
       item.dir = 'ltr';
       const answer = document.createElement('strong');
       answer.textContent = correctLabel(question);
-      const kind = document.createElement('p');
-      kind.className = 'source-note';
-      kind.textContent = evidenceLabel(question);
-      const reference = document.createElement('p');
-      reference.className = 'source-note';
-      reference.textContent = question.dataset.reference || '';
+      const objective = document.createElement('p');
+      objective.className = 'source-note';
+      objective.textContent =
+        (question.dataset.objectiveLabel || 'Lesson objective') + ' · Format: ' + formatLabelFor(question);
       const explanation = document.createElement('p');
       explanation.textContent = question.dataset.evidence || '';
-      item.append(answer, kind, reference, explanation);
+      item.append(answer, objective, explanation);
       list.appendChild(item);
     });
   };
 
-  const checkAnswers = () => {
+  const checkAnswers = options => {
     if (!scoreBox) return;
+    const focusScore = !options || options.focusScore !== false;
     let correctCount = 0;
     let answeredCount = 0;
     let firstOpen = null;
 
     questions.forEach(question => {
       const feedback = question.querySelector('.feedback');
-      const chosen = answerOf(question);
+      const objectiveText = question.dataset.objectiveLabel || 'Lesson objective';
+      const evidence = question.dataset.evidence || '';
+      const result = evaluateQuestion(question);
       feedback.className = 'feedback';
-      if (!chosen) {
+
+      if (!result.answered) {
         feedback.classList.add('unanswered');
-        feedback.textContent = 'No answer chosen yet. This question is unanswered and does not count as correct.';
+        feedback.textContent =
+          'No answer chosen yet. This question is unanswered and does not count as correct.';
         if (!firstOpen) firstOpen = question;
         return;
       }
+
       answeredCount++;
-      if (chosen.value === question.dataset.correct) {
+      if (result.correct) {
         correctCount++;
         feedback.classList.add('correct');
-        feedback.textContent = '✓ Correct. ' + evidenceLabel(question) + '. ' + (question.dataset.evidence || '');
+        feedback.textContent = '✓ Correct. ' + objectiveText + '. ' + evidence;
       } else {
         feedback.classList.add('incorrect');
         feedback.textContent =
-          '✗ Not correct. The answer is: ' + correctLabel(question) + '. ' + evidenceLabel(question) + '. ' + (question.dataset.evidence || '');
+          '✗ Not correct. The answer is: ' + correctLabel(question) + '. ' + objectiveText + '. ' + evidence;
         if (!firstOpen) firstOpen = question;
       }
     });
@@ -209,39 +295,88 @@
       'Answered: ' + answeredCount + ' / ' + questions.length + ' · Unanswered: ' + (questions.length - answeredCount) + '.';
     const note = document.createElement('p');
     note.className = 'source-note';
-    note.textContent = 'The score covers the multiple-choice questions only. Listening and free writing tasks are not part of this score.';
+    note.textContent =
+      'Your answers and score are saved on this browser until you reset the test to try again.';
     scoreBox.replaceChildren(summary, detail, note);
-    scoreBox.focus({ preventScroll: true });
-    if (firstOpen) firstOpen.scrollIntoView({ behavior: 'auto', block: 'nearest' });
+    scoreBox.classList.add('visible');
+    if (focusScore) {
+      scoreBox.focus({ preventScroll: true });
+      if (firstOpen) firstOpen.scrollIntoView({ behavior: 'auto', block: 'nearest' });
+    }
+
+    testState.submitted = true;
+    persistTestState();
   };
+
+  const recordTestInput = target => {
+    if (!target || !target.name) return;
+    if (target.type === 'radio') {
+      if (target.checked) {
+        testState.answers[target.name] = target.value;
+      }
+    } else if (target.type === 'text') {
+      if (target.value.trim().length > 0) {
+        testState.answers[target.name] = target.value;
+      } else {
+        delete testState.answers[target.name];
+      }
+    } else {
+      return;
+    }
+    testState.submitted = false;
+    persistTestState();
+    clearScore();
+    const parentQuestion = target.closest('.question');
+    if (parentQuestion) {
+      const feedback = parentQuestion.querySelector('.feedback');
+      if (feedback && feedback.textContent) {
+        feedback.className = 'feedback';
+        feedback.textContent = 'Answer changed. Choose “Check my answers” to update the score.';
+      }
+    }
+  };
+
+  restoreSavedTestInputs();
+  if (testState.submitted) {
+    checkAnswers({ focusScore: false });
+  }
 
   if (scoreBox) {
     const checkButton = document.getElementById('check-answers');
-    if (checkButton) checkButton.addEventListener('click', checkAnswers);
-    const resetButton = document.getElementById('reset-test');
-    if (resetButton) {
-      resetButton.addEventListener('click', () => {
-        window.setTimeout(() => {
-          questions.forEach(question => {
-            const feedback = question.querySelector('.feedback');
-            feedback.textContent = '';
-            feedback.className = 'feedback';
-          });
-          clearScore();
-          closeKey('The test was reset and the answer key was closed.');
-        }, 0);
+    if (checkButton) checkButton.addEventListener('click', () => checkAnswers({ focusScore: true }));
+
+    quiz.addEventListener('reset', () => {
+      testState = { answers: {}, submitted: false };
+      clearStore();
+      quiz.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.checked = false;
       });
-    }
+      quiz.querySelectorAll('input[type="text"], textarea').forEach(field => {
+        field.value = '';
+      });
+      questions.forEach(question => {
+        const feedback = question.querySelector('.feedback');
+        if (!feedback) return;
+        feedback.textContent = '';
+        feedback.className = 'feedback';
+      });
+      clearScore();
+      closeKey('The test was reset and the answer key was closed.');
+    });
+
     quiz.addEventListener('submit', event => {
       event.preventDefault();
-      checkAnswers();
+      checkAnswers({ focusScore: true });
     });
+
     quiz.addEventListener('change', event => {
-      if (!event.target.matches('input[type="radio"]')) return;
-      clearScore();
-      const feedback = event.target.closest('.question').querySelector('.feedback');
-      feedback.className = 'feedback';
-      feedback.textContent = 'Answer changed. Choose “Check my answers” to update the score.';
+      recordTestInput(event.target);
+    });
+
+    quiz.addEventListener('input', event => {
+      if (event.target && event.target.type === 'text') {
+        recordTestInput(event.target);
+      }
     });
   }
 
@@ -266,9 +401,11 @@
         tryUnlock();
       }
     });
-    if (lock) lock.addEventListener('click', () => {
-      closeKey('The answer key is hidden.');
-      unlock.focus();
-    });
+    if (lock) {
+      lock.addEventListener('click', () => {
+        closeKey('The answer key is hidden.');
+        unlock.focus();
+      });
+    }
   }
 })();

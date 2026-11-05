@@ -226,67 +226,181 @@ try {
   screenshots.push('workbook-desktop.png');
   pass('Workbook: every exercise is answerable, and the blank clock labels and missing mark (6) are preserved', 'WB1 ×7 selects, WB2 ×6, WB3 ×12 blank labels, WB4 ×4 listening items (no key, audio notice), WB5 ×6, WB6a ×7, WB6b ×3, WB7 ×6; all answers survive a reload');
 
-  /* ---------- 4. The twenty-question test ---------- */
+  /* ---------- 4. The eighteen-question independent lesson test ---------- */
   await go(PAGES.test);
+  const fixtureSpec = JSON.parse(fs.readFileSync(path.join(root, 'tests', 'grade5-unit1-lesson3.quiz.json'), 'utf8'));
+  const fixture = fixtureSpec.questions;
   const testShape = await page.evaluate(() => ({
     questions: document.querySelectorAll('#quiz .question').length,
-    answers: document.querySelectorAll('#quiz input[type="radio"]').length,
-    correct: Array.from(document.querySelectorAll('#quiz .question')).map(question => Number(question.dataset.correct)),
-    kinds: Array.from(document.querySelectorAll('#quiz .question')).map(question => question.dataset.kind),
-    references: Array.from(document.querySelectorAll('#quiz .question')).map(question => question.dataset.reference || '')
+    radios: document.querySelectorAll('#quiz input[type="radio"]').length,
+    textInputs: document.querySelectorAll('#quiz input[type="text"]').length,
+    images: document.querySelectorAll('#quiz img, main img').length,
+    tables: document.querySelectorAll('#quiz table.l3-test-chart').length,
+    passages: document.querySelectorAll('#quiz .l3-test-passage').length,
+    stepButtons: document.querySelectorAll('.content-nav-links button').length,
+    items: Array.from(document.querySelectorAll('#quiz .question')).map(question => ({
+      id: question.id,
+      format: question.dataset.format,
+      objective: question.dataset.objective,
+      objectiveLabel: question.dataset.objectiveLabel,
+      correct: question.dataset.correct
+    }))
   }));
-  assert.equal(testShape.questions, 20, 'The lesson test has twenty questions');
-  assert.equal(testShape.answers, 40, 'Each question keeps its two printed options');
-  assert.ok(testShape.references.every(text => /Pupil’s Book|Workbook/.test(text)), 'Every question names the page it comes from');
-  const fixture = JSON.parse(fs.readFileSync(path.join(root, 'tests', 'grade5-unit1-lesson3.quiz.json'), 'utf8'));
-  assert.equal(fixture.length, testShape.questions, 'The stored fixture covers every question');
+  assert.equal(testShape.questions, 18, 'The independent lesson test has eighteen questions');
+  assert.equal(testShape.radios, 46, '14 three-option MCQs (42) + 2 True/False items (4) = 46 radio inputs');
+  assert.equal(testShape.textInputs, 2, '2 deterministic written short-answer inputs (q17 and q18)');
+  assert.equal(testShape.images, 0, 'The lesson test uses zero textbook images or crops');
+  assert.equal(testShape.tables, 2, 'Questions 8 and 9 display Mazen’s independent schedule table');
+  assert.equal(testShape.passages, 3, 'Questions 13–15 display Bilal’s independent reading passage');
+  assert.equal(testShape.stepButtons, 18, 'Shared step navigator exposes 18 question buttons');
+  assert.equal(fixture.length, testShape.questions, 'The stored fixture covers all 18 questions');
   fixture.forEach((question, index) => {
-    assert.equal(testShape.correct[index], question.correct, `Question ${index + 1}: answer index matches the fixture`);
-    assert.equal(testShape.kinds[index], question.kind, `Question ${index + 1}: evidence type matches the fixture`);
+    const rendered = testShape.items[index];
+    assert.equal(rendered.id, question.id, `Question ${index + 1}: id matches fixture`);
+    assert.equal(rendered.format, question.format, `${question.id}: format matches fixture`);
+    assert.equal(rendered.objective, question.objective, `${question.id}: objective matches fixture`);
+    assert.equal(rendered.objectiveLabel, question.objectiveLabel, `${question.id}: objectiveLabel matches fixture`);
+    assert.equal(rendered.correct, String(question.correct), `${question.id}: answer key matches fixture`);
   });
   assert.equal(await page.locator('#answer-key').isVisible(), false, 'The teacher key starts hidden');
-  // All correct.
-  const selectAll = async value => {
-    await page.evaluate(correct => {
-      document.querySelectorAll('#quiz .question').forEach((question, index) => {
-        const input = question.querySelector(`input[value="${correct[index]}"]`);
-        input.checked = true;
-        input.dispatchEvent(new Event('change', { bubbles: true }));
+
+  const fillTestAnswers = async answerMap => {
+    await page.evaluate(answers => {
+      document.querySelectorAll('#quiz .question').forEach(question => {
+        const id = question.id;
+        const val = Object.prototype.hasOwnProperty.call(answers, id) ? answers[id] : null;
+        if (question.dataset.format === 'short-answer') {
+          const textInput = question.querySelector('input[type="text"]');
+          textInput.value = val === null ? '' : String(val);
+          textInput.dispatchEvent(new Event('input', { bubbles: true }));
+          textInput.dispatchEvent(new Event('change', { bubbles: true }));
+          return;
+        }
+        question.querySelectorAll('input[type="radio"]').forEach(radio => {
+          radio.checked = false;
+        });
+        if (val !== null) {
+          const target = question.querySelector(`input[type="radio"][value="${val}"]`);
+          if (!target) throw new Error(`Missing radio ${id}=${val}`);
+          target.checked = true;
+          target.dispatchEvent(new Event('change', { bubbles: true }));
+        }
       });
-    }, value);
+    }, answerMap);
   };
-  await selectAll(testShape.correct);
+
+  const correctAnswerMap = Object.fromEntries(
+    fixture.map(q => [q.id, q.format === 'short-answer' ? q.correct : String(q.correct)])
+  );
+  const wrongAnswerMap = Object.fromEntries(
+    fixture.map(q => {
+      if (q.format === 'short-answer') return [q.id, q.wrongSample];
+      const count = q.options.length;
+      return [q.id, String((Number(q.correct) + 1) % count)];
+    })
+  );
+
+  // 4a. Persistence before scoring (reload + cross-page navigation).
+  await fillTestAnswers({
+    q1: '1',
+    q8: '1',
+    q9: '1',
+    q17: 'goes',
+    q18: 'Does Maysa tidy her bedroom?'
+  });
+  await page.reload({ waitUntil: 'load' });
+  await go(PAGES.menu);
+  await go(PAGES.test);
+  const restoredDraft = await page.evaluate(() => ({
+    q1: document.querySelector('#quiz input[name="q1"]:checked')?.value || null,
+    q8: document.querySelector('#quiz input[name="q8"]:checked')?.value || null,
+    q9: document.querySelector('#quiz input[name="q9"]:checked')?.value || null,
+    q17: document.querySelector('#quiz input[name="q17"]')?.value || '',
+    q18: document.querySelector('#quiz input[name="q18"]')?.value || '',
+    answeredSteps: document.querySelectorAll('.content-nav-links button.is-answered').length
+  }));
+  assert.deepEqual(
+    restoredDraft,
+    {
+      q1: '1',
+      q8: '1',
+      q9: '1',
+      q17: 'goes',
+      q18: 'Does Maysa tidy her bedroom?',
+      answeredSteps: 5
+    },
+    'In-progress radio and written test answers survive reload and cross-page navigation'
+  );
+
+  // 4b. All correct (including case/whitespace/punctuation normalization on written items).
+  await fillTestAnswers({
+    ...correctAnswerMap,
+    q17: '  GOES. ',
+    q18: 'does   maysa tidy her bedroom'
+  });
   await page.locator('#check-answers').click();
   const allCorrect = await page.locator('#score').innerText();
-  assert.match(allCorrect, /Score: 20 \/ 20/, 'All twenty correct answers score 20 / 20');
-  assert.match(allCorrect, /Answered: 20 \/ 20/, 'The score reports twenty answered');
+  assert.match(allCorrect, /Score: 18 \/ 18/, 'All eighteen correct answers score 18 / 18');
+  assert.match(allCorrect, /Answered: 18 \/ 18/, 'The score reports eighteen answered');
+  assert.match(allCorrect, /Unanswered: 0\./, 'The score reports zero unanswered');
   assert.equal(await page.locator('#answer-key').isVisible(), false, 'Scoring does not open the teacher key');
-  // All wrong.
-  await selectAll(testShape.correct.map(value => (value === 0 ? 1 : 0)));
+
+  // Scored state also persists across a reload until reset.
+  await page.reload({ waitUntil: 'load' });
+  assert.match(await page.locator('#score').innerText(), /Score: 18 \/ 18/, 'Scored test state survives a reload');
+  assert.equal(await page.locator('.feedback.correct').count(), 18, 'All 18 feedback lines stay restored after reload');
+
+  // 4c. All wrong.
+  await fillTestAnswers(wrongAnswerMap);
   await page.locator('#check-answers').click();
-  assert.match(await page.locator('#score').innerText(), /Score: 0 \/ 20/, 'All wrong answers score 0 / 20');
+  assert.match(await page.locator('#score').innerText(), /Score: 0 \/ 18/, 'All wrong answers score 0 / 18');
   const wrongFeedback = await page.locator('#q1 .feedback').innerText();
   assert.match(wrongFeedback, /Not correct/, 'A wrong answer says so');
-  assert.match(wrongFeedback, /Explicit in the source|Inferred from the source/, 'Each correction names its evidence type');
-  // One answer cleared.
-  await page.evaluate(() => {
-    document.querySelectorAll('#quiz .question').forEach((question, index) => {
-      const input = question.querySelector(`input[value="${index === 0 ? 1 : 0}"]`);
-      if (index === 0) { input.checked = false; input.dispatchEvent(new Event('change', { bubbles: true })); return; }
-      input.checked = true;
-      input.dispatchEvent(new Event('change', { bubbles: true }));
-    });
+  assert.match(wrongFeedback, /Lesson objective:/, 'Feedback names the Lesson 3 learning objective');
+  const wrongWrittenFeedback = await page.locator('#q18 .feedback').innerText();
+  assert.match(wrongWrittenFeedback, /Does Maysa tidy her bedroom\?/, 'Wrong written answer shows the exact canonical sentence');
+
+  // 4d. Partial / unanswered (one radio cleared + one whitespace-only written input = 2 unanswered).
+  await fillTestAnswers({
+    ...correctAnswerMap,
+    q1: null,
+    q17: '   '
   });
   await page.locator('#check-answers').click();
   const mixed = await page.locator('#score').innerText();
-  assert.match(mixed, /Score: 19 \/ 20/, 'One cleared question leaves 19 / 20');
-  assert.match(mixed, /Unanswered: 1/, 'The score reports the unanswered question');
-  // Reset.
+  assert.match(mixed, /Score: 16 \/ 18/, 'Clearing one radio and leaving whitespace in one written item scores 16 / 18');
+  assert.match(mixed, /Answered: 16 \/ 18/, 'Answered count excludes whitespace-only written input');
+  assert.match(mixed, /Unanswered: 2\./, 'The score reports 2 unanswered questions');
+
+  // 4e. Reset / Retry clears DOM, feedback, score, step badges, and localStorage, then allows a clean retry.
   await page.locator('#reset-test').click();
   await page.waitForFunction(() => document.querySelectorAll('#quiz input:checked').length === 0);
-  assert.equal(await page.locator('.feedback').filter({ hasText: 'Correct' }).count(), 0, 'Resetting clears every feedback line');
+  const resetState = await page.evaluate(() => ({
+    checked: document.querySelectorAll('#quiz input:checked').length,
+    q17: document.querySelector('#quiz input[name="q17"]').value,
+    q18: document.querySelector('#quiz input[name="q18"]').value,
+    answeredSteps: document.querySelectorAll('.content-nav-links button.is-answered').length,
+    stored: window.localStorage.getItem('efc_lesson3_answers_v1:test')
+  }));
+  assert.deepEqual(
+    resetState,
+    { checked: 0, q17: '', q18: '', answeredSteps: 0, stored: null },
+    'Reset clears radio choices, written inputs, step badges, and saved localStorage state'
+  );
+  assert.equal(await page.locator('.feedback').filter({ hasText: /Correct|Not correct|No answer/ }).count(), 0, 'Resetting clears every feedback line');
   assert.equal((await page.locator('#score').innerText()).trim(), '', 'Resetting clears the score');
-  // The teacher gate.
+
+  await page.reload({ waitUntil: 'load' });
+  assert.equal(await page.locator('#quiz input:checked').count(), 0, 'After reset + reload, zero radios are checked');
+  assert.equal((await page.locator('#score').innerText()).trim(), '', 'After reset + reload, score stays empty');
+
+  // Retry after reset: answer all 18 accurately and score again, then reset cleanly before screenshot.
+  await fillTestAnswers(correctAnswerMap);
+  await page.locator('#check-answers').click();
+  assert.match(await page.locator('#score').innerText(), /Score: 18 \/ 18/, 'Retrying after reset scores 18 / 18 cleanly');
+  await page.locator('#reset-test').click();
+
+  // 4f. The teacher gate and 18-item answer key.
   await page.locator('#teacher-password').fill('not-the-password');
   await page.locator('#unlock-key').click();
   assert.equal(await page.locator('#answer-key').isVisible(), false, 'A wrong password keeps the key closed');
@@ -295,14 +409,15 @@ try {
   await page.locator('#unlock-key').click();
   assert.equal(await page.locator('#answer-key').isVisible(), true, 'The shared classroom password opens the key');
   const keyItems = await page.locator('#answer-key .teacher-key li').count();
-  assert.equal(keyItems, 20, 'The key lists one entry per question');
+  assert.equal(keyItems, 18, 'The key lists one entry per independent question');
   const keyText = await page.locator('#answer-key').innerText();
   assert.match(keyText, /not secure authentication/i, 'The key repeats that the gate is not authentication');
+  assert.match(keyText, /Does Maysa tidy her bedroom\?/, 'The key includes written question answers');
   await page.locator('#lock-key').click();
   assert.equal(await page.locator('#answer-key').isVisible(), false, 'The hide button closes the key again');
   await page.screenshot({ path: path.join(evidenceDir, 'test-desktop.png'), fullPage: true });
   screenshots.push('test-desktop.png');
-  pass('Lesson test: scoring, reset, evidence and teacher gate', '20 questions with 40 options match the stored fixture; 20/20, 0/20 and 19/20 with one unanswered all score exactly; a reset clears feedback and score; the gate rejects a wrong password, opens with the shared one and closes again');
+  pass('Lesson test: independence, persistence, scoring, retry and teacher gate', '18 independent questions across 3 formats + schedule table + unseen passage match fixture; answers and score persist across reload and cross-page navigation; 18/18, 0/18 and 16/18 score accurately; reset wipes DOM and storage for clean retry; teacher gate verifies all 18 key entries');
 
   /* ---------- 5. Navigation between the five pages ---------- */
   await go(PAGES.menu);
@@ -331,11 +446,20 @@ try {
     await mobile.goto(origin + file, { waitUntil: 'load' });
     const state = await mobile.evaluate(() => ({ overflow: document.documentElement.scrollWidth - innerWidth, height: document.body.scrollHeight }));
     assert.ok(state.overflow <= 1, `${file}: phone overflow ${state.overflow}px`);
-    if (label === 'pupil-book' || label === 'workbook') {
+    if (label === 'pupil-book' || label === 'workbook' || label === 'test') {
       await mobile.screenshot({ path: path.join(evidenceDir, `${label}-mobile.png`), fullPage: false });
       screenshots.push(`${label}-mobile.png`);
     }
   }
+  // Check narrow 320px phone width across test schedule table (Q8), unseen passage (Q13), and written wordbank (Q18).
+  await mobile.setViewportSize({ width: 320, height: 740 });
+  await mobile.goto(origin + PAGES.test, { waitUntil: 'load' });
+  for (const stepIndex of [0, 7, 12, 17]) {
+    await mobile.locator('.content-nav-links button').nth(stepIndex).click();
+    const overflow320 = await mobile.evaluate(() => document.documentElement.scrollWidth - innerWidth);
+    assert.ok(overflow320 <= 1, `test step ${stepIndex + 1} at 320px: overflow ${overflow320}px`);
+  }
+  await mobile.setViewportSize({ width: 390, height: 844 });
   // The clock-label list must still be usable with one thumb.
   await mobile.goto(origin + PAGES.workbook, { waitUntil: 'load' });
   // Print labels are hidden on small screens, so the clock step is found by its heading.
@@ -347,7 +471,7 @@ try {
   const inputBox = await clockInput.boundingBox();
   assert.ok(inputBox && inputBox.width > 40, 'The clock input keeps a usable width on a phone');
   await mobile.close();
-  pass('Phone layout stays within the viewport', 'All five pages fit 390×844 with no horizontal overflow; the workbook clock labels stay reachable and usable');
+  pass('Phone layout stays within the viewport', 'All five pages fit 390×844 and test schedule/passage/writing steps fit 320×740 with no horizontal overflow; the workbook clock labels stay reachable and usable');
 
   assert.deepEqual(errors, [], 'No browser JavaScript errors across the five pages');
   const report = { suite: 'grade5-unit1-lesson3-browser', date: new Date().toISOString(), status: 'PASS', checks, screenshots, errors };

@@ -1,242 +1,234 @@
-[
-  {
-    "number": 1,
-    "prompt": "Activity 1, picture 4 prints two sentences. Which one is the printed option “a”?",
-    "options": [
-      "She sets the table.",
-      "She doesn’t set the table."
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 9 · activity 1, picture 4",
-    "evidence": "Picture 4 prints “a. She sets the table.” and “b. She doesn’t set the table.”"
-  },
-  {
-    "number": 2,
-    "prompt": "Activity 1, picture 3 prints two sentences. Which one is the printed option “a”?",
-    "options": [
-      "I don’t pack my bag.",
-      "I pack my bag."
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 9 · activity 1, picture 3",
-    "evidence": "Picture 3 prints “a. I don’t pack my bag.” and “b. I pack my bag.”"
-  },
-  {
-    "number": 3,
-    "prompt": "In Eve’s text, which two words are printed in brackets as pair (1)?",
-    "options": [
-      "always / never",
-      "usually / always"
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 9 · activity 2, pair (1)",
-    "evidence": "The text prints “My mum (1) always / never wakes me up at six o’clock.”"
-  },
-  {
-    "number": 4,
-    "prompt": "In Eve’s text, which two words are printed in brackets as pair (5)?",
-    "options": [
-      "never / sometimes",
-      "sometimes / usually"
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 9 · activity 2, pair (5)",
-    "evidence": "The text prints “I (5) never / sometimes go to bed late.”"
-  },
-  {
-    "number": 5,
-    "prompt": "Activity 2 pair (6) prints two adverbs. Which pair is it?",
-    "options": [
-      "always / usually",
-      "sometimes / never"
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 9 · activity 2, pair (6)",
-    "evidence": "The text prints “I (6) always / usually sleep at nine o’clock.”"
-  },
-  {
-    "number": 6,
-    "prompt": "Which three time phrases does activity 3 print under the two questions?",
-    "options": [
-      "In the morning · In the afternoon · In the evening",
-      "At night · At noon · At midnight"
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 9 · activity 3",
-    "evidence": "Three printed phrases sit under the questions: “In the morning”, “In the afternoon” and “In the evening”."
-  },
-  {
-    "number": 7,
-    "prompt": "The Pronunciation box on page 9 prints two sound groups. Which words belong to the first group?",
-    "options": [
-      "not · hot · bomb",
-      "horse · law · caught"
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 9 · Pronunciation",
-    "evidence": "The first printed group is “not hot bomb”; the second is “horse law caught”."
-  },
-  {
-    "number": 8,
-    "prompt": "The printed answer bubble in activity 4 says what time the speaker goes to school. Which is it?",
-    "options": [
-      "At twenty to eight.",
-      "At twenty past eight."
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 10 · activity 4",
-    "evidence": "The printed bubble reads “I go to school at twenty to eight.”"
-  },
-  {
-    "number": 9,
-    "prompt": "How many spoken time forms are printed around the clock in activity 4?",
-    "options": [
-      "Twelve",
-      "Eight"
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 10 · activity 4",
-    "evidence": "Twelve forms are printed around the dial: o’clock, five past, ten past, quarter past, twenty past, twenty-five past, it’s half past, twenty-five to, twenty to, quarter to, ten to and five to."
-  },
-  {
-    "number": 10,
-    "prompt": "In the chart of activity 5, which row has a tick on every day from Sun to Thur?",
-    "options": [
-      "Always",
-      "Sometimes"
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 10 · activity 5 chart",
-    "evidence": "The “Always” row prints ✓ ✓ ✓ ✓ ✓; the “Sometimes” row prints ✓ ✕ ✓ ✕ ✓."
-  },
-  {
-    "number": 11,
-    "prompt": "Activity 5 sentence 2 is printed with the marks ✓ ✓ ✓ ✓ ✕. Which chart row matches them?",
-    "options": [
-      "Usually",
-      "Never"
-    ],
-    "correct": 0,
-    "kind": "inferred",
-    "reference": "Pupil’s Book · p. 10 · activity 5",
-    "evidence": "The “Usually” row prints ✓ ✓ ✓ ✓ ✕ and the “Never” row prints ✕ on every day."
-  },
-  {
-    "number": 12,
-    "prompt": "In Mira’s text, who cleans the grage?",
-    "options": [
-      "Mira’s brother",
-      "Mira"
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 10 · activity 6 reading text",
-    "evidence": "The text says “Then I tidy my room and my brother cleans the grage”."
-  },
-  {
-    "number": 13,
-    "prompt": "In Mira’s text, who does not watch the news?",
-    "options": [
-      "Mira’s mother",
-      "Mira’s father"
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 10 · activity 6 reading text",
-    "evidence": "The text says “my father watches the news. My mother doesn’t watch the news”."
-  },
-  {
-    "number": 14,
-    "prompt": "In the Let’s Learn box on page 11, which negative form is printed for he / she / it?",
-    "options": [
-      "He doesn’t drink milk in the morning.",
-      "He don’t drink milk in the morning."
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 11 · Let’s Learn",
-    "evidence": "The printed line is “He doesn’t drink milk in the morning.”"
-  },
-  {
-    "number": 15,
-    "prompt": "Activity 7 item 2: “(Does – Do) they go to the swimming pool on Fridays?” Which word is correct?",
-    "options": [
-      "Do",
-      "Does"
-    ],
-    "correct": 0,
-    "kind": "inferred",
-    "reference": "Pupil’s Book · p. 11 · activity 7 item 2",
-    "evidence": "The subject is “they”, and the Let’s Learn box on the same page uses Do with I / you / we / they."
-  },
-  {
-    "number": 16,
-    "prompt": "Activity 7 item 5: “We (doesn’t – don’t) go to school by bus.” Which word is correct?",
-    "options": [
-      "don’t",
-      "doesn’t"
-    ],
-    "correct": 0,
-    "kind": "inferred",
-    "reference": "Pupil’s Book · p. 11 · activity 7 item 5",
-    "evidence": "The subject is “we”, and the Let’s Learn box uses don’t with I / you / we / they."
-  },
-  {
-    "number": 17,
-    "prompt": "Activity 8 item 1 prints these words: evening. / usually / pack / the / I / bag / my / in. Which sentence uses all of them?",
-    "options": [
-      "I usually pack my bag in the evening.",
-      "I pack usually my bag in the evening."
-    ],
-    "correct": 0,
-    "kind": "inferred",
-    "reference": "Pupil’s Book · p. 11 · activity 8 item 1",
-    "evidence": "The capital “I” and the full stop on “evening.” fix the two ends, and the printed grammar box puts the frequency adverb before the main verb."
-  },
-  {
-    "number": 18,
-    "prompt": "In Emma’s text, what time does she wake up?",
-    "options": [
-      "At 6:30.",
-      "At 8:00."
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Workbook · p. 13 · exercise 6, Emma’s text",
-    "evidence": "The passage says “I usually wakes up at 6:30”; 8:00 is the time she and Sally start work, not the time she wakes up."
-  },
-  {
-    "number": 19,
-    "prompt": "Activity 9 prints sentence 1 as the worked example. What is it?",
-    "options": [
-      "I usually wake up at six o’clock in the morning.",
-      "I usually get up at six o’clock in the morning."
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Pupil’s Book · p. 11 · activity 9",
-    "evidence": "The printed example is “I usually wake up at six o’clock in the morning.”"
-  },
-  {
-    "number": 20,
-    "prompt": "Workbook exercise 1 prints seven verbs. Which verb is number 3 in that list?",
-    "options": [
-      "Pack a bag",
-      "Go to bed"
-    ],
-    "correct": 0,
-    "kind": "explicit",
-    "reference": "Workbook · p. 11 · exercise 1",
-    "evidence": "The printed list reads: 1. Get up · 2. Have a shower · 3. Pack a bag · 4. Go to bed · 5. Chat online · 6. Get dressed · 7. Set the table."
-  }
-]
+{
+  "lesson": "grade5-unit1-lesson3",
+  "title": "Lesson 3 Test · Daily Routines",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 18,
+  "objectives": [
+    "vocabulary",
+    "telling-time",
+    "frequency-adverbs",
+    "schedule-interpretation",
+    "present-simple-grammar",
+    "reading-comprehension",
+    "language-use",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "q1",
+      "format": "multiple-choice",
+      "objective": "vocabulary",
+      "objectiveLabel": "Lesson objective: Daily routine vocabulary",
+      "prompt": "1. Choose the phrase that best completes the sentence: “After I have breakfast, I _____ in the bathroom before I go to school.”",
+      "options": ["a) set the table", "b) brush my teeth", "c) cook dinner"],
+      "correct": 1,
+      "evidence": "“Brush my teeth” is the morning bathroom routine before going to school; “set the table” and “cook dinner” are mealtime actions."
+    },
+    {
+      "number": 2,
+      "id": "q2",
+      "format": "multiple-choice",
+      "objective": "vocabulary",
+      "objectiveLabel": "Lesson objective: Daily routine vocabulary",
+      "prompt": "2. Which daily routine phrase means putting your school books into your bag for the next day?",
+      "options": ["a) make the bed", "b) get dressed", "c) pack a bag"],
+      "correct": 2,
+      "evidence": "“Pack a bag” means putting school books and supplies into your bag; “make the bed” is tidying bedcovers and “get dressed” is putting on clothes."
+    },
+    {
+      "number": 3,
+      "id": "q3",
+      "format": "multiple-choice",
+      "objective": "vocabulary",
+      "objectiveLabel": "Lesson objective: Places and jobs vocabulary",
+      "prompt": "3. Choose the place word from the lesson that completes the sentence: “Sami works in a _____. Every day, he takes care of sick people there.”",
+      "options": ["a) hospital", "b) library", "c) playground"],
+      "correct": 0,
+      "evidence": "A hospital is the workplace where doctors and nurses take care of sick people."
+    },
+    {
+      "number": 4,
+      "id": "q4",
+      "format": "multiple-choice",
+      "objective": "telling-time",
+      "objectiveLabel": "Lesson objective: Telling the time (past, to, quarter, half)",
+      "prompt": "4. Look at the digital clock below. How do we say 7:15 in English?",
+      "options": ["a) quarter to seven", "b) half past seven", "c) quarter past seven"],
+      "correct": 2,
+      "evidence": "Fifteen minutes after seven (7:15) is “quarter past seven”. (“Quarter to seven” is 6:45, and “half past seven” is 7:30.)"
+    },
+    {
+      "number": 5,
+      "id": "q5",
+      "format": "multiple-choice",
+      "objective": "telling-time",
+      "objectiveLabel": "Lesson objective: Telling the time (past, to, quarter, half)",
+      "prompt": "5. Our English lesson starts at ten to nine. Which digital time matches “ten to nine”?",
+      "options": ["a) 8:50", "b) 9:10", "c) 8:10"],
+      "correct": 0,
+      "evidence": "“Ten to nine” means ten minutes before nine o’clock, which is 8:50. (9:10 is “ten past nine”.)"
+    },
+    {
+      "number": 6,
+      "id": "q6",
+      "format": "multiple-choice",
+      "objective": "telling-time",
+      "objectiveLabel": "Lesson objective: Telling the time (past, to, quarter, half)",
+      "prompt": "6. Rami has lunch at 2:30 in the afternoon. Choose the sentence that gives the same time.",
+      "options": [
+        "a) Rami has lunch at twenty-five past two.",
+        "b) Rami has lunch at half past two.",
+        "c) Rami has lunch at quarter to three."
+      ],
+      "correct": 1,
+      "evidence": "Thirty minutes after two o’clock (2:30) is “half past two”."
+    },
+    {
+      "number": 7,
+      "id": "q7",
+      "format": "multiple-choice",
+      "objective": "frequency-adverbs",
+      "objectiveLabel": "Lesson objective: Adverbs of frequency (always, usually, sometimes, never)",
+      "prompt": "7. Choose the correct frequency adverb: “Nadia goes to school on foot every school day. She _____ goes to school by bus.”",
+      "options": ["a) always", "b) usually", "c) never"],
+      "correct": 2,
+      "evidence": "Because Nadia walks to school on foot every school day, she goes by bus on zero days, so “never” is the only accurate adverb."
+    },
+    {
+      "number": 8,
+      "id": "q8",
+      "format": "multiple-choice",
+      "objective": "schedule-interpretation",
+      "objectiveLabel": "Lesson objective: Reading a five-day routine schedule with frequency adverbs",
+      "prompt": "8. Look at Mazen’s five-day table below. Which sentence matches the table?",
+      "options": [
+        "a) Mazen always plays basketball.",
+        "b) Mazen usually reads a book.",
+        "c) Mazen sometimes brushes his teeth."
+      ],
+      "correct": 1,
+      "evidence": "In Mazen’s table, “read a book” has ticks on four of the five days (Mon, Wed, Thu, Fri) and one cross, which matches “usually”."
+    },
+    {
+      "number": 9,
+      "id": "q9",
+      "format": "true-false",
+      "objective": "schedule-interpretation",
+      "objectiveLabel": "Lesson objective: Reading a five-day routine schedule with frequency adverbs",
+      "prompt": "9. Look at Mazen’s table below and choose True or False: “Mazen sometimes plays computer games.”",
+      "options": ["a) True", "b) False"],
+      "correct": 1,
+      "evidence": "The “play computer games” row has a cross (×) on all five days, so Mazen never plays computer games and the statement is False."
+    },
+    {
+      "number": 10,
+      "id": "q10",
+      "format": "multiple-choice",
+      "objective": "present-simple-grammar",
+      "objectiveLabel": "Lesson objective: Present simple affirmative (-s / -es / has)",
+      "prompt": "10. Choose the correct verb form: “Kareem always _____ his homework in his bedroom before dinner.”",
+      "options": ["a) do", "b) does", "c) doing"],
+      "correct": 1,
+      "evidence": "“Kareem” is third-person singular (he), and verbs ending in -o add -es in the present simple: do → does."
+    },
+    {
+      "number": 11,
+      "id": "q11",
+      "format": "multiple-choice",
+      "objective": "present-simple-grammar",
+      "objectiveLabel": "Lesson objective: Present simple negatives (don’t / doesn’t)",
+      "prompt": "11. Choose the grammatically correct negative sentence:",
+      "options": [
+        "a) Fadi doesn’t go to work on Fridays.",
+        "b) Fadi don’t go to work on Fridays.",
+        "c) Fadi doesn’t goes to work on Fridays."
+      ],
+      "correct": 0,
+      "evidence": "With “Fadi” (he), the present simple negative uses “doesn’t” followed by the plain base verb “go” without -es."
+    },
+    {
+      "number": 12,
+      "id": "q12",
+      "format": "multiple-choice",
+      "objective": "present-simple-grammar",
+      "objectiveLabel": "Lesson objective: Present simple questions (Do / Does)",
+      "prompt": "12. Complete the question: “_____ your cousins study together in the afternoon?”",
+      "options": ["a) Does", "b) Are", "c) Do"],
+      "correct": 2,
+      "evidence": "“Your cousins” is plural (they) and “study” is a base verb, so the present simple question begins with “Do”."
+    },
+    {
+      "number": 13,
+      "id": "q13",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading comprehension of a daily routine text",
+      "prompt": "13. Read Bilal’s routine below and choose True or False: “Bilal and Ziad make their beds before they go to school.”",
+      "options": ["a) True", "b) False"],
+      "correct": 0,
+      "evidence": "The passage states: “First, we make our beds and have breakfast with our parents. Then we go to school on foot at half past seven.”"
+    },
+    {
+      "number": 14,
+      "id": "q14",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading comprehension of a daily routine text",
+      "prompt": "14. Read Bilal’s routine below. Who usually tidies his bedroom in the afternoon?",
+      "options": ["a) Ziad", "b) Bilal", "c) Bilal’s father"],
+      "correct": 0,
+      "evidence": "The passage states: “In the afternoon, Ziad usually tidies his bedroom”."
+    },
+    {
+      "number": 15,
+      "id": "q15",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading comprehension of a daily routine text",
+      "prompt": "15. Read Bilal’s routine below. What time do Bilal and Ziad get up on school days?",
+      "options": ["a) At half past seven", "b) At quarter past nine", "c) At quarter to seven"],
+      "correct": 2,
+      "evidence": "The second sentence states: “On school days, my brother Ziad and I get up at quarter to seven.”"
+    },
+    {
+      "number": 16,
+      "id": "q16",
+      "format": "multiple-choice",
+      "objective": "language-use",
+      "objectiveLabel": "Lesson objective: Asking and answering about daily routine times",
+      "prompt": "16. Choose the best reply to complete this conversation: “What time does your mother go to work?”",
+      "options": [
+        "a) Yes, she goes to work.",
+        "b) She goes to work at quarter past eight.",
+        "c) She works in a hospital."
+      ],
+      "correct": 1,
+      "evidence": "“What time does …?” asks for a clock time, so “She goes to work at quarter past eight.” answers the question directly and grammatically."
+    },
+    {
+      "number": 17,
+      "id": "q17",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Editing third-person singular verbs (-s / -es)",
+      "prompt": "17. Correct the underlined verb mistake in this sentence. Write one word only:",
+      "correct": "goes",
+      "accepted": ["goes"],
+      "wrongSample": "go",
+      "evidence": "“Adel” is third-person singular (he), and “go” ends in -o, so it takes -es in the present simple: goes."
+    },
+    {
+      "number": 18,
+      "id": "q18",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing present simple questions in the right word order",
+      "prompt": "18. Put all five words in the right order to write a present simple question:",
+      "correct": "Does Maysa tidy her bedroom?",
+      "accepted": ["does maysa tidy her bedroom"],
+      "wrongSample": "Maysa does tidy her bedroom?",
+      "evidence": "A present simple question with “Maysa” (she) begins with “Does”, followed by the subject “Maysa”, the plain verb “tidy”, and the object “her bedroom”: “Does Maysa tidy her bedroom?”"
+    }
+  ]
+}

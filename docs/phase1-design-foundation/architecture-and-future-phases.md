@@ -22,7 +22,8 @@ Adding a new verified lesson (for example `grade4-unit1-lesson3`) requires zero 
 1. Create the 5 standard HTML files (`<slug>.html`, `-pupil-book.html`, `-workbook.html`, `-vocabulary.html`, `-test.html`) following [`LESSON_PAGE_STANDARD.md`](../../LESSON_PAGE_STANDARD.md).
 2. Include `<link rel="stylesheet" href="design-system.css">` and `<script src="platform-shell.js" defer></script>` in `<head>`.
 3. Mark the lesson hub `<body data-nav-page="menu">` and load `<script src="lesson-content-navigation.js" defer></script>` on the four content subpages.
-4. Register the new lesson metadata once in `LESSONS` inside [`platform-shell.js`](../../platform-shell.js) (`window.EFCPlatform.LESSONS`) and in the Grade curriculum list in [`lessons.html`](../../lessons.html) and [`index.html`](../../index.html). Breadcrumbs, 5-tab section links, status badges, and browser-local Continue Learning support activate automatically.
+4. Design `<slug>-test.html` strictly as an **independent pedagogical assessment** under the **Independent Lesson Test Policy** in [`LESSON_PAGE_STANDARD.md`](../../LESSON_PAGE_STANDARD.md): never copy book/Workbook exercises, never reuse book images/charts/passages, never merely swap names or numbers in book items, align every question with a documented lesson objective (`data-objective`), use varied age-appropriate question formats within the taught vocabulary and grammar scope, ensure a single unambiguous answer and reliable key for every scored item, and support local answer/score persistence plus clean reset/retry. Keep the original Pupil's/Student's Book and Workbook pages complete and untouched.
+5. Register the new lesson metadata once in `LESSONS` inside [`platform-shell.js`](../../platform-shell.js) (`window.EFCPlatform.LESSONS`) and in the Grade curriculum list in [`lessons.html`](../../lessons.html), [`index.html`](../../index.html), and [`teacher-resources.html`](../../teacher-resources.html). Breadcrumbs, 5-tab section links, status badges, and browser-local Continue Learning support activate automatically.
 
 ---
 
@@ -49,5 +50,5 @@ In accordance with Phase 1 governance and academic integrity rules, the followin
 - **Classroom Management**: Add teacher class rosters, assigned lesson queues, and printable/exportable unit review sheets using the existing token and card primitives.
 
 ### Phase 4 — Analytics, School Administration & Subscriptions
-- **Mastery & Item Analytics**: Server-aggregated question-level performance by grade, unit, and direct-vs-inference skill tags.
+- **Mastery & Item Analytics**: Server-aggregated question-level performance by grade, unit, and lesson learning-objective tags.
 - **Institutional Licensing**: School/district provisioning and subscription management isolated cleanly from student-facing lesson pages.
