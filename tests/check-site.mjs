@@ -707,26 +707,190 @@ for (const word of ['wakes', 'not get', 'doesn’t have a', 'starts', 'helps', '
   assert.ok(g5l3Wb.includes(`>${word}</span>`), `Workbook passage must underline the printed word/phrase: ${word}`);
 }
 assert.ok(g5l3Wb.includes('get up') === false || true);
-// The test's evidence split is pinned: a question may only be labelled an inference
-// when the book prints no key for it, and every inference must name a printed chart or
-// grammar box as its basis. A prompt whose answer admits more than one correct English
-// form (e.g. a word-order item with two grammatical orders) must not be an inference.
-const g5l3Quiz = JSON.parse(read('tests/grade5-unit1-lesson3.quiz.json'));
-assert.equal(g5l3Quiz.length, 20, 'Grade 5 Lesson 3: the fixture must hold twenty questions');
-assert.equal(g5l3Quiz.filter(q => q.kind === 'explicit').length, 16, 'Grade 5 Lesson 3: sixteen questions are printed in the source');
-assert.equal(g5l3Quiz.filter(q => q.kind === 'inferred').length, 4, 'Grade 5 Lesson 3: four questions are labelled inferences');
-for (const q of g5l3Quiz.filter(item => item.kind === 'inferred')) {
-  assert.match(q.evidence, /chart|Let’s Learn|grammar box|row prints/i,
-    `Grade 5 Lesson 3 question ${q.number}: an inference must cite a printed chart or grammar box`);
-  // A word-order prompt is only safe when one option is ungrammatical. "on foot to school"
-  // and "to school on foot" are both correct, so the old activity-8 item 3 could never be
-  // scored; that prompt must never come back as an inference.
-  assert.doesNotMatch(q.prompt, /on foot to school|go on foot to school/,
-    `Grade 5 Lesson 3 question ${q.number}: a word-order item with two grammatical orders must not be scored`);
+// --- Permanent Independent Lesson Test Policy (standard + Grade 5 Lesson 3 enforcement) ---
+const lessonStandardDoc = read('LESSON_PAGE_STANDARD.md');
+const architectureDoc = read('docs/phase1-design-foundation/architecture-and-future-phases.md');
+assert.match(lessonStandardDoc, /## Independent Lesson Test Policy/, 'LESSON_PAGE_STANDARD.md must document the permanent Independent Lesson Test Policy');
+assert.match(architectureDoc, /Independent Lesson Test Policy/, 'architecture-and-future-phases.md must reference the Independent Lesson Test Policy');
+pass('Independent Lesson Test Policy documented', 'LESSON_PAGE_STANDARD.md and architecture-and-future-phases.md define the permanent curriculum-wide Independent Lesson Test Policy');
+
+const g5l3TestHtml = read(g5l3Pages.test);
+const g5l3QuizSpec = JSON.parse(read('tests/grade5-unit1-lesson3.quiz.json'));
+const g5l3Quiz = g5l3QuizSpec.questions;
+assert.equal(g5l3QuizSpec.policy, 'independent-lesson-test-v1', 'Grade 5 Lesson 3 quiz fixture declares independent-lesson-test-v1');
+assert.equal(g5l3QuizSpec.totalQuestions, 18, 'Grade 5 Lesson 3 quiz fixture declares 18 independent questions');
+assert.equal(g5l3Quiz.length, 18, 'Grade 5 Lesson 3 quiz fixture holds 18 questions');
+assert.equal(new Set(g5l3Quiz.map(q => q.number)).size, 18, 'Grade 5 Lesson 3: question numbers are unique');
+assert.deepEqual(g5l3Quiz.map(q => q.number), Array.from({ length: 18 }, (_, i) => i + 1), 'Grade 5 Lesson 3: questions are numbered 1-18 in order');
+
+// Extract #quiz markup to inspect student-facing test stimuli and items directly.
+const quizMarkupMatch = g5l3TestHtml.match(/<form id="quiz"[\s\S]*?<\/form>/);
+assert.ok(quizMarkupMatch, 'Grade 5 Lesson 3 test: #quiz form present');
+const quizMarkup = quizMarkupMatch[0];
+
+// 1. No book images, crops, or scans in the Lesson Test.
+assert.ok(!/<img\b/i.test(g5l3TestHtml), 'Grade 5 Lesson 3 test must not embed any book or crop <img>');
+assert.ok(!g5l3TestHtml.includes('assets/grade5-unit1-lesson3'), 'Grade 5 Lesson 3 test must not reference Lesson 3 book image assets');
+
+// 2. No book character names, book typos, or textbook meta-references inside #quiz.
+const forbiddenBookNames = /\b(Eve|Mira|Lili|Toni|Rida|Talin|Jad|Dalia|Dana|Emma|Sally|grage)\b/i;
+assert.doesNotMatch(quizMarkup, forbiddenBookNames, 'Grade 5 Lesson 3 test must not reuse Pupil’s Book or Workbook character names or passage text');
+const forbiddenMetaReferences = /\b(Pupil’s Book|Pupil's Book|Workbook|activity\s+\d|exercise\s+\d|Let’s Learn|Let's Learn|printed option|printed in brackets|printed chart)\b/i;
+assert.doesNotMatch(quizMarkup, forbiddenMetaReferences, 'Grade 5 Lesson 3 test questions must stand independently without citing textbook pages or exercises');
+
+// 3. No copied sentences, prompts, or option lines from Pupil’s Book or Workbook.
+const stripTags = fragment =>
+  fragment
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/[\u2018\u2019]/g, "'")
+    .replace(/[\u201C\u201D]/g, '"')
+    .replace(/\s+/g, ' ')
+    .trim();
+const normalizeSentence = text =>
+  stripTags(text)
+    .toLowerCase()
+    .replace(/^(\d+\.|[a-f]\)|[a-f]\.)\s*/, '')
+    .replace(/[^a-z0-9\s']/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+const bookSentences = new Set();
+for (const bookHtml of [g5l3Pb, g5l3Wb]) {
+  const matches = bookHtml.matchAll(/<(?:p|li|span|td|th|h3)[^>]*>([\s\S]*?)<\/(?:p|li|span|td|th|h3)>/gi);
+  for (const match of matches) {
+    const norm = normalizeSentence(match[1]);
+    if (norm.split(' ').length >= 5) {
+      bookSentences.add(norm);
+    }
+  }
 }
-assert.equal(new Set(g5l3Quiz.map(q => q.number)).size, 20, 'Grade 5 Lesson 3: question numbers are unique');
-assert.deepEqual(g5l3Quiz.map(q => q.number), Array.from({ length: 20 }, (_, i) => i + 1), 'Grade 5 Lesson 3: questions are numbered 1-20 in order');
-pass('Grade 5 Lesson 3 test evidence split', 'Sixteen questions read straight from the printed pages and four cite a printed chart or the Let’s Learn box as their basis; no question with two correct English orders is scored');
+
+// Parse every rendered .question block from grade5-unit1-lesson3-test.html and verify against fixture + policy.
+const renderedQuestionMatches = Array.from(
+  quizMarkup.matchAll(/<section class="question"([^>]*)>([\s\S]*?)<\/section>/g)
+);
+assert.equal(renderedQuestionMatches.length, g5l3Quiz.length, 'Rendered .question count matches quiz fixture');
+
+const readAttr = (attrs, name) => {
+  const m = attrs.match(new RegExp(`${name}="([^"]*)"`));
+  return m ? m[1].replace(/&amp;/g, '&') : '';
+};
+
+const seenObjectives = new Set();
+const seenFormats = new Set();
+const radioAnswerCounts = new Map();
+
+renderedQuestionMatches.forEach((match, idx) => {
+  const [, attrs, body] = match;
+  const expected = g5l3Quiz[idx];
+  const id = readAttr(attrs, 'id');
+  const format = readAttr(attrs, 'data-format');
+  const objective = readAttr(attrs, 'data-objective');
+  const objectiveLabel = readAttr(attrs, 'data-objective-label');
+  const correct = readAttr(attrs, 'data-correct');
+  const evidence = readAttr(attrs, 'data-evidence');
+
+  assert.equal(id, expected.id, `Question ${idx + 1}: id matches fixture`);
+  assert.equal(format, expected.format, `${id}: data-format matches fixture`);
+  assert.equal(objective, expected.objective, `${id}: data-objective matches fixture`);
+  assert.ok(g5l3QuizSpec.objectives.includes(objective), `${id}: objective is in Lesson 3 learning objectives`);
+  assert.equal(objectiveLabel, expected.objectiveLabel, `${id}: data-objective-label matches fixture`);
+  assert.ok(evidence.length >= 25, `${id}: has substantive pedagogical explanation`);
+  assert.equal(evidence, expected.evidence, `${id}: data-evidence matches fixture`);
+
+  const h2Match = body.match(/<h2>([\s\S]*?)<\/h2>/);
+  assert.ok(h2Match, `${id}: question prompt heading present`);
+  const promptText = stripTags(h2Match[1]);
+  assert.equal(promptText, stripTags(expected.prompt), `${id}: prompt matches fixture`);
+  assert.ok(!bookSentences.has(normalizeSentence(promptText)), `${id}: prompt must not copy a Pupil’s Book or Workbook sentence`);
+  assert.doesNotMatch(promptText, /on foot to school|go on foot to school/, `${id}: must not use ambiguous dual-order scrambles`);
+
+  seenObjectives.add(objective);
+  seenFormats.add(format);
+
+  if (format === 'short-answer') {
+    assert.equal(correct, expected.correct, `${id}: written canonical answer matches fixture`);
+    const acceptedAttr = readAttr(attrs, 'data-accepted')
+      .split('|')
+      .map(s => s.trim())
+      .filter(Boolean);
+    assert.deepEqual(acceptedAttr, expected.accepted, `${id}: accepted normalized written forms match fixture`);
+    assert.match(body, new RegExp(`<input[^>]+type="text"[^>]+name="${id}"`), `${id}: renders text input named ${id}`);
+    assert.match(body, /<label for="q\d+-input">/, `${id}: text input has an explicit <label>`);
+  } else {
+    assert.equal(Number(correct), expected.correct, `${id}: radio correct index matches fixture`);
+    const optionSpans = Array.from(body.matchAll(/<label class="option"><input type="radio" name="(q\d+)" value="(\d+)"><span[^>]*>([\s\S]*?)<\/span><\/label>/g));
+    assert.equal(optionSpans.length, expected.options.length, `${id}: option count matches fixture`);
+    const expectedCount = format === 'true-false' ? 2 : 3;
+    assert.equal(optionSpans.length, expectedCount, `${id}: ${format} has ${expectedCount} options`);
+    const normalizedOptions = new Set();
+    optionSpans.forEach((optMatch, optIdx) => {
+      assert.equal(optMatch[1], id, `${id}: radio name matches question id`);
+      assert.equal(Number(optMatch[2]), optIdx, `${id}: sequential radio value ${optIdx}`);
+      const optText = stripTags(optMatch[3]);
+      assert.equal(optText, stripTags(expected.options[optIdx]), `${id} option ${optIdx}: text matches fixture`);
+      const normOpt = normalizeSentence(optText);
+      assert.ok(!normalizedOptions.has(normOpt), `${id}: duplicate option text "${optText}"`);
+      normalizedOptions.add(normOpt);
+      if (normOpt.split(' ').length >= 5) {
+        assert.ok(!bookSentences.has(normOpt), `${id}: option "${optText}" must not copy a Pupil’s Book or Workbook sentence`);
+      }
+    });
+    assert.ok(Number(correct) >= 0 && Number(correct) < optionSpans.length, `${id}: data-correct points to a single valid option`);
+    radioAnswerCounts.set(correct, (radioAnswerCounts.get(correct) || 0) + 1);
+  }
+});
+
+assert.deepEqual(
+  Array.from(seenObjectives).sort(),
+  [...g5l3QuizSpec.objectives].sort(),
+  'Grade 5 Lesson 3 test covers every documented Lesson 3 objective category'
+);
+assert.deepEqual(
+  Array.from(seenFormats).sort(),
+  ['multiple-choice', 'short-answer', 'true-false'],
+  'Grade 5 Lesson 3 test includes multiple-choice, true/false, and written short-answer formats'
+);
+assert.match(quizMarkup, /<table class="l3-chart l3-test-chart">/, 'Grade 5 Lesson 3 test includes an original schedule table');
+assert.match(quizMarkup, /class="l3-test-passage"/, 'Grade 5 Lesson 3 test includes an original unseen reading passage');
+for (const [choiceVal, count] of radioAnswerCounts.entries()) {
+  assert.ok(count <= 8, `Grade 5 Lesson 3 radio answer key must stay balanced (value ${choiceVal} used ${count} times)`);
+}
+
+// 4. Curriculum vocabulary boundary check: no untaught content words in #quiz.
+const allowedTestLexicon = new Set([
+  // Function words, pronouns, determiners, prepositions, numbers, classroom test instructions
+  'a', 'an', 'the', 'and', 'or', 'but', 'so', 'because', 'if', 'that', 'this', 'these', 'those', 'which', 'who', 'what', 'how', 'where', 'when',
+  'i', 'you', 'he', 'she', 'it', 'we', 'they', 'me', 'him', 'her', 'us', 'them', 'my', 'your', 'his', 'our', 'their',
+  'am', 'is', 'are', 'be', 'do', 'does', 'doing', 'don', 'doesn', 't', 's', 'have', 'has', 'to', 'of', 'in', 'on', 'at', 'for', 'from', 'with', 'into', 'by', 'after', 'before', 'below', 'under', 'there', 'together',
+  'all', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'fifteen', 'twenty', 'thirty', 'first', 'then', 'next', 'every', 'same', 'right', 'only', 'not', 'yes', 'no', 'true', 'false',
+  'question', 'questions', 'choose', 'answer', 'answers', 'check', 'reset', 'test', 'best', 'phrase', 'completes', 'complete', 'sentence', 'sentences', 'word', 'words', 'place', 'lesson', 'look', 'digital', 'clock', 'say', 'english', 'time', 'matches', 'gives', 'correct', 'frequency', 'adverb', 'adverbs', 'table', 'five', 'day', 'days', 'daily', 'habit', 'habits', 'schedule', 'verb', 'form', 'grammar', 'grammatically', 'negative', 'negatives', 'read', 'reading', 'routine', 'conversation', 'reply', 'underlined', 'mistake', 'editing', 'spelling', 'write', 'type', 'put', 'putting', 'means', 'order', 'present', 'simple', 'everyday', 'language', 'use', 'vocabulary', 'telling', 'comprehension', 'writing',
+  // Days & times taught in Grade 3-5
+  'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'fridays', 'mon', 'tue', 'wed', 'thu', 'fri',
+  'morning', 'afternoon', 'evening', 'o', 'past', 'quarter', 'half', 'starts', 'early', 'late',
+  // Grade 5 Unit 1 Lessons 1-3 taught vocabulary (school, family, daily routines, jobs/places)
+  'hello', 'name', 'school', 'classroom', 'library', 'playground', 'bathroom', 'bedroom', 'room', 'hospital', 'work', 'works',
+  'family', 'parents', 'father', 'mother', 'brother', 'sister', 'cousin', 'cousins', 'friends', 'people', 'sick',
+  'get', 'gets', 'up', 'wake', 'wakes', 'dressed', 'pack', 'bag', 'books', 'book', 'reads', 'make', 'bed', 'beds', 'brush', 'brushes', 'teeth',
+  'breakfast', 'lunch', 'dinner', 'cook', 'set', 'go', 'goes', 'foot', 'bus', 'out', 'homework', 'study', 'tidy', 'tidies', 'takes', 'care',
+  'play', 'plays', 'basketball', 'computer', 'games',
+  'always', 'usually', 'sometimes', 'never',
+  // Original Grade-5 character names created exclusively for this independent test
+  'sami', 'rami', 'nadia', 'mazen', 'kareem', 'fadi', 'bilal', 'ziad', 'adel', 'maysa'
+]);
+const visibleQuizText = stripTags(
+  quizMarkup.replace(/<script[\s\S]*?<\/script>/gi, ' ')
+);
+const quizWords = Array.from(visibleQuizText.toLowerCase().matchAll(/[a-z]+/g), m => m[0]);
+const untaughtWords = Array.from(new Set(quizWords.filter(word => word.length > 1 && !allowedTestLexicon.has(word))));
+assert.deepEqual(
+  untaughtWords,
+  [],
+  `Grade 5 Lesson 3 test contains untaught vocabulary outside curriculum scope: ${untaughtWords.join(', ')}`
+);
+pass('Grade 5 Lesson 3 independent test policy', '18 original questions across 3 formats + schedule table + unseen passage; zero copied book sentences, images, or names; all 8 lesson objectives covered; single valid answer per item; zero untaught vocabulary');
 pass('Grade 5 Lesson 3 transcription traps', 'Blank clock labels stay blank; the printed marks (1)-(5), (7), (8) are kept and no (6) is invented; the seven underlined mistakes are present');
 
 // --- The six supplied scans are pinned, and the crops came from them.

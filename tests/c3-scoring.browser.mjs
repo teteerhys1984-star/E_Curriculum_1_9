@@ -32,13 +32,22 @@ const wrongValue = (correct, optionCount) => {
   const letters = 'abcdefghijklmnopqrstuvwxyz';
   return letters[(letters.indexOf(correct) + 1) % optionCount];
 };
+const wrongForQuestion = (quiz, correct, index) => {
+  const zeroBased = quiz.kind === 'legacy-generated';
+  const name = 'q' + (zeroBased ? index : index + 1);
+  if (quiz.writtenQuestions && quiz.writtenQuestions[name]) {
+    return quiz.writtenQuestions[name].wrong;
+  }
+  const optionCount = Array.isArray(quiz.optionCounts) ? quiz.optionCounts[index] : quiz.optionCount;
+  return wrongValue(correct, optionCount);
+};
 const selectionsFor = (quiz, mode) => quiz.correct.map((correct, index) => {
   if (mode === 'empty') return null;
-  if (mode === 'allWrong') return wrongValue(correct, quiz.optionCount);
+  if (mode === 'allWrong') return wrongForQuestion(quiz, correct, index);
   if (mode === 'allCorrect') return correct;
-  if (mode === 'oneWrong') return index === 0 ? wrongValue(correct, quiz.optionCount) : correct;
+  if (mode === 'oneWrong') return index === 0 ? wrongForQuestion(quiz, correct, index) : correct;
   if (mode === 'firstOnly') return index === 0 ? correct : null;
-  if (mode === 'alternating') return index % 2 === 0 ? correct : wrongValue(correct, quiz.optionCount);
+  if (mode === 'alternating') return index % 2 === 0 ? correct : wrongForQuestion(quiz, correct, index);
   throw new Error(`Unknown selection mode: ${mode}`);
 });
 const expectedFor = (quiz, mode, written = {}) => {
@@ -65,6 +74,14 @@ const applyAnswers = async (page, quiz, selections, written = {}) => {
     const zeroBased = quiz.kind === 'legacy-generated';
     selections.forEach((value, index) => {
       const name = 'q' + (zeroBased ? index : index + 1);
+      if (quiz.writtenQuestions && quiz.writtenQuestions[name]) {
+        const textField = document.querySelector(`#quiz input[type="text"][name="${name}"], #quiz textarea[name="${name}"]`);
+        if (!textField) throw new Error(`Missing written question field ${name}`);
+        textField.value = value === null ? '' : value;
+        textField.dispatchEvent(new Event('input', { bubbles: true }));
+        textField.dispatchEvent(new Event('change', { bubbles: true }));
+        return;
+      }
       const inputs = Array.from(document.querySelectorAll(`#quiz input[type="radio"][name="${name}"]`));
       if (!inputs.length) throw new Error(`Missing radio group ${name}`);
       inputs.forEach(input => { input.checked = false; });
@@ -100,10 +117,11 @@ const readResult = async (page, quiz) => {
     };
   }
   if (quiz.kind === 'modern') {
+    const total = quiz.objectiveTotal;
     return {
-      score: number(/Score: (\d+) \/ 20/),
-      answered: number(/Answered: (\d+) \/ 20/),
-      total: 20,
+      score: number(new RegExp(`Score: (\\d+) / ${total}`)),
+      answered: number(new RegExp(`Answered: (\\d+) / ${total}`)),
+      total,
       unanswered: number(/Unanswered: (\d+)\./)
     };
   }
@@ -223,6 +241,10 @@ try {
       await submit(page, quiz);
       await page.locator(quiz.reset).evaluate(el => el.click());
       assert.equal(await page.locator('#quiz input:checked').count(), 0, `${quiz.file}: reset clears selections`);
+      const nonEmptyWritten = await page.locator('#quiz input[type="text"], #quiz textarea').evaluateAll(
+        nodes => nodes.filter(node => node.value !== '').length
+      );
+      assert.equal(nonEmptyWritten, 0, `${quiz.file}: reset clears written fields`);
       await submit(page, quiz);
       assertResult(await readResult(page, quiz), expectedFor(quiz, 'empty'), `${quiz.file} after reset`);
       results.push({ file: quiz.file, mode: 'afterReset', expected: expectedFor(quiz, 'empty'), actual: await readResult(page, quiz) });

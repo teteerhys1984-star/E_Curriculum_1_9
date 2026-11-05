@@ -830,3 +830,129 @@
     display: none !important;
   }
 }
+
+/* ---------- Independent Lesson Test stimulus blocks ---------- */
+.l3-test-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: var(--space-2) 0 var(--space-3);
+  padding: 8px 16px;
+  border: 2px solid var(--color-brand-800);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-subtle);
+  color: var(--color-brand-900);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  font-variant-numeric: tabular-nums;
+}
+
+.l3-test-clock-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.l3-test-table-wrap {
+  overflow-x: auto;
+  margin: var(--space-3) 0;
+  border-radius: var(--radius-md);
+}
+
+.l3-test-chart {
+  width: 100%;
+  min-width: 0;
+  border-collapse: collapse;
+}
+
+.l3-test-chart th,
+.l3-test-chart td {
+  padding: 6px 8px;
+  font-size: var(--text-sm);
+}
+
+.l3-test-passage {
+  margin: var(--space-2) 0 var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border-default);
+  border-inline-start: 4px solid var(--color-brand-700);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-subtle);
+  line-height: 1.65;
+}
+
+.l3-test-passage-title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-brand-900);
+}
+
+.l3-test-passage p {
+  margin: 0;
+}
+
+.l3-test-sentence {
+  margin: var(--space-2) 0 var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-subtle);
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.l3-test-sentence u {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  color: var(--color-brand-900);
+}
+
+.l3-test-wordbank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: var(--space-2) 0 var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+
+.l3-test-wordbank li {
+  margin: 0;
+  padding: 4px 12px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 999px;
+  background-color: var(--color-bg-subtle);
+  color: var(--color-brand-900);
+  font-weight: 700;
+  font-size: var(--text-sm);
+}
+
+.l3-test-write {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-2) 0;
+}
+
+.l3-test-write label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.l3-test-write input[type="text"] {
+  width: 100%;
+  max-width: 460px;
+}
+
+@media (max-width: 480px) {
+  .l3-test-chart th,
+  .l3-test-chart td {
+    padding: 4px 5px;
+    font-size: var(--text-xs);
+  }
+}
+
