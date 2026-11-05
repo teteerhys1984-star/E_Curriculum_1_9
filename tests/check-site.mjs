@@ -593,6 +593,57 @@ pass('Pupil-facing lesson-test counts match the published tests', `${lessonSlugs
 const roundPage = read('round-tests.html');
 assert.doesNotMatch(roundPage, /\d+-question Lesson Test/, 'round-tests.html: the links to individual lesson tests must not claim a question count that differs from the graded pages');
 
+// General platform pages and curriculum standards must describe Lesson Tests as
+// independent assessments aligned with lesson objectives rather than book-copied items.
+const generalPolicyFiles = [
+  'index.html',
+  'lesson-menu.html',
+  'lesson.html',
+  'lessons.html',
+  'round-tests.html',
+  'teacher.html',
+  'teacher-resources.html',
+  'package.json',
+  'LESSON_PAGE_STANDARD.md',
+  'docs/phase1-design-foundation/architecture-and-future-phases.md'
+];
+const forbiddenTestPolicyPatterns = [
+  /every lesson test is built strictly from verified book evidence/i,
+  /lesson test is built strictly from/i,
+  /questions built strictly from verified lesson pages/i,
+  /published lesson tests present[^.<]*verified against the lesson books/i,
+  /every published page in the platform is built strictly from verified textbook scans/i,
+  /source-checked lesson tests/i
+];
+for (const policyFile of generalPolicyFiles) {
+  const content = read(policyFile);
+  for (const pattern of forbiddenTestPolicyPatterns) {
+    assert.doesNotMatch(
+      content,
+      pattern,
+      `${policyFile}: general Lesson Test policy copy must not claim tests are built from or copied out of book pages (${pattern})`
+    );
+  }
+}
+const homeLessonTestTile = homeDirectory.match(/<h3>4\. Lesson Test<\/h3>\s*<p>([\s\S]*?)<\/p>/);
+assert.ok(homeLessonTestTile, 'index.html: missing 4. Lesson Test policy tile');
+assert.match(homeLessonTestTile[1], /independent assessments/i, 'index.html: 4. Lesson Test tile must state Lesson Tests are independent assessments');
+assert.match(homeLessonTestTile[1], /learning objectives,\s*vocabulary,\s*and grammar/i, 'index.html: 4. Lesson Test tile must state Lesson Tests measure learning objectives, vocabulary, and grammar');
+assert.match(homeLessonTestTile[1], /new questions and contexts/i, 'index.html: 4. Lesson Test tile must state Lesson Tests use new questions and contexts');
+assert.match(homeLessonTestTile[1], /without copying book exercises/i, 'index.html: 4. Lesson Test tile must state Lesson Tests do not copy book exercises');
+
+for (const tplFile of ['lesson-menu.html', 'lesson.html']) {
+  const tplText = read(tplFile);
+  assert.doesNotMatch(tplText, /20[- ]question|20 multiple-choice/i, `${tplFile}: template preview must not claim fixed 20-question or MCQ-only Lesson Tests`);
+  assert.match(tplText, /independent assessment/i, `${tplFile}: template preview must describe Lesson Tests as independent assessments`);
+  assert.match(tplText, /learning objectives,\s*vocabulary,\s*and grammar/i, `${tplFile}: template preview must mention learning objectives, vocabulary, and grammar`);
+  assert.match(tplText, /(?:without|never) copying book exercises/i, `${tplFile}: template preview must state that Lesson Tests do not copy book exercises`);
+}
+pass(
+  'General Lesson Test policy copy matches Independent Lesson Test Policy',
+  `Verified across ${generalPolicyFiles.length} general pages and standards docs: old book-evidence test claims absent and independent assessment policy stated clearly`
+);
+
 assert.ok(exists('docs/phase2-b-teacher-portal/verification.md'), 'Missing Phase 2-B verification documentation');
 
 // ---------------------------------------------------------------------------

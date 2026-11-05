@@ -36,14 +36,14 @@ Commands are given so the results can be reproduced.
 
 ## 3. Static suite — `npm test`
 
-Result: **PASS**, exit 0, **32** static checks + C-3 content integrity + 6 JS syntax checks.
+Result: **PASS**, exit 0, **33** static checks + C-3 content integrity + 6 JS syntax checks.
 
 | Check | Result |
 |---|---|
 | All repository HTML local links and assets resolve | PASS — 47 HTML files, 652 references |
 | English-only content and language direction | PASS — every root `lang="en" dir="ltr"`; Arabic only in marked RTL vocabulary cells |
 | Documentation, tests and repository text are English | PASS — 101 non-Vocabulary text files scanned, no Arabic script |
-| Independent Lesson Test Policy documented | PASS — documented in `LESSON_PAGE_STANDARD.md` and `architecture-and-future-phases.md` |
+| Independent Lesson Test Policy documented & consistent across general pages | PASS — documented in `LESSON_PAGE_STANDARD.md` and `architecture-and-future-phases.md`; aligned across `index.html`, `lesson-menu.html`, `lesson.html`, `round-tests.html`, `teacher.html`, and `teacher-resources.html` with regression checks blocking `built strictly from verified book evidence` |
 | Grade 5 Lesson 3 independent test policy | PASS — 18 original questions across 3 formats + schedule table + unseen passage; zero copied book sentences, images, or names; all 8 objective tags covered; single valid answer per item; zero untaught vocabulary |
 | Pupil-facing and teacher-matrix lesson-test counts | PASS — `grade5-unit1-lesson3=18` matches across `index.html`, `lessons.html`, and `teacher-resources.html` |
 | Grade 5 Lesson 3 Pupil’s Book & Workbook controls and order | PASS — all printed activities and transcription rules intact |

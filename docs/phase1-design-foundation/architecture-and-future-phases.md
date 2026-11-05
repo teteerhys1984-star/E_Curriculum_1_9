@@ -50,5 +50,5 @@ In accordance with Phase 1 governance and academic integrity rules, the followin
 - **Classroom Management**: Add teacher class rosters, assigned lesson queues, and printable/exportable unit review sheets using the existing token and card primitives.
 
 ### Phase 4 — Analytics, School Administration & Subscriptions
-- **Mastery & Item Analytics**: Server-aggregated question-level performance by grade, unit, and direct-vs-inference skill tags.
+- **Mastery & Item Analytics**: Server-aggregated question-level performance by grade, unit, and lesson learning-objective tags.
 - **Institutional Licensing**: School/district provisioning and subscription management isolated cleanly from student-facing lesson pages.
