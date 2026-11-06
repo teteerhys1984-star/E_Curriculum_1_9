@@ -8,7 +8,7 @@
 <script src="platform-shell.js" defer></script>
 <script src="lesson-accessibility.js" defer></script>
 </head>
-<body data-lesson-nav="grade8-unit1-lesson2" data-nav-page="test">
+<body data-lesson-nav="grade8-unit1-lesson2" data-nav-page="test" data-answer-toggle="class">
 <div class="engineer-contact-banner" dir="ltr" role="complementary" aria-label="Contact information">
 <span class="engineer-contact-icon" aria-hidden="true">✦</span><span class="engineer-contact-label">Eng. Somer Shaheen — WhatsApp:</span><a href="https://wa.me/963930215022" target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp chat with Eng. Somer Shaheen · +963 930 215 022">+963 930 215 022 →</a>
 </div>
@@ -51,11 +51,15 @@
 const render = document.getElementById('quiz');
   qs.forEach(function (q, i) {
     const block = document.createElement('div');
-    block.className = 'qblock';
+    block.className = 'question';
     block.setAttribute('data-q', i);
     const h = document.createElement('h3');
+    h.id = 'q' + i + '-label';
     h.textContent = 'Q' + (i + 1) + '. ' + q[0];
     block.appendChild(h);
+    const group = document.createElement('div');
+    group.setAttribute('role', 'radiogroup');
+    group.setAttribute('aria-labelledby', h.id);
     const opts = q[1];
     opts.forEach(function (o, j) {
       const lab = document.createElement('label');
@@ -65,8 +69,9 @@ const render = document.getElementById('quiz');
       r.value = j;
       lab.appendChild(r);
       lab.appendChild(document.createTextNode(' ' + o));
-      block.appendChild(lab);
+      group.appendChild(lab);
     });
+    block.appendChild(group);
     const fb = document.createElement('div');
     fb.className = 'feedback';
     fb.id = 'fb' + i;
@@ -109,5 +114,7 @@ const render = document.getElementById('quiz');
 </script>
 <div class="footer"><a href="grade8-unit1-lesson2.html">← Lesson 2 menu</a></div>
 </main>
+<script src="lesson-navigation.js" defer></script>
+<script src="lesson-content-navigation.js" defer></script>
 </body>
 </html>
