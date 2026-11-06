@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lesson Test — School Challenges</title>
+<link rel="stylesheet" href="design-system.css">
+<script src="platform-shell.js" defer></script>
+<script src="lesson-accessibility.js" defer></script>
+</head>
+<body data-lesson-nav="grade8-unit1-lesson2" data-nav-page="test">
+<div class="engineer-contact-banner" dir="ltr" role="complementary" aria-label="Contact information">
+<span class="engineer-contact-icon" aria-hidden="true">✦</span><span class="engineer-contact-label">Eng. Somer Shaheen — WhatsApp:</span><a href="https://wa.me/963930215022" target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp chat with Eng. Somer Shaheen · +963 930 215 022">+963 930 215 022 →</a>
+</div>
+<main class="wrap">
+<p class="lesson-menu-row"><a class="lesson-menu-link" href="grade8-unit1-lesson2.html"><span aria-hidden="true">←</span> <span>Lesson 2 menu</span> <span aria-hidden="true">✦</span></a></p>
+<h1>Lesson Test — School Challenges</h1>
+<p>12 multiple-choice questions based on Lesson 2's objectives. Listening and free writing are explicitly excluded from scoring because the recordings are unavailable; no answers have been invented.</p>
+<section class="panel" id="teacher-gate" dir="ltr" data-gatekey="somer173">
+<h2>Teacher Area · Answer Key</h2>
+<p>Teacher use only. Enter the existing teacher password to reveal the answer key.</p>
+<p class="source-note gate-disclosure">The shared classroom password only hides this key from view; it is not authentication. The answer text is already in the published page source.</p>
+<label for="pw">Teacher password</label>
+<input id="pw" type="password" autocomplete="off">
+<button id="unlock" type="button">Unlock answer key</button>
+<p id="feedback" role="status" aria-live="polite"></p>
+<div id="key" class="answer"><ol id="answers"></ol></div>
+</section>
+<h2 id="quiz-title">Questions</h2>
+<form id="quiz" aria-labelledby="quiz-title" novalidate>
+</form>
+<p id="result"></p>
+<button id="submit-quiz" type="button">Submit</button>
+<button id="reset-quiz" type="button">Reset</button>
+<script>
+(function () {
+  const qs=[
+  ["When students feel less motivated in class and careless about homework, what may happen according to the reading?", ["Their marks may become low.", "They receive rewards.", "They skip school.", "Teachers are happy."], 0, "taught text: Student’s Book page 13; objective R1 — retrieve stated information"],
+  ["Choose the correct completion: “Schools are good places for …”.", ["wasting time", "meeting people", "facing problems", "sleeping"], 1, "taught text: Student’s Book page 13; objective R1"],
+  ["The noun form of the verb “bully”.", ["bully", "bullying", "bullied", "bullyer"], 1, "taught vocabulary: Workbook page 7 table; objective V1 — word formation"],
+  ["The past-simple form of “read” used for a finished past action.", ["reading", "reads", "read", "have read"], 2, "taught grammar: Workbook page 8; objective G1 — past simple"],
+  ["Which word means “to force somebody to do something”.", ["help", "oblige", "ask", "invite"], 1, "taught vocabulary: Workbook page 6; objective V1"],
+  ["Choose the sentence in the past progressive.", ["Ahmad watches T.V.", "Ahmad was watching T.V. when his friend came.", "Ahmad will watch T.V.", "Ahmad watched T.V."], 1, "taught grammar: Workbook page 8; objective G2 — past progressive"],
+  ["The past-simple form of “go out” in “When the lights … out”.", ["go out", "going out", "went", "goes out"], 2, "taught grammar: Workbook page 8; objective G1"],
+  ["Which option completes “He found a coin while he …”.", ["walked", "walks", "was walking", "is walking"], 2, "taught grammar: Workbook page 8; objective G2"],
+  ["According to the golden rule on page 6, how should you treat others.", ["however you like", "the way you would want them to treat you", "ignore them", "be rude"], 1, "taught text: Workbook page 6; objective R1"],
+  ["The meaning of “self-esteem”.", ["being sad", "a feeling of being happy with your character and abilities", "being angry", "being tired"], 1, "taught vocabulary: Student’s Book page 13; objective V1"],
+  ["Choose the word that best completes “Bullying is … problem”.", ["an easy", "a simple", "a complicated", "a small"], 2, "taught text: Student’s Book page 13; objective R1"],
+  ["The silent ⟨h⟩ word in “hour”.", ["hour", "house", "happy", "behind"], 0, "taught pronunciation: Student’s Book page 15; objective P1"]
+];
+const render = document.getElementById('quiz');
+  qs.forEach(function (q, i) {
+    const block = document.createElement('div');
+    block.className = 'qblock';
+    block.setAttribute('data-q', i);
+    const h = document.createElement('h3');
+    h.textContent = 'Q' + (i + 1) + '. ' + q[0];
+    block.appendChild(h);
+    const opts = q[1];
+    opts.forEach(function (o, j) {
+      const lab = document.createElement('label');
+      const r = document.createElement('input');
+      r.type = 'radio';
+      r.name = 'q' + i;
+      r.value = j;
+      lab.appendChild(r);
+      lab.appendChild(document.createTextNode(' ' + o));
+      block.appendChild(lab);
+    });
+    const fb = document.createElement('div');
+    fb.className = 'feedback';
+    fb.id = 'fb' + i;
+    block.appendChild(fb);
+    render.appendChild(block);
+  });
+  document.getElementById('submit-quiz').addEventListener('click', function () {
+    let score = 0;
+    qs.forEach(function (q, i) {
+      const sel = document.querySelector('input[name="q' + i + '"]:checked');
+      const fb = document.getElementById('fb' + i);
+      if (!sel) {
+        fb.textContent = 'Not answered.';
+        fb.className = 'feedback wrong';
+        return;
+      }
+      if (parseInt(sel.value, 10) === q[2]) {
+        score += 1;
+        fb.textContent = 'Correct.';
+        fb.className = 'feedback right';
+      } else {
+        fb.textContent = 'Incorrect.';
+        fb.className = 'feedback wrong';
+      }
+    });
+    document.getElementById('result').textContent = 'Score: ' + score + ' of ' + qs.length + '. Listening and writing are not scored.';
+  });
+  document.getElementById('reset-quiz').addEventListener('click', function () {
+    document.querySelectorAll('input[name^="q"]').forEach(function (r) { r.checked = false; });
+    document.querySelectorAll('.feedback').forEach(function (f) { f.textContent = ''; f.className = 'feedback'; });
+    document.getElementById('result').textContent = '';
+  });
+  document.getElementById('unlock').addEventListener('click', function () {
+    const expected = document.getElementById('teacher-gate').dataset.gatekey || '';
+    const ok = document.getElementById('pw').value === expected;
+    document.getElementById('key').classList.toggle('show', ok);
+    document.getElementById('feedback').textContent = ok ? 'Answer key unlocked.' : 'Incorrect password.';
+  });
+})();
+</script>
+<div class="footer"><a href="grade8-unit1-lesson2.html">← Lesson 2 menu</a></div>
+</main>
+</body>
+</html>
