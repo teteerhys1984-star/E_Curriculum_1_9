@@ -224,7 +224,26 @@
       "totalQuestions": 18,
       "objectiveTotal": 18,
       "optionCount": 3,
-      "optionCounts": [3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 3, 3, 2, 3, 3, 3, 0, 0],
+      "optionCounts": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        0,
+        0
+      ],
       "correct": [
         "1",
         "2",
@@ -246,13 +265,87 @@
         "Does Maysa tidy her bedroom?"
       ],
       "writtenQuestions": {
-        "q17": { "correct": "goes", "wrong": "go" },
-        "q18": { "correct": "Does Maysa tidy her bedroom?", "wrong": "Maysa does tidy her bedroom?" }
+        "q17": {
+          "correct": "goes",
+          "wrong": "go"
+        },
+        "q18": {
+          "correct": "Does Maysa tidy her bedroom?",
+          "wrong": "Maysa does tidy her bedroom?"
+        }
       },
       "submit": "#check-answers",
       "result": "#score",
       "reset": "#reset-test",
       "sourceFixture": "tests/grade5-unit1-lesson3.quiz.json"
+    },
+    {
+      "file": "grade3-unit1-lesson3-test.html",
+      "kind": "modern",
+      "totalQuestions": 20,
+      "objectiveTotal": 20,
+      "optionCounts": [
+        3,
+        3,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        3,
+        3,
+        2,
+        3,
+        3,
+        2,
+        3,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "correct": [
+        "1",
+        "0",
+        "0",
+        "2",
+        "0",
+        "0",
+        "1",
+        "2",
+        "0",
+        "1",
+        "1",
+        "2",
+        "1",
+        "1",
+        "0",
+        "2",
+        "are",
+        "I can read there.",
+        "downstairs",
+        "meat"
+      ],
+      "writtenQuestions": {
+        "q17": {
+          "wrong": "is"
+        },
+        "q18": {
+          "wrong": "I there can read."
+        },
+        "q19": {
+          "wrong": "upstairs"
+        },
+        "q20": {
+          "wrong": "eat"
+        }
+      },
+      "submit": "#check-answers",
+      "result": "#score",
+      "reset": "#reset-test",
+      "sourceFixture": "tests/grade3-unit1-lesson3.quiz.json"
     }
   ]
 }

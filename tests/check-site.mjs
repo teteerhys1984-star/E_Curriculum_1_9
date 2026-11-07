@@ -463,6 +463,7 @@ assert.match(teacherPage, /visible to pupils/i, 'teacher-resources.html: in-page
 const teacherCounts = {
   'grade3-unit1-lesson1': '3 · 1 Back to School',
   'grade3-unit1-lesson2': '3 · 2 School Subjects',
+  'grade3-unit1-lesson3': '3 · 3 My Lovely School',
   'grade4-unit1-lesson1': '4 · 1 Nice to Meet You',
   'grade4-unit1-lesson2': '4 · 2 My Family',
   'grade5-unit1-lesson1': '5 · 1 At School',
@@ -487,7 +488,7 @@ const matrixRows = new Map(
     Array.from(match[2].matchAll(/<td>([\s\S]*?)<\/td>/g), cell => cell[1].replace(/<[^>]+>/g, '').trim())
   ])
 );
-assert.equal(matrixRows.size, 9, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
+assert.equal(matrixRows.size, 10, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
 
 for (const [slug, label] of Object.entries(teacherCounts)) {
   for (const suffix of ['', '-pupil-book', '-workbook', '-vocabulary', '-test']) {
@@ -504,11 +505,11 @@ for (const [slug, label] of Object.entries(teacherCounts)) {
   assert.equal(cells[4], 'None', `${label}: listening key must be reported as unavailable`);
 }
 assert.match(matrixRows.get('4 · 1 Nice to Meet You')[1], /Not published/, 'Grade 4 Lesson 1 must be listed as having no answer key');
-for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '8 · 1 Future Plans', '8 · 2 School Challenges']) {
+for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '8 · 1 Future Plans', '8 · 2 School Challenges']) {
   assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
 }
 
-const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2'];
+const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2'];
 for (const slug of anchoredKeys) {
   assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
   const testHtml = read(`${slug}-test.html`);
@@ -528,7 +529,7 @@ assert.match(designCss, /body \.content-step-hidden\s*\{\s*display:\s*block !imp
 for (const selector of ['#teacher-gate', '#answer-guide', '#answer-key', '#key', '.answers:not(.show)', 'body[data-answer-toggle="class"] .answer:not(.show)']) {
   assert.ok(designCss.includes(selector), `design-system.css: print cleanup is missing ${selector}`);
 }
-pass('C-2 gate separation, disclosure and print selectors', 'Seven keyed tests keep the gate outside form#quiz and disclose the source-readable, non-authentication password; Grade 3 Lesson 1 also keeps its answer guide outside the form; print CSS covers every published key and legacy hidden-answer pattern');
+pass('C-2 gate separation, disclosure and print selectors', `${anchoredKeys.length} keyed tests keep the gate outside form#quiz and disclose the source-readable, non-authentication password; Grade 3 Lesson 1 also keeps its answer guide outside the form; print CSS covers every published key and legacy hidden-answer pattern`);
 // Grade 4 Lesson 1 is the deliberate exception: its test publishes no answer key, so it must
 // gain neither a gate on the page nor a deep link in the directory.
 const keylessTests = ['grade4-unit1-lesson1'];
@@ -547,7 +548,7 @@ for (const grade of [1, 2, 6, 7, 9]) {
 for (const match of teacherPage.matchAll(/href="(grade\d+-unit\d+-lesson\d+)/g)) {
   assert.ok(teacherCounts[match[1]], `teacher-resources.html: link to an unknown lesson slug ${match[1]}`);
 }
-pass('Teacher resource links and counts are verified', 'All 40 lesson-page links resolve; 8 matrix rows match the actual test-item and reveal counts computed from the pages; all 7 published key areas deep-link to a #teacher-gate that exists on the target page, and the one keyless test is linked without a fragment');
+pass('Teacher resource links and counts are verified', `All ${Object.keys(teacherCounts).length * 5} lesson-page links resolve; ${matrixRows.size} matrix rows match the actual test-item and reveal counts computed from the pages; all ${anchoredKeys.length} published key areas deep-link to a #teacher-gate that exists on the target page, and the one keyless test is linked without a fragment`);
 
 const homePage = read('index.html');
 assert.ok(homePage.includes('href="teacher.html"'), 'index.html: missing teacher portal entry link');

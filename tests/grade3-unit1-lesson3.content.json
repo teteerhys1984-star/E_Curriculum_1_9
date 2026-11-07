@@ -1,0 +1,354 @@
+{
+  "lesson": "grade3-unit1-lesson3",
+  "sourceImages": [
+    {
+      "file": "assets/grade3-unit1-lesson3/source/pupil-book-page-9.png",
+      "sha256": "46bd7568400ed47f941e2f0f18c817aaa5b69c4dc90e125db7c1eda119b7ba1b",
+      "size": [
+        750,
+        1044
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson3/source/pupil-book-page-10.png",
+      "sha256": "c778c611dc37da49ca2565bf973f106bf2c2ae783eed583bd185fe43b8433205",
+      "size": [
+        769,
+        1050
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson3/source/pupil-book-page-11.png",
+      "sha256": "debb420352dc5eac0db2f1aa46230d7db82296d736a5f6184f390edfd6a9aa53",
+      "size": [
+        748,
+        1042
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson3/source/workbook-page-9.png",
+      "sha256": "4afa3d49238a00446802ece4bfe28963f1ec3315dfd69a94ce5f7ead5e959a84",
+      "size": [
+        736,
+        1047
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson3/source/workbook-page-10.png",
+      "sha256": "5ebaf351f1efafaecfb2ba39bfee2caecd9d9e9fa2225679db29a986b2950639",
+      "size": [
+        739,
+        1027
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson3/source/workbook-page-11.png",
+      "sha256": "50921577467779e9da58fc4f02c574ab8138b6c62cf50de084a2a8b0be45ae93",
+      "size": [
+        736,
+        1009
+      ]
+    }
+  ],
+  "cropCount": 22,
+  "printed": {
+    "pb1-1": "Hello, Joe! How are you? Hello, Steve! I'm fine. What about you?",
+    "pb1-2": "I go to a new school. There are twenty classrooms and a playground.",
+    "pb1-3": "Let me show you around! This is the gym. We have Sports here. It's on the left of the music room.",
+    "pb1-4": "Where's your classroom, Joe? It's upstairs, on the right of the art room.",
+    "pb1-5": "Is there a laboratory? Yes. There are two laboratories downstairs.",
+    "pb1-6": "What's your favourite place, Joe? I prefer the library. I can read interesting books.",
+    "pb2": "Where is the laboratory? It's upstairs. It's downstairs.",
+    "pb3": "Where is the classroom? It is downstairs, on the left of the music room. How many posters are there? There are twenty posters.",
+    "pb4-1": "1. The gym is on the right of the music room.",
+    "pb4-2": "2. The cafeteria is downstairs.",
+    "pb4-3": "3. Miss Emma is between Sarah and Tim.",
+    "pb5": "My school is fun. We sing, we dance. We play with balls and blocks. My school is fun. We read, we count. We are going so smart. My school is fun. We play, we share. We make many friends.",
+    "pb6": "ea meat eat",
+    "wb1-bank": "draw library art room read laboratory",
+    "wb1-1": "1- I can \u2026 books in the \u2026 .",
+    "wb1-2": "2- We have Science in the \u2026 .",
+    "wb1-3": "3- We \u2026 pictures in the \u2026 .",
+    "wb3-1": "Sarah: Where is the (1) gym ?",
+    "wb3-2": "Mary: The gym is (2) \u2026 the art room.",
+    "wb3-3": "Sarah: How many desks are there in your (3) \u2026?",
+    "wb3-4": "Mary: There are (4) \u2026 desks.",
+    "wb4-1": "1- My school has got twenty-five rooms.",
+    "wb4-2": "2- My favourite room is \u2026 .",
+    "wb4-3": "I can \u2026 .",
+    "wb5-1": "- Yes, of course . \u2026",
+    "wb5-2": "- Where is the toy shop, please? \u2026",
+    "wb5-3": "- Thank you very much! \u2026",
+    "wb5-4": "- It's between the restaurant and the market. \u2026",
+    "wb5-5": "- Hello! Can you help me? 1",
+    "wb6-bank": "classroom living room laboratory bedroom playground kitchen",
+    "wb6-school": "school",
+    "wb6-house": "house"
+  },
+  "instructions": {
+    "pb-1": "1. Listen and read.",
+    "pb-2": "2. Let\u2019s learn!",
+    "pb-3": "3. Ask and answer.",
+    "pb-4": "4. Look, read and match.",
+    "pb-5": "5. Listen and sing.",
+    "pb-6": "6. Listen to the following sounds and words, then repeat them.",
+    "wb-1": "1. Read and write the missing words.",
+    "wb-2": "2. Listen and number.",
+    "wb-3": "3. Look, read and write.",
+    "wb-4": "4. Draw your favourite room and write about it.",
+    "wb-5": "5. Read, order then act.",
+    "wb-6": "6. Write the words in the correct box."
+  },
+  "vocabulary": [
+    {
+      "english": "school",
+      "arabic": "\u0645\u062f\u0631\u0633\u0629"
+    },
+    {
+      "english": "classroom",
+      "arabic": "\u0635\u0641 \u062f\u0631\u0627\u0633\u064a"
+    },
+    {
+      "english": "gym",
+      "arabic": "\u0635\u0627\u0644\u0629 \u0631\u064a\u0627\u0636\u064a\u0629"
+    },
+    {
+      "english": "music room",
+      "arabic": "\u063a\u0631\u0641\u0629 \u0627\u0644\u0645\u0648\u0633\u064a\u0642\u0649"
+    },
+    {
+      "english": "art room",
+      "arabic": "\u063a\u0631\u0641\u0629 \u0627\u0644\u0641\u0646\u0648\u0646"
+    },
+    {
+      "english": "library",
+      "arabic": "\u0645\u0643\u062a\u0628\u0629"
+    },
+    {
+      "english": "laboratory",
+      "arabic": "\u0645\u062e\u062a\u0628\u0631"
+    },
+    {
+      "english": "playground",
+      "arabic": "\u0633\u0627\u062d\u0629 \u0627\u0644\u0644\u0639\u0628"
+    },
+    {
+      "english": "cafeteria",
+      "arabic": "\u0643\u0627\u0641\u062a\u064a\u0631\u064a\u0627"
+    },
+    {
+      "english": "Sports",
+      "arabic": "\u0627\u0644\u062a\u0631\u0628\u064a\u0629 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0629"
+    },
+    {
+      "english": "Science",
+      "arabic": "\u0627\u0644\u0639\u0644\u0648\u0645"
+    },
+    {
+      "english": "poster",
+      "arabic": "\u0645\u0644\u0635\u0642 / \u0644\u0627\u0641\u062a\u0629"
+    },
+    {
+      "english": "desk",
+      "arabic": "\u0637\u0627\u0648\u0644\u0629 \u062f\u0631\u0627\u0633\u064a\u0629"
+    },
+    {
+      "english": "house",
+      "arabic": "\u0645\u0646\u0632\u0644"
+    },
+    {
+      "english": "living room",
+      "arabic": "\u063a\u0631\u0641\u0629 \u0627\u0644\u0645\u0639\u064a\u0634\u0629"
+    },
+    {
+      "english": "bedroom",
+      "arabic": "\u063a\u0631\u0641\u0629 \u0627\u0644\u0646\u0648\u0645"
+    },
+    {
+      "english": "kitchen",
+      "arabic": "\u0645\u0637\u0628\u062e"
+    },
+    {
+      "english": "room",
+      "arabic": "\u063a\u0631\u0641\u0629"
+    },
+    {
+      "english": "restaurant",
+      "arabic": "\u0645\u0637\u0639\u0645"
+    },
+    {
+      "english": "toy shop",
+      "arabic": "\u0645\u062a\u062c\u0631 \u0623\u0644\u0639\u0627\u0628"
+    },
+    {
+      "english": "market",
+      "arabic": "\u0633\u0648\u0642"
+    },
+    {
+      "english": "upstairs",
+      "arabic": "\u0641\u064a \u0627\u0644\u0637\u0627\u0628\u0642 \u0627\u0644\u0639\u0644\u0648\u064a"
+    },
+    {
+      "english": "downstairs",
+      "arabic": "\u0641\u064a \u0627\u0644\u0637\u0627\u0628\u0642 \u0627\u0644\u0633\u0641\u0644\u064a"
+    },
+    {
+      "english": "on the left of",
+      "arabic": "\u0639\u0644\u0649 \u064a\u0633\u0627\u0631"
+    },
+    {
+      "english": "on the right of",
+      "arabic": "\u0639\u0644\u0649 \u064a\u0645\u064a\u0646"
+    },
+    {
+      "english": "between",
+      "arabic": "\u0628\u064a\u0646"
+    },
+    {
+      "english": "there is",
+      "arabic": "\u064a\u0648\u062c\u062f"
+    },
+    {
+      "english": "there are",
+      "arabic": "\u064a\u0648\u062c\u062f \u0644\u0644\u062c\u0645\u0639"
+    },
+    {
+      "english": "how many",
+      "arabic": "\u0643\u0645"
+    },
+    {
+      "english": "two \u00b7 2",
+      "arabic": "\u0627\u062b\u0646\u0627\u0646"
+    },
+    {
+      "english": "twelve \u00b7 12",
+      "arabic": "\u0627\u062b\u0646\u0627 \u0639\u0634\u0631"
+    },
+    {
+      "english": "twenty \u00b7 20",
+      "arabic": "\u0639\u0634\u0631\u0648\u0646"
+    },
+    {
+      "english": "twenty-five \u00b7 25",
+      "arabic": "\u062e\u0645\u0633\u0629 \u0648\u0639\u0634\u0631\u0648\u0646"
+    },
+    {
+      "english": "can",
+      "arabic": "\u064a\u0633\u062a\u0637\u064a\u0639 / \u064a\u0645\u0643\u0646\u0647"
+    },
+    {
+      "english": "prefer",
+      "arabic": "\u064a\u0641\u0636\u0651\u0644"
+    },
+    {
+      "english": "favourite",
+      "arabic": "\u0645\u0641\u0636\u0651\u0644"
+    },
+    {
+      "english": "show around",
+      "arabic": "\u064a\u0631\u0634\u062f \u0641\u064a \u062c\u0648\u0644\u0629"
+    },
+    {
+      "english": "read",
+      "arabic": "\u064a\u0642\u0631\u0623"
+    },
+    {
+      "english": "draw",
+      "arabic": "\u064a\u0631\u0633\u0645"
+    },
+    {
+      "english": "sing",
+      "arabic": "\u064a\u063a\u0646\u0651\u064a"
+    },
+    {
+      "english": "dance",
+      "arabic": "\u064a\u0631\u0642\u0635"
+    },
+    {
+      "english": "count",
+      "arabic": "\u064a\u0639\u062f\u0651"
+    },
+    {
+      "english": "play",
+      "arabic": "\u064a\u0644\u0639\u0628"
+    },
+    {
+      "english": "share",
+      "arabic": "\u064a\u0634\u0627\u0631\u0643"
+    },
+    {
+      "english": "make",
+      "arabic": "\u064a\u0635\u0646\u0639 / \u064a\u0643\u0648\u0651\u0646"
+    },
+    {
+      "english": "interesting",
+      "arabic": "\u0645\u0645\u062a\u0639 / \u0634\u064a\u0651\u0642"
+    },
+    {
+      "english": "fun",
+      "arabic": "\u0645\u0645\u062a\u0639"
+    },
+    {
+      "english": "book",
+      "arabic": "\u0643\u062a\u0627\u0628"
+    },
+    {
+      "english": "picture",
+      "arabic": "\u0635\u0648\u0631\u0629"
+    },
+    {
+      "english": "ball",
+      "arabic": "\u0643\u0631\u0629"
+    },
+    {
+      "english": "block",
+      "arabic": "\u0645\u0643\u0639\u0628"
+    },
+    {
+      "english": "friend",
+      "arabic": "\u0635\u062f\u064a\u0642"
+    },
+    {
+      "english": "help",
+      "arabic": "\u064a\u0633\u0627\u0639\u062f"
+    },
+    {
+      "english": "please",
+      "arabic": "\u0645\u0646 \u0641\u0636\u0644\u0643"
+    },
+    {
+      "english": "of course",
+      "arabic": "\u0628\u0627\u0644\u062a\u0623\u0643\u064a\u062f"
+    },
+    {
+      "english": "thank you",
+      "arabic": "\u0634\u0643\u0631\u064b\u0627 \u0644\u0643"
+    },
+    {
+      "english": "meat",
+      "arabic": "\u0644\u062d\u0645"
+    },
+    {
+      "english": "eat",
+      "arabic": "\u064a\u0623\u0643\u0644"
+    }
+  ],
+  "responseControls": {
+    "pupil-book": {
+      "text": 2,
+      "select": 3,
+      "checkbox": 1,
+      "canvas": 0
+    },
+    "workbook": {
+      "text": 26,
+      "select": 0,
+      "checkbox": 0,
+      "canvas": 1
+    },
+    "test": {
+      "text": 4,
+      "radio": 44
+    }
+  }
+}

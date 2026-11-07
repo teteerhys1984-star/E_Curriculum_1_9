@@ -92,7 +92,7 @@
     const parsedGrade = Number(params.get('grade'));
     const grade = Number.isInteger(parsedGrade) && parsedGrade >= 1 && parsedGrade <= 9 ? parsedGrade : 1;
 
-    const preparedCounts = { 3: 2, 4: 2, 5: 3, 8: 2 };
+    const preparedCounts = { 3: 3, 4: 2, 5: 3, 8: 2 };
     const count = preparedCounts[grade] || 0;
     const stageLabel = grade <= 6 ? `Primary Stage · Grade ${grade}` : `Intermediate Stage · Grade ${grade}`;
 
@@ -143,7 +143,8 @@
       : grade===8?'<a class="lesson" href="grade8-unit1-lesson2.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 2 · School Challenges</strong><small>Student’s Book (pp. 12–18) · Workbook (pp. 6–9) · Vocabulary · 12-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
       : `<a class="lesson is-template" href="lesson-menu.html?grade=${grade}&lesson=2"><div><span class="badge badge-upcoming">In preparation · Template preview</span><strong>Lesson 2</strong><small>Upcoming lesson slot · Opens standard 4-section curriculum template</small></div><span class="arrow" aria-hidden="true">→</span></a>`;
 
-    const lesson3 = grade===5?'<a class="lesson" href="grade5-unit1-lesson3.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 3 · Daily Routines</strong><small>Pupil’s Book (pp. 9–11) · Workbook (pp. 11–13) · Vocabulary · 18-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+    const lesson3 = grade===3?'<a class="lesson" href="grade3-unit1-lesson3.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 3 · My Lovely School</strong><small>Pupil’s Book (pp. 9–11) · Workbook (pp. 9–11) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      : grade===5?'<a class="lesson" href="grade5-unit1-lesson3.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 3 · Daily Routines</strong><small>Pupil’s Book (pp. 9–11) · Workbook (pp. 11–13) · Vocabulary · 18-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
       : `<a class="lesson is-template" href="lesson-menu.html?grade=${grade}&lesson=3"><div><span class="badge badge-upcoming">In preparation · Template preview</span><strong>Lesson 3</strong><small>Upcoming lesson slot · Opens standard 4-section curriculum template</small></div><span class="arrow" aria-hidden="true">→</span></a>`;
 
     document.getElementById('lesson-list').innerHTML = lesson1 + lesson2 + lesson3;
