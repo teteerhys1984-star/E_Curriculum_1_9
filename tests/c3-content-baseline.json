@@ -181,8 +181,30 @@
       "text": "d0ac475e1bc6d03d5d1c9a043dc7f6b516688fa787c4aff0d088443c02fd0e62",
       "data": {}
     },
+    "grade8-unit1-lesson2-pupil-book.html": {
+      "text": "5874dcedf3a8e5b7c3c25b2f07b6f2e6b89c8eb494d766010be517215c642bc5",
+      "data": {}
+    },
+    "grade8-unit1-lesson2-test.html": {
+      "text": "f82dd8cf51f784ad7940310cdecf7e488528b98dc48fde13ec92f45cb0bbb4da",
+      "data": {
+        "qs": "77da5072fc3b81272273ee8ed0274fc5604712eaaaa17f756fc884f007ae787b"
+      }
+    },
+    "grade8-unit1-lesson2-vocabulary.html": {
+      "text": "033dab8b6500aaac0e4293c63f353ac23d6505d212ec997f54c89d397fd2bc71",
+      "data": {}
+    },
+    "grade8-unit1-lesson2-workbook.html": {
+      "text": "5cac2174b52249e55692dbd5da6103a1fc31899e1abfb0f4a7233546c18d80bb",
+      "data": {}
+    },
+    "grade8-unit1-lesson2.html": {
+      "text": "ae037ca842a29465b82f7db7c075d7f6f658e3ddf0527c5e5694e12c9df4c0c5",
+      "data": {}
+    },
     "index.html": {
-      "text": "8539f9a417550f5ca9346bc23ee60b20460cb2edf7f77a496d63198db5a0d787",
+      "text": "8defc8fa6172e0bc65f1663690eef9df2ec93cc76fec12f9760f589e6cdf385c",
       "data": {}
     },
     "lesson-menu.html": {
@@ -202,7 +224,7 @@
       "data": {}
     },
     "teacher-resources.html": {
-      "text": "d5c08c1d7328933e84038ba8f0594082fa38edc6de067988580cc0d68a13ca4a",
+      "text": "45280b5db5e749e8ac105731d1364db99e5ae40c5747bd54e007d247c518306f",
       "data": {}
     },
     "teacher.html": {

@@ -61,7 +61,8 @@ const anchoredKeyLinks = [
   'grade4-unit1-lesson2-test.html#teacher-gate',
   'grade5-unit1-lesson1-test.html#teacher-gate',
   'grade5-unit1-lesson2-test.html#teacher-gate',
-  'grade8-unit1-lesson1-test.html#teacher-gate'
+  'grade8-unit1-lesson1-test.html#teacher-gate',
+  'grade8-unit1-lesson2-test.html#teacher-gate'
 ];
 // The one lesson test that publishes no answer key at all. It must gain neither a gate nor a link.
 const keylessTests = ['grade4-unit1-lesson1'];
@@ -330,12 +331,21 @@ try {
       wrapped: Boolean(document.querySelector('.table-scroll')?.classList.contains('table-scroll'))
     };
   });
-  assert.equal(matrix.rows.length, 8, 'the matrix must list all eight prepared lessons');
+  assert.equal(matrix.rows.length, 9, 'the matrix must list all nine prepared lessons');
   assert.deepEqual(matrix.headers, ['Grade · Lesson', 'Test items', 'Answer-key area', 'Book reveals', 'Workbook reveals', 'Listening key']);
-  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 8, 'every lesson must report no listening key');
+  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 9, 'every lesson must report no listening key');
   assert.equal(matrix.rows.filter(row => /^Not published$/.test(row.cells[1])).length, 1, 'exactly one lesson has no published key');
   assert.match(matrix.rows.find(row => row.label.startsWith('4 · 1')).cells[1], /Not published/);
-  pass('Rendered status matrix', 'Eight rows with the expected columns, one “Not published” key and “None” for every listening key');
+
+  // Grade 8 Lesson 2 row: published key area, 12 test items, no listening key.
+  const g8l2 = matrix.rows.find(row => row.label.startsWith('8 · 2'));
+  assert.ok(g8l2, 'matrix must include a row for Grade 8 · Lesson 2 · School Challenges');
+  assert.equal(g8l2.label, '8 · 2 School Challenges', 'matrix row label for Grade 8 Lesson 2');
+  assert.equal(g8l2.cells[0], '12', 'Grade 8 Lesson 2 must report 12 test items');
+  assert.match(g8l2.cells[1], /^Published \(deep-linked gate\)/, 'Grade 8 Lesson 2 must publish its key area');
+  assert.equal(g8l2.cells[4], 'None', 'Grade 8 Lesson 2 must report no listening key');
+
+  pass('Rendered status matrix', 'Nine rows with the expected columns, one “Not published” key and “None” for every listening key');
 
   // 9. Keyboard access and skip link (desktop width, where the header bar is visible).
   await page.setViewportSize({ width: 1440, height: 900 });
