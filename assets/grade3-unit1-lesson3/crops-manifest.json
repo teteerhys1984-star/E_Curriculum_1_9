@@ -1,0 +1,332 @@
+[
+  {
+    "source": "image-1.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-9-dialogue-1.png",
+    "box": [
+      48,
+      218,
+      362,
+      474
+    ],
+    "size": [
+      314,
+      256
+    ],
+    "sha256": "a856d9d0c16b7f5e78c2e394bd2e0a15ac1ae471640ee4471ee5c80ba6b34cc5"
+  },
+  {
+    "source": "image-1.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-9-dialogue-2.png",
+    "box": [
+      367,
+      220,
+      691,
+      474
+    ],
+    "size": [
+      324,
+      254
+    ],
+    "sha256": "1f3840b8f6eae754dbe9de7e19915041f545d9abaecd73da702b7fd55c886277"
+  },
+  {
+    "source": "image-1.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-9-dialogue-3.png",
+    "box": [
+      44,
+      481,
+      376,
+      731
+    ],
+    "size": [
+      332,
+      250
+    ],
+    "sha256": "f4b486cb5e6a363c410e7bc9e70572fcb47ab818f67dda5abc102cccc58d152f"
+  },
+  {
+    "source": "image-1.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-9-dialogue-4.png",
+    "box": [
+      368,
+      479,
+      691,
+      732
+    ],
+    "size": [
+      323,
+      253
+    ],
+    "sha256": "40b32b0417b59c3a32785a9c52ea9f9c4e27bc6aa750ca07d58304a702c43bda"
+  },
+  {
+    "source": "image-1.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-9-dialogue-5.png",
+    "box": [
+      42,
+      736,
+      362,
+      1007
+    ],
+    "size": [
+      320,
+      271
+    ],
+    "sha256": "66ab7adf6fc50d518e40321119830b4a5d1aac1cfcd54815dbfb6b9a15b75810"
+  },
+  {
+    "source": "image-1.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-9-dialogue-6.png",
+    "box": [
+      368,
+      738,
+      700,
+      988
+    ],
+    "size": [
+      332,
+      250
+    ],
+    "sha256": "1dbbe49441b7b25b8f0e97db49c2564063e8510b2734960f7e7eccc8ef408ec1"
+  },
+  {
+    "source": "image-2.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-10-lets-learn.png",
+    "box": [
+      91,
+      94,
+      703,
+      414
+    ],
+    "size": [
+      612,
+      320
+    ],
+    "sha256": "a77f047d8d61989abc00d54c1c2b587f597e9f447c0a21414fd96e48911d7b80"
+  },
+  {
+    "source": "image-2.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-10-ask-and-answer.png",
+    "box": [
+      97,
+      448,
+      705,
+      724
+    ],
+    "size": [
+      608,
+      276
+    ],
+    "sha256": "15e0b0b7803c1025ffef5a19ff318af7393fa42f5d44148747521b0bea1c1163"
+  },
+  {
+    "source": "image-2.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-10-match-a.png",
+    "box": [
+      588,
+      748,
+      695,
+      821
+    ],
+    "size": [
+      107,
+      73
+    ],
+    "sha256": "60a4370ae38dea38df23c3c683b7c5385a87399267c03db358ab59a102b923bb"
+  },
+  {
+    "source": "image-2.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-10-match-b.png",
+    "box": [
+      588,
+      822,
+      695,
+      895
+    ],
+    "size": [
+      107,
+      73
+    ],
+    "sha256": "2b629740af7d61847658c60fb13f22e1fd2d517bdee63fafe571ce597209f751"
+  },
+  {
+    "source": "image-2.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-10-match-c.png",
+    "box": [
+      588,
+      897,
+      695,
+      965
+    ],
+    "size": [
+      107,
+      68
+    ],
+    "sha256": "e7becb888e01b957d32960e7e9fc350dd30eb1cb71758548c3a7050ffcaeede9"
+  },
+  {
+    "source": "image-3.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-11-song.png",
+    "box": [
+      53,
+      42,
+      708,
+      731
+    ],
+    "size": [
+      655,
+      689
+    ],
+    "sha256": "781034dc55b9a80017d1919c5370a5329ca7477787d63973050d2e2fcd4837eb"
+  },
+  {
+    "source": "image-3.png",
+    "file": "assets/grade3-unit1-lesson3/crops/pupil-book-page-11-phonics.png",
+    "box": [
+      53,
+      742,
+      643,
+      995
+    ],
+    "size": [
+      590,
+      253
+    ],
+    "sha256": "a5a2a06fb04668691c5701675a5c29791887704c1679ff19be8cae5e5271b62d"
+  },
+  {
+    "source": "image-4.png",
+    "file": "assets/grade3-unit1-lesson3/crops/workbook-page-9-missing-words.png",
+    "box": [
+      48,
+      151,
+      610,
+      384
+    ],
+    "size": [
+      562,
+      233
+    ],
+    "sha256": "d4b388e4b4a8d9ba541db6b48673f2bf221a79b22a96f69c93b76c663f684e24"
+  },
+  {
+    "source": "image-4.png",
+    "file": "assets/grade3-unit1-lesson3/crops/workbook-page-9-listen-house.png",
+    "box": [
+      126,
+      478,
+      552,
+      1015
+    ],
+    "size": [
+      426,
+      537
+    ],
+    "sha256": "2e377b8f23a41ec2cb9b271527bd5fbb8e840af082d4e5819e8b6ac3c9b55e83"
+  },
+  {
+    "source": "image-5.png",
+    "file": "assets/grade3-unit1-lesson3/crops/workbook-page-10-gym-pupils.png",
+    "box": [
+      454,
+      61,
+      685,
+      190
+    ],
+    "size": [
+      231,
+      129
+    ],
+    "sha256": "629796e6bdc54c26ed95b856a900cd757d88857011feb91db78472e901287527"
+  },
+  {
+    "source": "image-5.png",
+    "file": "assets/grade3-unit1-lesson3/crops/workbook-page-10-gym-art-doors.png",
+    "box": [
+      446,
+      187,
+      684,
+      305
+    ],
+    "size": [
+      238,
+      118
+    ],
+    "sha256": "15026d2f5219d8331c808ff68a91818db3ede2454a4f42c4b986464a170d24c6"
+  },
+  {
+    "source": "image-5.png",
+    "file": "assets/grade3-unit1-lesson3/crops/workbook-page-10-classroom.png",
+    "box": [
+      448,
+      307,
+      682,
+      449
+    ],
+    "size": [
+      234,
+      142
+    ],
+    "sha256": "19ba6649c028fb6f6a9c152deae0e078fe9cff8fa85d10c74c52d9fbc917a402"
+  },
+  {
+    "source": "image-5.png",
+    "file": "assets/grade3-unit1-lesson3/crops/workbook-page-10-number-12.png",
+    "box": [
+      475,
+      449,
+      649,
+      556
+    ],
+    "size": [
+      174,
+      107
+    ],
+    "sha256": "0de8a7479755acb9f60542e0a47be3e1bc354889c0d0850f2bb924b3adaa3eb9"
+  },
+  {
+    "source": "image-5.png",
+    "file": "assets/grade3-unit1-lesson3/crops/workbook-page-10-drawing-frame.png",
+    "box": [
+      82,
+      602,
+      695,
+      968
+    ],
+    "size": [
+      613,
+      366
+    ],
+    "sha256": "e631418718176f8b2d1fc7fd11aea0382c0a044a953da556792887da280e7501"
+  },
+  {
+    "source": "image-6.png",
+    "file": "assets/grade3-unit1-lesson3/crops/workbook-page-11-shops.png",
+    "box": [
+      108,
+      102,
+      625,
+      230
+    ],
+    "size": [
+      517,
+      128
+    ],
+    "sha256": "6d9cd8784c29dd5527f3c92c991436da81689241b03ef8420165840129ccb56f"
+  },
+  {
+    "source": "image-6.png",
+    "file": "assets/grade3-unit1-lesson3/crops/workbook-page-11-sort-boxes.png",
+    "box": [
+      57,
+      521,
+      669,
+      887
+    ],
+    "size": [
+      612,
+      366
+    ],
+    "sha256": "73565efac7ba6740a6acdf2c1d490935e9d0e62f9fa017a36bd20991af827218"
+  }
+]

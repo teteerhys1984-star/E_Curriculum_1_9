@@ -6,6 +6,7 @@
   const LESSONS = {
     'grade3-unit1-lesson1': { grade: 3, unit: 1, lesson: 1, title: 'Back to School', bookLabel: "Pupil's Book" },
     'grade3-unit1-lesson2': { grade: 3, unit: 1, lesson: 2, title: 'School Subjects', bookLabel: "Pupil's Book" },
+    'grade3-unit1-lesson3': { grade: 3, unit: 1, lesson: 3, title: 'My Lovely School', bookLabel: "Pupil's Book" },
     'grade4-unit1-lesson1': { grade: 4, unit: 1, lesson: 1, title: 'Nice to Meet You', bookLabel: "Pupil's Book" },
     'grade4-unit1-lesson2': { grade: 4, unit: 1, lesson: 2, title: 'My Family', bookLabel: "Pupil's Book" },
     'grade5-unit1-lesson1': { grade: 5, unit: 1, lesson: 1, title: 'At School', bookLabel: "Pupil's Book" },

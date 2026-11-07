@@ -19,7 +19,7 @@ permissions:
 jobs:
   source-and-browser-checks:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -38,6 +38,7 @@ jobs:
         with:
           name: lesson-browser-evidence
           path: |
+            test-results/grade3-unit1-lesson3/
             test-results/grade3-unit1-lesson2/
             test-results/grade4-unit1-lesson2/
             test-results/english-curriculum/

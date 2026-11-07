@@ -1,0 +1,323 @@
+{
+  "lesson": "grade3-unit1-lesson3",
+  "title": "My Lovely School · independent Lesson 3 test",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 20,
+  "objectives": [
+    "place-vocabulary",
+    "classification",
+    "positions",
+    "quantities",
+    "there-is-are",
+    "abilities-preferences",
+    "reading-comprehension",
+    "functional-language",
+    "phonics",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "q1",
+      "format": "multiple-choice",
+      "objective": "place-vocabulary",
+      "objectiveLabel": "Lesson objective: School and house place vocabulary",
+      "prompt": "1. Omar sleeps in this room at home. What is it called?",
+      "options": [
+        "a) kitchen",
+        "b) bedroom",
+        "c) laboratory"
+      ],
+      "correct": 1,
+      "evidence": "A bedroom is the room for sleeping. A kitchen and a laboratory have different uses."
+    },
+    {
+      "number": 2,
+      "id": "q2",
+      "format": "multiple-choice",
+      "objective": "place-vocabulary",
+      "objectiveLabel": "Lesson objective: School and house place vocabulary",
+      "prompt": "2. Lina wants to borrow a book for the weekend. Which place should she visit?",
+      "options": [
+        "a) library",
+        "b) gym",
+        "c) kitchen"
+      ],
+      "correct": 0,
+      "evidence": "A library is the place for borrowing and reading books."
+    },
+    {
+      "number": 3,
+      "id": "q3",
+      "format": "true-false",
+      "objective": "classification",
+      "objectiveLabel": "Lesson objective: Sorting school and house places",
+      "prompt": "3. Choose True or False: a playground belongs in the school box, not the house box.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 0,
+      "evidence": "In this lesson, playground is grouped with school places; the house box contains rooms such as bedroom, kitchen and living room."
+    },
+    {
+      "number": 4,
+      "id": "q4",
+      "format": "multiple-choice",
+      "objective": "positions",
+      "objectiveLabel": "Lesson objective: Asking and answering about location",
+      "prompt": "4. Look at this new row of rooms. Which room is in the middle?",
+      "options": [
+        "a) laboratory",
+        "b) playground",
+        "c) library"
+      ],
+      "correct": 2,
+      "evidence": "The library is between the art room and the music room, so it is the middle room.",
+      "stimulus": "between"
+    },
+    {
+      "number": 5,
+      "id": "q5",
+      "format": "multiple-choice",
+      "objective": "positions",
+      "objectiveLabel": "Lesson objective: Asking and answering about location",
+      "prompt": "5. This row is arranged from left to right. Which statement describes it?",
+      "options": [
+        "a) The music room is on the left of the gym.",
+        "b) The gym is on the left of the music room.",
+        "c) The gym is between two libraries."
+      ],
+      "correct": 0,
+      "evidence": "The music room is the left-hand box and the gym is the right-hand box. There is only one gym and no pair of libraries.",
+      "stimulus": "left-right"
+    },
+    {
+      "number": 6,
+      "id": "q6",
+      "format": "true-false",
+      "objective": "positions",
+      "objectiveLabel": "Lesson objective: Asking and answering about location",
+      "prompt": "6. Use the floor list. Choose True or False: to visit the cafeteria, go downstairs.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 0,
+      "evidence": "The floor list puts the cafeteria and gym downstairs, and the library and art room upstairs.",
+      "stimulus": "floors"
+    },
+    {
+      "number": 7,
+      "id": "q7",
+      "format": "multiple-choice",
+      "objective": "there-is-are",
+      "objectiveLabel": "Lesson objective: Using there is and there are",
+      "prompt": "7. Complete: “There ___ a kitchen in this house.”",
+      "options": [
+        "a) are",
+        "b) is",
+        "c) am"
+      ],
+      "correct": 1,
+      "evidence": "A kitchen is singular, so the correct form is there is."
+    },
+    {
+      "number": 8,
+      "id": "q8",
+      "format": "multiple-choice",
+      "objective": "there-is-are",
+      "objectiveLabel": "Lesson objective: Using there is and there are",
+      "prompt": "8. Choose the beginning of the sentence: “___ two libraries in the new building.”",
+      "options": [
+        "a) There am",
+        "b) There is",
+        "c) There are"
+      ],
+      "correct": 2,
+      "evidence": "Two libraries is plural, so use there are."
+    },
+    {
+      "number": 9,
+      "id": "q9",
+      "format": "multiple-choice",
+      "objective": "quantities",
+      "objectiveLabel": "Lesson objective: Understanding lesson quantities",
+      "prompt": "9. Read Omar’s classroom count. How many chairs are there?",
+      "options": [
+        "a) 25",
+        "b) 2",
+        "c) 20"
+      ],
+      "correct": 0,
+      "evidence": "The chairs row shows 25. The 20 belongs to books, and 2 belongs to desks.",
+      "stimulus": "counts"
+    },
+    {
+      "number": 10,
+      "id": "q10",
+      "format": "multiple-choice",
+      "objective": "abilities-preferences",
+      "objectiveLabel": "Lesson objective: Expressing abilities and preferences",
+      "prompt": "10. Noor wants to make a picture of her classroom on paper. Complete: “I can ___ a picture.”",
+      "options": [
+        "a) eat",
+        "b) draw",
+        "c) read"
+      ],
+      "correct": 1,
+      "evidence": "Draw is the action used for making a picture."
+    },
+    {
+      "number": 11,
+      "id": "q11",
+      "format": "true-false",
+      "objective": "place-vocabulary",
+      "objectiveLabel": "Lesson objective: School and house place vocabulary",
+      "prompt": "11. Choose True or False: a kitchen is a place for sleeping.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 1,
+      "evidence": "A kitchen is for preparing food; a bedroom is for sleeping. The statement is false."
+    },
+    {
+      "number": 12,
+      "id": "q12",
+      "format": "multiple-choice",
+      "objective": "phonics",
+      "objectiveLabel": "Lesson objective: Recognising and building the ea words",
+      "prompt": "12. Which letter pair is highlighted in both m-eat and eat in this lesson?",
+      "options": [
+        "a) ou",
+        "b) ee",
+        "c) ea"
+      ],
+      "correct": 2,
+      "evidence": "The lesson highlights ea in meat and eat. The other pairs are not the target pair."
+    },
+    {
+      "number": 13,
+      "id": "q13",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading an unseen school description",
+      "prompt": "13. Read Hana’s school description. Which room is upstairs?",
+      "options": [
+        "a) the art room",
+        "b) the library",
+        "c) the playground"
+      ],
+      "correct": 1,
+      "evidence": "The description says that the library is upstairs. It does not put the art room upstairs, and the playground is outside.",
+      "stimulus": "passage"
+    },
+    {
+      "number": 14,
+      "id": "q14",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading an unseen school description",
+      "prompt": "14. Read Hana’s school description. Choose True or False: there are twenty desks in the library.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 1,
+      "evidence": "The library has twenty books but only two desks, so the statement is false.",
+      "stimulus": "passage"
+    },
+    {
+      "number": 15,
+      "id": "q15",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading an unseen school description",
+      "prompt": "15. Read Hana’s school description. Which room does Hana like best?",
+      "options": [
+        "a) the art room",
+        "b) the library",
+        "c) the kitchen"
+      ],
+      "correct": 0,
+      "evidence": "Hana likes the art room best because she can draw there.",
+      "stimulus": "passage"
+    },
+    {
+      "number": 16,
+      "id": "q16",
+      "format": "multiple-choice",
+      "objective": "functional-language",
+      "objectiveLabel": "Lesson objective: Asking for and giving help",
+      "prompt": "16. Lina says, “I cannot find my classroom.” Choose the most helpful reply.",
+      "options": [
+        "a) Thank you very much!",
+        "b) I prefer meat.",
+        "c) Yes, of course. It is upstairs."
+      ],
+      "correct": 2,
+      "evidence": "This reply offers help and gives the location of the classroom. The other replies do not help Lina find it."
+    },
+    {
+      "number": 17,
+      "id": "q17",
+      "format": "short-answer",
+      "objective": "there-is-are",
+      "objectiveLabel": "Lesson objective: Using there is and there are",
+      "prompt": "17. Correct the verb in this new sentence: “There is two desks here.” Write only the correct verb.",
+      "options": [],
+      "correct": "are",
+      "evidence": "Two desks is plural, so is must change to are: There are two desks here.",
+      "accepted": [
+        "are"
+      ],
+      "wrongSample": "is"
+    },
+    {
+      "number": 18,
+      "id": "q18",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing a clear English sentence",
+      "prompt": "18. Write a sentence beginning with I. Use all four words exactly once: can / read / there / I.",
+      "options": [],
+      "correct": "I can read there.",
+      "evidence": "Beginning with I, the correct order is I + can + read + there. The sentence expresses an ability in a place.",
+      "accepted": [
+        "i can read there"
+      ],
+      "wrongSample": "I there can read."
+    },
+    {
+      "number": 19,
+      "id": "q19",
+      "format": "short-answer",
+      "objective": "positions",
+      "objectiveLabel": "Lesson objective: Asking and answering about location",
+      "prompt": "19. Write the lesson word that is the opposite of upstairs.",
+      "options": [],
+      "correct": "downstairs",
+      "evidence": "Downstairs names the lower floor and is the opposite of upstairs in the lesson.",
+      "accepted": [
+        "downstairs"
+      ],
+      "wrongSample": "upstairs"
+    },
+    {
+      "number": 20,
+      "id": "q20",
+      "format": "short-answer",
+      "objective": "phonics",
+      "objectiveLabel": "Lesson objective: Recognising and building the ea words",
+      "prompt": "20. Build the food word from the lesson: m + ea + t. Write the whole word.",
+      "options": [],
+      "correct": "meat",
+      "evidence": "Joining m, ea and t makes meat, one of the two printed ea words.",
+      "accepted": [
+        "meat"
+      ],
+      "wrongSample": "eat"
+    }
+  ]
+}
