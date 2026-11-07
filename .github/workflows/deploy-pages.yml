@@ -29,9 +29,13 @@ jobs:
             *.html
             *.css
             *.js
-            assets/fonts/
-            assets/*/crops/
-            assets/*/source/
+            assets/fonts
+            assets/grade3-unit1-lesson2/crops
+            assets/grade3-unit1-lesson2/source
+            assets/grade4-unit1-lesson2/crops
+            assets/grade4-unit1-lesson2/source
+            assets/grade5-unit1-lesson3/crops
+            assets/grade5-unit1-lesson3/source
 
   deploy:
     environment:
