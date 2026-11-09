@@ -48,8 +48,8 @@
         "after": "            <div class=\"stat\"><b>10</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b>50</b><span>Verified lesson pages</span></div>\n"
       },
       {
-        "before": "          <span class=\"badge badge-available\">2 lessons ready</span>\n",
-        "after": "          <span class=\"badge badge-available\">3 lessons ready</span>\n"
+        "before": "          <span class=\"num\">Grade 5</span>\n          <span class=\"badge badge-available\">2 lessons ready</span>\n",
+        "after": "          <span class=\"num\">Grade 5</span>\n          <span class=\"badge badge-available\">3 lessons ready</span>\n"
       },
       {
         "before": "          <p>Unit 1 Lessons 1 &amp; 2 ready: <em>Back to School</em> and <em>School Subjects</em>.</p>\n",
@@ -66,6 +66,18 @@
       {
         "before": "        The teacher portal collects the seven prepared lessons, the answer-key areas published on six lesson tests, and\n",
         "after": "        The teacher portal collects the ten prepared lessons, the answer-key areas published on nine lesson tests, and\n"
+      },
+      {
+        "before": "          <p>Unit 1 Lessons 1 &amp; 2 ready: <em>At School</em> and <em>Family</em>.</p>\n",
+        "after": "          <p>Unit 1 Lessons 1–3 ready: <em>At School</em>, <em>Family</em> and <em>Daily Routines</em>.</p>\n"
+      },
+      {
+        "before": "              <a href=\"grade5-unit1-lesson3.html\">Lesson Menu</a>\n",
+        "after": "              <a href=\"grade5-unit1-lesson3.html\">Daily Routines</a>\n"
+      },
+      {
+        "before": "          <span class=\"num\">Grade 3</span>\n          <span class=\"badge badge-available\">2 lessons ready</span>",
+        "after": "          <span class=\"num\">Grade 3</span>\n          <span class=\"badge badge-available\">3 lessons ready</span>"
       }
     ],
     "lessons.html": [

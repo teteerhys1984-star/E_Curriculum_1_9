@@ -122,6 +122,17 @@ for (const file of newPages) {
 }
 pass('Five new pages follow LESSON_PAGE_STANDARD.md', 'Four content pages load the shared step navigator; menu opts out');
 
+const landing = read('index.html');
+assert.match(landing, /<span class="num">Grade 5<\/span>[\s\S]*?<span class="badge badge-available">3 lessons ready<\/span>[\s\S]*?Unit 1 Lessons 1–3 ready: <em>At School<\/em>, <em>Family<\/em> and <em>Daily Routines<\/em>/);
+for (const [lesson, title] of [[1, 'At School'], [2, 'Family'], [3, 'Daily Routines']]) {
+  const href = `grade5-unit1-lesson${lesson}.html`;
+  assert.ok(exists(href), `Missing Grade 5 Lesson ${lesson} menu`);
+  assert.ok(landing.includes(`href="${href}"`), `Landing page missing Grade 5 Lesson ${lesson} link`);
+  assert.ok(landing.includes(`Lesson ${lesson} · ${title}`), `Landing page missing Grade 5 Lesson ${lesson} title`);
+}
+assert.ok(landing.includes('<a href="grade5-unit1-lesson3.html">Daily Routines</a>'));
+pass('Grade 5 landing summary and lesson links', 'Three lessons declared ready; Lessons 1–3 link to their existing lesson menus with matching titles');
+
 const listing = read('lessons.html');
 assert.ok(listing.includes("grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson2.html\""));
 assert.ok(listing.includes('Lesson 2 · School Subjects'));
