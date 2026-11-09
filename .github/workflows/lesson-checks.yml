@@ -39,6 +39,8 @@ jobs:
           name: lesson-browser-evidence
           path: |
             test-results/grade3-unit1-lesson3/
+            test-results/grade3-unit1-lesson4/
+            test-results/grade3-unit1-lesson5/
             test-results/grade3-unit1-lesson2/
             test-results/grade4-unit1-lesson2/
             test-results/english-curriculum/

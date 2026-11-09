@@ -84,15 +84,15 @@ try {
   const testKey = 'efc_grade3_unit1_lesson3_test_v1';
 
   await go('lessons.html?grade=3');
-  assert.equal(await page.locator('#lesson-list a.lesson').count(), 3);
-  for (const lesson of [1, 2, 3]) assert.equal(await page.locator(`#lesson-list a[href="${base.replace('lesson3', 'lesson' + lesson)}.html"]`).count(), 1);
+  assert.equal(await page.locator('#lesson-list a.lesson').count(), 5);
+  for (const lesson of [1, 2, 3, 4, 5]) assert.equal(await page.locator(`#lesson-list a[href="${base.replace('lesson3', 'lesson' + lesson)}.html"]`).count(), 1);
   await page.locator(`#lesson-list a[href="${base}.html"]`).click();
   await page.waitForURL(`**/${base}.html`);
   assert.equal(await page.locator('.cards .card').count(), 4);
   assert.match(await page.locator('nav[aria-label="Published lesson sequence"]').textContent(), /Previous lesson · School Subjects/);
-  assert.match(await page.locator('nav[aria-label="Published lesson sequence"]').textContent(), /Next lesson · not yet published/);
+  assert.match(await page.locator('nav[aria-label="Published lesson sequence"]').textContent(), /Next lesson · My Five Senses/);
   await noOverflow('lesson menu');
-  pass('Rendered Grade 3 listing and menu', 'Three Grade 3 lessons, four section cards, previous published lesson and no invented next lesson');
+  pass('Rendered Grade 3 listing and menu', 'Five Grade 3 lessons, four section cards, and honest previous/next links in the published sequence');
 
   const pages = ['', '-pupil-book', '-workbook', '-vocabulary', '-test'].map(suffix => `${base}${suffix}.html`);
   for (const file of pages) {

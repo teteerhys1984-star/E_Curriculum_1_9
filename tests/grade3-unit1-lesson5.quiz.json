@@ -1,0 +1,324 @@
+{
+  "lesson": "grade3-unit1-lesson5",
+  "totalQuestions": 20,
+  "objectives": [
+    "days",
+    "family",
+    "floor",
+    "functional-language",
+    "home",
+    "number-pattern",
+    "number-words",
+    "numerals",
+    "phonics-ea",
+    "phonics-oa",
+    "phonics-oo",
+    "phonics-ou",
+    "positions",
+    "reading-table",
+    "rooms",
+    "sentence-writing",
+    "subjects"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "number": 1,
+      "format": "multiple-choice",
+      "objective": "rooms",
+      "prompt": "1. Ziad wants to do an experiment with water and a glass tube. Which room should he go to?",
+      "evidence": "Experiments belong in the laboratory. The library is for books and the playground is for play.",
+      "options": [
+        "a) the laboratory",
+        "b) the library",
+        "c) the playground"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Naming school rooms and their use"
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "format": "true-false",
+      "objective": "positions",
+      "prompt": "2. Choose True or False: if the music room is on the right of the art room, then the art room is on the left of the music room.",
+      "evidence": "Right and left are opposites, so the same two rooms seen the other way round give the opposite sentence. The statement is true.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Describing where a room is"
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "format": "multiple-choice",
+      "objective": "floor",
+      "prompt": "3. Read the description of Nadia’s school. Which rooms are on the upper floor?",
+      "evidence": "The text puts the classrooms and the computer room on the upper floor and the library and laboratory on the ground floor.",
+      "options": [
+        "a) the library and the laboratory",
+        "b) the classrooms and the computer room",
+        "c) only the classroom"
+      ],
+      "correct": 1,
+      "passage": "Nadia’s school",
+      "objectiveLabel": "Lesson objective: Reading where rooms are in a school description"
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "format": "true-false",
+      "objective": "floor",
+      "prompt": "4. Read the description of Nadia’s school again. Choose True or False: the library is upstairs.",
+      "evidence": "The first sentence puts the library on the ground floor, so the statement is false.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 1,
+      "passage": "Nadia’s school",
+      "objectiveLabel": "Lesson objective: Reading where rooms are in a school description"
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "format": "multiple-choice",
+      "objective": "reading-table",
+      "prompt": "5. Read Rami’s week. On which day has Rami got Art?",
+      "evidence": "The third sentence says Rami has got Art on Tuesday.",
+      "options": [
+        "a) Sunday",
+        "b) Monday",
+        "c) Tuesday"
+      ],
+      "correct": 2,
+      "passage": "Rami’s week",
+      "objectiveLabel": "Lesson objective: Reading a simple weekly subject table"
+    },
+    {
+      "id": "q6",
+      "number": 6,
+      "format": "multiple-choice",
+      "objective": "reading-table",
+      "prompt": "6. Read Rami’s week again. Which two subjects has Rami got together on Monday?",
+      "evidence": "The second sentence names English and Maths together on Monday.",
+      "options": [
+        "a) English and Maths",
+        "b) Science and Arabic",
+        "c) Art and English"
+      ],
+      "correct": 0,
+      "passage": "Rami’s week",
+      "objectiveLabel": "Lesson objective: Reading a simple weekly subject table"
+    },
+    {
+      "id": "q7",
+      "number": 7,
+      "format": "true-false",
+      "objective": "reading-table",
+      "prompt": "7. Read Rami’s week again. Choose True or False: Rami’s favourite subject is Science.",
+      "evidence": "The text says his favourite subject is Art, and gives drawing as the reason.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 1,
+      "passage": "Rami’s week",
+      "objectiveLabel": "Lesson objective: Reading a simple weekly subject table"
+    },
+    {
+      "id": "q8",
+      "number": 8,
+      "format": "short-answer",
+      "objective": "days",
+      "prompt": "8. Read Rami’s week again. Write the day when Rami has got English.",
+      "evidence": "English appears in the sentence about Monday, together with Maths.",
+      "correct": "Monday",
+      "accepted": [
+        "monday"
+      ],
+      "passage": "Rami’s week",
+      "wrongSample": "tuesday",
+      "objectiveLabel": "Lesson objective: Using the days of the week with subjects"
+    },
+    {
+      "id": "q9",
+      "number": 9,
+      "format": "multiple-choice",
+      "objective": "subjects",
+      "prompt": "9. Layla mixes red and blue paint to make purple. Which subject is she working in?",
+      "evidence": "Mixing paints is drawing and painting work, which belongs to Art.",
+      "options": [
+        "a) Maths",
+        "b) Art",
+        "c) Arabic"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Matching a subject to what pupils do in it"
+    },
+    {
+      "id": "q10",
+      "number": 10,
+      "format": "multiple-choice",
+      "objective": "number-pattern",
+      "prompt": "10. A pupil writes 23, 24, 25 on the board. Which number comes next?",
+      "evidence": "Counting on one from twenty-five gives twenty-six; twenty-seven would skip a number.",
+      "options": [
+        "a) twenty-six",
+        "b) twenty-seven",
+        "c) thirty-five"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Continuing a number pattern up to fifty"
+    },
+    {
+      "id": "q11",
+      "number": 11,
+      "format": "multiple-choice",
+      "objective": "numerals",
+      "prompt": "11. Which numeral matches the number word forty-nine?",
+      "evidence": "Forty-nine is four tens and nine ones, written 49. 94 is ninety-four.",
+      "options": [
+        "a) 49",
+        "b) 94",
+        "c) 419"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Matching a numeral to its word"
+    },
+    {
+      "id": "q12",
+      "number": 12,
+      "format": "short-answer",
+      "objective": "number-words",
+      "prompt": "12. Write the number word for 30.",
+      "evidence": "The tens words are ten, twenty, thirty, forty, fifty, so 30 is thirty.",
+      "correct": "thirty",
+      "accepted": [
+        "thirty"
+      ],
+      "wrongSample": "thirteen",
+      "objectiveLabel": "Lesson objective: Writing number words"
+    },
+    {
+      "id": "q13",
+      "number": 13,
+      "format": "multiple-choice",
+      "objective": "phonics-oa",
+      "prompt": "13. Which word contains the two letters oa?",
+      "evidence": "Goat is spelled g-o-a-t. Broom has oo and house has ou.",
+      "options": [
+        "a) broom",
+        "b) goat",
+        "c) house"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Recognising the revision letter pairs"
+    },
+    {
+      "id": "q14",
+      "number": 14,
+      "format": "multiple-choice",
+      "objective": "phonics-ou",
+      "prompt": "14. Which word contains the two letters ou?",
+      "evidence": "Mouse is spelled m-o-u-s-e. Meat has ea and coat has oa.",
+      "options": [
+        "a) mouse",
+        "b) meat",
+        "c) coat"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Recognising the revision letter pairs"
+    },
+    {
+      "id": "q15",
+      "number": 15,
+      "format": "short-answer",
+      "objective": "phonics-ea",
+      "prompt": "15. Build the food word: m + ea + t. Write the whole word.",
+      "evidence": "Joining m, ea and t makes meat, the ea word printed in the revision page.",
+      "correct": "meat",
+      "accepted": [
+        "meat"
+      ],
+      "wrongSample": "eat",
+      "objectiveLabel": "Lesson objective: Building words from printed letter pairs"
+    },
+    {
+      "id": "q16",
+      "number": 16,
+      "format": "multiple-choice",
+      "objective": "phonics-oo",
+      "prompt": "16. A broom is used for sweeping the floor. Which letter pair do you hear in the middle of broom?",
+      "evidence": "Broom is spelled b-r-o-o-m, so the middle letters are oo.",
+      "options": [
+        "a) oo",
+        "b) ou",
+        "c) ea"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Recognising the revision letter pairs"
+    },
+    {
+      "id": "q17",
+      "number": 17,
+      "format": "multiple-choice",
+      "objective": "functional-language",
+      "prompt": "17. You want to know which subject your new friend likes best. Which question should you ask?",
+      "evidence": "Only the second question asks about a favourite subject. The others ask about a place and about brothers.",
+      "options": [
+        "a) Where is the laboratory?",
+        "b) What is your favourite subject?",
+        "c) How many brothers have you got?"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Asking about a friend’s school life"
+    },
+    {
+      "id": "q18",
+      "number": 18,
+      "format": "true-false",
+      "objective": "home",
+      "prompt": "18. Choose True or False: a flat is a home where a family can live, and it can be upstairs in a building.",
+      "evidence": "A flat is a set of rooms to live in, and flats are often on an upper floor, so the statement is true.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Talking about where a family lives"
+    },
+    {
+      "id": "q19",
+      "number": 19,
+      "format": "multiple-choice",
+      "objective": "family",
+      "prompt": "19. Huda has got two sisters and one brother. How many brothers has Huda got?",
+      "evidence": "Only the brothers are asked about, and the sentence gives one brother.",
+      "options": [
+        "a) one",
+        "b) two",
+        "c) three"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Talking about brothers and sisters"
+    },
+    {
+      "id": "q20",
+      "number": 20,
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "prompt": "20. Write a sentence beginning with I. Use all four words exactly once: English / got / I / have.",
+      "evidence": "Beginning with I, the order is I + have + got + English, which names a subject the pupil has.",
+      "correct": "I have got English.",
+      "accepted": [
+        "i have got english",
+        "i've got english"
+      ],
+      "wrongSample": "I got have English.",
+      "objectiveLabel": "Lesson objective: Writing a clear English sentence about school"
+    }
+  ]
+}
