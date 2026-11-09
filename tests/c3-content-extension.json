@@ -74,6 +74,10 @@
       {
         "before": "              <a href=\"grade5-unit1-lesson3.html\">Lesson Menu</a>\n",
         "after": "              <a href=\"grade5-unit1-lesson3.html\">Daily Routines</a>\n"
+      },
+      {
+        "before": "          <span class=\"num\">Grade 3</span>\n          <span class=\"badge badge-available\">2 lessons ready</span>",
+        "after": "          <span class=\"num\">Grade 3</span>\n          <span class=\"badge badge-available\">3 lessons ready</span>"
       }
     ],
     "lessons.html": [

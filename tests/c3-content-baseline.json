@@ -1,5 +1,5 @@
 {
-  "note": "C-3 baseline captured from main at 451761991899793097c7bb7156ac2f969a74eaf2 before accessibility edits. Educational text excludes button labels; data hashes protect legacy quiz/recall arrays and modern assessment evidence attributes.",
+  "note": "The recorded index.html educational-text hash matches committed snapshot 01b7e9de75576cb219de0dc5ad2f19e1c88d5955 (PR #57). This identifies a hash-matching snapshot only; the original baseline-generation event and source are unverified. Educational text excludes button labels; data hashes protect legacy quiz/recall arrays and modern assessment evidence attributes.",
   "files": {
     "grade3-unit1-lesson1-pupil-book.html": {
       "text": "c4587d6942b311d31aeecf54fc2fdec46b98917a34dd496bc89d5316e3f4cacd",
