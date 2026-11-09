@@ -1,0 +1,311 @@
+{
+  "lesson": "grade3-unit1-lesson4",
+  "totalQuestions": 20,
+  "objectives": [
+    "adjectives",
+    "body-parts",
+    "can-ability",
+    "number-sequence",
+    "numbers-tens",
+    "permission-request",
+    "phonics-oa",
+    "reading-comprehension",
+    "sense-matching",
+    "sense-verbs",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "number": 1,
+      "format": "multiple-choice",
+      "objective": "body-parts",
+      "prompt": "1. Maya puts on her glasses before she reads a story. Which body part do the glasses help?",
+      "evidence": "Glasses help the eyes. Reading is something we do with our eyes, not with our ears or our hands.",
+      "options": [
+        "a) ears",
+        "b) eyes",
+        "c) hands"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Naming the body parts used for the five senses"
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "format": "multiple-choice",
+      "objective": "sense-verbs",
+      "prompt": "2. Ali holds a bar of soap near his face. He says, “It is like flowers!” Which sense is he using?",
+      "evidence": "Noticing a scent with the nose is the sense of smell. Listening would need a sound, and touching would need his hand.",
+      "options": [
+        "a) smell",
+        "b) hear",
+        "c) touch"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Choosing the sense verb that matches a situation"
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "format": "true-false",
+      "objective": "sense-matching",
+      "prompt": "3. Grandma lifts a warm loaf from the oven and rests her hand on it. Choose True or False: she uses the sense of touch.",
+      "evidence": "Feeling how warm or soft something is uses the hand, so the sense is touch and the statement is true.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Linking an object to the sense used with it"
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "format": "true-false",
+      "objective": "body-parts",
+      "prompt": "4. Choose True or False: we hear with our eyes.",
+      "evidence": "We hear with our ears. Eyes are used for seeing.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Naming the body parts used for the five senses"
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "format": "multiple-choice",
+      "objective": "numbers-tens",
+      "prompt": "5. Sami counts the chairs in the hall: ten, twenty, thirty … What is the next number word?",
+      "evidence": "The tens count goes ten, twenty, thirty, forty, fifty. After thirty comes forty.",
+      "options": [
+        "a) fourteen",
+        "b) forty",
+        "c) five"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Reading and writing the tens numbers"
+    },
+    {
+      "id": "q6",
+      "number": 6,
+      "format": "multiple-choice",
+      "objective": "numbers-tens",
+      "prompt": "6. A sign in the library says there are 50 books on the new shelf. Which word means 50?",
+      "evidence": "Fifty is the number word for 50. Fifteen is 15 and five is 5.",
+      "options": [
+        "a) fifteen",
+        "b) fifty",
+        "c) five"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Reading and writing the tens numbers"
+    },
+    {
+      "id": "q7",
+      "number": 7,
+      "format": "short-answer",
+      "objective": "number-sequence",
+      "prompt": "7. Continue this pattern: twenty, thirty, ______, fifty. Write the missing number word.",
+      "evidence": "The words go up by ten each time, so the word between thirty and fifty is forty.",
+      "correct": "forty",
+      "accepted": [
+        "forty"
+      ],
+      "wrongSample": "thirty",
+      "objectiveLabel": "Lesson objective: Continuing a number pattern"
+    },
+    {
+      "id": "q8",
+      "number": 8,
+      "format": "multiple-choice",
+      "objective": "number-sequence",
+      "prompt": "8. Huda writes 33, 34, 35, 36 on the board. Which number should she write next?",
+      "evidence": "Counting on one from thirty-six gives thirty-seven; thirty-eight would skip a number.",
+      "options": [
+        "a) thirty-eight",
+        "b) thirty-seven",
+        "c) twenty-seven"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Continuing a number pattern"
+    },
+    {
+      "id": "q9",
+      "number": 9,
+      "format": "multiple-choice",
+      "objective": "numbers-tens",
+      "prompt": "9. Which numeral matches the number word forty-five?",
+      "evidence": "Forty-five is written as 45: four tens and five ones. 54 is fifty-four.",
+      "options": [
+        "a) 45",
+        "b) 54",
+        "c) 415"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Matching a numeral to its word"
+    },
+    {
+      "id": "q10",
+      "number": 10,
+      "format": "multiple-choice",
+      "objective": "can-ability",
+      "prompt": "10. A thick wall hides the kite from Rami. Complete his sentence: “I can’t ______ the kite.”",
+      "evidence": "A wall blocks what is in view, so the sense that fails is seeing.",
+      "options": [
+        "a) see",
+        "b) smell",
+        "c) taste"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Using can and can’t about the senses"
+    },
+    {
+      "id": "q11",
+      "number": 11,
+      "format": "multiple-choice",
+      "objective": "permission-request",
+      "prompt": "11. Nour wants to stroke a friendly kitten. Which question asks for permission?",
+      "evidence": "“Can I …?” asks the other person for permission. The other two are statements, not questions.",
+      "options": [
+        "a) You can touch it.",
+        "b) Can I touch it?",
+        "c) I can touch it."
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Asking for permission politely"
+    },
+    {
+      "id": "q12",
+      "number": 12,
+      "format": "true-false",
+      "objective": "permission-request",
+      "prompt": "12. Choose True or False: the polite answer to “Can I touch it?” is “Yes, you can.”",
+      "evidence": "“Yes, you can.” gives the permission that was asked for, and it changes I to you.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Asking for permission politely"
+    },
+    {
+      "id": "q13",
+      "number": 13,
+      "format": "multiple-choice",
+      "objective": "adjectives",
+      "prompt": "13. Omar tastes his mother’s soup and wants to say it is very good to eat. Which word fits?",
+      "evidence": "Delicious describes food that tastes very good. Colourful is about colours and soft is about touch.",
+      "options": [
+        "a) delicious",
+        "b) colourful",
+        "c) soft"
+      ],
+      "correct": 0,
+      "objectiveLabel": "Lesson objective: Using describing words from the lesson"
+    },
+    {
+      "id": "q14",
+      "number": 14,
+      "format": "multiple-choice",
+      "objective": "adjectives",
+      "prompt": "14. Sara holds a young kitten. It fits in one hand and feels gentle. Complete: “The kitten is ______ and soft.”",
+      "evidence": "A kitten that fits in one hand is small; small pairs naturally with soft.",
+      "options": [
+        "a) tall",
+        "b) small",
+        "c) loud"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Using describing words from the lesson"
+    },
+    {
+      "id": "q15",
+      "number": 15,
+      "format": "short-answer",
+      "objective": "phonics-oa",
+      "prompt": "15. Build the animal word from the lesson: g + oa + t. Write the whole word.",
+      "evidence": "Joining g, oa and t makes goat, one of the two printed oa words.",
+      "correct": "goat",
+      "accepted": [
+        "goat"
+      ],
+      "wrongSample": "got",
+      "objectiveLabel": "Lesson objective: Recognising and building the oa words"
+    },
+    {
+      "id": "q16",
+      "number": 16,
+      "format": "short-answer",
+      "objective": "phonics-oa",
+      "prompt": "16. Write the word for the warm thing you wear outside: c + oa + t.",
+      "evidence": "Joining c, oa and t makes coat, the other printed oa word.",
+      "correct": "coat",
+      "accepted": [
+        "coat"
+      ],
+      "wrongSample": "cot",
+      "objectiveLabel": "Lesson objective: Recognising and building the oa words"
+    },
+    {
+      "id": "q17",
+      "number": 17,
+      "format": "multiple-choice",
+      "objective": "phonics-oa",
+      "prompt": "17. Which of these words contains the two letters oa?",
+      "evidence": "Goat is spelled g-o-a-t, so the letters oa are inside it. Gate and gift have no o.",
+      "options": [
+        "a) gate",
+        "b) goat",
+        "c) gift"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Recognising and building the oa words"
+    },
+    {
+      "id": "q18",
+      "number": 18,
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "prompt": "18. Read Layla’s walk. Which sense does Layla use at the roses?",
+      "evidence": "The text says she enjoys their sweet smell, and it says she does not touch them.",
+      "options": [
+        "a) touch",
+        "b) smell",
+        "c) taste"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Reading an unseen description of a senses walk"
+    },
+    {
+      "id": "q19",
+      "number": 19,
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "prompt": "19. Read Layla’s walk again. Choose True or False: Layla touches the roses.",
+      "evidence": "The last sentence says she does not touch the roses because of the sharp thorns.",
+      "options": [
+        "a) True",
+        "b) False"
+      ],
+      "correct": 1,
+      "objectiveLabel": "Lesson objective: Reading an unseen description of a senses walk"
+    },
+    {
+      "id": "q20",
+      "number": 20,
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "prompt": "20. Write a sentence beginning with I. Use all four words exactly once: can / smell / flowers / I.",
+      "evidence": "Beginning with I, the order is I + can + smell + flowers, which states an ability with the sense of smell.",
+      "correct": "I can smell flowers.",
+      "accepted": [
+        "i can smell flowers"
+      ],
+      "wrongSample": "I can hear flowers.",
+      "objectiveLabel": "Lesson objective: Writing a clear English sentence"
+    }
+  ]
+}

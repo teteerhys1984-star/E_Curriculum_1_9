@@ -464,6 +464,8 @@ const teacherCounts = {
   'grade3-unit1-lesson1': '3 · 1 Back to School',
   'grade3-unit1-lesson2': '3 · 2 School Subjects',
   'grade3-unit1-lesson3': '3 · 3 My Lovely School',
+  'grade3-unit1-lesson4': '3 · 4 My Five Senses',
+  'grade3-unit1-lesson5': '3 · 5 Revision 1',
   'grade4-unit1-lesson1': '4 · 1 Nice to Meet You',
   'grade4-unit1-lesson2': '4 · 2 My Family',
   'grade5-unit1-lesson1': '5 · 1 At School',
@@ -488,7 +490,7 @@ const matrixRows = new Map(
     Array.from(match[2].matchAll(/<td>([\s\S]*?)<\/td>/g), cell => cell[1].replace(/<[^>]+>/g, '').trim())
   ])
 );
-assert.equal(matrixRows.size, 10, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
+assert.equal(matrixRows.size, 12, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
 
 for (const [slug, label] of Object.entries(teacherCounts)) {
   for (const suffix of ['', '-pupil-book', '-workbook', '-vocabulary', '-test']) {
@@ -505,11 +507,11 @@ for (const [slug, label] of Object.entries(teacherCounts)) {
   assert.equal(cells[4], 'None', `${label}: listening key must be reported as unavailable`);
 }
 assert.match(matrixRows.get('4 · 1 Nice to Meet You')[1], /Not published/, 'Grade 4 Lesson 1 must be listed as having no answer key');
-for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '8 · 1 Future Plans', '8 · 2 School Challenges']) {
+for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '8 · 1 Future Plans', '8 · 2 School Challenges']) {
   assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
 }
 
-const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2'];
+const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade3-unit1-lesson4', 'grade3-unit1-lesson5', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2'];
 for (const slug of anchoredKeys) {
   assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
   const testHtml = read(`${slug}-test.html`);

@@ -1,0 +1,320 @@
+{
+  "lesson": "grade3-unit1-lesson4",
+  "sourceImages": [
+    {
+      "file": "assets/grade3-unit1-lesson4/source/pupil-book-page-12.png",
+      "sha256": "1e95a860de54d046c86fa36b875ef54105c006893fd1ceb9b6c1c57489afbf3d",
+      "size": [
+        703,
+        1030
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson4/source/pupil-book-page-13.png",
+      "sha256": "313d2e4a81efea9b646e4857f533f83a8d8769042a5205698aa9884363af9d40",
+      "size": [
+        709,
+        1018
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson4/source/pupil-book-page-14.png",
+      "sha256": "90e6217d22f8526cbb8ce66f425d45c1e1e6b0971372e6be6d93686b56bc4e0e",
+      "size": [
+        724,
+        1042
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson4/source/workbook-page-12.png",
+      "sha256": "82b925d33bcfe88e714e8ccd0d39533d5cf07ec02f25e61cc22b44f129fd5c05",
+      "size": [
+        718,
+        1045
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson4/source/workbook-page-13.png",
+      "sha256": "4eb789f15effec5d2dc5e2e7e79a5b292bec0ea693e2cd17e9d7a473bcb29cf7",
+      "size": [
+        697,
+        1018
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson4/source/workbook-page-14.png",
+      "sha256": "f410f7d2a54f798faf3dd230c4c227269bcadfe37a1530f95abe8f127140e12e",
+      "size": [
+        706,
+        1000
+      ]
+    }
+  ],
+  "cropCount": 27,
+  "printed": {
+    "pb1-1": "Let's buy some cakes. They smell nice.",
+    "pb1-2": "The cakes taste delicious. I like chocolate cakes.",
+    "pb1-3": "I can see a colourful butterfly. Wow! It looks beautiful.",
+    "pb1-4": "Can you hear the birds? Yes, I can. But I can't see them.",
+    "pb1-5": "It's a lovely cat. Can I touch it? Yes, you can.",
+    "pb1-6": "It's small and soft. I like cats.",
+    "pb2": "hear taste see smell touch",
+    "pb5": "I have two eyes, so I can see. And a nose to smell. I have ten fingers, that can touch. They do it very well! I have two ears, so I can hear. The birds up in the trees.",
+    "wb1-s1": "1- n....s.... \u2026",
+    "wb1-s2": "2- ....y.... \u2026",
+    "wb1-s3": "3- e....r \u2026",
+    "wb1-s4": "4- m......th \u2026",
+    "wb1-s5": "5- h....n.... \u2026",
+    "wb2-bank": "see smell hear taste touch",
+    "wb2-s1": "1- I can \u2026 with my ears.",
+    "wb2-s2": "2- I can \u2026 with my eyes.",
+    "wb2-s3": "3- I can \u2026 with my hands.",
+    "wb2-s4": "4- I can \u2026 with my mouth.",
+    "wb2-s5": "5- I can \u2026 with my nose.",
+    "wb3-1": "1- The cakes (touch , taste) delicious.",
+    "wb3-2": "2- The flowers (smell , see) nice.",
+    "wb3-3": "3- I can't ( hear , touch ) the sky.",
+    "wb3-4": "4- I can (see , smell) the moon.",
+    "wb4-a": "a-",
+    "wb4-b": "b-",
+    "wb4-c": "c-",
+    "wb5-r1c1": "thirty-one",
+    "wb5-r1c2": "thirty-two",
+    "wb5-r1c5": "thirty-five",
+    "wb5-r2c1": "thirty-seven",
+    "wb5-r2c4": "forty",
+    "wb5-r3c1": "forty-three",
+    "wb5-r3c2": "forty-four",
+    "wb5-r3c4": "forty-six",
+    "wb5-r3c6": "forty-eight",
+    "wb5-r4c1": "forty-nine",
+    "wb5-r4c2": "fifty",
+    "wb6-1": "1- I can see a car.",
+    "wb6-s2": "2- \u2026.",
+    "wb6-s3": "3- \u2026.",
+    "wb6-s4": "4- \u2026."
+  },
+  "instructions": {
+    "pb-1": "1. Listen and read.",
+    "pb-2": "2. Let\u2019s learn!",
+    "pb-3": "3. Listen and repeat.",
+    "pb-4": "4. Listen and tick \u2713.",
+    "pb-5": "5. Listen and sing.",
+    "pb-6": "6. Listen to the following sounds and words, then repeat them.",
+    "wb-1": "1. Look and complete.",
+    "wb-2": "2. Fill in the spaces.",
+    "wb-3": "3. Read and circle.",
+    "wb-4": "4. Listen and circle the number you hear.",
+    "wb-5": "5. Write the missing numbers.",
+    "wb-6": "6. Look and write."
+  },
+  "vocabulary": [
+    {
+      "english": "eye",
+      "arabic": "\u0639\u064a\u0646"
+    },
+    {
+      "english": "nose",
+      "arabic": "\u0623\u0646\u0641"
+    },
+    {
+      "english": "ear",
+      "arabic": "\u0623\u0630\u0646"
+    },
+    {
+      "english": "mouth",
+      "arabic": "\u0641\u0645"
+    },
+    {
+      "english": "hand",
+      "arabic": "\u064a\u062f"
+    },
+    {
+      "english": "fingers \u00b7 ten fingers",
+      "arabic": "\u0623\u0635\u0627\u0628\u0639 \u00b7 \u0639\u0634\u0631\u0629 \u0623\u0635\u0627\u0628\u0639"
+    },
+    {
+      "english": "see",
+      "arabic": "\u064a\u0631\u0649"
+    },
+    {
+      "english": "hear",
+      "arabic": "\u064a\u0633\u0645\u0639"
+    },
+    {
+      "english": "smell",
+      "arabic": "\u064a\u0634\u0645\u0651"
+    },
+    {
+      "english": "taste",
+      "arabic": "\u064a\u062a\u0630\u0648\u0651\u0642"
+    },
+    {
+      "english": "touch",
+      "arabic": "\u064a\u0644\u0645\u0633"
+    },
+    {
+      "english": "sense",
+      "arabic": "\u062d\u0627\u0633\u0651\u0629"
+    },
+    {
+      "english": "ten \u00b7 10",
+      "arabic": "\u0639\u0634\u0631\u0629"
+    },
+    {
+      "english": "twenty \u00b7 20",
+      "arabic": "\u0639\u0634\u0631\u0648\u0646"
+    },
+    {
+      "english": "thirty \u00b7 30",
+      "arabic": "\u062b\u0644\u0627\u062b\u0648\u0646"
+    },
+    {
+      "english": "forty \u00b7 40",
+      "arabic": "\u0623\u0631\u0628\u0639\u0648\u0646"
+    },
+    {
+      "english": "fifty \u00b7 50",
+      "arabic": "\u062e\u0645\u0633\u0648\u0646"
+    },
+    {
+      "english": "thirty-one \u2026 thirty-nine",
+      "arabic": "\u0645\u0646 \u0648\u0627\u062d\u062f \u0648\u062b\u0644\u0627\u062b\u064a\u0646 \u0625\u0644\u0649 \u062a\u0633\u0639\u0629 \u0648\u062b\u0644\u0627\u062b\u064a\u0646"
+    },
+    {
+      "english": "forty-one \u2026 forty-nine",
+      "arabic": "\u0645\u0646 \u0648\u0627\u062d\u062f \u0648\u0623\u0631\u0628\u0639\u064a\u0646 \u0625\u0644\u0649 \u062a\u0633\u0639\u0629 \u0648\u0623\u0631\u0628\u0639\u064a\u0646"
+    },
+    {
+      "english": "21 \u00b7 24 \u00b7 28 \u00b7 29",
+      "arabic": "\u0648\u0627\u062d\u062f \u0648\u0639\u0634\u0631\u0648\u0646 \u0648\u0647\u0643\u0630\u0627"
+    },
+    {
+      "english": "32 \u00b7 35 \u00b7 38 \u00b7 39",
+      "arabic": "\u0627\u062b\u0646\u0627\u0646 \u0648\u062b\u0644\u0627\u062b\u0648\u0646 \u0648\u0647\u0643\u0630\u0627"
+    },
+    {
+      "english": "40 \u00b7 45 \u00b7 42 \u00b7 48",
+      "arabic": "\u0623\u0631\u0628\u0639\u0648\u0646 \u0648\u0647\u0643\u0630\u0627"
+    },
+    {
+      "english": "nice",
+      "arabic": "\u0644\u0637\u064a\u0641"
+    },
+    {
+      "english": "delicious",
+      "arabic": "\u0644\u0630\u064a\u0630"
+    },
+    {
+      "english": "colourful",
+      "arabic": "\u0645\u0644\u0648\u0651\u0646"
+    },
+    {
+      "english": "beautiful",
+      "arabic": "\u062c\u0645\u064a\u0644"
+    },
+    {
+      "english": "lovely",
+      "arabic": "\u062c\u0645\u064a\u0644 / \u0645\u062d\u0628\u0648\u0628"
+    },
+    {
+      "english": "small",
+      "arabic": "\u0635\u063a\u064a\u0631"
+    },
+    {
+      "english": "soft",
+      "arabic": "\u0646\u0627\u0639\u0645"
+    },
+    {
+      "english": "cake \u00b7 cakes",
+      "arabic": "\u0643\u0639\u0643\u0629 \u00b7 \u0643\u0639\u0643\u0627\u062a"
+    },
+    {
+      "english": "chocolate",
+      "arabic": "\u0634\u0648\u0643\u0648\u0644\u0627\u062a\u0629"
+    },
+    {
+      "english": "butterfly",
+      "arabic": "\u0641\u0631\u0627\u0634\u0629"
+    },
+    {
+      "english": "bird \u00b7 birds",
+      "arabic": "\u0637\u0627\u0626\u0631 \u00b7 \u0637\u064a\u0648\u0631"
+    },
+    {
+      "english": "tree \u00b7 trees",
+      "arabic": "\u0634\u062c\u0631\u0629 \u00b7 \u0623\u0634\u062c\u0627\u0631"
+    },
+    {
+      "english": "cat \u00b7 cats",
+      "arabic": "\u0642\u0637\u0629 \u00b7 \u0642\u0637\u0637"
+    },
+    {
+      "english": "flower \u00b7 flowers",
+      "arabic": "\u0632\u0647\u0631\u0629 \u00b7 \u0623\u0632\u0647\u0627\u0631"
+    },
+    {
+      "english": "apple",
+      "arabic": "\u062a\u0641\u0627\u062d\u0629"
+    },
+    {
+      "english": "telephone",
+      "arabic": "\u0647\u0627\u062a\u0641"
+    },
+    {
+      "english": "rose",
+      "arabic": "\u0648\u0631\u062f\u0629"
+    },
+    {
+      "english": "orange",
+      "arabic": "\u0628\u0631\u062a\u0642\u0627\u0644\u0629"
+    },
+    {
+      "english": "rabbit",
+      "arabic": "\u0623\u0631\u0646\u0628"
+    },
+    {
+      "english": "car",
+      "arabic": "\u0633\u064a\u0627\u0631\u0629"
+    },
+    {
+      "english": "coat",
+      "arabic": "\u0645\u0639\u0637\u0641"
+    },
+    {
+      "english": "goat",
+      "arabic": "\u0639\u0646\u0632\u0629"
+    },
+    {
+      "english": "moon",
+      "arabic": "\u0642\u0645\u0631"
+    },
+    {
+      "english": "sky",
+      "arabic": "\u0633\u0645\u0627\u0621"
+    }
+  ],
+  "responseControls": {
+    "pupil-book": {
+      "text": 13,
+      "select": 0,
+      "checkbox": 25,
+      "canvas": 1,
+      "radio": 0
+    },
+    "workbook": {
+      "text": 22,
+      "select": 0,
+      "checkbox": 0,
+      "canvas": 0,
+      "radio": 20
+    },
+    "test": {
+      "text": 4,
+      "select": 0,
+      "checkbox": 0,
+      "canvas": 0,
+      "radio": 44
+    }
+  }
+}

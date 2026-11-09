@@ -1,0 +1,339 @@
+{
+  "lesson": "grade3-unit1-lesson5",
+  "sourceImages": [
+    {
+      "file": "assets/grade3-unit1-lesson5/source/pupil-book-page-15.png",
+      "sha256": "bc0116abacc4d3c8672fea584098c0281546bcda4486b1c84798938e88567145",
+      "size": [
+        733,
+        1015
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson5/source/pupil-book-page-16.png",
+      "sha256": "dd1466863af04e6e4a4b57071e0728b7323bb928c9f2a04de5280276f28bed83",
+      "size": [
+        753,
+        1062
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson5/source/pupil-book-page-17.png",
+      "sha256": "4c9dc95e61897bdc91a71040154041988ff4320376a2a5840d47d8559a188c63",
+      "size": [
+        729,
+        1003
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson5/source/workbook-page-15.png",
+      "sha256": "02678220ba7c4e3352b1bd13e4b2b1f68bfdb5e847d067cdc2b9de60a3109865",
+      "size": [
+        750,
+        1033
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson5/source/workbook-page-16.png",
+      "sha256": "8abd4adb26b6768400b71db08e8c7837bf00763df2f799bd0db4c770b5a95351",
+      "size": [
+        768,
+        1008
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson5/source/workbook-page-17.png",
+      "sha256": "cfea9b1d0b923c653aae1fcfd5404e07a5584ccdbe850186c750d00e8679e998",
+      "size": [
+        714,
+        1036
+      ]
+    }
+  ],
+  "cropCount": 19,
+  "printed": {
+    "pb1-labels": "Classroom Classroom Laboratory Library SCHOOL",
+    "pb1-1": "1- The classrooms are downstairs.",
+    "pb1-2": "2- The pupils are playing basketball.",
+    "pb1-3": "3- The teacher is in the classroom.",
+    "pb1-4": "4- The library is on the right of the laboratory.",
+    "pb1-5": "5- The laboratory is upstairs.",
+    "pb2-brothers": "2",
+    "pb4-lines": "1- That is the playground. - I (play , swim) with my friends here. 2- This is the laboratory. - We have (Sports , Science) here. 3- This is the library. - We (read , sing) here.",
+    "pb4-1": "1- I (play , swim) with my friends here.",
+    "pb4-2": "2- We have (Sports , Science) here.",
+    "pb4-3": "3- We (read , sing) here.",
+    "pb5": "Choose one of the five senses and make your own flower.",
+    "wb1-1": "1- I can see twenty flowers.",
+    "wb1-2": "2- We've got Sports today.",
+    "wb1-3": "3- She's got two brothers.",
+    "wb1-4": "4- Science is my favourite subject.",
+    "wb1-5": "5- I live with my parents in a flat.",
+    "wb2-1": "1- Science Maths gym EnglishPrinted answer in the book: gym is circled because the other three are school subjects.",
+    "wb2-2": "2- twenty-three Arabic thirty twenty-nine",
+    "wb2-3": "3- eye nose ear cake",
+    "wb2-4": "4- computer classroom library laboratory",
+    "wb3-1": "1-",
+    "wb3-2": "2-",
+    "wb3-3": "3-",
+    "wb3-4": "4-",
+    "wb5-s1": "1- I've got \u2026 (a science flask) and \u2026 (a treble clef) on Sunday.",
+    "wb5-s2": "2- We've got \u2026 (a keyboard marked EN) and \u2026 (a badge with maths signs) on Monday.",
+    "wb5-s3": "3- My favourite subject is \u2026 (an artist\u2019s palette) .",
+    "wb5-s4": "4- I've got \u2026 (a pencil) and \u2026 today.",
+    "wb6-broom": "broom picture \u00b7 \u2026 \u2026 t",
+    "wb6-house": "house picture \u00b7 g \u2026 \u2026 tThe printed example line joins ou to h.o..u..se; the word beside the house picture is the one printed as g \u2026 \u2026 t.",
+    "wb6-goat": "goat picture \u00b7 br \u2026 \u2026 m",
+    "wb6-eat": "boy eating picture \u00b7 h.o. .u. se"
+  },
+  "instructions": {
+    "pb-1": "1. Look, read then Tick \u2713 or cross \u2717.",
+    "pb-2": "2. Listen then complete the table.",
+    "pb-3": "3. Listen and tick \u2713.",
+    "pb-4": "4. Read, match then circle.",
+    "pb-5": "Project.",
+    "wb-1": "1. Read and match.",
+    "wb-2": "2. Odd one out.",
+    "wb-3": "3. Listen and tick (\u2713).",
+    "wb-4": "4. Complete and say.",
+    "wb-5": "5. Write.",
+    "wb-6": "6. Look, match then write."
+  },
+  "vocabulary": [
+    {
+      "english": "school",
+      "arabic": "\u0645\u062f\u0631\u0633\u0629"
+    },
+    {
+      "english": "classroom",
+      "arabic": "\u0635\u0641 \u062f\u0631\u0627\u0633\u064a"
+    },
+    {
+      "english": "laboratory",
+      "arabic": "\u0645\u062e\u062a\u0628\u0631"
+    },
+    {
+      "english": "library",
+      "arabic": "\u0645\u0643\u062a\u0628\u0629"
+    },
+    {
+      "english": "playground",
+      "arabic": "\u0633\u0627\u062d\u0629 \u0627\u0644\u0644\u0639\u0628"
+    },
+    {
+      "english": "gym",
+      "arabic": "\u0635\u0627\u0644\u0629 \u0631\u064a\u0627\u0636\u064a\u0629"
+    },
+    {
+      "english": "computer",
+      "arabic": "\u062d\u0627\u0633\u0648\u0628"
+    },
+    {
+      "english": "teacher",
+      "arabic": "\u0645\u0639\u0644\u0651\u0645 / \u0645\u0639\u0644\u0651\u0645\u0629"
+    },
+    {
+      "english": "pupil \u00b7 pupils",
+      "arabic": "\u062a\u0644\u0645\u064a\u0630 \u00b7 \u062a\u0644\u0627\u0645\u064a\u0630"
+    },
+    {
+      "english": "basketball",
+      "arabic": "\u0643\u0631\u0629 \u0627\u0644\u0633\u0644\u0629"
+    },
+    {
+      "english": "upstairs",
+      "arabic": "\u0641\u064a \u0627\u0644\u0637\u0627\u0628\u0642 \u0627\u0644\u0639\u0644\u0648\u064a"
+    },
+    {
+      "english": "downstairs",
+      "arabic": "\u0641\u064a \u0627\u0644\u0637\u0627\u0628\u0642 \u0627\u0644\u0633\u0641\u0644\u064a"
+    },
+    {
+      "english": "on the right of",
+      "arabic": "\u0639\u0644\u0649 \u064a\u0645\u064a\u0646"
+    },
+    {
+      "english": "Science",
+      "arabic": "\u0627\u0644\u0639\u0644\u0648\u0645"
+    },
+    {
+      "english": "Maths",
+      "arabic": "\u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0627\u062a"
+    },
+    {
+      "english": "English",
+      "arabic": "\u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629"
+    },
+    {
+      "english": "Arabic",
+      "arabic": "\u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629"
+    },
+    {
+      "english": "Sports",
+      "arabic": "\u0627\u0644\u062a\u0631\u0628\u064a\u0629 \u0627\u0644\u0631\u064a\u0627\u0636\u064a\u0629"
+    },
+    {
+      "english": "Art",
+      "arabic": "\u0627\u0644\u0641\u0646\u0648\u0646"
+    },
+    {
+      "english": "Music",
+      "arabic": "\u0627\u0644\u0645\u0648\u0633\u064a\u0642\u0649"
+    },
+    {
+      "english": "favourite subject",
+      "arabic": "\u0627\u0644\u0645\u0627\u062f\u0629 \u0627\u0644\u0645\u0641\u0636\u0644\u0629"
+    },
+    {
+      "english": "twenty \u00b7 20",
+      "arabic": "\u0639\u0634\u0631\u0648\u0646"
+    },
+    {
+      "english": "twenty-three \u00b7 23",
+      "arabic": "\u062b\u0644\u0627\u062b\u0629 \u0648\u0639\u0634\u0631\u0648\u0646"
+    },
+    {
+      "english": "twenty-nine \u00b7 29",
+      "arabic": "\u062a\u0633\u0639\u0629 \u0648\u0639\u0634\u0631\u0648\u0646"
+    },
+    {
+      "english": "thirty \u00b7 30",
+      "arabic": "\u062b\u0644\u0627\u062b\u0648\u0646"
+    },
+    {
+      "english": "forty \u00b7 40",
+      "arabic": "\u0623\u0631\u0628\u0639\u0648\u0646"
+    },
+    {
+      "english": "forty-nine \u00b7 49",
+      "arabic": "\u062a\u0633\u0639\u0629 \u0648\u0623\u0631\u0628\u0639\u0648\u0646"
+    },
+    {
+      "english": "fifty \u00b7 50",
+      "arabic": "\u062e\u0645\u0633\u0648\u0646"
+    },
+    {
+      "english": "brothers",
+      "arabic": "\u0625\u062e\u0648\u0629"
+    },
+    {
+      "english": "sisters",
+      "arabic": "\u0623\u062e\u0648\u0627\u062a"
+    },
+    {
+      "english": "parents",
+      "arabic": "\u0627\u0644\u0648\u0627\u0644\u062f\u0627\u0646"
+    },
+    {
+      "english": "flat",
+      "arabic": "\u0634\u0642\u0629"
+    },
+    {
+      "english": "live with",
+      "arabic": "\u064a\u0639\u064a\u0634 \u0645\u0639"
+    },
+    {
+      "english": "house",
+      "arabic": "\u0645\u0646\u0632\u0644"
+    },
+    {
+      "english": "eye",
+      "arabic": "\u0639\u064a\u0646"
+    },
+    {
+      "english": "nose",
+      "arabic": "\u0623\u0646\u0641"
+    },
+    {
+      "english": "ear",
+      "arabic": "\u0623\u0630\u0646"
+    },
+    {
+      "english": "cake",
+      "arabic": "\u0643\u0639\u0643\u0629"
+    },
+    {
+      "english": "flowers",
+      "arabic": "\u0623\u0632\u0647\u0627\u0631"
+    },
+    {
+      "english": "read",
+      "arabic": "\u064a\u0642\u0631\u0623"
+    },
+    {
+      "english": "play",
+      "arabic": "\u064a\u0644\u0639\u0628"
+    },
+    {
+      "english": "sing",
+      "arabic": "\u064a\u063a\u0646\u0651\u064a"
+    },
+    {
+      "english": "swim",
+      "arabic": "\u064a\u0633\u0628\u062d"
+    },
+    {
+      "english": "draw",
+      "arabic": "\u064a\u0631\u0633\u0645"
+    },
+    {
+      "english": "broom",
+      "arabic": "\u0645\u0643\u0646\u0633\u0629"
+    },
+    {
+      "english": "house",
+      "arabic": "\u0645\u0646\u0632\u0644"
+    },
+    {
+      "english": "mouse",
+      "arabic": "\u0641\u0623\u0631"
+    },
+    {
+      "english": "goat",
+      "arabic": "\u0639\u0646\u0632\u0629"
+    },
+    {
+      "english": "coat",
+      "arabic": "\u0645\u0639\u0637\u0641"
+    },
+    {
+      "english": "foot",
+      "arabic": "\u0642\u062f\u0645"
+    },
+    {
+      "english": "meat",
+      "arabic": "\u0644\u062d\u0645"
+    },
+    {
+      "english": "bed",
+      "arabic": "\u0633\u0631\u064a\u0631"
+    },
+    {
+      "english": "ball",
+      "arabic": "\u0643\u0631\u0629"
+    }
+  ],
+  "responseControls": {
+    "pupil-book": {
+      "text": 8,
+      "select": 0,
+      "checkbox": 8,
+      "canvas": 1,
+      "radio": 21
+    },
+    "workbook": {
+      "text": 10,
+      "select": 5,
+      "checkbox": 0,
+      "canvas": 0,
+      "radio": 36
+    },
+    "test": {
+      "text": 4,
+      "select": 0,
+      "checkbox": 0,
+      "canvas": 0,
+      "radio": 44
+    }
+  }
+}

@@ -40,7 +40,7 @@ for (const file of files) {
   if (section === 'menu') {
     assert.ok(!html.includes('lesson-content-navigation.js') && !html.includes('lesson-navigation.js'), 'menu must not gain an empty step navigator');
     assert.ok(html.includes('href="grade3-unit1-lesson2.html"'), 'menu links to the previous published lesson');
-    assert.match(html, /Next lesson · not yet published/, 'menu does not invent an unavailable next lesson');
+    assert.ok(html.includes('href="grade3-unit1-lesson4.html"'), 'menu links to the next published lesson, Lesson 4');
   } else {
     for (const script of [`${slug}.js`, 'lesson-navigation.js', 'lesson-content-navigation.js']) {
       assert.equal((html.match(new RegExp(`src="${script.replace('.', '\\.')}"`, 'g')) || []).length, 1, `${file}: one ${script}`);
@@ -177,7 +177,7 @@ for (const stimulus of stimuli) {
 pass('Original-question independence', 'No prompt or test stimulus contains a seven-word sequence from the authoritative textbook inventory; new room rows, floor list, count table and passage are used');
 
 assert.ok(read('platform-shell.js').includes(`'${slug}': { grade: 3, unit: 1, lesson: 3, title: 'My Lovely School'`));
-assert.match(read('lessons.html'), /const preparedCounts = \{ 3: 3,/);
+assert.match(read('lessons.html'), /const preparedCounts = \{ 3: [3-9],/);
 assert.ok(read('lessons.html').includes(`href="${slug}.html"`));
 assert.ok(read('round-tests.html').includes(`href: '${slug}-test.html'`));
 for (const file of files) {
