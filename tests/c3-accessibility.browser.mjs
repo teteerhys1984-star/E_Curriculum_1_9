@@ -261,6 +261,8 @@ try {
       { file: 'grade5-unit1-lesson1-test.html', password: '#teacher-password', unlock: '#verify-password', panel: '#answer-key' },
       { file: 'grade5-unit1-lesson2-test.html', password: '#pw', unlock: '#unlock', panel: '#key' },
       { file: 'grade5-unit1-lesson3-test.html', password: '#teacher-password', unlock: '#unlock-key', panel: '#answer-key', lock: '#lock-key' },
+      { file: 'grade5-unit1-lesson4-test.html', password: '#teacher-password', unlock: '#unlock-key', panel: '#answer-key', lock: '#lock-key' },
+      { file: 'grade5-unit1-lesson5-test.html', password: '#teacher-password', unlock: '#unlock-key', panel: '#answer-key', lock: '#lock-key' },
       { file: 'grade8-unit1-lesson1-test.html', password: '#pw', unlock: '#unlock', panel: '#key' }
     ];
     for (const item of keyedTests) {

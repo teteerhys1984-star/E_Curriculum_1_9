@@ -331,9 +331,9 @@ try {
       wrapped: Boolean(document.querySelector('.table-scroll')?.classList.contains('table-scroll'))
     };
   });
-  assert.equal(matrix.rows.length, 12, 'the matrix must list all twelve prepared lessons');
+  assert.equal(matrix.rows.length, 14, 'the matrix must list all fourteen prepared lessons');
   assert.deepEqual(matrix.headers, ['Grade · Lesson', 'Test items', 'Answer-key area', 'Book reveals', 'Workbook reveals', 'Listening key']);
-  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 12, 'every lesson must report no listening key');
+  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 14, 'every lesson must report no listening key');
   assert.equal(matrix.rows.filter(row => /^Not published$/.test(row.cells[1])).length, 1, 'exactly one lesson has no published key');
   assert.match(matrix.rows.find(row => row.label.startsWith('4 · 1')).cells[1], /Not published/);
 

@@ -1,0 +1,174 @@
+{
+  "note": "Derived crops for lessons pages. Source PNGs in source/ are unmodified originals; every crop is a plain -crop of the source file named in \"source\".",
+  "lesson": "grade5-unit1-lesson4",
+  "crops": [
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/pb12-pic-1-flowers.png",
+      "source": "assets/grade5-unit1-lesson4/source/pupil-book-page-12.png",
+      "sourceUpload": "image-1",
+      "sourceSha256": "5cecfc250cdfe63fde92ab47544a1c391802cc2fbd8278b24891df2ae9c40eef",
+      "crop": {
+        "width": 132,
+        "height": 145,
+        "x": 60,
+        "y": 430
+      },
+      "sha256": "7155eca48bc390b5943c356dc83ebf549e2902309dc21c1f03270d6f2b00d63a",
+      "bytes": 20117
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/pb12-pic-2-house.png",
+      "source": "assets/grade5-unit1-lesson4/source/pupil-book-page-12.png",
+      "sourceUpload": "image-1",
+      "sourceSha256": "5cecfc250cdfe63fde92ab47544a1c391802cc2fbd8278b24891df2ae9c40eef",
+      "crop": {
+        "width": 132,
+        "height": 145,
+        "x": 200,
+        "y": 430
+      },
+      "sha256": "bdbc0593bb8b98ef2eba5697c74242db8bf7619a66501a30ef559c1545cf4ef4",
+      "bytes": 25759
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/pb12-pic-3-radio.png",
+      "source": "assets/grade5-unit1-lesson4/source/pupil-book-page-12.png",
+      "sourceUpload": "image-1",
+      "sourceSha256": "5cecfc250cdfe63fde92ab47544a1c391802cc2fbd8278b24891df2ae9c40eef",
+      "crop": {
+        "width": 132,
+        "height": 145,
+        "x": 342,
+        "y": 430
+      },
+      "sha256": "16a6d8dc22000176f1b70e9a3a73860650bb9d5e807693afe9df0d5519f073bc",
+      "bytes": 17702
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/pb12-pic-4-icecream.png",
+      "source": "assets/grade5-unit1-lesson4/source/pupil-book-page-12.png",
+      "sourceUpload": "image-1",
+      "sourceSha256": "5cecfc250cdfe63fde92ab47544a1c391802cc2fbd8278b24891df2ae9c40eef",
+      "crop": {
+        "width": 132,
+        "height": 145,
+        "x": 482,
+        "y": 430
+      },
+      "sha256": "2f6784d4afac17310b9d4119f497e83f13243abd2163c828952c8b70fdcced3c",
+      "bytes": 19157
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/pb12-pic-5-pencil.png",
+      "source": "assets/grade5-unit1-lesson4/source/pupil-book-page-12.png",
+      "sourceUpload": "image-1",
+      "sourceSha256": "5cecfc250cdfe63fde92ab47544a1c391802cc2fbd8278b24891df2ae9c40eef",
+      "crop": {
+        "width": 132,
+        "height": 145,
+        "x": 622,
+        "y": 430
+      },
+      "sha256": "4242d026b11fd5e68e5fc3f8d8b0fa74463150795e4f676e4d4789e5ccc7fe01",
+      "bytes": 14251
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/pb12-ask-children.png",
+      "source": "assets/grade5-unit1-lesson4/source/pupil-book-page-12.png",
+      "sourceUpload": "image-1",
+      "sourceSha256": "5cecfc250cdfe63fde92ab47544a1c391802cc2fbd8278b24891df2ae9c40eef",
+      "crop": {
+        "width": 608,
+        "height": 148,
+        "x": 100,
+        "y": 620
+      },
+      "sha256": "54184b6f3bc203d011f148caa352b249a717184ef64b4d4fd05808bba74b12de",
+      "bytes": 81719
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/pb13-sense-cards.png",
+      "source": "assets/grade5-unit1-lesson4/source/pupil-book-page-13.png",
+      "sourceUpload": "image-2",
+      "sourceSha256": "2de87d8f76cca2a4a4a868918e93769c9a97baff739791264941be92e69df6a6",
+      "crop": {
+        "width": 705,
+        "height": 125,
+        "x": 14,
+        "y": 105
+      },
+      "sha256": "51047a51579aab1880f8c154c197ab82292c02c712fb979def0e7056d487031e",
+      "bytes": 112382
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/pb14-five-senses.png",
+      "source": "assets/grade5-unit1-lesson4/source/pupil-book-page-14.png",
+      "sourceUpload": "image-3",
+      "sourceSha256": "18112e3024f829670914e06697a2203c96992e4a3bbec5f9861976813b3c81a5",
+      "crop": {
+        "width": 302,
+        "height": 245,
+        "x": 418,
+        "y": 652
+      },
+      "sha256": "8b722c85f90d9bd30b41222ad68d37ffc49e9b44699070a74314ce7fdd640485",
+      "bytes": 84574
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/wb16-pic-1-lemon.png",
+      "source": "assets/grade5-unit1-lesson4/source/workbook-page-16.png",
+      "sourceUpload": "image-6",
+      "sourceSha256": "45211c948eb69f12ce4b156f6234e7711150ea41a0b95fccb0f3afa996c04441",
+      "crop": {
+        "width": 140,
+        "height": 150,
+        "x": 80,
+        "y": 95
+      },
+      "sha256": "6614a9b5999ed257f744b7d55cf4ebe9338829087701ad2026085825b8534838",
+      "bytes": 13144
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/wb16-pic-2-rabbit.png",
+      "source": "assets/grade5-unit1-lesson4/source/workbook-page-16.png",
+      "sourceUpload": "image-6",
+      "sourceSha256": "45211c948eb69f12ce4b156f6234e7711150ea41a0b95fccb0f3afa996c04441",
+      "crop": {
+        "width": 115,
+        "height": 150,
+        "x": 250,
+        "y": 95
+      },
+      "sha256": "8ba94f65972f78d26d1040d3c091f4503cff09d2e007b00076764c17a1a1e2ca",
+      "bytes": 15366
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/wb16-pic-3-glass.png",
+      "source": "assets/grade5-unit1-lesson4/source/workbook-page-16.png",
+      "sourceUpload": "image-6",
+      "sourceSha256": "45211c948eb69f12ce4b156f6234e7711150ea41a0b95fccb0f3afa996c04441",
+      "crop": {
+        "width": 95,
+        "height": 150,
+        "x": 375,
+        "y": 95
+      },
+      "sha256": "f15148f0679e9fa81eaec815ef95b1cf133bee9882b5dfa53062f66348f35d84",
+      "bytes": 14112
+    },
+    {
+      "file": "assets/grade5-unit1-lesson4/crops/wb16-pic-4-pizza.png",
+      "source": "assets/grade5-unit1-lesson4/source/workbook-page-16.png",
+      "sourceUpload": "image-6",
+      "sourceSha256": "45211c948eb69f12ce4b156f6234e7711150ea41a0b95fccb0f3afa996c04441",
+      "crop": {
+        "width": 185,
+        "height": 150,
+        "x": 500,
+        "y": 95
+      },
+      "sha256": "2562f6f4f03e321f826270bd3b260c941e445f7d118701552d5e8fb934c2c38a",
+      "bytes": 12763
+    }
+  ]
+}

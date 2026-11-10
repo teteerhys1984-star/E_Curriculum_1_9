@@ -346,6 +346,128 @@
       "result": "#score",
       "reset": "#reset-test",
       "sourceFixture": "tests/grade3-unit1-lesson3.quiz.json"
+    },
+    {
+      "file": "grade5-unit1-lesson4-test.html",
+      "kind": "modern",
+      "totalQuestions": 18,
+      "objectiveTotal": 18,
+      "optionCount": 3,
+      "optionCounts": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        3,
+        3,
+        3,
+        0,
+        0
+      ],
+      "correct": [
+        "1",
+        "0",
+        "2",
+        "1",
+        "0",
+        "2",
+        "1",
+        "0",
+        "2",
+        "1",
+        "0",
+        "1",
+        "1",
+        "0",
+        "1",
+        "2",
+        "How does the stone feel?",
+        "taste"
+      ],
+      "writtenQuestions": {
+        "q17": {
+          "correct": "How does the stone feel?",
+          "wrong": "How do the stone feel?"
+        },
+        "q18": {
+          "correct": "taste",
+          "wrong": "tastes"
+        }
+      },
+      "submit": "#check-answers",
+      "result": "#score",
+      "reset": "#reset-test",
+      "sourceFixture": "tests/grade5-unit1-lesson4.quiz.json"
+    },
+    {
+      "file": "grade5-unit1-lesson5-test.html",
+      "kind": "modern",
+      "totalQuestions": 18,
+      "objectiveTotal": 18,
+      "optionCount": 3,
+      "optionCounts": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2,
+        3,
+        0,
+        3,
+        0
+      ],
+      "correct": [
+        "1",
+        "0",
+        "1",
+        "2",
+        "0",
+        "2",
+        "0",
+        "2",
+        "0",
+        "1",
+        "2",
+        "0",
+        "0",
+        "0",
+        "1",
+        "4000 SP",
+        "1",
+        "She is wearing a floral dress."
+      ],
+      "writtenQuestions": {
+        "q16": {
+          "correct": "4000 SP",
+          "wrong": "3000 SP"
+        },
+        "q18": {
+          "correct": "She is wearing a floral dress.",
+          "wrong": "She wearing a floral dress."
+        }
+      },
+      "submit": "#check-answers",
+      "result": "#score",
+      "reset": "#reset-test",
+      "sourceFixture": "tests/grade5-unit1-lesson5.quiz.json"
     }
   ]
 }
