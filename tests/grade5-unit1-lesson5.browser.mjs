@@ -315,7 +315,12 @@ try {
 
   // Reset clears DOM, feedback, score, badges and localStorage.
   await page.locator('#reset-test').click();
-  await page.waitForFunction(() => document.querySelectorAll('#quiz input:checked').length === 0);
+  // Wait for the whole reset state, not just the cleared inputs: the shared step navigator
+  // must also have dropped every answered badge.
+  await page.waitForFunction(() =>
+    document.querySelectorAll('#quiz input:checked').length === 0 &&
+    Array.from(document.querySelectorAll('#quiz input[type="text"]')).every(input => input.value === '') &&
+    document.querySelectorAll('.content-nav-links button.is-answered').length === 0);
   const resetState = await page.evaluate(prefix => ({
     checked: document.querySelectorAll('#quiz input:checked').length,
     written: Array.from(document.querySelectorAll('#quiz input[type="text"]')).every(input => input.value === ''),
@@ -325,6 +330,7 @@ try {
   assert.deepEqual(resetState, { checked: 0, written: true, answeredSteps: 0, stored: null }, 'Reset clears choices, written inputs, badges and saved state');
   assert.equal(await page.locator('.feedback').filter({ hasText: /Correct|Not correct|No answer/ }).count(), 0, 'Resetting clears every feedback line');
   assert.equal((await page.locator('#score').innerText()).trim(), '', 'Resetting clears the score');
+  assert.equal(await page.locator('#answer-key').isVisible(), false, 'Resetting keeps the teacher key closed');
 
   // Retry after reset scores cleanly, then reset again.
   await fillTestAnswers(correctAnswerMap);

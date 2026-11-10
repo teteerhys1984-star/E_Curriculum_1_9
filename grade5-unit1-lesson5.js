@@ -362,6 +362,11 @@
       });
       clearScore();
       closeKey('The test was reset and the answer key was closed.');
+      // The shared step navigator refreshes its answered badges from a 0 ms timer after a
+      // reset, so a reader that looks between the synchronous clearing above and that timer
+      // still sees stale badges. Announce the cleared state in the same task so the reset is
+      // deterministic: no badge, score or feedback survives the click by even one tick.
+      quiz.dispatchEvent(new Event('change', { bubbles: true }));
     });
 
     quiz.addEventListener('submit', event => {
