@@ -1,24 +1,58 @@
 {
   "policy": "Explicit, reviewed extension of the immutable C-3 content baseline. Original baseline hashes are never rewritten.",
   "pages": [
-    "grade3-unit1-lesson3.html",
     "grade3-unit1-lesson3-pupil-book.html",
-    "grade3-unit1-lesson3-workbook.html",
-    "grade3-unit1-lesson3-vocabulary.html",
     "grade3-unit1-lesson3-test.html",
-    "grade3-unit1-lesson4.html",
+    "grade3-unit1-lesson3-vocabulary.html",
+    "grade3-unit1-lesson3-workbook.html",
+    "grade3-unit1-lesson3.html",
     "grade3-unit1-lesson4-pupil-book.html",
-    "grade3-unit1-lesson4-workbook.html",
-    "grade3-unit1-lesson4-vocabulary.html",
     "grade3-unit1-lesson4-test.html",
-    "grade3-unit1-lesson5.html",
+    "grade3-unit1-lesson4-vocabulary.html",
+    "grade3-unit1-lesson4-workbook.html",
+    "grade3-unit1-lesson4.html",
     "grade3-unit1-lesson5-pupil-book.html",
-    "grade3-unit1-lesson5-workbook.html",
+    "grade3-unit1-lesson5-test.html",
     "grade3-unit1-lesson5-vocabulary.html",
-    "grade3-unit1-lesson5-test.html"
+    "grade3-unit1-lesson5-workbook.html",
+    "grade3-unit1-lesson5.html",
+    "grade5-unit1-lesson4-pupil-book.html",
+    "grade5-unit1-lesson4-test.html",
+    "grade5-unit1-lesson4-vocabulary.html",
+    "grade5-unit1-lesson4-workbook.html",
+    "grade5-unit1-lesson4.html",
+    "grade5-unit1-lesson5-pupil-book.html",
+    "grade5-unit1-lesson5-test.html",
+    "grade5-unit1-lesson5-vocabulary.html",
+    "grade5-unit1-lesson5-workbook.html",
+    "grade5-unit1-lesson5.html"
   ],
   "integrationEdits": {
     "index.html": [
+      {
+        "before": "              <a href=\"grade5-unit1-lesson3-test.html\">Lesson Test</a>\n            </div>\n          </div>\n",
+        "after": "              <a href=\"grade5-unit1-lesson3-test.html\">Lesson Test</a>\n            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 4 \u00b7 The Five Senses</strong>\n              <span>Pupil\u2019s Book pp. 12\u201314 \u00b7 Workbook pp. 14\u201316 \u00b7 Vocabulary \u00b7 18-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade5-unit1-lesson4.html\">The Five Senses</a>\n              <a href=\"grade5-unit1-lesson4-pupil-book.html\">Pupil\u2019s Book</a>\n              <a href=\"grade5-unit1-lesson4-workbook.html\">Workbook</a>\n              <a href=\"grade5-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade5-unit1-lesson4-test.html\">Lesson Test</a>\n            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 5 \u00b7 Clothes</strong>\n              <span>Pupil\u2019s Book pp. 15\u201320 \u00b7 Workbook pp. 17\u201321 \u00b7 Vocabulary \u00b7 18-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade5-unit1-lesson5.html\">Clothes</a>\n              <a href=\"grade5-unit1-lesson5-pupil-book.html\">Pupil\u2019s Book</a>\n              <a href=\"grade5-unit1-lesson5-workbook.html\">Workbook</a>\n              <a href=\"grade5-unit1-lesson5-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade5-unit1-lesson5-test.html\">Lesson Test</a>\n            </div>\n          </div>\n"
+      },
+      {
+        "before": "The teacher portal collects the twelve prepared lessons, the answer-key areas published on eleven lesson tests, and",
+        "after": "The teacher portal collects the fourteen prepared lessons, the answer-key areas published on thirteen lesson tests, and"
+      },
+      {
+        "before": "<span class=\"badge badge-available\">12 verified lessons \u00b7 60 pages</span>",
+        "after": "<span class=\"badge badge-available\">14 verified lessons \u00b7 70 pages</span>"
+      },
+      {
+        "before": "<p>Unit 1 Lessons 1\u20133 ready: <em>At School</em>, <em>Family</em> and <em>Daily Routines</em>.</p>",
+        "after": "<p>Unit 1 Lessons 1\u20135 ready: <em>At School</em>, <em>Family</em>, <em>Daily Routines</em>, <em>The Five Senses</em> and <em>Clothes</em>.</p>"
+      },
+      {
+        "before": "<span class=\"num\">Grade 5</span>\n          <span class=\"badge badge-available\">3 lessons ready</span>",
+        "after": "<span class=\"num\">Grade 5</span>\n          <span class=\"badge badge-available\">5 lessons ready</span>"
+      },
+      {
+        "before": "<div class=\"stat\"><b>12</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b>60</b><span>Verified lesson pages</span></div>",
+        "after": "<div class=\"stat\"><b>14</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b>70</b><span>Verified lesson pages</span></div>"
+      },
       {
         "before": "            <div class=\"stat\"><b>10</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b>50</b><span>Verified lesson pages</span></div>\n",
         "after": "            <div class=\"stat\"><b>12</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b>60</b><span>Verified lesson pages</span></div>\n"
@@ -28,16 +62,16 @@
         "after": "          <span class=\"badge badge-available\">5 lessons ready</span>\n"
       },
       {
-        "before": "          <p>Unit 1 Lessons 1–3 ready: <em>Back to School</em>, <em>School Subjects</em> and <em>My Lovely School</em>.</p>\n",
-        "after": "          <p>Unit 1 Lessons 1–5 ready: <em>Back to School</em>, <em>School Subjects</em>, <em>My Lovely School</em>, <em>My Five Senses</em> and <em>Revision 1</em>.</p>\n"
+        "before": "          <p>Unit 1 Lessons 1\u20133 ready: <em>Back to School</em>, <em>School Subjects</em> and <em>My Lovely School</em>.</p>\n",
+        "after": "          <p>Unit 1 Lessons 1\u20135 ready: <em>Back to School</em>, <em>School Subjects</em>, <em>My Lovely School</em>, <em>My Five Senses</em> and <em>Revision 1</em>.</p>\n"
       },
       {
-        "before": "      <span class=\"badge badge-available\">10 verified lessons · 50 pages</span>\n",
-        "after": "      <span class=\"badge badge-available\">12 verified lessons · 60 pages</span>\n"
+        "before": "      <span class=\"badge badge-available\">10 verified lessons \u00b7 50 pages</span>\n",
+        "after": "      <span class=\"badge badge-available\">12 verified lessons \u00b7 60 pages</span>\n"
       },
       {
         "before": "",
-        "after": "            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 4 · My Five Senses</strong>\n              <span>Pupil’s Book pp. 12–14 · Workbook pp. 12–14 · Vocabulary · 20-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson4.html\">Lesson Menu</a>\n              <a href=\"grade3-unit1-lesson4-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade3-unit1-lesson4-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson4-test.html\">Lesson Test</a>\n            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 5 · Revision 1</strong>\n              <span>Pupil’s Book pp. 15–17 · Workbook pp. 15–17 · Vocabulary · 20-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson5.html\">Lesson Menu</a>\n              <a href=\"grade3-unit1-lesson5-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade3-unit1-lesson5-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson5-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson5-test.html\">Lesson Test</a>\n"
+        "after": "            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 4 \u00b7 My Five Senses</strong>\n              <span>Pupil\u2019s Book pp. 12\u201314 \u00b7 Workbook pp. 12\u201314 \u00b7 Vocabulary \u00b7 20-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson4.html\">Lesson Menu</a>\n              <a href=\"grade3-unit1-lesson4-pupil-book.html\">Pupil\u2019s Book</a>\n              <a href=\"grade3-unit1-lesson4-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson4-test.html\">Lesson Test</a>\n            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 5 \u00b7 Revision 1</strong>\n              <span>Pupil\u2019s Book pp. 15\u201317 \u00b7 Workbook pp. 15\u201317 \u00b7 Vocabulary \u00b7 20-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson5.html\">Lesson Menu</a>\n              <a href=\"grade3-unit1-lesson5-pupil-book.html\">Pupil\u2019s Book</a>\n              <a href=\"grade3-unit1-lesson5-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson5-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson5-test.html\">Lesson Test</a>\n"
       },
       {
         "before": "        The teacher portal collects the ten prepared lessons, the answer-key areas published on nine lesson tests, and\n",
@@ -53,15 +87,15 @@
       },
       {
         "before": "          <p>Unit 1 Lessons 1 &amp; 2 ready: <em>Back to School</em> and <em>School Subjects</em>.</p>\n",
-        "after": "          <p>Unit 1 Lessons 1–3 ready: <em>Back to School</em>, <em>School Subjects</em> and <em>My Lovely School</em>.</p>\n"
+        "after": "          <p>Unit 1 Lessons 1\u20133 ready: <em>Back to School</em>, <em>School Subjects</em> and <em>My Lovely School</em>.</p>\n"
       },
       {
-        "before": "      <span class=\"badge badge-available\">7 verified lessons · 35 pages</span>\n",
-        "after": "      <span class=\"badge badge-available\">10 verified lessons · 50 pages</span>\n"
+        "before": "      <span class=\"badge badge-available\">7 verified lessons \u00b7 35 pages</span>\n",
+        "after": "      <span class=\"badge badge-available\">10 verified lessons \u00b7 50 pages</span>\n"
       },
       {
         "before": "",
-        "after": "            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 3 · My Lovely School</strong>\n              <span>Pupil’s Book pp. 9–11 · Workbook pp. 9–11 · Vocabulary · 20-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson3.html\">Lesson Menu</a>\n              <a href=\"grade3-unit1-lesson3-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade3-unit1-lesson3-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson3-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson3-test.html\">Lesson Test</a>\n"
+        "after": "            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 3 \u00b7 My Lovely School</strong>\n              <span>Pupil\u2019s Book pp. 9\u201311 \u00b7 Workbook pp. 9\u201311 \u00b7 Vocabulary \u00b7 20-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson3.html\">Lesson Menu</a>\n              <a href=\"grade3-unit1-lesson3-pupil-book.html\">Pupil\u2019s Book</a>\n              <a href=\"grade3-unit1-lesson3-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson3-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson3-test.html\">Lesson Test</a>\n"
       },
       {
         "before": "        The teacher portal collects the seven prepared lessons, the answer-key areas published on six lesson tests, and\n",
@@ -69,7 +103,7 @@
       },
       {
         "before": "          <p>Unit 1 Lessons 1 &amp; 2 ready: <em>At School</em> and <em>Family</em>.</p>\n",
-        "after": "          <p>Unit 1 Lessons 1–3 ready: <em>At School</em>, <em>Family</em> and <em>Daily Routines</em>.</p>\n"
+        "after": "          <p>Unit 1 Lessons 1\u20133 ready: <em>At School</em>, <em>Family</em> and <em>Daily Routines</em>.</p>\n"
       },
       {
         "before": "              <a href=\"grade5-unit1-lesson3.html\">Lesson Menu</a>\n",
@@ -82,36 +116,60 @@
     ],
     "lessons.html": [
       {
+        "before": "\n      : '';\n    document.getElementById('lesson-list').innerHTML",
+        "after": "\n      : grade===5?'<a class=\"lesson\" href=\"grade5-unit1-lesson5.html\"><div><span class=\"badge badge-available\">Available \u00b7 Unit 1</span><strong>Lesson 5 \u00b7 Clothes</strong><small>Pupil\u2019s Book (pp. 15\u201320) \u00b7 Workbook (pp. 17\u201321) \u00b7 Vocabulary \u00b7 18-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">\u2192</span></a>'\n      : '';\n    document.getElementById('lesson-list').innerHTML"
+      },
+      {
+        "before": "\n      : '';\n    const lesson5",
+        "after": "\n      : grade===5?'<a class=\"lesson\" href=\"grade5-unit1-lesson4.html\"><div><span class=\"badge badge-available\">Available \u00b7 Unit 1</span><strong>Lesson 4 \u00b7 The Five Senses</strong><small>Pupil\u2019s Book (pp. 12\u201314) \u00b7 Workbook (pp. 14\u201316) \u00b7 Vocabulary \u00b7 18-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">\u2192</span></a>'\n      : '';\n    const lesson5"
+      },
+      {
+        "before": "const preparedCounts = { 3: 5, 4: 2, 5: 3, 8: 2 };",
+        "after": "const preparedCounts = { 3: 5, 4: 2, 5: 5, 8: 2 };"
+      },
+      {
         "before": "    const preparedCounts = { 3: 3, 4: 2, 5: 3, 8: 2 };\n",
         "after": "    const preparedCounts = { 3: 5, 4: 2, 5: 3, 8: 2 };\n"
       },
       {
         "before": "    document.getElementById('lesson-list').innerHTML = lesson1 + lesson2 + lesson3;\n",
-        "after": "    const lesson4 = grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson4.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 4 · My Five Senses</strong><small>Pupil’s Book (pp. 12–14) · Workbook (pp. 12–14) · Vocabulary · 20-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n      : '';\n    const lesson5 = grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson5.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 5 · Revision 1</strong><small>Pupil’s Book (pp. 15–17) · Workbook (pp. 15–17) · Vocabulary · 20-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n      : '';\n    document.getElementById('lesson-list').innerHTML = lesson1 + lesson2 + lesson3 + lesson4 + lesson5;\n"
+        "after": "    const lesson4 = grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson4.html\"><div><span class=\"badge badge-available\">Available \u00b7 Unit 1</span><strong>Lesson 4 \u00b7 My Five Senses</strong><small>Pupil\u2019s Book (pp. 12\u201314) \u00b7 Workbook (pp. 12\u201314) \u00b7 Vocabulary \u00b7 20-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">\u2192</span></a>'\n      : '';\n    const lesson5 = grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson5.html\"><div><span class=\"badge badge-available\">Available \u00b7 Unit 1</span><strong>Lesson 5 \u00b7 Revision 1</strong><small>Pupil\u2019s Book (pp. 15\u201317) \u00b7 Workbook (pp. 15\u201317) \u00b7 Vocabulary \u00b7 20-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">\u2192</span></a>'\n      : '';\n    document.getElementById('lesson-list').innerHTML = lesson1 + lesson2 + lesson3 + lesson4 + lesson5;\n"
       },
       {
         "before": "    const preparedCounts = { 3: 2, 4: 2, 5: 3, 8: 2 };\n",
         "after": "    const preparedCounts = { 3: 3, 4: 2, 5: 3, 8: 2 };\n"
       },
       {
-        "before": "    const lesson3 = grade===5?'<a class=\"lesson\" href=\"grade5-unit1-lesson3.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 3 · Daily Routines</strong><small>Pupil’s Book (pp. 9–11) · Workbook (pp. 11–13) · Vocabulary · 18-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n",
-        "after": "    const lesson3 = grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson3.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 3 · My Lovely School</strong><small>Pupil’s Book (pp. 9–11) · Workbook (pp. 9–11) · Vocabulary · 20-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n      : grade===5?'<a class=\"lesson\" href=\"grade5-unit1-lesson3.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 3 · Daily Routines</strong><small>Pupil’s Book (pp. 9–11) · Workbook (pp. 11–13) · Vocabulary · 18-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n"
+        "before": "    const lesson3 = grade===5?'<a class=\"lesson\" href=\"grade5-unit1-lesson3.html\"><div><span class=\"badge badge-available\">Available \u00b7 Unit 1</span><strong>Lesson 3 \u00b7 Daily Routines</strong><small>Pupil\u2019s Book (pp. 9\u201311) \u00b7 Workbook (pp. 11\u201313) \u00b7 Vocabulary \u00b7 18-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">\u2192</span></a>'\n",
+        "after": "    const lesson3 = grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson3.html\"><div><span class=\"badge badge-available\">Available \u00b7 Unit 1</span><strong>Lesson 3 \u00b7 My Lovely School</strong><small>Pupil\u2019s Book (pp. 9\u201311) \u00b7 Workbook (pp. 9\u201311) \u00b7 Vocabulary \u00b7 20-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">\u2192</span></a>'\n      : grade===5?'<a class=\"lesson\" href=\"grade5-unit1-lesson3.html\"><div><span class=\"badge badge-available\">Available \u00b7 Unit 1</span><strong>Lesson 3 \u00b7 Daily Routines</strong><small>Pupil\u2019s Book (pp. 9\u201311) \u00b7 Workbook (pp. 11\u201313) \u00b7 Vocabulary \u00b7 18-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">\u2192</span></a>'\n"
       }
     ],
     "round-tests.html": [
       {
-        "before": "        { label: 'Lesson 3 Test · My Lovely School', href: 'grade3-unit1-lesson3-test.html' }\n",
-        "after": "        { label: 'Lesson 3 Test · My Lovely School', href: 'grade3-unit1-lesson3-test.html' },\n        { label: 'Lesson 4 Test · My Five Senses', href: 'grade3-unit1-lesson4-test.html' },\n        { label: 'Lesson 5 Test · Revision 1', href: 'grade3-unit1-lesson5-test.html' }\n"
+        "before": "        { label: 'Lesson 3 Test \u00b7 Daily Routines', href: 'grade5-unit1-lesson3-test.html' }\n",
+        "after": "        { label: 'Lesson 3 Test \u00b7 Daily Routines', href: 'grade5-unit1-lesson3-test.html' },\n        { label: 'Lesson 4 Test \u00b7 The Five Senses', href: 'grade5-unit1-lesson4-test.html' },\n        { label: 'Lesson 5 Test \u00b7 Clothes', href: 'grade5-unit1-lesson5-test.html' }\n"
       },
       {
-        "before": "        { label: 'Lesson 2 Test · School Subjects', href: 'grade3-unit1-lesson2-test.html' }\n",
-        "after": "        { label: 'Lesson 2 Test · School Subjects', href: 'grade3-unit1-lesson2-test.html' },\n        { label: 'Lesson 3 Test · My Lovely School', href: 'grade3-unit1-lesson3-test.html' }\n"
+        "before": "        { label: 'Lesson 3 Test \u00b7 My Lovely School', href: 'grade3-unit1-lesson3-test.html' }\n",
+        "after": "        { label: 'Lesson 3 Test \u00b7 My Lovely School', href: 'grade3-unit1-lesson3-test.html' },\n        { label: 'Lesson 4 Test \u00b7 My Five Senses', href: 'grade3-unit1-lesson4-test.html' },\n        { label: 'Lesson 5 Test \u00b7 Revision 1', href: 'grade3-unit1-lesson5-test.html' }\n"
+      },
+      {
+        "before": "        { label: 'Lesson 2 Test \u00b7 School Subjects', href: 'grade3-unit1-lesson2-test.html' }\n",
+        "after": "        { label: 'Lesson 2 Test \u00b7 School Subjects', href: 'grade3-unit1-lesson2-test.html' },\n        { label: 'Lesson 3 Test \u00b7 My Lovely School', href: 'grade3-unit1-lesson3-test.html' }\n"
       }
     ],
     "teacher.html": [
       {
-        "before": "            in this repository: ten prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil’s or Student’s\n",
-        "after": "            in this repository: twelve prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil’s or Student’s\n"
+        "before": "The answer-key areas on eleven lesson tests ask for a single",
+        "after": "The answer-key areas on thirteen lesson tests ask for a single"
+      },
+      {
+        "before": "in this repository: twelve prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil\u2019s or Student\u2019s",
+        "after": "in this repository: fourteen prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil\u2019s or Student\u2019s"
+      },
+      {
+        "before": "            in this repository: ten prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil\u2019s or Student\u2019s\n",
+        "after": "            in this repository: twelve prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil\u2019s or Student\u2019s\n"
       },
       {
         "before": "            <div class=\"stat\"><b>10</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b>50</b><span>Verified lesson pages</span></div>\n            <div class=\"stat\"><b>9</b><span>Answer-key areas</span></div>\n",
@@ -122,8 +180,8 @@
         "after": "        <strong>Not secure authentication.</strong> The answer-key areas on eleven lesson tests ask for a single\n"
       },
       {
-        "before": "            in this repository: seven prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil’s or Student’s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on six of those tests.\n",
-        "after": "            in this repository: ten prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil’s or Student’s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on nine of those tests.\n"
+        "before": "            in this repository: seven prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil\u2019s or Student\u2019s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on six of those tests.\n",
+        "after": "            in this repository: ten prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil\u2019s or Student\u2019s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on nine of those tests.\n"
       },
       {
         "before": "            <div class=\"stat\"><b>7</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b>35</b><span>Verified lesson pages</span></div>\n            <div class=\"stat\"><b>6</b><span>Answer-key areas</span></div>\n",
@@ -144,6 +202,26 @@
     ],
     "teacher-resources.html": [
       {
+        "before": "            <th scope=\"row\">5 \u00b7 3 Daily Routines</th>\n            <td>18</td>\n            <td>Published (deep-linked gate)</td>\n            <td>8</td>\n            <td>7</td>\n            <td>None</td>\n          </tr>\n",
+        "after": "            <th scope=\"row\">5 \u00b7 3 Daily Routines</th>\n            <td>18</td>\n            <td>Published (deep-linked gate)</td>\n            <td>8</td>\n            <td>7</td>\n            <td>None</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">5 \u00b7 4 The Five Senses</th>\n            <td>18</td>\n            <td>Published (deep-linked gate)</td>\n            <td>7</td>\n            <td>8</td>\n            <td>None</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">5 \u00b7 5 Clothes</th>\n            <td>18</td>\n            <td>Published (deep-linked gate)</td>\n            <td>9</td>\n            <td>6</td>\n            <td>None</td>\n          </tr>\n"
+      },
+      {
+        "before": "              <a href=\"grade5-unit1-lesson3-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n",
+        "after": "              <a href=\"grade5-unit1-lesson3-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 4 \u00b7 The Five Senses</strong>\n              <span>Pupil\u2019s Book pp. 12\u201314 \u00b7 Workbook pp. 14\u201316 \u00b7 18-question test \u00b7 answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade5-unit1-lesson4.html\">Lesson menu</a>\n              <a href=\"grade5-unit1-lesson4-pupil-book.html\">Pupil\u2019s Book</a>\n              <a href=\"grade5-unit1-lesson4-workbook.html\">Workbook</a>\n              <a href=\"grade5-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade5-unit1-lesson4-test.html\">Lesson Test</a>\n              <a href=\"grade5-unit1-lesson4-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">\n            Key type: a published key written for the 18 independent test items aligned with Lesson 4\u2019s learning\n            objectives, with the objective and explanation for each item. In-page reveals: 7 on the Pupil\u2019s Book page\n            and 8 on the Workbook page (three of them show a listening status rather than an answer).\n          </p>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 5 \u00b7 Clothes</strong>\n              <span>Pupil\u2019s Book pp. 15\u201320 \u00b7 Workbook pp. 17\u201321 \u00b7 18-question test \u00b7 answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade5-unit1-lesson5.html\">Lesson menu</a>\n              <a href=\"grade5-unit1-lesson5-pupil-book.html\">Pupil\u2019s Book</a>\n              <a href=\"grade5-unit1-lesson5-workbook.html\">Workbook</a>\n              <a href=\"grade5-unit1-lesson5-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade5-unit1-lesson5-test.html\">Lesson Test</a>\n              <a href=\"grade5-unit1-lesson5-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">\n            Key type: a published key written for the 18 independent test items aligned with Lesson 5\u2019s learning\n            objectives, with the objective and explanation for each item. In-page reveals: 9 on the Pupil\u2019s Book page\n            and 6 on the Workbook page (three of them show a listening status rather than an answer).\n          </p>\n"
+      },
+      {
+        "before": "<span class=\"badge badge-available\">12 lessons \u00b7 60 pages</span>",
+        "after": "<span class=\"badge badge-available\">14 lessons \u00b7 70 pages</span>"
+      },
+      {
+        "before": "Answer-key areas sit inside eleven lesson tests and are hidden behind one shared classroom password typed into the",
+        "after": "Answer-key areas sit inside thirteen lesson tests and are hidden behind one shared classroom password typed into the"
+      },
+      {
+        "before": "Twelve prepared Unit 1 lessons across Grades 3, 4, 5 and 8, each with its book, Workbook, Vocabulary and",
+        "after": "Fourteen prepared Unit 1 lessons across Grades 3, 4, 5 and 8, each with its book, Workbook, Vocabulary and"
+      },
+      {
         "before": "        Ten prepared Unit 1 lessons across Grades 3, 4, 5 and 8, each with its book, Workbook, Vocabulary and\n",
         "after": "        Twelve prepared Unit 1 lessons across Grades 3, 4, 5 and 8, each with its book, Workbook, Vocabulary and\n"
       },
@@ -152,20 +230,20 @@
         "after": "        Answer-key areas sit inside eleven lesson tests and are hidden behind one shared classroom password typed into the\n"
       },
       {
-        "before": "      <span class=\"badge badge-available\">10 lessons · 50 pages</span>\n",
-        "after": "      <span class=\"badge badge-available\">12 lessons · 60 pages</span>\n"
+        "before": "      <span class=\"badge badge-available\">10 lessons \u00b7 50 pages</span>\n",
+        "after": "      <span class=\"badge badge-available\">12 lessons \u00b7 60 pages</span>\n"
       },
       {
         "before": "        </div>\n",
-        "after": "          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 4 · My Five Senses</strong>\n              <span>Pupil’s Book pp. 12–14 · Workbook pp. 12–14 · 20-question independent test · answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson4.html\">Lesson menu</a>\n              <a href=\"grade3-unit1-lesson4-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade3-unit1-lesson4-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson4-test.html\">Lesson Test</a>\n              <a href=\"grade3-unit1-lesson4-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">\n            Key type: 20 independent items with objective and explanation. In-page answer reveals: 3 on the Pupil’s Book\n            page and 5 on the Workbook page. The listening tick grid and the listening number exercise have no key because their recording is unavailable.\n          </p>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 5 · Revision 1</strong>\n              <span>Pupil’s Book pp. 15–17 · Workbook pp. 15–17 · 20-question independent test · answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson5.html\">Lesson menu</a>\n              <a href=\"grade3-unit1-lesson5-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade3-unit1-lesson5-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson5-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson5-test.html\">Lesson Test</a>\n              <a href=\"grade3-unit1-lesson5-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">\n            Key type: 20 independent items with objective and explanation. In-page answer reveals: 2 on the Pupil’s Book\n            page and 4 on the Workbook page. The listening table, the phonics ticks and the listening pairs have no key because their recording is unavailable.\n          </p>\n</div>\n"
+        "after": "          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 4 \u00b7 My Five Senses</strong>\n              <span>Pupil\u2019s Book pp. 12\u201314 \u00b7 Workbook pp. 12\u201314 \u00b7 20-question independent test \u00b7 answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson4.html\">Lesson menu</a>\n              <a href=\"grade3-unit1-lesson4-pupil-book.html\">Pupil\u2019s Book</a>\n              <a href=\"grade3-unit1-lesson4-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson4-test.html\">Lesson Test</a>\n              <a href=\"grade3-unit1-lesson4-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">\n            Key type: 20 independent items with objective and explanation. In-page answer reveals: 3 on the Pupil\u2019s Book\n            page and 5 on the Workbook page. The listening tick grid and the listening number exercise have no key because their recording is unavailable.\n          </p>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 5 \u00b7 Revision 1</strong>\n              <span>Pupil\u2019s Book pp. 15\u201317 \u00b7 Workbook pp. 15\u201317 \u00b7 20-question independent test \u00b7 answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson5.html\">Lesson menu</a>\n              <a href=\"grade3-unit1-lesson5-pupil-book.html\">Pupil\u2019s Book</a>\n              <a href=\"grade3-unit1-lesson5-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson5-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson5-test.html\">Lesson Test</a>\n              <a href=\"grade3-unit1-lesson5-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">\n            Key type: 20 independent items with objective and explanation. In-page answer reveals: 2 on the Pupil\u2019s Book\n            page and 4 on the Workbook page. The listening table, the phonics ticks and the listening pairs have no key because their recording is unavailable.\n          </p>\n</div>\n"
       },
       {
         "before": "",
-        "after": "          <p class=\"source-note\">\n            Key type: 20 independent items with objective and explanation. In-page answer reveals: 2 on the Pupil’s Book\n            page and 4 on the Workbook page. The listening table, the phonics ticks and the listening pairs have no key\n            because their recording is unavailable.\n          </p>\n"
+        "after": "          <p class=\"source-note\">\n            Key type: 20 independent items with objective and explanation. In-page answer reveals: 2 on the Pupil\u2019s Book\n            page and 4 on the Workbook page. The listening table, the phonics ticks and the listening pairs have no key\n            because their recording is unavailable.\n          </p>\n"
       },
       {
         "before": "",
-        "after": "            <th scope=\"row\">3 · 4 My Five Senses</th>\n            <td>20</td>\n            <td>Published (independent test)</td>\n            <td>3</td>\n            <td>5</td>\n            <td>None</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">3 · 5 Revision 1</th>\n            <td>20</td>\n            <td>Published (independent test)</td>\n            <td>2</td>\n            <td>4</td>\n            <td>None</td>\n          </tr>\n          <tr>\n"
+        "after": "            <th scope=\"row\">3 \u00b7 4 My Five Senses</th>\n            <td>20</td>\n            <td>Published (independent test)</td>\n            <td>3</td>\n            <td>5</td>\n            <td>None</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">3 \u00b7 5 Revision 1</th>\n            <td>20</td>\n            <td>Published (independent test)</td>\n            <td>2</td>\n            <td>4</td>\n            <td>None</td>\n          </tr>\n          <tr>\n"
       },
       {
         "before": "        Seven prepared Unit 1 lessons across Grades 3, 4, 5 and 8, each with its book, Workbook, Vocabulary and\n",
@@ -176,16 +254,16 @@
         "after": "        Answer-key areas sit inside nine lesson tests and are hidden behind one shared classroom password typed into the\n"
       },
       {
-        "before": "      <span class=\"badge badge-available\">8 lessons · 40 pages</span>\n",
-        "after": "      <span class=\"badge badge-available\">10 lessons · 50 pages</span>\n"
+        "before": "      <span class=\"badge badge-available\">8 lessons \u00b7 40 pages</span>\n",
+        "after": "      <span class=\"badge badge-available\">10 lessons \u00b7 50 pages</span>\n"
       },
       {
         "before": "",
-        "after": "          </p>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 3 · My Lovely School</strong>\n              <span>Pupil’s Book pp. 9–11 · Workbook pp. 9–11 · 20-question independent test · answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson3.html\">Lesson menu</a>\n              <a href=\"grade3-unit1-lesson3-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade3-unit1-lesson3-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson3-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson3-test.html\">Lesson Test</a>\n              <a href=\"grade3-unit1-lesson3-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">\n            Key type: 20 independent items with objective and explanation. In-page answer reveals: 1 on the Pupil’s Book\n            page and 4 on the Workbook page. The listening-number exercise has no key because its recording is unavailable.\n"
+        "after": "          </p>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 3 \u00b7 My Lovely School</strong>\n              <span>Pupil\u2019s Book pp. 9\u201311 \u00b7 Workbook pp. 9\u201311 \u00b7 20-question independent test \u00b7 answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson3.html\">Lesson menu</a>\n              <a href=\"grade3-unit1-lesson3-pupil-book.html\">Pupil\u2019s Book</a>\n              <a href=\"grade3-unit1-lesson3-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson3-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson3-test.html\">Lesson Test</a>\n              <a href=\"grade3-unit1-lesson3-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">\n            Key type: 20 independent items with objective and explanation. In-page answer reveals: 1 on the Pupil\u2019s Book\n            page and 4 on the Workbook page. The listening-number exercise has no key because its recording is unavailable.\n"
       },
       {
         "before": "",
-        "after": "            <th scope=\"row\">3 · 3 My Lovely School</th>\n            <td>20</td>\n            <td>Published (independent test)</td>\n            <td>1</td>\n            <td>4</td>\n            <td>None</td>\n          </tr>\n          <tr>\n"
+        "after": "            <th scope=\"row\">3 \u00b7 3 My Lovely School</th>\n            <td>20</td>\n            <td>Published (independent test)</td>\n            <td>1</td>\n            <td>4</td>\n            <td>None</td>\n          </tr>\n          <tr>\n"
       }
     ]
   }

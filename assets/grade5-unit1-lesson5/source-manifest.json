@@ -1,0 +1,90 @@
+[
+  {
+    "upload": "image-7 -> Pupil’s Book p. 15",
+    "file": "assets/grade5-unit1-lesson5/source/pupil-book-page-15.png",
+    "width": 717,
+    "height": 1017,
+    "bytes": 461819,
+    "sha256": "6b89f1e29635ac69ebfc8f7fee614bffa1bafba7099d4bba1be98523cbbf2e2b"
+  },
+  {
+    "upload": "image-8 -> Pupil’s Book p. 16",
+    "file": "assets/grade5-unit1-lesson5/source/pupil-book-page-16.png",
+    "width": 730,
+    "height": 1042,
+    "bytes": 399045,
+    "sha256": "b5e53eb51a474da4f4c8fbda08dac3b53cfca79650c4d675dc12bc466871347a"
+  },
+  {
+    "upload": "image-9 -> Pupil’s Book p. 17",
+    "file": "assets/grade5-unit1-lesson5/source/pupil-book-page-17.png",
+    "width": 742,
+    "height": 1042,
+    "bytes": 444898,
+    "sha256": "c4dc2bb23ca32b49b5468c19f3cb3adeaa04092c582c70c6500543c4c5324e1c"
+  },
+  {
+    "upload": "image-10 -> Pupil’s Book p. 18",
+    "file": "assets/grade5-unit1-lesson5/source/pupil-book-page-18.png",
+    "width": 723,
+    "height": 1033,
+    "bytes": 233568,
+    "sha256": "0075dc2a29c8bef05ed1a673dcf68c5fd6d7b0f9eee2a8f55d84949eb474bed5"
+  },
+  {
+    "upload": "image-11 -> Pupil’s Book p. 19",
+    "file": "assets/grade5-unit1-lesson5/source/pupil-book-page-19.png",
+    "width": 742,
+    "height": 1029,
+    "bytes": 160142,
+    "sha256": "4364639ddd4aae24844c86d1ccfe9c69a627aebda4a18c90872baea9a750afe4"
+  },
+  {
+    "upload": "image-12 -> Pupil’s Book p. 20",
+    "file": "assets/grade5-unit1-lesson5/source/pupil-book-page-20.png",
+    "width": 708,
+    "height": 1035,
+    "bytes": 781825,
+    "sha256": "5bf2bda0c857e335f618ddad7acd81299f298b9086d515a9ebc46fa198612f26"
+  },
+  {
+    "upload": "image-13 -> Workbook p. 17",
+    "file": "assets/grade5-unit1-lesson5/source/workbook-page-17.png",
+    "width": 727,
+    "height": 1048,
+    "bytes": 312234,
+    "sha256": "48f6853d8de3b26258d01dc30340aad197b6ec8cf0b651d97cee059b6352cf7c"
+  },
+  {
+    "upload": "image-14 -> Workbook p. 18",
+    "file": "assets/grade5-unit1-lesson5/source/workbook-page-18.png",
+    "width": 723,
+    "height": 1000,
+    "bytes": 255294,
+    "sha256": "d4dbd803bb035999ca85fd92fa1d6a74069a65b5c39d9cf6669fa3edba0c33d4"
+  },
+  {
+    "upload": "image-15 -> Workbook p. 19",
+    "file": "assets/grade5-unit1-lesson5/source/workbook-page-19.png",
+    "width": 739,
+    "height": 1020,
+    "bytes": 311865,
+    "sha256": "7eb9bcacf1622d9472ab62268c9e03d6e8a6ddb65a2478279666f9cb5d90a666"
+  },
+  {
+    "upload": "image-16 -> Workbook p. 20",
+    "file": "assets/grade5-unit1-lesson5/source/workbook-page-20.png",
+    "width": 714,
+    "height": 1015,
+    "bytes": 175528,
+    "sha256": "0403129075077c5cee4dfe35f777fd5280ed44b9c3b6322435408f813115471c"
+  },
+  {
+    "upload": "image-17 -> Workbook p. 21",
+    "file": "assets/grade5-unit1-lesson5/source/workbook-page-21.png",
+    "width": 726,
+    "height": 990,
+    "bytes": 163878,
+    "sha256": "7e2a0de53ea519e5d51754fddeea911900a9f7fd05a10e42f61d55108d8fda87"
+  }
+]

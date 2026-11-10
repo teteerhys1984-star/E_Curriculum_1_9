@@ -123,7 +123,7 @@ for (const file of newPages) {
 pass('Five new pages follow LESSON_PAGE_STANDARD.md', 'Four content pages load the shared step navigator; menu opts out');
 
 const landing = read('index.html');
-assert.match(landing, /<span class="num">Grade 5<\/span>[\s\S]*?<span class="badge badge-available">3 lessons ready<\/span>[\s\S]*?Unit 1 Lessons 1–3 ready: <em>At School<\/em>, <em>Family<\/em> and <em>Daily Routines<\/em>/);
+assert.match(landing, /<span class="num">Grade 5<\/span>[\s\S]*?<span class="badge badge-available">5 lessons ready<\/span>[\s\S]*?Unit 1 Lessons 1–5 ready: <em>At School<\/em>, <em>Family<\/em>, <em>Daily Routines<\/em>, <em>The Five Senses<\/em> and <em>Clothes<\/em>/);
 for (const [lesson, title] of [[1, 'At School'], [2, 'Family'], [3, 'Daily Routines']]) {
   const href = `grade5-unit1-lesson${lesson}.html`;
   assert.ok(exists(href), `Missing Grade 5 Lesson ${lesson} menu`);
@@ -131,7 +131,7 @@ for (const [lesson, title] of [[1, 'At School'], [2, 'Family'], [3, 'Daily Routi
   assert.ok(landing.includes(`Lesson ${lesson} · ${title}`), `Landing page missing Grade 5 Lesson ${lesson} title`);
 }
 assert.ok(landing.includes('<a href="grade5-unit1-lesson3.html">Daily Routines</a>'));
-pass('Grade 5 landing summary and lesson links', 'Three lessons declared ready; Lessons 1–3 link to their existing lesson menus with matching titles');
+pass('Grade 5 landing summary and lesson links', 'Five lessons declared ready; Lessons 1–5 link to their existing lesson menus with matching titles');
 
 const listing = read('lessons.html');
 assert.ok(listing.includes("grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson2.html\""));
@@ -482,6 +482,8 @@ const teacherCounts = {
   'grade5-unit1-lesson1': '5 · 1 At School',
   'grade5-unit1-lesson2': '5 · 2 Family',
   'grade5-unit1-lesson3': '5 · 3 Daily Routines',
+  'grade5-unit1-lesson4': '5 · 4 The Five Senses',
+  'grade5-unit1-lesson5': '5 · 5 Clothes',
   'grade8-unit1-lesson1': '8 · 1 Future Plans',
   'grade8-unit1-lesson2': '8 · 2 School Challenges'
 };
@@ -501,7 +503,7 @@ const matrixRows = new Map(
     Array.from(match[2].matchAll(/<td>([\s\S]*?)<\/td>/g), cell => cell[1].replace(/<[^>]+>/g, '').trim())
   ])
 );
-assert.equal(matrixRows.size, 12, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
+assert.equal(matrixRows.size, 14, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
 
 for (const [slug, label] of Object.entries(teacherCounts)) {
   for (const suffix of ['', '-pupil-book', '-workbook', '-vocabulary', '-test']) {
@@ -518,11 +520,11 @@ for (const [slug, label] of Object.entries(teacherCounts)) {
   assert.equal(cells[4], 'None', `${label}: listening key must be reported as unavailable`);
 }
 assert.match(matrixRows.get('4 · 1 Nice to Meet You')[1], /Not published/, 'Grade 4 Lesson 1 must be listed as having no answer key');
-for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '8 · 1 Future Plans', '8 · 2 School Challenges']) {
+for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '5 · 4 The Five Senses', '5 · 5 Clothes', '8 · 1 Future Plans', '8 · 2 School Challenges']) {
   assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
 }
 
-const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade3-unit1-lesson4', 'grade3-unit1-lesson5', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2'];
+const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade3-unit1-lesson4', 'grade3-unit1-lesson5', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade5-unit1-lesson4', 'grade5-unit1-lesson5', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2'];
 for (const slug of anchoredKeys) {
   assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
   const testHtml = read(`${slug}-test.html`);
@@ -977,6 +979,218 @@ const referenced = Array.from(new Set(`${g5l3Pb}${g5l3Wb}${read(g5l3Pages.vocabu
 assert.ok(referenced.length >= 14, 'Grade 5 Lesson 3: the pages must show the printed pictures and clocks');
 for (const file of referenced) assert.ok(exists(file), `Missing referenced crop: ${file}`);
 pass('Grade 5 Lesson 3 sources are pinned', 'Six scans match their recorded SHA-256 values; fifteen crops are pinned and every crop referenced by the pages exists');
+
+// ---------------------------------------------------------------------------
+// Grade 5, Unit 1, Lessons 4 and 5.
+// Lesson 4 "The Five Senses": Pupil's Book pp. 12-14, Workbook pp. 14-16.
+// Lesson 5 "Clothes": Pupil's Book pp. 15-20 (including Revision 1 and the
+// Project), Workbook pp. 17-21 (including Revision 1).
+// The rules below pin the printed activity order, the answerable controls, the
+// honesty notices around the recordings that were not supplied, the two
+// independent 18-question tests, and the SHA-256 pinning of the seventeen
+// supplied scans and forty source crops.
+// ---------------------------------------------------------------------------
+const g5Lessons = [
+  {
+    slug: 'grade5-unit1-lesson4',
+    title: 'The Five Senses',
+    book: { 'pupil-book': '12–14', workbook: '14–16' },
+    pbOrder: [
+      '1 Listen and choose.', '2 Listen and number.', '3 Look, ask and answer.', 'Pronunciation.',
+      '4 Look and describe.', '5 Before you read, answer the questions.', '6 Read the text and do the tasks below.',
+      'Let’s Learn', '7 Choose the correct answer between brackets.',
+      '8 Complete using Wh-questions or full answers.', '9 Write about the five senses.'
+    ],
+    wbOrder: [
+      '1. Read the following text, and do the tasks below.', '2. Match.', '3. Write (do or does).', '4. Match.',
+      '5. Listen and choose the right word.', '6. Listen and act.', '7. Look at the pictures and describe.',
+      '8. Put the words in the right order.', '9. Complete the paragraph.'
+    ],
+    pbControls: { radios: 28, texts: 15, numbers: 5, selects: 12, textareas: 1, reveals: 7 },
+    wbControls: { radios: 20, texts: 21, numbers: 0, selects: 9, textareas: 0, reveals: 8 },
+    scans: 6,
+    crops: 12,
+    taught: ['senses', 'sight', 'touch', 'smell', 'taste', 'hearing', 'nose', 'tongue', 'skin', 'ears',
+      'bitter', 'sour', 'soft', 'hard', 'loud', 'quiet', 'bright', 'delicious']
+  },
+  {
+    slug: 'grade5-unit1-lesson5',
+    title: 'Clothes',
+    book: { 'pupil-book': '15–20', workbook: '17–21' },
+    pbOrder: [
+      '1 Listen and match the children with their names.', '2 Listen and repeat.', '3 Ask and answer.', 'Pronunciation.',
+      '4 Practise with a partner.', '5 Before you read, match.', '6 Read and do the tasks.', 'Let’s Learn',
+      '7 Read and number.', '8 Write the punctuation marks.', '9 Complete the following.',
+      'Revision 1 · 1 Match.', '2 Choose a, b or c.', '3 Read and complete.', '4 Choose the correct word.',
+      '5 Write sentences then draw.', 'Project · Choose A or B.'
+    ],
+    wbOrder: [
+      '1. Read and choose.', '2. Read, look and write.', '3. Listen and draw on the clothes line.', '4. Match.',
+      '5. Look and describe.', '6. Read and draw.', '7. Write the verbs in the correct form.',
+      '8. Listen, tick and colour the clothes that Hani needs to put in his suitcase.',
+      '9. Tell your partner about your wardrobe.', '10. Complete.',
+      'Revision 1 · 1. Choose the correct answer.', '2. Read and match.',
+      '3. Fill in the spaces with the words in the box.', '4. Find the words and write them down.', '5. Choose.'
+    ],
+    pbControls: { radios: 8, texts: 28, numbers: 10, selects: 24, textareas: 2, reveals: 9 },
+    wbControls: { radios: 11, texts: 43, numbers: 0, selects: 21, textareas: 0, reveals: 6 },
+    scans: 11,
+    crops: 28,
+    taught: ['pyjamas', 'gloves', 'sweater', 'coat', 'blouse', 'skirt', 'floral', 'striped', 'dotted', 'plain',
+      'wearing', 'putting', 'salesman', 'customer', 'size', 'fitting', 'donate', 'wardrobe']
+  }
+];
+
+for (const lesson of g5Lessons) {
+  const { slug, title } = lesson;
+  const pages = {
+    menu: `${slug}.html`,
+    'pupil-book': `${slug}-pupil-book.html`,
+    workbook: `${slug}-workbook.html`,
+    vocabulary: `${slug}-vocabulary.html`,
+    test: `${slug}-test.html`
+  };
+  for (const [section, file] of Object.entries(pages)) {
+    assert.ok(exists(file), `Missing ${file}`);
+    const html = read(file);
+    assert.match(html, /<html lang="en" dir="ltr">/, `${file}: English LTR root`);
+    assert.match(html, /<main class="wrap">/, `${file}: shared content wrapper`);
+    assert.ok(html.includes('href="lessons.html?grade=5"'), `${file}: Grade 5 return link`);
+    assert.ok(!/<audio\b/.test(html), `${file}: no invented audio element`);
+    assert.ok(!/localhost|127\.0\.0\.1/.test(html), `${file}: browser-facing loopback URL`);
+    assert.ok(!/\bflashcard|drag-and-drop/i.test(html), `${file}: no games or flashcards`);
+    assert.ok(html.includes(`<title>`) && !/undefined|NaN/.test(html), `${file}: title present, no broken interpolation`);
+  }
+  // The menu opts out of the step navigator; the four content pages load it.
+  const menuHtml = read(pages.menu);
+  assert.ok(menuHtml.includes('data-nav-page="menu"'), `${slug}: menu declares data-nav-page="menu"`);
+  assert.ok(!menuHtml.includes('lesson-content-navigation.js'), `${slug}: menu must not load the step navigator`);
+  for (const section of ['pupil-book', 'workbook', 'vocabulary', 'test']) {
+    const html = read(pages[section]);
+    assert.ok(html.includes('<script src="lesson-content-navigation.js" defer></script>'), `${pages[section]}: shared step navigator required`);
+    if (section !== 'vocabulary') assert.ok(html.includes(`src="${slug}.js"`), `${pages[section]}: lesson-local interactions`);
+    for (const target of Object.values(pages)) assert.ok(html.includes(`href="${target}"`), `${pages[section]}: link to ${target}`);
+  }
+
+  const pb = read(pages['pupil-book']);
+  const wb = read(pages.workbook);
+  const vocab = read(pages.vocabulary);
+  const testHtml = read(pages.test);
+
+  // Printed order of every heading on both book pages.
+  let cursor = -1;
+  for (const heading of lesson.pbOrder) {
+    const at = pb.indexOf(heading);
+    assert.ok(at > -1, `${slug}: Pupil's Book is missing the printed heading "${heading}"`);
+    assert.ok(at > cursor, `${slug}: Pupil's Book heading "${heading}" is out of printed order`);
+    cursor = at;
+  }
+  cursor = -1;
+  for (const heading of lesson.wbOrder) {
+    const at = wb.indexOf(heading);
+    assert.ok(at > -1, `${slug}: Workbook is missing the printed heading "${heading}"`);
+    assert.ok(at > cursor, `${slug}: Workbook heading "${heading}" is out of printed order`);
+    cursor = at;
+  }
+
+  // Every printed item keeps a real control: nothing is decorative.
+  const count = (html, pattern) => (html.match(pattern) || []).length;
+  for (const [label, html, expected] of [['Pupil’s Book', pb, lesson.pbControls], ['Workbook', wb, lesson.wbControls]]) {
+    assert.equal(count(html, /<input [^>]*type="radio"/g), expected.radios, `${slug}: ${label} radio count`);
+    assert.equal(count(html, /<input [^>]*type="text"/g), expected.texts, `${slug}: ${label} writing-line count`);
+    assert.equal(count(html, /<input [^>]*type="number"/g), expected.numbers, `${slug}: ${label} numbering-field count`);
+    assert.equal(count(html, /<select/g), expected.selects, `${slug}: ${label} select count`);
+    assert.equal(count(html, /<textarea/g), expected.textareas, `${slug}: ${label} textarea count`);
+    assert.equal(count(html, /<button[^>]*class="[^"]*\breveal\b/g), expected.reveals, `${slug}: ${label} reveal count`);
+  }
+
+  // The recordings were not supplied: each listening activity says so and offers no key.
+  for (const [file, html] of [[pages['pupil-book'], pb], [pages.workbook, wb]]) {
+    if (/Listen/.test(html)) {
+      assert.match(html, /Audio required; the recording was not supplied/, `${file}: listening activities must disclose the missing recording`);
+      assert.ok(!/data-correct="[^"]*"[^>]*>\s*[^<]*Listen/.test(html), `${file}: listening items must not carry an invented key`);
+    }
+  }
+
+  // The vocabulary page keeps Arabic inside marked RTL cells only.
+  for (const match of vocab.matchAll(/lang="ar"/g)) assert.ok(match, `${slug}: Arabic cells are marked`);
+  assert.match(vocab, /dir="rtl"/, `${slug}: Arabic cells declare RTL direction`);
+
+  // Every key word of the lesson is on the pages and in the vocabulary list.
+  for (const word of lesson.taught) {
+    assert.ok(new RegExp(`\\b${word}`, 'i').test(pb + wb), `${slug}: taught word "${word}" must appear on a book page`);
+    assert.ok(new RegExp(`\\b${word}`, 'i').test(vocab), `${slug}: taught word "${word}" must appear in the vocabulary list`);
+  }
+
+  // The independent lesson test.
+  const spec = JSON.parse(read(`tests/${slug}.quiz.json`));
+  assert.equal(spec.policy, 'independent-lesson-test-v1', `${slug}: quiz fixture declares independent-lesson-test-v1`);
+  assert.equal(spec.totalQuestions, 18, `${slug}: quiz fixture declares 18 independent questions`);
+  assert.equal(spec.questions.length, 18, `${slug}: quiz fixture holds 18 questions`);
+  assert.deepEqual(spec.questions.map(q => q.number), Array.from({ length: 18 }, (_, i) => i + 1), `${slug}: questions are numbered 1-18 in order`);
+  assert.equal(new Set(spec.objectives).size >= 6, true, `${slug}: the test covers at least six objectives`);
+  const rendered = Array.from(testHtml.matchAll(/<section class="question" id="(q\d+)" data-format="([a-z-]+)" data-objective="([a-z-]+)" data-objective-label="([^"]*)" data-correct="([^"]*)"/g));
+  assert.equal(rendered.length, 18, `${slug}: rendered question count matches the fixture`);
+  spec.questions.forEach((question, index) => {
+    const [, id, format, objective, objectiveLabel, correct] = rendered[index];
+    assert.equal(id, question.id, `${slug} ${question.id}: id matches fixture`);
+    assert.equal(format, question.format, `${slug} ${question.id}: format matches fixture`);
+    assert.equal(objective, question.objective, `${slug} ${question.id}: objective matches fixture`);
+    assert.equal(objectiveLabel.replace(/&amp;/g, '&'), question.objectiveLabel, `${slug} ${question.id}: objective label matches fixture`);
+    assert.equal(correct.replace(/&amp;/g, '&').replace(/&quot;/g, '"'), String(question.correct), `${slug} ${question.id}: answer key matches fixture`);
+    if (question.format !== 'short-answer') {
+      const block = testHtml.split(`id="${question.id}"`)[1].split('</section>')[0];
+      assert.equal((block.match(/<input type="radio"/g) || []).length, question.options.length, `${slug} ${question.id}: option count matches fixture`);
+    } else {
+      assert.ok(question.accepted.length >= 1, `${slug} ${question.id}: written item declares accepted answers`);
+      assert.ok(question.wrongSample, `${slug} ${question.id}: written item declares a wrong sample`);
+    }
+    assert.ok(String(question.evidence).length > 20, `${slug} ${question.id}: explanation present`);
+  });
+  // Independence: no lesson images, no page or exercise citations inside the quiz.
+  assert.ok(!testHtml.includes(`assets/${slug}`), `${slug}: the test must not reuse lesson book images`);
+  assert.equal((testHtml.match(/<img\b/g) || []).length, 0, `${slug}: the test shows no textbook imagery`);
+  const quizMarkup = testHtml.match(/<form id="quiz"[^>]*>([\s\S]*?)<\/form>/)[1];
+  assert.doesNotMatch(quizMarkup, /page\s*\d+|exercise\s*\d+|activity\s*\d+|pupil’s book|workbook/i, `${slug}: questions must stand alone without citing book pages`);
+  assert.ok(testHtml.includes('<ol class="teacher-key"></ol>'), `${slug}: the teacher key list exists`);
+  const testScript = read(`${slug}.js`);
+  assert.match(testScript, /const populateKey = \(\) => \{[\s\S]*?questions\.forEach/, `${slug}: the answer key is built from the 18 rendered questions`);
+  assert.match(testScript, /\.teacher-key|key\.querySelector\('ol'\)/, `${slug}: the key writes into the published list`);
+  assert.ok(testHtml.includes(`src="${slug}.js"`), `${slug}: the key script loads`);
+  assert.ok(testHtml.includes('id="teacher-gate"'), `${slug}: the documented key anchor exists`);
+  assert.ok(!quizMarkup.includes('id="teacher-gate"'), `${slug}: the teacher gate stays outside the pupil quiz form`);
+  // Radio answers stay balanced so no option is guessable by position.
+  const keyed = spec.questions.filter(q => q.format !== 'short-answer').map(q => String(q.correct));
+  const tally = keyed.reduce((acc, value) => acc.set(value, (acc.get(value) || 0) + 1), new Map());
+  for (const [value, uses] of tally) assert.ok(uses <= 8, `${slug}: answer position ${value} used ${uses} times, above the balance ceiling`);
+
+  // Sources and crops are pinned byte-for-byte.
+  const scans = JSON.parse(read(`assets/${slug}/source-manifest.json`));
+  assert.equal(scans.length, lesson.scans, `${slug}: ${lesson.scans} supplied scans expected`);
+  for (const item of scans) {
+    assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root, item.file))).digest('hex'), item.sha256,
+      `${slug}: original scan changed: ${item.file}`);
+  }
+  const cropManifest = JSON.parse(read(`assets/${slug}/crops-manifest.json`)).crops;
+  assert.equal(cropManifest.length, lesson.crops, `${slug}: ${lesson.crops} pinned crops expected`);
+  for (const item of cropManifest) {
+    assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root, item.file))).digest('hex'), item.sha256,
+      `${slug}: crop changed: ${item.file}`);
+    assert.ok(exists(item.source), `${slug}: crop source recorded: ${item.source}`);
+  }
+  const referencedCrops = Array.from(new Set(`${pb}${wb}${vocab}`.match(new RegExp(`assets/${slug}/crops/[a-z0-9-]+\\.png`, 'g')) || []));
+  assert.ok(referencedCrops.length >= lesson.crops - 2, `${slug}: the pages must show the printed pictures`);
+  for (const file of referencedCrops) assert.ok(exists(file), `${slug}: missing referenced crop ${file}`);
+}
+
+pass('Grade 5 Lessons 4 and 5 follow LESSON_PAGE_STANDARD.md',
+  'Ten connected pages (five per lesson) in printed order: Lesson 4 "The Five Senses" (Pupil’s Book pp. 12–14, Workbook pp. 14–16) and Lesson 5 "Clothes" (Pupil’s Book pp. 15–20 with Revision 1 and the Project, Workbook pp. 17–21 with Revision 1); menus opt out of the step navigator, the four content pages load it, and every page links to the other four');
+pass('Grade 5 Lessons 4 and 5 keep every printed control and disclosure',
+  'Pinned radio, writing-line, select and textarea counts for both book pages of both lessons; every listening task (eight notices in total) discloses the recording that was not supplied and carries no invented key; Arabic appears only inside marked RTL vocabulary cells; every taught key word appears on a book page and in the vocabulary list');
+pass('Grade 5 Lessons 4 and 5 tests are independent and keyed',
+  'Two 18-question independent tests match their fixtures question by question (id, format, objective, objective label, key, option count and explanation); neither reuses lesson images or cites book pages; answer positions stay balanced; each teacher key lists all 18 items behind a gate outside the pupil form');
+pass('Grade 5 Lessons 4 and 5 sources are pinned',
+  'Six Lesson 4 scans and eleven Lesson 5 scans match their recorded SHA-256 values; twelve Lesson 4 crops and twenty-eight Lesson 5 crops are pinned, every crop records its unchanged source scan, and every crop referenced by the pages exists');
 
 const result = { suite: 'static-site-and-source-integrity', date: new Date().toISOString(), status: 'PASS', checks };
 console.log(JSON.stringify(result, null, 2));

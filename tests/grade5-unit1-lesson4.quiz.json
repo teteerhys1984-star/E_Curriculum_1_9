@@ -1,0 +1,284 @@
+{
+  "lesson": "grade5-unit1-lesson4",
+  "title": "Lesson 4 Test · The Five Senses",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 18,
+  "objectives": [
+    "vocabulary",
+    "sense-verbs",
+    "adjectives",
+    "present-simple-grammar",
+    "reading-comprehension",
+    "language-use",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "q1",
+      "format": "multiple-choice",
+      "objective": "vocabulary",
+      "objectiveLabel": "Lesson objective: The body part used for each sense",
+      "prompt": "1. Which part of the body do we use to hear a song?",
+      "correct": 1,
+      "evidence": "“Ears for hearing.” The tongue is used for taste and the eyes are used for sight.",
+      "options": [
+        "a) the tongue",
+        "b) the ears",
+        "c) the eyes"
+      ]
+    },
+    {
+      "number": 2,
+      "id": "q2",
+      "format": "multiple-choice",
+      "objective": "vocabulary",
+      "objectiveLabel": "Lesson objective: The body part used for each sense",
+      "prompt": "2. Which part of the body do we use to taste soup?",
+      "correct": 0,
+      "evidence": "“Tongue for taste.” The nose is used for smell and the skin is used for touch.",
+      "options": [
+        "a) the tongue",
+        "b) the nose",
+        "c) the skin"
+      ]
+    },
+    {
+      "number": 3,
+      "id": "q3",
+      "format": "multiple-choice",
+      "objective": "vocabulary",
+      "objectiveLabel": "Lesson objective: The body part used for each sense",
+      "prompt": "3. Which part of the body tells you that a stone is hard?",
+      "correct": 2,
+      "evidence": "“Skin for touch.” The lesson text says we can touch things that are soft or hard, and the skin is the organ for touch.",
+      "options": [
+        "a) the ears",
+        "b) the eyes",
+        "c) the skin"
+      ]
+    },
+    {
+      "number": 4,
+      "id": "q4",
+      "format": "multiple-choice",
+      "objective": "sense-verbs",
+      "objectiveLabel": "Lesson objective: Sense verbs look, sound, feel, smell and taste",
+      "prompt": "4. Choose the verb that best completes the sentence: The lemon _____ sour.",
+      "correct": 1,
+      "evidence": "Sourness is a taste, so the correct sense verb is “tastes”: the lemon tastes sour.",
+      "options": [
+        "a) sounds",
+        "b) tastes",
+        "c) looks"
+      ]
+    },
+    {
+      "number": 5,
+      "id": "q5",
+      "format": "multiple-choice",
+      "objective": "sense-verbs",
+      "objectiveLabel": "Lesson objective: Sense verbs look, sound, feel, smell and taste",
+      "prompt": "5. Choose the verb that best completes the sentence: The drum _____ very loud.",
+      "correct": 0,
+      "evidence": "Loudness is a sound, so the correct sense verb is “sounds”: the drum sounds very loud.",
+      "options": [
+        "a) sounds",
+        "b) smells",
+        "c) tastes"
+      ]
+    },
+    {
+      "number": 6,
+      "id": "q6",
+      "format": "multiple-choice",
+      "objective": "sense-verbs",
+      "objectiveLabel": "Lesson objective: Sense verbs look, sound, feel, smell and taste",
+      "prompt": "6. Choose the verb that best completes the sentence: These flowers _____ wonderful.",
+      "correct": 2,
+      "evidence": "We use our nose for flowers, so the correct sense verb is “smell”: these flowers smell wonderful.",
+      "options": [
+        "a) sound",
+        "b) taste",
+        "c) smell"
+      ]
+    },
+    {
+      "number": 7,
+      "id": "q7",
+      "format": "multiple-choice",
+      "objective": "adjectives",
+      "objectiveLabel": "Lesson objective: Adjectives that describe a sense",
+      "prompt": "7. Which adjective can you use to talk about a sound?",
+      "correct": 1,
+      "evidence": "“Loud” describes a sound. “Bitter” and “sweet” describe tastes.",
+      "options": [
+        "a) bitter",
+        "b) loud",
+        "c) sweet"
+      ]
+    },
+    {
+      "number": 8,
+      "id": "q8",
+      "format": "multiple-choice",
+      "objective": "adjectives",
+      "objectiveLabel": "Lesson objective: Adjectives that describe a sense",
+      "prompt": "8. Which adjective can you use to talk about a taste?",
+      "correct": 0,
+      "evidence": "“Bitter” describes a taste. “Bright” describes something we see and “quiet” describes something we hear.",
+      "options": [
+        "a) bitter",
+        "b) bright",
+        "c) quiet"
+      ]
+    },
+    {
+      "number": 9,
+      "id": "q9",
+      "format": "multiple-choice",
+      "objective": "present-simple-grammar",
+      "objectiveLabel": "Lesson objective: Present simple questions with do and does",
+      "prompt": "9. Choose the correct word: How _____ the blanket feel?",
+      "correct": 2,
+      "evidence": "The subject “the blanket” is third-person singular (it), so the question uses “does”: How does the blanket feel?",
+      "options": [
+        "a) do",
+        "b) is",
+        "c) does"
+      ]
+    },
+    {
+      "number": 10,
+      "id": "q10",
+      "format": "multiple-choice",
+      "objective": "present-simple-grammar",
+      "objectiveLabel": "Lesson objective: Present simple questions with do and does",
+      "prompt": "10. Choose the correct word: _____ you like the smell of roses?",
+      "correct": 1,
+      "evidence": "The subject is “you”, so the present simple question uses “Do”: Do you like the smell of roses?",
+      "options": [
+        "a) Does",
+        "b) Do",
+        "c) Is"
+      ]
+    },
+    {
+      "number": 11,
+      "id": "q11",
+      "format": "multiple-choice",
+      "objective": "present-simple-grammar",
+      "objectiveLabel": "Lesson objective: Present simple verb forms with the senses",
+      "prompt": "11. Choose the correct verb: The cakes _____ sweet.",
+      "correct": 0,
+      "evidence": "“The cakes” is plural, so the present simple verb has no -s: the cakes taste sweet.",
+      "options": [
+        "a) taste",
+        "b) tastes",
+        "c) tasting"
+      ]
+    },
+    {
+      "number": 12,
+      "id": "q12",
+      "format": "true-false",
+      "objective": "present-simple-grammar",
+      "objectiveLabel": "Lesson objective: Present simple verb forms with the senses",
+      "prompt": "12. Read this sentence: “The music sound loud.” Is the sentence correct?",
+      "correct": 1,
+      "evidence": "With “the music” (it), the present simple verb takes -s: “The music sounds loud.”",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 13,
+      "id": "q13",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about the senses",
+      "prompt": "13. Read the story. Then choose True or False: Kareem used his eyes in the game.",
+      "correct": 1,
+      "evidence": "The story says Kareem could not see, so he used his other senses; he did not use his eyes.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 14,
+      "id": "q14",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about the senses",
+      "prompt": "14. In the story, which food was bitter?",
+      "correct": 0,
+      "evidence": "The story says “The cake was sweet, but the chocolate was bitter.”",
+      "options": [
+        "a) the chocolate",
+        "b) the cake",
+        "c) the lemon"
+      ]
+    },
+    {
+      "number": 15,
+      "id": "q15",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about the senses",
+      "prompt": "15. In the story, what did Kareem like best?",
+      "correct": 1,
+      "evidence": "The story says “He heard loud music and quiet music. He liked the quiet music best.”",
+      "options": [
+        "a) the loud music",
+        "b) the quiet music",
+        "c) the flower"
+      ]
+    },
+    {
+      "number": 16,
+      "id": "q16",
+      "format": "multiple-choice",
+      "objective": "language-use",
+      "objectiveLabel": "Lesson objective: Asking about the senses in conversation",
+      "prompt": "16. Your friend says: “I can hear a plane.” Which question is the best reply?",
+      "correct": 2,
+      "evidence": "The friend is talking about hearing, so the natural reply asks about the sound: “What do you hear?” The other two replies ask about taste and touch.",
+      "options": [
+        "a) How does it taste?",
+        "b) How does it feel?",
+        "c) What do you hear?"
+      ]
+    },
+    {
+      "number": 17,
+      "id": "q17",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing a present simple question about touch",
+      "prompt": "17. Write the question for this answer: “It feels hard.” Begin with “How” and use the word “feel”.",
+      "correct": "How does the stone feel?",
+      "evidence": "The answer is about one thing (it), so the question uses “does” with the plain verb “feel”: How does the stone feel?",
+      "accepted": [
+        "how does the stone feel",
+        "how does it feel"
+      ],
+      "wrongSample": "How do the stone feel?"
+    },
+    {
+      "number": 18,
+      "id": "q18",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing the correct present simple form of a sense verb",
+      "prompt": "18. Complete the sentence with the correct form of the verb in brackets. Write one word only: The apples _____ very sweet. (taste)",
+      "correct": "taste",
+      "evidence": "“The apples” is plural, so the present simple has no -s: the apples taste very sweet.",
+      "accepted": [
+        "taste"
+      ],
+      "wrongSample": "tastes"
+    }
+  ]
+}

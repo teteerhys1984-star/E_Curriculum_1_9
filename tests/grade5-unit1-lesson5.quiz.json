@@ -1,0 +1,287 @@
+{
+  "lesson": "grade5-unit1-lesson5",
+  "title": "Lesson 5 Test · Clothes",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 18,
+  "objectives": [
+    "clothes-vocabulary",
+    "patterns-vocabulary",
+    "present-continuous",
+    "spelling-ing",
+    "present-simple-vs-continuous",
+    "punctuation",
+    "reading-comprehension",
+    "language-use",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "q1",
+      "format": "multiple-choice",
+      "objective": "clothes-vocabulary",
+      "objectiveLabel": "Lesson objective: Clothes vocabulary",
+      "prompt": "1. Which of these do you wear on your feet?",
+      "correct": 1,
+      "evidence": "Trainers are shoes worn on the feet. Gloves are worn on the hands and a scarf is worn around the neck.",
+      "options": [
+        "a) gloves",
+        "b) trainers",
+        "c) a scarf"
+      ]
+    },
+    {
+      "number": 2,
+      "id": "q2",
+      "format": "multiple-choice",
+      "objective": "clothes-vocabulary",
+      "objectiveLabel": "Lesson objective: Clothes vocabulary",
+      "prompt": "2. Which of these do you wear in bed?",
+      "correct": 0,
+      "evidence": "Pyjamas are the clothes people wear in bed. A coat is worn outside and a skirt is an everyday item of clothing.",
+      "options": [
+        "a) pyjamas",
+        "b) a coat",
+        "c) a skirt"
+      ]
+    },
+    {
+      "number": 3,
+      "id": "q3",
+      "format": "multiple-choice",
+      "objective": "patterns-vocabulary",
+      "objectiveLabel": "Lesson objective: Pattern words floral, striped, dotted and plain",
+      "prompt": "3. A shirt with many small round spots is _____.",
+      "correct": 1,
+      "evidence": "Dotted clothes have small round spots. Floral clothes have flowers and plain clothes have no pattern.",
+      "options": [
+        "a) plain",
+        "b) dotted",
+        "c) floral"
+      ]
+    },
+    {
+      "number": 4,
+      "id": "q4",
+      "format": "multiple-choice",
+      "objective": "patterns-vocabulary",
+      "objectiveLabel": "Lesson objective: Pattern words floral, striped, dotted and plain",
+      "prompt": "4. Which word describes clothes with no pattern at all?",
+      "correct": 2,
+      "evidence": "Plain clothes have one colour and no pattern; striped and dotted clothes both have a pattern.",
+      "options": [
+        "a) striped",
+        "b) dotted",
+        "c) plain"
+      ]
+    },
+    {
+      "number": 5,
+      "id": "q5",
+      "format": "multiple-choice",
+      "objective": "present-continuous",
+      "objectiveLabel": "Lesson objective: The present continuous for actions happening now",
+      "prompt": "5. Choose the correct form: Look! The baby _____.",
+      "correct": 0,
+      "evidence": "“Look!” shows the action is happening now, so the present continuous is needed: the baby is sleeping.",
+      "options": [
+        "a) is sleeping",
+        "b) sleeps",
+        "c) sleep"
+      ]
+    },
+    {
+      "number": 6,
+      "id": "q6",
+      "format": "multiple-choice",
+      "objective": "present-continuous",
+      "objectiveLabel": "Lesson objective: The present continuous for actions happening now",
+      "prompt": "6. Choose the correct form: My brothers _____ football in the garden now.",
+      "correct": 2,
+      "evidence": "“My brothers” is plural, so the present continuous uses “are” + verb-ing: my brothers are playing football now.",
+      "options": [
+        "a) is playing",
+        "b) play",
+        "c) are playing"
+      ]
+    },
+    {
+      "number": 7,
+      "id": "q7",
+      "format": "multiple-choice",
+      "objective": "spelling-ing",
+      "objectiveLabel": "Lesson objective: Spelling -ing forms",
+      "prompt": "7. Choose the correct spelling: She is _____ in the sea.",
+      "correct": 0,
+      "evidence": "The lesson list gives swim – swimming: the final consonant is doubled before -ing.",
+      "options": [
+        "a) swimming",
+        "b) swiming",
+        "c) swims"
+      ]
+    },
+    {
+      "number": 8,
+      "id": "q8",
+      "format": "multiple-choice",
+      "objective": "spelling-ing",
+      "objectiveLabel": "Lesson objective: Spelling -ing forms",
+      "prompt": "8. Choose the correct spelling: He is _____ his lunch.",
+      "correct": 2,
+      "evidence": "The lesson list gives have – having: the final -e is dropped before -ing.",
+      "options": [
+        "a) haveing",
+        "b) has",
+        "c) having"
+      ]
+    },
+    {
+      "number": 9,
+      "id": "q9",
+      "format": "multiple-choice",
+      "objective": "present-simple-vs-continuous",
+      "objectiveLabel": "Lesson objective: Choosing between the present simple and the present continuous",
+      "prompt": "9. Choose the correct form: Nour _____ her teeth every morning.",
+      "correct": 0,
+      "evidence": "“Every morning” is a habit, so the present simple is needed; with “Nour” (she) the verb takes -es: brushes.",
+      "options": [
+        "a) brushes",
+        "b) is brushing",
+        "c) brush"
+      ]
+    },
+    {
+      "number": 10,
+      "id": "q10",
+      "format": "multiple-choice",
+      "objective": "present-simple-vs-continuous",
+      "objectiveLabel": "Lesson objective: Choosing between the present simple and the present continuous",
+      "prompt": "10. Choose the correct form: Listen! Somebody _____ at the door.",
+      "correct": 1,
+      "evidence": "“Listen!” shows the action is happening now, so the present continuous is needed: somebody is knocking.",
+      "options": [
+        "a) knocks",
+        "b) is knocking",
+        "c) knock"
+      ]
+    },
+    {
+      "number": 11,
+      "id": "q11",
+      "format": "multiple-choice",
+      "objective": "punctuation",
+      "objectiveLabel": "Lesson objective: Punctuating questions and lists",
+      "prompt": "11. Choose the sentence with the correct punctuation.",
+      "correct": 2,
+      "evidence": "A question needs a question mark at the end, and no comma is used between the verb and its object.",
+      "options": [
+        "a) Are you wearing a coat",
+        "b) Are you wearing, a coat?",
+        "c) Are you wearing a coat?"
+      ]
+    },
+    {
+      "number": 12,
+      "id": "q12",
+      "format": "multiple-choice",
+      "objective": "punctuation",
+      "objectiveLabel": "Lesson objective: Punctuating questions and lists",
+      "prompt": "12. Choose the sentence with the correct punctuation.",
+      "correct": 0,
+      "evidence": "“Where are my gloves” is a question, so it ends with a question mark.",
+      "options": [
+        "a) Where are my gloves?",
+        "b) Where are my gloves.",
+        "c) Where are my gloves,"
+      ]
+    },
+    {
+      "number": 13,
+      "id": "q13",
+      "format": "true-false",
+      "objective": "punctuation",
+      "objectiveLabel": "Lesson objective: Punctuating questions and lists",
+      "prompt": "13. Choose True or False: A question mark (?) comes at the end of a question.",
+      "correct": 0,
+      "evidence": "A question mark closes a question, and a full stop closes a statement.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 14,
+      "id": "q14",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about clothes",
+      "prompt": "14. Read the story. Then choose True or False: The shop is by the sea.",
+      "correct": 0,
+      "evidence": "The first sentence says the shop is by the sea.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 15,
+      "id": "q15",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about clothes",
+      "prompt": "15. In the story, which dress was striped?",
+      "correct": 1,
+      "evidence": "The story lists “a dotted blue dress, a floral red dress and a striped green dress”, so the striped dress was green.",
+      "options": [
+        "a) the blue dress",
+        "b) the green dress",
+        "c) the red dress"
+      ]
+    },
+    {
+      "number": 16,
+      "id": "q16",
+      "format": "short-answer",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about clothes",
+      "prompt": "16. In the story, how much did the black coat cost? Write the number and SP.",
+      "correct": "4000 SP",
+      "evidence": "The story says “It cost 4000 SP.”",
+      "accepted": [
+        "4000",
+        "4000 sp"
+      ],
+      "wrongSample": "3000 SP"
+    },
+    {
+      "number": 17,
+      "id": "q17",
+      "format": "multiple-choice",
+      "objective": "language-use",
+      "objectiveLabel": "Lesson objective: Shopping language",
+      "prompt": "17. You are in a clothes shop. The salesman says: “Can I help you?” Choose the best reply.",
+      "correct": 1,
+      "evidence": "The customer answers the offer of help by saying what they want to buy. “It’s 3000 SP” answers a price question and “Here you are” gives something to another person.",
+      "options": [
+        "a) It’s 3000 SP.",
+        "b) Yes, please. I’m looking for a jacket.",
+        "c) Here you are."
+      ]
+    },
+    {
+      "number": 18,
+      "id": "q18",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing a present continuous sentence",
+      "prompt": "18. Write one complete sentence about a girl and her clothes. Use the words: she / wear / a floral dress. Use “is” and the -ing form.",
+      "correct": "She is wearing a floral dress.",
+      "evidence": "The present continuous is “is” + verb-ing: she is wearing a floral dress.",
+      "accepted": [
+        "she is wearing a floral dress",
+        "the girl is wearing a floral dress"
+      ],
+      "wrongSample": "She wearing a floral dress."
+    }
+  ]
+}

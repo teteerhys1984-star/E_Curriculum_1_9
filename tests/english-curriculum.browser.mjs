@@ -201,6 +201,8 @@ try {
     { file: 'grade5-unit1-lesson1-test.html', submit: '#check', result: '#score', hiddenKey: '#answer-key' },
     { file: 'grade5-unit1-lesson2-test.html', submit: '#check', result: '#score', hiddenKey: '#key' },
     { file: 'grade5-unit1-lesson3-test.html', submit: '#check-answers', result: '#score', hiddenKey: '#answer-key' },
+    { file: 'grade5-unit1-lesson4-test.html', submit: '#check-answers', result: '#score', hiddenKey: '#answer-key' },
+    { file: 'grade5-unit1-lesson5-test.html', submit: '#check-answers', result: '#score', hiddenKey: '#answer-key' },
     { file: 'grade8-unit1-lesson1-test.html', submit: '#check', result: '#score', hiddenKey: '#key' }
   ];
   for (const test of assessmentCases) {
@@ -267,6 +269,8 @@ try {
     { file: 'grade5-unit1-lesson1-test.html', password: '#teacher-password', unlock: '#verify-password', key: '#answer-key' },
     { file: 'grade5-unit1-lesson2-test.html', password: '#pw', unlock: '#unlock', key: '#key' },
     { file: 'grade5-unit1-lesson3-test.html', password: '#teacher-password', unlock: '#unlock-key', key: '#answer-key' },
+    { file: 'grade5-unit1-lesson4-test.html', password: '#teacher-password', unlock: '#unlock-key', key: '#answer-key' },
+    { file: 'grade5-unit1-lesson5-test.html', password: '#teacher-password', unlock: '#unlock-key', key: '#answer-key' },
     { file: 'grade8-unit1-lesson1-test.html', password: '#pw', unlock: '#unlock', key: '#key' }
   ];
   for (const test of keyedPrintCases) {
