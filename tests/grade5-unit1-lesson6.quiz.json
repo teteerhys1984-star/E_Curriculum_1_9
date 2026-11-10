@@ -1,0 +1,280 @@
+{
+  "lesson": "grade5-unit1-lesson6",
+  "title": "Lesson 6 Test · Healthy Lifestyle",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 18,
+  "objectives": [
+    "healthy-habits-vocabulary",
+    "food-groups",
+    "should-advice",
+    "reading-comprehension",
+    "language-use",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "q1",
+      "format": "multiple-choice",
+      "objective": "healthy-habits-vocabulary",
+      "objectiveLabel": "Lesson objective: Healthy food and habits vocabulary",
+      "prompt": "Which of these is a dairy food?",
+      "correct": 1,
+      "evidence": "Dairy foods come from milk. Cheese, milk and yoghurt are dairy; rice and lettuce belong to other food groups.",
+      "options": [
+        "a) rice",
+        "b) cheese",
+        "c) lettuce"
+      ]
+    },
+    {
+      "number": 2,
+      "id": "q2",
+      "format": "multiple-choice",
+      "objective": "food-groups",
+      "objectiveLabel": "Lesson objective: The four food groups",
+      "prompt": "Which food group gives you energy to work and play?",
+      "correct": 0,
+      "evidence": "The lesson text says that meat and fish give you energy to work and play.",
+      "options": [
+        "a) meat and fish",
+        "b) fruit and vegetables",
+        "c) dairy"
+      ]
+    },
+    {
+      "number": 3,
+      "id": "q3",
+      "format": "multiple-choice",
+      "objective": "food-groups",
+      "objectiveLabel": "Lesson objective: The four food groups",
+      "prompt": "Bread, rice and cereal belong to which food group?",
+      "correct": 1,
+      "evidence": "The text names wheat, cereal and rice as grains, and says grains should be in every meal.",
+      "options": [
+        "a) dairy",
+        "b) grains",
+        "c) fruit"
+      ]
+    },
+    {
+      "number": 4,
+      "id": "q4",
+      "format": "multiple-choice",
+      "objective": "should-advice",
+      "objectiveLabel": "Lesson objective: Advice with should and shouldn’t",
+      "prompt": "You _____ spend a long time playing computer games.",
+      "correct": 1,
+      "evidence": "The Let’s Learn box says: You shouldn’t spend a long time playing computer games.",
+      "options": [
+        "a) should",
+        "b) shouldn’t",
+        "c) why don’t you"
+      ]
+    },
+    {
+      "number": 5,
+      "id": "q5",
+      "format": "multiple-choice",
+      "objective": "should-advice",
+      "objectiveLabel": "Lesson objective: Suggestions with Why don’t you …?",
+      "prompt": "_____ get some fresh air?",
+      "correct": 0,
+      "evidence": "A suggestion that is a question begins Why don’t you …? “You should” and “You shouldn’t” cannot form a question.",
+      "options": [
+        "a) Why don’t you",
+        "b) You should",
+        "c) You shouldn’t"
+      ]
+    },
+    {
+      "number": 6,
+      "id": "q6",
+      "format": "multiple-choice",
+      "objective": "should-advice",
+      "objectiveLabel": "Lesson objective: Giving useful advice",
+      "prompt": "Omar is always tired at school. Choose the best advice.",
+      "correct": 2,
+      "evidence": "Going to bed earlier helps a tired pupil. “You shouldn’t get enough sleep” advises the opposite, and “Why don’t you sleep late?” suggests a later bedtime.",
+      "options": [
+        "a) You shouldn’t get enough sleep.",
+        "b) Why don’t you sleep late?",
+        "c) You should go to bed earlier."
+      ]
+    },
+    {
+      "number": 7,
+      "id": "q7",
+      "format": "multiple-choice",
+      "objective": "should-advice",
+      "objectiveLabel": "Lesson objective: Recognising advice",
+      "prompt": "Which sentence gives advice?",
+      "correct": 1,
+      "evidence": "“You should …” is the advice form taught in the lesson. The others are a statement about the speaker and a question.",
+      "options": [
+        "a) I drink lots of water.",
+        "b) You should drink lots of water.",
+        "c) Do you drink lots of water?"
+      ]
+    },
+    {
+      "number": 8,
+      "id": "q8",
+      "format": "multiple-choice",
+      "objective": "healthy-habits-vocabulary",
+      "objectiveLabel": "Lesson objective: Choosing healthy food",
+      "prompt": "Which is the healthiest breakfast?",
+      "correct": 2,
+      "evidence": "Milk, bread and an apple come from the dairy, grains and fruit groups. Sweets and cola are unhealthy, and coffee alone is not a healthy breakfast.",
+      "options": [
+        "a) sweets and cola",
+        "b) only coffee",
+        "c) milk, bread and an apple"
+      ]
+    },
+    {
+      "number": 9,
+      "id": "q9",
+      "format": "true-false",
+      "objective": "healthy-habits-vocabulary",
+      "objectiveLabel": "Lesson objective: Healthy habits",
+      "prompt": "Choose True or False: You should drink lots of water every day.",
+      "correct": 0,
+      "evidence": "The advice in the lesson says that everyone should drink lots of water every day.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 10,
+      "id": "q10",
+      "format": "true-false",
+      "objective": "food-groups",
+      "objectiveLabel": "Lesson objective: The four food groups",
+      "prompt": "Choose True or False: Fruit and vegetables are full of vitamins.",
+      "correct": 0,
+      "evidence": "The “My Plate” text says fruit and vegetables are full of vitamins.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 11,
+      "id": "q11",
+      "format": "true-false",
+      "objective": "healthy-habits-vocabulary",
+      "objectiveLabel": "Lesson objective: Healthy habits",
+      "prompt": "Choose True or False: Eating many sweets is good for your teeth.",
+      "correct": 1,
+      "evidence": "The lesson says eating too many sweets is bad for you, and dairy is the food group that makes teeth strong.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 12,
+      "id": "q12",
+      "format": "multiple-choice",
+      "objective": "should-advice",
+      "objectiveLabel": "Lesson objective: Advice with should",
+      "prompt": "Everyone _____ eat breakfast every day.",
+      "correct": 0,
+      "evidence": "Everyone takes should, not shouldn’t, and “why don’t you” cannot follow everyone in a statement.",
+      "options": [
+        "a) should",
+        "b) shouldn’t",
+        "c) why don’t you"
+      ]
+    },
+    {
+      "number": 13,
+      "id": "q13",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about healthy habits",
+      "prompt": "Read the text. What does Rami eat for breakfast?",
+      "correct": 0,
+      "evidence": "The third sentence lists bread, cheese and an apple for breakfast.",
+      "options": [
+        "a) bread, cheese and an apple",
+        "b) fish and rice",
+        "c) pizza and sweets"
+      ]
+    },
+    {
+      "number": 14,
+      "id": "q14",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about healthy habits",
+      "prompt": "In the text, how does Rami go to school?",
+      "correct": 2,
+      "evidence": "The text says Rami walks to school with his sister, so he goes on foot.",
+      "options": [
+        "a) by bus",
+        "b) by bicycle",
+        "c) on foot"
+      ]
+    },
+    {
+      "number": 15,
+      "id": "q15",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about healthy habits",
+      "prompt": "In the text, what does Rami do after school?",
+      "correct": 0,
+      "evidence": "The text says that after school Rami plays football in the park.",
+      "options": [
+        "a) he plays football",
+        "b) he watches television for a long time",
+        "c) he goes to bed"
+      ]
+    },
+    {
+      "number": 16,
+      "id": "q16",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about healthy habits",
+      "prompt": "In the text, choose True or False: Rami goes to bed late.",
+      "correct": 1,
+      "evidence": "The text says Rami goes to bed at nine o’clock, so he does not go to bed late.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 17,
+      "id": "q17",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing advice with should",
+      "prompt": "Make one complete sentence of advice with these words: you / should / get / enough / sleep",
+      "correct": "You should get enough sleep.",
+      "accepted": [
+        "you should get enough sleep"
+      ],
+      "wrongSample": "You should gets enough sleep.",
+      "evidence": "Should is followed by the plain verb: you should get enough sleep."
+    },
+    {
+      "number": 18,
+      "id": "q18",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing a suggestion with Why don’t you …?",
+      "prompt": "Make one question with these words: why / don’t / you / walk / every / day",
+      "correct": "Why don’t you walk every day?",
+      "accepted": [
+        "why don’t you walk every day"
+      ],
+      "wrongSample": "Why don’t you walking every day?",
+      "evidence": "Why don’t you is followed by the plain verb and the question ends with a question mark."
+    }
+  ]
+}

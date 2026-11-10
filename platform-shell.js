@@ -16,6 +16,8 @@
     'grade5-unit1-lesson3': { grade: 5, unit: 1, lesson: 3, title: 'Daily Routines', bookLabel: "Pupil's Book" },
     'grade5-unit1-lesson4': { grade: 5, unit: 1, lesson: 4, title: 'The Five Senses', bookLabel: "Pupil's Book" },
     'grade5-unit1-lesson5': { grade: 5, unit: 1, lesson: 5, title: 'Clothes', bookLabel: "Pupil's Book" },
+    'grade5-unit1-lesson6': { grade: 5, unit: 1, lesson: 6, title: 'Healthy Lifestyle', bookLabel: "Pupil's Book" },
+    'grade5-unit1-lesson7': { grade: 5, unit: 1, lesson: 7, title: 'Hobbies', bookLabel: "Pupil's Book" },
     'grade8-unit1-lesson1': { grade: 8, unit: 1, lesson: 1, title: 'Future Plans', bookLabel: "Student's Book" },
     'grade8-unit1-lesson2': { grade: 8, unit: 1, lesson: 2, title: 'School Challenges', bookLabel: "Student's Book" }
   };

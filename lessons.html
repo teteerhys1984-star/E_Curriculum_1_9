@@ -153,7 +153,11 @@
     const lesson5 = grade===3?'<a class="lesson" href="grade3-unit1-lesson5.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 5 · Revision 1</strong><small>Pupil’s Book (pp. 15–17) · Workbook (pp. 15–17) · Vocabulary · 20-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
       : grade===5?'<a class="lesson" href="grade5-unit1-lesson5.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 5 · Clothes</strong><small>Pupil’s Book (pp. 15–20) · Workbook (pp. 17–21) · Vocabulary · 18-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
       : '';
-    document.getElementById('lesson-list').innerHTML = lesson1 + lesson2 + lesson3 + lesson4 + lesson5;
+    const lesson6 = grade===5?'<a class="lesson" href="grade5-unit1-lesson6.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 6 · Healthy Lifestyle</strong><small>Pupil’s Book (pp. 21–23) · Workbook (pp. 22–24) · Vocabulary · 18-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      : '';
+    const lesson7 = grade===5?'<a class="lesson" href="grade5-unit1-lesson7.html"><div><span class="badge badge-available">Available · Unit 1</span><strong>Lesson 7 · Hobbies</strong><small>Pupil’s Book (pp. 24–26) · Workbook (pp. 25–27) · Vocabulary · 18-question Lesson Test</small></div><span class="arrow" aria-hidden="true">→</span></a>'
+      : '';
+    document.getElementById('lesson-list').innerHTML = lesson1 + lesson2 + lesson3 + lesson4 + lesson5 + lesson6 + lesson7;
   </script>
 </body>
 </html>

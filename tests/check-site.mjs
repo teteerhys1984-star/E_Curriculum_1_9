@@ -123,7 +123,7 @@ for (const file of newPages) {
 pass('Five new pages follow LESSON_PAGE_STANDARD.md', 'Four content pages load the shared step navigator; menu opts out');
 
 const landing = read('index.html');
-assert.match(landing, /<span class="num">Grade 5<\/span>[\s\S]*?<span class="badge badge-available">5 lessons ready<\/span>[\s\S]*?Unit 1 Lessons 1–5 ready: <em>At School<\/em>, <em>Family<\/em>, <em>Daily Routines<\/em>, <em>The Five Senses<\/em> and <em>Clothes<\/em>/);
+assert.match(landing, /<span class="num">Grade 5<\/span>[\s\S]*?<span class="badge badge-available">7 lessons ready<\/span>[\s\S]*?Unit 1 Lessons 1–7 ready: <em>At School<\/em>, <em>Family<\/em>, <em>Daily Routines<\/em>, <em>The Five Senses<\/em>, <em>Clothes<\/em>, <em>Healthy Lifestyle<\/em> and <em>Hobbies<\/em>/);
 for (const [lesson, title] of [[1, 'At School'], [2, 'Family'], [3, 'Daily Routines']]) {
   const href = `grade5-unit1-lesson${lesson}.html`;
   assert.ok(exists(href), `Missing Grade 5 Lesson ${lesson} menu`);
@@ -131,7 +131,7 @@ for (const [lesson, title] of [[1, 'At School'], [2, 'Family'], [3, 'Daily Routi
   assert.ok(landing.includes(`Lesson ${lesson} · ${title}`), `Landing page missing Grade 5 Lesson ${lesson} title`);
 }
 assert.ok(landing.includes('<a href="grade5-unit1-lesson3.html">Daily Routines</a>'));
-pass('Grade 5 landing summary and lesson links', 'Five lessons declared ready; Lessons 1–5 link to their existing lesson menus with matching titles');
+pass('Grade 5 landing summary and lesson links', 'Seven lessons declared ready; Lessons 1–7 link to their existing lesson menus with matching titles');
 
 const listing = read('lessons.html');
 assert.ok(listing.includes("grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson2.html\""));
@@ -484,6 +484,8 @@ const teacherCounts = {
   'grade5-unit1-lesson3': '5 · 3 Daily Routines',
   'grade5-unit1-lesson4': '5 · 4 The Five Senses',
   'grade5-unit1-lesson5': '5 · 5 Clothes',
+  'grade5-unit1-lesson6': '5 · 6 Healthy Lifestyle',
+  'grade5-unit1-lesson7': '5 · 7 Hobbies',
   'grade8-unit1-lesson1': '8 · 1 Future Plans',
   'grade8-unit1-lesson2': '8 · 2 School Challenges'
 };
@@ -503,7 +505,7 @@ const matrixRows = new Map(
     Array.from(match[2].matchAll(/<td>([\s\S]*?)<\/td>/g), cell => cell[1].replace(/<[^>]+>/g, '').trim())
   ])
 );
-assert.equal(matrixRows.size, 14, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
+assert.equal(matrixRows.size, 16, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
 
 for (const [slug, label] of Object.entries(teacherCounts)) {
   for (const suffix of ['', '-pupil-book', '-workbook', '-vocabulary', '-test']) {
@@ -520,11 +522,11 @@ for (const [slug, label] of Object.entries(teacherCounts)) {
   assert.equal(cells[4], 'None', `${label}: listening key must be reported as unavailable`);
 }
 assert.match(matrixRows.get('4 · 1 Nice to Meet You')[1], /Not published/, 'Grade 4 Lesson 1 must be listed as having no answer key');
-for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '5 · 4 The Five Senses', '5 · 5 Clothes', '8 · 1 Future Plans', '8 · 2 School Challenges']) {
+for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '5 · 4 The Five Senses', '5 · 5 Clothes', '5 · 6 Healthy Lifestyle', '5 · 7 Hobbies', '8 · 1 Future Plans', '8 · 2 School Challenges']) {
   assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
 }
 
-const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade3-unit1-lesson4', 'grade3-unit1-lesson5', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade5-unit1-lesson4', 'grade5-unit1-lesson5', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2'];
+const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade3-unit1-lesson4', 'grade3-unit1-lesson5', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade5-unit1-lesson4', 'grade5-unit1-lesson5', 'grade5-unit1-lesson6', 'grade5-unit1-lesson7', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2'];
 for (const slug of anchoredKeys) {
   assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
   const testHtml = read(`${slug}-test.html`);
@@ -1038,6 +1040,57 @@ const g5Lessons = [
     crops: 28,
     taught: ['pyjamas', 'gloves', 'sweater', 'coat', 'blouse', 'skirt', 'floral', 'striped', 'dotted', 'plain',
       'wearing', 'putting', 'salesman', 'customer', 'size', 'fitting', 'donate', 'wardrobe']
+  },
+  {
+    slug: 'grade5-unit1-lesson6',
+    title: 'Healthy Lifestyle',
+    book: { 'pupil-book': '21–23', workbook: '22–24' },
+    pbOrder: [
+      '1 a Listen and number.', 'b Listen again and choose a, b or c.', '2 Ask and answer.', 'Pronunciation.',
+      '3 Read and practice.', '4 Before you read, write in the spaces.', '5 Read the text and do the tasks below.',
+      'Let’s Learn', '6 Fill in the spaces with.', '7 Write advice to your friend on how to live a healthy life.',
+      '8 Use the table below and write down what you eat.'
+    ],
+    wbOrder: [
+      '1. Look and fill in the spaces.', '2. Let’s play.',
+      '3. Look at the pictures and say (Good for you) or (Bad for you).', '4. Listen and write Who’s who?',
+      '5. Read and choose.', '6. Listen to the conversation and check your answers.', '7. Read and write.',
+      '8. Read the text and do the tasks below.', '9. Write about what you do to keep healthy.'
+    ],
+    pbControls: { radios: 26, texts: 10, numbers: 3, selects: 4, textareas: 0, reveals: 3 },
+    wbControls: { radios: 15, texts: 7, numbers: 0, selects: 9, textareas: 1, reveals: 3 },
+    scans: 6,
+    crops: 14,
+    taught: ['dairy', 'grains', 'wheat', 'cereal', 'rice', 'meat', 'fish', 'fruit', 'vegetables', 'vitamins',
+      'fat', 'diet', 'plate', 'delicious', 'healthy', 'lifestyle', 'exercise', 'relax', 'sleep', 'energy',
+      'active', 'fresh air', 'sweets', 'doctor', 'walk', 'hour', 'enough', 'advice', 'meal', 'breakfast',
+      'lunch', 'dinner', 'unhealthy', 'improve', 'spend']
+  },
+  {
+    slug: 'grade5-unit1-lesson7',
+    title: 'Hobbies',
+    book: { 'pupil-book': '24–26', workbook: '25–27' },
+    pbOrder: [
+      '1 Listen and choose the correct answer a, b or c.', '2 Listen and repeat.',
+      '3 Look at the pictures and talk about each one.', 'Pronunciation.', '4 Ask and answer.',
+      '5 Before you read, answer the questions.', '6 Read about Tala’s hobby and do the tasks below.',
+      'Let’s Learn', '7 Look at the pictures and write sentences about what you can or can’t do.',
+      '8 Write three sentences about your favourite hobby.'
+    ],
+    wbOrder: [
+      '1. Read about Rana’s favourite hobby and do the tasks below.',
+      '2. Look at these pictures and describe what they can do.', '3. Ask and answer about yourselves.',
+      '4. Listen and write true or false.', '5. Listen and number.', '6. Choose the correct answer.',
+      '7. Complete the dialogue.', '8. Write a paragraph about your friend’s favourite hobby.'
+    ],
+    pbControls: { radios: 21, texts: 13, numbers: 0, selects: 0, textareas: 0, reveals: 3 },
+    wbControls: { radios: 20, texts: 16, numbers: 4, selects: 5, textareas: 1, reveals: 3 },
+    scans: 6,
+    crops: 11,
+    taught: ['hobby', 'free time', 'taking photographs', 'playing football', 'cooking', 'dancing', 'drawing',
+      'playing chess', 'doing karate', 'painting', 'reading', 'instrument', 'favourite', 'interesting', 'library',
+      'borrow', 'adventure', 'grade', 'homework', 'difficult', 'clever', 'artist', 'paragraph',
+      'can’t', 'music', 'chess']
   }
 ];
 
@@ -1183,14 +1236,14 @@ for (const lesson of g5Lessons) {
   for (const file of referencedCrops) assert.ok(exists(file), `${slug}: missing referenced crop ${file}`);
 }
 
-pass('Grade 5 Lessons 4 and 5 follow LESSON_PAGE_STANDARD.md',
-  'Ten connected pages (five per lesson) in printed order: Lesson 4 "The Five Senses" (Pupil’s Book pp. 12–14, Workbook pp. 14–16) and Lesson 5 "Clothes" (Pupil’s Book pp. 15–20 with Revision 1 and the Project, Workbook pp. 17–21 with Revision 1); menus opt out of the step navigator, the four content pages load it, and every page links to the other four');
-pass('Grade 5 Lessons 4 and 5 keep every printed control and disclosure',
-  'Pinned radio, writing-line, select and textarea counts for both book pages of both lessons; every listening task (eight notices in total) discloses the recording that was not supplied and carries no invented key; Arabic appears only inside marked RTL vocabulary cells; every taught key word appears on a book page and in the vocabulary list');
-pass('Grade 5 Lessons 4 and 5 tests are independent and keyed',
-  'Two 18-question independent tests match their fixtures question by question (id, format, objective, objective label, key, option count and explanation); neither reuses lesson images or cites book pages; answer positions stay balanced; each teacher key lists all 18 items behind a gate outside the pupil form');
-pass('Grade 5 Lessons 4 and 5 sources are pinned',
-  'Six Lesson 4 scans and eleven Lesson 5 scans match their recorded SHA-256 values; twelve Lesson 4 crops and twenty-eight Lesson 5 crops are pinned, every crop records its unchanged source scan, and every crop referenced by the pages exists');
+pass('Grade 5 Lessons 4–7 follow LESSON_PAGE_STANDARD.md',
+  'Twenty connected pages (five per lesson) in printed order: Lesson 4 "The Five Senses", Lesson 5 "Clothes" (with Revision 1 and the Project), Lesson 6 "Healthy Lifestyle" (Pupil’s Book pp. 21–23, Workbook pp. 22–24) and Lesson 7 "Hobbies" (Pupil’s Book pp. 24–26, Workbook pp. 25–27); menus opt out of the step navigator, the four content pages load it, and every page links to the other four');
+pass('Grade 5 Lessons 4–7 keep every printed control and disclosure',
+  'Pinned radio, writing-line, select and textarea counts for both book pages of all four lessons; every listening task (twenty-one notices in total) discloses the recording that was not supplied and carries no invented key; Arabic appears only inside marked RTL vocabulary cells; every taught key word appears on a book page and in the vocabulary list');
+pass('Grade 5 Lessons 4–7 tests are independent and keyed',
+  'Four 18-question independent tests match their fixtures question by question (id, format, objective, objective label, key, option count and explanation); none reuses lesson images or cites book pages; answer positions stay balanced; each teacher key lists all 18 items behind a gate outside the pupil form');
+pass('Grade 5 Lessons 4–7 sources are pinned',
+  'Six scans per lesson match their recorded SHA-256 values across Lessons 4–7 (24 scans); twelve, twenty-eight, fourteen and eleven crops are pinned (65 crops), every crop records its unchanged source scan, and every crop referenced by the pages exists');
 
 const result = { suite: 'static-site-and-source-integrity', date: new Date().toISOString(), status: 'PASS', checks };
 console.log(JSON.stringify(result, null, 2));
