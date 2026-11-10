@@ -1,0 +1,1018 @@
+/* Lesson-specific activity layouts for Grade 5 · Unit 1 · Lesson 7 (Hobbies).
+   Shared typography, tokens, shell, cards, panels, forms and navigation live in design-system.css.
+   Nothing here changes an existing lesson: every class is prefixed `l7-` or is scoped to this lesson's pages. */
+
+/* ---------- Page furniture ---------- */
+.l7-routine-grid,
+.l7-two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.l7-three-col {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.l7-speech {
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-subtle);
+  padding: var(--space-3) var(--space-4);
+  margin: var(--space-3) 0;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.l7-speech p {
+  margin: 0;
+}
+
+.l7-speech p + p {
+  margin-top: var(--space-2);
+}
+
+.l7-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.l7-chips li {
+  margin: 0;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--section-border, var(--color-border-default));
+  background-color: var(--section-tint, var(--color-bg-subtle));
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.l7-wordbank {
+  border: 1px solid var(--color-accent-200);
+  background-color: var(--color-accent-50);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  margin: var(--space-3) 0;
+  font-weight: 600;
+  line-height: 1.9;
+}
+
+.l7-example {
+  border-inline-start: 4px solid var(--color-success-700, #2e7d5b);
+  background-color: var(--color-success-50, #eef8f3);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-3) var(--space-4);
+  margin: var(--space-3) 0;
+  font-weight: 600;
+}
+
+.l7-muted-label {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 2px;
+}
+
+/* ---------- Page 9 · Exercise 1 (six picture-choice columns) ---------- */
+.l7-pick-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin: var(--space-3) 0;
+}
+
+.l7-pick {
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-canvas);
+  padding: var(--space-3);
+  margin: 0;
+  min-width: 0;
+}
+
+.l7-pick legend {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-brand-900);
+  padding: 0 4px;
+}
+
+.l7-pick .l7-pick-options {
+  display: grid;
+  gap: 6px;
+}
+
+.l7-pick .l7-pick-options label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-surface);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.l7-pick .l7-pick-options label:has(input:checked) {
+  border-color: var(--color-accent-600);
+  background-color: var(--color-accent-50);
+  box-shadow: inset 0 0 0 1px var(--color-accent-600);
+}
+
+.l7-pick .l7-pick-options input[type="radio"] {
+  margin-top: 3px;
+  flex-shrink: 0;
+  accent-color: var(--color-accent-700);
+}
+
+.l7-pick figcaption {
+  text-align: start;
+}
+
+.l7-picture-note {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-top: var(--space-2);
+}
+
+/* Picture placeholder art for the six page-9 drawings. Drawn with CSS so no
+   illustration is invented: each is a neutral, labelled frame around the printed text. */
+.l7-pic {
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  min-height: 108px;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  text-align: center;
+  padding: var(--space-2);
+}
+
+.l7-pic b {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  color: var(--color-brand-900);
+}
+
+/* ---------- Page 9 · Exercise 2 (gap-choose in a paragraph) ---------- */
+.l7-cloze {
+  border: 1px solid var(--color-warning-border, var(--color-border-strong));
+  background-color: var(--color-warning-50, #fffaf0);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  margin: var(--space-3) 0;
+  line-height: 2.6;
+  font-size: var(--text-md);
+}
+
+.l7-cloze .l7-gap {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin: 2px 2px;
+  padding: 2px 6px;
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-canvas);
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.l7-cloze .l7-gap > span {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.l7-cloze .l7-gap label {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-subtle);
+  background-color: var(--color-bg-surface);
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.l7-cloze .l7-gap label:has(input:checked) {
+  border-color: var(--color-accent-600);
+  background-color: var(--color-accent-50);
+}
+
+.l7-cloze .l7-gap input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: var(--color-accent-700);
+}
+
+.l7-gap.l7-answered {
+  border-color: var(--color-accent-600);
+}
+
+/* ---------- Page 9 · Pronunciation ---------- */
+.l7-pron {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-3) 0;
+}
+
+.l7-pron-sound {
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--color-bg-surface);
+}
+
+.l7-pron-sound h3 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-accent-700);
+}
+
+.l7-pron-sound .l7-ipa {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-brand-900);
+  margin-inline-end: var(--space-2);
+}
+
+.l7-pron-sound ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.l7-pron-sound li {
+  margin: 0;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-subtle);
+  font-weight: 600;
+}
+
+/* ---------- Page 10 · Exercise 4 (the printed clock diagram) ---------- */
+.l7-clock-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+  margin: var(--space-3) 0;
+}
+
+.l7-clock {
+  text-align: center;
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  background-color: var(--color-bg-surface);
+}
+
+.l7-clock svg {
+  width: 100%;
+  max-width: 190px;
+  height: auto;
+}
+
+.l7-clock p {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+}
+
+.l7-clock-labels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2) var(--space-3);
+}
+
+.l7-clock-labels .l7-clock-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  background-color: var(--color-bg-canvas);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  min-width: 0;
+}
+
+.l7-clock-labels .l7-clock-label .l7-dots {
+  flex: 1;
+  border-bottom: 1px dotted var(--color-border-strong);
+  min-width: 24px;
+  height: 1em;
+}
+
+.l7-clock-labels .l7-clock-label input {
+  width: 74px;
+  flex-shrink: 0;
+}
+
+/* ---------- Printed charts ---------- */
+.l7-table-scroll {
+  overflow-x: auto;
+  margin: var(--space-3) 0;
+  border-radius: var(--radius-md);
+}
+
+.l7-table-scroll table {
+  min-width: 520px;
+}
+
+.l7-chart td,
+.l7-chart th {
+  text-align: center;
+  border: 1px solid var(--color-border-default);
+  padding: 8px 10px;
+  font-size: var(--text-sm);
+}
+
+.l7-chart th[scope="row"] {
+  text-align: start;
+  font-weight: 700;
+  background-color: var(--color-bg-subtle);
+  color: var(--color-brand-900);
+}
+
+.l7-chart caption {
+  caption-side: top;
+  text-align: start;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  padding-bottom: var(--space-2);
+}
+
+.l7-chart .l7-tick {
+  color: var(--color-success-700, #2e7d5b);
+  font-weight: 700;
+}
+
+.l7-chart .l7-cross {
+  color: #a03636;
+  font-weight: 700;
+}
+
+.l7-chart-input td {
+  padding: 6px;
+}
+
+.l7-chart-input input {
+  width: 100%;
+  min-width: 96px;
+}
+
+.l7-chart-input caption {
+  caption-side: top;
+  text-align: start;
+}
+
+/* ---------- Numbered task lists with inline fields ---------- */
+.l7-tasklist {
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-3) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.l7-tasklist > li {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: var(--space-3);
+  align-items: start;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-canvas);
+}
+
+.l7-tasklist .l7-num {
+  display: inline-grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-default);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--color-brand-900);
+}
+
+.l7-tasklist .l7-task-body > :last-child {
+  margin-bottom: 0;
+}
+
+.l7-tasklist .l7-task-body p {
+  margin-bottom: var(--space-2);
+}
+
+.l7-inline-field {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.l7-inline-field input[type="text"],
+.l7-inline-field textarea {
+  min-width: 0;
+  flex: 1 1 180px;
+}
+
+.l7-field-row {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-2) 0;
+}
+
+.l7-field-row label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.l7-field-row input[type="text"],
+.l7-field-row textarea {
+  width: 100%;
+}
+
+.l7-answer-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--space-2);
+}
+
+.l7-answer-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-surface);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0;
+}
+
+.l7-answer-options label:has(input:checked) {
+  border-color: var(--color-accent-600);
+  background-color: var(--color-accent-50);
+  box-shadow: inset 0 0 0 1px var(--color-accent-600);
+}
+
+.l7-answer-options input[type="radio"] {
+  margin: 0;
+  accent-color: var(--color-accent-700);
+}
+
+/* ---------- True / false ---------- */
+.l7-tf {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+}
+
+.l7-tf label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-full);
+  background-color: var(--color-bg-surface);
+  font-weight: 700;
+  cursor: pointer;
+  margin: 0;
+}
+
+.l7-tf label:has(input:checked) {
+  border-color: var(--color-accent-600);
+  background-color: var(--color-accent-50);
+}
+
+.l7-tf input[type="radio"] {
+  margin: 0;
+  accent-color: var(--color-accent-700);
+}
+
+/* ---------- Matching ---------- */
+.l7-match {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+
+.l7-match-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(150px, 220px);
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-canvas);
+}
+
+.l7-match-row label {
+  font-weight: 600;
+  margin: 0;
+}
+
+.l7-match-row select {
+  width: 100%;
+}
+
+/* The picture column of Workbook exercise 1: printed drawings reproduced as small
+   original crops, with the matching select beside each one. */
+.l7-picture-match {
+  display: grid;
+  gap: var(--space-3);
+  margin: var(--space-3) 0;
+}
+
+.l7-picture-match .l7-picture-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-canvas);
+}
+
+.l7-picture-match figure {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.l7-picture-match img {
+  width: 96px;
+  height: auto;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  background-color: #ffffff;
+}
+
+.l7-picture-match figcaption {
+  text-align: start;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+/* ---------- Ordering / reordering ---------- */
+.l7-order {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: l3order;
+}
+
+.l7-order > li {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: var(--space-3);
+  align-items: center;
+  margin: 0;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-canvas);
+}
+
+.l7-order label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.l7-order input[type="text"] {
+  width: 100%;
+}
+
+.l7-word-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: var(--space-2) 0;
+  padding: 0;
+  list-style: none;
+}
+
+.l7-word-tiles li {
+  margin: 0;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border-default);
+  background-color: var(--color-bg-subtle);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+/* ---------- Reading passage ---------- */
+.l7-reading {
+  border: 1px solid var(--color-info-border, var(--color-border-default));
+  background-color: var(--color-info-50, var(--color-bg-subtle));
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  margin: var(--space-3) 0;
+  line-height: 1.95;
+  font-size: var(--text-md);
+}
+
+.l7-reading p {
+  margin-bottom: var(--space-3);
+}
+
+.l7-reading p:last-child {
+  margin-bottom: 0;
+}
+
+.l7-reading .l7-mark {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  color: var(--color-brand-900);
+}
+
+.l7-reading .l7-mark-num {
+  font-size: 0.72em;
+  font-weight: 700;
+  vertical-align: super;
+  color: var(--color-accent-700);
+  margin-inline-end: 2px;
+}
+
+/* ---------- Long writing boxes ---------- */
+.l7-write textarea {
+  width: 100%;
+  min-height: 72px;
+  resize: vertical;
+}
+
+.l7-write label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* ---------- Answer status line ---------- */
+.l7-status {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin: var(--space-2) 0 0;
+}
+
+/* ---------- Source page disclosure ---------- */
+.l7-source {
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  margin: var(--space-4) 0 var(--space-1);
+  background-color: var(--color-bg-subtle);
+}
+
+.l7-source summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--color-brand-900);
+  font-size: var(--text-sm);
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.l7-source img {
+  display: block;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  margin: var(--space-3) auto;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .l7-pick-grid,
+  .l7-pron,
+  .l7-routine-grid,
+  .l7-two-col,
+  .l7-three-col {
+    grid-template-columns: 1fr;
+  }
+
+  .l7-clock-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .l7-clock-labels {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .l7-cloze {
+    line-height: 2.9;
+    padding: var(--space-3);
+  }
+
+  .l7-tasklist > li {
+    grid-template-columns: 1fr;
+  }
+
+  .l7-order > li,
+  .l7-match-row,
+  .l7-picture-match .l7-picture-row,
+  .l7-picture-match figure {
+    grid-template-columns: 1fr;
+  }
+
+  .l7-picture-match img {
+    width: 84px;
+  }
+
+  .l7-clock-labels .l7-clock-label input {
+    width: 100%;
+  }
+}
+
+@media print {
+  .l7-table-scroll table {
+    min-width: 0;
+  }
+}
+
+/* ---------- Lesson-7 page links (menu · Pupil’s Book · Workbook · Vocabulary · Test) ---------- */
+.lesson-page-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  margin: var(--space-4) 0 var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-subtle);
+  font-size: var(--text-sm);
+}
+
+.lesson-page-links .lesson-page-links-label {
+  font-weight: 700;
+  color: var(--color-text-secondary);
+}
+
+.lesson-page-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 999px;
+  background-color: var(--color-bg-canvas);
+  color: var(--color-text-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lesson-page-links a:hover,
+.lesson-page-links a:focus-visible {
+  border-color: var(--color-brand-700);
+  color: var(--color-brand-800);
+  text-decoration: underline;
+}
+
+@media print {
+  .lesson-page-links {
+    display: none !important;
+  }
+}
+
+/* ---------- Independent Lesson Test stimulus blocks ---------- */
+.l7-test-clock {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: var(--space-2) 0 var(--space-3);
+  padding: 8px 16px;
+  border: 2px solid var(--color-brand-800);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-subtle);
+  color: var(--color-brand-900);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  font-variant-numeric: tabular-nums;
+}
+
+.l7-test-clock-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.l7-test-table-wrap {
+  overflow-x: auto;
+  margin: var(--space-3) 0;
+  border-radius: var(--radius-md);
+}
+
+.l7-test-chart {
+  width: 100%;
+  min-width: 0;
+  border-collapse: collapse;
+}
+
+.l7-test-chart th,
+.l7-test-chart td {
+  padding: 6px 8px;
+  font-size: var(--text-sm);
+}
+
+.l7-test-passage {
+  margin: var(--space-2) 0 var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border-default);
+  border-inline-start: 4px solid var(--color-brand-700);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-subtle);
+  line-height: 1.65;
+}
+
+.l7-test-passage-title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-brand-900);
+}
+
+.l7-test-passage p {
+  margin: 0;
+}
+
+.l7-test-sentence {
+  margin: var(--space-2) 0 var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-subtle);
+  font-size: var(--text-base);
+  font-weight: 600;
+}
+
+.l7-test-sentence u {
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  color: var(--color-brand-900);
+}
+
+.l7-test-wordbank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: var(--space-2) 0 var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+
+.l7-test-wordbank li {
+  margin: 0;
+  padding: 4px 12px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 999px;
+  background-color: var(--color-bg-subtle);
+  color: var(--color-brand-900);
+  font-weight: 700;
+  font-size: var(--text-sm);
+}
+
+.l7-test-write {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-2) 0;
+}
+
+.l7-test-write label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.l7-test-write input[type="text"] {
+  width: 100%;
+  max-width: 460px;
+}
+
+@media (max-width: 480px) {
+  .l7-test-chart th,
+  .l7-test-chart td {
+    padding: 4px 5px;
+    font-size: var(--text-xs);
+  }
+}
+
+
+/* ---------- Lesson 7 additions: printed figures, reading titles, punctuation gaps ---------- */
+.l7-figure {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-3);
+  margin: var(--space-3) 0;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-bg-canvas);
+}
+
+.l7-figure img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  background-color: #ffffff;
+}
+
+.l7-figure figcaption {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.l7-reading-title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-lg);
+  font-weight: 800;
+  text-align: center;
+  color: var(--color-brand-900);
+}
+
+.l7-punct {
+  width: 4.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.l7-word-square {
+  width: auto;
+  margin: var(--space-2) auto;
+  border-collapse: collapse;
+  background-color: var(--color-bg-canvas);
+}
+
+.l7-word-square td {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  border: 1px solid var(--color-border-subtle);
+}

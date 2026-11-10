@@ -1,0 +1,160 @@
+{
+  "note": "Derived crops for lessons pages. Source PNGs in source/ are unmodified originals; every crop is a plain -crop of the source file named in \"source\".",
+  "lesson": "grade5-unit1-lesson7",
+  "crops": [
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/pb24-girl.png",
+      "source": "assets/grade5-unit1-lesson7/source/pupil-book-page-24.png",
+      "sourceUpload": "image-7",
+      "sourceSha256": "e8e85f16ae789449ef4f1565ee714151d022ef9385ac2f4054419897ddb609a6",
+      "crop": {
+        "width": 200,
+        "height": 170,
+        "x": 465,
+        "y": 95
+      },
+      "sha256": "027e27d79d8c91dd054d7eeb063c2cde1379e3a58b6f84e0844556fec3f68f8e",
+      "bytes": 50993
+    },
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/pb24-hobby-pictures.png",
+      "source": "assets/grade5-unit1-lesson7/source/pupil-book-page-24.png",
+      "sourceUpload": "image-7",
+      "sourceSha256": "e8e85f16ae789449ef4f1565ee714151d022ef9385ac2f4054419897ddb609a6",
+      "crop": {
+        "width": 690,
+        "height": 255,
+        "x": 40,
+        "y": 620
+      },
+      "sha256": "58358e71b4a11d89ea16146884c53c336606f02ff5404b8f7f476709c880743d",
+      "bytes": 170831
+    },
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/pb25-dialogue.png",
+      "source": "assets/grade5-unit1-lesson7/source/pupil-book-page-25.png",
+      "sourceUpload": "image-8",
+      "sourceSha256": "c13f93d9bbc739a5067bc597f4cf958aa76b68c34d78f4cf77f39020b1421423",
+      "crop": {
+        "width": 600,
+        "height": 155,
+        "x": 95,
+        "y": 62
+      },
+      "sha256": "ccddfacf2d1dd84ed2eb476a7cd10afbf51e71604c70727e37c5d1aed34447c6",
+      "bytes": 149945
+    },
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/pb25-tala.png",
+      "source": "assets/grade5-unit1-lesson7/source/pupil-book-page-25.png",
+      "sourceUpload": "image-8",
+      "sourceSha256": "c13f93d9bbc739a5067bc597f4cf958aa76b68c34d78f4cf77f39020b1421423",
+      "crop": {
+        "width": 95,
+        "height": 220,
+        "x": 555,
+        "y": 345
+      },
+      "sha256": "8aa8aa2bbc11b5be475d47f859be51b37a48c53fdcd40909869fd907fa35320b",
+      "bytes": 27198
+    },
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/pb26-lets-learn.png",
+      "source": "assets/grade5-unit1-lesson7/source/pupil-book-page-26.png",
+      "sourceUpload": "image-9",
+      "sourceSha256": "0456531d329e1524ca90e731bda6b1ac437eb42fc7193153928704814705c967",
+      "crop": {
+        "width": 455,
+        "height": 190,
+        "x": 150,
+        "y": 30
+      },
+      "sha256": "d4455763be244a788a6755b72f40c0ed8daba1ecb9bd139ad998b46ed431e67d",
+      "bytes": 43484
+    },
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/pb26-pictures-a.png",
+      "source": "assets/grade5-unit1-lesson7/source/pupil-book-page-26.png",
+      "sourceUpload": "image-9",
+      "sourceSha256": "0456531d329e1524ca90e731bda6b1ac437eb42fc7193153928704814705c967",
+      "crop": {
+        "width": 690,
+        "height": 145,
+        "x": 30,
+        "y": 312
+      },
+      "sha256": "0177fd47137336201ea4b3c727c326eff057f19639aa89c4cea4281f3b7a1669",
+      "bytes": 110290
+    },
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/pb26-pictures-b.png",
+      "source": "assets/grade5-unit1-lesson7/source/pupil-book-page-26.png",
+      "sourceUpload": "image-9",
+      "sourceSha256": "0456531d329e1524ca90e731bda6b1ac437eb42fc7193153928704814705c967",
+      "crop": {
+        "width": 665,
+        "height": 152,
+        "x": 55,
+        "y": 458
+      },
+      "sha256": "16420a1d8987490cb4b65be8ee3409e91f564a23a7061b22cb2639c9af838069",
+      "bytes": 136057
+    },
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/wb25-rana.png",
+      "source": "assets/grade5-unit1-lesson7/source/workbook-page-25.png",
+      "sourceUpload": "image-10",
+      "sourceSha256": "51e258b1add86d9067e0bc50b428315edbf80fe919cb332ec027e308c831093e",
+      "crop": {
+        "width": 132,
+        "height": 128,
+        "x": 38,
+        "y": 212
+      },
+      "sha256": "38c3d37902d820179ca87eab740207310a0dc2ce6efd775077669895a1d4ab86",
+      "bytes": 18510
+    },
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/wb26-pictures.png",
+      "source": "assets/grade5-unit1-lesson7/source/workbook-page-26.png",
+      "sourceUpload": "image-11",
+      "sourceSha256": "f1d9a1453acca4f32e74b13136325a9444a55c995b8742242938224882f30dcd",
+      "crop": {
+        "width": 540,
+        "height": 292,
+        "x": 100,
+        "y": 102
+      },
+      "sha256": "474bec1b3b06d828db543083588cd2082bfd53be487a912309905e6f779274a5",
+      "bytes": 134948
+    },
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/wb26-partner.png",
+      "source": "assets/grade5-unit1-lesson7/source/workbook-page-26.png",
+      "sourceUpload": "image-11",
+      "sourceSha256": "f1d9a1453acca4f32e74b13136325a9444a55c995b8742242938224882f30dcd",
+      "crop": {
+        "width": 190,
+        "height": 170,
+        "x": 105,
+        "y": 458
+      },
+      "sha256": "68b950a57db4e3ffcba8186009f49286ca4d34424f2994116cb7721775d66756",
+      "bytes": 32485
+    },
+    {
+      "file": "assets/grade5-unit1-lesson7/crops/wb27-pictures.png",
+      "source": "assets/grade5-unit1-lesson7/source/workbook-page-27.png",
+      "sourceUpload": "image-12",
+      "sourceSha256": "c3a23e3a9616797f84bda2be18e507fc54d476c2e262c69dcf97a29fdf91ab46",
+      "crop": {
+        "width": 345,
+        "height": 200,
+        "x": 168,
+        "y": 88
+      },
+      "sha256": "0364ba6ed3eec6b73c1815b796f3bf48e4a575bafcdb946fb4d01d2aae0606d2",
+      "bytes": 63768
+    }
+  ]
+}

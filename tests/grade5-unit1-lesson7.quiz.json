@@ -1,0 +1,283 @@
+{
+  "lesson": "grade5-unit1-lesson7",
+  "title": "Lesson 7 Test · Hobbies",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 18,
+  "objectives": [
+    "hobbies-vocabulary",
+    "free-time",
+    "can-ability",
+    "reading-comprehension",
+    "language-use",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "q1",
+      "format": "multiple-choice",
+      "objective": "hobbies-vocabulary",
+      "objectiveLabel": "Lesson objective: Hobby vocabulary",
+      "prompt": "Which hobby needs a camera?",
+      "correct": 1,
+      "evidence": "A camera is the tool for taking photographs. Drawing needs pencils and chess needs a board.",
+      "options": [
+        "a) drawing",
+        "b) taking photographs",
+        "c) doing karate"
+      ]
+    },
+    {
+      "number": 2,
+      "id": "q2",
+      "format": "multiple-choice",
+      "objective": "hobbies-vocabulary",
+      "objectiveLabel": "Lesson objective: Hobby vocabulary",
+      "prompt": "Which hobby do you do on a board with small pieces?",
+      "correct": 0,
+      "evidence": "Playing chess is played on a board with pieces. Dancing and cooking need no board.",
+      "options": [
+        "a) playing chess",
+        "b) dancing",
+        "c) cooking"
+      ]
+    },
+    {
+      "number": 3,
+      "id": "q3",
+      "format": "multiple-choice",
+      "objective": "hobbies-vocabulary",
+      "objectiveLabel": "Lesson objective: Hobby vocabulary",
+      "prompt": "Which hobby needs paints and a brush?",
+      "correct": 1,
+      "evidence": "Painting uses paints and a brush. Reading needs a book and football needs a ball.",
+      "options": [
+        "a) reading",
+        "b) painting",
+        "c) playing football"
+      ]
+    },
+    {
+      "number": 4,
+      "id": "q4",
+      "format": "multiple-choice",
+      "objective": "free-time",
+      "objectiveLabel": "Lesson objective: Talking about free time",
+      "prompt": "Free time is the time when you _____.",
+      "correct": 1,
+      "evidence": "The lesson asks “What do you do in your free time?”, so free time is time without lessons or work.",
+      "options": [
+        "a) are at school",
+        "b) have no lessons or work",
+        "c) are asleep"
+      ]
+    },
+    {
+      "number": 5,
+      "id": "q5",
+      "format": "multiple-choice",
+      "objective": "can-ability",
+      "objectiveLabel": "Lesson objective: Ability with can and can’t",
+      "prompt": "I _____ ride a bike, but I can’t swim.",
+      "correct": 0,
+      "evidence": "“But” contrasts the two abilities, so the first part must be positive: I can ride a bike.",
+      "options": [
+        "a) can",
+        "b) can’t",
+        "c) not can"
+      ]
+    },
+    {
+      "number": 6,
+      "id": "q6",
+      "format": "multiple-choice",
+      "objective": "can-ability",
+      "objectiveLabel": "Lesson objective: Ability with can and can’t",
+      "prompt": "She can’t _____ difficult books.",
+      "correct": 1,
+      "evidence": "After can’t the plain verb is used, so it is “can’t read”, not “can’t reads” or “can’t reading”.",
+      "options": [
+        "a) reads",
+        "b) read",
+        "c) reading"
+      ]
+    },
+    {
+      "number": 7,
+      "id": "q7",
+      "format": "multiple-choice",
+      "objective": "can-ability",
+      "objectiveLabel": "Lesson objective: Questions with Can …?",
+      "prompt": "_____ you play chess? — Yes, I can.",
+      "correct": 0,
+      "evidence": "The answer “Yes, I can” shows that the question began with Can.",
+      "options": [
+        "a) Can",
+        "b) Do",
+        "c) Are"
+      ]
+    },
+    {
+      "number": 8,
+      "id": "q8",
+      "format": "multiple-choice",
+      "objective": "can-ability",
+      "objectiveLabel": "Lesson objective: Ability with can and can’t",
+      "prompt": "They can _____ football in the park.",
+      "correct": 0,
+      "evidence": "After can the plain verb is used: they can play football.",
+      "options": [
+        "a) play",
+        "b) plays",
+        "c) playing"
+      ]
+    },
+    {
+      "number": 9,
+      "id": "q9",
+      "format": "multiple-choice",
+      "objective": "can-ability",
+      "objectiveLabel": "Lesson objective: Checking sentences with can",
+      "prompt": "Choose the correct sentence.",
+      "correct": 1,
+      "evidence": "The pattern is can + plain verb: he can play the piano. Adding -s or -ing after can is wrong.",
+      "options": [
+        "a) He can plays the piano.",
+        "b) He can play the piano.",
+        "c) He can playing the piano."
+      ]
+    },
+    {
+      "number": 10,
+      "id": "q10",
+      "format": "true-false",
+      "objective": "hobbies-vocabulary",
+      "objectiveLabel": "Lesson objective: Hobby vocabulary",
+      "prompt": "Choose True or False: Drawing and painting are hobbies.",
+      "correct": 0,
+      "evidence": "Both words name free-time activities in the lesson, so both are hobbies.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 11,
+      "id": "q11",
+      "format": "true-false",
+      "objective": "hobbies-vocabulary",
+      "objectiveLabel": "Lesson objective: Hobby vocabulary",
+      "prompt": "Choose True or False: You need a camera to play chess.",
+      "correct": 1,
+      "evidence": "A camera belongs to taking photographs. Chess needs a board and pieces.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 12,
+      "id": "q12",
+      "format": "true-false",
+      "objective": "free-time",
+      "objectiveLabel": "Lesson objective: Talking about free time",
+      "prompt": "Choose True or False: A hobby is something you do in your free time.",
+      "correct": 0,
+      "evidence": "The lesson asks what pupils do in their free time and lists those activities as hobbies.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 13,
+      "id": "q13",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about a hobby",
+      "prompt": "Read the text. What is Lina’s favourite hobby?",
+      "correct": 1,
+      "evidence": "The second sentence says her favourite hobby is drawing.",
+      "options": [
+        "a) painting",
+        "b) drawing",
+        "c) dancing"
+      ]
+    },
+    {
+      "number": 14,
+      "id": "q14",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about a hobby",
+      "prompt": "In the text, when does Lina draw?",
+      "correct": 2,
+      "evidence": "The text says she draws in her free time and after school.",
+      "options": [
+        "a) only in the morning",
+        "b) only at school",
+        "c) in her free time and after school"
+      ]
+    },
+    {
+      "number": 15,
+      "id": "q15",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about a hobby",
+      "prompt": "In the text, what can Lina NOT do?",
+      "correct": 2,
+      "evidence": "The text says she can draw very well, but she can’t paint a person.",
+      "options": [
+        "a) draw animals",
+        "b) draw flowers",
+        "c) paint a person"
+      ]
+    },
+    {
+      "number": 16,
+      "id": "q16",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about a hobby",
+      "prompt": "In the text, choose True or False: Lina goes to an art club with her friend Mona on Saturday.",
+      "correct": 0,
+      "evidence": "The text says: On Saturday she goes to an art club with her friend Mona.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 17,
+      "id": "q17",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing a sentence with can",
+      "prompt": "Make one complete sentence with these words: lina / can / draw / well",
+      "correct": "Lina can draw well.",
+      "accepted": [
+        "lina can draw well"
+      ],
+      "wrongSample": "Lina can draws well.",
+      "evidence": "Can is followed by the plain verb: Lina can draw well."
+    },
+    {
+      "number": 18,
+      "id": "q18",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing a sentence with can’t",
+      "prompt": "Make one complete sentence about Amina with these words: amina / can’t / play / chess",
+      "correct": "Amina can’t play chess.",
+      "accepted": [
+        "amina can’t play chess",
+        "amina can't play chess",
+        "amina cannot play chess",
+        "amina can not play chess"
+      ],
+      "wrongSample": "Amina can’t plays chess.",
+      "evidence": "Can’t is followed by the plain verb: Amina can’t play chess."
+    }
+  ]
+}

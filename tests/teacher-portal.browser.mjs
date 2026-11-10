@@ -331,9 +331,9 @@ try {
       wrapped: Boolean(document.querySelector('.table-scroll')?.classList.contains('table-scroll'))
     };
   });
-  assert.equal(matrix.rows.length, 14, 'the matrix must list all fourteen prepared lessons');
+  assert.equal(matrix.rows.length, 16, 'the matrix must list all sixteen prepared lessons');
   assert.deepEqual(matrix.headers, ['Grade · Lesson', 'Test items', 'Answer-key area', 'Book reveals', 'Workbook reveals', 'Listening key']);
-  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 14, 'every lesson must report no listening key');
+  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 16, 'every lesson must report no listening key');
   assert.equal(matrix.rows.filter(row => /^Not published$/.test(row.cells[1])).length, 1, 'exactly one lesson has no published key');
   assert.match(matrix.rows.find(row => row.label.startsWith('4 · 1')).cells[1], /Not published/);
 
@@ -345,7 +345,7 @@ try {
   assert.match(g8l2.cells[1], /^Published \(deep-linked gate\)/, 'Grade 8 Lesson 2 must publish its key area');
   assert.equal(g8l2.cells[4], 'None', 'Grade 8 Lesson 2 must report no listening key');
 
-  pass('Rendered status matrix', 'Twelve rows with the expected columns, one “Not published” key and “None” for every listening key');
+  pass('Rendered status matrix', 'Sixteen rows with the expected columns, one “Not published” key and “None” for every listening key');
 
   // 9. Keyboard access and skip link (desktop width, where the header bar is visible).
   await page.setViewportSize({ width: 1440, height: 900 });
