@@ -1,7 +1,7 @@
 {
   "suite": "phase2-b-teacher-portal-browser",
   "status": "PASS",
-  "date": "2026-11-10T12:35:43.847Z",
+  "date": "2026-11-11T15:25:16.796Z",
   "browser": "Chromium 153.0.8010.0",
   "originPath": "/E_Curriculum_1_9/",
   "viewports": [
@@ -40,12 +40,12 @@
     {
       "name": "Teacher link resolution",
       "status": "PASS",
-      "detail": "120 distinct local destinations from the two teacher pages all returned HTTP 200, including every lesson page and every template route"
+      "detail": "132 distinct local destinations from the two teacher pages all returned HTTP 200, including every lesson page and every template route"
     },
     {
       "name": "Published key anchors",
       "status": "PASS",
-      "detail": "7 lesson tests deep-link to #teacher-gate, each lands with the key area in view and keeps the answer container hidden until it is unlocked"
+      "detail": "9 lesson tests deep-link to #teacher-gate, each lands with the key area in view and keeps the answer container hidden until it is unlocked"
     },
     {
       "name": "Tests without a key area",
@@ -65,7 +65,7 @@
     {
       "name": "Rendered status matrix",
       "status": "PASS",
-      "detail": "Sixteen rows with the expected columns, one “Not published” key and “None” for every listening key"
+      "detail": "Eighteen rows with the expected columns, one “Not published” key and “None” for every listening key"
     },
     {
       "name": "Keyboard access",
