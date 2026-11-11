@@ -104,7 +104,8 @@ try {
       if (await nav.count()) assert.equal(await nav.evaluate(element => getComputedStyle(element).position), 'static', `${file}: mobile navigator stays in normal flow`);
     }
     const isVocabulary = file.endsWith('-vocabulary.html');
-    if (isVocabulary) {
+    // The supplied Grade 8 Lesson 3 glossaries are English-only; do not invent translations.
+    if (isVocabulary && file !== 'grade8-unit1-lesson3-vocabulary.html') {
       assert.ok(language.markedArabicTextNodes > 0, `${file}: expected word-level Arabic meanings`);
       const arabicFont = await page.evaluate(async () => {
         const sample = document.querySelector('.ar[lang="ar"][dir="rtl"]');
@@ -139,12 +140,12 @@ try {
     const result = await renderAt(file, { width: 1366, height: 900 }, true);
     desktopArabicNodes.set(file, result.markedArabicTextNodes);
   }
-  pass('Rendered all root pages on desktop', `${htmlFiles.length} HTML pages loaded at 1366×900; root lang=en, dir=ltr; local Noto Sans Arabic verified on all ${htmlFiles.filter(file => file.endsWith('-vocabulary.html')).length} Vocabulary pages; no unmarked Arabic or horizontal overflow`);
+  pass('Rendered all root pages on desktop', `${htmlFiles.length} HTML pages loaded at 1366×900; root lang=en, dir=ltr; local Noto Sans Arabic verified on all ${htmlFiles.filter(file => file.endsWith('-vocabulary.html') && file !== 'grade8-unit1-lesson3-vocabulary.html').length} Vocabulary pages with supplied Arabic meanings; no unmarked Arabic or horizontal overflow`);
   pass('Images and source disclosures', `${imageCount} rendered images decoded; all images have alt text; all disclosure images were opened during inspection`);
 
   for (const file of htmlFiles) {
     const result = await renderAt(file, { width: 390, height: 844 }, false);
-    if (file.endsWith('-vocabulary.html')) assert.ok(result.markedArabicTextNodes > 0);
+    if (file.endsWith('-vocabulary.html') && file !== 'grade8-unit1-lesson3-vocabulary.html') assert.ok(result.markedArabicTextNodes > 0);
   }
   pass('Rendered all root pages on a mobile viewport', `${htmlFiles.length} HTML pages loaded at 390×844; mobile navigation stays in normal flow; no page-level horizontal overflow; Arabic remains restricted to marked vocabulary meanings`);
 
