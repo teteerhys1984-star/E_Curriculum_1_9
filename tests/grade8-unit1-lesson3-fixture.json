@@ -1,0 +1,825 @@
+{
+  "sourceTexts": {
+    "sb20-header": "Module 2 · Unit 3 · Let’s Discover",
+    "sb20-plan-1": "Speaking: ask and answer some questions about some forms of transport",
+    "sb20-plan-2": "Reading: a text about a journey",
+    "sb20-plan-3": "Vocabulary: related to journeys",
+    "sb20-plan-4": "Grammar: reported speech & revision of present perfect tense",
+    "sb20-plan-5": "Listening: Hie Liang talking about his innovation",
+    "sb20-plan-6": "Writing: completing an email",
+    "sb20-speaking-instruction": "Look at the forms of transport then ask your partner:",
+    "sb20-transport-labels": "aircraft · cable car · cruise ship · ferry · hot-air balloon · hovercraft · motorbike · scooter · helicopter",
+    "sb20-speaking-1": "1- How many means of transportation can you see?",
+    "sb20-speaking-2": "2- Which transport do you like to travel by?",
+    "sb20-speaking-3": "3- In your opinion,what is the best way to travel ? Why?",
+    "sb20-speaking-4": "4- Which one would be the fastest/the cheapest/ the most comfortable/ the safest?",
+    "sb20-speaking-example": "For example: I think the fastest way to travel across a large city would be by scooter. I agree / I don’t agree: I think travelling by a ferry is the safest.",
+    "sb20-speaking-5": "5- What do you usually pack when you go away for a short trip?",
+    "sb21-reading-instruction": "Read the following text then do the tasks below.",
+    "sb21-title": "My Amazing Journey",
+    "sb21-reading-1": "People need to interact and communicate with others. Travel is a means of amusement and enjoyment that allows interaction among people.",
+    "sb21-reading-2": "I would like to share with you a journey to Spain accompanied by my family.",
+    "sb21-reading-3": "The tourist company had done an amazing job. It organized the trip and confirmed the dates and places that we were going to visit in Spain. Our flight tickets showed that we needed two hours to reach our destination, which is about 800 kilometers.",
+    "sb21-reading-4": "Upon arrival, a bus was waiting to drive us to the hotel. We enjoyed the beautiful views and lots of amazing things on our way to the hotel. We passed through a mountainous area with many high volcanic mountains. After checking in our rooms, we headed to a small restaurant which served delicious traditional food.The view from the restaurant was great.",
+    "sb21-reading-5": "During the three-day trip,we visited various ancient sites and old markets and we bought nice souvenirs for our friends.",
+    "sb21-reading-6": "Besides, we met people from different nationalities and we learnt about various traditions and cultures. That amazing trip has increased our knowledge about the world.",
+    "sb21-reading-7": "At the end of the trip, we thanked the trip supervisor and the tourism company for their great efforts.",
+    "sb21-key-1-word": "amusement",
+    "sb21-key-1-meaning": "fun/pleasure",
+    "sb21-key-2-word": "interaction",
+    "sb21-key-2-meaning": "the act of communicating with somebody",
+    "sb21-key-3-word": "accompanied",
+    "sb21-key-3-meaning": "to travel or go somewhere with somebody",
+    "sb21-key-4-word": "to confirm",
+    "sb21-key-4-meaning": "to show that something is true or correct",
+    "sb21-key-5-word": "arrival",
+    "sb21-key-5-meaning": "an act of coming or being brought to a place",
+    "sb21-key-6-word": "souvenir",
+    "sb21-key-6-meaning": "a thing that you buy to remind yourself of a place",
+    "sb22-a-instruction": "A- Answer the following questions.",
+    "sb22-a1": "1- Why is travelling an interesting activity?",
+    "sb22-a2": "2- Who did the travellers contact to confirm the date and the place of the trip?",
+    "sb22-a3": "3- What kind of food did the restaurant serve?",
+    "sb22-a4": "4- How long did the trip last?",
+    "sb22-a5": "5- What did they see on their way?",
+    "sb22-b-instruction": "B- Choose the correct answer a, b, or c.",
+    "sb22-b1": "1- The writer travelled with his.......................",
+    "sb22-b1-option-a": "a- teachers",
+    "sb22-b1-option-b": "b- friends",
+    "sb22-b1-option-c": "c- family",
+    "sb22-b2": "2- The distance between my city and the destination of the trip is....................... .",
+    "sb22-b2-option-a": "a- eighty kilometers",
+    "sb22-b2-option-b": "b- eighty meters",
+    "sb22-b2-option-c": "c- forty kilometers",
+    "sb22-b3": "3- We were------------------ the efforts of the company and the trip supervisor.",
+    "sb22-b3-option-a": "a- unsatisfied with",
+    "sb22-b3-option-b": "b- upset about",
+    "sb22-b3-option-c": "c- grateful for",
+    "sb22-vocabulary-instruction-1": "- Find the bold words in the text.",
+    "sb22-vocabulary-instruction-2": "- Complete the sentences with the words you’ve found.",
+    "sb22-v1": "1- Her eyes twinkled with..................... .",
+    "sb22-v2": "2- It has been ............... that our next flight will be next month.",
+    "sb22-v3": "3- The company apologized for the late ........ of the train.",
+    "sb22-v4": "4- I bought some models of Eiffel Tower as .......... of Paris.",
+    "sb22-v5": "5- Children under 14 should be .......... by an adult.",
+    "sb22-v6": "6- The .......... between teachers and students is very important to make learning easier.",
+    "sb23-perfect-title": "Revision of Present Perfect Tense: Find Somebody Who...............",
+    "sb23-perfect-instruction": "- Ask your classmates questions using the present perfect tense and complete the table.",
+    "sb23-name1": "1- ..............has eaten breakfast.",
+    "sb23-name2": "2- ..............has met someone famous.",
+    "sb23-name3": "3- ..............has won a competition before.",
+    "sb23-name4": "4- ..............climbed a mountain.",
+    "sb23-name5": "5- ..............flown in an airplane.",
+    "sb23-name6": "6- ..............been on a ship.",
+    "sb23-name7": "7- ..............bought something expensive",
+    "sb23-example-question": "For example, Have you been to another country?",
+    "sb23-example-answer": "Firas has been to France.",
+    "sb23-reported-title": "Reported Speech",
+    "sb23-phone-intro": "It’s a bad phone line and we could only hear a few sentences of Jerry’s phone call.",
+    "sb23-phone-call": "“I’m sitting in a train station in New Delhi but I don’t have a lot of time. I don’t have a laptop here so I can’t check my email every day. I’ll call you when I find a room with Wi-Fi. I’ve tried so many new kinds of food here in India. I’ve eaten spicy food and it is delicious. I’m going to travel to Egypt next week to see the Pyramids. I miss you!”",
+    "sb23-report-intro": "Reporting what Jerry said.",
+    "sb23-report": "Jerry said that he was sitting in a train station in New Delhi but he didn’t have a lot of time. He told his friend that he didn’t have a laptop there so he couldn’t check his email every day. He would call his friend when he found a room with Wi-Fi. He said that he had tried so many new kinds of food there in India. He had eaten spicy food and it is delicious. He added that he was going to travel to Egypt the week after to see the Pyramids. At the end of the call he told his friend that he missed him.",
+    "sb23-select-instruction": "- Select the correct words between brackets.",
+    "sb23-direct-1": "1- “I’ve forgotten to bring my lunch with me”.",
+    "sb23-reported-1": "Jim said that he had forgotten to bring (his, my) lunch with him.",
+    "sb23-reported-1-option-a": "his",
+    "sb23-reported-1-option-b": "my",
+    "sb23-direct-2": "2- “We will be home soon”.",
+    "sb23-reported-2": "My parents told me that they (would be, will be) home soon.",
+    "sb23-reported-2-option-a": "would be",
+    "sb23-reported-2-option-b": "will be",
+    "sb23-direct-3": "3- “I’ll clean the car tomorrow”.",
+    "sb23-reported-3": "(He, I) told his father that he would clean the car the following day.",
+    "sb23-reported-3-option-a": "He",
+    "sb23-reported-3-option-b": "I",
+    "sb23-direct-4": "4- “I have finished reading the story”.",
+    "sb23-reported-4": "Gary said that he (has finished, had finished).",
+    "sb23-reported-4-option-a": "has finished",
+    "sb23-reported-4-option-b": "had finished",
+    "sb23-direct-5": "5- “I’m preparing for the exam”.",
+    "sb23-reported-5": "My sister said that she (is preparing, was preparing) for the exam.",
+    "sb23-reported-5-option-a": "is preparing",
+    "sb23-reported-5-option-b": "was preparing",
+    "sb24-listening-instruction": "- Look at the picture. Listen to a man talking about an innovation, then do the tasks.",
+    "sb24-mc-instruction": "1 - Choose the correct answer.",
+    "sb24-mc1": "1- Hie Liang,who is from....................,has invented a motor bike.",
+    "sb24-mc1-option-a": "a- Syria",
+    "sb24-mc1-option-b": "b- China",
+    "sb24-mc1-option-c": "c- England",
+    "sb24-mc2": "2- Hie Liang has invented a suitcase; he has called it the....................... .",
+    "sb24-mc2-option-a": "a- bike",
+    "sb24-mc2-option-b": "b- scooter",
+    "sb24-mc2-option-c": "c- City Cab",
+    "sb24-mc3": "3- Hie Liang’s invention can travel up to.............................. .",
+    "sb24-mc3-option-a": "a- 30 km",
+    "sb24-mc3-option-b": "b- 90 km",
+    "sb24-mc3-option-c": "c- 60 km",
+    "sb24-tf-instruction": "2 - Decide if the following sentences are True or False.",
+    "sb24-tf1": "1- Hie Liang is an engineer.",
+    "sb24-tf1-option-a": "True",
+    "sb24-tf1-option-b": "False",
+    "sb24-tf2": "2- Getting to the airport can be an unpleasant experience.",
+    "sb24-tf2-option-a": "True",
+    "sb24-tf2-option-b": "False",
+    "sb24-tf3": "3- Hei Liang’s invention is powered by an engine.",
+    "sb24-tf3-option-a": "True",
+    "sb24-tf3-option-b": "False",
+    "sb25-writing-instruction": "Complete the following email about a trip you have made using the suitable sequencers.",
+    "sb25-word-bank": "While     Finally     First     Then",
+    "sb25-email-1": "Hi Mohammed,",
+    "sb25-email-2": "I’ve just got back from my trip to South Africa. It was great. ................,we flew to Greece.",
+    "sb25-email-3": "We visited some of the islands. .............we took a boat down the river for two weeks. We saw lots of interesting animals and plants.......................we were travelling by boat, it started raining heavily and unfortunately my bag dropped into the water.",
+    "sb25-email-4": "..........we caught the plane back home. I loved the trip, but I got sad because I lost my passport",
+    "sb25-email-5": "It was a disaster.",
+    "sb25-email-6": "Write soon.",
+    "sb25-email-7": "Love",
+    "sb25-email-8": "Sally",
+    "wb10-header": "Module 2 · Unit 3 · Let’s Discover · Journeys Around the World",
+    "wb10-speaking-instruction": "- Work in pairs. Discuss these questions.",
+    "wb10-speaking-a": "A- When you travel abroad, do you try to learn about the place/ culture/ language? Why?",
+    "wb10-speaking-b": "B- Do you enjoy visiting tourist areas/ old cities/ new cities? Why?",
+    "wb10-reading-instruction": "- Read the following text and do the tasks below.",
+    "wb10-title": "My Favourite Country",
+    "wb10-reading-1": "Last summer, my family and I had the opportunity to travel and discover the beautiful continent of Australia.",
+    "wb10-reading-2": "It was not an easy choice among the other beautiful places in the world, but this country has always fascinated us with its culture. In fact, Australia is one of the richest continents and is also one of the largest countries in the world. It is located in the southern hemisphere, and all its states use the Australian dollar. Australian English is the national and popular language of the country. It is similar to English in grammar and spelling with some notable exceptions.",
+    "wb10-reading-3": "When my parents learned about wonders of Australia that awaited us, them immediately bought airline tickets.",
+    "wb10-reading-4": "We woke up early in the morning to catch a direct flight to Australia. The flight lasted about 20 hours. Finally, we arrived in Sydney and settled in a hotel.",
+    "wb10-reading-5": "The next day, we visited the Opera House which had a beautiful architecture. It was a perfect day. In the afternoon we went to Taronga Zoo to see the famous Australian animals like kangaroos and koalas. The following days, we enjoyed the beaches, shopping centers and beautiful museums of Sydney. Unfortunately, we had to prepare our luggage to return home to Montreal before I could realize that our seven-day vacation had already passed.",
+    "wb10-key-1-word": "opportunity",
+    "wb10-key-1-meaning": "a chance to do something",
+    "wb10-key-2-word": "continent",
+    "wb10-key-2-meaning": "a large mass of land",
+    "wb10-key-3-word": "fascinated",
+    "wb10-key-3-meaning": "attracted to something",
+    "wb10-key-4-word": "hemisphere",
+    "wb10-key-4-meaning": "a half of the Earth",
+    "wb10-key-5-word": "exceptions",
+    "wb10-key-5-meaning": "things that is not included",
+    "wb10-key-6-word": "settled",
+    "wb10-key-6-meaning": "stayed",
+    "wb11-a-instruction": "A- Answer the following questions.",
+    "wb11-a1": "1- Why did the family choose traveling to Australia?",
+    "wb11-a2": "2- Who bought airline tickets?",
+    "wb11-a3": "3- Where did they settle when they arrived in Sydney?",
+    "wb11-a4": "4- Which animals did they see?",
+    "wb11-b-instruction": "B- Decide whether the sentences are True/T/ or False /F/.",
+    "wb11-b1": "1- It was an easy choice to travel to Australia.",
+    "wb11-b1-option-a": "True",
+    "wb11-b1-option-b": "False",
+    "wb11-b2": "2- Australia is one of the poorest continents in the world.",
+    "wb11-b2-option-a": "True",
+    "wb11-b2-option-b": "False",
+    "wb11-b3": "3- The flight lasted about 20 days.",
+    "wb11-b3-option-a": "True",
+    "wb11-b3-option-b": "False",
+    "wb11-b4": "4- Tthey went to visit the Opera House on the second day.",
+    "wb11-b4-option-a": "True",
+    "wb11-b4-option-b": "False",
+    "wb11-crossword-title": "Vocabulary",
+    "wb11-across": "Across",
+    "wb11-crossword-4": "4- stayed.",
+    "wb11-crossword-6": "6- a large mass of land.",
+    "wb11-down": "Down",
+    "wb11-crossword-1": "1- a half of the Earth.",
+    "wb11-crossword-2": "2- a chance to do something.",
+    "wb11-crossword-3": "3- attracted to something.",
+    "wb11-crossword-5": "5- something that is not included.",
+    "wb12-title": "Grammar · Revision of the present perfect tense",
+    "wb12-perfect-intro": "The present perfect tense is used to express:",
+    "wb12-rule-1": "- an event that started in the past and the effect of the event is now continuing.",
+    "wb12-rule-2": "- an event that started in the past and is still going on.",
+    "wb12-form-affirmative": "Affirmative",
+    "wb12-form-affirmative-text": "I, you, we, they have seen / He, she, it has seen",
+    "wb12-form-negative": "Negative",
+    "wb12-form-negative-text": "I, you, we, they haven’t seen / He, she, it hasn’t seen",
+    "wb12-form-interrogative": "Interrogative",
+    "wb12-form-interrogative-text": "have I, you, we, they seen the film? / has he, she, it seen?",
+    "wb12-a-instruction": "A - (Put the verbs into the correct form (present perfect tense.",
+    "wb12-a-example": "e.g. We (buy) have bought a new lamp.",
+    "wb12-perfect-1": "1- We............ (not / plan) .................our holiday yet.",
+    "wb12-perfect-2": "2- Where (you / be).................? I haven’t seen you for ages.",
+    "wb12-perfect-3": "3- She (not / see) ..................him for a long time.",
+    "wb12-perfect-4": "4- School (just / start)............................... .",
+    "wb12-perfect-5": "5- ...................(he / speak)................. to his boss lately?",
+    "wb12-report-title": "Reported Speech",
+    "wb12-report-intro": "When we tell someone what another persone said we use reporting verbs like: (said , told),and we do the following changes to:",
+    "wb12-tense-heading": "1- the tense of the verbs",
+    "wb12-tense-1": "present simple → past simple",
+    "wb12-direct-1": "I like ice cream.",
+    "wb12-report-1": "She said (that) she liked ice cream.",
+    "wb12-tense-2": "present continuous → past continuous",
+    "wb12-direct-2": "I am working in London.",
+    "wb12-report-2": "She said (that) she was working in London.",
+    "wb12-tense-3": "present perfect → past perfect",
+    "wb12-direct-3": "I haven’t seen Julie.",
+    "wb12-report-3": "She said (that) she hadn’t seen Julie.",
+    "wb12-pronoun-heading": "2-the pronouns / possessive adjectives.",
+    "wb12-pronoun-1": "I",
+    "wb12-pronoun-result-1": "he / she",
+    "wb12-pronoun-2": "we",
+    "wb12-pronoun-result-2": "they",
+    "wb12-pronoun-3": "you",
+    "wb12-pronoun-result-3": "I / we",
+    "wb12-pronoun-4": "us",
+    "wb12-pronoun-result-4": "them",
+    "wb12-pronoun-5": "our",
+    "wb12-pronoun-result-5": "their",
+    "wb12-pronoun-6": "your",
+    "wb12-pronoun-result-6": "my / his / her / their",
+    "wb12-pronoun-7": "me",
+    "wb12-pronoun-result-7": "him/her",
+    "wb12-pronoun-8": "my",
+    "wb12-pronoun-result-8": "her/ his",
+    "wb12-b-instruction": "B- Select the correct answer:",
+    "wb12-b1": "1- She said (her, she) went early.",
+    "wb12-b1-option-a": "her",
+    "wb12-b1-option-b": "she",
+    "wb12-b2": "2- He said (we, he) was going to Canada.",
+    "wb12-b2-option-a": "we",
+    "wb12-b2-option-b": "he",
+    "wb12-b3": "3- They said they (spent, spend) a nice holiday.",
+    "wb12-b3-option-a": "spent",
+    "wb12-b3-option-b": "spend",
+    "wb12-b4": "4- They told me that they (took, take) (they, their) grandchildren on holiday.",
+    "wb12-b4-option-a": "took",
+    "wb12-b4-option-b": "take",
+    "wb13-c-instruction": "C- Write the sentences in reported speech.",
+    "wb13-c-direct-1": "1- “I always forget my things”.",
+    "wb13-c1": "Sally said.........................................................",
+    "wb13-c-direct-2": "2- “I work very hard at school”.",
+    "wb13-c2": "Hani said..........................................................",
+    "wb13-c-direct-3": "3- “Our class is going to the museum”.",
+    "wb13-c3": "Samia and Nada said..............................................",
+    "wb13-c-direct-4": "4- “I have a headache”.",
+    "wb13-c4": "Ali said...........................................................",
+    "wb13-c-direct-5": "5- “We are having lunch at our house on Saturday”.",
+    "wb13-c5": "Ruba and Sana said...............................................",
+    "wb13-d-instruction": "D- Change these sentences into reported speech.",
+    "wb13-d1": "1- Jake: “I often have a big breakfast.” Jake said (that)........................................ .",
+    "wb13-d2": "2- Susan: “We live in Berlin.” Susan said (that)........................................ .",
+    "wb13-d3": "3- Sean: “Max doesn’t like scary movies.” Sean told me (that)............................. .",
+    "wb13-d4": "4- Petra: “I speak Chinese.” Petra said that........................................ .",
+    "wb13-d5": "5- Helena: “Monica doesn’t like parties.” Helena said that................................ .",
+    "wb13-d6": "6- John: “David often plays computer games.” John said that.............................. .",
+    "wb13-d7": "7- Matt: “My job is easy to me.” Matt said that........................................... .",
+    "wb13-d8": "8- James and Scott: “We have to go now.” James and Scott told me that...................... .",
+    "wb13-listening-instruction": "Listen to Sami and Sally speaking about their journeys to some countries and do the tasks below.",
+    "wb13-listening-a-instruction": "A- Decide if these sentences are True/T/ or False/F/.",
+    "wb13-listening-a1": "1- Sami said that they knew nothing about other cultures.",
+    "wb13-listening-a1-option-a": "True",
+    "wb13-listening-a1-option-b": "False",
+    "wb13-listening-a2": "2- Sami travelled with his family to Bahrain only.",
+    "wb13-listening-a2-option-a": "True",
+    "wb13-listening-a2-option-b": "False",
+    "wb13-listening-a3": "3- Sally stayed at home.",
+    "wb13-listening-a3-option-a": "True",
+    "wb13-listening-a3-option-b": "False",
+    "wb13-listening-b-instruction": "B- Choose the correct answer.",
+    "wb13-listening-b1": "1- Sally visited........................................................",
+    "wb13-listening-b1-option-a": "a. Egypt and Lebanon",
+    "wb13-listening-b1-option-b": "b. Yemen and Syria",
+    "wb13-listening-b1-option-c": "c. Yemen and Jordan",
+    "wb13-listening-b2": "2- Sami is ............. knowing new cultures.",
+    "wb13-listening-b2-option-a": "a. careless of",
+    "wb13-listening-b2-option-b": "b. interested in",
+    "wb13-listening-b2-option-c": "c. annoyed about",
+    "wb13-listening-b3": "3- Sami will tell his ............. to visit the Dead Sea next year.",
+    "wb13-listening-b3-option-a": "a. parents",
+    "wb13-listening-b3-option-b": "b. neighbours",
+    "wb13-listening-b3-option-c": "c. friends",
+    "wb13-writing-instruction": "Write an email to a friend about a journey you had.",
+    "wb13-writing-tips-title": "Keep in mind",
+    "wb13-writing-tip-1": "- We begin emails with “Dear.....................” then ”how are you“.",
+    "wb13-writing-tip-2": "- We use: “First”, “Then” “Last of all” to put ideas in order.",
+    "wb13-writing-tip-3": "- We can finish with “Bye“.",
+    "vocab-sb-1-word": "amusement",
+    "vocab-sb-1-meaning": "fun/pleasure",
+    "vocab-sb-2-word": "interaction",
+    "vocab-sb-2-meaning": "the act of communicating with somebody",
+    "vocab-sb-3-word": "accompanied",
+    "vocab-sb-3-meaning": "to travel or go somewhere with somebody",
+    "vocab-sb-4-word": "to confirm",
+    "vocab-sb-4-meaning": "to show that something is true or correct",
+    "vocab-sb-5-word": "arrival",
+    "vocab-sb-5-meaning": "an act of coming or being brought to a place",
+    "vocab-sb-6-word": "souvenir",
+    "vocab-sb-6-meaning": "a thing that you buy to remind yourself of a place",
+    "vocab-wb-1-word": "opportunity",
+    "vocab-wb-1-meaning": "a chance to do something",
+    "vocab-wb-2-word": "continent",
+    "vocab-wb-2-meaning": "a large mass of land",
+    "vocab-wb-3-word": "fascinated",
+    "vocab-wb-3-meaning": "attracted to something",
+    "vocab-wb-4-word": "hemisphere",
+    "vocab-wb-4-meaning": "a half of the Earth",
+    "vocab-wb-5-word": "exceptions",
+    "vocab-wb-5-meaning": "things that is not included",
+    "vocab-wb-6-word": "settled",
+    "vocab-wb-6-meaning": "stayed"
+  },
+  "forms": {
+    "sb-speaking": {
+      "mode": "mixed",
+      "fields": [
+        "sb20-speaking-1",
+        "sb20-speaking-2",
+        "sb20-speaking-3",
+        "sb20-speaking-4",
+        "sb20-speaking-5"
+      ],
+      "checkedItems": {
+        "sb20-speaking-1": [
+          "9",
+          "nine"
+        ]
+      }
+    },
+    "sb-reading-a": {
+      "mode": "review",
+      "fields": [
+        "sb22-a1",
+        "sb22-a2",
+        "sb22-a3",
+        "sb22-a4",
+        "sb22-a5"
+      ],
+      "checkedItems": {}
+    },
+    "sb-reading-b": {
+      "mode": "mixed",
+      "fields": [
+        "sb22-b1",
+        "sb22-b2",
+        "sb22-b3"
+      ],
+      "checkedItems": {
+        "sb22-b1": [
+          "c"
+        ],
+        "sb22-b3": [
+          "c"
+        ]
+      }
+    },
+    "sb-vocabulary": {
+      "mode": "check",
+      "fields": [
+        "sb22-v1",
+        "sb22-v2",
+        "sb22-v3",
+        "sb22-v4",
+        "sb22-v5",
+        "sb22-v6"
+      ],
+      "checkedItems": {
+        "sb22-v1": [
+          "amusement"
+        ],
+        "sb22-v2": [
+          "confirmed"
+        ],
+        "sb22-v3": [
+          "arrival"
+        ],
+        "sb22-v4": [
+          "souvenirs"
+        ],
+        "sb22-v5": [
+          "accompanied"
+        ],
+        "sb22-v6": [
+          "interaction"
+        ]
+      }
+    },
+    "sb-perfect-survey": {
+      "mode": "personal",
+      "fields": [
+        "sb23-name1",
+        "sb23-name2",
+        "sb23-name3",
+        "sb23-name4",
+        "sb23-name5",
+        "sb23-name6",
+        "sb23-name7",
+        "sb23-question1",
+        "sb23-response1",
+        "sb23-question2",
+        "sb23-response2",
+        "sb23-question3",
+        "sb23-response3",
+        "sb23-question4",
+        "sb23-response4",
+        "sb23-question5",
+        "sb23-response5",
+        "sb23-question6",
+        "sb23-response6",
+        "sb23-question7",
+        "sb23-response7"
+      ],
+      "checkedItems": {}
+    },
+    "sb-reported": {
+      "mode": "check",
+      "fields": [
+        "sb23-reported-1",
+        "sb23-reported-2",
+        "sb23-reported-3",
+        "sb23-reported-4",
+        "sb23-reported-5"
+      ],
+      "checkedItems": {
+        "sb23-reported-1": [
+          "a"
+        ],
+        "sb23-reported-2": [
+          "a"
+        ],
+        "sb23-reported-3": [
+          "a"
+        ],
+        "sb23-reported-4": [
+          "b"
+        ],
+        "sb23-reported-5": [
+          "b"
+        ]
+      }
+    },
+    "sb-listening": {
+      "mode": "audio",
+      "fields": [
+        "sb24-mc1",
+        "sb24-mc2",
+        "sb24-mc3",
+        "sb24-tf1",
+        "sb24-tf2",
+        "sb24-tf3"
+      ],
+      "checkedItems": {}
+    },
+    "sb-sequencers": {
+      "mode": "check",
+      "fields": [
+        "sb25-gap1",
+        "sb25-gap2",
+        "sb25-gap3",
+        "sb25-gap4"
+      ],
+      "checkedItems": {
+        "sb25-gap1": [
+          "First"
+        ],
+        "sb25-gap2": [
+          "Then"
+        ],
+        "sb25-gap3": [
+          "While"
+        ],
+        "sb25-gap4": [
+          "Finally"
+        ]
+      }
+    },
+    "wb-speaking": {
+      "mode": "personal",
+      "fields": [
+        "wb10-speaking-a",
+        "wb10-speaking-b"
+      ],
+      "checkedItems": {}
+    },
+    "wb-reading-a": {
+      "mode": "review",
+      "fields": [
+        "wb11-a1",
+        "wb11-a2",
+        "wb11-a3",
+        "wb11-a4"
+      ],
+      "checkedItems": {}
+    },
+    "wb-reading-b": {
+      "mode": "check",
+      "fields": [
+        "wb11-b1",
+        "wb11-b2",
+        "wb11-b3",
+        "wb11-b4"
+      ],
+      "checkedItems": {
+        "wb11-b1": [
+          "b"
+        ],
+        "wb11-b2": [
+          "b"
+        ],
+        "wb11-b3": [
+          "b"
+        ],
+        "wb11-b4": [
+          "a"
+        ]
+      }
+    },
+    "wb-crossword": {
+      "mode": "check",
+      "fields": [
+        "wb11-crossword-4",
+        "wb11-crossword-6",
+        "wb11-crossword-1",
+        "wb11-crossword-2",
+        "wb11-crossword-3",
+        "wb11-crossword-5"
+      ],
+      "checkedItems": {
+        "wb11-crossword-4": [
+          "settled"
+        ],
+        "wb11-crossword-6": [
+          "continent"
+        ],
+        "wb11-crossword-1": [
+          "hemisphere"
+        ],
+        "wb11-crossword-2": [
+          "opportunity"
+        ],
+        "wb11-crossword-3": [
+          "fascinated"
+        ],
+        "wb11-crossword-5": [
+          "exception"
+        ]
+      }
+    },
+    "wb-perfect": {
+      "mode": "check",
+      "fields": [
+        "wb12-perfect-1",
+        "wb12-perfect-2",
+        "wb12-perfect-3",
+        "wb12-perfect-4",
+        "wb12-perfect-5"
+      ],
+      "checkedItems": {
+        "wb12-perfect-1": [
+          "haven’t planned",
+          "haven't planned",
+          "have not planned"
+        ],
+        "wb12-perfect-2": [
+          "have you been"
+        ],
+        "wb12-perfect-3": [
+          "hasn’t seen",
+          "hasn't seen",
+          "has not seen"
+        ],
+        "wb12-perfect-4": [
+          "has just started"
+        ],
+        "wb12-perfect-5": [
+          "has he spoken"
+        ]
+      }
+    },
+    "wb-report-select": {
+      "mode": "check",
+      "fields": [
+        "wb12-b1",
+        "wb12-b2",
+        "wb12-b3",
+        "wb12-b4",
+        "wb12-b4-possessive"
+      ],
+      "checkedItems": {
+        "wb12-b1": [
+          "b"
+        ],
+        "wb12-b2": [
+          "b"
+        ],
+        "wb12-b3": [
+          "a"
+        ],
+        "wb12-b4": [
+          "a"
+        ],
+        "wb12-b4-possessive": [
+          "b"
+        ]
+      }
+    },
+    "wb-reported-c": {
+      "mode": "review",
+      "fields": [
+        "wb13-c1",
+        "wb13-c2",
+        "wb13-c3",
+        "wb13-c4",
+        "wb13-c5"
+      ],
+      "checkedItems": {}
+    },
+    "wb-reported-d": {
+      "mode": "review",
+      "fields": [
+        "wb13-d1",
+        "wb13-d2",
+        "wb13-d3",
+        "wb13-d4",
+        "wb13-d5",
+        "wb13-d6",
+        "wb13-d7",
+        "wb13-d8"
+      ],
+      "checkedItems": {}
+    },
+    "wb-listening": {
+      "mode": "audio",
+      "fields": [
+        "wb13-listening-a1",
+        "wb13-listening-a2",
+        "wb13-listening-a3",
+        "wb13-listening-b1",
+        "wb13-listening-b2",
+        "wb13-listening-b3"
+      ],
+      "checkedItems": {}
+    },
+    "wb-writing": {
+      "mode": "personal",
+      "fields": [
+        "wb13-email"
+      ],
+      "checkedItems": {}
+    }
+  },
+  "sections": {
+    "pupil-book": [
+      "sb-speaking-step",
+      "sb-reading-step",
+      "sb-reading-a-step",
+      "sb-reading-b-step",
+      "sb-vocabulary-step",
+      "sb-perfect-step",
+      "sb-reported-step",
+      "sb-listening-step",
+      "sb-writing-step"
+    ],
+    "workbook": [
+      "wb-speaking-step",
+      "wb-reading-step",
+      "wb-reading-a-step",
+      "wb-reading-b-step",
+      "wb-crossword-step",
+      "wb-perfect-step",
+      "wb-reported-reference-step",
+      "wb-reported-c-step",
+      "wb-reported-d-step",
+      "wb-listening-step",
+      "wb-writing-step"
+    ],
+    "vocabulary": [
+      "vocab-sb-step",
+      "vocab-wb-step"
+    ]
+  },
+  "assessment": [
+    {
+      "objective": "Reading",
+      "question": "Read: Amina and her family visit a museum. They buy tickets before entering. After the visit, they take a bus home. What do they buy before entering?",
+      "options": [
+        "tickets",
+        "souvenirs",
+        "bags"
+      ],
+      "answer": "a"
+    },
+    {
+      "objective": "Reading",
+      "question": "Read: Amina and her family visit a museum. They buy tickets before entering. After the visit, they take a bus home. How do they go home?",
+      "options": [
+        "by aircraft",
+        "by ferry",
+        "by bus"
+      ],
+      "answer": "c"
+    },
+    {
+      "objective": "Vocabulary",
+      "question": "True or false: Interaction means communicating with other people.",
+      "options": [
+        "False",
+        "True"
+      ],
+      "answer": "b"
+    },
+    {
+      "objective": "Vocabulary",
+      "question": "True or false: An opportunity is a chance to do something.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "answer": "a"
+    },
+    {
+      "objective": "Present perfect",
+      "question": "Choose the completed sentence: “Mina ___ the exhibition.”",
+      "options": [
+        "have visit",
+        "is visit",
+        "has visited"
+      ],
+      "answer": "c"
+    },
+    {
+      "objective": "Present perfect",
+      "question": "Choose the question: “___ you ever seen a lighthouse?”",
+      "options": [
+        "Did have",
+        "Have",
+        "Has"
+      ],
+      "answer": "b"
+    },
+    {
+      "objective": "Present perfect",
+      "question": "Choose the negative sentence.",
+      "options": [
+        "They haven’t packed their bags.",
+        "They hasn’t packed their bags.",
+        "They not have packed their bags."
+      ],
+      "answer": "a"
+    },
+    {
+      "objective": "Reported speech",
+      "question": "Lina said, “I work near the museum.” Choose a backshifted report.",
+      "options": [
+        "Lina said that I work near the museum.",
+        "Lina said that she is work near the museum.",
+        "Lina said that she worked near the museum."
+      ],
+      "answer": "c"
+    },
+    {
+      "objective": "Reported speech",
+      "question": "Omar said, “We are waiting.” Choose a backshifted report.",
+      "options": [
+        "Omar said that they has waited.",
+        "Omar said that they were waiting.",
+        "Omar said that we are waiting."
+      ],
+      "answer": "b"
+    },
+    {
+      "objective": "Reported speech",
+      "question": "Nadia said, “I have packed my bag.” Choose a backshifted report.",
+      "options": [
+        "Nadia said that she had packed her bag.",
+        "Nadia said that I have packed my bag.",
+        "Nadia said that she packing her bag."
+      ],
+      "answer": "a"
+    },
+    {
+      "objective": "Sequencing",
+      "question": "Which word best introduces the final event in an email?",
+      "options": [
+        "While",
+        "Because",
+        "Finally"
+      ],
+      "answer": "c"
+    },
+    {
+      "objective": "Sequencing",
+      "question": "Choose the sentence that describes two actions happening at the same time.",
+      "options": [
+        "First we finished after the last event.",
+        "While we were walking, it started to rain.",
+        "Finally we walked before we left."
+      ],
+      "answer": "b"
+    }
+  ],
+  "wordSearchRows": [
+    "arrivall",
+    "#erc#u#f",
+    "#ifi#t#s",
+    "#tco#m#n",
+    "#pag#m#o",
+    "#tcd#s#i",
+    "#nce#o#t",
+    "#eom#u#c",
+    "#mmr#v#a",
+    "#epi#efr",
+    "#snf#nue",
+    "#uinsiot",
+    "#meoercn",
+    "#adcnsci"
+  ]
+}

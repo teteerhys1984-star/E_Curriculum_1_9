@@ -1,0 +1,102 @@
+[
+  {
+    "upload": "image-1.png",
+    "book": "Student’s Book",
+    "page": 20,
+    "file": "assets/grade8-unit1-lesson3/source/student-book-page-20.png",
+    "width": 744,
+    "height": 1012,
+    "bytes": 967539,
+    "sha256": "5159bc3d97af206caa5e2003a74e4c8d27e365544541eaedea443e3d073ebfb9"
+  },
+  {
+    "upload": "image-2.png",
+    "book": "Student’s Book",
+    "page": 21,
+    "file": "assets/grade8-unit1-lesson3/source/student-book-page-21.png",
+    "width": 772,
+    "height": 1044,
+    "bytes": 634506,
+    "sha256": "23e17d71dfcfce637e25654d1de437b8bbd3448027358132ebfd22b4bc1bb92f"
+  },
+  {
+    "upload": "image-3.png",
+    "book": "Student’s Book",
+    "page": 22,
+    "file": "assets/grade8-unit1-lesson3/source/student-book-page-22.png",
+    "width": 747,
+    "height": 1054,
+    "bytes": 502243,
+    "sha256": "f69bd9fa7ef684a53ca11abf283babf9710a99facea0eb373d75209c4fd35a41"
+  },
+  {
+    "upload": "image-4.png",
+    "book": "Student’s Book",
+    "page": 23,
+    "file": "assets/grade8-unit1-lesson3/source/student-book-page-23.png",
+    "width": 742,
+    "height": 1050,
+    "bytes": 687165,
+    "sha256": "4ce23f077f763528d3706cb2ca0623ec4e5431828220fc5c509bd10f5878b3f3"
+  },
+  {
+    "upload": "image-5.png",
+    "book": "Student’s Book",
+    "page": 24,
+    "file": "assets/grade8-unit1-lesson3/source/student-book-page-24.png",
+    "width": 730,
+    "height": 1057,
+    "bytes": 508723,
+    "sha256": "1b28736496b01ec25bc0edcd893844218d8a951bba3f39114c92b3834683ce74"
+  },
+  {
+    "upload": "image-6.png",
+    "book": "Student’s Book",
+    "page": 25,
+    "file": "assets/grade8-unit1-lesson3/source/student-book-page-25.png",
+    "width": 763,
+    "height": 1023,
+    "bytes": 326164,
+    "sha256": "9b079118e735b9a03660b4cefd562afb67fc4fcf34b29c4a20a551d9a24f856b"
+  },
+  {
+    "upload": "image-7.png",
+    "book": "Workbook",
+    "page": 10,
+    "file": "assets/grade8-unit1-lesson3/source/workbook-page-10.png",
+    "width": 751,
+    "height": 1039,
+    "bytes": 800299,
+    "sha256": "5252abc56388ecf8f4cfd0cc65e1373954ae738931f5a3f3d2e35bf284393e17"
+  },
+  {
+    "upload": "image-8.png",
+    "book": "Workbook",
+    "page": 11,
+    "file": "assets/grade8-unit1-lesson3/source/workbook-page-11.png",
+    "width": 747,
+    "height": 1036,
+    "bytes": 307098,
+    "sha256": "f0158252e412cd832380b45155dc03ed79de0c7f43ef995dfee3d80cff2a7153"
+  },
+  {
+    "upload": "image-9.png",
+    "book": "Workbook",
+    "page": 12,
+    "file": "assets/grade8-unit1-lesson3/source/workbook-page-12.png",
+    "width": 739,
+    "height": 1053,
+    "bytes": 517143,
+    "sha256": "2bf49e01247815e02eef5674316311edc5cce086556f9b4cedd3819bc192d6dd"
+  },
+  {
+    "upload": "image-10.png",
+    "book": "Workbook",
+    "page": 13,
+    "file": "assets/grade8-unit1-lesson3/source/workbook-page-13.png",
+    "width": 760,
+    "height": 1044,
+    "bytes": 616806,
+    "sha256": "827636e94f2503dc1f9eea181a9cf2a028739f2aeab17d0c5a1cfa767f655a81"
+  }
+]

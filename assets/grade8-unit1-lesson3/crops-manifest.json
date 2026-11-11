@@ -1,0 +1,104 @@
+{
+  "note": "Unscaled, unretouched rectangular crops. Original PNG files in source/ are byte-for-byte uploads. Geometry is in source pixels; tests verify every decoded crop pixel against its source.",
+  "lesson": "grade8-unit1-lesson3",
+  "crops": [
+    {
+      "file": "assets/grade8-unit1-lesson3/crops/sb20-transport.png",
+      "source": "assets/grade8-unit1-lesson3/source/student-book-page-20.png",
+      "sourceUpload": "image-1.png",
+      "sourceSha256": "5159bc3d97af206caa5e2003a74e4c8d27e365544541eaedea443e3d073ebfb9",
+      "crop": {
+        "width": 631,
+        "height": 487,
+        "x": 58,
+        "y": 317
+      },
+      "sha256": "fd8aeb01735c2b93082a0dd1f05461f7d583f7721b97e55362037252c69cf170",
+      "bytes": 406043
+    },
+    {
+      "file": "assets/grade8-unit1-lesson3/crops/sb22-word-search.png",
+      "source": "assets/grade8-unit1-lesson3/source/student-book-page-22.png",
+      "sourceUpload": "image-3.png",
+      "sourceSha256": "f69bd9fa7ef684a53ca11abf283babf9710a99facea0eb373d75209c4fd35a41",
+      "crop": {
+        "width": 269,
+        "height": 455,
+        "x": 88,
+        "y": 546
+      },
+      "sha256": "33d8101ec8bed1ac4f28a634627a6d8a04ba5f2fe420eb9a3f46906e80e4efe9",
+      "bytes": 85122
+    },
+    {
+      "file": "assets/grade8-unit1-lesson3/crops/sb24-innovation.png",
+      "source": "assets/grade8-unit1-lesson3/source/student-book-page-24.png",
+      "sourceUpload": "image-5.png",
+      "sourceSha256": "1b28736496b01ec25bc0edcd893844218d8a951bba3f39114c92b3834683ce74",
+      "crop": {
+        "width": 246,
+        "height": 361,
+        "x": 239,
+        "y": 91
+      },
+      "sha256": "c670e835210875dcae81eaf38b5ff0c91b8507e0a8a66df80009d123c113d46e",
+      "bytes": 110096
+    },
+    {
+      "file": "assets/grade8-unit1-lesson3/crops/wb10-sydney-harbour.png",
+      "source": "assets/grade8-unit1-lesson3/source/workbook-page-10.png",
+      "sourceUpload": "image-7.png",
+      "sourceSha256": "5252abc56388ecf8f4cfd0cc65e1373954ae738931f5a3f3d2e35bf284393e17",
+      "crop": {
+        "width": 137,
+        "height": 145,
+        "x": 43,
+        "y": 401
+      },
+      "sha256": "c3bf5164a98328b4687995e0039b948eab4e18753b08df8990c685217b5191af",
+      "bytes": 21562
+    },
+    {
+      "file": "assets/grade8-unit1-lesson3/crops/wb10-opera-house.png",
+      "source": "assets/grade8-unit1-lesson3/source/workbook-page-10.png",
+      "sourceUpload": "image-7.png",
+      "sourceSha256": "5252abc56388ecf8f4cfd0cc65e1373954ae738931f5a3f3d2e35bf284393e17",
+      "crop": {
+        "width": 129,
+        "height": 143,
+        "x": 583,
+        "y": 401
+      },
+      "sha256": "86c3acf41fe3d520af6476457c7f02539f2bf230a24ec5b3796237feeccb23d3",
+      "bytes": 27612
+    },
+    {
+      "file": "assets/grade8-unit1-lesson3/crops/wb11-crossword.png",
+      "source": "assets/grade8-unit1-lesson3/source/workbook-page-11.png",
+      "sourceUpload": "image-8.png",
+      "sourceSha256": "f0158252e412cd832380b45155dc03ed79de0c7f43ef995dfee3d80cff2a7153",
+      "crop": {
+        "width": 383,
+        "height": 490,
+        "x": 71,
+        "y": 519
+      },
+      "sha256": "4485c254a08dccaf528655140f60182700381df9c89eba1697d25a045da64aa6",
+      "bytes": 29123
+    },
+    {
+      "file": "assets/grade8-unit1-lesson3/crops/wb13-holidays.png",
+      "source": "assets/grade8-unit1-lesson3/source/workbook-page-13.png",
+      "sourceUpload": "image-10.png",
+      "sourceSha256": "827636e94f2503dc1f9eea181a9cf2a028739f2aeab17d0c5a1cfa767f655a81",
+      "crop": {
+        "width": 195,
+        "height": 157,
+        "x": 508,
+        "y": 524
+      },
+      "sha256": "a1fc99cc7bda7e7873e7f32c775b4d2c3d90de1b2a20a1cc2c5bd5a3ef17ad06",
+      "bytes": 42482
+    }
+  ]
+}
