@@ -1,0 +1,915 @@
+{
+ "sourceTexts": {
+  "sb26-header": "Unit 4 · Interesting Destinations",
+  "sb26-plan-1": "Speaking: ask and answer some questions about some monuments",
+  "sb26-plan-2": "Reading: Iguazu Falls",
+  "sb26-plan-3": "Vocabulary: related to journeys",
+  "sb26-plan-4": "Grammar: revision of past perfect and reported speech",
+  "sb26-plan-5": "Pronunciation: sound /s/",
+  "sb26-plan-6": "Listening: a dialogue about check-in at a hotel room",
+  "sb26-plan-7": "Writing: completing a paragraph",
+  "sb26-speaking-title": "Speaking",
+  "sb26-speaking-instruction": "- Look at these pictures and discuss with your partner the following questions:",
+  "sb26-picture-labels": "The Great Pyramid · Bosra · Eiffel tower",
+  "sb26-speaking-1": "1- In which cities are these places?",
+  "sb26-speaking-2": "2- What do you know about each place?",
+  "sb26-speaking-3": "3- Which one would you like to visit? Why?",
+  "sb26-reading-instruction": "Read the following text and do the tasks below.",
+  "sb26-reading-title": "Iguazu Falls",
+  "sb26-reading-1": "Iguazu Falls are ",
+  "sb26-reading-2": "Iguazu National Park offers many activities to make your adventure unforgettable.You can experience the waterfalls in different ways; go on a ",
+  "sb26-reading-3": "The World Tour Agency said that many people had visited the Iguazu Falls.They told us that the Falls had been so beautiful and could be ranked as one of the ten best places in the world. Tourists said that the Falls they had seen were unique landmarks.",
+  "sb26-reading-4": "They slso said that some tourists had found the Falls wonderful with their sub-tropical climate and rains all year. Others said that fresh fruit had been one of the key delights for travellers besides a variety of dishes such as black beans stew, seafood ",
+  "sb26-reading-5": "Travel ",
+  "sb27-key-1-word": "located",
+  "sb27-key-1-meaning": "situated",
+  "sb27-key-2-word": "rental car",
+  "sb27-key-2-meaning": "a car that you pay money to use for a period of time",
+  "sb27-key-3-word": "trekking",
+  "sb27-key-3-meaning": "a long hard walk lasting several days specially in mountains",
+  "sb27-key-4-word": "stew",
+  "sb27-key-4-meaning": "a hot meal made by cooking meat and vegetables in a liquid",
+  "sb27-key-5-word": "grilled",
+  "sb27-key-5-meaning": "cooked over a very strong heat",
+  "sb27-key-6-word": "expert",
+  "sb27-key-6-meaning": "someone who has a special skill or knowledge of a subject",
+  "sb27-key-7-word": "magnificent",
+  "sb27-key-7-meaning": "very good or beautiful",
+  "sb27-tf-instruction": "",
+  "sb27-tf1": "1- Iguazu Falls are located on the Argentina river.",
+  "sb27-tf1-option-a": "True",
+  "sb27-tf1-option-b": "False",
+  "sb27-tf2": "2- You can go to the city Foz do Iguacu by bus only.",
+  "sb27-tf2-option-a": "True",
+  "sb27-tf2-option-b": "False",
+  "sb27-tf3": "3- The food at the open market is expensive.",
+  "sb27-tf3-option-a": "True",
+  "sb27-tf3-option-b": "False",
+  "sb27-tf4": "4- Travel experts consider that Iguazu is a magnificent holiday destination.",
+  "sb27-tf4-option-a": "True",
+  "sb27-tf4-option-b": "False",
+  "sb27-crossword-instruction": "- Complete the puzzle with words from the text.",
+  "sb27-across-title": "",
+  "sb27-across-2": "2- cooked over a very strong heat.",
+  "sb27-across-5": "5- a long hard walk lasting several days specially in mountains.",
+  "sb27-down-title": "",
+  "sb27-down-1": "1- a hot meal made by cooking meat and vegetables in a liquid.",
+  "sb27-down-3": "3- a car that you pay money to use for a short period of time",
+  "sb27-down-4": "4- situated.",
+  "sb27-pp-title": "Revision of Past Perfect Tense",
+  "sb27-pp-instruction": "Answer the questions in the table using the past perfect tense as in the first two examples.",
+  "sb27-pp-example-q1": "Why was Mary tired this morning?",
+  "sb27-pp-example-a1": "Because she had stayed up until 3 a.m.",
+  "sb27-pp-example-q2": "Why wasn’t Paul hungry at lunch?",
+  "sb27-pp-example-a2": "Because he had had a late breakfast.",
+  "sb27-pp1": "1- Why didn’t Andy go to his maths lesson?",
+  "sb27-pp2": "2- Why was Keith late for work yesterday?",
+  "sb27-pp3": "3- Why was Amy so pleased this morning?",
+  "sb27-pp4": "4- Why was your plane late?",
+  "sb27-pp5": "5- Why didn’t the TV work when you switched it on?",
+  "sb28-a-instruction": "A- Complete the sentences from the text above.",
+  "sb28-a1": "1- The World Tour Agency ............many people ............the Iguazu Falls.",
+  "sb28-a2": "2- They............ that the Falls ............. so beautiful.",
+  "sb28-a3": "3- Tourists ........ the Falls they ................ were unique landmarks.",
+  "sb28-a4": "4- They ........ the food at the open market ............ good and cheap.",
+  "sb28-b-instruction": "B- Select the correct form.",
+  "sb28-b1-direct": "1- Tom: \"I was tired\".",
+  "sb28-b1": "Tom said that he (had been - has been) tired.",
+  "sb28-b1-option-a": "had been",
+  "sb28-b1-option-b": "has been",
+  "sb28-b2-direct": "2- Sarah: \"I went home early\".",
+  "sb28-b2": "She said she (went - had gone) home early.",
+  "sb28-b2-option-a": "went",
+  "sb28-b2-option-b": "had gone",
+  "sb28-b3-direct": "3- Workers: \"We’ve worked hard\".",
+  "sb28-b3": "They said (we - they) had worked hard.",
+  "sb28-b3-option-a": "we",
+  "sb28-b3-option-b": "they",
+  "sb28-b4-direct": "4- Ellen: \"I’ve never had so much luck\".",
+  "sb28-b4": "Ellen said she (has never had - had never had) so much luck.",
+  "sb28-b4-option-a": "has never had",
+  "sb28-b4-option-b": "had never had",
+  "sb28-listening-a": "A- Listen to a dialogue about \"Check-in at a hotel room\". Then do the following tasks.",
+  "sb28-listening-b": "B- Decide if the sentences are True/T or False/F.",
+  "sb28-lb1": "1- A fan room is cheaper than a room with air-conditioning.",
+  "sb28-lb2": "2- The visitor will take a single room.",
+  "sb28-lb3": "3- The Wi-Fi is free in the hotel.",
+  "sb28-lb4": "4- The visitor can pay in cash only.",
+  "sb28-lb5": "5- There is an automated teller machine in the hotel.",
+  "sb28-listening-c": "C- Select the correct answer between brackets.",
+  "sb28-lc1": "1- A room with air-conditioning costs ($50, $15).",
+  "sb28-lc2": "2- The nearest ATM is in the (shopping center, hotel).",
+  "sb28-lc3": "3- The visitor (can’t, can) have breakfast in the hotel.",
+  "sb28-lc4": "4- The visitor’s room is on the (4",
+  "sb29-sounds-title": "Sounds /s/  /k/",
+  "sb29-rule-1": "- In English the letter 'C' is mostly pronounced as a /k/ sound as in \"cat\".",
+  "sb29-rule-2": "- We can also pronounce \"C\" as an /s/ sound if the letter after it is i,e,or y as in \"city\".",
+  "sb29-s1": "face",
+  "sb29-k1": "corn",
+  "sb29-s2": "juice",
+  "sb29-k2": "cat",
+  "sb29-s3": "city",
+  "sb29-k3": "cake",
+  "sb29-s4": "circle",
+  "sb29-k4": "cook",
+  "sb29-s5": "icy",
+  "sb29-k5": "cloud",
+  "sb29-ck-note": "The letters (c k) together make the sound /k/ as in duck, truck, clock, back.",
+  "sb29-task-1": "",
+  "sb29-sentence": "Take care not to make mistakes when you bake those cakes or you may get stomachache.",
+  "sb29-task-2": "",
+  "sb29-s-list": "close - cinema - come - practise - fancy - parcel - drank - cab - cup",
+  "sb29-writing-instruction": "- Complete the following paragraph with your own words.",
+  "sb29-writing-title": "My Best Vacation",
+  "sb29-writing-1": "The best .........I had was two years ago. I ......... to Lattakia.I .........in lots of different .........., including the blue beach and a really interesting place called Ras Al Ashmra.",
+  "sb29-writing-2": "The scenery near Ras Al Ashmra is so............. There are very unusual mountains along the coast. I ......... some interesting places and I................. some wonderful people.",
+  "sb30-title": "Geography",
+  "sb30-instruction": "- In pairs, ask and answer.",
+  "sb30-gq1": "1- How is the climate in Syria?",
+  "sb30-gq2": "2- Which weather would you prefer?",
+  "sb30-gq3": "3- Why is climate important when traveling?",
+  "sb30-a-instruction": "A- Read the text and do the tasks below.",
+  "sb30-reading-title": "Climate & Weather",
+  "sb30-reading-1": "The difference between weather and climate is a measure of time. Weather is what the conditions of the atmosphere are over a short period of time, and climate is how the atmosphere changes over relatively long periods of time.",
+  "sb30-reading-2": "Sometimes the climate differs from one area to another in the same country, for example, Peru has a variety of climate types to choose where to go. It has the blue sky and sunshine of the tropical northern coast, the humid hot Amazon rainforest and the cold weather of the Andes, there is a climate to suit everyone’s taste in Peru. On the other hand, some countries have moderate, cold or hot climate all over the year. For example, Portugal enjoys a warm temperate climate with wet winters and dry summers.",
+  "sb30-b-instruction": "B - Decide if the statements are True or False.",
+  "sb30-tf1": "1- Climate is how the atmosphere \"behaves\" over short periods of time.",
+  "sb30-tf2": "2- Peru has the same climate in all its areas.",
+  "sb30-tf3": "3- The climate in Portugal is warm.",
+  "sb30-c-instruction": "C- Write four sentences describing the climate of Syria in the four seasons.",
+  "sb30-c-help": "The following words may help you:",
+  "sb30-word-bank": "warm · sunny · cold · moderate · windy · freezing · temperate",
+  "sb30-d-instruction": "D- Answer the following question with \"Yes\" or \"No\".",
+  "sb30-d-question": "If the day before the day after the day before today was hotter than the day after the day before today, was the day before today hotter than today?",
+  "sb31-title": "Teachers are Great Decision Makers",
+  "sb31-instruction": "Read the story and do the tasks below.",
+  "sb31-story-1": "Helen Adams Keller was born a healthy child in Alabama, on June 27,1880.",
+  "sb31-story-2": "At the age of 19 months, Helen became deaf and blind as a result of scarlet fever. As Helen grew from the time being a baby into childhood, she became wild. She would kick and scream when angry, and giggle when happy.",
+  "sb31-story-3": "Her family wanted their daughter to learn. They decided to help her and met the school's director who suggested a teacher who was called Ann Sullivan to work with Helen. Sullivan went to Keller's home in Alabama. Helen was six years old when Sullivan began to teach her finger spelling. She started by bringing Helen a doll to touch it and spell the word \"doll\".",
+  "sb31-story-4": "At first, Keller refused to cooperate with Sullivan's instruction. Finally, Sullivan asked Helen's parents to allow her with Helen alone, so that Keller could concentrate only on Sullivan's instruction. Therefore, Sullivan and Helen moved to a nearby cottage.",
+  "sb31-story-5": "After a great struggle with Helen, a surprising event happened. Sullivan taught Keller the word \"water\"; she helped her make the connection between the object and the letters by taking Keller out to the water pump, and placing Keller's hand under the water While Sullivan was flushing cool water over Keller's hand, she spelled out the word w-a-t-e-r. By nightfall, she had learned 30 words.",
+  "sb31-story-6": "Helen Keller overcame the difficult situation of being blind and deaf to become a famous American educator in the 20thcentury.",
+  "sb31-task1": "1- Match the words in column A to their definitions in B.",
+  "sb31-a1": "1- giggle",
+  "sb31-b1": "1- to succeed in dealing with problem",
+  "sb31-a2": "2- overcome",
+  "sb31-b2": "2- pass water by a sudden flow",
+  "sb31-a3": "3- flushing",
+  "sb31-b3": "3- laugh in a silly way",
+  "sb31-m1": "1- giggle",
+  "sb31-m2": "2- overcome",
+  "sb31-m3": "3- flushing",
+  "sb31-task2": "2- Decide if the statements are True or False.",
+  "sb31-tf1": "1- Helen Keller was born in New York.",
+  "sb31-tf2": "2- She had scarlet fever at the age of two.",
+  "sb31-tf3": "3- At first, Keller refused to cooperate with Sullivan.",
+  "sb31-tf4": "4- Sullivan asked to be alone with Helen in a far cottage.",
+  "sb31-tf5": "5- Ann helped Keller to connect between the object and the letters by taking her out to the water.",
+  "sb31-task3": "3- Correct the false statements. Link the statements to summarize the story.",
+  "sb31-task4": "4- Tell your classmates the summary.",
+  "sb32-title": "Project 2",
+  "sb32-subtitle": "A poster about a journey",
+  "sb32-intro": "You are going to make a poster and give a presentation about a journey to a country you would like to visit. In groups, talk about the journey destination, the time, and the transport.",
+  "sb32-step-a": "a- Find or draw pictures.",
+  "sb32-step-b": "b- Write short sentences for each of the pictures you are going to use.",
+  "sb32-step-c": "c- Arrange your pictures and sentences on the paper. Leave space at the bottom.",
+  "sb32-step-d": "d- At the bottom of the poster, write the text.",
+  "sb32-present-1": "- Present your poster to the other students in your class.",
+  "sb32-present-2": "- Be ready to answer questions about it.",
+  "wb14-speaking-instruction": "- Work with your partner. Ask and answer the following questions.",
+  "wb14-qa": "a. Have you ever had a good holiday?",
+  "wb14-qb": "b. Where did you go?",
+  "wb14-qc": "c. What did you visit?",
+  "wb14-qd": "d. Who did you go with?",
+  "wb14-reading-instruction": "- Read the following text and do the tasks below.",
+  "wb14-reading-title": "Focus on Two Cities",
+  "wb14-reading-1": "Hi, my name is Sandra, and I come from Lebanon. I like to visit historical places. I am going to Granada, Spain. Granada is a great place to visit. It is a historical place and has lovely ancient ruins. Alhambra Palace is an ancient fortress and citadel located in Granada. It is an eight-century-old site which was named for the reddish walls and towers that surrounded the citadel.",
+  "wb14-reading-2": "Hello, my name is Sarah, and I come from Iraq. I am going to Vancouver, Canada. Vancouver is the greatest city in the world! In the spring, you can ski in the mountains and swim in the ocean on the same day. It is a great place to walk. There are nice places to spend a sunny afternoon. Yaleton is a wonderful neighborhood. There are a lot of coffee shops, furniture stores, book stores and boutiques.",
+  "wb15-a-instruction": "A- Answer the following questions.",
+  "wb15-a1": "1- Where is Sandra from?",
+  "wb15-a2": "2- Why is Sandra going to visit Granada?",
+  "wb15-a3": "3- How old is Alhambra Palace?",
+  "wb15-a4": "4- Is Yaleton an entertaining place? Why?",
+  "wb15-b-instruction": "B- Correct the wrong information.",
+  "wb15-b1": "1- Alhambra Palace is a modern building.",
+  "wb15-b2": "2- Alhambra Palace was named for its reddish doors.",
+  "wb15-b3": "3- In Granada, you can go skiing and swimming on the same day.",
+  "wb15-b4": "4- It takes a long time to travel between Yaleton and Vancouver.",
+  "wb15-voc-instruction": "- Match the follwing words with their definitions .",
+  "wb15-voc-word-1": "1-fortress",
+  "wb15-voc-def-a": "a-to move on snow or water for sport",
+  "wb15-voc-word-2": "2-citadel",
+  "wb15-voc-def-b": "b-a small shop that sells clothes or other objects",
+  "wb15-voc-word-3": "3-ski",
+  "wb15-voc-def-c": "c-a place that is protected against attacks",
+  "wb15-voc-word-4": "4-neighborhood",
+  "wb15-voc-def-d": "d-castle",
+  "wb15-voc-word-5": "5-boutique",
+  "wb15-voc-def-e": "e-a nearby area of a town or city",
+  "wb15-voc1": "1-fortress",
+  "wb15-voc2": "2-citadel",
+  "wb15-voc3": "3-ski",
+  "wb15-voc4": "4-neighborhood",
+  "wb15-voc5": "5-boutique",
+  "wb16-title": "Grammar · Revision of Past Perfect Tense.",
+  "wb16-a-title": "A - Reported Speech",
+  "wb16-a-lead": "When we use reporting verbs like (said, told ), we change the tense of the verbs as follows:",
+  "wb16-a-direct": "",
+  "wb16-a-reported": "",
+  "wb16-a-pastperfect-title": "Past Perfect",
+  "wb16-a-pastperfect": "is used to make it clear that one event happened before another one in the past.",
+  "wb16-a-affirmative-label": "Affirmative",
+  "wb16-a-affirmative": "Our team had practised before they played the match.",
+  "wb16-a-negative-label": "Negative",
+  "wb16-a-negative": "Our team hadn’t practised before they played the match.",
+  "wb16-a-interrogative-label": "Interrogative",
+  "wb16-a-interrogative": "Had our team practised before they played the match?",
+  "wb16-b-instruction": "B - Complete with the past perfect tense.",
+  "wb16-b1": "1- Before my dad arrived, I ……… my room. (clean)",
+  "wb16-b2": "2- We reached the railway after the train ……… . (leave)",
+  "wb16-b3": "3- The kids ……… some ice-cream before they went back home. (have)",
+  "wb16-b4": "4- Laura repaired her glasses because her mother ……… them. (break)",
+  "wb16-b5": "5- By the time the bell rang, I …… already ……… working. (finish)",
+  "wb16-c-instruction": "C - Write the sentences in reported speech.",
+  "wb16-c1": "1- “I learned English in 2012”. Sally said………",
+  "wb16-c2": "2- “I did all my homework”. Hani said………",
+  "wb16-c3": "3- “Someone took my book”. Samia said………",
+  "wb16-c4": "4- “I was in France in1993”. Ali said………",
+  "wb16-c5": "5- “We haven’t seen Omar for 15 years”. Ruba and Sana told us………",
+  "wb17-d-instruction": "D- Read the dialogue. Then complete the paragraph using reported speech.",
+  "wb17-dialogue-1": "",
+  "wb17-dialogue-2": "",
+  "wb17-dialogue-3": "",
+  "wb17-dialogue-4": "",
+  "wb17-dialogue-5": "",
+  "wb17-dialogue-6": "",
+  "wb17-d-paragraph": "Yesterday, when I was in town, a woman came up to me. She looked worried and said she……… some help. I felt sorry for her, so I said I…………happy to help her. She told me she ……… to the town before, and she said that someone………her purse that morning. I said I ………sorry but I ………any money. The woman said she ……… money. She said she ………to find the police station. So I told her that I ……… that way.",
+  "wb17-listening-instruction": "Listen to Carl talking to Lucy about his vacation, then do the tasks.",
+  "wb17-listening-1": "1 - Select the correct statement.",
+  "wb17-l1": "1-",
+  "wb17-l1-a": "a. Carl’s vacation was in New York.",
+  "wb17-l1-b": "b. He spent his vacation in Hong Kong.",
+  "wb17-l2": "2-",
+  "wb17-l2-a": "a. Carl left his credit card in an ATM.",
+  "wb17-l2-b": "b. He left his credit card at home.",
+  "wb17-l3": "3-",
+  "wb17-l3-a": "a. The police found his card.",
+  "wb17-l3-b": "b. The card company found his card.",
+  "wb17-l4": "4-",
+  "wb17-l4-a": "a. The credit card company cancelled the card so no one could use it.",
+  "wb17-l4-b": "b. The credit card company cancelled the card, but Carl could still use it.",
+  "wb17-listening-2": "2 - Decide if the sentences are True/T or False/F.",
+  "wb17-lt1": "1- Carl’s vacation was very good.",
+  "wb17-lt2": "2- Carl lost his credit card on the second day.",
+  "wb17-lt3": "3- The credit card was at the police station.",
+  "wb17-lt4": "4- Carl couldn’t buy anything.",
+  "wb17-writing-instruction": "Write an invitation to your friends including a plan for one week holiday.",
+  "wb17-writing-ideas": "The following ideas may help you:",
+  "wb17-writing-list": "\n",
+  "wb17-keep-title": "Keep in mind",
+  "wb17-keep-1": "Linking words and phrases show how a sentence or paragraph relates to the previous one.",
+  "wb17-keep-2": "e.g. ",
+  "vocab-sb-1-word": "located",
+  "vocab-sb-1-meaning": "situated",
+  "vocab-sb-2-word": "rental car",
+  "vocab-sb-2-meaning": "a car that you pay money to use for a period of time",
+  "vocab-sb-3-word": "trekking",
+  "vocab-sb-3-meaning": "a long hard walk lasting several days specially in mountains",
+  "vocab-sb-4-word": "stew",
+  "vocab-sb-4-meaning": "a hot meal made by cooking meat and vegetables in a liquid",
+  "vocab-sb-5-word": "grilled",
+  "vocab-sb-5-meaning": "cooked over a very strong heat",
+  "vocab-sb-6-word": "expert",
+  "vocab-sb-6-meaning": "someone who has a special skill or knowledge of a subject",
+  "vocab-sb-7-word": "magnificent",
+  "vocab-sb-7-meaning": "very good or beautiful",
+  "vocab-wb-1-word": "fortress",
+  "vocab-wb-1-meaning": "a place that is protected against attacks",
+  "vocab-wb-2-word": "citadel",
+  "vocab-wb-2-meaning": "castle",
+  "vocab-wb-3-word": "ski",
+  "vocab-wb-3-meaning": "to move on snow or water for sport",
+  "vocab-wb-4-word": "neighborhood",
+  "vocab-wb-4-meaning": "a nearby area of a town or city",
+  "vocab-wb-5-word": "boutique",
+  "vocab-wb-5-meaning": "a small shop that sells clothes or other objects",
+  "vocab-sb31-1-word": "giggle",
+  "vocab-sb31-1-meaning": "laugh in a silly way",
+  "vocab-sb31-2-word": "overcome",
+  "vocab-sb31-2-meaning": "to succeed in dealing with problem",
+  "vocab-sb31-3-word": "flushing",
+  "vocab-sb31-3-meaning": "pass water by a sudden flow"
+ },
+ "forms": {
+  "sb-speaking": {
+   "mode": "personal",
+   "fields": [
+    "sb26-q1",
+    "sb26-q2",
+    "sb26-q3"
+   ],
+   "checkedItems": {}
+  },
+  "sb-tf": {
+   "mode": "check",
+   "fields": [
+    "sb27-tf1",
+    "sb27-tf2",
+    "sb27-tf3",
+    "sb27-tf4"
+   ],
+   "checkedItems": {
+    "sb27-tf1-item": [
+     "b"
+    ],
+    "sb27-tf2-item": [
+     "b"
+    ],
+    "sb27-tf3-item": [
+     "b"
+    ],
+    "sb27-tf4-item": [
+     "a"
+    ]
+   }
+  },
+  "sb-crossword": {
+   "mode": "check",
+   "fields": [
+    "sb27-cw-across2",
+    "sb27-cw-across5",
+    "sb27-cw-down1",
+    "sb27-cw-down3",
+    "sb27-cw-down4"
+   ],
+   "checkedItems": {
+    "sb27-cw-across2-item": [
+     "grilled"
+    ],
+    "sb27-cw-across5-item": [
+     "trekking"
+    ],
+    "sb27-cw-down1-item": [
+     "stew"
+    ],
+    "sb27-cw-down3-item": [
+     "rental",
+     "rental car",
+     "rentalcar",
+     "rental-car"
+    ],
+    "sb27-cw-down4-item": [
+     "located"
+    ]
+   }
+  },
+  "sb-pastperfect": {
+   "mode": "review",
+   "fields": [
+    "sb27-pp1",
+    "sb27-pp2",
+    "sb27-pp3",
+    "sb27-pp4",
+    "sb27-pp5"
+   ],
+   "checkedItems": {}
+  },
+  "sb-reported-a": {
+   "mode": "check",
+   "fields": [
+    "sb28-a1b1",
+    "sb28-a1b2",
+    "sb28-a2b1",
+    "sb28-a2b2",
+    "sb28-a3b1",
+    "sb28-a3b2",
+    "sb28-a4b1",
+    "sb28-a4b2"
+   ],
+   "checkedItems": {}
+  },
+  "sb-reported-b": {
+   "mode": "check",
+   "fields": [
+    "sb28-b1",
+    "sb28-b2",
+    "sb28-b3",
+    "sb28-b4"
+   ],
+   "checkedItems": {
+    "sb28-b1-item": [
+     "a"
+    ],
+    "sb28-b2-item": [
+     "b"
+    ],
+    "sb28-b3-item": [
+     "b"
+    ],
+    "sb28-b4-item": [
+     "b"
+    ]
+   }
+  },
+  "sb-listening": {
+   "mode": "audio",
+   "fields": [
+    "sb28-lb1",
+    "sb28-lb2",
+    "sb28-lb3",
+    "sb28-lb4",
+    "sb28-lb5",
+    "sb28-lc1",
+    "sb28-lc2",
+    "sb28-lc3",
+    "sb28-lc4"
+   ],
+   "checkedItems": {}
+  },
+  "sb-pronunciation": {
+   "mode": "review",
+   "fields": [
+    "sb29-k-words"
+   ],
+   "checkedItems": {}
+  },
+  "sb-writing": {
+   "mode": "personal",
+   "fields": [
+    "sb29-w1",
+    "sb29-w2",
+    "sb29-w3",
+    "sb29-w4",
+    "sb29-w5",
+    "sb29-w6",
+    "sb29-w7"
+   ],
+   "checkedItems": {}
+  },
+  "sb-geography-speaking": {
+   "mode": "personal",
+   "fields": [
+    "sb30-gq1",
+    "sb30-gq2",
+    "sb30-gq3"
+   ],
+   "checkedItems": {}
+  },
+  "sb-climate-tf": {
+   "mode": "check",
+   "fields": [
+    "sb30-tf1",
+    "sb30-tf2",
+    "sb30-tf3"
+   ],
+   "checkedItems": {
+    "sb30-tf1-item": [
+     "b"
+    ],
+    "sb30-tf2-item": [
+     "b"
+    ],
+    "sb30-tf3-item": [
+     "a"
+    ]
+   }
+  },
+  "sb-climate-c": {
+   "mode": "personal",
+   "fields": [
+    "sb30-syria"
+   ],
+   "checkedItems": {}
+  },
+  "sb-climate-d": {
+   "mode": "check",
+   "fields": [
+    "sb30-d"
+   ],
+   "checkedItems": {
+    "sb30-d-item": [
+     "yes"
+    ]
+   }
+  },
+  "sb-story-match": {
+   "mode": "check",
+   "fields": [
+    "sb31-m1",
+    "sb31-m2",
+    "sb31-m3"
+   ],
+   "checkedItems": {
+    "sb31-m1-item": [
+     "3"
+    ],
+    "sb31-m2-item": [
+     "1"
+    ],
+    "sb31-m3-item": [
+     "2"
+    ]
+   }
+  },
+  "sb-story-tf": {
+   "mode": "check",
+   "fields": [
+    "sb31-tf1",
+    "sb31-tf2",
+    "sb31-tf3",
+    "sb31-tf4",
+    "sb31-tf5"
+   ],
+   "checkedItems": {
+    "sb31-tf1-item": [
+     "b"
+    ],
+    "sb31-tf2-item": [
+     "b"
+    ],
+    "sb31-tf3-item": [
+     "a"
+    ],
+    "sb31-tf4-item": [
+     "b"
+    ],
+    "sb31-tf5-item": [
+     "a"
+    ]
+   }
+  },
+  "sb-story-correct": {
+   "mode": "review",
+   "fields": [
+    "sb31-correct"
+   ],
+   "checkedItems": {}
+  },
+  "sb-story-summary": {
+   "mode": "personal",
+   "fields": [
+    "sb31-summary"
+   ],
+   "checkedItems": {}
+  },
+  "wb-speaking": {
+   "mode": "personal",
+   "fields": [
+    "wb14-qa",
+    "wb14-qb",
+    "wb14-qc",
+    "wb14-qd"
+   ],
+   "checkedItems": {}
+  },
+  "wb-reading-a": {
+   "mode": "review",
+   "fields": [
+    "wb15-a1",
+    "wb15-a2",
+    "wb15-a3",
+    "wb15-a4"
+   ],
+   "checkedItems": {}
+  },
+  "wb-reading-b": {
+   "mode": "review",
+   "fields": [
+    "wb15-b1",
+    "wb15-b2",
+    "wb15-b3",
+    "wb15-b4"
+   ],
+   "checkedItems": {}
+  },
+  "wb-vocabulary": {
+   "mode": "check",
+   "fields": [
+    "wb15-voc1",
+    "wb15-voc2",
+    "wb15-voc3",
+    "wb15-voc4",
+    "wb15-voc5"
+   ],
+   "checkedItems": {
+    "wb15-voc1-item": [
+     "c"
+    ],
+    "wb15-voc2-item": [
+     "d"
+    ],
+    "wb15-voc3-item": [
+     "a"
+    ],
+    "wb15-voc4-item": [
+     "e"
+    ],
+    "wb15-voc5-item": [
+     "b"
+    ]
+   }
+  },
+  "wb-grammar-b": {
+   "mode": "check",
+   "fields": [
+    "wb16-b1",
+    "wb16-b2",
+    "wb16-b3",
+    "wb16-b4",
+    "wb16-b5a",
+    "wb16-b5b"
+   ],
+   "checkedItems": {
+    "wb16-b1-item": [
+     "had cleaned"
+    ],
+    "wb16-b2-item": [
+     "had left"
+    ],
+    "wb16-b3-item": [
+     "had had"
+    ],
+    "wb16-b4-item": [
+     "had broken"
+    ],
+    "wb16-b5-item": [
+     "had"
+    ],
+    "wb16-b5b-item": [
+     "finished"
+    ]
+   }
+  },
+  "wb-grammar-c": {
+   "mode": "review",
+   "fields": [
+    "wb16-c1",
+    "wb16-c2",
+    "wb16-c3",
+    "wb16-c4",
+    "wb16-c5"
+   ],
+   "checkedItems": {}
+  },
+  "wb-dialogue": {
+   "mode": "review",
+   "fields": [
+    "wb17-d1",
+    "wb17-d2",
+    "wb17-d3",
+    "wb17-d4",
+    "wb17-d5",
+    "wb17-d6",
+    "wb17-d7",
+    "wb17-d8",
+    "wb17-d9"
+   ],
+   "checkedItems": {}
+  },
+  "wb-listening": {
+   "mode": "audio",
+   "fields": [
+    "wb17-l1",
+    "wb17-l2",
+    "wb17-l3",
+    "wb17-l4",
+    "wb17-lt1",
+    "wb17-lt2",
+    "wb17-lt3",
+    "wb17-lt4"
+   ],
+   "checkedItems": {}
+  },
+  "wb-writing": {
+   "mode": "personal",
+   "fields": [
+    "wb17-invitation"
+   ],
+   "checkedItems": {}
+  },
+  "vocab-practice": {
+   "mode": "check",
+   "fields": [
+    "vocab-p1",
+    "vocab-p2",
+    "vocab-p3",
+    "vocab-p4",
+    "vocab-p5",
+    "vocab-p6",
+    "vocab-p7",
+    "vocab-p8"
+   ],
+   "checkedItems": {
+    "vocab-p1-item": [
+     "b"
+    ],
+    "vocab-p2-item": [
+     "a"
+    ],
+    "vocab-p3-item": [
+     "c"
+    ],
+    "vocab-p4-item": [
+     "b"
+    ],
+    "vocab-p5-item": [
+     "a"
+    ],
+    "vocab-p6-item": [
+     "c"
+    ],
+    "vocab-p7-item": [
+     "b"
+    ],
+    "vocab-p8-item": [
+     "a"
+    ]
+   }
+  }
+ },
+ "sections": {
+  "pupil-book": [
+   "sb-opener-step",
+   "sb-reading-step",
+   "sb-keywords-step",
+   "sb-crossword-step",
+   "sb-pastperfect-step",
+   "sb-reported-a-step",
+   "sb-reported-b-step",
+   "sb-listening-step",
+   "sb-pronunciation-step",
+   "sb-writing-step",
+   "sb-geography-step",
+   "sb-climate-tasks-step",
+   "sb-story-step",
+   "sb-story-tasks12-step",
+   "sb-story-tasks34-step",
+   "sb-project-step"
+  ],
+  "workbook": [
+   "wb-speaking-step",
+   "wb-reading-step",
+   "wb-reading-a-step",
+   "wb-reading-b-step",
+   "wb-vocabulary-step",
+   "wb-grammar-a-step",
+   "wb-grammar-b-step",
+   "wb-grammar-c-step",
+   "wb-dialogue-step",
+   "wb-listening-step",
+   "wb-writing-step"
+  ],
+  "vocabulary": [
+   "vocab-textbook-step",
+   "vocab-additional-step",
+   "vocab-practice-step",
+   "vocab-audit-step"
+  ],
+  "test": [
+   "test-intro",
+   "teacher-gate"
+  ]
+ },
+ "assessment": [
+  {
+   "objective": "Vocabulary",
+   "question": "A traveller wants a car for three days and pays for it at the airport desk. What is that car called?",
+   "options": [
+    "a ferry car",
+    "a border car",
+    "a rental car"
+   ],
+   "answer": "c"
+  },
+  {
+   "objective": "Vocabulary",
+   "question": "Which word means “a long hard walk lasting several days, specially in mountains”?",
+   "options": [
+    "trekking",
+    "canoeing",
+    "grilling"
+   ],
+   "answer": "a"
+  },
+  {
+   "objective": "Vocabulary",
+   "question": "A small shop that sells clothes or other objects is a …",
+   "options": [
+    "citadel",
+    "boutique",
+    "fortress"
+   ],
+   "answer": "b"
+  },
+  {
+   "objective": "Past perfect",
+   "question": "Complete: “When the guests arrived, the family ___ dinner.”",
+   "options": [
+    "has already finished",
+    "was already finishing",
+    "had already finished"
+   ],
+   "answer": "c"
+  },
+  {
+   "objective": "Past perfect",
+   "question": "Which sentence is correct?",
+   "options": [
+    "Rami had never flown before that trip.",
+    "Rami has never flew before that trip.",
+    "Rami had never fly before that trip."
+   ],
+   "answer": "a"
+  },
+  {
+   "objective": "Past perfect",
+   "question": "Which question is in the past perfect?",
+   "options": [
+    "Did the team practise before the match?",
+    "Had the team practised before the match?",
+    "Has the team practised before the match?"
+   ],
+   "answer": "b"
+  },
+  {
+   "objective": "Reported speech",
+   "question": "Dima said, “I want to visit the old city.” Which report is correct?",
+   "options": [
+    "Dima said that I wanted to visit the old city.",
+    "Dima said that she wants to visit the old city.",
+    "Dima said that she wanted to visit the old city."
+   ],
+   "answer": "c"
+  },
+  {
+   "objective": "Reported speech",
+   "question": "Two friends told me, “We have booked the hotel.” Which report is correct?",
+   "options": [
+    "They told me that they had booked the hotel.",
+    "They told me that we have booked the hotel.",
+    "They told me that they have booked the hotel yesterday."
+   ],
+   "answer": "a"
+  },
+  {
+   "objective": "Reported speech",
+   "question": "Hala said, “I can show you the photos.” Which report keeps the meaning?",
+   "options": [
+    "Hala said she can show me the photos.",
+    "Hala said that she could show me the photos.",
+    "Hala said that she could showed me the photos."
+   ],
+   "answer": "b"
+  },
+  {
+   "objective": "Reading",
+   "question": "Read: “Mariam grew up beside a wide river. Every summer her family travelled by bus to the coast, where the air felt cooler. She still remembers the small bakery near the beach, and the sweet bread they ate on the sand.” Why did the family travel to the coast?",
+   "options": [
+    "to buy a bus",
+    "to work in the bakery",
+    "because the air there felt cooler"
+   ],
+   "answer": "c"
+  },
+  {
+   "objective": "Reading",
+   "question": "Read again: “Mariam grew up beside a wide river. Every summer her family travelled by bus to the coast, where the air felt cooler. She still remembers the small bakery near the beach, and the sweet bread they ate on the sand.” What does she remember most clearly?",
+   "options": [
+    "a bakery near the beach and the bread they ate",
+    "the name of the river",
+    "the driver of the bus"
+   ],
+   "answer": "a"
+  },
+  {
+   "objective": "Pronunciation",
+   "question": "Which word has the /s/ sound, as in “city”?",
+   "options": [
+    "cream",
+    "cycle",
+    "cloud"
+   ],
+   "answer": "b"
+  },
+  {
+   "objective": "Linking words",
+   "question": "Choose the linking word that shows a result. “The bus was late; ___, we missed the opening.”",
+   "options": [
+    "however",
+    "on the other hand",
+    "therefore"
+   ],
+   "answer": "c"
+  },
+  {
+   "objective": "Linking words",
+   "question": "Which sentence adds extra information?",
+   "options": [
+    "In addition, the hotel has a small garden.",
+    "However, the hotel has a small garden.",
+    "On the other hand, the hotel has a small garden."
+   ],
+   "answer": "a"
+  }
+ ]
+}

@@ -374,7 +374,13 @@ try {
 
   // 4e. Reset / Retry clears DOM, feedback, score, step badges, and localStorage, then allows a clean retry.
   await page.locator('#reset-test').click();
-  await page.waitForFunction(() => document.querySelectorAll('#quiz input:checked').length === 0);
+  // Wait for the whole reset state, not just the cleared inputs. The shared step navigator
+  // re-syncs its answered badges from a deferred callback, so a radio-only wait can read the
+  // pre-reset badges. Grade 5 Lessons 4-7 already wait on the complete state this way.
+  await page.waitForFunction(() =>
+    document.querySelectorAll('#quiz input:checked').length === 0 &&
+    Array.from(document.querySelectorAll('#quiz input[type="text"], #quiz textarea')).every(field => field.value === '') &&
+    document.querySelectorAll('.content-nav-links button.is-answered').length === 0);
   const resetState = await page.evaluate(() => ({
     checked: document.querySelectorAll('#quiz input:checked').length,
     q17: document.querySelector('#quiz input[name="q17"]').value,

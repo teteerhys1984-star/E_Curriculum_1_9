@@ -1,0 +1,216 @@
+{
+  "note": "Unscaled, unretouched rectangular crops. Original PNG files in source/ are byte-for-byte uploads. Geometry is in source pixels; tests verify every decoded crop pixel against its source.",
+  "lesson": "grade8-unit1-lesson4",
+  "crops": [
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb26-speaking-pictures.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-26.png",
+      "sourceUpload": "image-1.png",
+      "sourceSha256": "c95b09b81e20555b37b10c0b59c4085995ca8cd4ff40f285aa028c6156a8719c",
+      "crop": {
+        "width": 376,
+        "height": 166,
+        "x": 56,
+        "y": 275
+      },
+      "sha256": "01be34af2bbcf77f17c3bcb4beb9ba6b8996410170aa1153787056bd878ad8d1",
+      "bytes": 95622
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb26-iguazu-top.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-26.png",
+      "sourceUpload": "image-1.png",
+      "sourceSha256": "c95b09b81e20555b37b10c0b59c4085995ca8cd4ff40f285aa028c6156a8719c",
+      "crop": {
+        "width": 226,
+        "height": 150,
+        "x": 494,
+        "y": 456
+      },
+      "sha256": "7478c5db12c07caea802937433e3b67499c683b272e951b28f9cc7e6a8cc4f9f",
+      "bytes": 76221
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb26-iguazu-bottom.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-26.png",
+      "sourceUpload": "image-1.png",
+      "sourceSha256": "c95b09b81e20555b37b10c0b59c4085995ca8cd4ff40f285aa028c6156a8719c",
+      "crop": {
+        "width": 234,
+        "height": 118,
+        "x": 270,
+        "y": 937
+      },
+      "sha256": "4df96c6f19db57c3d8c53f30df37601f2ae5ae6a23079d65bc6132d9ad2cfafc",
+      "bytes": 56120
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb27-crossword.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-27.png",
+      "sourceUpload": "image-2.png",
+      "sourceSha256": "c06133f34b866b3e864da3a5fa20a96e9e163c00aa4e587230b8200164219e72",
+      "crop": {
+        "width": 312,
+        "height": 272,
+        "x": 57,
+        "y": 393
+      },
+      "sha256": "2560fbb1018627c71569e8cfde0c5cc594802a604818eb5e32d8b9b90ea97a44",
+      "bytes": 28161
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb28-checkin-left.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-28.png",
+      "sourceUpload": "image-3.png",
+      "sourceSha256": "294ea0311ffd6f03475784c040e59c8ee888dbbd84074632f6b17d31a8efbdb4",
+      "crop": {
+        "width": 306,
+        "height": 204,
+        "x": 40,
+        "y": 438
+      },
+      "sha256": "7ef2dafd13a17227498cd053b29262dded5928af042ca5d13c3ab8b737ef527b",
+      "bytes": 94114
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb28-checkin-right.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-28.png",
+      "sourceUpload": "image-3.png",
+      "sourceSha256": "294ea0311ffd6f03475784c040e59c8ee888dbbd84074632f6b17d31a8efbdb4",
+      "crop": {
+        "width": 302,
+        "height": 196,
+        "x": 351,
+        "y": 444
+      },
+      "sha256": "2f49fe39b8fa541a91fb64ee68076048a662a0ff88f0c0349799e11a3079cf82",
+      "bytes": 84809
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb28-hotel-lobby.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-28.png",
+      "sourceUpload": "image-3.png",
+      "sourceSha256": "294ea0311ffd6f03475784c040e59c8ee888dbbd84074632f6b17d31a8efbdb4",
+      "crop": {
+        "width": 266,
+        "height": 200,
+        "x": 452,
+        "y": 775
+      },
+      "sha256": "16d172a1ec6e06bb58637a418b0535e9b278c913415e866e2f140637e14c2d0b",
+      "bytes": 99520
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb30-geography-coast.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-30.png",
+      "sourceUpload": "image-5.png",
+      "sourceSha256": "e13a579f7e9d8952d260d1b516d08df08ad0e85ca2d4cfcdd1b6d8472ce7f59c",
+      "crop": {
+        "width": 285,
+        "height": 176,
+        "x": 475,
+        "y": 35
+      },
+      "sha256": "e3bcb3cda167bc57b3ab823ccfff69df89e6053d43452920eebc7e805d7f795f",
+      "bytes": 80338
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb30-machu-picchu.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-30.png",
+      "sourceUpload": "image-5.png",
+      "sourceSha256": "e13a579f7e9d8952d260d1b516d08df08ad0e85ca2d4cfcdd1b6d8472ce7f59c",
+      "crop": {
+        "width": 260,
+        "height": 136,
+        "x": 462,
+        "y": 572
+      },
+      "sha256": "0d83dd0c81df6298c8bc9be70077b1221ae8dae1df6c9fac1cc385fa11730cb6",
+      "bytes": 74685
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb31-helen-portrait.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-31.png",
+      "sourceUpload": "image-6.png",
+      "sourceSha256": "de92892d0a1492eb334de1e34d8fefb6d8938afd6de774a113e031f45d715fbd",
+      "crop": {
+        "width": 153,
+        "height": 99,
+        "x": 559,
+        "y": 91
+      },
+      "sha256": "a93e21f789962948eced096ee5e23ccc6acdd3198f6ce043ebd89b1e96d55e22",
+      "bytes": 20245
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb31-sullivan-helen.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-31.png",
+      "sourceUpload": "image-6.png",
+      "sourceSha256": "de92892d0a1492eb334de1e34d8fefb6d8938afd6de774a113e031f45d715fbd",
+      "crop": {
+        "width": 168,
+        "height": 218,
+        "x": 16,
+        "y": 711
+      },
+      "sha256": "ec1a1a7ef9e95afeb195e9941da6e09ca2b41afc7c46a0a2b2df7bf346536454",
+      "bytes": 50895
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb32-poster-summer.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-32.png",
+      "sourceUpload": "image-7.png",
+      "sourceSha256": "afa63391cdcdb480ab8454b1ceb191391e13914b07f64bd2deb21e1ca89baa52",
+      "crop": {
+        "width": 260,
+        "height": 334,
+        "x": 125,
+        "y": 678
+      },
+      "sha256": "df705aa4a0ad5c0a8cb1fed49ba2258e4830e5b72df5b80b5dea08c33eff5193",
+      "bytes": 118752
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/sb32-poster-journeys.png",
+      "source": "assets/grade8-unit1-lesson4/source/student-book-page-32.png",
+      "sourceUpload": "image-7.png",
+      "sourceSha256": "afa63391cdcdb480ab8454b1ceb191391e13914b07f64bd2deb21e1ca89baa52",
+      "crop": {
+        "width": 250,
+        "height": 340,
+        "x": 403,
+        "y": 672
+      },
+      "sha256": "4a9309e5313d77ee97141f2b6479f76e0043d26b32532dd669ba3ce8f06671de",
+      "bytes": 173746
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/wb14-alhambra.png",
+      "source": "assets/grade8-unit1-lesson4/source/workbook-page-14.png",
+      "sourceUpload": "image-8.png",
+      "sourceSha256": "853718dd7d4b6ca3bebe54601ef011140b8e24ede5b866dbd259a96ecd5a1594",
+      "crop": {
+        "width": 452,
+        "height": 227,
+        "x": 158,
+        "y": 726
+      },
+      "sha256": "f97a07ff6bb692012a64738d9c5e335ba54b6c6defed86b39c6d0d285d384802",
+      "bytes": 128429
+    },
+    {
+      "file": "assets/grade8-unit1-lesson4/crops/wb17-listening-photos.png",
+      "source": "assets/grade8-unit1-lesson4/source/workbook-page-17.png",
+      "sourceUpload": "image-11.png",
+      "sourceSha256": "5038ff1ab873e48c2427b4aaaf2a3ba243eba736c90b45d2c0124e7c4c0b8cba",
+      "crop": {
+        "width": 223,
+        "height": 198,
+        "x": 492,
+        "y": 342
+      },
+      "sha256": "560f2b3f4f01b6f3bbda82f94c69b0c5e080306448676f2b48ac4812d292481c",
+      "bytes": 51950
+    }
+  ]
+}

@@ -20,7 +20,8 @@
     'grade5-unit1-lesson7': { grade: 5, unit: 1, lesson: 7, title: 'Hobbies', bookLabel: "Pupil's Book" },
     'grade8-unit1-lesson1': { grade: 8, unit: 1, lesson: 1, title: 'Future Plans', bookLabel: "Student's Book" },
     'grade8-unit1-lesson2': { grade: 8, unit: 1, lesson: 2, title: 'School Challenges', bookLabel: "Student's Book" },
-    'grade8-unit1-lesson3': { grade: 8, unit: 1, lesson: 3, title: 'Let’s Discover', bookLabel: "Student's Book" }
+    'grade8-unit1-lesson3': { grade: 8, unit: 1, lesson: 3, title: 'Let’s Discover', bookLabel: "Student's Book" },
+    'grade8-unit1-lesson4': { grade: 8, unit: 1, lesson: 4, title: 'Interesting Destinations', bookLabel: "Student's Book" }
   };
 
   const SECTION_META = {

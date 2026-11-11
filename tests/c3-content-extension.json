@@ -40,10 +40,27 @@
     "grade8-unit1-lesson3-test.html",
     "grade8-unit1-lesson3-vocabulary.html",
     "grade8-unit1-lesson3-workbook.html",
-    "grade8-unit1-lesson3.html"
+    "grade8-unit1-lesson3.html",
+    "grade8-unit1-lesson4.html",
+    "grade8-unit1-lesson4-pupil-book.html",
+    "grade8-unit1-lesson4-workbook.html",
+    "grade8-unit1-lesson4-vocabulary.html",
+    "grade8-unit1-lesson4-test.html"
   ],
   "integrationEdits": {
     "index.html": [
+      {
+        "before": "                <a href=\"grade8-unit1-lesson3-test.html\">Lesson Test</a>\n              </div>\n            </div>",
+        "after": "                <a href=\"grade8-unit1-lesson3-test.html\">Lesson Test</a>\n              </div>\n            </div>\n            <div class=\"directory-lesson-row\">\n              <div class=\"directory-lesson-info\"><strong>Lesson 4 · Interesting Destinations</strong><span>Student’s Book pp. 26–32 · Workbook pp. 14–17 · Vocabulary · 14-question Test</span></div>\n              <div class=\"directory-quick-links\">\n                <a href=\"grade8-unit1-lesson4.html\">Lesson Menu</a>\n                <a href=\"grade8-unit1-lesson4-pupil-book.html\">Student’s Book</a>\n                <a href=\"grade8-unit1-lesson4-workbook.html\">Workbook</a>\n                <a href=\"grade8-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n                <a href=\"grade8-unit1-lesson4-test.html\">Lesson Test</a>\n              </div>\n            </div>"
+      },
+      {
+        "before": "          <span class=\"badge badge-available\">3 lessons ready</span>\n        </div>\n        <div>\n          <h3>Intermediate Stage · Year 8</h3>",
+        "after": "          <span class=\"badge badge-available\">4 lessons ready</span>\n        </div>\n        <div>\n          <h3>Intermediate Stage · Year 8</h3>"
+      },
+      {
+        "before": "      <span class=\"badge badge-available\">17 verified lessons · 85 pages</span>\n    </div>\n\n    <section class=\"curriculum-directory\" aria-label=\"Prepared lessons directory\">",
+        "after": "      <span class=\"badge badge-available\">18 verified lessons · 90 pages</span>\n    </div>\n\n    <section class=\"curriculum-directory\" aria-label=\"Prepared lessons directory\">"
+      },
       {
         "before": "                <a href=\"grade8-unit1-lesson2-test.html\">Lesson Test</a>\n              </div>\n            </div>",
         "after": "                <a href=\"grade8-unit1-lesson2-test.html\">Lesson Test</a>\n              </div>\n            </div>\n            <div class=\"directory-lesson-row\">\n              <div class=\"directory-lesson-info\"><strong>Lesson 3 · Let’s Discover</strong><span>Student’s Book pp. 20–25 · Workbook pp. 10–13 · Vocabulary · 12-question Test</span></div>\n              <div class=\"directory-quick-links\">\n                <a href=\"grade8-unit1-lesson3.html\">Lesson Menu</a>\n                <a href=\"grade8-unit1-lesson3-pupil-book.html\">Student’s Book</a>\n                <a href=\"grade8-unit1-lesson3-workbook.html\">Workbook</a>\n                <a href=\"grade8-unit1-lesson3-vocabulary.html\">Vocabulary</a>\n                <a href=\"grade8-unit1-lesson3-test.html\">Lesson Test</a>\n              </div>\n            </div>"
@@ -179,6 +196,14 @@
     ],
     "lessons.html": [
       {
+        "before": "    const preparedCounts = { 3: 5, 4: 2, 5: 5, 8: 3 };\n    const count = preparedCounts[grade] || 0;\n    const stageLabel = grade <= 6 ? `Primary Stage · Grade ${grade}` : `Intermediate Stage · Grade ${grade}`;\n",
+        "after": "    const preparedCounts = { 3: 5, 4: 2, 5: 5, 8: 4 };\n    const count = preparedCounts[grade] || 0;\n    const stageLabel = grade <= 6 ? `Primary Stage · Grade ${grade}` : `Intermediate Stage · Grade ${grade}`;\n"
+      },
+      {
+        "before": "      : '';\n    const lesson5 = grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson5.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 5 · Revision 1</strong><small>Pupil’s Book (pp. 15–17) · Workbook (pp. 15–17) · Vocabulary · 20-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n      : grade===5?'<a class=\"lesson\" href=\"grade5-unit1-lesson5.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 5 · Clothes</strong><small>Pupil’s Book (pp. 15–20) · Workbook (pp. 17–21) · Vocabulary · 18-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'",
+        "after": "      : grade===8?'<a class=\"lesson\" href=\"grade8-unit1-lesson4.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 4 · Interesting Destinations</strong><small>Student’s Book (pp. 26–32) · Workbook (pp. 14–17) · Vocabulary · 14-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n      : '';\n    const lesson5 = grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson5.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 5 · Revision 1</strong><small>Pupil’s Book (pp. 15–17) · Workbook (pp. 15–17) · Vocabulary · 20-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n      : grade===5?'<a class=\"lesson\" href=\"grade5-unit1-lesson5.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 5 · Clothes</strong><small>Pupil’s Book (pp. 15–20) · Workbook (pp. 17–21) · Vocabulary · 18-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'"
+      },
+      {
         "before": "      : `<a class=\"lesson is-template\" href=\"lesson-menu.html?grade=${grade}&lesson=3\">",
         "after": "      : grade===8?'<a class=\"lesson\" href=\"grade8-unit1-lesson3.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 3 · Let’s Discover</strong><small>Student’s Book (pp. 20–25) · Workbook (pp. 10–13) · Vocabulary · 12-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n      : `<a class=\"lesson is-template\" href=\"lesson-menu.html?grade=${grade}&lesson=3\">"
       },
@@ -312,6 +337,18 @@
       }
     ],
     "teacher-resources.html": [
+      {
+        "before": "      <span class=\"badge badge-available\">17 lessons · 85 pages</span>\n    </div>\n\n    <section class=\"curriculum-directory\" aria-label=\"Prepared teacher resources by grade\">",
+        "after": "      <span class=\"badge badge-available\">18 lessons · 90 pages</span>\n    </div>\n\n    <section class=\"curriculum-directory\" aria-label=\"Prepared teacher resources by grade\">"
+      },
+      {
+        "before": "        </div>\n      </div>\n    </section>",
+        "after": "          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\"><strong>Lesson 4 · Interesting Destinations</strong><span>Student’s Book pp. 26–32 · Workbook pp. 14–17 · 14-question independent test · answer key published</span></div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade8-unit1-lesson4.html\">Lesson menu</a>\n              <a href=\"grade8-unit1-lesson4-pupil-book.html\">Student’s Book</a>\n              <a href=\"grade8-unit1-lesson4-workbook.html\">Workbook</a>\n              <a href=\"grade8-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade8-unit1-lesson4-test.html\">Lesson Test</a>\n              <a href=\"grade8-unit1-lesson4-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">Lesson 4 has 14 independent editorial test questions and a published key. No recording or transcript was supplied for the three listening tasks, so they stay answerable on screen but carry no key. The Vocabulary page documents 15 textbook-listed and 114 additional items, each with an Arabic meaning. In-page guidance reveals: 16 on the Student’s Book and 8 on the Workbook.</p>\n        </div>\n      </div>\n    </section>"
+      },
+      {
+        "before": "        </tbody>\n      </table>\n    </div>",
+        "after": "          <tr>\n            <th scope=\"row\">8 · 4 Interesting Destinations</th>\n            <td>14</td>\n            <td>Published (deep-linked gate)</td>\n            <td>16</td>\n            <td>8</td>\n            <td>None</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+      },
       {
         "before": "            <th scope=\"row\">8 · 2 School Challenges</th>\n            <td>12</td>\n            <td>Published (deep-linked gate)</td>\n            <td>18</td>\n            <td>15</td>\n            <td>None</td>\n          </tr>",
         "after": "            <th scope=\"row\">8 · 2 School Challenges</th>\n            <td>12</td>\n            <td>Published (deep-linked gate)</td>\n            <td>18</td>\n            <td>15</td>\n            <td>None</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">8 · 3 Let’s Discover</th>\n            <td>12</td>\n            <td>Published (deep-linked gate)</td>\n            <td>7</td>\n            <td>9</td>\n            <td>None</td>\n          </tr>"
