@@ -1,0 +1,89 @@
+{
+  "lesson": "Grade 4 · Unit 1 · Lesson 4",
+  "sourceAllocation": {
+    "pupilBook": [
+      7,
+      8,
+      9
+    ],
+    "workbook": [
+      10,
+      11,
+      12
+    ]
+  },
+  "images": [
+    {
+      "file": "assets/grade4-unit1-lesson4/source/pupil-book-page-12.png",
+      "originalUpload": "image-7.png",
+      "uploadIndex": 7,
+      "lesson": 4,
+      "book": "pupil-book",
+      "sourcePage": 12,
+      "sha256": "4e3b609c1b683b2dddd187b9e7a39dce1d016eeed047a81a36fd7781a1a00caa",
+      "bytes": 638427,
+      "width": 753,
+      "height": 1036
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/source/pupil-book-page-13.png",
+      "originalUpload": "image-8.png",
+      "uploadIndex": 8,
+      "lesson": 4,
+      "book": "pupil-book",
+      "sourcePage": 13,
+      "sha256": "af14a82d0c44456674609228fc5a1e71b30c3ee5a739e1b02892973ebdac6b3b",
+      "bytes": 447480,
+      "width": 736,
+      "height": 1033
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/source/pupil-book-page-14.png",
+      "originalUpload": "image-9.png",
+      "uploadIndex": 9,
+      "lesson": 4,
+      "book": "pupil-book",
+      "sourcePage": 14,
+      "sha256": "f2a359cde7c55be8f8c2089378f007119739aba911cec66639b14d051bba5af4",
+      "bytes": 422017,
+      "width": 742,
+      "height": 1033
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/source/workbook-page-14.png",
+      "originalUpload": "image-10.png",
+      "uploadIndex": 10,
+      "lesson": 4,
+      "book": "workbook",
+      "sourcePage": 14,
+      "sha256": "0ce731ae73cf37363eebc7e33fb5d6fffe2d5c7c4aef79706bac57cabf43ab28",
+      "bytes": 388098,
+      "width": 733,
+      "height": 1030
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/source/workbook-page-15.png",
+      "originalUpload": "image-11.png",
+      "uploadIndex": 11,
+      "lesson": 4,
+      "book": "workbook",
+      "sourcePage": 15,
+      "sha256": "90117ed1c83497a1d0d9f8c328a6d55ad25c2cc90b231b136be10d8c88aa1359",
+      "bytes": 155167,
+      "width": 724,
+      "height": 1002
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/source/workbook-page-16.png",
+      "originalUpload": "image-12.png",
+      "uploadIndex": 12,
+      "lesson": 4,
+      "book": "workbook",
+      "sourcePage": 16,
+      "sha256": "6ec7dc6e8785591bd8a173b08343e21c20882671604f25906ea6bb2909841c3d",
+      "bytes": 247038,
+      "width": 751,
+      "height": 1047
+    }
+  ]
+}

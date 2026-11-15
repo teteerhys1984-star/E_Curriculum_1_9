@@ -1,0 +1,2351 @@
+{
+  "lesson": "Grade 4 · Unit 1 · Lesson 4 · My House",
+  "definition": "Source-by-source audit of six supplied scans. “Printed vocabulary” covers explicit word labels, word banks, the title and the lesson’s named grammar forms. “Additional vocabulary” covers useful content words in instructions, choices, examples and readings. “Useful expressions” covers source-printed collocations and language frames. Each glossary entry is unique within the lesson, belongs to one category, includes an Arabic meaning and a source excerpt, and lists every source image where it appears. Character names, isolated numerals, ordinary function words, sound/letter symbols and uncompleted dotted gaps are excluded unless they are lesson targets; all meaningful content words from the reading and activity choices are included.",
+  "entries": [
+    {
+      "id": "apartment",
+      "term": "apartment",
+      "meaning": "شقة",
+      "category": "printed",
+      "sourceImages": [
+        7
+      ],
+      "example": "apartment"
+    },
+    {
+      "id": "are",
+      "term": "are",
+      "meaning": "توجد / يكونون (للجمع، بحسب الجملة)",
+      "category": "printed",
+      "sourceImages": [
+        7,
+        9,
+        11,
+        12
+      ],
+      "example": "(is - are - isn’t)"
+    },
+    {
+      "id": "arent",
+      "term": "aren’t",
+      "meaning": "لا توجد / ليسوا (للجمع)",
+      "category": "printed",
+      "sourceImages": [
+        9,
+        11
+      ],
+      "example": "There aren’t trees in the street. / No, there aren’t."
+    },
+    {
+      "id": "armchair",
+      "term": "armchair",
+      "meaning": "كرسي بذراعين",
+      "category": "printed",
+      "sourceImages": [
+        10,
+        11
+      ],
+      "example": "armchair"
+    },
+    {
+      "id": "bed",
+      "term": "bed",
+      "meaning": "سرير",
+      "category": "printed",
+      "sourceImages": [
+        8,
+        12
+      ],
+      "example": "bed"
+    },
+    {
+      "id": "big-kitchen",
+      "term": "big kitchen",
+      "meaning": "مطبخ كبير",
+      "category": "printed",
+      "sourceImages": [
+        7
+      ],
+      "example": "big kitchen"
+    },
+    {
+      "id": "bridge",
+      "term": "bridge",
+      "meaning": "جسر",
+      "category": "printed",
+      "sourceImages": [
+        9
+      ],
+      "example": "bridge"
+    },
+    {
+      "id": "dishes",
+      "term": "dishes",
+      "meaning": "أطباق",
+      "category": "printed",
+      "sourceImages": [
+        8
+      ],
+      "example": "dishes"
+    },
+    {
+      "id": "garden",
+      "term": "garden",
+      "meaning": "حديقة",
+      "category": "printed",
+      "sourceImages": [
+        7,
+        8,
+        9,
+        11
+      ],
+      "example": "garden"
+    },
+    {
+      "id": "hour",
+      "term": "hour",
+      "meaning": "ساعة",
+      "category": "printed",
+      "sourceImages": [
+        9
+      ],
+      "example": "hour"
+    },
+    {
+      "id": "house",
+      "term": "house",
+      "meaning": "منزل",
+      "category": "printed",
+      "sourceImages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "example": "house"
+    },
+    {
+      "id": "is",
+      "term": "is",
+      "meaning": "يوجد / تكون (للمفرد)",
+      "category": "printed",
+      "sourceImages": [
+        7,
+        9,
+        12
+      ],
+      "example": "(is - are - isn’t)"
+    },
+    {
+      "id": "isnt",
+      "term": "isn’t",
+      "meaning": "لا يوجد / ليست (للمفرد)",
+      "category": "printed",
+      "sourceImages": [
+        7,
+        9
+      ],
+      "example": "(is - are - isn’t)"
+    },
+    {
+      "id": "lamp",
+      "term": "lamp",
+      "meaning": "مصباح",
+      "category": "printed",
+      "sourceImages": [
+        10
+      ],
+      "example": "lamp"
+    },
+    {
+      "id": "my-house",
+      "term": "My House",
+      "meaning": "منزلي",
+      "category": "printed",
+      "sourceImages": [
+        7,
+        10
+      ],
+      "example": "4 · My House"
+    },
+    {
+      "id": "oven",
+      "term": "oven",
+      "meaning": "فرن",
+      "category": "printed",
+      "sourceImages": [
+        10
+      ],
+      "example": "oven"
+    },
+    {
+      "id": "phone",
+      "term": "phone",
+      "meaning": "هاتف",
+      "category": "printed",
+      "sourceImages": [
+        10
+      ],
+      "example": "phone"
+    },
+    {
+      "id": "refrigerator",
+      "term": "refrigerator",
+      "meaning": "ثلاجة",
+      "category": "printed",
+      "sourceImages": [
+        8
+      ],
+      "example": "refrigerator"
+    },
+    {
+      "id": "silent-letter",
+      "term": "silent letters",
+      "meaning": "حروف صامتة",
+      "category": "printed",
+      "sourceImages": [
+        9
+      ],
+      "example": "pronunciation: (silent letters)"
+    },
+    {
+      "id": "sink",
+      "term": "sink",
+      "meaning": "حوض غسل / مغسلة",
+      "category": "printed",
+      "sourceImages": [
+        8,
+        10
+      ],
+      "example": "sink"
+    },
+    {
+      "id": "small-kitchen",
+      "term": "small kitchen",
+      "meaning": "مطبخ صغير",
+      "category": "printed",
+      "sourceImages": [
+        7
+      ],
+      "example": "small kitchen"
+    },
+    {
+      "id": "soap",
+      "term": "soap",
+      "meaning": "صابون",
+      "category": "printed",
+      "sourceImages": [
+        8
+      ],
+      "example": "soap"
+    },
+    {
+      "id": "sofa",
+      "term": "sofa",
+      "meaning": "أريكة",
+      "category": "printed",
+      "sourceImages": [
+        8,
+        10
+      ],
+      "example": "sofa"
+    },
+    {
+      "id": "three-bedrooms",
+      "term": "3 bedrooms",
+      "meaning": "ثلاث غرف نوم",
+      "category": "printed",
+      "sourceImages": [
+        7
+      ],
+      "example": "3 bedrooms"
+    },
+    {
+      "id": "two-bathrooms",
+      "term": "2 bathrooms",
+      "meaning": "حمّامان",
+      "category": "printed",
+      "sourceImages": [
+        7
+      ],
+      "example": "2 bathrooms"
+    },
+    {
+      "id": "vegetable",
+      "term": "vegetable",
+      "meaning": "خضار",
+      "category": "printed",
+      "sourceImages": [
+        9
+      ],
+      "example": "vegetable"
+    },
+    {
+      "id": "wardrobe",
+      "term": "wardrobe",
+      "meaning": "خزانة ملابس",
+      "category": "printed",
+      "sourceImages": [
+        10,
+        12
+      ],
+      "example": "wardrobe"
+    },
+    {
+      "id": "white",
+      "term": "white",
+      "meaning": "أبيض",
+      "category": "printed",
+      "sourceImages": [
+        9
+      ],
+      "example": "white"
+    },
+    {
+      "id": "answer",
+      "term": "answer",
+      "meaning": "يجيب",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "Before you read, answer these questions."
+    },
+    {
+      "id": "around",
+      "term": "around",
+      "meaning": "حول",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "There … not trees around the house."
+    },
+    {
+      "id": "bathroom",
+      "term": "bathroom",
+      "meaning": "حمّام",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        9,
+        10,
+        11
+      ],
+      "example": "There is a bathroom upstairs."
+    },
+    {
+      "id": "because",
+      "term": "because",
+      "meaning": "لأنّ",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "There is a brand new computer, a sound system and a telescope because I love to watch the stars."
+    },
+    {
+      "id": "bedroom",
+      "term": "bedroom",
+      "meaning": "غرفة نوم",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "example": "My bedroom is blue."
+    },
+    {
+      "id": "before",
+      "term": "before",
+      "meaning": "قبل",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "Before you read"
+    },
+    {
+      "id": "big",
+      "term": "big",
+      "meaning": "كبير",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        8,
+        11
+      ],
+      "example": "I live in a big house."
+    },
+    {
+      "id": "blue",
+      "term": "blue",
+      "meaning": "أزرق",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "My bedroom is blue."
+    },
+    {
+      "id": "book",
+      "term": "book",
+      "meaning": "كتاب",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "to put my books in"
+    },
+    {
+      "id": "books",
+      "term": "books",
+      "meaning": "كتب",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "a library to put my books in"
+    },
+    {
+      "id": "brand-new",
+      "term": "brand new",
+      "meaning": "جديد تماماً",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "a brand new computer"
+    },
+    {
+      "id": "car",
+      "term": "car",
+      "meaning": "سيارة",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "The car is in …"
+    },
+    {
+      "id": "choose",
+      "term": "choose",
+      "meaning": "يختار",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        11
+      ],
+      "example": "Choose a, b or c."
+    },
+    {
+      "id": "complete",
+      "term": "complete",
+      "meaning": "يكمل",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "Complete."
+    },
+    {
+      "id": "computer",
+      "term": "computer",
+      "meaning": "حاسوب",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        12
+      ],
+      "example": "There is a brand new computer."
+    },
+    {
+      "id": "cook",
+      "term": "cook",
+      "meaning": "يطبخ",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "Mum cooks in …"
+    },
+    {
+      "id": "cooks",
+      "term": "cooks",
+      "meaning": "يطبخ (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "b- cooks"
+    },
+    {
+      "id": "describe",
+      "term": "describe",
+      "meaning": "يصف",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        10
+      ],
+      "example": "Look and describe."
+    },
+    {
+      "id": "desk",
+      "term": "desk",
+      "meaning": "مكتب",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "My computer is on the desk."
+    },
+    {
+      "id": "draw",
+      "term": "draw",
+      "meaning": "يرسم",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "I like to draw."
+    },
+    {
+      "id": "dream",
+      "term": "dream",
+      "meaning": "حلم",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        9
+      ],
+      "example": "My dream house is very big."
+    },
+    {
+      "id": "enjoy",
+      "term": "enjoy",
+      "meaning": "يستمتع",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "to enjoy watching films"
+    },
+    {
+      "id": "family",
+      "term": "family",
+      "meaning": "عائلة",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        12
+      ],
+      "example": "my family and me"
+    },
+    {
+      "id": "favourite",
+      "term": "favourite",
+      "meaning": "مفضّل",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "It’s my favourite room."
+    },
+    {
+      "id": "fill-in",
+      "term": "fill in",
+      "meaning": "يملأ الفراغات",
+      "category": "additional",
+      "sourceImages": [
+        9,
+        12
+      ],
+      "example": "fill in with the suitable words"
+    },
+    {
+      "id": "film",
+      "term": "films",
+      "meaning": "أفلام",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "watching films"
+    },
+    {
+      "id": "flat",
+      "term": "flat",
+      "meaning": "شقة",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "a flat"
+    },
+    {
+      "id": "floor",
+      "term": "floors",
+      "meaning": "طوابق",
+      "category": "additional",
+      "sourceImages": [
+        7
+      ],
+      "example": "There are two floors."
+    },
+    {
+      "id": "flower",
+      "term": "flowers",
+      "meaning": "زهور",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "The flowers are in …"
+    },
+    {
+      "id": "games",
+      "term": "games",
+      "meaning": "ألعاب",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "playing computer games"
+    },
+    {
+      "id": "garage",
+      "term": "garage",
+      "meaning": "مرآب",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        9,
+        11
+      ],
+      "example": "Is there a garage in your house?"
+    },
+    {
+      "id": "homework",
+      "term": "homework",
+      "meaning": "واجب منزلي",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "do my homework"
+    },
+    {
+      "id": "huge",
+      "term": "huge",
+      "meaning": "ضخم",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "There is a huge living room."
+    },
+    {
+      "id": "information",
+      "term": "information",
+      "meaning": "معلومات",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "search for information"
+    },
+    {
+      "id": "internet",
+      "term": "Internet",
+      "meaning": "الإنترنت",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "She uses the computer to surf the Internet only."
+    },
+    {
+      "id": "kitchen",
+      "term": "kitchen",
+      "meaning": "مطبخ",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "example": "Is there a kitchen?"
+    },
+    {
+      "id": "learned",
+      "term": "learned",
+      "meaning": "تعلّم",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "I learned how to draw."
+    },
+    {
+      "id": "library",
+      "term": "library",
+      "meaning": "مكتبة",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "My bedroom is blue with a library."
+    },
+    {
+      "id": "like",
+      "term": "like",
+      "meaning": "يحبّ",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "I like to draw."
+    },
+    {
+      "id": "listen",
+      "term": "listen",
+      "meaning": "يستمع",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        11
+      ],
+      "example": "Listen and number."
+    },
+    {
+      "id": "live",
+      "term": "live",
+      "meaning": "يعيش / يسكن",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        11
+      ],
+      "example": "Sarah lives in …"
+    },
+    {
+      "id": "lives",
+      "term": "lives",
+      "meaning": "يعيش / تسكن (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        9,
+        11
+      ],
+      "example": "Sarah lives in …"
+    },
+    {
+      "id": "living-room",
+      "term": "living room",
+      "meaning": "غرفة الجلوس",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        8,
+        9,
+        10
+      ],
+      "example": "There is a window in the living room."
+    },
+    {
+      "id": "look",
+      "term": "look",
+      "meaning": "ينظر",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        9,
+        10
+      ],
+      "example": "Look and describe the house."
+    },
+    {
+      "id": "love",
+      "term": "love",
+      "meaning": "يحبّ",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "I love to watch the stars."
+    },
+    {
+      "id": "many",
+      "term": "many",
+      "meaning": "كثير",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "It has many rooms."
+    },
+    {
+      "id": "many-rooms",
+      "term": "many rooms",
+      "meaning": "غرف كثيرة",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "It has many rooms."
+    },
+    {
+      "id": "match",
+      "term": "match",
+      "meaning": "يطابق",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        10,
+        11
+      ],
+      "example": "Read and match."
+    },
+    {
+      "id": "net",
+      "term": "Net",
+      "meaning": "الإنترنت",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "surf the Net"
+    },
+    {
+      "id": "new",
+      "term": "new",
+      "meaning": "جديد",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "new - huge - book - special"
+    },
+    {
+      "id": "night",
+      "term": "night",
+      "meaning": "ليل",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "at night"
+    },
+    {
+      "id": "not",
+      "term": "not",
+      "meaning": "ليس / لا",
+      "category": "additional",
+      "sourceImages": [
+        11,
+        12
+      ],
+      "example": "There … not trees around the house."
+    },
+    {
+      "id": "number",
+      "term": "number",
+      "meaning": "يرقّم",
+      "category": "additional",
+      "sourceImages": [
+        7
+      ],
+      "example": "Listen and number."
+    },
+    {
+      "id": "odd-one-out",
+      "term": "odd one out",
+      "meaning": "العنصر المختلف",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "Circle the odd one out."
+    },
+    {
+      "id": "one",
+      "term": "one",
+      "meaning": "إحدى الصورتين",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "one is for my family"
+    },
+    {
+      "id": "only",
+      "term": "only",
+      "meaning": "فقط",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "She uses the computer to surf the Internet only."
+    },
+    {
+      "id": "other",
+      "term": "other",
+      "meaning": "الأخرى (من الصورتين)",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "the other is for my house"
+    },
+    {
+      "id": "picture",
+      "term": "picture",
+      "meaning": "صورة",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "There are pictures on the wall."
+    },
+    {
+      "id": "programme",
+      "term": "programmes",
+      "meaning": "برامج حاسوبية",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "using some programmes on the computer"
+    },
+    {
+      "id": "project",
+      "term": "project",
+      "meaning": "مشروع",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "information about school projects"
+    },
+    {
+      "id": "pronunciation",
+      "term": "pronunciation",
+      "meaning": "النطق",
+      "category": "additional",
+      "sourceImages": [
+        9
+      ],
+      "example": "pronunciation: (silent letters)"
+    },
+    {
+      "id": "put",
+      "term": "put",
+      "meaning": "يضع",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "a library to put my books in"
+    },
+    {
+      "id": "read",
+      "term": "read",
+      "meaning": "يقرأ",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        11,
+        12
+      ],
+      "example": "Read the text and do the tasks below."
+    },
+    {
+      "id": "red",
+      "term": "red",
+      "meaning": "أحمر",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "The windows are not red."
+    },
+    {
+      "id": "reorder",
+      "term": "reorder",
+      "meaning": "يعيد ترتيب الكلمات",
+      "category": "additional",
+      "sourceImages": [
+        9
+      ],
+      "example": "Reorder."
+    },
+    {
+      "id": "roof",
+      "term": "roof",
+      "meaning": "سقف",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "under the roof window"
+    },
+    {
+      "id": "room",
+      "term": "room",
+      "meaning": "غرفة",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "example": "How many rooms are there?"
+    },
+    {
+      "id": "say",
+      "term": "say",
+      "meaning": "يقول",
+      "category": "additional",
+      "sourceImages": [
+        10
+      ],
+      "example": "Look and say what is wrong."
+    },
+    {
+      "id": "screen",
+      "term": "screen",
+      "meaning": "شاشة",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "a big TV screen"
+    },
+    {
+      "id": "search",
+      "term": "search",
+      "meaning": "يبحث",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "I search for information."
+    },
+    {
+      "id": "shower",
+      "term": "shower",
+      "meaning": "دُشّ",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "I take a shower in …"
+    },
+    {
+      "id": "sleep",
+      "term": "sleep",
+      "meaning": "ينام",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "I sleep in …"
+    },
+    {
+      "id": "sleeps",
+      "term": "sleeps",
+      "meaning": "ينام (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "c- sleeps"
+    },
+    {
+      "id": "small",
+      "term": "small",
+      "meaning": "صغير",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        11
+      ],
+      "example": "small kitchen"
+    },
+    {
+      "id": "sofas",
+      "term": "sofas",
+      "meaning": "أرائك",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        9
+      ],
+      "example": "There is a huge living room with sofas and a big TV screen."
+    },
+    {
+      "id": "sound-system",
+      "term": "sound system",
+      "meaning": "نظام صوتي",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "a sound system"
+    },
+    {
+      "id": "special",
+      "term": "special",
+      "meaning": "مميّز",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "new - huge - book - special"
+    },
+    {
+      "id": "spend",
+      "term": "spend",
+      "meaning": "يقضي (وقتاً)",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "She wants to spend time with her family."
+    },
+    {
+      "id": "sport",
+      "term": "sport",
+      "meaning": "رياضة",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "doing sport"
+    },
+    {
+      "id": "star",
+      "term": "stars",
+      "meaning": "نجوم",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "I can see the stars at night."
+    },
+    {
+      "id": "street",
+      "term": "street",
+      "meaning": "شارع",
+      "category": "additional",
+      "sourceImages": [
+        9
+      ],
+      "example": "There aren’t trees in the street."
+    },
+    {
+      "id": "studies",
+      "term": "studies",
+      "meaning": "يدرس (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "a- studies"
+    },
+    {
+      "id": "study",
+      "term": "study",
+      "meaning": "يدرس",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "a- studies"
+    },
+    {
+      "id": "suitable",
+      "term": "suitable",
+      "meaning": "مناسب",
+      "category": "additional",
+      "sourceImages": [
+        9
+      ],
+      "example": "fill in with the suitable words"
+    },
+    {
+      "id": "surf",
+      "term": "surf",
+      "meaning": "يتصفّح",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "surf the Net"
+    },
+    {
+      "id": "telescope",
+      "term": "telescope",
+      "meaning": "منظار فلكي",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "a telescope"
+    },
+    {
+      "id": "tick",
+      "term": "tick",
+      "meaning": "يضع علامة صح",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        11
+      ],
+      "example": "Listen and tick."
+    },
+    {
+      "id": "time-context",
+      "term": "time",
+      "meaning": "وقت",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "She wants to spend time with her family."
+    },
+    {
+      "id": "tree",
+      "term": "trees",
+      "meaning": "أشجار",
+      "category": "additional",
+      "sourceImages": [
+        9,
+        11,
+        12
+      ],
+      "example": "There aren’t trees in the street."
+    },
+    {
+      "id": "tub",
+      "term": "tub",
+      "meaning": "حوض استحمام",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "Is there a tub in the bathroom?"
+    },
+    {
+      "id": "tv",
+      "term": "TV",
+      "meaning": "تلفاز",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        10
+      ],
+      "example": "a big TV screen on the wall"
+    },
+    {
+      "id": "two-bedrooms-in-picture",
+      "term": "two bedrooms",
+      "meaning": "غرفتا نوم",
+      "category": "additional",
+      "sourceImages": [
+        9
+      ],
+      "example": "There … two bedrooms."
+    },
+    {
+      "id": "upstairs",
+      "term": "upstairs",
+      "meaning": "في الطابق العلوي",
+      "category": "additional",
+      "sourceImages": [
+        9
+      ],
+      "example": "There is a bathroom upstairs."
+    },
+    {
+      "id": "use",
+      "term": "use",
+      "meaning": "يستخدم",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "I use it to surf the Net."
+    },
+    {
+      "id": "very",
+      "term": "very",
+      "meaning": "جداً",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "My dream house is very big."
+    },
+    {
+      "id": "wall",
+      "term": "wall",
+      "meaning": "جدار",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        12
+      ],
+      "example": "on the wall"
+    },
+    {
+      "id": "want",
+      "term": "want",
+      "meaning": "يريد",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "She wants to spend time with her family."
+    },
+    {
+      "id": "watching",
+      "term": "watching",
+      "meaning": "مشاهدة",
+      "category": "additional",
+      "sourceImages": [
+        8
+      ],
+      "example": "enjoy watching films"
+    },
+    {
+      "id": "window",
+      "term": "window",
+      "meaning": "نافذة",
+      "category": "additional",
+      "sourceImages": [
+        7,
+        8,
+        9
+      ],
+      "example": "There is a window in the living room."
+    },
+    {
+      "id": "window-plural",
+      "term": "windows",
+      "meaning": "نوافذ",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "The windows are not …"
+    },
+    {
+      "id": "write",
+      "term": "write",
+      "meaning": "يكتب",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "Write."
+    },
+    {
+      "id": "wrong",
+      "term": "wrong",
+      "meaning": "خطأ",
+      "category": "additional",
+      "sourceImages": [
+        10
+      ],
+      "example": "Look and say what is wrong."
+    },
+    {
+      "id": "bathroom-upstairs",
+      "term": "There is a bathroom upstairs.",
+      "meaning": "يوجد حمّام في الطابق العلوي.",
+      "category": "expression",
+      "sourceImages": [
+        9
+      ],
+      "example": "There is a bathroom upstairs."
+    },
+    {
+      "id": "big-windows-example",
+      "term": "Are there big windows in your house?",
+      "meaning": "هل توجد نوافذ كبيرة في منزلك؟",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "Are there big windows in your house?"
+    },
+    {
+      "id": "blank-there-two-bedrooms",
+      "term": "There … two bedrooms.",
+      "meaning": "توجد … غرفتا نوم.",
+      "category": "expression",
+      "sourceImages": [
+        9
+      ],
+      "example": "There … two bedrooms."
+    },
+    {
+      "id": "car-garage",
+      "term": "The car is in …",
+      "meaning": "السيارة في …",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "The car is in"
+    },
+    {
+      "id": "computer-on-desk",
+      "term": "My computer is on the desk.",
+      "meaning": "حاسوبي على المكتب.",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "My computer is on the desk."
+    },
+    {
+      "id": "do-my-homework",
+      "term": "do my homework",
+      "meaning": "يؤدي واجبي المنزلي",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "and do my homework"
+    },
+    {
+      "id": "doing-sport",
+      "term": "doing sport",
+      "meaning": "ممارسة الرياضة",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "doing sport"
+    },
+    {
+      "id": "dream-house-big",
+      "term": "My dream house is very big.",
+      "meaning": "منزل أحلامي كبير جداً.",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "My dream house is very big."
+    },
+    {
+      "id": "dream-house-question",
+      "term": "What would your dream house be like?",
+      "meaning": "كيف سيكون منزل أحلامك؟",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "What would your dream house be like?"
+    },
+    {
+      "id": "enjoy-films",
+      "term": "enjoy watching films",
+      "meaning": "يستمتع بمشاهدة الأفلام",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "to enjoy watching films"
+    },
+    {
+      "id": "favourite-room",
+      "term": "my favourite room",
+      "meaning": "غرفتي المفضلة",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "This is my bedroom. It’s my favourite room."
+    },
+    {
+      "id": "favourite-room-start",
+      "term": "My favourite room is …",
+      "meaning": "غرفتي المفضلة هي …",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "My favourite room is"
+    },
+    {
+      "id": "flowers-garden",
+      "term": "The flowers are in …",
+      "meaning": "الزهور في …",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "The flowers are in"
+    },
+    {
+      "id": "garage-question",
+      "term": "Is there a garage in your house?",
+      "meaning": "هل يوجد مرآب في منزلك؟",
+      "category": "expression",
+      "sourceImages": [
+        9
+      ],
+      "example": "Is there a garage in your house?"
+    },
+    {
+      "id": "huge-living-room",
+      "term": "a huge living room",
+      "meaning": "غرفة جلوس واسعة جداً",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "There is a huge living room."
+    },
+    {
+      "id": "is-garden-question",
+      "term": "Is there a garden?",
+      "meaning": "هل توجد حديقة؟",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "Is there a garden?"
+    },
+    {
+      "id": "is-there-tub",
+      "term": "Is there a tub in the bathroom?",
+      "meaning": "هل يوجد حوض استحمام في الحمّام؟",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "Is there a tub in the bathroom?"
+    },
+    {
+      "id": "learn-how-to-draw",
+      "term": "learned how to draw",
+      "meaning": "تعلّم كيف يرسم",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "I learned how to draw using some programmes on the computer."
+    },
+    {
+      "id": "library-books",
+      "term": "a library to put my books in",
+      "meaning": "مكتبة أضع فيها كتبي",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "a library to put my books in"
+    },
+    {
+      "id": "live-big-house",
+      "term": "I live in a big house.",
+      "meaning": "أعيش في منزل كبير.",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "I live in a big house."
+    },
+    {
+      "id": "lots-of-rooms",
+      "term": "lots of rooms",
+      "meaning": "غرف كثيرة",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "lots of rooms"
+    },
+    {
+      "id": "mum-cooks-kitchen",
+      "term": "Mum cooks in …",
+      "meaning": "تطبخ أمي في …",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "Mum cooks in"
+    },
+    {
+      "id": "new-computer",
+      "term": "a brand new computer",
+      "meaning": "حاسوب جديد تماماً",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "There is a brand new computer."
+    },
+    {
+      "id": "no-garden",
+      "term": "There isn’t a garden.",
+      "meaning": "لا توجد حديقة.",
+      "category": "expression",
+      "sourceImages": [
+        7,
+        9
+      ],
+      "example": "There isn’t a garden."
+    },
+    {
+      "id": "no-there-arent",
+      "term": "No, there aren’t.",
+      "meaning": "لا، لا توجد.",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "No, there aren’t."
+    },
+    {
+      "id": "no-trees-street",
+      "term": "There aren’t trees in the street.",
+      "meaning": "لا توجد أشجار في الشارع.",
+      "category": "expression",
+      "sourceImages": [
+        9
+      ],
+      "example": "There aren’t trees in the street."
+    },
+    {
+      "id": "no-tv-example",
+      "term": "There isn’t a TV.",
+      "meaning": "لا يوجد تلفاز.",
+      "category": "expression",
+      "sourceImages": [
+        10
+      ],
+      "example": "There isn’t a TV."
+    },
+    {
+      "id": "pictures-wall",
+      "term": "pictures on the wall",
+      "meaning": "صور على الجدار",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "There are pictures on the wall."
+    },
+    {
+      "id": "playing-computer-games",
+      "term": "playing computer games",
+      "meaning": "لعب ألعاب الحاسوب",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "playing computer games"
+    },
+    {
+      "id": "rooms-question",
+      "term": "How many rooms are there?",
+      "meaning": "كم غرفة توجد؟",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "How many rooms are there?"
+    },
+    {
+      "id": "school-projects",
+      "term": "school projects",
+      "meaning": "مشروعات مدرسية",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "information about school projects"
+    },
+    {
+      "id": "search-information",
+      "term": "search for information",
+      "meaning": "يبحث عن معلومات",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "I search for information about school projects."
+    },
+    {
+      "id": "see-stars-night",
+      "term": "I can see the stars at night.",
+      "meaning": "أستطيع رؤية النجوم ليلاً.",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "I can see the stars at night."
+    },
+    {
+      "id": "shower-bathroom",
+      "term": "I take a shower in …",
+      "meaning": "أستحمّ بالدش في …",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "I take a shower in"
+    },
+    {
+      "id": "sleep-bedroom",
+      "term": "I sleep in …",
+      "meaning": "أنام في …",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "I sleep in"
+    },
+    {
+      "id": "sofa-bathroom-example",
+      "term": "There is a sofa in the bathroom.",
+      "meaning": "توجد أريكة في الحمّام.",
+      "category": "expression",
+      "sourceImages": [
+        10
+      ],
+      "example": "There is a sofa in the bathroom."
+    },
+    {
+      "id": "sofa-living-room-example",
+      "term": "There is a sofa in the living room.",
+      "meaning": "توجد أريكة في غرفة الجلوس.",
+      "category": "expression",
+      "sourceImages": [
+        10
+      ],
+      "example": "There is a sofa in the living room."
+    },
+    {
+      "id": "sofas-question",
+      "term": "Are there sofas in the living room?",
+      "meaning": "هل توجد أرائك في غرفة الجلوس؟",
+      "category": "expression",
+      "sourceImages": [
+        9
+      ],
+      "example": "Are there sofas in the living room?"
+    },
+    {
+      "id": "surf-the-net",
+      "term": "surf the Net",
+      "meaning": "يتصفّح الإنترنت",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "I use it to surf the Net."
+    },
+    {
+      "id": "there-bed-wardrobe",
+      "term": "There is a bed and a wardrobe.",
+      "meaning": "يوجد سرير وخزانة ملابس.",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "There is a bed and a wardrobe."
+    },
+    {
+      "id": "there-is-living-room",
+      "term": "There is a living room.",
+      "meaning": "توجد غرفة جلوس.",
+      "category": "expression",
+      "sourceImages": [
+        9
+      ],
+      "example": "There is a living room."
+    },
+    {
+      "id": "three-bedrooms-house",
+      "term": "There are three bedrooms in my house.",
+      "meaning": "توجد ثلاث غرف نوم في منزلي.",
+      "category": "expression",
+      "sourceImages": [
+        9
+      ],
+      "example": "There are three bedrooms in my house."
+    },
+    {
+      "id": "tv-wall",
+      "term": "a big TV screen on the wall",
+      "meaning": "شاشة تلفاز كبيرة على الجدار",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "a big TV screen on the wall"
+    },
+    {
+      "id": "two-beds-question",
+      "term": "Are there two beds in your room?",
+      "meaning": "هل يوجد سريران في غرفتك؟",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "Are there two beds in your room?"
+    },
+    {
+      "id": "two-floors",
+      "term": "There are two floors.",
+      "meaning": "يتكوّن من طابقين.",
+      "category": "expression",
+      "sourceImages": [
+        7
+      ],
+      "example": "There are two floors."
+    },
+    {
+      "id": "under-roof-window",
+      "term": "under the roof window",
+      "meaning": "تحت نافذة السقف",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "It is under the roof window."
+    },
+    {
+      "id": "use-computer-draw",
+      "term": "I used my computer to draw them.",
+      "meaning": "استخدمت حاسوبي لرسمها.",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "I used my computer to draw them."
+    },
+    {
+      "id": "watch-stars",
+      "term": "watch the stars",
+      "meaning": "يشاهد النجوم",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "I love to watch the stars."
+    },
+    {
+      "id": "watch-tv-option",
+      "term": "watching TV",
+      "meaning": "مشاهدة التلفاز",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "b. watching TV"
+    },
+    {
+      "id": "where-live",
+      "term": "Where do you live?",
+      "meaning": "أين تعيش؟",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "Where do you live?"
+    },
+    {
+      "id": "window-living-room",
+      "term": "There is a window in the living room.",
+      "meaning": "توجد نافذة في غرفة الجلوس.",
+      "category": "expression",
+      "sourceImages": [
+        7
+      ],
+      "example": "There is a window in the living room."
+    },
+    {
+      "id": "yes-there-are",
+      "term": "Yes, there are.",
+      "meaning": "نعم، توجد.",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "Yes, there are."
+    },
+    {
+      "id": "yes-there-is",
+      "term": "Yes, there is.",
+      "meaning": "نعم، توجد.",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "Yes, there is."
+    }
+  ],
+  "imageAudit": [
+    {
+      "imageNumber": 7,
+      "lesson": 4,
+      "book": "pupil-book",
+      "sourcePage": 12,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/pupil-book-page-12.png",
+      "sourceSha256": "4e3b609c1b683b2dddd187b9e7a39dce1d016eeed047a81a36fd7781a1a00caa",
+      "printedVocabulary": [
+        "apartment",
+        "are",
+        "big-kitchen",
+        "garden",
+        "house",
+        "is",
+        "isnt",
+        "my-house",
+        "small-kitchen",
+        "three-bedrooms",
+        "two-bathrooms"
+      ],
+      "additionalVocabulary": [
+        "bathroom",
+        "bedroom",
+        "big",
+        "describe",
+        "floor",
+        "garage",
+        "kitchen",
+        "listen",
+        "living-room",
+        "look",
+        "number",
+        "room",
+        "small",
+        "tick",
+        "window"
+      ],
+      "usefulExpressions": [
+        "no-garden",
+        "two-floors",
+        "window-living-room"
+      ],
+      "counts": {
+        "printed": 11,
+        "additional": 15,
+        "expression": 3
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    },
+    {
+      "imageNumber": 8,
+      "lesson": 4,
+      "book": "pupil-book",
+      "sourcePage": 13,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/pupil-book-page-13.png",
+      "sourceSha256": "af14a82d0c44456674609228fc5a1e71b30c3ee5a739e1b02892973ebdac6b3b",
+      "printedVocabulary": [
+        "bed",
+        "dishes",
+        "garden",
+        "house",
+        "refrigerator",
+        "sink",
+        "soap",
+        "sofa"
+      ],
+      "additionalVocabulary": [
+        "answer",
+        "because",
+        "bedroom",
+        "before",
+        "big",
+        "blue",
+        "book",
+        "books",
+        "brand-new",
+        "choose",
+        "computer",
+        "dream",
+        "enjoy",
+        "family",
+        "film",
+        "games",
+        "huge",
+        "kitchen",
+        "library",
+        "live",
+        "living-room",
+        "love",
+        "many",
+        "many-rooms",
+        "match",
+        "new",
+        "night",
+        "odd-one-out",
+        "put",
+        "read",
+        "roof",
+        "room",
+        "screen",
+        "sofas",
+        "sound-system",
+        "special",
+        "spend",
+        "sport",
+        "star",
+        "telescope",
+        "time-context",
+        "tv",
+        "very",
+        "wall",
+        "want",
+        "watching",
+        "window"
+      ],
+      "usefulExpressions": [
+        "doing-sport",
+        "dream-house-big",
+        "dream-house-question",
+        "enjoy-films",
+        "huge-living-room",
+        "is-garden-question",
+        "library-books",
+        "live-big-house",
+        "lots-of-rooms",
+        "new-computer",
+        "playing-computer-games",
+        "rooms-question",
+        "see-stars-night",
+        "tv-wall",
+        "under-roof-window",
+        "watch-stars",
+        "watch-tv-option",
+        "where-live",
+        "yes-there-is"
+      ],
+      "counts": {
+        "printed": 8,
+        "additional": 47,
+        "expression": 19
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    },
+    {
+      "imageNumber": 9,
+      "lesson": 4,
+      "book": "pupil-book",
+      "sourcePage": 14,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/pupil-book-page-14.png",
+      "sourceSha256": "f2a359cde7c55be8f8c2089378f007119739aba911cec66639b14d051bba5af4",
+      "printedVocabulary": [
+        "are",
+        "arent",
+        "bridge",
+        "garden",
+        "hour",
+        "house",
+        "is",
+        "isnt",
+        "silent-letter",
+        "vegetable",
+        "white"
+      ],
+      "additionalVocabulary": [
+        "bathroom",
+        "bedroom",
+        "dream",
+        "fill-in",
+        "garage",
+        "kitchen",
+        "lives",
+        "living-room",
+        "look",
+        "pronunciation",
+        "reorder",
+        "room",
+        "sofas",
+        "street",
+        "suitable",
+        "tree",
+        "two-bedrooms-in-picture",
+        "upstairs",
+        "window"
+      ],
+      "usefulExpressions": [
+        "bathroom-upstairs",
+        "blank-there-two-bedrooms",
+        "garage-question",
+        "no-garden",
+        "no-trees-street",
+        "sofas-question",
+        "there-is-living-room",
+        "three-bedrooms-house"
+      ],
+      "counts": {
+        "printed": 11,
+        "additional": 19,
+        "expression": 8
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    },
+    {
+      "imageNumber": 10,
+      "lesson": 4,
+      "book": "workbook",
+      "sourcePage": 14,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/workbook-page-14.png",
+      "sourceSha256": "0ce731ae73cf37363eebc7e33fb5d6fffe2d5c7c4aef79706bac57cabf43ab28",
+      "printedVocabulary": [
+        "armchair",
+        "house",
+        "lamp",
+        "my-house",
+        "oven",
+        "phone",
+        "sink",
+        "sofa",
+        "wardrobe"
+      ],
+      "additionalVocabulary": [
+        "bathroom",
+        "bedroom",
+        "describe",
+        "kitchen",
+        "living-room",
+        "look",
+        "match",
+        "room",
+        "say",
+        "tv",
+        "wrong"
+      ],
+      "usefulExpressions": [
+        "no-tv-example",
+        "sofa-bathroom-example",
+        "sofa-living-room-example"
+      ],
+      "counts": {
+        "printed": 9,
+        "additional": 11,
+        "expression": 3
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    },
+    {
+      "imageNumber": 11,
+      "lesson": 4,
+      "book": "workbook",
+      "sourcePage": 15,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/workbook-page-15.png",
+      "sourceSha256": "90117ed1c83497a1d0d9f8c328a6d55ad25c2cc90b231b136be10d8c88aa1359",
+      "printedVocabulary": [
+        "are",
+        "arent",
+        "armchair",
+        "garden",
+        "house"
+      ],
+      "additionalVocabulary": [
+        "bathroom",
+        "bedroom",
+        "big",
+        "car",
+        "choose",
+        "cook",
+        "cooks",
+        "flat",
+        "flower",
+        "garage",
+        "kitchen",
+        "listen",
+        "live",
+        "lives",
+        "match",
+        "not",
+        "read",
+        "red",
+        "room",
+        "shower",
+        "sleep",
+        "sleeps",
+        "small",
+        "studies",
+        "study",
+        "tick",
+        "tree",
+        "tub",
+        "window-plural",
+        "write"
+      ],
+      "usefulExpressions": [
+        "big-windows-example",
+        "car-garage",
+        "flowers-garden",
+        "is-there-tub",
+        "mum-cooks-kitchen",
+        "no-there-arent",
+        "shower-bathroom",
+        "sleep-bedroom",
+        "two-beds-question",
+        "yes-there-are"
+      ],
+      "counts": {
+        "printed": 5,
+        "additional": 30,
+        "expression": 10
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    },
+    {
+      "imageNumber": 12,
+      "lesson": 4,
+      "book": "workbook",
+      "sourcePage": 16,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/workbook-page-16.png",
+      "sourceSha256": "6ec7dc6e8785591bd8a173b08343e21c20882671604f25906ea6bb2909841c3d",
+      "printedVocabulary": [
+        "are",
+        "bed",
+        "house",
+        "is",
+        "wardrobe"
+      ],
+      "additionalVocabulary": [
+        "around",
+        "bedroom",
+        "complete",
+        "computer",
+        "desk",
+        "draw",
+        "family",
+        "favourite",
+        "fill-in",
+        "homework",
+        "information",
+        "internet",
+        "learned",
+        "like",
+        "net",
+        "not",
+        "one",
+        "only",
+        "other",
+        "picture",
+        "programme",
+        "project",
+        "read",
+        "room",
+        "search",
+        "surf",
+        "tree",
+        "use",
+        "wall"
+      ],
+      "usefulExpressions": [
+        "computer-on-desk",
+        "do-my-homework",
+        "favourite-room",
+        "favourite-room-start",
+        "learn-how-to-draw",
+        "pictures-wall",
+        "school-projects",
+        "search-information",
+        "surf-the-net",
+        "there-bed-wardrobe",
+        "use-computer-draw"
+      ],
+      "counts": {
+        "printed": 5,
+        "additional": 29,
+        "expression": 11
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    }
+  ],
+  "totals": {
+    "printed": 28,
+    "additional": 102,
+    "expression": 53,
+    "allEntries": 183
+  },
+  "occurrences": {
+    "printed": 49,
+    "additional": 151,
+    "expression": 54,
+    "allReferences": 254
+  },
+  "reconciliation": {
+    "uniqueEntries": "Every glossary id and normalized English term occurs once, belongs to exactly one category, and has one Arabic meaning.",
+    "sourceCoverage": "Each entry sourceImages list is mirrored exactly in that category’s per-image id lists; source page and SHA-256 are included per image.",
+    "uniqueTotals": "printed + additional + expression = allEntries.",
+    "imageOccurrences": "Per-image counts sum to occurrences.allReferences; entries appearing on multiple scans contribute one reference on each scan.",
+    "semanticReview": "All six source scans were visually reviewed on 2026-11-14. Every entry and image allocation was checked against the page; the Workbook p.16 reading terms like, one and other were verified, and the picture-only car reference on Pupil’s Book p.12 was removed."
+  },
+  "review": {
+    "status": "complete",
+    "reviewedOn": "2026-11-14",
+    "method": "Visually compared all six byte-preserved source scans with their page transcriptions; checked every vocabulary term, excerpt and source-image allocation against the corresponding scan; corrected unsupported picture-only or page references; reconciled category and occurrence totals.",
+    "translationNote": "Arabic meanings are editorial learner-support glosses; they are not claimed to be printed textbook translations.",
+    "scopeNote": "Picture-only labels, character names, ordinary function words, isolated numerals, and uncompleted dotted gaps remain excluded under the audit definition. The Workbook reading additions like, one, and other are included because they carry meaning in the printed passage."
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "lesson": "grade4-unit1-lesson4",
+  "title": "Lesson 4 Test · My House",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 12,
+  "objectives": [
+    "house-vocabulary",
+    "there-is-are",
+    "house-reading",
+    "sentence-construction"
+  ],
+  "stimuli": [
+    {
+      "id": "amina-home-plan",
+      "kind": "original-room-inventory",
+      "title": "Amina’s Home Plan",
+      "description": "A new room list written for this test.",
+      "headers": [
+        "Room",
+        "Items in the room"
+      ],
+      "rows": [
+        [
+          "Kitchen",
+          "oven, refrigerator, three chairs"
+        ],
+        [
+          "Living room",
+          "sofa, armchair, two lamps"
+        ],
+        [
+          "Bedroom",
+          "bed, one desk; no television"
+        ],
+        [
+          "Bathroom",
+          "sink, tub"
+        ],
+        [
+          "Garden",
+          "flowers, two trees"
+        ],
+        [
+          "Garage",
+          "car"
+        ]
+      ]
+    },
+    {
+      "id": "mariam-reading",
+      "kind": "original-passage",
+      "title": "Mariam’s Home",
+      "text": "Mariam lives in a big home. Her home has three bedrooms. The kitchen has four chairs. A green armchair is in the living room. The family’s garden has three trees and some flowers. Their car is in the garage."
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "q1",
+      "format": "multiple-choice",
+      "objective": "house-vocabulary",
+      "objectiveLabel": "Lesson objective: Identify rooms for household items",
+      "stimulus": "amina-home-plan",
+      "prompt": "Where is the oven in Amina’s home plan?",
+      "correct": 1,
+      "evidence": "Amina’s Home Plan lists the oven in the kitchen.",
+      "options": [
+        "a) bathroom",
+        "b) kitchen",
+        "c) garage"
+      ]
+    },
+    {
+      "number": 2,
+      "id": "q2",
+      "format": "multiple-choice",
+      "objective": "house-vocabulary",
+      "objectiveLabel": "Lesson objective: Find two items in a room list",
+      "stimulus": "amina-home-plan",
+      "prompt": "Which pair of items is listed in Amina’s living room?",
+      "correct": 0,
+      "evidence": "The living-room row lists a sofa and an armchair.",
+      "options": [
+        "a) a sofa and an armchair",
+        "b) a sink and a tub",
+        "c) an oven and three chairs"
+      ]
+    },
+    {
+      "number": 3,
+      "id": "q3",
+      "format": "multiple-choice",
+      "objective": "house-vocabulary",
+      "objectiveLabel": "Lesson objective: Find a quantity in a room inventory",
+      "stimulus": "amina-home-plan",
+      "prompt": "How many lamps are listed in Amina’s living room?",
+      "correct": 1,
+      "evidence": "Amina’s Home Plan lists two lamps in the living room.",
+      "options": [
+        "a) one",
+        "b) two",
+        "c) three"
+      ]
+    },
+    {
+      "number": 4,
+      "id": "q4",
+      "format": "multiple-choice",
+      "objective": "there-is-are",
+      "objectiveLabel": "Lesson objective: Use there are with plural nouns",
+      "stimulus": "amina-home-plan",
+      "prompt": "Choose the sentence that correctly describes the kitchen entry.",
+      "correct": 0,
+      "evidence": "“Three chairs” is plural, so the sentence uses “There are three chairs in Amina’s kitchen.”",
+      "options": [
+        "a) There are three chairs in Amina’s kitchen.",
+        "b) There is three chairs in Amina’s kitchen.",
+        "c) There are three chair in Amina’s kitchen."
+      ]
+    },
+    {
+      "number": 5,
+      "id": "q5",
+      "format": "multiple-choice",
+      "objective": "there-is-are",
+      "objectiveLabel": "Lesson objective: Make a negative statement about a room",
+      "stimulus": "amina-home-plan",
+      "prompt": "Amina’s home plan says there is no television in the bedroom. Which sentence matches the plan?",
+      "correct": 0,
+      "evidence": "The plan says there is no television in the bedroom; use “There isn’t” for one missing item.",
+      "options": [
+        "a) There isn’t a television in the bedroom.",
+        "b) There aren’t a television in the bedroom.",
+        "c) There is a television in the bedroom."
+      ]
+    },
+    {
+      "number": 6,
+      "id": "q6",
+      "format": "multiple-choice",
+      "objective": "there-is-are",
+      "objectiveLabel": "Lesson objective: Form a yes-or-no question about one household item",
+      "stimulus": "amina-home-plan",
+      "prompt": "Amina wants to ask if her bathroom has one sink. Which question has the correct word order?",
+      "correct": 1,
+      "evidence": "For a singular item, the question begins “Is there …?”: “Is there a sink in Amina’s bathroom?”",
+      "options": [
+        "a) Are there a sink in Amina’s bathroom?",
+        "b) Is there a sink in Amina’s bathroom?",
+        "c) Is there sinks in Amina’s bathroom?"
+      ]
+    },
+    {
+      "number": 7,
+      "id": "q7",
+      "format": "multiple-choice",
+      "objective": "house-reading",
+      "objectiveLabel": "Lesson objective: Find a location in a new home description",
+      "stimulus": "mariam-reading",
+      "prompt": "Where are the flowers in Mariam’s home description?",
+      "correct": 1,
+      "evidence": "The passage says the family’s garden has flowers.",
+      "options": [
+        "a) in the kitchen",
+        "b) in the garden",
+        "c) in the garage"
+      ]
+    },
+    {
+      "number": 8,
+      "id": "q8",
+      "format": "multiple-choice",
+      "objective": "house-reading",
+      "objectiveLabel": "Lesson objective: Find furniture in a new home description",
+      "stimulus": "mariam-reading",
+      "prompt": "Which item is named in Mariam’s living room?",
+      "correct": 2,
+      "evidence": "The passage says a green armchair is in the living room.",
+      "options": [
+        "a) an oven",
+        "b) a tub",
+        "c) an armchair"
+      ]
+    },
+    {
+      "number": 9,
+      "id": "q9",
+      "format": "multiple-choice",
+      "objective": "house-reading",
+      "objectiveLabel": "Lesson objective: Read a quantity in a new home description",
+      "stimulus": "mariam-reading",
+      "prompt": "How many bedrooms does Mariam’s home have?",
+      "correct": 2,
+      "evidence": "The passage says Mariam’s home has three bedrooms.",
+      "options": [
+        "a) one",
+        "b) two",
+        "c) three"
+      ]
+    },
+    {
+      "number": 10,
+      "id": "q10",
+      "format": "true-false",
+      "objective": "house-reading",
+      "objectiveLabel": "Lesson objective: Check a statement against a new home description",
+      "stimulus": "mariam-reading",
+      "prompt": "True or False: Mariam’s family keeps its car in the living room.",
+      "correct": 1,
+      "evidence": "The passage places the car in the garage, not the living room.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 11,
+      "id": "q11",
+      "format": "short-answer",
+      "objective": "house-reading",
+      "objectiveLabel": "Lesson objective: Recall a quantity from a home description",
+      "stimulus": "mariam-reading",
+      "prompt": "How many trees are in the family’s garden?",
+      "correct": "three",
+      "accepted": [
+        "three",
+        "3"
+      ],
+      "wrongSample": "two",
+      "evidence": "The passage says the garden has three trees.",
+      "options": []
+    },
+    {
+      "number": 12,
+      "id": "q12",
+      "format": "sentence-construction",
+      "objective": "sentence-construction",
+      "objectiveLabel": "Lesson objective: Write a sentence with there is and a singular room item",
+      "prompt": "Write one complete sentence using these notes: Leen’s bedroom / one desk.",
+      "correct": "There is one desk in Leen’s bedroom",
+      "accepted": [
+        "there is one desk in leen’s bedroom",
+        "there is one desk in leens bedroom"
+      ],
+      "wrongSample": "There are one desk in Leen’s bedroom",
+      "evidence": "“One desk” is singular, so the sentence uses “There is”: “There is one desk in Leen’s bedroom.”",
+      "options": []
+    }
+  ]
+}

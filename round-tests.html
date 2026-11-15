@@ -27,7 +27,7 @@
       <div class="eyebrow" id="meta">Grade 1 · Cumulative Assessment</div>
       <h1 id="title">Round Tests</h1>
       <p id="summary">
-        Each Round Test is an independent 40-question cumulative checkpoint measuring the learning objectives, vocabulary, and grammar of five verified lessons in sequence, so students are never tested on material not yet taught.
+        Each planned Round Test is a 40-question cumulative checkpoint for five verified lessons in sequence. Cumulative Round Tests are not published yet; this page shows lesson coverage and links to available individual Lesson Tests.
       </p>
       <div class="pills" id="status-pills"></div>
     </header>
@@ -35,14 +35,14 @@
     <section class="panel" id="available-tests-panel" hidden>
       <span class="badge badge-available">Available Now · Individual Lesson Tests</span>
       <h2 id="available-tests-heading">Take a verified Lesson Test in this grade</h2>
-      <p class="muted">While cumulative 5-lesson Round Tests are awaiting the remaining Unit 1–2 lessons, these individual Lesson Tests are ready now; each page states its own question count:</p>
+        <p class="muted">Cumulative Round Tests are not published yet. These individual Lesson Tests are available now; each page states its own question count:</p>
       <div class="practice-actions" id="available-tests-links"></div>
     </section>
 
     <div class="section-head">
       <div>
         <h2>Round Checkpoint Schedule</h2>
-        <p>Rounds unlock automatically as each group of five consecutive lessons is verified from printed school books.</p>
+        <p>Cumulative Round Tests are not published yet. Progress below counts the verified individual Lesson Tests toward the planned five-lesson coverage.</p>
       </div>
     </div>
 
@@ -68,7 +68,9 @@
       ],
       4: [
         { label: 'Lesson 1 Test · Nice to Meet You', href: 'grade4-unit1-lesson1-test.html' },
-        { label: 'Lesson 2 Test · My Family', href: 'grade4-unit1-lesson2-test.html' }
+        { label: 'Lesson 2 Test · My Family', href: 'grade4-unit1-lesson2-test.html' },
+        { label: 'Lesson 3 Test · Daily Routine', href: 'grade4-unit1-lesson3-test.html' },
+        { label: 'Lesson 4 Test · My House', href: 'grade4-unit1-lesson4-test.html' }
       ],
       5: [
         { label: 'Lesson 1 Test · At School', href: 'grade5-unit1-lesson1-test.html' },
@@ -80,12 +82,16 @@
         { label: 'Lesson 7 Test · Hobbies', href: 'grade5-unit1-lesson7-test.html' }
       ],
       8: [
-        { label: 'Lesson 1 Test · Future Plans', href: 'grade8-unit1-lesson1-test.html' }
+        { label: 'Lesson 1 Test · Future Plans', href: 'grade8-unit1-lesson1-test.html' },
+        { label: 'Lesson 2 Test · School Challenges', href: 'grade8-unit1-lesson2-test.html' },
+        { label: 'Lesson 3 Test · Let’s Discover', href: 'grade8-unit1-lesson3-test.html' },
+        { label: 'Lesson 4 Test · Interesting Destinations', href: 'grade8-unit1-lesson4-test.html' }
       ]
     };
 
     const readyTests = gradeTests[grade] || [];
     const readyCount = readyTests.length;
+    const roundOneCoverage = Math.min(readyCount, 5);
 
     document.title = `English Full Curriculum | Grade ${grade} Round Tests`;
     document.getElementById('meta').textContent = `Grade ${grade} · Cumulative Checkpoints`;
@@ -104,7 +110,7 @@
     switcher.innerHTML = switcherHtml;
 
     const pills = document.getElementById('status-pills');
-    pills.innerHTML = `<span class="badge ${readyCount > 0 ? 'badge-available' : 'badge-upcoming'}">${readyCount} of 5 Round 1 lessons prepared</span><span class="badge badge-strand">5 lessons per round</span>`;
+    pills.innerHTML = `<span class="badge ${roundOneCoverage > 0 ? 'badge-available' : 'badge-upcoming'}">${roundOneCoverage} of 5 Round 1 lessons covered</span><span class="badge badge-strand">5 lessons per round</span>`;
 
     if (readyCount > 0) {
       const panel = document.getElementById('available-tests-panel');
@@ -114,7 +120,7 @@
     }
 
     const rounds = [
-      { num: 1, range: 'Lessons 1–5', ready: readyCount },
+      { num: 1, range: 'Lessons 1–5', ready: roundOneCoverage },
       { num: 2, range: 'Lessons 6–10', ready: 0 },
       { num: 3, range: 'Lessons 11–15', ready: 0 },
       { num: 4, range: 'Lessons 16–20', ready: 0 }
@@ -125,12 +131,12 @@
       return `
         <article class="card">
           <div>
-            <span class="badge badge-upcoming">Pending · ${r.ready}/5 lessons ready</span>
+            <span class="badge badge-upcoming">Not published · ${r.ready}/5 lessons covered</span>
             <h2>Round ${r.num} · ${r.range}</h2>
             <p>Cumulative comprehension, grammar, and vocabulary checkpoint covering verified content from ${r.range.toLowerCase()} in Grade ${grade}.</p>
-            <div class="progress" role="group" aria-label="Round ${r.num} lesson preparation progress: ${r.ready} of 5 lessons"><span style="width:${pct}%"></span></div>
+            <div class="progress" role="group" aria-label="Round ${r.num} verified lesson coverage: ${r.ready} of 5 lessons"><span style="width:${pct}%"></span></div>
           </div>
-          <div class="source-note">Unlocks after all 5 lessons in ${r.range} are verified.</div>
+          <div class="source-note">Coverage counts verified individual Lesson Tests only. The cumulative Round Test for this range is not published.</div>
         </article>
       `;
     }).join('');
