@@ -197,10 +197,10 @@ assert.match(lessons, /curriculum\.gradeSummary\(grade\)/, 'lessons.html derives
 assert.ok(lessons.includes(`href="${slug}.html"`), 'lessons.html Grade 8 Lesson 4 entry');
 const home = read('index.html');
 assert.ok(home.includes(`href="${slug}.html"`), 'index.html directory entry');
-assert.ok(home.includes('22 verified lessons · 110 pages'), 'index.html totals');
-assert.match(home, /href="lessons\.html\?grade=8" data-curriculum-grade="8">[\s\S]*?<span class="badge badge-available">4 lessons ready<\/span>/, 'index.html Grade 8 badge belongs to the Grade 8 card');
+assert.ok(home.includes('23 verified lessons · 115 pages'), 'index.html totals');
+assert.match(home, /href="lessons\.html\?grade=8" data-curriculum-grade="8">[\s\S]*?<span class="badge badge-available">5 lessons ready<\/span>/, 'index.html Grade 8 badge belongs to the Grade 8 card');
 const teachers = read('teacher-resources.html');
-assert.ok(teachers.includes('22 lessons · 110 pages'), 'teacher-resources totals');
+assert.ok(teachers.includes('23 lessons · 115 pages'), 'teacher-resources totals');
 assert.ok(teachers.includes(`href="${slug}-test.html#teacher-gate"`), 'teacher-resources key deep-link');
 const matrixRow = teachers.match(new RegExp(`<th scope="row">8 · 4 Interesting Destinations</th>([\\s\\S]*?)</tr>`));
 assert.ok(matrixRow, 'teacher-resources matrix row for Lesson 4');

@@ -21,7 +21,7 @@ try{
  // Live directory integrations and section navigation targets.
  await page.goto(origin+'lessons.html?grade=4');check(await page.locator('#lesson-list a.lesson').count()===6,'Grade 4 menu lists six prepared lessons');for(const l of [5,6])check(await page.locator(`#lesson-list a[href="grade4-unit1-lesson${l}.html"]`).count()===1,`Grade 4 menu includes Lesson ${l}`);
  await page.goto(origin+'round-tests.html?grade=4');check(await page.locator('#available-tests-links a').count()===6,'Round test directory lists six individual tests');
- await page.goto(origin+'index.html');check((await page.locator('#prepared-lessons').innerText()).includes('22 verified lessons · 110 pages'),'homepage prepared lesson totals');
- await page.goto(origin+'teacher.html');check(await page.locator('.stat').nth(0).innerText()==='22\nPrepared lessons','teacher lesson count');check(await page.locator('.stat').nth(1).innerText()==='110\nVerified lesson pages','teacher page count');check(await page.locator('.stat').nth(2).innerText()==='21\nAnswer-key areas','teacher key count');
+ await page.goto(origin+'index.html');check((await page.locator('#prepared-lessons').innerText()).includes('23 verified lessons · 115 pages'),'homepage prepared lesson totals');
+ await page.goto(origin+'teacher.html');check(await page.locator('.stat').nth(0).innerText()==='23\nPrepared lessons','teacher lesson count');check(await page.locator('.stat').nth(1).innerText()==='115\nVerified lesson pages','teacher page count');check(await page.locator('.stat').nth(2).innerText()==='22\nAnswer-key areas','teacher key count');
  check(errors.length===0,`No browser console or page errors: ${errors.join('; ')}`);console.log(`PASS Grade 4 Unit 1 Lessons 5 & 6 browser tests: ${checkCount} checks across all ten pages, viewports, navigation, scans, Arabic, scoring, persistence, reset and teacher keys.`);
 }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));}

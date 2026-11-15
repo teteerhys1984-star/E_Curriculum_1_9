@@ -149,7 +149,7 @@ try {
 
   // Directories and totals: grade counts, teacher links, and round-test inventory are reconciled.
   await go('index.html');
-  assert.ok((await page.locator('.section-head#prepared-lessons').innerText()).includes('22 verified lessons · 110 pages'));
+  assert.ok((await page.locator('.section-head#prepared-lessons').innerText()).includes('23 verified lessons · 115 pages'));
   // The homepage card must report every published Grade 4 lesson, not only the two this suite covers.
   assert.equal(await page.locator('#grades a.grade[data-curriculum-grade="4"] .grade-top .badge').innerText(), '6 lessons ready');
   assert.match(await page.locator('#grades').innerText(), /Unit 1 Lessons 1–6 ready: Nice to Meet You, My Family, Daily Routine, My House, School Subjects and Where I Live/);
@@ -158,18 +158,18 @@ try {
     for (const pageSlug of ['', '-pupil-book', '-workbook', '-vocabulary', '-test']) assert.equal(await page.locator(`a[href="${base}${pageSlug}.html"]`).count() >= 1, true, `index directory includes ${base}${pageSlug}`);
   }
   await go('teacher.html');
-  assert.equal(await page.locator('.stat').nth(0).innerText(), '22\nPrepared lessons');
-  assert.equal(await page.locator('.stat').nth(1).innerText(), '110\nVerified lesson pages');
-  assert.equal(await page.locator('.stat').nth(2).innerText(), '21\nAnswer-key areas');
+  assert.equal(await page.locator('.stat').nth(0).innerText(), '23\nPrepared lessons');
+  assert.equal(await page.locator('.stat').nth(1).innerText(), '115\nVerified lesson pages');
+  assert.equal(await page.locator('.stat').nth(2).innerText(), '22\nAnswer-key areas');
   assert.match(await page.locator('.grade[href="teacher-resources.html#grade-4"]').innerText(), /6 lessons prepared[\s\S]*30 verified pages/);
   await go('teacher-resources.html');
-  assert.equal(await page.locator('.badge.badge-available').filter({ hasText: '22 lessons · 110 pages' }).count(), 1);
+  assert.equal(await page.locator('.badge.badge-available').filter({ hasText: '23 lessons · 115 pages' }).count(), 1);
   for (const lesson of [3, 4]) {
     const row = page.locator(`#grade-4 .directory-lesson-row`).filter({ hasText: lesson === 3 ? 'Daily Routine' : 'My House' });
     assert.equal(await row.count(), 1, `Teacher resources list Grade 4 Lesson ${lesson}`);
     assert.equal(await row.locator('a').count(), 6, `Teacher resources links all six lesson and answer-key destinations for Lesson ${lesson}`);
   }
-  pass('Index and teacher directories register both lessons; totals reconcile to 22 lessons, 110 pages and 21 key areas');
+  pass('Index and teacher directories register both lessons; totals reconcile to 23 lessons, 115 pages and 22 key areas');
 
   await go('lessons.html?grade=4');
   assert.match(await page.locator('#grade-badges').innerText(), /6 prepared lessons available/);
@@ -195,7 +195,7 @@ try {
   assert.equal(await page.locator('#available-tests-links a').count(), 7, 'Grade 5 exposes all seven individual Lesson Tests');
   assert.doesNotMatch(await page.locator('#status-pills').innerText(), /7 of 5/);
   await go('round-tests.html?grade=8');
-  assert.equal(await page.locator('#available-tests-links a').count(), 4, 'Grade 8 exposes all four published lesson tests');
+  assert.equal(await page.locator('#available-tests-links a').count(), 5, 'Grade 8 exposes all five published lesson tests');
   pass('Round-test directory lists all published individual tests without claiming an unpublished cumulative test');
 
   const pageFiles = [
