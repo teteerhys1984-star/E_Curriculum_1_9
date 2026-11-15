@@ -150,7 +150,9 @@ try {
   // Directories and totals: grade counts, teacher links, and round-test inventory are reconciled.
   await go('index.html');
   assert.ok((await page.locator('.section-head#prepared-lessons').innerText()).includes('22 verified lessons · 110 pages'));
-  assert.match(await page.locator('#grades').innerText(), /Unit 1 Lessons 1–4 ready: Nice to Meet You, My Family, Daily Routine and My House/);
+  // The homepage card must report every published Grade 4 lesson, not only the two this suite covers.
+  assert.equal(await page.locator('#grades a.grade[data-curriculum-grade="4"] .grade-top .badge').innerText(), '6 lessons ready');
+  assert.match(await page.locator('#grades').innerText(), /Unit 1 Lessons 1–6 ready: Nice to Meet You, My Family, Daily Routine, My House, School Subjects and Where I Live/);
   for (const lesson of [3, 4]) {
     const base = `grade4-unit1-lesson${lesson}`;
     for (const pageSlug of ['', '-pupil-book', '-workbook', '-vocabulary', '-test']) assert.equal(await page.locator(`a[href="${base}${pageSlug}.html"]`).count() >= 1, true, `index directory includes ${base}${pageSlug}`);

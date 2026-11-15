@@ -54,94 +54,89 @@
   </main>
 
   <script>
-    const params = new URLSearchParams(location.search);
-    const parsedGrade = Number(params.get('grade'));
-    const grade = Number.isInteger(parsedGrade) && parsedGrade >= 1 && parsedGrade <= 9 ? parsedGrade : 1;
+    /* Cumulative checkpoint directory.
 
-    const gradeTests = {
-      3: [
-        { label: 'Lesson 1 Test · Back to School', href: 'grade3-unit1-lesson1-test.html' },
-        { label: 'Lesson 2 Test · School Subjects', href: 'grade3-unit1-lesson2-test.html' },
-        { label: 'Lesson 3 Test · My Lovely School', href: 'grade3-unit1-lesson3-test.html' },
-        { label: 'Lesson 4 Test · My Five Senses', href: 'grade3-unit1-lesson4-test.html' },
-        { label: 'Lesson 5 Test · Revision 1', href: 'grade3-unit1-lesson5-test.html' }
-      ],
-      4: [
-        { label: 'Lesson 1 Test · Nice to Meet You', href: 'grade4-unit1-lesson1-test.html' },
-        { label: 'Lesson 2 Test · My Family', href: 'grade4-unit1-lesson2-test.html' },
-        { label: 'Lesson 3 Test · Daily Routine', href: 'grade4-unit1-lesson3-test.html' },
-        { label: 'Lesson 4 Test · My House', href: 'grade4-unit1-lesson4-test.html' },
-        { label: 'Lesson 5 Test · School Subjects', href: 'grade4-unit1-lesson5-test.html' },
-        { label: 'Lesson 6 Test · Where I Live', href: 'grade4-unit1-lesson6-test.html' }
-      ],
-      5: [
-        { label: 'Lesson 1 Test · At School', href: 'grade5-unit1-lesson1-test.html' },
-        { label: 'Lesson 2 Test · Family', href: 'grade5-unit1-lesson2-test.html' },
-        { label: 'Lesson 3 Test · Daily Routines', href: 'grade5-unit1-lesson3-test.html' },
-        { label: 'Lesson 4 Test · The Five Senses', href: 'grade5-unit1-lesson4-test.html' },
-        { label: 'Lesson 5 Test · Clothes', href: 'grade5-unit1-lesson5-test.html' },
-        { label: 'Lesson 6 Test · Healthy Lifestyle', href: 'grade5-unit1-lesson6-test.html' },
-        { label: 'Lesson 7 Test · Hobbies', href: 'grade5-unit1-lesson7-test.html' }
-      ],
-      8: [
-        { label: 'Lesson 1 Test · Future Plans', href: 'grade8-unit1-lesson1-test.html' },
-        { label: 'Lesson 2 Test · School Challenges', href: 'grade8-unit1-lesson2-test.html' },
-        { label: 'Lesson 3 Test · Let’s Discover', href: 'grade8-unit1-lesson3-test.html' },
-        { label: 'Lesson 4 Test · Interesting Destinations', href: 'grade8-unit1-lesson4-test.html' }
-      ]
-    };
+       The individual Lesson Tests listed for a grade, their labels and the Round 1
+       coverage count are derived from the authoritative curriculum registry exposed by
+       platform-shell.js as window.EFCPlatform. This page keeps no lesson list of its own,
+       so publishing a lesson can never leave its test unlisted here. Coverage is capped at
+       the round size and the cumulative Round Test stays unpublished until it exists. */
+    function renderRoundTests() {
+      const curriculum = window.EFCPlatform;
+      if (!curriculum) return;
 
-    const readyTests = gradeTests[grade] || [];
-    const readyCount = readyTests.length;
-    const roundOneCoverage = Math.min(readyCount, 5);
+      const params = new URLSearchParams(location.search);
+      const parsedGrade = Number(params.get('grade'));
+      const grade = Number.isInteger(parsedGrade) && parsedGrade >= curriculum.GRADE_MIN && parsedGrade <= curriculum.GRADE_MAX
+        ? parsedGrade
+        : curriculum.GRADE_MIN;
 
-    document.title = `English Full Curriculum | Grade ${grade} Round Tests`;
-    document.getElementById('meta').textContent = `Grade ${grade} · Cumulative Checkpoints`;
-    document.getElementById('title').textContent = `Grade ${grade} Round Tests`;
-    document.getElementById('back').href = `lessons.html?grade=${grade}`;
-    document.getElementById('footer-grade-link').href = `lessons.html?grade=${grade}`;
+      const summary = curriculum.gradeSummary(grade);
+      const roundSize = curriculum.platformTotals().roundSize;
+      const readyTests = summary.lessons.map(entry => ({
+        label: `Lesson ${entry.lesson} Test · ${entry.title}`,
+        href: `${entry.slug}-test.html`
+      }));
+      const readyCount = readyTests.length;
+      const roundOneCoverage = summary.roundCoverage;
 
-    const switcher = document.getElementById('grade-switcher');
-    let switcherHtml = '<span class="grade-switcher-label">Grades:</span>';
-    for (let g = 1; g <= 9; g++) {
-      const hasReady = Boolean(gradeTests[g]);
-      const currentAttr = g === grade ? ' aria-current="page"' : '';
-      const dot = hasReady && g !== grade ? '<span class="grade-chip-dot" title="Individual lesson tests available"></span>' : '';
-      switcherHtml += `<a class="grade-chip" href="round-tests.html?grade=${g}"${currentAttr}>Grade ${g}${dot}</a>`;
-    }
-    switcher.innerHTML = switcherHtml;
+      document.title = `English Full Curriculum | Grade ${grade} Round Tests`;
+      document.getElementById('meta').textContent = `Grade ${grade} · Cumulative Checkpoints`;
+      document.getElementById('title').textContent = `Grade ${grade} Round Tests`;
+      document.getElementById('back').href = `lessons.html?grade=${grade}`;
+      document.getElementById('footer-grade-link').href = `lessons.html?grade=${grade}`;
 
-    const pills = document.getElementById('status-pills');
-    pills.innerHTML = `<span class="badge ${roundOneCoverage > 0 ? 'badge-available' : 'badge-upcoming'}">${roundOneCoverage} of 5 Round 1 lessons covered</span><span class="badge badge-strand">5 lessons per round</span>`;
+      const switcher = document.getElementById('grade-switcher');
+      let switcherHtml = '<span class="grade-switcher-label">Grades:</span>';
+      for (let g = curriculum.GRADE_MIN; g <= curriculum.GRADE_MAX; g++) {
+        const hasReady = curriculum.gradeSummary(g).isReady;
+        const currentAttr = g === grade ? ' aria-current="page"' : '';
+        const dot = hasReady && g !== grade ? '<span class="grade-chip-dot" title="Individual lesson tests available"></span>' : '';
+        switcherHtml += `<a class="grade-chip" href="round-tests.html?grade=${g}"${currentAttr}>Grade ${g}${dot}</a>`;
+      }
+      switcher.innerHTML = switcherHtml;
 
-    if (readyCount > 0) {
-      const panel = document.getElementById('available-tests-panel');
-      const links = document.getElementById('available-tests-links');
-      panel.hidden = false;
-      links.innerHTML = readyTests.map(t => `<a class="btn btn-accent" href="${t.href}">${t.label}</a>`).join('');
-    }
+      const pills = document.getElementById('status-pills');
+      pills.innerHTML = `<span class="badge ${roundOneCoverage > 0 ? 'badge-available' : 'badge-upcoming'}">${roundOneCoverage} of ${roundSize} Round 1 lessons covered</span><span class="badge badge-strand">${roundSize} lessons per round</span>`;
 
-    const rounds = [
-      { num: 1, range: 'Lessons 1–5', ready: roundOneCoverage },
-      { num: 2, range: 'Lessons 6–10', ready: 0 },
-      { num: 3, range: 'Lessons 11–15', ready: 0 },
-      { num: 4, range: 'Lessons 16–20', ready: 0 }
-    ];
+      if (readyCount > 0) {
+        const panel = document.getElementById('available-tests-panel');
+        const links = document.getElementById('available-tests-links');
+        panel.hidden = false;
+        links.innerHTML = readyTests.map(t => `<a class="btn btn-accent" href="${t.href}">${t.label}</a>`).join('');
+      }
 
-    document.getElementById('round-cards').innerHTML = rounds.map(r => {
-      const pct = Math.min(100, Math.round((r.ready / 5) * 100));
-      return `
+      const rounds = Array.from({ length: 4 }, (_, index) => ({
+        num: index + 1,
+        first: index * roundSize + 1,
+        last: (index + 1) * roundSize,
+        ready: index === 0 ? roundOneCoverage : 0
+      }));
+
+      document.getElementById('round-cards').innerHTML = rounds.map(r => {
+        const range = `Lessons ${r.first}–${r.last}`;
+        const pct = Math.min(100, Math.round((r.ready / roundSize) * 100));
+        return `
         <article class="card">
           <div>
-            <span class="badge badge-upcoming">Not published · ${r.ready}/5 lessons covered</span>
-            <h2>Round ${r.num} · ${r.range}</h2>
-            <p>Cumulative comprehension, grammar, and vocabulary checkpoint covering verified content from ${r.range.toLowerCase()} in Grade ${grade}.</p>
-            <div class="progress" role="group" aria-label="Round ${r.num} verified lesson coverage: ${r.ready} of 5 lessons"><span style="width:${pct}%"></span></div>
+            <span class="badge badge-upcoming">Not published · ${r.ready}/${roundSize} lessons covered</span>
+            <h2>Round ${r.num} · ${range}</h2>
+            <p>Cumulative comprehension, grammar, and vocabulary checkpoint covering verified content from ${range.toLowerCase()} in Grade ${grade}.</p>
+            <div class="progress" role="group" aria-label="Round ${r.num} verified lesson coverage: ${r.ready} of ${roundSize} lessons"><span style="width:${pct}%"></span></div>
           </div>
           <div class="source-note">Coverage counts verified individual Lesson Tests only. The cumulative Round Test for this range is not published.</div>
         </article>
       `;
-    }).join('');
+      }).join('');
+    }
+
+    /* platform-shell.js is deferred, so the registry is fully populated before
+       DOMContentLoaded fires and after this inline script has been parsed. */
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', renderRoundTests, { once: true });
+    } else {
+      renderRoundTests();
+    }
   </script>
 </body>
 </html>

@@ -3,28 +3,159 @@
 
   const STORAGE_KEY = 'efc_recent_visit_v1';
 
+  /* AUTHORITATIVE CURRICULUM REGISTRY.
+     This is the single source of truth for which lessons are published and ready.
+     Every displayed lesson count, lesson range, lesson title and readiness summary
+     across index.html, lessons.html, round-tests.html, teacher.html and
+     teacher-resources.html is derived from this object through the helpers below —
+     never retyped per page.
+
+     A lesson may be listed here only when its implementation is complete and
+     reachable: the lesson hub plus the Pupil's/Student's Book, Workbook, Vocabulary
+     and Lesson Test pages all exist, follow LESSON_PAGE_STANDARD.md, and pass the
+     registration checks in tests/curriculum-registry.mjs. Adding a folder, a scan or
+     a placeholder page is not enough, and tests fail if a fully implemented lesson is
+     left unregistered here.
+
+     answerKey records whether that lesson's test page publishes a teacher answer-key
+     area (a `#teacher-gate` section); it is verified against the test page itself. */
   const LESSONS = {
-    'grade3-unit1-lesson1': { grade: 3, unit: 1, lesson: 1, title: 'Back to School', bookLabel: "Pupil's Book" },
-    'grade3-unit1-lesson2': { grade: 3, unit: 1, lesson: 2, title: 'School Subjects', bookLabel: "Pupil's Book" },
-    'grade3-unit1-lesson3': { grade: 3, unit: 1, lesson: 3, title: 'My Lovely School', bookLabel: "Pupil's Book" },
-    'grade3-unit1-lesson4': { grade: 3, unit: 1, lesson: 4, title: 'My Five Senses', bookLabel: "Pupil's Book" },
-    'grade3-unit1-lesson5': { grade: 3, unit: 1, lesson: 5, title: 'Revision 1', bookLabel: "Pupil's Book" },
-    'grade4-unit1-lesson1': { grade: 4, unit: 1, lesson: 1, title: 'Nice to Meet You', bookLabel: "Pupil's Book" },
-    'grade4-unit1-lesson2': { grade: 4, unit: 1, lesson: 2, title: 'My Family', bookLabel: "Pupil's Book" },
-    'grade4-unit1-lesson3': { grade: 4, unit: 1, lesson: 3, title: 'Daily Routine', bookLabel: "Pupil's Book" },
-    'grade4-unit1-lesson4': { grade: 4, unit: 1, lesson: 4, title: 'My House', bookLabel: "Pupil's Book" },
-    'grade5-unit1-lesson1': { grade: 5, unit: 1, lesson: 1, title: 'At School', bookLabel: "Pupil's Book" },
-    'grade5-unit1-lesson2': { grade: 5, unit: 1, lesson: 2, title: 'Family', bookLabel: "Pupil's Book" },
-    'grade5-unit1-lesson3': { grade: 5, unit: 1, lesson: 3, title: 'Daily Routines', bookLabel: "Pupil's Book" },
-    'grade5-unit1-lesson4': { grade: 5, unit: 1, lesson: 4, title: 'The Five Senses', bookLabel: "Pupil's Book" },
-    'grade5-unit1-lesson5': { grade: 5, unit: 1, lesson: 5, title: 'Clothes', bookLabel: "Pupil's Book" },
-    'grade5-unit1-lesson6': { grade: 5, unit: 1, lesson: 6, title: 'Healthy Lifestyle', bookLabel: "Pupil's Book" },
-    'grade5-unit1-lesson7': { grade: 5, unit: 1, lesson: 7, title: 'Hobbies', bookLabel: "Pupil's Book" },
-    'grade8-unit1-lesson1': { grade: 8, unit: 1, lesson: 1, title: 'Future Plans', bookLabel: "Student's Book" },
-    'grade8-unit1-lesson2': { grade: 8, unit: 1, lesson: 2, title: 'School Challenges', bookLabel: "Student's Book" },
-    'grade8-unit1-lesson3': { grade: 8, unit: 1, lesson: 3, title: 'Let’s Discover', bookLabel: "Student's Book" },
-    'grade8-unit1-lesson4': { grade: 8, unit: 1, lesson: 4, title: 'Interesting Destinations', bookLabel: "Student's Book" }
+    'grade3-unit1-lesson1': { grade: 3, unit: 1, lesson: 1, title: 'Back to School', bookLabel: "Pupil's Book", answerKey: true },
+    'grade3-unit1-lesson2': { grade: 3, unit: 1, lesson: 2, title: 'School Subjects', bookLabel: "Pupil's Book", answerKey: true },
+    'grade3-unit1-lesson3': { grade: 3, unit: 1, lesson: 3, title: 'My Lovely School', bookLabel: "Pupil's Book", answerKey: true },
+    'grade3-unit1-lesson4': { grade: 3, unit: 1, lesson: 4, title: 'My Five Senses', bookLabel: "Pupil's Book", answerKey: true },
+    'grade3-unit1-lesson5': { grade: 3, unit: 1, lesson: 5, title: 'Revision 1', bookLabel: "Pupil's Book", answerKey: true },
+    'grade4-unit1-lesson1': { grade: 4, unit: 1, lesson: 1, title: 'Nice to Meet You', bookLabel: "Pupil's Book", answerKey: false },
+    'grade4-unit1-lesson2': { grade: 4, unit: 1, lesson: 2, title: 'My Family', bookLabel: "Pupil's Book", answerKey: true },
+    'grade4-unit1-lesson3': { grade: 4, unit: 1, lesson: 3, title: 'Daily Routine', bookLabel: "Pupil's Book", answerKey: true },
+    'grade4-unit1-lesson4': { grade: 4, unit: 1, lesson: 4, title: 'My House', bookLabel: "Pupil's Book", answerKey: true },
+    'grade4-unit1-lesson5': { grade: 4, unit: 1, lesson: 5, title: 'School Subjects', bookLabel: "Pupil's Book", answerKey: true },
+    'grade4-unit1-lesson6': { grade: 4, unit: 1, lesson: 6, title: 'Where I Live', bookLabel: "Pupil's Book", answerKey: true },
+    'grade5-unit1-lesson1': { grade: 5, unit: 1, lesson: 1, title: 'At School', bookLabel: "Pupil's Book", answerKey: true },
+    'grade5-unit1-lesson2': { grade: 5, unit: 1, lesson: 2, title: 'Family', bookLabel: "Pupil's Book", answerKey: true },
+    'grade5-unit1-lesson3': { grade: 5, unit: 1, lesson: 3, title: 'Daily Routines', bookLabel: "Pupil's Book", answerKey: true },
+    'grade5-unit1-lesson4': { grade: 5, unit: 1, lesson: 4, title: 'The Five Senses', bookLabel: "Pupil's Book", answerKey: true },
+    'grade5-unit1-lesson5': { grade: 5, unit: 1, lesson: 5, title: 'Clothes', bookLabel: "Pupil's Book", answerKey: true },
+    'grade5-unit1-lesson6': { grade: 5, unit: 1, lesson: 6, title: 'Healthy Lifestyle', bookLabel: "Pupil's Book", answerKey: true },
+    'grade5-unit1-lesson7': { grade: 5, unit: 1, lesson: 7, title: 'Hobbies', bookLabel: "Pupil's Book", answerKey: true },
+    'grade8-unit1-lesson1': { grade: 8, unit: 1, lesson: 1, title: 'Future Plans', bookLabel: "Student's Book", answerKey: true },
+    'grade8-unit1-lesson2': { grade: 8, unit: 1, lesson: 2, title: 'School Challenges', bookLabel: "Student's Book", answerKey: true },
+    'grade8-unit1-lesson3': { grade: 8, unit: 1, lesson: 3, title: 'Let’s Discover', bookLabel: "Student's Book", answerKey: true },
+    'grade8-unit1-lesson4': { grade: 8, unit: 1, lesson: 4, title: 'Interesting Destinations', bookLabel: "Student's Book", answerKey: true }
   };
+
+  /* Every published lesson ships the same five connected pages. The page total shown
+     on the homepage and in the teacher portal is derived from this list, so a new
+     section changes every aggregate at once. */
+  const LESSON_SECTIONS = ['', 'pupil-book', 'workbook', 'vocabulary', 'test'];
+  const PAGES_PER_LESSON = LESSON_SECTIONS.length;
+  const GRADE_MIN = 1;
+  const GRADE_MAX = 9;
+  const GRADE_TOTAL = GRADE_MAX - GRADE_MIN + 1;
+  const ROUND_SIZE = 5;
+
+  function compareLessons(a, b) {
+    return a.grade - b.grade || a.unit - b.unit || a.lesson - b.lesson;
+  }
+
+  function registeredLessons() {
+    return Object.keys(LESSONS)
+      .map(slug => Object.assign({ slug }, LESSONS[slug]))
+      .sort(compareLessons);
+  }
+
+  function lessonsForGrade(grade) {
+    return registeredLessons().filter(entry => entry.grade === Number(grade));
+  }
+
+  function readyGrades() {
+    const grades = registeredLessons().map(entry => entry.grade);
+    return Array.from(new Set(grades)).sort((a, b) => a - b);
+  }
+
+  function templateGrades() {
+    const ready = new Set(readyGrades());
+    const grades = [];
+    for (let grade = GRADE_MIN; grade <= GRADE_MAX; grade++) {
+      if (!ready.has(grade)) grades.push(grade);
+    }
+    return grades;
+  }
+
+  function listSentence(items) {
+    if (!items.length) return '';
+    if (items.length === 1) return items[0];
+    return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+  }
+
+  function gradeSummary(grade) {
+    const lessons = lessonsForGrade(grade);
+    const units = Array.from(new Set(lessons.map(entry => entry.unit))).sort((a, b) => a - b);
+    const readyCount = lessons.length;
+    const firstLesson = readyCount ? lessons[0].lesson : null;
+    const lastLesson = readyCount ? lessons[readyCount - 1].lesson : null;
+    const titles = lessons.map(entry => entry.title);
+    const unitLabel = units.length === 1 ? `Unit ${units[0]}` : '';
+    return {
+      grade: Number(grade),
+      readyCount,
+      isReady: readyCount > 0,
+      pages: readyCount * PAGES_PER_LESSON,
+      lessons,
+      units,
+      unit: units.length === 1 ? units[0] : null,
+      unitLabel,
+      firstLesson,
+      lastLesson,
+      lessonRange: readyCount ? `${firstLesson}\u2013${lastLesson}` : '',
+      titles,
+      titleList: listSentence(titles),
+      answerKeys: lessons.filter(entry => entry.answerKey).length,
+      roundCoverage: Math.min(readyCount, ROUND_SIZE)
+    };
+  }
+
+  /* "6 lessons ready" — the homepage grade-card badge. */
+  function readinessBadge(grade) {
+    const summary = gradeSummary(grade);
+    if (!summary.readyCount) return 'In preparation';
+    return `${summary.readyCount} ${summary.readyCount === 1 ? 'lesson' : 'lessons'} ready`;
+  }
+
+  /* "Unit 1 Lessons 1–6 ready: A, B, C, D, E and F" — the homepage grade-card summary.
+     The trailing full stop belongs to the page so a card may append its own note. */
+  function readinessSummary(grade) {
+    const summary = gradeSummary(grade);
+    if (!summary.readyCount) return '';
+    return `${summary.unitLabel} Lessons ${summary.lessonRange} ready: ${summary.titleList}`;
+  }
+
+  /* "6 lessons prepared" — the teacher portal grade-card badge. */
+  function preparedBadge(grade) {
+    const summary = gradeSummary(grade);
+    if (!summary.readyCount) return 'Template only';
+    return `${summary.readyCount} ${summary.readyCount === 1 ? 'lesson' : 'lessons'} prepared`;
+  }
+
+  function platformTotals() {
+    const lessons = registeredLessons();
+    const ready = readyGrades();
+    return {
+      grades: GRADE_TOTAL,
+      lessons: lessons.length,
+      pages: lessons.length * PAGES_PER_LESSON,
+      pagesPerLesson: PAGES_PER_LESSON,
+      sections: LESSON_SECTIONS.slice(),
+      readyGrades: ready,
+      preparedGradeCount: ready.length,
+      templateGradeCount: GRADE_TOTAL - ready.length,
+      templateGrades: templateGrades(),
+      answerKeyAreas: lessons.filter(entry => entry.answerKey).length,
+      readyGradeList: listSentence(ready.map(grade => `Grade ${grade}`)),
+      readyGradeNumbers: listSentence(ready.map(grade => String(grade))),
+      roundSize: ROUND_SIZE
+    };
+  }
 
   const SECTION_META = {
     '': { key: 'menu', label: 'Lesson Menu', icon: 'grid' },
@@ -440,8 +571,114 @@
     }
   }
 
+  const NUMBER_WORDS = [
+    'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine',
+    'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen',
+    'seventeen', 'eighteen', 'nineteen'
+  ];
+  const TENS_WORDS = ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
+
+  function numberToWords(value) {
+    const n = Number(value);
+    if (!Number.isInteger(n) || n < 0 || n > 999) return String(value);
+    if (n < 20) return NUMBER_WORDS[n];
+    if (n < 100) {
+      const tens = TENS_WORDS[Math.floor(n / 10)];
+      return n % 10 ? `${tens}-${NUMBER_WORDS[n % 10]}` : tens;
+    }
+    const hundreds = `${NUMBER_WORDS[Math.floor(n / 100)]} hundred`;
+    return n % 100 ? `${hundreds} and ${numberToWords(n % 100)}` : hundreds;
+  }
+
+  /* Spelled-out counts sit inside running prose, so a value that opens a sentence keeps
+     its capital letter. The static markup already carries the correct casing, which makes
+     this idempotent across repeated runs. */
+  function matchCapitalisation(node, next) {
+    const current = (node.textContent || '').trimStart();
+    return /^[A-Z]/.test(current) ? next.charAt(0).toUpperCase() + next.slice(1) : next;
+  }
+
+  const TOTALS_FORMATS = {
+    'verified-lessons-pages': totals => `${totals.lessons} verified lessons \u00b7 ${totals.pages} pages`,
+    'lessons-pages': totals => `${totals.lessons} lessons \u00b7 ${totals.pages} pages`,
+    'ready-grades': totals => totals.readyGradeList,
+    'ready-grade-numbers': totals => totals.readyGradeNumbers,
+    'template-grade-numbers': totals => listSentence(totals.templateGrades.map(grade => String(grade)))
+  };
+
+  const COUNT_KEYS = new Set([
+    'grades', 'lessons', 'pages', 'answerKeyAreas',
+    'preparedGradeCount', 'templateGradeCount', 'pagesPerLesson'
+  ]);
+
+  /* Rendered readiness copy for the shared grade cards on index.html and teacher.html.
+     The static markup already carries the correct text so the pages are complete
+     without scripting; this pass re-derives it from the registry so a stale card can
+     never disagree with the published curriculum. */
+  function bindCurriculumMetadata(ctx) {
+    const totals = platformTotals();
+    const teacherFlavour = Boolean(ctx) && ctx.type === 'teacher';
+
+    document.querySelectorAll('[data-curriculum-count]').forEach(node => {
+      const key = node.getAttribute('data-curriculum-count');
+      if (!COUNT_KEYS.has(key)) return;
+      node.textContent = String(totals[key]);
+    });
+
+    document.querySelectorAll('[data-curriculum-count-words]').forEach(node => {
+      const key = node.getAttribute('data-curriculum-count-words');
+      if (!COUNT_KEYS.has(key)) return;
+      node.textContent = matchCapitalisation(node, numberToWords(totals[key]));
+    });
+
+    document.querySelectorAll('[data-curriculum-totals]').forEach(node => {
+      const format = TOTALS_FORMATS[node.getAttribute('data-curriculum-totals')];
+      if (!format) return;
+      node.textContent = format(totals);
+    });
+
+    document.querySelectorAll('[data-curriculum-grade]').forEach(card => {
+      const summary = gradeSummary(card.getAttribute('data-curriculum-grade'));
+      const badge = card.querySelector('.grade-top .badge') || card.querySelector('.badge');
+      if (badge && summary.isReady) {
+        badge.textContent = teacherFlavour ? preparedBadge(summary.grade) : readinessBadge(summary.grade);
+      }
+      const summaryNode = card.querySelector('[data-curriculum-summary]');
+      if (summaryNode && summary.isReady) {
+        summaryNode.replaceChildren();
+        summaryNode.append(`${summary.unitLabel} Lessons ${summary.lessonRange} ready: `);
+        summary.titles.forEach((title, index) => {
+          if (index) summaryNode.append(index === summary.titles.length - 1 ? ' and ' : ', ');
+          const emphasised = document.createElement('em');
+          emphasised.textContent = title;
+          summaryNode.append(emphasised);
+        });
+      }
+      const pagesNode = card.querySelector('[data-curriculum-pages]');
+      if (pagesNode) pagesNode.textContent = String(summary.pages);
+      const titlesNode = card.querySelector('[data-curriculum-titles]');
+      if (titlesNode && summary.isReady) titlesNode.textContent = summary.titleList;
+      const spelledNode = card.querySelector('[data-curriculum-grade-count-words]');
+      if (spelledNode) spelledNode.textContent = matchCapitalisation(spelledNode, numberToWords(summary.readyCount));
+    });
+  }
+
   window.EFCPlatform = {
     LESSONS,
+    LESSON_SECTIONS,
+    PAGES_PER_LESSON,
+    GRADE_MIN,
+    GRADE_MAX,
+    registeredLessons,
+    lessonsForGrade,
+    readyGrades,
+    templateGrades,
+    gradeSummary,
+    platformTotals,
+    readinessBadge,
+    readinessSummary,
+    preparedBadge,
+    numberToWords,
     readRecentVisit,
     clearRecentVisit
   };
@@ -453,6 +690,7 @@
     injectBreadcrumbs(ctx);
     ensureLessonSectionTabs(ctx);
     wrapStandaloneTables();
+    bindCurriculumMetadata(ctx);
     saveRecentVisit(ctx);
   }
 

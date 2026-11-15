@@ -206,9 +206,10 @@ for (const stimulus of stimuli) {
 pass('Original-question independence', `No prompt or test stimulus contains a seven-word sequence from the authoritative textbook inventory (${quiz.questions.length} original items, ${quiz.objectives.length} objectives)`);
 
 assert.ok(read('platform-shell.js').includes(`'${slug}': { grade: 3, unit: 1, lesson: ${lesson},`), `${slug}: shell metadata`);
-assert.match(read('lessons.html'), /const preparedCounts = \{ 3: [3-9],/);
+assert.ok(read('lessons.html').includes(`'${slug}': '<a class="lesson" href="${slug}.html"`), `${slug}: registry-keyed grade listing card`);
 assert.ok(read('lessons.html').includes(`href="${slug}.html"`));
-assert.ok(read('round-tests.html').includes(`href: '${slug}-test.html'`));
+assert.match(read('lessons.html'), /curriculum\.gradeSummary\(grade\)/, 'lessons.html must derive its readiness count from the curriculum registry instead of restating it');
+assert.match(read('round-tests.html'), /curriculum\.gradeSummary\(grade\)/, 'round-tests.html must derive its Lesson Test directory from the curriculum registry');
 for (const file of files) {
   assert.ok(read('index.html').includes(`href="${file}"`), `home directory missing ${file}`);
   assert.ok(read('teacher-resources.html').includes(`href="${file}"`), `teacher directory missing ${file}`);
@@ -217,5 +218,5 @@ const pkg = JSON.parse(read('package.json'));
 assert.ok(pkg.scripts.test.includes(`tests/${slug}.mjs`));
 assert.ok(pkg.scripts['test:browser'].includes(`tests/${slug}.browser.mjs`));
 assert.ok(read('.github/workflows/lesson-checks.yml').includes(`test-results/${slug}/`));
-pass('Curriculum integration', `Shell metadata, Grade 3 count/listing, home and teacher directories, round-test link, npm checks and CI evidence path include Lesson ${lesson}`);
+pass('Curriculum integration', `Registry entry, registry-keyed Grade 3 listing card, derived readiness counts, home and teacher directories, derived round-test directory, npm checks and CI evidence path include Lesson ${lesson}`);
 console.log(`Grade 3 Unit 1 Lesson ${lesson} static suite: PASS (${passes} groups)`);
