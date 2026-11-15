@@ -97,12 +97,21 @@ function scanTextFiles(directory) {
     const extension = path.extname(entry.name).toLowerCase();
     if (!textExtensions.has(extension) || (extension === '.html' && isVocabularyPage(entry.name))) continue;
     const contents = fs.readFileSync(file, 'utf8');
-    assert.ok(!arabicPattern.test(contents), `${path.relative(root, file)}: Arabic text is not allowed in code, tests, documentation, or non-Vocabulary pages`);
+    const relative = path.relative(root, file).split(path.sep).join('/');
+    if (arabicPattern.test(contents)) {
+      const isGrade4VocabularyAudit = /^docs\/grade4-unit1-lesson[34]\/vocabulary-audit\.json$/.test(relative);
+      assert.ok(isGrade4VocabularyAudit, `${relative}: Arabic text is not allowed in code, tests, documentation, or non-Vocabulary pages`);
+      const audit = JSON.parse(contents);
+      assert.ok(Array.isArray(audit.entries) && audit.entries.length > 0, `${relative}: Arabic glossary audit must include entries`);
+      assert.ok(audit.entries.every(entry => arabicPattern.test(entry.meaning || '')), `${relative}: every vocabulary entry must include its Arabic support gloss`);
+      const withoutMeanings = { ...audit, entries: audit.entries.map(({ meaning, ...entry }) => entry) };
+      assert.ok(!arabicPattern.test(JSON.stringify(withoutMeanings)), `${relative}: Arabic is permitted only in reviewed meaning fields`);
+    }
     auditedTextFiles++;
   }
 }
 scanTextFiles(root);
-pass('Documentation, tests, and other repository text are English', `${auditedTextFiles} non-Vocabulary text files scanned; no Arabic script found`);
+pass('Documentation, tests, and other repository text are English', `${auditedTextFiles} text files scanned; Arabic is confined to the two reviewed Grade 4 glossary-audit meaning fields`);
 
 for (const file of newPages) {
   assert.ok(exists(file), `Missing ${file}`);
@@ -479,6 +488,8 @@ const teacherCounts = {
   'grade3-unit1-lesson5': '3 · 5 Revision 1',
   'grade4-unit1-lesson1': '4 · 1 Nice to Meet You',
   'grade4-unit1-lesson2': '4 · 2 My Family',
+  'grade4-unit1-lesson3': '4 · 3 Daily Routine',
+  'grade4-unit1-lesson4': '4 · 4 My House',
   'grade5-unit1-lesson1': '5 · 1 At School',
   'grade5-unit1-lesson2': '5 · 2 Family',
   'grade5-unit1-lesson3': '5 · 3 Daily Routines',
@@ -507,7 +518,7 @@ const matrixRows = new Map(
     Array.from(match[2].matchAll(/<td>([\s\S]*?)<\/td>/g), cell => cell[1].replace(/<[^>]+>/g, '').trim())
   ])
 );
-assert.equal(matrixRows.size, 18, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
+assert.equal(matrixRows.size, 20, 'teacher-resources.html: the status matrix must have one row per prepared lesson');
 
 for (const [slug, label] of Object.entries(teacherCounts)) {
   for (const suffix of ['', '-pupil-book', '-workbook', '-vocabulary', '-test']) {
@@ -524,11 +535,11 @@ for (const [slug, label] of Object.entries(teacherCounts)) {
   assert.equal(cells[4], 'None', `${label}: listening key must be reported as unavailable`);
 }
 assert.match(matrixRows.get('4 · 1 Nice to Meet You')[1], /Not published/, 'Grade 4 Lesson 1 must be listed as having no answer key');
-for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '5 · 4 The Five Senses', '5 · 5 Clothes', '5 · 6 Healthy Lifestyle', '5 · 7 Hobbies', '8 · 1 Future Plans', '8 · 2 School Challenges', '8 · 3 Let’s Discover', '8 · 4 Interesting Destinations']) {
+for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '4 · 3 Daily Routine', '4 · 4 My House', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '5 · 4 The Five Senses', '5 · 5 Clothes', '5 · 6 Healthy Lifestyle', '5 · 7 Hobbies', '8 · 1 Future Plans', '8 · 2 School Challenges', '8 · 3 Let’s Discover', '8 · 4 Interesting Destinations']) {
   assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
 }
 
-const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade3-unit1-lesson4', 'grade3-unit1-lesson5', 'grade4-unit1-lesson2', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade5-unit1-lesson4', 'grade5-unit1-lesson5', 'grade5-unit1-lesson6', 'grade5-unit1-lesson7', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2', 'grade8-unit1-lesson3', 'grade8-unit1-lesson4'];
+const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade3-unit1-lesson4', 'grade3-unit1-lesson5', 'grade4-unit1-lesson2', 'grade4-unit1-lesson3', 'grade4-unit1-lesson4', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade5-unit1-lesson4', 'grade5-unit1-lesson5', 'grade5-unit1-lesson6', 'grade5-unit1-lesson7', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2', 'grade8-unit1-lesson3', 'grade8-unit1-lesson4'];
 for (const slug of anchoredKeys) {
   assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
   const testHtml = read(`${slug}-test.html`);
@@ -586,13 +597,13 @@ const countRange = `${Math.min(...Object.values(publishedTestCounts))}\u2013${Ma
 
 const homeDirectory = read('index.html');
 const homeCountClaims = new Map();
-for (const match of homeDirectory.matchAll(/<span>[^<]*?(\d+)-question Test<\/span>\s*<\/div>\s*<div class="directory-quick-links">\s*<a href="(grade\d+-unit\d+-lesson\d+)\.html">/g))
+for (const match of homeDirectory.matchAll(/<span>[^<]*?(\d+)-question(?: independent)? Test<\/span>\s*<\/div>\s*<div class="directory-quick-links">\s*<a href="(grade\d+-unit\d+-lesson\d+)\.html">/g))
   homeCountClaims.set(match[2], Number(match[1]));
 assert.equal(homeCountClaims.size, lessonSlugs.length, 'index.html: one counted lesson row expected per prepared lesson');
 for (const slug of lessonSlugs)
   assert.equal(homeCountClaims.get(slug), publishedTestCounts[slug],
     `index.html: Grade ${slug} row must state ${publishedTestCounts[slug]} questions, not ${homeCountClaims.get(slug)}`);
-assert.equal((homeDirectory.match(/\d+-question Test<\/span>/g) || []).length, lessonSlugs.length,
+assert.equal((homeDirectory.match(/\d+-question(?: independent)? Test<\/span>/g) || []).length, lessonSlugs.length,
   'index.html: question counts belong only to the per-lesson directory rows');
 assert.doesNotMatch(homeDirectory.replace(/<section class="curriculum-directory"[\s\S]*?<\/section>/, '').replace(/10\s*(?:to|and|[\u2013-])\s*20[- ]questions?/gi, ''), /20[- ]question|20 multiple-choice/,
   'index.html: copy not tied to one lesson must not claim a fixed 20-question test; only the verified range is allowed');

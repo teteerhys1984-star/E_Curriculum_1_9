@@ -1,0 +1,241 @@
+{
+  "lesson": "grade4-unit1-lesson3",
+  "title": "Lesson 3 Test · Daily Routine",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 12,
+  "objectives": [
+    "routine-vocabulary",
+    "clock-time",
+    "present-simple",
+    "routine-reading",
+    "sentence-construction"
+  ],
+  "stimuli": [
+    {
+      "id": "morning-card",
+      "kind": "original-schedule",
+      "title": "Zain’s Morning Card",
+      "description": "A new timetable written for this test.",
+      "headers": [
+        "Time",
+        "Zain’s action"
+      ],
+      "rows": [
+        [
+          "6:10",
+          "get up"
+        ],
+        [
+          "6:25",
+          "wash his face"
+        ],
+        [
+          "6:40",
+          "eat breakfast"
+        ],
+        [
+          "7:15",
+          "leave for school"
+        ]
+      ]
+    },
+    {
+      "id": "saturday-reading",
+      "kind": "original-passage",
+      "title": "Farid’s Saturday",
+      "text": "On Saturday morning, Farid gets up at half past seven and makes his bed. His sister gets up at eight. They brush their teeth, then read a short story at home. Before lunch, Farid washes his face and helps Mum with breakfast. In the afternoon, they play in the garden. At half past eight, Farid goes to bed."
+    }
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "q1",
+      "format": "multiple-choice",
+      "objective": "routine-reading",
+      "objectiveLabel": "Lesson objective: Read a new daily schedule",
+      "stimulus": "morning-card",
+      "prompt": "According to the new morning card, which action is set for 6:25?",
+      "correct": 1,
+      "evidence": "Zain’s Morning Card lists “wash his face” at 6:25.",
+      "options": [
+        "a) get up",
+        "b) wash his face",
+        "c) eat breakfast"
+      ]
+    },
+    {
+      "number": 2,
+      "id": "q2",
+      "format": "multiple-choice",
+      "objective": "routine-reading",
+      "objectiveLabel": "Lesson objective: Find a time in a new daily schedule",
+      "stimulus": "morning-card",
+      "prompt": "What time does Zain leave for school?",
+      "correct": 1,
+      "evidence": "The last line of Zain’s Morning Card says he leaves for school at 7:15.",
+      "options": [
+        "a) 7:05",
+        "b) 7:15",
+        "c) 7:50"
+      ]
+    },
+    {
+      "number": 3,
+      "id": "q3",
+      "format": "multiple-choice",
+      "objective": "clock-time",
+      "objectiveLabel": "Lesson objective: Say a quarter-to time",
+      "prompt": "An analogue clock shows 8:45. Which phrase tells this exact time?",
+      "correct": 0,
+      "evidence": "8:45 is fifteen minutes before nine o’clock: quarter to nine.",
+      "options": [
+        "a) quarter to nine",
+        "b) quarter past eight",
+        "c) half past eight"
+      ]
+    },
+    {
+      "number": 4,
+      "id": "q4",
+      "format": "multiple-choice",
+      "objective": "present-simple",
+      "objectiveLabel": "Lesson objective: Choose a present-simple form for a plural subject",
+      "prompt": "Two children ___ breakfast together at 7:00 each school day.",
+      "correct": 0,
+      "evidence": "“Two children” is a plural subject, so the present-simple form is “have.”",
+      "options": [
+        "a) have",
+        "b) has",
+        "c) having"
+      ]
+    },
+    {
+      "number": 5,
+      "id": "q5",
+      "format": "multiple-choice",
+      "objective": "routine-vocabulary",
+      "objectiveLabel": "Lesson objective: Identify a daily-routine action",
+      "prompt": "Before leaving for school, Sima puts her clothes on. Which routine phrase names this action?",
+      "correct": 1,
+      "evidence": "Putting on your clothes is getting dressed.",
+      "options": [
+        "a) brushes her teeth",
+        "b) gets dressed",
+        "c) washes her face"
+      ]
+    },
+    {
+      "number": 6,
+      "id": "q6",
+      "format": "multiple-choice",
+      "objective": "routine-vocabulary",
+      "objectiveLabel": "Lesson objective: Recognise a daily-routine action from its meaning",
+      "prompt": "A child is no longer asleep and begins the morning. Which action describes this?",
+      "correct": 0,
+      "evidence": "“Wake up” means stop sleeping and become awake.",
+      "options": [
+        "a) wake up",
+        "b) have lunch",
+        "c) watch TV"
+      ]
+    },
+    {
+      "number": 7,
+      "id": "q7",
+      "format": "multiple-choice",
+      "objective": "routine-reading",
+      "objectiveLabel": "Lesson objective: Find a time in a new routine passage",
+      "stimulus": "saturday-reading",
+      "prompt": "At what time is Farid out of bed?",
+      "correct": 0,
+      "evidence": "The passage says Farid gets up at half past seven.",
+      "options": [
+        "a) 7:30",
+        "b) 8:00",
+        "c) 8:30"
+      ]
+    },
+    {
+      "number": 8,
+      "id": "q8",
+      "format": "multiple-choice",
+      "objective": "routine-reading",
+      "objectiveLabel": "Lesson objective: Find a person and time in a new routine passage",
+      "stimulus": "saturday-reading",
+      "prompt": "Who gets up at eight o’clock?",
+      "correct": 0,
+      "evidence": "The passage says Farid’s sister gets up at eight.",
+      "options": [
+        "a) Farid’s sister",
+        "b) Farid",
+        "c) Mum"
+      ]
+    },
+    {
+      "number": 9,
+      "id": "q9",
+      "format": "multiple-choice",
+      "objective": "routine-reading",
+      "objectiveLabel": "Lesson objective: Understand a detail in a new routine passage",
+      "stimulus": "saturday-reading",
+      "prompt": "What do Farid and his sister read together?",
+      "correct": 0,
+      "evidence": "The passage says they read a short story at home.",
+      "options": [
+        "a) a short story",
+        "b) a time chart",
+        "c) a school notice"
+      ]
+    },
+    {
+      "number": 10,
+      "id": "q10",
+      "format": "true-false",
+      "objective": "routine-reading",
+      "objectiveLabel": "Lesson objective: Check a time against a new routine passage",
+      "stimulus": "saturday-reading",
+      "prompt": "True or False: Farid goes to bed before nine o’clock.",
+      "correct": 0,
+      "evidence": "The passage says Farid goes to bed at half past eight, which is before nine.",
+      "options": [
+        "True",
+        "False"
+      ]
+    },
+    {
+      "number": 11,
+      "id": "q11",
+      "format": "short-answer",
+      "objective": "clock-time",
+      "objectiveLabel": "Lesson objective: Write a time phrase in words",
+      "prompt": "A clock shows 10:45. Write this time in words.",
+      "correct": "quarter to eleven",
+      "accepted": [
+        "quarter to eleven",
+        "a quarter to eleven",
+        "it is quarter to eleven",
+        "it’s quarter to eleven"
+      ],
+      "wrongSample": "quarter past ten",
+      "evidence": "10:45 is fifteen minutes before eleven o’clock: quarter to eleven.",
+      "options": []
+    },
+    {
+      "number": 12,
+      "id": "q12",
+      "format": "sentence-construction",
+      "objective": "sentence-construction",
+      "objectiveLabel": "Lesson objective: Write a routine sentence in the present simple",
+      "prompt": "Write one complete sentence using all the notes: The twins / get up / 6:25.",
+      "correct": "The twins get up at 6:25",
+      "accepted": [
+        "the twins get up at 6:25",
+        "the twins get up at six twenty-five",
+        "the twins get up at twenty-five past six"
+      ],
+      "wrongSample": "The twins gets up at 6:25",
+      "evidence": "“The twins” is plural, so the verb is “get”; the sentence is “The twins get up at 6:25.”",
+      "options": []
+    }
+  ]
+}

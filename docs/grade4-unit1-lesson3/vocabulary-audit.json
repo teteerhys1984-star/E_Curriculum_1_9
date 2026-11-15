@@ -1,0 +1,2236 @@
+{
+  "lesson": "Grade 4 · Unit 1 · Lesson 3 · Daily Routine",
+  "definition": "Source-by-source audit of six supplied scans. “Printed vocabulary” covers explicit word labels, word banks, the title and the lesson’s named grammar forms. “Additional vocabulary” covers useful content words in instructions, choices, examples and readings. “Useful expressions” covers source-printed collocations and language frames. Each glossary entry is unique within the lesson, belongs to one category, includes an Arabic meaning and a source excerpt, and lists every source image where it appears. Character names, isolated numerals, ordinary function words, sound/letter symbols and uncompleted dotted gaps are excluded unless they are lesson targets; place names and meaningful time phrases are included.",
+  "entries": [
+    {
+      "id": "brush-base",
+      "term": "brush",
+      "meaning": "يفرش / ينظف بالفرشاة",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        3,
+        4
+      ],
+      "example": "brush (x2)"
+    },
+    {
+      "id": "brush-my-teeth",
+      "term": "brush my teeth",
+      "meaning": "أفرش أسناني",
+      "category": "printed",
+      "sourceImages": [
+        4
+      ],
+      "example": "I brush my teeth."
+    },
+    {
+      "id": "brush-teeth-label",
+      "term": "brush teeth",
+      "meaning": "ينظّف الأسنان",
+      "category": "printed",
+      "sourceImages": [
+        1
+      ],
+      "example": "brush teeth"
+    },
+    {
+      "id": "comb-my-hair",
+      "term": "comb my hair",
+      "meaning": "أمشّط شعري",
+      "category": "printed",
+      "sourceImages": [
+        4
+      ],
+      "example": "I comb my hair."
+    },
+    {
+      "id": "daily-routine",
+      "term": "daily routine",
+      "meaning": "الروتين اليومي",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2,
+        4
+      ],
+      "example": "3 · Daily Routine"
+    },
+    {
+      "id": "get-base",
+      "term": "get",
+      "meaning": "ينهض أو يرتدي (بحسب العبارة)",
+      "category": "printed",
+      "sourceImages": [
+        3,
+        4
+      ],
+      "example": "get - have - get up - brush (x2) - wash"
+    },
+    {
+      "id": "get-dressed",
+      "term": "get dressed",
+      "meaning": "يرتدي ملابسه",
+      "category": "printed",
+      "sourceImages": [
+        4
+      ],
+      "example": "I get dressed."
+    },
+    {
+      "id": "get-up",
+      "term": "get up",
+      "meaning": "ينهض من الفراش",
+      "category": "printed",
+      "sourceImages": [
+        3,
+        4
+      ],
+      "example": "I / we / they / you get up, make the bed."
+    },
+    {
+      "id": "gets",
+      "term": "gets",
+      "meaning": "ينهض أو يرتدي (مع he / she / it)",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        3,
+        4
+      ],
+      "example": "get (×2) - gets (×2) - wash - washes"
+    },
+    {
+      "id": "go-school",
+      "term": "go to school",
+      "meaning": "يذهب إلى المدرسة",
+      "category": "printed",
+      "sourceImages": [
+        4
+      ],
+      "example": "I go to school."
+    },
+    {
+      "id": "go-to-work-label",
+      "term": "go to work",
+      "meaning": "يذهب إلى العمل",
+      "category": "printed",
+      "sourceImages": [
+        1
+      ],
+      "example": "go to work"
+    },
+    {
+      "id": "half-past",
+      "term": "half past",
+      "meaning": "والنصف",
+      "category": "printed",
+      "sourceImages": [
+        2,
+        3,
+        5
+      ],
+      "example": "It’s half past one."
+    },
+    {
+      "id": "have-base",
+      "term": "have",
+      "meaning": "يتناول / لديه (بحسب السياق)",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        3,
+        6
+      ],
+      "example": "get - have - get up - brush (x2) - wash"
+    },
+    {
+      "id": "third-person-pronouns",
+      "term": "he / she / it",
+      "meaning": "هو / هي / هو أو هي لغير العاقل",
+      "category": "printed",
+      "sourceImages": [
+        3
+      ],
+      "example": "he / she / it gets up, makes the bed."
+    },
+    {
+      "id": "subject-pronouns",
+      "term": "I / we / they / you",
+      "meaning": "أنا / نحن / هم / أنتَ أو أنتِ أو أنتم",
+      "category": "printed",
+      "sourceImages": [
+        3
+      ],
+      "example": "I / we / they / you get up, make the bed."
+    },
+    {
+      "id": "make-breakfast-label",
+      "term": "make breakfast",
+      "meaning": "يُعِدّ الفطور",
+      "category": "printed",
+      "sourceImages": [
+        1
+      ],
+      "example": "make breakfast"
+    },
+    {
+      "id": "make-my-bed",
+      "term": "make my bed",
+      "meaning": "أرتّب سريري",
+      "category": "printed",
+      "sourceImages": [
+        4
+      ],
+      "example": "I make my bed."
+    },
+    {
+      "id": "make-the-bed",
+      "term": "make the bed",
+      "meaning": "يرتّب السرير",
+      "category": "printed",
+      "sourceImages": [
+        3
+      ],
+      "example": "I / we / they / you get up, make the bed."
+    },
+    {
+      "id": "oclock",
+      "term": "o’clock",
+      "meaning": "تمام الساعة",
+      "category": "printed",
+      "sourceImages": [
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "example": "It’s five o’clock."
+    },
+    {
+      "id": "past",
+      "term": "past",
+      "meaning": "بعد (للدلالة على الدقائق بعد الساعة)",
+      "category": "printed",
+      "sourceImages": [
+        2,
+        3,
+        5
+      ],
+      "example": "quarter past"
+    },
+    {
+      "id": "quarter-past",
+      "term": "quarter past",
+      "meaning": "والربع بعد الساعة",
+      "category": "printed",
+      "sourceImages": [
+        2,
+        3,
+        5
+      ],
+      "example": "It’s quarter past five."
+    },
+    {
+      "id": "quarter-to",
+      "term": "quarter to",
+      "meaning": "إلا ربعاً",
+      "category": "printed",
+      "sourceImages": [
+        2,
+        3,
+        5
+      ],
+      "example": "It’s quarter to four."
+    },
+    {
+      "id": "wake-base",
+      "term": "wake",
+      "meaning": "يستيقظ",
+      "category": "printed",
+      "sourceImages": [
+        3
+      ],
+      "example": "wake - wakes - watch - watches"
+    },
+    {
+      "id": "wake-up",
+      "term": "wake up",
+      "meaning": "يستيقظ",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        3,
+        4
+      ],
+      "example": "I usually wake up / wakes up at half past six."
+    },
+    {
+      "id": "wakes",
+      "term": "wakes",
+      "meaning": "يستيقظ (مع he / she / it)",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2,
+        3
+      ],
+      "example": "wake - wakes - watch - watches"
+    },
+    {
+      "id": "wash-base",
+      "term": "wash",
+      "meaning": "يغسل",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        3,
+        4
+      ],
+      "example": "get (×2) - gets (×2) - wash - washes"
+    },
+    {
+      "id": "wash-face-label",
+      "term": "wash face",
+      "meaning": "يغسل الوجه",
+      "category": "printed",
+      "sourceImages": [
+        1
+      ],
+      "example": "wash face"
+    },
+    {
+      "id": "wash-my-face",
+      "term": "wash my face",
+      "meaning": "أغسل وجهي",
+      "category": "printed",
+      "sourceImages": [
+        4
+      ],
+      "example": "I wash my face."
+    },
+    {
+      "id": "washes",
+      "term": "washes",
+      "meaning": "يغسل (مع he / she / it)",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        4
+      ],
+      "example": "get (×2) - gets (×2) - wash - washes"
+    },
+    {
+      "id": "watch-base",
+      "term": "watch",
+      "meaning": "يشاهد",
+      "category": "printed",
+      "sourceImages": [
+        3,
+        6
+      ],
+      "example": "wake - wakes - watch - watches"
+    },
+    {
+      "id": "watches",
+      "term": "watches",
+      "meaning": "يشاهد (مع he / she / it)",
+      "category": "printed",
+      "sourceImages": [
+        2,
+        3
+      ],
+      "example": "wake - wakes - watch - watches"
+    },
+    {
+      "id": "afternoon",
+      "term": "afternoon",
+      "meaning": "بعد الظهر",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        3,
+        6
+      ],
+      "example": "In the afternoon, he comes back home."
+    },
+    {
+      "id": "always",
+      "term": "always",
+      "meaning": "دائماً",
+      "category": "additional",
+      "sourceImages": [
+        1
+      ],
+      "example": "She always go / goes to work at quarter past eight."
+    },
+    {
+      "id": "answer",
+      "term": "answer",
+      "meaning": "يجيب",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        5
+      ],
+      "example": "Ask and answer."
+    },
+    {
+      "id": "arabic",
+      "term": "Arabic",
+      "meaning": "اللغة العربية",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "2. Arabic"
+    },
+    {
+      "id": "ask",
+      "term": "ask",
+      "meaning": "يسأل",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        5
+      ],
+      "example": "Ask and answer."
+    },
+    {
+      "id": "before",
+      "term": "before",
+      "meaning": "قبل",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2
+      ],
+      "example": "before I have breakfast"
+    },
+    {
+      "id": "boy",
+      "term": "boy",
+      "meaning": "ولد",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "Dan is an English boy."
+    },
+    {
+      "id": "breakfast",
+      "term": "breakfast",
+      "meaning": "الفطور",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        3
+      ],
+      "example": "I have breakfast at quarter past seven."
+    },
+    {
+      "id": "brushes",
+      "term": "brushes",
+      "meaning": "ينظّف بالفرشاة (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2
+      ],
+      "example": "She brush / brushes her teeth."
+    },
+    {
+      "id": "bus",
+      "term": "bus",
+      "meaning": "حافلة",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "1. bus"
+    },
+    {
+      "id": "car",
+      "term": "car",
+      "meaning": "سيارة",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "I go to school by car at 7:45."
+    },
+    {
+      "id": "choose",
+      "term": "choose",
+      "meaning": "يختار",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "example": "Choose."
+    },
+    {
+      "id": "circle",
+      "term": "circle",
+      "meaning": "يضع دائرة حول",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        5
+      ],
+      "example": "Listen and circle."
+    },
+    {
+      "id": "clean",
+      "term": "clean",
+      "meaning": "ينظّف",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "(clean - do) my house"
+    },
+    {
+      "id": "come-base",
+      "term": "come",
+      "meaning": "يأتي / يعود",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "I (go – come) to school by car at 7:45."
+    },
+    {
+      "id": "come-back",
+      "term": "come back",
+      "meaning": "يعود",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "he comes back home"
+    },
+    {
+      "id": "comes",
+      "term": "comes",
+      "meaning": "يعود / يأتي (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "At three o’clock in the afternoon, he comes back home."
+    },
+    {
+      "id": "complete",
+      "term": "complete",
+      "meaning": "يكمل",
+      "category": "additional",
+      "sourceImages": [
+        3,
+        6
+      ],
+      "example": "Complete."
+    },
+    {
+      "id": "cross",
+      "term": "cross",
+      "meaning": "يضع علامة خطأ / يشطب",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "Tick ✓ or cross ×."
+    },
+    {
+      "id": "dinner",
+      "term": "dinner",
+      "meaning": "العشاء",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "I (have - eat) dinner with my family."
+    },
+    {
+      "id": "does",
+      "term": "does",
+      "meaning": "يفعل / يؤدي (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "then he does his homework."
+    },
+    {
+      "id": "draw",
+      "term": "draw",
+      "meaning": "يرسم",
+      "category": "additional",
+      "sourceImages": [
+        3
+      ],
+      "example": "Draw and write."
+    },
+    {
+      "id": "early",
+      "term": "early",
+      "meaning": "مبكراً",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "He goes early to bed."
+    },
+    {
+      "id": "eat",
+      "term": "eat",
+      "meaning": "يأكل",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "(have - eat) dinner with my family"
+    },
+    {
+      "id": "eleven-years-old",
+      "term": "eleven years old",
+      "meaning": "يبلغ من العمر أحد عشر عاماً",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "He is eleven years old."
+    },
+    {
+      "id": "english",
+      "term": "English",
+      "meaning": "اللغة الإنجليزية",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "example": "He is an English boy."
+    },
+    {
+      "id": "enjoy",
+      "term": "enjoy",
+      "meaning": "يستمتع",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "(enjoy - watch) TV"
+    },
+    {
+      "id": "evening",
+      "term": "evening",
+      "meaning": "المساء",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "example": "In the evening, he sometimes watches TV."
+    },
+    {
+      "id": "every",
+      "term": "every",
+      "meaning": "كلّ",
+      "category": "additional",
+      "sourceImages": [
+        1
+      ],
+      "example": "What does your friend do every morning?"
+    },
+    {
+      "id": "face",
+      "term": "face",
+      "meaning": "وجه",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "example": "I wash my face."
+    },
+    {
+      "id": "family",
+      "term": "family",
+      "meaning": "عائلة",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "example": "He lives with his family."
+    },
+    {
+      "id": "fill-in",
+      "term": "fill in",
+      "meaning": "يملأ الفراغات",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        6
+      ],
+      "example": "Fill in the spaces with words in the box."
+    },
+    {
+      "id": "finish",
+      "term": "finish",
+      "meaning": "ينهي",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "(leave - finish) school at 1:15"
+    },
+    {
+      "id": "friend",
+      "term": "friend",
+      "meaning": "صديق / صديقة",
+      "category": "additional",
+      "sourceImages": [
+        1
+      ],
+      "example": "What does your friend do every morning?"
+    },
+    {
+      "id": "go",
+      "term": "go",
+      "meaning": "يذهب",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "example": "go / goes to work"
+    },
+    {
+      "id": "goes",
+      "term": "goes",
+      "meaning": "يذهب (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2
+      ],
+      "example": "She always go / goes to work at quarter past eight."
+    },
+    {
+      "id": "guess",
+      "term": "guess",
+      "meaning": "يخمّن",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "Before you read the text, guess what time Dan…"
+    },
+    {
+      "id": "hair",
+      "term": "hair",
+      "meaning": "شعر",
+      "category": "additional",
+      "sourceImages": [
+        3,
+        4
+      ],
+      "example": "I comb my hair."
+    },
+    {
+      "id": "has",
+      "term": "has",
+      "meaning": "يتناول / لديه (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "He usually has lunch at half past three."
+    },
+    {
+      "id": "hello",
+      "term": "Hello",
+      "meaning": "مرحباً",
+      "category": "additional",
+      "sourceImages": [
+        1
+      ],
+      "example": "Hello, I’m Lily."
+    },
+    {
+      "id": "home",
+      "term": "home",
+      "meaning": "المنزل",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "example": "He comes back home."
+    },
+    {
+      "id": "homework",
+      "term": "homework",
+      "meaning": "واجب منزلي",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "then he does his homework"
+    },
+    {
+      "id": "leave",
+      "term": "leave",
+      "meaning": "يغادر",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "example": "At seven o’clock, he leaves for school."
+    },
+    {
+      "id": "leaves",
+      "term": "leaves",
+      "meaning": "يغادر (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "At seven o’clock, he leaves for school."
+    },
+    {
+      "id": "lesson",
+      "term": "lesson",
+      "meaning": "درس",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "prepare the lessons"
+    },
+    {
+      "id": "listen",
+      "term": "listen",
+      "meaning": "يستمع",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "example": "Listen and tick."
+    },
+    {
+      "id": "live",
+      "term": "live",
+      "meaning": "يعيش / يسكن",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "He lives in London."
+    },
+    {
+      "id": "london",
+      "term": "London",
+      "meaning": "لندن",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "He lives in London."
+    },
+    {
+      "id": "look",
+      "term": "look",
+      "meaning": "ينظر",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "Look and say the time."
+    },
+    {
+      "id": "lunch",
+      "term": "lunch",
+      "meaning": "الغداء",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "example": "He usually has lunch at half past three."
+    },
+    {
+      "id": "makes",
+      "term": "makes",
+      "meaning": "يُعِدّ / يصنع (مع he / she / it)",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        3
+      ],
+      "example": "She wash / washes her face and make / makes breakfast."
+    },
+    {
+      "id": "match",
+      "term": "match",
+      "meaning": "يطابق",
+      "category": "additional",
+      "sourceImages": [
+        4
+      ],
+      "example": "Read and match."
+    },
+    {
+      "id": "morning",
+      "term": "morning",
+      "meaning": "الصباح",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "example": "in the morning"
+    },
+    {
+      "id": "mum",
+      "term": "Mum",
+      "meaning": "أمي",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        3
+      ],
+      "example": "My mum usually wake up / wakes up at half past six too."
+    },
+    {
+      "id": "prepare",
+      "term": "prepare",
+      "meaning": "يحضّر",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "prepare the lessons"
+    },
+    {
+      "id": "pupil",
+      "term": "pupil",
+      "meaning": "تلميذ / تلميذة",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "2. a pupil"
+    },
+    {
+      "id": "read",
+      "term": "read",
+      "meaning": "يقرأ",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        4,
+        6
+      ],
+      "example": "Read and match."
+    },
+    {
+      "id": "say",
+      "term": "say",
+      "meaning": "يقول",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        5
+      ],
+      "example": "Look and say the time."
+    },
+    {
+      "id": "school",
+      "term": "school",
+      "meaning": "مدرسة",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        4,
+        6
+      ],
+      "example": "He leaves for school."
+    },
+    {
+      "id": "sometimes",
+      "term": "sometimes",
+      "meaning": "أحياناً",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "He sometimes watches TV."
+    },
+    {
+      "id": "study",
+      "term": "study",
+      "meaning": "يدرس",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "(study - teach) English lessons"
+    },
+    {
+      "id": "syria",
+      "term": "Syria",
+      "meaning": "سوريا",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "Dan lives in Syria."
+    },
+    {
+      "id": "teach",
+      "term": "teach",
+      "meaning": "يدرّس",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "(study - teach) English lessons"
+    },
+    {
+      "id": "teacher",
+      "term": "teacher",
+      "meaning": "معلّم / معلّمة",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "My name’s Sandra. I’m a teacher."
+    },
+    {
+      "id": "teeth",
+      "term": "teeth",
+      "meaning": "أسنان",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "example": "He brushes his teeth."
+    },
+    {
+      "id": "text",
+      "term": "text",
+      "meaning": "نصّ",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "Read the text and do the tasks below."
+    },
+    {
+      "id": "then",
+      "term": "then",
+      "meaning": "ثمّ",
+      "category": "additional",
+      "sourceImages": [
+        3,
+        6
+      ],
+      "example": "Then I go home and have lunch."
+    },
+    {
+      "id": "tick",
+      "term": "tick",
+      "meaning": "يضع علامة صح",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2,
+        6
+      ],
+      "example": "Tick ✓ or cross ×."
+    },
+    {
+      "id": "time",
+      "term": "time",
+      "meaning": "الوقت",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        3,
+        5
+      ],
+      "example": "What time is it?"
+    },
+    {
+      "id": "too",
+      "term": "too",
+      "meaning": "أيضاً",
+      "category": "additional",
+      "sourceImages": [
+        1
+      ],
+      "example": "My mum usually wakes up at half past six too."
+    },
+    {
+      "id": "tv",
+      "term": "TV",
+      "meaning": "التلفاز",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        3,
+        6
+      ],
+      "example": "He sometimes watches TV."
+    },
+    {
+      "id": "usually",
+      "term": "usually",
+      "meaning": "عادةً",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2,
+        5
+      ],
+      "example": "He usually wakes up at half past six."
+    },
+    {
+      "id": "work",
+      "term": "work",
+      "meaning": "العمل",
+      "category": "additional",
+      "sourceImages": [
+        1
+      ],
+      "example": "go to work"
+    },
+    {
+      "id": "write",
+      "term": "write",
+      "meaning": "يكتب",
+      "category": "additional",
+      "sourceImages": [
+        3,
+        6
+      ],
+      "example": "Draw and write."
+    },
+    {
+      "id": "sandra-time-ten",
+      "term": "at 10 o’clock",
+      "meaning": "عند الساعة العاشرة",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "I go to bed at 10 o’clock."
+    },
+    {
+      "id": "sandra-time-115",
+      "term": "at 1:15",
+      "meaning": "عند الواحدة والربع",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "I (leave - finish) school at 1:15."
+    },
+    {
+      "id": "written-time-six-thirty",
+      "term": "at 6:30 in the morning",
+      "meaning": "عند السادسة والنصف صباحاً",
+      "category": "expression",
+      "sourceImages": [
+        4
+      ],
+      "example": "I … up at 6:30 in the morning."
+    },
+    {
+      "id": "printed-time-seven-oclock",
+      "term": "at 7:00 o’clock",
+      "meaning": "عند السابعة تماماً",
+      "category": "expression",
+      "sourceImages": [
+        4
+      ],
+      "example": "Sam … up at 7:00 o’clock."
+    },
+    {
+      "id": "sandra-time-745",
+      "term": "at 7:45",
+      "meaning": "عند السابعة وخمس وأربعين دقيقة",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "I go to school by car at 7:45."
+    },
+    {
+      "id": "sandra-time-815",
+      "term": "at 8:15",
+      "meaning": "عند الثامنة والربع",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "I (study - teach) English lessons at 8:15."
+    },
+    {
+      "id": "half-past-nine",
+      "term": "at half past nine",
+      "meaning": "عند التاسعة والنصف",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "My mum … TV at half past nine."
+    },
+    {
+      "id": "at-half-past-six",
+      "term": "at half past six",
+      "meaning": "عند السادسة والنصف",
+      "category": "expression",
+      "sourceImages": [
+        1,
+        2
+      ],
+      "example": "I usually wake up at half past six."
+    },
+    {
+      "id": "at-half-past-three",
+      "term": "at half past three",
+      "meaning": "عند الثالثة والنصف",
+      "category": "expression",
+      "sourceImages": [
+        2
+      ],
+      "example": "He usually has lunch at half past three."
+    },
+    {
+      "id": "at-nine-oclock",
+      "term": "at nine o’clock",
+      "meaning": "عند الساعة التاسعة",
+      "category": "expression",
+      "sourceImages": [
+        2
+      ],
+      "example": "before he goes to bed at nine o’clock"
+    },
+    {
+      "id": "quarter-past-seven",
+      "term": "at quarter past seven",
+      "meaning": "عند السابعة والربع",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "I … TV at quarter past seven."
+    },
+    {
+      "id": "quarter-to-six",
+      "term": "at quarter to six",
+      "meaning": "عند السادسة إلا ربعاً",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "My mum … up at quarter to six."
+    },
+    {
+      "id": "at-seven-oclock",
+      "term": "at seven o’clock",
+      "meaning": "عند الساعة السابعة",
+      "category": "expression",
+      "sourceImages": [
+        2
+      ],
+      "example": "At seven o’clock, he leaves for school."
+    },
+    {
+      "id": "at-three-afternoon",
+      "term": "at three o’clock in the afternoon",
+      "meaning": "عند الثالثة بعد الظهر",
+      "category": "expression",
+      "sourceImages": [
+        2
+      ],
+      "example": "At three o’clock in the afternoon, he comes back home."
+    },
+    {
+      "id": "before-breakfast",
+      "term": "before I have breakfast",
+      "meaning": "قبل الفطور",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "before I have breakfast"
+    },
+    {
+      "id": "come-back-home-expression",
+      "term": "come back home",
+      "meaning": "يعود إلى المنزل",
+      "category": "expression",
+      "sourceImages": [
+        2
+      ],
+      "example": "At three o’clock in the afternoon, he comes back home."
+    },
+    {
+      "id": "do-homework-expression",
+      "term": "do homework",
+      "meaning": "يؤدي الواجب المنزلي",
+      "category": "expression",
+      "sourceImages": [
+        2
+      ],
+      "example": "then he does his homework"
+    },
+    {
+      "id": "go-school-by-car",
+      "term": "go / come to school by car",
+      "meaning": "يذهب / يأتي إلى المدرسة بالسيارة",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "I (go - come) to school by car at 7:45."
+    },
+    {
+      "id": "go-home-have-lunch",
+      "term": "go home and have lunch",
+      "meaning": "يعود إلى المنزل ويتناول الغداء",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "Then I go home and have lunch."
+    },
+    {
+      "id": "go-to-bed-expression",
+      "term": "go to bed",
+      "meaning": "يذهب إلى الفراش",
+      "category": "expression",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "example": "before he goes to bed at nine o’clock"
+    },
+    {
+      "id": "bed-ten-oclock",
+      "term": "go to bed at 10 o’clock",
+      "meaning": "يذهب إلى الفراش عند العاشرة",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "I go to bed at 10 o’clock."
+    },
+    {
+      "id": "go-work-quarter-eight",
+      "term": "go to work at quarter past eight",
+      "meaning": "يذهب إلى العمل عند الثامنة والربع",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "She always go / goes to work at quarter past eight."
+    },
+    {
+      "id": "good-morning",
+      "term": "Good morning!",
+      "meaning": "صباح الخير!",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "Good morning! Good morning!"
+    },
+    {
+      "id": "good-morning-twice",
+      "term": "Good morning! Good morning!",
+      "meaning": "صباح الخير! صباح الخير!",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "Good morning! Good morning!"
+    },
+    {
+      "id": "half-past-four",
+      "term": "half past four",
+      "meaning": "الرابعة والنصف",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "It’s half past four."
+    },
+    {
+      "id": "dinner-family",
+      "term": "have / eat dinner with my family",
+      "meaning": "يتناول / يأكل العشاء مع عائلتي",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "I (have - eat) dinner with my family."
+    },
+    {
+      "id": "have-breakfast-quarter-past-seven",
+      "term": "have breakfast at quarter past seven",
+      "meaning": "يتناول الفطور عند السابعة والربع",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "I have breakfast at quarter past seven."
+    },
+    {
+      "id": "have-lunch-expression",
+      "term": "have lunch",
+      "meaning": "يتناول الغداء",
+      "category": "expression",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "example": "He usually has lunch at half past three."
+    },
+    {
+      "id": "gets-up-makes-bed",
+      "term": "he / she / it gets up, makes the bed",
+      "meaning": "ينهض / تنهض ويرتّب / ترتّب السرير",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "he / she / it gets up, makes the bed."
+    },
+    {
+      "id": "washes-face-gets-dressed",
+      "term": "He washes his face and gets dressed.",
+      "meaning": "هو يغسل وجهه ويرتدي ملابسه.",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "He washes his face and gets dressed."
+    },
+    {
+      "id": "subjects-get-up-make-bed",
+      "term": "I / we / they / you get up, make the bed.",
+      "meaning": "أنا / نحن / هم / أنتم ننهض ونرتّب السرير.",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "I / we / they / you get up, make the bed."
+    },
+    {
+      "id": "school-at-seven-thirty",
+      "term": "I go to school at 7.30.",
+      "meaning": "أذهب إلى المدرسة عند السابعة والنصف.",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "I go to school at 7.30."
+    },
+    {
+      "id": "have-to-get-up",
+      "term": "I have to get up.",
+      "meaning": "يجب أن أنهض.",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "I have to get up."
+    },
+    {
+      "id": "brush-teeth-wash-face",
+      "term": "I usually brush my teeth and wash my face.",
+      "meaning": "أفرش أسناني وأغسل وجهي عادةً.",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "I usually brush my teeth and wash my face."
+    },
+    {
+      "id": "usually-get-up-answer",
+      "term": "I usually get up at six o’clock.",
+      "meaning": "أنهض عادةً عند السادسة.",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "I usually get up at six o’clock."
+    },
+    {
+      "id": "in-the-afternoon",
+      "term": "in the afternoon",
+      "meaning": "بعد الظهر",
+      "category": "expression",
+      "sourceImages": [
+        2,
+        3,
+        6
+      ],
+      "example": "At three o’clock in the afternoon, he comes back home."
+    },
+    {
+      "id": "in-the-evening",
+      "term": "in the evening",
+      "meaning": "في المساء",
+      "category": "expression",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "example": "In the evening, he sometimes watches TV."
+    },
+    {
+      "id": "in-the-morning",
+      "term": "in the morning",
+      "meaning": "في الصباح",
+      "category": "expression",
+      "sourceImages": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "example": "I wake up at … in the morning."
+    },
+    {
+      "id": "five-oclock",
+      "term": "It’s five o’clock.",
+      "meaning": "الساعة الخامسة تماماً.",
+      "category": "expression",
+      "sourceImages": [
+        2,
+        5
+      ],
+      "example": "It’s five o’clock."
+    },
+    {
+      "id": "half-past-one-example",
+      "term": "It’s half past one.",
+      "meaning": "الساعة الواحدة والنصف.",
+      "category": "expression",
+      "sourceImages": [
+        2,
+        5
+      ],
+      "example": "It’s half past one."
+    },
+    {
+      "id": "quarter-past-five-example",
+      "term": "It’s quarter past five.",
+      "meaning": "الساعة الخامسة والربع.",
+      "category": "expression",
+      "sourceImages": [
+        2,
+        5
+      ],
+      "example": "It’s quarter past five."
+    },
+    {
+      "id": "quarter-to-four-example",
+      "term": "It’s quarter to four.",
+      "meaning": "الساعة الرابعة إلا ربعاً",
+      "category": "expression",
+      "sourceImages": [
+        2,
+        5
+      ],
+      "example": "It’s quarter to four."
+    },
+    {
+      "id": "its-seven-oclock",
+      "term": "It’s seven o’clock.",
+      "meaning": "الساعة السابعة تماماً.",
+      "category": "expression",
+      "sourceImages": [
+        3,
+        5
+      ],
+      "example": "It’s seven o’clock."
+    },
+    {
+      "id": "time-to-get-up",
+      "term": "It’s time to get up.",
+      "meaning": "حان وقت النهوض.",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "It’s time to get up."
+    },
+    {
+      "id": "time-to-wake-up",
+      "term": "It’s time to wake up.",
+      "meaning": "حان وقت الاستيقاظ.",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "It’s time to wake up, I have to …"
+    },
+    {
+      "id": "leave-finish-school",
+      "term": "leave / finish school",
+      "meaning": "يغادر / ينهي المدرسة",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "I (leave - finish) school at 1:15."
+    },
+    {
+      "id": "leave-for-school",
+      "term": "leave for school",
+      "meaning": "يغادر إلى المدرسة",
+      "category": "expression",
+      "sourceImages": [
+        2
+      ],
+      "example": "At seven o’clock, he leaves for school."
+    },
+    {
+      "id": "prepare-lessons-expression",
+      "term": "prepare the lessons",
+      "meaning": "يحضّر الدروس",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "prepare the lessons"
+    },
+    {
+      "id": "quarter-past-twelve",
+      "term": "quarter past twelve",
+      "meaning": "الثانية عشرة والربع",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "It’s quarter past twelve."
+    },
+    {
+      "id": "quarter-to-one",
+      "term": "quarter to one",
+      "meaning": "الواحدة إلا ربعاً",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "It’s quarter to one."
+    },
+    {
+      "id": "study-teach-lessons",
+      "term": "study / teach English lessons",
+      "meaning": "يدرس / يدرّس دروس الإنجليزية",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "I (study - teach) English lessons at 8:15."
+    },
+    {
+      "id": "lot-to-do",
+      "term": "There’s such a lot to do!",
+      "meaning": "هناك الكثير لفعله!",
+      "category": "expression",
+      "sourceImages": [
+        3
+      ],
+      "example": "There’s such a lot to do!"
+    },
+    {
+      "id": "watch-tv-expression",
+      "term": "watch TV",
+      "meaning": "يشاهد التلفاز",
+      "category": "expression",
+      "sourceImages": [
+        2,
+        3,
+        6
+      ],
+      "example": "He sometimes watches TV."
+    },
+    {
+      "id": "what-do-you-do-morning",
+      "term": "What do you usually do in the morning?",
+      "meaning": "ماذا تفعل عادةً في الصباح؟",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "What do you usually do in the morning?"
+    },
+    {
+      "id": "friend-morning-question",
+      "term": "What does your friend do every morning?",
+      "meaning": "ماذا يفعل صديقك كل صباح؟",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "What does your friend do every morning?"
+    },
+    {
+      "id": "usually-get-up-question",
+      "term": "What time do you usually get up?",
+      "meaning": "متى تنهض عادةً؟",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "What time do you usually get up?"
+    },
+    {
+      "id": "what-time-is-it",
+      "term": "What time is it?",
+      "meaning": "كم الساعة؟",
+      "category": "expression",
+      "sourceImages": [
+        2,
+        3
+      ],
+      "example": "What time is it?"
+    }
+  ],
+  "imageAudit": [
+    {
+      "imageNumber": 1,
+      "lesson": 3,
+      "book": "pupil-book",
+      "sourcePage": 9,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/pupil-book-page-9.png",
+      "sourceSha256": "858b9ab89716d399cec9fc2453e2d820b7eef67a6616a28afda5a17ce3b3b4cf",
+      "printedVocabulary": [
+        "brush-base",
+        "brush-teeth-label",
+        "daily-routine",
+        "gets",
+        "go-to-work-label",
+        "have-base",
+        "make-breakfast-label",
+        "wake-up",
+        "wakes",
+        "wash-base",
+        "wash-face-label",
+        "washes"
+      ],
+      "additionalVocabulary": [
+        "always",
+        "answer",
+        "ask",
+        "before",
+        "breakfast",
+        "brushes",
+        "circle",
+        "every",
+        "face",
+        "friend",
+        "go",
+        "goes",
+        "hello",
+        "listen",
+        "makes",
+        "morning",
+        "mum",
+        "teeth",
+        "tick",
+        "too",
+        "usually",
+        "work"
+      ],
+      "usefulExpressions": [
+        "at-half-past-six",
+        "before-breakfast",
+        "brush-teeth-wash-face",
+        "friend-morning-question",
+        "go-work-quarter-eight",
+        "have-breakfast-quarter-past-seven",
+        "in-the-morning",
+        "washes-face-gets-dressed",
+        "what-do-you-do-morning"
+      ],
+      "counts": {
+        "printed": 12,
+        "additional": 22,
+        "expression": 9
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    },
+    {
+      "imageNumber": 2,
+      "lesson": 3,
+      "book": "pupil-book",
+      "sourcePage": 10,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/pupil-book-page-10.png",
+      "sourceSha256": "3a150742d77cc02917f81cc90de6a818683ce5f6cc63ace9cfe56d0f6a5bb99f",
+      "printedVocabulary": [
+        "daily-routine",
+        "half-past",
+        "oclock",
+        "past",
+        "quarter-past",
+        "quarter-to",
+        "wakes",
+        "watches"
+      ],
+      "additionalVocabulary": [
+        "afternoon",
+        "before",
+        "boy",
+        "brushes",
+        "choose",
+        "come-back",
+        "comes",
+        "cross",
+        "does",
+        "early",
+        "eleven-years-old",
+        "english",
+        "evening",
+        "family",
+        "go",
+        "goes",
+        "guess",
+        "has",
+        "home",
+        "homework",
+        "leave",
+        "leaves",
+        "listen",
+        "live",
+        "london",
+        "look",
+        "lunch",
+        "read",
+        "say",
+        "school",
+        "sometimes",
+        "syria",
+        "teeth",
+        "text",
+        "tick",
+        "time",
+        "tv",
+        "usually"
+      ],
+      "usefulExpressions": [
+        "at-half-past-six",
+        "at-half-past-three",
+        "at-nine-oclock",
+        "at-seven-oclock",
+        "at-three-afternoon",
+        "come-back-home-expression",
+        "do-homework-expression",
+        "five-oclock",
+        "go-to-bed-expression",
+        "half-past-one-example",
+        "have-lunch-expression",
+        "in-the-afternoon",
+        "in-the-evening",
+        "leave-for-school",
+        "quarter-past-five-example",
+        "quarter-to-four-example",
+        "watch-tv-expression",
+        "what-time-is-it"
+      ],
+      "counts": {
+        "printed": 8,
+        "additional": 38,
+        "expression": 18
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    },
+    {
+      "imageNumber": 3,
+      "lesson": 3,
+      "book": "pupil-book",
+      "sourcePage": 11,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/pupil-book-page-11.png",
+      "sourceSha256": "404b521b4cf0f34b5a9c12720a2991b8ec9325503010e5b44b2d01533d35568c",
+      "printedVocabulary": [
+        "brush-base",
+        "get-base",
+        "get-up",
+        "gets",
+        "half-past",
+        "have-base",
+        "make-the-bed",
+        "oclock",
+        "past",
+        "quarter-past",
+        "quarter-to",
+        "subject-pronouns",
+        "third-person-pronouns",
+        "wake-base",
+        "wake-up",
+        "wakes",
+        "wash-base",
+        "watch-base",
+        "watches"
+      ],
+      "additionalVocabulary": [
+        "afternoon",
+        "breakfast",
+        "complete",
+        "draw",
+        "face",
+        "hair",
+        "makes",
+        "morning",
+        "mum",
+        "teeth",
+        "then",
+        "time",
+        "tv",
+        "write"
+      ],
+      "usefulExpressions": [
+        "gets-up-makes-bed",
+        "good-morning",
+        "good-morning-twice",
+        "half-past-nine",
+        "have-to-get-up",
+        "in-the-afternoon",
+        "in-the-morning",
+        "its-seven-oclock",
+        "lot-to-do",
+        "quarter-past-seven",
+        "quarter-to-six",
+        "subjects-get-up-make-bed",
+        "time-to-get-up",
+        "time-to-wake-up",
+        "watch-tv-expression",
+        "what-time-is-it"
+      ],
+      "counts": {
+        "printed": 19,
+        "additional": 14,
+        "expression": 16
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    },
+    {
+      "imageNumber": 4,
+      "lesson": 3,
+      "book": "workbook",
+      "sourcePage": 11,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/workbook-page-11.png",
+      "sourceSha256": "32d4e399492b10bb292c207c18f51126eeb30a3ed245a3eb84994e9f10892102",
+      "printedVocabulary": [
+        "brush-base",
+        "brush-my-teeth",
+        "comb-my-hair",
+        "daily-routine",
+        "get-base",
+        "get-dressed",
+        "get-up",
+        "gets",
+        "go-school",
+        "make-my-bed",
+        "oclock",
+        "wake-up",
+        "wash-base",
+        "wash-my-face",
+        "washes"
+      ],
+      "additionalVocabulary": [
+        "face",
+        "fill-in",
+        "go",
+        "hair",
+        "listen",
+        "match",
+        "morning",
+        "read",
+        "school",
+        "teeth"
+      ],
+      "usefulExpressions": [
+        "in-the-morning",
+        "printed-time-seven-oclock",
+        "written-time-six-thirty"
+      ],
+      "counts": {
+        "printed": 15,
+        "additional": 10,
+        "expression": 3
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    },
+    {
+      "imageNumber": 5,
+      "lesson": 3,
+      "book": "workbook",
+      "sourcePage": 12,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/workbook-page-12.png",
+      "sourceSha256": "b18eb30590a8bb9f4e8c239c7f25f5df04d137811fc2d4d17cb132a9201ac61e",
+      "printedVocabulary": [
+        "half-past",
+        "oclock",
+        "past",
+        "quarter-past",
+        "quarter-to"
+      ],
+      "additionalVocabulary": [
+        "answer",
+        "ask",
+        "circle",
+        "listen",
+        "say",
+        "time",
+        "usually"
+      ],
+      "usefulExpressions": [
+        "five-oclock",
+        "half-past-four",
+        "half-past-one-example",
+        "its-seven-oclock",
+        "quarter-past-five-example",
+        "quarter-past-twelve",
+        "quarter-to-four-example",
+        "quarter-to-one",
+        "usually-get-up-answer",
+        "usually-get-up-question"
+      ],
+      "counts": {
+        "printed": 5,
+        "additional": 7,
+        "expression": 10
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    },
+    {
+      "imageNumber": 6,
+      "lesson": 3,
+      "book": "workbook",
+      "sourcePage": 13,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/workbook-page-13.png",
+      "sourceSha256": "57186fda5347205069cfea910e9f930c41b9304c6cb063ece0529a4188007f4e",
+      "printedVocabulary": [
+        "have-base",
+        "oclock",
+        "watch-base"
+      ],
+      "additionalVocabulary": [
+        "afternoon",
+        "arabic",
+        "bus",
+        "car",
+        "choose",
+        "clean",
+        "come-base",
+        "complete",
+        "dinner",
+        "eat",
+        "english",
+        "enjoy",
+        "evening",
+        "face",
+        "family",
+        "fill-in",
+        "finish",
+        "go",
+        "home",
+        "leave",
+        "lesson",
+        "listen",
+        "lunch",
+        "morning",
+        "prepare",
+        "pupil",
+        "read",
+        "school",
+        "study",
+        "teach",
+        "teacher",
+        "teeth",
+        "then",
+        "tick",
+        "tv",
+        "write"
+      ],
+      "usefulExpressions": [
+        "bed-ten-oclock",
+        "dinner-family",
+        "go-home-have-lunch",
+        "go-school-by-car",
+        "go-to-bed-expression",
+        "have-lunch-expression",
+        "in-the-afternoon",
+        "in-the-evening",
+        "in-the-morning",
+        "leave-finish-school",
+        "prepare-lessons-expression",
+        "sandra-time-115",
+        "sandra-time-745",
+        "sandra-time-815",
+        "sandra-time-ten",
+        "school-at-seven-thirty",
+        "study-teach-lessons",
+        "watch-tv-expression"
+      ],
+      "counts": {
+        "printed": 3,
+        "additional": 36,
+        "expression": 18
+      },
+      "arabicMeaningsPresent": true,
+      "reviewStatus": "Visually checked against the byte-preserved source scan; each referenced term and excerpt is present on this page. Arabic glosses are editorial learner support, not text printed in the source.",
+      "intentionallyExcludedMaterial": [
+        "Character names are treated as identifiers, not glossary headwords; place names and teachable context words are included.",
+        "Isolated numerals, worksheet item letters, picture-only labels and letter/sound symbols are not vocabulary entries.",
+        "Blank dotted lines do not create vocabulary entries or justify filling in missing textbook words.",
+        "Listening prompts and choices are transcribed as printed; no absent recording, transcript, or listening key is supplied."
+      ]
+    }
+  ],
+  "totals": {
+    "printed": 31,
+    "additional": 74,
+    "expression": 57,
+    "allEntries": 162
+  },
+  "occurrences": {
+    "printed": 62,
+    "additional": 127,
+    "expression": 74,
+    "allReferences": 263
+  },
+  "reconciliation": {
+    "uniqueEntries": "Every glossary id and normalized English term occurs once, belongs to exactly one category, and has one Arabic meaning.",
+    "sourceCoverage": "Each entry sourceImages list is mirrored exactly in that category’s per-image id lists; source page and SHA-256 are included per image.",
+    "uniqueTotals": "printed + additional + expression = allEntries.",
+    "imageOccurrences": "Per-image counts sum to occurrences.allReferences; entries appearing on multiple scans contribute one reference on each scan.",
+    "semanticReview": "All six source scans were visually reviewed on 2026-11-14. Each entry and image reference was checked against the transcribed page; all nine inflected-form/image matches are recorded in review.inflectionChecks. Workbook p.12’s four printed listening time pairs were verified against its scan, and the page-10 “Look” and page-13 “cross” references were corrected. The song refrain and printed time phrases are retained."
+  },
+  "review": {
+    "status": "complete",
+    "reviewedOn": "2026-11-14",
+    "method": "Visually compared all six byte-preserved source scans with their page transcriptions; checked every vocabulary term, excerpt and source-image allocation against the corresponding scan; manually resolved the nine inflected-form/image matches listed below; corrected unsupported picture-only or page references; reconciled category and occurrence totals.",
+    "translationNote": "Arabic meanings are editorial learner-support glosses; they are not claimed to be printed textbook translations.",
+    "scopeNote": "Character names, ordinary function words, picture-only labels, isolated numerals, sound/letter symbols, and uncompleted dotted gaps remain excluded under the audit definition. All printed time expressions and the song refrain are retained.",
+    "inflectionChecks": [
+      {
+        "entryId": "come-back",
+        "imageNumber": 2,
+        "printedForm": "comes back",
+        "evidence": "At three o’clock in the afternoon, he comes back home."
+      },
+      {
+        "entryId": "come-back-home-expression",
+        "imageNumber": 2,
+        "printedForm": "comes back home",
+        "evidence": "At three o’clock in the afternoon, he comes back home."
+      },
+      {
+        "entryId": "do-homework-expression",
+        "imageNumber": 2,
+        "printedForm": "does his homework",
+        "evidence": "He usually has lunch at half past three then he does his homework."
+      },
+      {
+        "entryId": "go-to-bed-expression",
+        "imageNumber": 2,
+        "printedForm": "goes to bed",
+        "evidence": "In the evening, he sometimes watches TV before he goes to bed at nine o’clock."
+      },
+      {
+        "entryId": "go-work-quarter-eight",
+        "imageNumber": 1,
+        "printedForm": "goes to work at quarter past eight",
+        "evidence": "She always go / goes to work at quarter past eight."
+      },
+      {
+        "entryId": "have-lunch-expression",
+        "imageNumber": 2,
+        "printedForm": "has lunch",
+        "evidence": "He usually has lunch at half past three."
+      },
+      {
+        "entryId": "leave-for-school",
+        "imageNumber": 2,
+        "printedForm": "leaves for school",
+        "evidence": "At seven o’clock, he leaves for school."
+      },
+      {
+        "entryId": "watch-tv-expression",
+        "imageNumber": 2,
+        "printedForm": "watches TV",
+        "evidence": "He sometimes watches TV."
+      },
+      {
+        "entryId": "watch-tv-expression",
+        "imageNumber": 3,
+        "printedForm": "watch / watches",
+        "evidence": "The “watch / watches” word bank supplies the verb forms for the two “... TV” sentence prompts."
+      }
+    ]
+  }
+}

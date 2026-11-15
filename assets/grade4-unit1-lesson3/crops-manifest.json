@@ -1,0 +1,171 @@
+{
+  "lesson": "Grade 4 · Unit 1 · Lesson 3",
+  "cropCount": 11,
+  "crops": [
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/pupil-book-page-9-routine-grid.png",
+      "sha256": "990114816952d886ebb7b825fd7d02a27d2121e2895ba43bfc54c59e9499f2b2",
+      "width": 700,
+      "height": 300,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/pupil-book-page-9.png",
+      "sourceImageNumber": 1,
+      "sourceBounds": {
+        "x": 40,
+        "y": 200,
+        "width": 700,
+        "height": 300
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/pupil-book-page-10-time-examples.png",
+      "sha256": "017984ea0f59d90b6f5b2d79c65804257c51d06f6ef6931d73876a10d7ce83e7",
+      "width": 630,
+      "height": 420,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/pupil-book-page-10.png",
+      "sourceImageNumber": 2,
+      "sourceBounds": {
+        "x": 40,
+        "y": 35,
+        "width": 630,
+        "height": 420
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/pupil-book-page-11-draw-and-write.png",
+      "sha256": "f05c64f63a0a7d406b6290d31f34ba6159368e7559a8f728608098df6b278633",
+      "width": 620,
+      "height": 360,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/pupil-book-page-11.png",
+      "sourceImageNumber": 3,
+      "sourceBounds": {
+        "x": 50,
+        "y": 225,
+        "width": 620,
+        "height": 360
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/workbook-page-11-read-and-match.png",
+      "sha256": "eb10ac73779dfc1ee705ad68e19fde373bbbda7f68277894ab5ba67e592ffb3f",
+      "width": 710,
+      "height": 535,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/workbook-page-11.png",
+      "sourceImageNumber": 4,
+      "sourceBounds": {
+        "x": 10,
+        "y": 165,
+        "width": 710,
+        "height": 535
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/workbook-page-12-write-the-time.png",
+      "sha256": "582f9b1bacf329e320cfe51216ba21c0211a0ae96fe78eea6b28415cc479642a",
+      "width": 665,
+      "height": 155,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/workbook-page-12.png",
+      "sourceImageNumber": 5,
+      "sourceBounds": {
+        "x": 35,
+        "y": 615,
+        "width": 665,
+        "height": 155
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/workbook-page-13-sandra-illustration.png",
+      "sha256": "8301b3e2c1de073cc98be049bbf0e9ef6716281e2d76601ab40887b42ec26904",
+      "width": 195,
+      "height": 205,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/workbook-page-13.png",
+      "sourceImageNumber": 6,
+      "sourceBounds": {
+        "x": 45,
+        "y": 125,
+        "width": 195,
+        "height": 205
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/workbook-page-12-listen-and-circle.png",
+      "sha256": "2b119e4aec662b1e90cd189b173e019a9771a224bc715b060658decb6989266f",
+      "width": 680,
+      "height": 580,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/workbook-page-12.png",
+      "sourceImageNumber": 5,
+      "sourceBounds": {
+        "x": 25,
+        "y": 20,
+        "width": 680,
+        "height": 580
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/pupil-book-page-9-ask-and-answer.png",
+      "sha256": "dbb53e8234138d8262500985e5b5bcf1e622430fac8fc8a7486cabde093d1c32",
+      "width": 650,
+      "height": 245,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/pupil-book-page-9.png",
+      "sourceImageNumber": 1,
+      "sourceBounds": {
+        "x": 50,
+        "y": 775,
+        "width": 650,
+        "height": 245
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/pupil-book-page-10-activity-4.png",
+      "sha256": "9d341c6016171563481fc6b6f0a81c480e2f19a2be79e29d5989a50ba64b896c",
+      "width": 630,
+      "height": 285,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/pupil-book-page-10.png",
+      "sourceImageNumber": 2,
+      "sourceBounds": {
+        "x": 40,
+        "y": 35,
+        "width": 630,
+        "height": 285
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/pupil-book-page-10-activity-5.png",
+      "sha256": "d76d9012a45f4a8ec91fbb0ada6ebe6d1f6843d04ce1ebc81322498fce1ca1bd",
+      "width": 610,
+      "height": 140,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/pupil-book-page-10.png",
+      "sourceImageNumber": 2,
+      "sourceBounds": {
+        "x": 45,
+        "y": 305,
+        "width": 610,
+        "height": 140
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson3/crops/pupil-book-page-11-exercise-10.png",
+      "sha256": "31c5b3077a971a7fd4bfc155258e5d32ba4cbcd486bf5b02eb13151e0997fd36",
+      "width": 660,
+      "height": 155,
+      "sourceFile": "assets/grade4-unit1-lesson3/source/pupil-book-page-11.png",
+      "sourceImageNumber": 3,
+      "sourceBounds": {
+        "x": 35,
+        "y": 880,
+        "width": 660,
+        "height": 155
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    }
+  ]
+}

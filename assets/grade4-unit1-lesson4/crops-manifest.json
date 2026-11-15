@@ -1,0 +1,141 @@
+{
+  "lesson": "Grade 4 · Unit 1 · Lesson 4",
+  "cropCount": 9,
+  "crops": [
+    {
+      "file": "assets/grade4-unit1-lesson4/crops/pupil-book-page-12-homes-and-features.png",
+      "sha256": "178765d8ce3a8a6d9a5fdcee2bdcfd5f8d2a6c723da2fff9832fde5584ee3edc",
+      "width": 690,
+      "height": 485,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/pupil-book-page-12.png",
+      "sourceImageNumber": 7,
+      "sourceBounds": {
+        "x": 35,
+        "y": 180,
+        "width": 690,
+        "height": 485
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/crops/pupil-book-page-13-match-items.png",
+      "sha256": "fc0b18424f70d6fc85fb673de17d9037899f397948dc9458938775be0b56f724",
+      "width": 680,
+      "height": 185,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/pupil-book-page-13.png",
+      "sourceImageNumber": 8,
+      "sourceBounds": {
+        "x": 35,
+        "y": 215,
+        "width": 680,
+        "height": 185
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/crops/pupil-book-page-14-house-diagram.png",
+      "sha256": "63ea4bbd0887842354589e2a3b1fcd4ac1959d0ddb69a0059b535a257d803058",
+      "width": 205,
+      "height": 320,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/pupil-book-page-14.png",
+      "sourceImageNumber": 9,
+      "sourceBounds": {
+        "x": 445,
+        "y": 335,
+        "width": 205,
+        "height": 320
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/crops/pupil-book-page-14-pronunciation.png",
+      "sha256": "963e19f16b63bcba38ff2ec6e05e2925c326dd8b0247d8bf7e48db98d416ed7b",
+      "width": 690,
+      "height": 220,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/pupil-book-page-14.png",
+      "sourceImageNumber": 9,
+      "sourceBounds": {
+        "x": 40,
+        "y": 795,
+        "width": 690,
+        "height": 220
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/crops/workbook-page-14-match-items.png",
+      "sha256": "7cd3b7caac40a18dce5c6c891444d01d309015b10e04c4380310b87f0d0a4f50",
+      "width": 690,
+      "height": 215,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/workbook-page-14.png",
+      "sourceImageNumber": 10,
+      "sourceBounds": {
+        "x": 25,
+        "y": 180,
+        "width": 690,
+        "height": 215
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/crops/workbook-page-14-wrong-rooms.png",
+      "sha256": "ac4dbac18b8cbac1a22f0686bd604e7ecec508dd3f55b3e82abdaddc5ddcf800",
+      "width": 630,
+      "height": 300,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/workbook-page-14.png",
+      "sourceImageNumber": 10,
+      "sourceBounds": {
+        "x": 55,
+        "y": 390,
+        "width": 630,
+        "height": 300
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/crops/workbook-page-14-describe-rooms-houses.png",
+      "sha256": "70d43f20667660e0afc31d7435477f1aa3ccfc7bfc81ff5ed54867bbb039a1af",
+      "width": 690,
+      "height": 350,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/workbook-page-14.png",
+      "sourceImageNumber": 10,
+      "sourceBounds": {
+        "x": 0,
+        "y": 640,
+        "width": 690,
+        "height": 350
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/crops/workbook-page-16-bedroom-text.png",
+      "sha256": "38427e2e1419b511422d04b2a90147bb9357a379577a0e677d509654d2c938d8",
+      "width": 700,
+      "height": 340,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/workbook-page-16.png",
+      "sourceImageNumber": 12,
+      "sourceBounds": {
+        "x": 25,
+        "y": 80,
+        "width": 700,
+        "height": 340
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    },
+    {
+      "file": "assets/grade4-unit1-lesson4/crops/pupil-book-page-12-describe-house.png",
+      "sha256": "cd0035423977fe514169be449e207938350e90fd1149e420ec33e28b4a3140d1",
+      "width": 670,
+      "height": 300,
+      "sourceFile": "assets/grade4-unit1-lesson4/source/pupil-book-page-12.png",
+      "sourceImageNumber": 7,
+      "sourceBounds": {
+        "x": 40,
+        "y": 680,
+        "width": 670,
+        "height": 300
+      },
+      "method": "lossless pixel crop; no resampling, color adjustment, or edits"
+    }
+  ]
+}

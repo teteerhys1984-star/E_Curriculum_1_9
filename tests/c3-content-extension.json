@@ -16,6 +16,16 @@
     "grade3-unit1-lesson5-vocabulary.html",
     "grade3-unit1-lesson5-workbook.html",
     "grade3-unit1-lesson5.html",
+    "grade4-unit1-lesson3-pupil-book.html",
+    "grade4-unit1-lesson3-test.html",
+    "grade4-unit1-lesson3-vocabulary.html",
+    "grade4-unit1-lesson3-workbook.html",
+    "grade4-unit1-lesson3.html",
+    "grade4-unit1-lesson4-pupil-book.html",
+    "grade4-unit1-lesson4-test.html",
+    "grade4-unit1-lesson4-vocabulary.html",
+    "grade4-unit1-lesson4-workbook.html",
+    "grade4-unit1-lesson4.html",
     "grade5-unit1-lesson4-pupil-book.html",
     "grade5-unit1-lesson4-test.html",
     "grade5-unit1-lesson4-vocabulary.html",
@@ -41,14 +51,38 @@
     "grade8-unit1-lesson3-vocabulary.html",
     "grade8-unit1-lesson3-workbook.html",
     "grade8-unit1-lesson3.html",
-    "grade8-unit1-lesson4.html",
     "grade8-unit1-lesson4-pupil-book.html",
-    "grade8-unit1-lesson4-workbook.html",
+    "grade8-unit1-lesson4-test.html",
     "grade8-unit1-lesson4-vocabulary.html",
-    "grade8-unit1-lesson4-test.html"
+    "grade8-unit1-lesson4-workbook.html",
+    "grade8-unit1-lesson4.html"
   ],
   "integrationEdits": {
     "index.html": [
+      {
+        "before": "        The teacher portal collects the seventeen prepared lessons, the answer-key areas published on sixteen lesson tests, and\n",
+        "after": "        The teacher portal collects the twenty prepared lessons, the answer-key areas published on nineteen lesson tests, and\n"
+      },
+      {
+        "before": "",
+        "after": "            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 3 · Daily Routine</strong>\n              <span>Pupil’s Book pp. 9–11 · Workbook pp. 11–13 · Vocabulary · 12-question independent Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade4-unit1-lesson3.html\">Lesson Menu</a>\n              <a href=\"grade4-unit1-lesson3-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade4-unit1-lesson3-workbook.html\">Workbook</a>\n              <a href=\"grade4-unit1-lesson3-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade4-unit1-lesson3-test.html\">Lesson Test</a>\n            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 4 · My House</strong>\n              <span>Pupil’s Book pp. 12–14 · Workbook pp. 14–16 · Vocabulary · 12-question independent Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade4-unit1-lesson4.html\">Lesson Menu</a>\n              <a href=\"grade4-unit1-lesson4-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade4-unit1-lesson4-workbook.html\">Workbook</a>\n              <a href=\"grade4-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade4-unit1-lesson4-test.html\">Lesson Test</a>\n"
+      },
+      {
+        "before": "      <span class=\"badge badge-available\">18 verified lessons · 90 pages</span>\n",
+        "after": "      <span class=\"badge badge-available\">20 verified lessons · 100 pages</span>\n"
+      },
+      {
+        "before": "          <p>Unit 1 Lessons 1–3 ready: <em>Future Plans</em>, <em>School Challenges</em> and <em>Let’s Discover</em> (Student’s Book, Workbook, Vocabulary, Test).</p>\n",
+        "after": "          <p>Unit 1 Lessons 1–4 ready: <em>Future Plans</em>, <em>School Challenges</em>, <em>Let’s Discover</em> and <em>Interesting Destinations</em> (Student’s Book, Workbook, Vocabulary, Test).</p>\n"
+      },
+      {
+        "before": "          <p>Unit 1 Lessons 1 &amp; 2 ready: <em>Nice to Meet You</em> and <em>My Family</em>.</p>\n",
+        "after": "          <p>Unit 1 Lessons 1–4 ready: <em>Nice to Meet You</em>, <em>My Family</em>, <em>Daily Routine</em> and <em>My House</em>.</p>\n"
+      },
+      {
+        "before": "          <span class=\"num\">Grade 4</span>\n          <span class=\"badge badge-available\">2 lessons ready</span>\n",
+        "after": "          <span class=\"num\">Grade 4</span>\n          <span class=\"badge badge-available\">4 lessons ready</span>\n"
+      },
       {
         "before": "                <a href=\"grade8-unit1-lesson3-test.html\">Lesson Test</a>\n              </div>\n            </div>",
         "after": "                <a href=\"grade8-unit1-lesson3-test.html\">Lesson Test</a>\n              </div>\n            </div>\n            <div class=\"directory-lesson-row\">\n              <div class=\"directory-lesson-info\"><strong>Lesson 4 · Interesting Destinations</strong><span>Student’s Book pp. 26–32 · Workbook pp. 14–17 · Vocabulary · 14-question Test</span></div>\n              <div class=\"directory-quick-links\">\n                <a href=\"grade8-unit1-lesson4.html\">Lesson Menu</a>\n                <a href=\"grade8-unit1-lesson4-pupil-book.html\">Student’s Book</a>\n                <a href=\"grade8-unit1-lesson4-workbook.html\">Workbook</a>\n                <a href=\"grade8-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n                <a href=\"grade8-unit1-lesson4-test.html\">Lesson Test</a>\n              </div>\n            </div>"
@@ -196,6 +230,30 @@
     ],
     "lessons.html": [
       {
+        "before": "",
+        "after": "      : grade===4?'<a class=\"lesson\" href=\"grade4-unit1-lesson4.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 4 · My House</strong><small>Pupil’s Book (pp. 12–14) · Workbook (pp. 14–16) · Vocabulary · 12-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n"
+      },
+      {
+        "before": "",
+        "after": "      : grade===4?'<a class=\"lesson\" href=\"grade4-unit1-lesson3.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 3 · Daily Routine</strong><small>Pupil’s Book (pp. 9–11) · Workbook (pp. 11–13) · Vocabulary · 12-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>'\n"
+      },
+      {
+        "before": "        `Grade ${grade} Round 1 Assessment will unlock once the first 5 verified lessons for this grade are published.`;\n",
+        "after": "        `Grade ${grade} needs five verified lessons for Round 1 coverage. The cumulative Round 1 test has not been published.`;\n"
+      },
+      {
+        "before": "        `Grade ${grade} currently has ${count} of the 5 verified lessons required to unlock Round 1 Assessment.`;\n",
+        "after": "        `Grade ${grade} has ${roundOneCoverage} of 5 verified lessons for Round 1 coverage. The cumulative Round 1 test has not been published.`;\n"
+      },
+      {
+        "before": "",
+        "after": "    const roundOneCoverage = Math.min(count, 5);\n"
+      },
+      {
+        "before": "    const preparedCounts = { 3: 5, 4: 2, 5: 5, 8: 4 };\n",
+        "after": "    const preparedCounts = { 3: 5, 4: 4, 5: 7, 8: 4 };\n"
+      },
+      {
         "before": "    const preparedCounts = { 3: 5, 4: 2, 5: 5, 8: 3 };\n    const count = preparedCounts[grade] || 0;\n    const stageLabel = grade <= 6 ? `Primary Stage · Grade ${grade}` : `Intermediate Stage · Grade ${grade}`;\n",
         "after": "    const preparedCounts = { 3: 5, 4: 2, 5: 5, 8: 4 };\n    const count = preparedCounts[grade] || 0;\n    const stageLabel = grade <= 6 ? `Primary Stage · Grade ${grade}` : `Intermediate Stage · Grade ${grade}`;\n"
       },
@@ -246,6 +304,50 @@
     ],
     "round-tests.html": [
       {
+        "before": "          <div class=\"source-note\">Unlocks after all 5 lessons in ${r.range} are verified.</div>\n",
+        "after": "          <div class=\"source-note\">Coverage counts verified individual Lesson Tests only. The cumulative Round Test for this range is not published.</div>\n"
+      },
+      {
+        "before": "            <div class=\"progress\" role=\"group\" aria-label=\"Round ${r.num} lesson preparation progress: ${r.ready} of 5 lessons\"><span style=\"width:${pct}%\"></span></div>\n",
+        "after": "            <div class=\"progress\" role=\"group\" aria-label=\"Round ${r.num} verified lesson coverage: ${r.ready} of 5 lessons\"><span style=\"width:${pct}%\"></span></div>\n"
+      },
+      {
+        "before": "            <span class=\"badge badge-upcoming\">Pending · ${r.ready}/5 lessons ready</span>\n",
+        "after": "            <span class=\"badge badge-upcoming\">Not published · ${r.ready}/5 lessons covered</span>\n"
+      },
+      {
+        "before": "      { num: 1, range: 'Lessons 1–5', ready: readyCount },\n",
+        "after": "      { num: 1, range: 'Lessons 1–5', ready: roundOneCoverage },\n"
+      },
+      {
+        "before": "    pills.innerHTML = `<span class=\"badge ${readyCount > 0 ? 'badge-available' : 'badge-upcoming'}\">${readyCount} of 5 Round 1 lessons prepared</span><span class=\"badge badge-strand\">5 lessons per round</span>`;\n",
+        "after": "    pills.innerHTML = `<span class=\"badge ${roundOneCoverage > 0 ? 'badge-available' : 'badge-upcoming'}\">${roundOneCoverage} of 5 Round 1 lessons covered</span><span class=\"badge badge-strand\">5 lessons per round</span>`;\n"
+      },
+      {
+        "before": "",
+        "after": "    const roundOneCoverage = Math.min(readyCount, 5);\n"
+      },
+      {
+        "before": "        { label: 'Lesson 1 Test · Future Plans', href: 'grade8-unit1-lesson1-test.html' }\n",
+        "after": "        { label: 'Lesson 1 Test · Future Plans', href: 'grade8-unit1-lesson1-test.html' },\n        { label: 'Lesson 2 Test · School Challenges', href: 'grade8-unit1-lesson2-test.html' },\n        { label: 'Lesson 3 Test · Let’s Discover', href: 'grade8-unit1-lesson3-test.html' },\n        { label: 'Lesson 4 Test · Interesting Destinations', href: 'grade8-unit1-lesson4-test.html' }\n"
+      },
+      {
+        "before": "        { label: 'Lesson 2 Test · My Family', href: 'grade4-unit1-lesson2-test.html' }\n",
+        "after": "        { label: 'Lesson 2 Test · My Family', href: 'grade4-unit1-lesson2-test.html' },\n        { label: 'Lesson 3 Test · Daily Routine', href: 'grade4-unit1-lesson3-test.html' },\n        { label: 'Lesson 4 Test · My House', href: 'grade4-unit1-lesson4-test.html' }\n"
+      },
+      {
+        "before": "        <p>Rounds unlock automatically as each group of five consecutive lessons is verified from printed school books.</p>\n",
+        "after": "        <p>Cumulative Round Tests are not published yet. Progress below counts the verified individual Lesson Tests toward the planned five-lesson coverage.</p>\n"
+      },
+      {
+        "before": "      <p class=\"muted\">While cumulative 5-lesson Round Tests are awaiting the remaining Unit 1–2 lessons, these individual Lesson Tests are ready now; each page states its own question count:</p>\n",
+        "after": "        <p class=\"muted\">Cumulative Round Tests are not published yet. These individual Lesson Tests are available now; each page states its own question count:</p>\n"
+      },
+      {
+        "before": "        Each Round Test is an independent 40-question cumulative checkpoint measuring the learning objectives, vocabulary, and grammar of five verified lessons in sequence, so students are never tested on material not yet taught.\n",
+        "after": "        Each planned Round Test is a 40-question cumulative checkpoint for five verified lessons in sequence. Cumulative Round Tests are not published yet; this page shows lesson coverage and links to available individual Lesson Tests.\n"
+      },
+      {
         "before": "        { label: 'Lesson 5 Test · Clothes', href: 'grade5-unit1-lesson5-test.html' }",
         "after": "        { label: 'Lesson 5 Test · Clothes', href: 'grade5-unit1-lesson5-test.html' },\n        { label: 'Lesson 6 Test · Healthy Lifestyle', href: 'grade5-unit1-lesson6-test.html' },\n        { label: 'Lesson 7 Test · Hobbies', href: 'grade5-unit1-lesson7-test.html' }"
       },
@@ -263,6 +365,50 @@
       }
     ],
     "teacher.html": [
+      {
+        "before": "          <p>Three prepared lessons: Future Plans, School Challenges and Let’s Discover, each with a published answer-key area.</p>\n",
+        "after": "          <p>Four prepared lessons, each with a published answer-key area and verified Book, Workbook, Vocabulary and test pages.</p>\n"
+      },
+      {
+        "before": "          <span class=\"num\">Grade 8</span>\n          <span class=\"badge badge-available\">3 lessons prepared</span>\n",
+        "after": "          <span class=\"num\">Grade 8</span>\n          <span class=\"badge badge-available\">4 lessons prepared</span>\n"
+      },
+      {
+        "before": "          <p>At School and Family: 10 verified pages, two 20-question tests, and a published answer-key area on each test.</p>\n",
+        "after": "          <p>Seven prepared lessons: 35 verified pages with a published answer-key area on each lesson test.</p>\n"
+      },
+      {
+        "before": "          <span class=\"badge badge-available\">2 lessons prepared</span>\n",
+        "after": "          <span class=\"badge badge-available\">7 lessons prepared</span>\n"
+      },
+      {
+        "before": "          <p>Nice to Meet You and My Family: 10 verified pages. Lesson 2 has a published answer key; Lesson 1 has none.</p>\n",
+        "after": "          <p>Nice to Meet You, My Family, Daily Routine and My House: 20 verified pages. Lessons 2–4 have published answer keys; Lesson 1 has none.</p>\n"
+      },
+      {
+        "before": "          <span class=\"badge badge-available\">2 lessons prepared</span>\n",
+        "after": "          <span class=\"badge badge-available\">4 lessons prepared</span>\n"
+      },
+      {
+        "before": "          <p>Back to School, School Subjects and My Lovely School: 15 verified pages, three 20-question tests, and a published answer-key area on each test.</p>\n",
+        "after": "          <p>Five prepared lessons, including Back to School, School Subjects, My Lovely School, My Five Senses and Revision 1: 25 verified pages with a published test key for each lesson.</p>\n"
+      },
+      {
+        "before": "          <span class=\"badge badge-available\">3 lessons prepared</span>\n",
+        "after": "          <span class=\"badge badge-available\">5 lessons prepared</span>\n"
+      },
+      {
+        "before": "        <strong>Not secure authentication.</strong> The answer-key areas on fifteen lesson tests ask for a single\n",
+        "after": "        <strong>Not secure authentication.</strong> The answer-key areas on nineteen lesson tests ask for a single\n"
+      },
+      {
+        "before": "            <div class=\"stat\"><b>16</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b>80</b><span>Verified lesson pages</span></div>\n            <div class=\"stat\"><b>15</b><span>Answer-key areas</span></div>\n",
+        "after": "            <div class=\"stat\"><b>20</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b>100</b><span>Verified lesson pages</span></div>\n            <div class=\"stat\"><b>19</b><span>Answer-key areas</span></div>\n"
+      },
+      {
+        "before": "            in this repository: sixteen prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil’s or Student’s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on fifteen of those tests.\n",
+        "after": "            in this repository: twenty prepared Unit 1 lessons across Grades 3, 4, 5 and 8, their Pupil’s or Student’s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on nineteen of those tests.\n"
+      },
       {
         "before": "<p>Future Plans: 5 verified pages and a 16-question Student’s Book test with a published answer-key area.</p>",
         "after": "<p>Three prepared lessons: Future Plans, School Challenges and Let’s Discover, each with a published answer-key area.</p>"
@@ -337,6 +483,26 @@
       }
     ],
     "teacher-resources.html": [
+      {
+        "before": "",
+        "after": "            <th scope=\"row\">4 · 3 Daily Routine</th>\n            <td>12</td>\n            <td>Published (independent test)</td>\n            <td>4</td>\n            <td>2</td>\n            <td>None</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">4 · 4 My House</th>\n            <td>12</td>\n            <td>Published (independent test)</td>\n            <td>4</td>\n            <td>4</td>\n            <td>None</td>\n          </tr>\n          <tr>\n"
+      },
+      {
+        "before": "",
+        "after": "          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 3 · Daily Routine</strong>\n              <span>Pupil’s Book pp. 9–11 · Workbook pp. 11–13 · 12-question independent test · answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade4-unit1-lesson3.html\">Lesson menu</a>\n              <a href=\"grade4-unit1-lesson3-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade4-unit1-lesson3-workbook.html\">Workbook</a>\n              <a href=\"grade4-unit1-lesson3-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade4-unit1-lesson3-test.html\">Lesson Test</a>\n              <a href=\"grade4-unit1-lesson3-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">Key type: 12 original items mapped to routine vocabulary, clock time, present-simple forms, reading and sentence construction. Each key gives the expected answer, objective and evidence; test stimuli are newly written. Listening tasks are not scored.</p>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 4 · My House</strong>\n              <span>Pupil’s Book pp. 12–14 · Workbook pp. 14–16 · 12-question independent test · answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade4-unit1-lesson4.html\">Lesson menu</a>\n              <a href=\"grade4-unit1-lesson4-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade4-unit1-lesson4-workbook.html\">Workbook</a>\n              <a href=\"grade4-unit1-lesson4-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade4-unit1-lesson4-test.html\">Lesson Test</a>\n              <a href=\"grade4-unit1-lesson4-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">Key type: 12 original items mapped to house vocabulary, there is/are, new reading and sentence construction. Each key gives the expected answer, objective and evidence; the room list and passage are newly written test stimuli. Listening tasks are not scored.</p>\n"
+      },
+      {
+        "before": "      <span class=\"badge badge-available\">18 lessons · 90 pages</span>\n",
+        "after": "      <span class=\"badge badge-available\">20 lessons · 100 pages</span>\n"
+      },
+      {
+        "before": "        Answer-key areas sit inside sixteen lesson tests and are hidden behind one shared classroom password typed into the\n",
+        "after": "        Answer-key areas sit inside nineteen lesson tests and are hidden behind one shared classroom password typed into the\n"
+      },
+      {
+        "before": "        Fourteen prepared Unit 1 lessons across Grades 3, 4, 5 and 8, each with its book, Workbook, Vocabulary and\n",
+        "after": "        Twenty prepared Unit 1 lessons across Grades 3, 4, 5 and 8, each with its book, Workbook, Vocabulary and\n"
+      },
       {
         "before": "      <span class=\"badge badge-available\">17 lessons · 85 pages</span>\n    </div>\n\n    <section class=\"curriculum-directory\" aria-label=\"Prepared teacher resources by grade\">",
         "after": "      <span class=\"badge badge-available\">18 lessons · 90 pages</span>\n    </div>\n\n    <section class=\"curriculum-directory\" aria-label=\"Prepared teacher resources by grade\">"
