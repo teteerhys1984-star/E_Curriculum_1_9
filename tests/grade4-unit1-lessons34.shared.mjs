@@ -310,9 +310,9 @@ export function validateLesson(lesson) {
   assert.ok(read('round-tests.html').includes(`${base}-test.html`), `round-tests.html: ${base} test must be registered`);
   assert.ok(read('index.html').includes(`${base}.html`), `index.html: ${base} must be directly listed`);
   assert.ok(read('teacher-resources.html').includes(`${base}.html`), `teacher-resources.html: ${base} must be listed for teachers`);
-  assert.ok(read('teacher.html').includes('20</b><span>Prepared lessons'), 'Teacher portal aggregate lesson total');
-  assert.ok(read('teacher.html').includes('100</b><span>Verified lesson pages'), 'Teacher portal aggregate page total');
-  assert.ok(read('teacher.html').includes('19</b><span>Answer-key areas'), 'Teacher portal aggregate key total');
+  assert.ok(read('teacher.html').includes('22</b><span>Prepared lessons'), 'Teacher portal aggregate lesson total');
+  assert.ok(read('teacher.html').includes('110</b><span>Verified lesson pages'), 'Teacher portal aggregate page total');
+  assert.ok(read('teacher.html').includes('21</b><span>Answer-key areas'), 'Teacher portal aggregate key total');
 
   console.log(`PASS Grade 4 Unit 1 Lesson ${lesson}: five registered pages; source/crop hashes; ${expectedVocabulary.total} audited vocabulary entries and references; ${quiz.totalQuestions} quiz questions matched to JSON; curriculum links, limits and key data checked.`);
 }

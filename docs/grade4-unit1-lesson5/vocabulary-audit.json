@@ -1,0 +1,2231 @@
+{
+  "lesson": "Grade 4 · Unit 1 · Lesson 5 · School Subjects",
+  "totals": {
+    "printed": 29,
+    "additional": 80,
+    "expression": 45,
+    "allEntries": 154
+  },
+  "occurrences": {
+    "printed": 92,
+    "additional": 149,
+    "expression": 54,
+    "allReferences": 295
+  },
+  "review": {
+    "status": "complete",
+    "reviewedOn": "2026-11-15",
+    "method": "Page-by-page audit against every preserved source scan. Terms are categorized as explicitly printed lesson vocabulary, additional contextual words, or functional expressions; each has an Arabic learner-support gloss and exact source-image allocation. Original scans remain available alongside typed study notes.",
+    "translationNote": "Arabic meanings are age-appropriate editorial learner-support glosses, not translations printed in the textbook.",
+    "scopeNote": "Character names, ordinary articles and pronouns except where part of a useful expression, isolated numerals, picture-only labels, and blank dotted answer lines are excluded. Workbook Revision 1 is included as printed content on its assigned images. Listening-only content is not transcribed or keyed because no audio/transcript was supplied."
+  },
+  "imageAudit": [
+    {
+      "imageNumber": 1,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 15,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/pupil-book-page-15.png",
+      "sourceSha256": "112e45a66c5193f0e9b2046edb97ed4fdaf00fdbd524ea33b798bf97f5230e89",
+      "printedVocabulary": [
+        "arabic",
+        "science",
+        "geography",
+        "art",
+        "history",
+        "music",
+        "english",
+        "sports",
+        "maths",
+        "boring",
+        "useful",
+        "great",
+        "difficult",
+        "easy",
+        "interesting",
+        "fun",
+        "revision-1",
+        "choose",
+        "complete",
+        "reorder",
+        "match",
+        "tick",
+        "cross",
+        "subject",
+        "favourite"
+      ],
+      "additionalVocabulary": [
+        "school",
+        "good",
+        "love",
+        "like",
+        "favourite-subject",
+        "very-much",
+        "difficult-for",
+        "science-class",
+        "music-class"
+      ],
+      "usefulExpressions": [
+        "what-s-your-favourite-subject",
+        "my-favourite-subject-is",
+        "i-love",
+        "i-like",
+        "i-am-good-at",
+        "is-interesting",
+        "is-useful",
+        "is-fun",
+        "is-easy",
+        "is-difficult",
+        "isn-t-boring",
+        "ask-and-answer",
+        "i-am-not-good-at"
+      ],
+      "counts": {
+        "printed": 25,
+        "additional": 9,
+        "expression": 13
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 2,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 16,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/pupil-book-page-16.png",
+      "sourceSha256": "ee6732fd6dfeea1759b02f8a2bd6761287f06997e86797f2a0484d757909e9ba",
+      "printedVocabulary": [
+        "boring",
+        "useful",
+        "great",
+        "difficult",
+        "interesting",
+        "fun",
+        "match",
+        "tick",
+        "cross",
+        "subject"
+      ],
+      "additionalVocabulary": [
+        "school",
+        "class",
+        "because",
+        "important",
+        "helping",
+        "effect",
+        "life",
+        "want",
+        "do",
+        "easy-to-do",
+        "not-interesting",
+        "in-any-way",
+        "tell",
+        "science-class",
+        "music-class",
+        "river",
+        "sea",
+        "mountain",
+        "hiking",
+        "diving",
+        "activity",
+        "exciting",
+        "shopping",
+        "market",
+        "old"
+      ],
+      "usefulExpressions": [
+        "before-you-read",
+        "read-and-do-the-task"
+      ],
+      "counts": {
+        "printed": 10,
+        "additional": 25,
+        "expression": 2
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 3,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 17,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/pupil-book-page-17.png",
+      "sourceSha256": "655550bcccc9ae6e5af03de0631e5cbf533a86d4bdaf2a69d9bfa5493503fe26",
+      "printedVocabulary": [
+        "fun",
+        "complete",
+        "reorder",
+        "pronunciation",
+        "silent-letters",
+        "subject",
+        "favourite"
+      ],
+      "additionalVocabulary": [
+        "good",
+        "love",
+        "like",
+        "favourite-subject"
+      ],
+      "usefulExpressions": [
+        "write-about-your-favourite-subject"
+      ],
+      "counts": {
+        "printed": 7,
+        "additional": 4,
+        "expression": 1
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 4,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 18,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/pupil-book-page-18.png",
+      "sourceSha256": "cf996dda6b257a0509fdbc177e2a0abe6548e52c001f6a77fbce75adb0e6a76d",
+      "printedVocabulary": [
+        "choose",
+        "tick",
+        "cross"
+      ],
+      "additionalVocabulary": [
+        "school",
+        "like",
+        "usually",
+        "get-up",
+        "early",
+        "italy",
+        "family",
+        "brother",
+        "tall",
+        "thin",
+        "flat",
+        "bedroom",
+        "wardrobe",
+        "wake-up",
+        "morning",
+        "friend",
+        "syria",
+        "years-old",
+        "brown-eyes",
+        "two-brothers"
+      ],
+      "usefulExpressions": [
+        "read-and-choose",
+        "read-and-correct-the-underlined-mistakes",
+        "read-and-unscramble-the-word",
+        "go-to-school",
+        "at-seven-o-clock",
+        "there-is-there-are",
+        "get-years-old",
+        "have-two-brothers"
+      ],
+      "counts": {
+        "printed": 3,
+        "additional": 20,
+        "expression": 8
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 5,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 19,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/pupil-book-page-19.png",
+      "sourceSha256": "f0825a0e8c16462e14073ed699789233ab356731563fddace7287594292aec10",
+      "printedVocabulary": [],
+      "additionalVocabulary": [
+        "bedroom",
+        "wardrobe",
+        "wake-up",
+        "morning",
+        "breakfast",
+        "eye",
+        "blue-eyes",
+        "meet",
+        "nice-to-meet-you",
+        "friend",
+        "years-old",
+        "brown-eyes",
+        "hair"
+      ],
+      "usefulExpressions": [
+        "nice-to-meet-you-5",
+        "there-are-two",
+        "i-usually-have-breakfast-at",
+        "at-seven-o-clock",
+        "there-is-there-are",
+        "look-like",
+        "half-past-six",
+        "i-have-got",
+        "there-aren-t",
+        "two-floors",
+        "what-does-he-look-like",
+        "are-there",
+        "what-time-is-it",
+        "it-s-half-past-six",
+        "i-ve-got",
+        "what-s-your-name"
+      ],
+      "counts": {
+        "printed": 0,
+        "additional": 13,
+        "expression": 16
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 6,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 20,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/pupil-book-page-20.png",
+      "sourceSha256": "f54ed3040220736b404ba3771a6cd348b140d9b62f89e74ffc3ae25eb9262a20",
+      "printedVocabulary": [
+        "identity-card",
+        "project"
+      ],
+      "additionalVocabulary": [
+        "clock",
+        "time",
+        "photo",
+        "thumb-print",
+        "address",
+        "date-of-birth",
+        "weight",
+        "height",
+        "eye-colour",
+        "hair-colour",
+        "glue",
+        "back-to-school"
+      ],
+      "usefulExpressions": [
+        "time-is-important",
+        "let-s-work-together"
+      ],
+      "counts": {
+        "printed": 2,
+        "additional": 12,
+        "expression": 2
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 7,
+      "lesson": 5,
+      "book": "workbook",
+      "sourcePage": 17,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/workbook-page-17.png",
+      "sourceSha256": "0b68e19eb1da77c5fa426c1637d8ce736187632b98b468e928b90e1b54ffd805",
+      "printedVocabulary": [
+        "arabic",
+        "science",
+        "geography",
+        "art",
+        "history",
+        "music",
+        "english",
+        "sports",
+        "maths",
+        "easy",
+        "fun",
+        "choose",
+        "complete",
+        "match",
+        "subject",
+        "favourite"
+      ],
+      "additionalVocabulary": [
+        "school",
+        "love",
+        "like",
+        "favourite-subject",
+        "friend"
+      ],
+      "usefulExpressions": [
+        "read-and-choose"
+      ],
+      "counts": {
+        "printed": 16,
+        "additional": 5,
+        "expression": 1
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 8,
+      "lesson": 5,
+      "book": "workbook",
+      "sourcePage": 18,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/workbook-page-18.png",
+      "sourceSha256": "8c4d268d2b410d9917de566f44c194c4f291eb33f1fc988288facb5bb3e7cc32",
+      "printedVocabulary": [
+        "science",
+        "geography",
+        "art",
+        "music",
+        "english",
+        "sports",
+        "maths",
+        "useful",
+        "difficult",
+        "interesting",
+        "fun",
+        "complete",
+        "tick",
+        "subject",
+        "favourite"
+      ],
+      "additionalVocabulary": [
+        "school",
+        "class",
+        "good",
+        "love",
+        "like",
+        "favourite-subject",
+        "scientist",
+        "grow-up",
+        "experiment",
+        "lab",
+        "happy",
+        "monday",
+        "thursday"
+      ],
+      "usefulExpressions": [
+        "write-about-your-favourite-subject",
+        "i-feel-happy-when",
+        "i-want-to-be-a"
+      ],
+      "counts": {
+        "printed": 15,
+        "additional": 13,
+        "expression": 3
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 9,
+      "lesson": 5,
+      "book": "workbook",
+      "sourcePage": 19,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/workbook-page-19.png",
+      "sourceSha256": "1d6207034da831af56ea231e0dbbd260c626c3193f7d240a1600ae2c9ff479fc",
+      "printedVocabulary": [
+        "science",
+        "geography",
+        "history",
+        "maths",
+        "useful",
+        "easy",
+        "interesting",
+        "fun",
+        "choose",
+        "reorder",
+        "match",
+        "subject",
+        "favourite"
+      ],
+      "additionalVocabulary": [
+        "class",
+        "good",
+        "love",
+        "like",
+        "favourite-subject",
+        "because",
+        "important",
+        "want",
+        "do",
+        "science-class",
+        "scientist",
+        "grow-up",
+        "experiment",
+        "lab",
+        "happy",
+        "monday",
+        "thursday",
+        "usually"
+      ],
+      "usefulExpressions": [
+        "write-about-your-favourite-subject"
+      ],
+      "counts": {
+        "printed": 13,
+        "additional": 18,
+        "expression": 1
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 10,
+      "lesson": 5,
+      "book": "workbook",
+      "sourcePage": 20,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/workbook-page-20.png",
+      "sourceSha256": "5136af9bc6385831115febd91bed1588a14478dc745297f3067a0812fb45d36f",
+      "printedVocabulary": [],
+      "additionalVocabulary": [
+        "usually",
+        "get-up",
+        "early",
+        "brother",
+        "tall",
+        "wake-up",
+        "morning",
+        "breakfast",
+        "eye",
+        "blue-eyes",
+        "syria",
+        "years-old",
+        "blond-hair"
+      ],
+      "usefulExpressions": [
+        "go-to-school",
+        "there-is-there-are",
+        "i-ve-got",
+        "what-s-your-name"
+      ],
+      "counts": {
+        "printed": 0,
+        "additional": 13,
+        "expression": 4
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 11,
+      "lesson": 5,
+      "book": "workbook",
+      "sourcePage": 21,
+      "sourceFile": "assets/grade4-unit1-lesson5/source/workbook-page-21.png",
+      "sourceSha256": "439968ba28a04adfae802c1a19ef324ca81b2327d3900a0ef61ee2a03184bba4",
+      "printedVocabulary": [
+        "reorder"
+      ],
+      "additionalVocabulary": [
+        "usually",
+        "lebanon",
+        "syria",
+        "river",
+        "sea",
+        "mountain",
+        "hiking",
+        "diving",
+        "activity",
+        "exciting",
+        "shopping",
+        "market",
+        "summer",
+        "visit",
+        "grandparent",
+        "usually-go",
+        "old"
+      ],
+      "usefulExpressions": [
+        "every-summer",
+        "it-s-fun-to",
+        "what-do-you-do-in-the-morning"
+      ],
+      "counts": {
+        "printed": 1,
+        "additional": 17,
+        "expression": 3
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    }
+  ],
+  "entries": [
+    {
+      "term": "Arabic",
+      "meaning": "العربية",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        7
+      ],
+      "example": "I love Arabic.",
+      "id": "arabic"
+    },
+    {
+      "term": "science",
+      "meaning": "العلوم",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        7,
+        8,
+        9
+      ],
+      "example": "Science is very interesting for me.",
+      "id": "science"
+    },
+    {
+      "term": "geography",
+      "meaning": "الجغرافيا",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        7,
+        8,
+        9
+      ],
+      "example": "My favourite subject is geography.",
+      "id": "geography"
+    },
+    {
+      "term": "art",
+      "meaning": "الفن",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        7,
+        8
+      ],
+      "example": "I am not good at art.",
+      "id": "art"
+    },
+    {
+      "term": "history",
+      "meaning": "التاريخ",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        7,
+        9
+      ],
+      "example": "I also love history; it is great and important.",
+      "id": "history"
+    },
+    {
+      "term": "music",
+      "meaning": "الموسيقى",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        7,
+        8
+      ],
+      "example": "Music class and sports are fun.",
+      "id": "music"
+    },
+    {
+      "term": "English",
+      "meaning": "اللغة الإنجليزية",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        7,
+        8
+      ],
+      "example": "I like English and Arabic very much.",
+      "id": "english"
+    },
+    {
+      "term": "sports",
+      "meaning": "الرياضة",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        7,
+        8
+      ],
+      "example": "Sports is fun.",
+      "id": "sports"
+    },
+    {
+      "term": "maths",
+      "meaning": "الرياضيات",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        7,
+        8,
+        9
+      ],
+      "example": "Maths isn’t difficult and I like it.",
+      "id": "maths"
+    },
+    {
+      "term": "boring",
+      "meaning": "مملّ",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2
+      ],
+      "example": "not interesting in any way.",
+      "id": "boring"
+    },
+    {
+      "term": "useful",
+      "meaning": "مفيد",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2,
+        8,
+        9
+      ],
+      "example": "helping you to do what you want.",
+      "id": "useful"
+    },
+    {
+      "term": "great",
+      "meaning": "رائع",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2
+      ],
+      "example": "having an effect on people’s lives.",
+      "id": "great"
+    },
+    {
+      "term": "difficult",
+      "meaning": "صعب",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2,
+        8
+      ],
+      "example": "not easy to do.",
+      "id": "difficult"
+    },
+    {
+      "term": "easy",
+      "meaning": "سهل",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        7,
+        9
+      ],
+      "example": "English is easy.",
+      "id": "easy"
+    },
+    {
+      "term": "interesting",
+      "meaning": "ممتع / شيّق",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2,
+        8,
+        9
+      ],
+      "example": "Geography is interesting.",
+      "id": "interesting"
+    },
+    {
+      "term": "fun",
+      "meaning": "ممتع",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "example": "Music class and sports are fun.",
+      "id": "fun"
+    },
+    {
+      "term": "Revision 1",
+      "meaning": "المراجعة الأولى",
+      "category": "printed",
+      "sourceImages": [
+        1
+      ],
+      "example": "Revision 1",
+      "id": "revision-1"
+    },
+    {
+      "term": "choose",
+      "meaning": "يختار",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        4,
+        7,
+        9
+      ],
+      "example": "Read and choose.",
+      "id": "choose"
+    },
+    {
+      "term": "complete",
+      "meaning": "يكمل",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        3,
+        7,
+        8
+      ],
+      "example": "Complete.",
+      "id": "complete"
+    },
+    {
+      "term": "reorder",
+      "meaning": "يرتّب",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        3,
+        9,
+        11
+      ],
+      "example": "Reorder.",
+      "id": "reorder"
+    },
+    {
+      "term": "match",
+      "meaning": "يوصل / يطابق",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2,
+        7,
+        9
+      ],
+      "example": "Before you read, match.",
+      "id": "match"
+    },
+    {
+      "term": "tick",
+      "meaning": "يضع علامة صح",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "example": "Tick (✓) or cross (✗).",
+      "id": "tick"
+    },
+    {
+      "term": "cross",
+      "meaning": "يضع علامة خطأ",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2,
+        4
+      ],
+      "example": "Tick (✓) or cross (✗).",
+      "id": "cross"
+    },
+    {
+      "term": "pronunciation",
+      "meaning": "النطق",
+      "category": "printed",
+      "sourceImages": [
+        3
+      ],
+      "example": "pronunciation (silent letters)",
+      "id": "pronunciation"
+    },
+    {
+      "term": "silent letters",
+      "meaning": "حروف لا تُنطق",
+      "category": "printed",
+      "sourceImages": [
+        3
+      ],
+      "example": "pronunciation (silent letters)",
+      "id": "silent-letters"
+    },
+    {
+      "term": "identity card",
+      "meaning": "بطاقة هوية",
+      "category": "printed",
+      "sourceImages": [
+        6
+      ],
+      "example": "Let’s make our identity card.",
+      "id": "identity-card"
+    },
+    {
+      "term": "project",
+      "meaning": "مشروع",
+      "category": "printed",
+      "sourceImages": [
+        6
+      ],
+      "example": "Project",
+      "id": "project"
+    },
+    {
+      "term": "subject",
+      "meaning": "مادة دراسية",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "example": "My favourite subject is English.",
+      "id": "subject"
+    },
+    {
+      "term": "favourite",
+      "meaning": "المفضّل",
+      "category": "printed",
+      "sourceImages": [
+        1,
+        3,
+        7,
+        8,
+        9
+      ],
+      "example": "What’s your favourite subject?",
+      "id": "favourite"
+    },
+    {
+      "term": "school",
+      "meaning": "مدرسة",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2,
+        4,
+        7,
+        8
+      ],
+      "example": "My school subjects.",
+      "id": "school"
+    },
+    {
+      "term": "class",
+      "meaning": "صفّ / حصة",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        8,
+        9
+      ],
+      "example": "Music class and sports are fun.",
+      "id": "class"
+    },
+    {
+      "term": "good",
+      "meaning": "جيّد / بارع",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        3,
+        8,
+        9
+      ],
+      "example": "I am good at art.",
+      "id": "good"
+    },
+    {
+      "term": "love",
+      "meaning": "يحبّ كثيرًا",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        3,
+        7,
+        8,
+        9
+      ],
+      "example": "I love history.",
+      "id": "love"
+    },
+    {
+      "term": "like",
+      "meaning": "يحبّ",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        3,
+        4,
+        7,
+        8,
+        9
+      ],
+      "example": "I like it.",
+      "id": "like"
+    },
+    {
+      "term": "favourite subject",
+      "meaning": "المادة المفضّلة",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        3,
+        7,
+        8,
+        9
+      ],
+      "example": "What’s your favourite subject?",
+      "id": "favourite-subject"
+    },
+    {
+      "term": "because",
+      "meaning": "لأنّ",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        9
+      ],
+      "example": "I like geography because it is useful.",
+      "id": "because"
+    },
+    {
+      "term": "important",
+      "meaning": "مهمّ",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        9
+      ],
+      "example": "History is great and important.",
+      "id": "important"
+    },
+    {
+      "term": "very much",
+      "meaning": "كثيرًا",
+      "category": "additional",
+      "sourceImages": [
+        1
+      ],
+      "example": "I like English and Arabic very much.",
+      "id": "very-much"
+    },
+    {
+      "term": "difficult for",
+      "meaning": "صعب على",
+      "category": "additional",
+      "sourceImages": [
+        1
+      ],
+      "example": "Maths isn't difficult for Ali.",
+      "id": "difficult-for"
+    },
+    {
+      "term": "helping",
+      "meaning": "مساعدة",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "Useful: helping you to do what you want.",
+      "id": "helping"
+    },
+    {
+      "term": "effect",
+      "meaning": "تأثير",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "having an effect on people's lives.",
+      "id": "effect"
+    },
+    {
+      "term": "life",
+      "meaning": "حياة",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "having an effect on people's lives.",
+      "id": "life"
+    },
+    {
+      "term": "want",
+      "meaning": "يريد",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        9
+      ],
+      "example": "helping you to do what you want.",
+      "id": "want"
+    },
+    {
+      "term": "do",
+      "meaning": "يفعل / يقوم بـ",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        9
+      ],
+      "example": "not easy to do.",
+      "id": "do"
+    },
+    {
+      "term": "easy to do",
+      "meaning": "سهل التنفيذ",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "not easy to do.",
+      "id": "easy-to-do"
+    },
+    {
+      "term": "not interesting",
+      "meaning": "غير ممتع",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "not interesting in any way.",
+      "id": "not-interesting"
+    },
+    {
+      "term": "in any way",
+      "meaning": "على الإطلاق / بأي شكل",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "not interesting in any way.",
+      "id": "in-any-way"
+    },
+    {
+      "term": "tell",
+      "meaning": "يخبر",
+      "category": "additional",
+      "sourceImages": [
+        2
+      ],
+      "example": "I'm going to tell you about my school subjects.",
+      "id": "tell"
+    },
+    {
+      "term": "science class",
+      "meaning": "حصة العلوم",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2,
+        9
+      ],
+      "example": "Science class and sports are fun.",
+      "id": "science-class"
+    },
+    {
+      "term": "music class",
+      "meaning": "حصة الموسيقى",
+      "category": "additional",
+      "sourceImages": [
+        1,
+        2
+      ],
+      "example": "Music class and sports are fun.",
+      "id": "music-class"
+    },
+    {
+      "term": "scientist",
+      "meaning": "عالِم",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        9
+      ],
+      "example": "I want to be a scientist when I grow up.",
+      "id": "scientist"
+    },
+    {
+      "term": "grow up",
+      "meaning": "يكبر",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        9
+      ],
+      "example": "when I grow up.",
+      "id": "grow-up"
+    },
+    {
+      "term": "experiment",
+      "meaning": "تجربة",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        9
+      ],
+      "example": "we go to the lab, because we do experiments.",
+      "id": "experiment"
+    },
+    {
+      "term": "lab",
+      "meaning": "مختبر",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        9
+      ],
+      "example": "we go to the lab.",
+      "id": "lab"
+    },
+    {
+      "term": "happy",
+      "meaning": "سعيد",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        9
+      ],
+      "example": "I feel happy most when we go to the lab.",
+      "id": "happy"
+    },
+    {
+      "term": "Monday",
+      "meaning": "الاثنين",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        9
+      ],
+      "example": "Science is on Monday and Thursday.",
+      "id": "monday"
+    },
+    {
+      "term": "Thursday",
+      "meaning": "الخميس",
+      "category": "additional",
+      "sourceImages": [
+        8,
+        9
+      ],
+      "example": "Science is on Monday and Thursday.",
+      "id": "thursday"
+    },
+    {
+      "term": "usually",
+      "meaning": "عادةً",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        9,
+        10,
+        11
+      ],
+      "example": "I usually get up early.",
+      "id": "usually"
+    },
+    {
+      "term": "get up",
+      "meaning": "ينهض من النوم",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        10
+      ],
+      "example": "I usually get up early.",
+      "id": "get-up"
+    },
+    {
+      "term": "early",
+      "meaning": "مبكرًا",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        10
+      ],
+      "example": "get up early to go to my school.",
+      "id": "early"
+    },
+    {
+      "term": "Italy",
+      "meaning": "إيطاليا",
+      "category": "additional",
+      "sourceImages": [
+        4
+      ],
+      "example": "I live in Italy with my family.",
+      "id": "italy"
+    },
+    {
+      "term": "family",
+      "meaning": "عائلة",
+      "category": "additional",
+      "sourceImages": [
+        4
+      ],
+      "example": "I live in Italy with my family.",
+      "id": "family"
+    },
+    {
+      "term": "brother",
+      "meaning": "أخ",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        10
+      ],
+      "example": "I have two brothers.",
+      "id": "brother"
+    },
+    {
+      "term": "tall",
+      "meaning": "طويل",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        10
+      ],
+      "example": "They are tall and thin.",
+      "id": "tall"
+    },
+    {
+      "term": "thin",
+      "meaning": "نحيف",
+      "category": "additional",
+      "sourceImages": [
+        4
+      ],
+      "example": "They are tall and thin.",
+      "id": "thin"
+    },
+    {
+      "term": "flat",
+      "meaning": "شقة",
+      "category": "additional",
+      "sourceImages": [
+        4
+      ],
+      "example": "a big house / flat",
+      "id": "flat"
+    },
+    {
+      "term": "bedroom",
+      "meaning": "غرفة نوم",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        5
+      ],
+      "example": "There are two beds and a wardrobe in my bedroom.",
+      "id": "bedroom"
+    },
+    {
+      "term": "wardrobe",
+      "meaning": "خزانة ملابس",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        5
+      ],
+      "example": "a wardrobe in my bedroom.",
+      "id": "wardrobe"
+    },
+    {
+      "term": "wake up",
+      "meaning": "يستيقظ",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        5,
+        10
+      ],
+      "example": "Lily always wake up at 7 o’clock.",
+      "id": "wake-up"
+    },
+    {
+      "term": "morning",
+      "meaning": "الصباح",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        5,
+        10
+      ],
+      "example": "at 7 o’clock in the morning.",
+      "id": "morning"
+    },
+    {
+      "term": "breakfast",
+      "meaning": "فطور",
+      "category": "additional",
+      "sourceImages": [
+        5,
+        10
+      ],
+      "example": "I usually have breakfast at 7 o’clock.",
+      "id": "breakfast"
+    },
+    {
+      "term": "eye",
+      "meaning": "عين",
+      "category": "additional",
+      "sourceImages": [
+        5,
+        10
+      ],
+      "example": "She's got blue eyes.",
+      "id": "eye"
+    },
+    {
+      "term": "blue eyes",
+      "meaning": "عينان زرقاوان",
+      "category": "additional",
+      "sourceImages": [
+        5,
+        10
+      ],
+      "example": "She's got blue eyes.",
+      "id": "blue-eyes"
+    },
+    {
+      "term": "meet",
+      "meaning": "يقابل",
+      "category": "additional",
+      "sourceImages": [
+        5
+      ],
+      "example": "Nice to meet you Luna.",
+      "id": "meet"
+    },
+    {
+      "term": "nice to meet you",
+      "meaning": "سعيد بلقائك",
+      "category": "additional",
+      "sourceImages": [
+        5
+      ],
+      "example": "Nice to meet you Luna.",
+      "id": "nice-to-meet-you"
+    },
+    {
+      "term": "friend",
+      "meaning": "صديق",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        5,
+        7
+      ],
+      "example": "I like history but my friend likes English.",
+      "id": "friend"
+    },
+    {
+      "term": "Lebanon",
+      "meaning": "لبنان",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "Lebanon is close to Syria.",
+      "id": "lebanon"
+    },
+    {
+      "term": "Syria",
+      "meaning": "سوريا",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        10,
+        11
+      ],
+      "example": "He lives in Italy, not Syria.",
+      "id": "syria"
+    },
+    {
+      "term": "river",
+      "meaning": "نهر",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        11
+      ],
+      "example": "Lebanon is famous for its rivers, sea and mountains.",
+      "id": "river"
+    },
+    {
+      "term": "sea",
+      "meaning": "بحر",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        11
+      ],
+      "example": "go diving in the sea.",
+      "id": "sea"
+    },
+    {
+      "term": "mountain",
+      "meaning": "جبل",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        11
+      ],
+      "example": "go hiking in the mountains.",
+      "id": "mountain"
+    },
+    {
+      "term": "hiking",
+      "meaning": "المشي في الجبال",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        11
+      ],
+      "example": "go hiking in the mountains.",
+      "id": "hiking"
+    },
+    {
+      "term": "diving",
+      "meaning": "الغوص",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        11
+      ],
+      "example": "go diving in the sea.",
+      "id": "diving"
+    },
+    {
+      "term": "activity",
+      "meaning": "نشاط",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        11
+      ],
+      "example": "exciting activities in Lebanon.",
+      "id": "activity"
+    },
+    {
+      "term": "exciting",
+      "meaning": "مثير",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        11
+      ],
+      "example": "exciting activities in Lebanon.",
+      "id": "exciting"
+    },
+    {
+      "term": "shopping",
+      "meaning": "التسوّق",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        11
+      ],
+      "example": "It’s fun to go shopping in its old markets.",
+      "id": "shopping"
+    },
+    {
+      "term": "market",
+      "meaning": "سوق",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        11
+      ],
+      "example": "its old markets.",
+      "id": "market"
+    },
+    {
+      "term": "summer",
+      "meaning": "الصيف",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "Every summer, I usually go to Lebanon.",
+      "id": "summer"
+    },
+    {
+      "term": "visit",
+      "meaning": "يزور",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "to visit my grandparents.",
+      "id": "visit"
+    },
+    {
+      "term": "grandparent",
+      "meaning": "جدّ / جدّة",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "visit my grandparents.",
+      "id": "grandparent"
+    },
+    {
+      "term": "usually go",
+      "meaning": "يذهب عادةً",
+      "category": "additional",
+      "sourceImages": [
+        11
+      ],
+      "example": "I usually go to Lebanon.",
+      "id": "usually-go"
+    },
+    {
+      "term": "years old",
+      "meaning": "بعمر ... سنة",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        5,
+        10
+      ],
+      "example": "I am 11 years old.",
+      "id": "years-old"
+    },
+    {
+      "term": "old",
+      "meaning": "قديم / عمره",
+      "category": "additional",
+      "sourceImages": [
+        2,
+        11
+      ],
+      "example": "old markets; 11 years old.",
+      "id": "old"
+    },
+    {
+      "term": "brown eyes",
+      "meaning": "عينان بنيّتان",
+      "category": "additional",
+      "sourceImages": [
+        4,
+        5
+      ],
+      "example": "Sally is brown eyes (printed wording).",
+      "id": "brown-eyes"
+    },
+    {
+      "term": "hair",
+      "meaning": "شَعر",
+      "category": "additional",
+      "sourceImages": [
+        5
+      ],
+      "example": "She’s got blue eyes; blond hair appears in Revision.",
+      "id": "hair"
+    },
+    {
+      "term": "blond hair",
+      "meaning": "شعر أشقر",
+      "category": "additional",
+      "sourceImages": [
+        10
+      ],
+      "example": "She’s good (at – in) geography. She (have got – has got) blond hair.",
+      "id": "blond-hair"
+    },
+    {
+      "term": "clock",
+      "meaning": "ساعة",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Let’s work together to make a nice clock.",
+      "id": "clock"
+    },
+    {
+      "term": "time",
+      "meaning": "وقت",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Time is important!",
+      "id": "time"
+    },
+    {
+      "term": "photo",
+      "meaning": "صورة",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Glue photo here.",
+      "id": "photo"
+    },
+    {
+      "term": "thumb print",
+      "meaning": "بصمة الإبهام",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Thumb Print",
+      "id": "thumb-print"
+    },
+    {
+      "term": "address",
+      "meaning": "عنوان",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Address",
+      "id": "address"
+    },
+    {
+      "term": "date of birth",
+      "meaning": "تاريخ الميلاد",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Date of Birth",
+      "id": "date-of-birth"
+    },
+    {
+      "term": "weight",
+      "meaning": "وزن",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Weight",
+      "id": "weight"
+    },
+    {
+      "term": "height",
+      "meaning": "طول / ارتفاع",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Height",
+      "id": "height"
+    },
+    {
+      "term": "eye colour",
+      "meaning": "لون العينين",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Eye Colour",
+      "id": "eye-colour"
+    },
+    {
+      "term": "hair colour",
+      "meaning": "لون الشعر",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Hair Colour",
+      "id": "hair-colour"
+    },
+    {
+      "term": "glue",
+      "meaning": "يلصق / غراء",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Glue photo here.",
+      "id": "glue"
+    },
+    {
+      "term": "back to school",
+      "meaning": "العودة إلى المدرسة",
+      "category": "additional",
+      "sourceImages": [
+        6
+      ],
+      "example": "Back to school…",
+      "id": "back-to-school"
+    },
+    {
+      "term": "What’s your favourite subject?",
+      "meaning": "ما مادتك المفضّلة؟",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "What is your favourite subject?",
+      "id": "what-s-your-favourite-subject"
+    },
+    {
+      "term": "My favourite subject is …",
+      "meaning": "مادتي المفضّلة هي ...",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "My favourite subject is English.",
+      "id": "my-favourite-subject-is"
+    },
+    {
+      "term": "I love …",
+      "meaning": "أنا أحبّ ... كثيرًا",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "I love Arabic.",
+      "id": "i-love"
+    },
+    {
+      "term": "I like …",
+      "meaning": "أنا أحبّ ...",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "I like history.",
+      "id": "i-like"
+    },
+    {
+      "term": "I am good at …",
+      "meaning": "أنا بارع في ...",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "I am good at maths.",
+      "id": "i-am-good-at"
+    },
+    {
+      "term": "… is interesting.",
+      "meaning": "... ممتع / شيّق",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "Geography is interesting.",
+      "id": "is-interesting"
+    },
+    {
+      "term": "… is useful.",
+      "meaning": "... مفيد",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "Science is useful.",
+      "id": "is-useful"
+    },
+    {
+      "term": "… is fun.",
+      "meaning": "... ممتع",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "Sports is fun.",
+      "id": "is-fun"
+    },
+    {
+      "term": "… is easy.",
+      "meaning": "... سهل",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "English is easy.",
+      "id": "is-easy"
+    },
+    {
+      "term": "… is difficult.",
+      "meaning": "... صعب",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "Maths isn’t difficult.",
+      "id": "is-difficult"
+    },
+    {
+      "term": "… isn’t boring.",
+      "meaning": "... ليس مملًا",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "Arabic isn’t boring.",
+      "id": "isn-t-boring"
+    },
+    {
+      "term": "Ask and answer.",
+      "meaning": "اسأل وأجب.",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "Ask and answer.",
+      "id": "ask-and-answer"
+    },
+    {
+      "term": "Before you read …",
+      "meaning": "قبل أن تقرأ ...",
+      "category": "expression",
+      "sourceImages": [
+        2
+      ],
+      "example": "Before you read, match.",
+      "id": "before-you-read"
+    },
+    {
+      "term": "Read and do the task.",
+      "meaning": "اقرأ ونفّذ المهمة.",
+      "category": "expression",
+      "sourceImages": [
+        2
+      ],
+      "example": "Read and do the task.",
+      "id": "read-and-do-the-task"
+    },
+    {
+      "term": "Read and choose.",
+      "meaning": "اقرأ واختر.",
+      "category": "expression",
+      "sourceImages": [
+        4,
+        7
+      ],
+      "example": "Read and choose.",
+      "id": "read-and-choose"
+    },
+    {
+      "term": "Read and correct the underlined mistakes.",
+      "meaning": "اقرأ وصحّح الأخطاء التي تحتها خط.",
+      "category": "expression",
+      "sourceImages": [
+        4
+      ],
+      "example": "Read and correct the underlined mistakes.",
+      "id": "read-and-correct-the-underlined-mistakes"
+    },
+    {
+      "term": "Read and unscramble the word.",
+      "meaning": "اقرأ ورتّب حروف الكلمة.",
+      "category": "expression",
+      "sourceImages": [
+        4
+      ],
+      "example": "Read and unscramble the word.",
+      "id": "read-and-unscramble-the-word"
+    },
+    {
+      "term": "Write about your favourite subject.",
+      "meaning": "اكتب عن مادتك المفضّلة.",
+      "category": "expression",
+      "sourceImages": [
+        3,
+        8,
+        9
+      ],
+      "example": "Write about your favourite subject.",
+      "id": "write-about-your-favourite-subject"
+    },
+    {
+      "term": "I am not good at …",
+      "meaning": "أنا لست بارعًا في ...",
+      "category": "expression",
+      "sourceImages": [
+        1
+      ],
+      "example": "I am not good at art.",
+      "id": "i-am-not-good-at"
+    },
+    {
+      "term": "I feel happy when …",
+      "meaning": "أشعر بالسعادة عندما ...",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "I feel happy most when we go to the lab.",
+      "id": "i-feel-happy-when"
+    },
+    {
+      "term": "I want to be a …",
+      "meaning": "أريد أن أصبح ...",
+      "category": "expression",
+      "sourceImages": [
+        8
+      ],
+      "example": "I want to be a scientist when I grow up.",
+      "id": "i-want-to-be-a"
+    },
+    {
+      "term": "Time is important!",
+      "meaning": "الوقت مهمّ!",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "Time is important!",
+      "id": "time-is-important"
+    },
+    {
+      "term": "Let’s work together.",
+      "meaning": "لنعمل معًا.",
+      "category": "expression",
+      "sourceImages": [
+        6
+      ],
+      "example": "Let’s work together to make a nice clock.",
+      "id": "let-s-work-together"
+    },
+    {
+      "term": "Nice to meet you.",
+      "meaning": "سعيد بلقائك.",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "Nice to meet you Luna.",
+      "id": "nice-to-meet-you-5"
+    },
+    {
+      "term": "There are two …",
+      "meaning": "يوجد ... اثنان.",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "There are two beds and a wardrobe in my bedroom.",
+      "id": "there-are-two"
+    },
+    {
+      "term": "I usually have breakfast at …",
+      "meaning": "أتناول الفطور عادةً عند ...",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "I usually have breakfast at 7 o’clock.",
+      "id": "i-usually-have-breakfast-at"
+    },
+    {
+      "term": "Every summer, …",
+      "meaning": "في كل صيف، ...",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "Every summer, I usually go to Lebanon.",
+      "id": "every-summer"
+    },
+    {
+      "term": "It’s fun to …",
+      "meaning": "من الممتع أن ...",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "It’s fun to go shopping in its old markets.",
+      "id": "it-s-fun-to"
+    },
+    {
+      "term": "go to school",
+      "meaning": "يذهب إلى المدرسة",
+      "category": "expression",
+      "sourceImages": [
+        4,
+        10
+      ],
+      "example": "get up early to go to my school.",
+      "id": "go-to-school"
+    },
+    {
+      "term": "at seven o’clock",
+      "meaning": "عند الساعة السابعة",
+      "category": "expression",
+      "sourceImages": [
+        4,
+        5
+      ],
+      "example": "Lily always wake up at 7 o’clock in the morning.",
+      "id": "at-seven-o-clock"
+    },
+    {
+      "term": "There is / There are",
+      "meaning": "يوجد / توجد",
+      "category": "expression",
+      "sourceImages": [
+        4,
+        5,
+        10
+      ],
+      "example": "There is two beds and a wardrobe in my bedroom (printed wording).",
+      "id": "there-is-there-are"
+    },
+    {
+      "term": "get ... years old",
+      "meaning": "يبلغ من العمر ... سنة",
+      "category": "expression",
+      "sourceImages": [
+        4
+      ],
+      "example": "I am 11 years old.",
+      "id": "get-years-old"
+    },
+    {
+      "term": "look like",
+      "meaning": "يبدو شكله",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "What does he look like?",
+      "id": "look-like"
+    },
+    {
+      "term": "half past six",
+      "meaning": "السادسة والنصف",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "It’s half past six.",
+      "id": "half-past-six"
+    },
+    {
+      "term": "I have got …",
+      "meaning": "لديّ ...",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "I’ve got two brothers.",
+      "id": "i-have-got"
+    },
+    {
+      "term": "There aren’t …",
+      "meaning": "لا يوجد ...",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "No, there aren’t. There are two beds.",
+      "id": "there-aren-t"
+    },
+    {
+      "term": "two floors",
+      "meaning": "طابقان",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "There are two floors in my house.",
+      "id": "two-floors"
+    },
+    {
+      "term": "have two brothers",
+      "meaning": "لديّ أخوان",
+      "category": "expression",
+      "sourceImages": [
+        4
+      ],
+      "example": "I have two brothers, John and Carlos.",
+      "id": "have-two-brothers"
+    },
+    {
+      "term": "two brothers",
+      "meaning": "أخوان",
+      "category": "additional",
+      "sourceImages": [
+        4
+      ],
+      "example": "I have two brothers, John and Carlos.",
+      "id": "two-brothers"
+    },
+    {
+      "term": "what does he look like?",
+      "meaning": "كيف يبدو شكله؟",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "What does he look like?",
+      "id": "what-does-he-look-like"
+    },
+    {
+      "term": "Are there …?",
+      "meaning": "هل يوجد ...؟",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "Are there sofas in your bedroom?",
+      "id": "are-there"
+    },
+    {
+      "term": "What time is it?",
+      "meaning": "كم الساعة؟",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "What time is it?",
+      "id": "what-time-is-it"
+    },
+    {
+      "term": "It’s half past six.",
+      "meaning": "الساعة السادسة والنصف.",
+      "category": "expression",
+      "sourceImages": [
+        5
+      ],
+      "example": "It’s half past six.",
+      "id": "it-s-half-past-six"
+    },
+    {
+      "term": "I’ve got …",
+      "meaning": "لديّ ...",
+      "category": "expression",
+      "sourceImages": [
+        5,
+        10
+      ],
+      "example": "I’ve got two brothers.",
+      "id": "i-ve-got"
+    },
+    {
+      "term": "What’s your name?",
+      "meaning": "ما اسمك؟",
+      "category": "expression",
+      "sourceImages": [
+        5,
+        10
+      ],
+      "example": "What’s your name?",
+      "id": "what-s-your-name"
+    },
+    {
+      "term": "What do you do in the morning?",
+      "meaning": "ماذا تفعل في الصباح؟",
+      "category": "expression",
+      "sourceImages": [
+        11
+      ],
+      "example": "What do you do in the morning?",
+      "id": "what-do-you-do-in-the-morning"
+    }
+  ]
+}
