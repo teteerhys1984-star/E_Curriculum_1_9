@@ -9,11 +9,53 @@ const json=f=>JSON.parse(read(f));
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
 const plain=s=>String(s).replace(/<[^>]*>/g,'').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;|&#x27;/gi,"'").replace(/\s+/g,' ').trim();
 const allocations={5:{uploads:[1,2,3,4,5,6,7,8,9,10,11],pupil:[1,2,3,4,5,6],workbook:[7,8,9,10,11],pages:{1:15,2:16,3:17,4:18,5:19,6:20,7:17,8:18,9:19,10:20,11:21},title:'School Subjects'},6:{uploads:[12,13,14,15,16,17],pupil:[12,13,14],workbook:[15,16,17],pages:{12:21,13:22,14:23,15:22,16:23,17:24},title:'Where I Live'}};
+function pngDimensions(bytes,label){assert.ok(bytes.length>=24&&bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),`${label}: invalid PNG`);return[bytes.readUInt32BE(16),bytes.readUInt32BE(20)];}
+export function validateCropAssets({manifest,cropsDirectory,rootDirectory=root,sourceImages=[],lessonHtml=''}){
+ assert.ok(manifest&&Number.isInteger(manifest.cropCount),`crop manifest must explicitly declare cropCount`);
+ assert.ok(Array.isArray(manifest.crops),`crop manifest crops must be an array`);
+ assert.equal(manifest.cropCount,manifest.crops.length,`crop manifest count must match its entries`);
+ const directoryExists=fs.existsSync(cropsDirectory);
+ if(manifest.cropCount===0){
+  if(!directoryExists)return;
+  assert.ok(fs.statSync(cropsDirectory).isDirectory(),`${cropsDirectory}: expected crop directory`);
+  assert.deepEqual(fs.readdirSync(cropsDirectory),[],`${cropsDirectory}: unexpected files for zero declared crops`);
+  return;
+ }
+ assert.ok(directoryExists&&fs.statSync(cropsDirectory).isDirectory(),`${cropsDirectory}: declared crops require an existing directory`);
+ const directory=path.resolve(cropsDirectory);
+ const entries=manifest.crops.map(crop=>{
+  const file=path.resolve(rootDirectory,crop.file);
+  assert.equal(path.dirname(file),directory,`${crop.file}: crop must be directly inside its manifest directory`);
+  return{crop,file,name:path.basename(file)};
+ });
+ const names=entries.map(entry=>entry.name);
+ assert.equal(new Set(names).size,names.length,`${cropsDirectory}: duplicate crop filenames`);
+ assert.deepEqual(fs.readdirSync(cropsDirectory).sort(),[...names].sort(),`${cropsDirectory}: directory files must exactly match the crop manifest`);
+ const sources=new Map(sourceImages.map(source=>[source.uploadIndex,source]));
+ for(const {crop,file} of entries){
+  assert.ok(fs.statSync(file).isFile(),`${crop.file}: declared crop must be a regular file`);
+  const bytes=fs.readFileSync(file);
+  assert.equal(sha(bytes),crop.sha256,`${crop.file}: crop SHA-256 mismatch`);
+  assert.ok(Number.isInteger(crop.width)&&crop.width>0&&Number.isInteger(crop.height)&&crop.height>0,`${crop.file}: invalid manifest dimensions`);
+  assert.deepEqual(pngDimensions(bytes,crop.file),[crop.width,crop.height],`${crop.file}: crop dimensions mismatch`);
+  if(crop.sourceImageNumber!==undefined){
+   const source=sources.get(crop.sourceImageNumber);
+   assert.ok(source,`${crop.file}: references an unknown source image`);
+   assert.equal(crop.sourceFile,source.file,`${crop.file}: source file mapping mismatch`);
+   const bounds=crop.sourceBounds;
+   assert.ok(bounds&&Number.isInteger(bounds.x)&&Number.isInteger(bounds.y)&&Number.isInteger(bounds.width)&&Number.isInteger(bounds.height),`${crop.file}: missing or invalid crop bounds`);
+   assert.ok(bounds.x>=0&&bounds.y>=0&&bounds.width>0&&bounds.height>0,`${crop.file}: invalid crop bounds`);
+   assert.ok(bounds.x+bounds.width<=source.width&&bounds.y+bounds.height<=source.height,`${crop.file}: crop bounds exceed source dimensions`);
+   assert.deepEqual([crop.width,crop.height],[bounds.width,bounds.height],`${crop.file}: crop dimensions do not match source bounds`);
+  }
+  if(lessonHtml)assert.ok(lessonHtml.includes(crop.file),`${crop.file}: declared crop is not used by lesson content`);
+ }
+}
 export function validateLesson(lesson){
  assert.ok([5,6].includes(lesson));const base=`grade4-unit1-lesson${lesson}`, alloc=allocations[lesson];
  const manifest=json(`assets/${base}/source-manifest.json`);assert.deepEqual(manifest.images.map(x=>x.uploadIndex),alloc.uploads);
  for(const im of manifest.images){const data=fs.readFileSync(path.join(root,im.file));assert.equal(data.length,im.bytes,`${im.file} byte count`);assert.equal(sha(data),im.sha256,`${im.file} SHA-256`);assert.equal(im.lesson,lesson);assert.equal(im.sourcePage,alloc.pages[im.uploadIndex]);assert.equal(im.book,alloc.pupil.includes(im.uploadIndex)?'pupil-book':'workbook');assert.equal(sha(data),im.sha256,`${im.file} preserved source bytes`);}
- const crops=json(`assets/${base}/crops-manifest.json`);assert.equal(crops.cropCount,0);assert.deepEqual(crops.crops,[]);assert.equal(fs.readdirSync(path.join(root,`assets/${base}/crops`)).filter(x=>x.endsWith('.png')).length,0);
+ const crops=json(`assets/${base}/crops-manifest.json`);const lessonHtml=fs.readdirSync(root).filter(file=>file.startsWith(`${base}`)&&file.endsWith('.html')).map(read).join('\n');validateCropAssets({manifest:crops,cropsDirectory:path.join(root,`assets/${base}/crops`),rootDirectory:root,sourceImages:manifest.images,lessonHtml});
  const audit=json(`docs/${base}/vocabulary-audit.json`);assert.equal(audit.review.status,'complete');assert.equal(audit.imageAudit.length,alloc.uploads.length);assert.equal(audit.entries.length,audit.totals.allEntries);
  const cats={printed:0,additional:0,expression:0};const ids=new Set(),terms=new Set();
  for(const e of audit.entries){assert.ok(e.id&&e.term&&e.meaning&&e.example);assert.ok(!ids.has(e.id));assert.ok(!terms.has(e.term.toLocaleLowerCase('en')));assert.match(e.meaning,/\p{Script=Arabic}/u);assert.ok(e.sourceImages.length);assert.ok(['printed','additional','expression'].includes(e.category));ids.add(e.id);terms.add(e.term.toLocaleLowerCase('en'));cats[e.category]++;for(const i of e.sourceImages)assert.ok(alloc.uploads.includes(i));}
