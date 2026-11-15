@@ -1,0 +1,76 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+import { fileURLToPath } from 'node:url';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const read=f=>fs.readFileSync(path.join(root,f),'utf8');
+const json=f=>JSON.parse(read(f));
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+const plain=s=>String(s).replace(/<[^>]*>/g,'').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;|&#x27;/gi,"'").replace(/\s+/g,' ').trim();
+const allocations={5:{uploads:[1,2,3,4,5,6,7,8,9,10,11],pupil:[1,2,3,4,5,6],workbook:[7,8,9,10,11],pages:{1:15,2:16,3:17,4:18,5:19,6:20,7:17,8:18,9:19,10:20,11:21},title:'School Subjects'},6:{uploads:[12,13,14,15,16,17],pupil:[12,13,14],workbook:[15,16,17],pages:{12:21,13:22,14:23,15:22,16:23,17:24},title:'Where I Live'}};
+function pngDimensions(bytes,label){assert.ok(bytes.length>=24&&bytes.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),`${label}: invalid PNG`);return[bytes.readUInt32BE(16),bytes.readUInt32BE(20)];}
+export function validateCropAssets({manifest,cropsDirectory,rootDirectory=root,sourceImages=[],lessonHtml=''}){
+ assert.ok(manifest&&Number.isInteger(manifest.cropCount),`crop manifest must explicitly declare cropCount`);
+ assert.ok(Array.isArray(manifest.crops),`crop manifest crops must be an array`);
+ assert.equal(manifest.cropCount,manifest.crops.length,`crop manifest count must match its entries`);
+ const directoryExists=fs.existsSync(cropsDirectory);
+ if(manifest.cropCount===0){
+  if(!directoryExists)return;
+  assert.ok(fs.statSync(cropsDirectory).isDirectory(),`${cropsDirectory}: expected crop directory`);
+  assert.deepEqual(fs.readdirSync(cropsDirectory),[],`${cropsDirectory}: unexpected files for zero declared crops`);
+  return;
+ }
+ assert.ok(directoryExists&&fs.statSync(cropsDirectory).isDirectory(),`${cropsDirectory}: declared crops require an existing directory`);
+ const directory=path.resolve(cropsDirectory);
+ const entries=manifest.crops.map(crop=>{
+  const file=path.resolve(rootDirectory,crop.file);
+  assert.equal(path.dirname(file),directory,`${crop.file}: crop must be directly inside its manifest directory`);
+  return{crop,file,name:path.basename(file)};
+ });
+ const names=entries.map(entry=>entry.name);
+ assert.equal(new Set(names).size,names.length,`${cropsDirectory}: duplicate crop filenames`);
+ assert.deepEqual(fs.readdirSync(cropsDirectory).sort(),[...names].sort(),`${cropsDirectory}: directory files must exactly match the crop manifest`);
+ const sources=new Map(sourceImages.map(source=>[source.uploadIndex,source]));
+ for(const {crop,file} of entries){
+  assert.ok(fs.statSync(file).isFile(),`${crop.file}: declared crop must be a regular file`);
+  const bytes=fs.readFileSync(file);
+  assert.equal(sha(bytes),crop.sha256,`${crop.file}: crop SHA-256 mismatch`);
+  assert.ok(Number.isInteger(crop.width)&&crop.width>0&&Number.isInteger(crop.height)&&crop.height>0,`${crop.file}: invalid manifest dimensions`);
+  assert.deepEqual(pngDimensions(bytes,crop.file),[crop.width,crop.height],`${crop.file}: crop dimensions mismatch`);
+  if(crop.sourceImageNumber!==undefined){
+   const source=sources.get(crop.sourceImageNumber);
+   assert.ok(source,`${crop.file}: references an unknown source image`);
+   assert.equal(crop.sourceFile,source.file,`${crop.file}: source file mapping mismatch`);
+   const bounds=crop.sourceBounds;
+   assert.ok(bounds&&Number.isInteger(bounds.x)&&Number.isInteger(bounds.y)&&Number.isInteger(bounds.width)&&Number.isInteger(bounds.height),`${crop.file}: missing or invalid crop bounds`);
+   assert.ok(bounds.x>=0&&bounds.y>=0&&bounds.width>0&&bounds.height>0,`${crop.file}: invalid crop bounds`);
+   assert.ok(bounds.x+bounds.width<=source.width&&bounds.y+bounds.height<=source.height,`${crop.file}: crop bounds exceed source dimensions`);
+   assert.deepEqual([crop.width,crop.height],[bounds.width,bounds.height],`${crop.file}: crop dimensions do not match source bounds`);
+  }
+  if(lessonHtml)assert.ok(lessonHtml.includes(crop.file),`${crop.file}: declared crop is not used by lesson content`);
+ }
+}
+export function validateLesson(lesson){
+ assert.ok([5,6].includes(lesson));const base=`grade4-unit1-lesson${lesson}`, alloc=allocations[lesson];
+ const manifest=json(`assets/${base}/source-manifest.json`);assert.deepEqual(manifest.images.map(x=>x.uploadIndex),alloc.uploads);
+ for(const im of manifest.images){const data=fs.readFileSync(path.join(root,im.file));assert.equal(data.length,im.bytes,`${im.file} byte count`);assert.equal(sha(data),im.sha256,`${im.file} SHA-256`);assert.equal(im.lesson,lesson);assert.equal(im.sourcePage,alloc.pages[im.uploadIndex]);assert.equal(im.book,alloc.pupil.includes(im.uploadIndex)?'pupil-book':'workbook');assert.equal(sha(data),im.sha256,`${im.file} preserved source bytes`);}
+ const crops=json(`assets/${base}/crops-manifest.json`);const lessonHtml=fs.readdirSync(root).filter(file=>file.startsWith(`${base}`)&&file.endsWith('.html')).map(read).join('\n');validateCropAssets({manifest:crops,cropsDirectory:path.join(root,`assets/${base}/crops`),rootDirectory:root,sourceImages:manifest.images,lessonHtml});
+ const audit=json(`docs/${base}/vocabulary-audit.json`);assert.equal(audit.review.status,'complete');assert.equal(audit.imageAudit.length,alloc.uploads.length);assert.equal(audit.entries.length,audit.totals.allEntries);
+ const cats={printed:0,additional:0,expression:0};const ids=new Set(),terms=new Set();
+ for(const e of audit.entries){assert.ok(e.id&&e.term&&e.meaning&&e.example);assert.ok(!ids.has(e.id));assert.ok(!terms.has(e.term.toLocaleLowerCase('en')));assert.match(e.meaning,/\p{Script=Arabic}/u);assert.ok(e.sourceImages.length);assert.ok(['printed','additional','expression'].includes(e.category));ids.add(e.id);terms.add(e.term.toLocaleLowerCase('en'));cats[e.category]++;for(const i of e.sourceImages)assert.ok(alloc.uploads.includes(i));}
+ assert.deepEqual(audit.totals,{...cats,allEntries:audit.entries.length});assert.equal(audit.totals.allEntries,cats.printed+cats.additional+cats.expression);
+ const source=new Map(manifest.images.map(x=>[x.uploadIndex,x]));for(const im of audit.imageAudit){assert.ok(source.has(im.imageNumber));const src=source.get(im.imageNumber);assert.equal(im.sourceFile,src.file);assert.equal(im.sourceSha256,src.sha256);assert.equal(im.book,src.book);assert.equal(im.sourcePage,src.sourcePage);for(const [category,key] of [['printed','printedVocabulary'],['additional','additionalVocabulary'],['expression','usefulExpressions']]){const expected=audit.entries.filter(e=>e.category===category&&e.sourceImages.includes(im.imageNumber)).map(e=>e.id).sort();assert.deepEqual([...im[key]].sort(),expected);assert.equal(im.counts[category],expected.length);}assert.equal(im.arabicTranslationConfirmed,true);assert.ok(im.excludedContent);}
+ const vocab=read(`${base}-vocabulary.html`);const rows=[...vocab.matchAll(/<tr data-entry-id="([^"]+)"[^>]*>([\s\S]*?)<\/tr>/g)];assert.equal(rows.length,audit.entries.length);assert.equal(new Set(rows.map(x=>x[1])).size,rows.length);for(const [,id,row] of rows){const e=audit.entries.find(x=>x.id===id);assert.ok(e);const cells=[...row.matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/g)].map(x=>plain(x[1]));assert.equal(cells.length,4);assert.equal(plain(cells[0]),e.term);assert.equal(plain(cells[1]),e.meaning);assert.equal(plain(cells[2]),e.example);assert.ok(row.includes('class="ar" lang="ar" dir="rtl"'));}
+ for(const cat of ['printed','additional','expression']){const section=vocab.match(new RegExp(`<section class="panel" id="vocab-${cat}">([\\s\\S]*?)<\\/section>`))?.[1];assert.ok(section);assert.equal((section.match(/<tr data-entry-id=/g)||[]).length,cats[cat]);}
+ const files=[`${base}.html`,`${base}-pupil-book.html`,`${base}-workbook.html`,`${base}-vocabulary.html`,`${base}-test.html`];for(const file of files){const h=read(file);assert.match(h,/<html lang="en" dir="ltr">/);assert.match(h,/<main class="wrap"/);assert.ok(h.includes(`data-lesson-nav="${base}"`));assert.ok(h.includes('design-system.css'));assert.ok(!/localhost|127\.0\.0\.1|<audio\b/i.test(h));if(file!==`${base}.html`){assert.ok(h.includes('lesson-content-navigation.js'));if(file.endsWith('-vocabulary.html'))assert.ok(h.includes(`src="${base}.js"`),`${file}: interactive vocabulary script`);assert.equal((h.match(/class="section-link"/g)||[]).length,5);for(const s of ['','-pupil-book','-workbook','-vocabulary','-test'])assert.ok(h.includes(`${base}${s}.html`));}}
+ const menu=read(`${base}.html`);assert.equal((menu.match(/class="card"/g)||[]).length,4);assert.ok(menu.includes(`${audit.entries.length} vocabulary entries`));
+ for(const [book,prefix,nums] of [['pupil-book','pb',alloc.pupil],['workbook','wb',alloc.workbook]]){const h=read(`${base}-${book}.html`),count=nums.length;assert.deepEqual([...h.matchAll(new RegExp(`<section class="panel" id="${prefix}-(\\d+)"`,'g'))].map(x=>Number(x[1])),Array.from({length:count},(_,i)=>i+1));const srcIds=[...h.matchAll(/<img class="source-scan" src="([^"]+)"/g)].map(x=>x[1]);assert.equal(srcIds.length,count);assert.equal((h.match(/class="source-transcription"/g)||[]).length,count,`${base}-${book}: every source page has an accessible text transcription`);for(const i of nums){const im=source.get(i);assert.ok(h.includes(`src="${im.file}"`));}}
+ const quiz=json(`tests/${base}.quiz.json`),test=read(`${base}-test.html`);assert.equal(quiz.totalQuestions,12);assert.equal(quiz.questions.length,12);assert.equal(quiz.policy,'independent-lesson-test-v1');assert.equal(quiz.questions.filter(q=>q.format==='short-answer'||q.format==='sentence-construction').every(q=>q.accepted?.includes(q.correct)),true);
+ assert.equal((test.match(/<section class="question"/g)||[]).length,12);assert.match(test,/id="answer-guide" hidden/);assert.match(test,/id="teacher-key"/);assert.match(test,/id="reset-test"/);assert.match(test,/id="check-answers"/);assert.match(test,/id="test-save-status"/);assert.match(test,/data-objective=/);for(const q of quiz.questions){const block=test.match(new RegExp(`<section class="question" id="${q.id}"([^>]*)>([\\s\\S]*?)<\\/section>`));assert.ok(block,`${q.id} block`);assert.ok(block[1].includes(`data-objective="${q.objective}"`));assert.ok(block[1].includes(`data-correct="${String(q.correct).replaceAll('&','&amp;').replaceAll('"','&quot;')}"`));assert.ok(plain(block[2].match(/<h2[^>]*>([\s\S]*?)<\/h2>/)?.[1]).replace(/^\d+\.\s*/, '')===q.prompt);if(q.options)assert.deepEqual([...block[2].matchAll(/<label class="option"[^>]*>([\s\S]*?)<\/label>/g)].map(x=>plain(x[1])),q.options);assert.ok(q.evidence&&q.objectiveLabel);if(q.stimulus)assert.ok(quiz.stimuli.some(s=>s.id===q.stimulus));assert.ok(quiz.objectives.includes(q.objective),`${q.id}: declared objective`);if(typeof q.correct!=='number'){assert.ok(q.accepted?.includes(q.correct),`${q.id}: canonical response accepted`);assert.ok(q.wrongSample&&!q.accepted.includes(q.wrongSample),`${q.id}: known wrong sample rejected`);}}
+ const usedStimuli=new Set(quiz.questions.map(q=>q.stimulus).filter(Boolean));assert.deepEqual([...usedStimuli].sort(),quiz.stimuli.map(s=>s.id).sort());
+ for(const s of quiz.stimuli){assert.ok(!test.includes('assets/grade4-unit1'));assert.ok(s.description.toLowerCase().includes('original')||s.description.toLowerCase().includes('fictional')||s.description.toLowerCase().includes('independent passage')||s.description.toLowerCase().includes('only for this assessment'));if(s.rows){assert.ok(s.headers.length>1);assert.ok(s.rows.every(r=>r.length===s.headers.length));}else assert.ok(s.text);}
+ const textbookPhrases=['What is your favourite subject?','I live in the country.','I am good at art.','Read and choose.','Write about where you like to live.'];for(const phrase of textbookPhrases)assert.ok(!test.includes(phrase),`Independent test must not copy textbook wording: ${phrase}`);
+ assert.ok(read('lessons.html').includes(`${base}.html`));assert.ok(read('index.html').includes(`${base}.html`));assert.ok(read('teacher-resources.html').includes(`${base}.html`));assert.ok(read('round-tests.html').includes(`${base}-test.html`));
+ console.log(`PASS Grade 4 Unit 1 Lesson ${lesson}: ${files.length} pages; ${manifest.images.length} byte-identical scans; ${audit.totals.allEntries} audited entries (${cats.printed}/${cats.additional}/${cats.expression}); 12 independent mapped test items.`);
+}

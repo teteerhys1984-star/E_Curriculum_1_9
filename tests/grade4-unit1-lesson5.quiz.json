@@ -1,0 +1,237 @@
+{
+  "lesson": "grade4-unit1-lesson5",
+  "title": "Grade 4 Unit 1 Lesson 5: independent test",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 12,
+  "objectives": [
+    "school-subjects",
+    "read-a-new-calendar",
+    "adjectives-for-subjects",
+    "read-new-passage",
+    "subject-adjectives",
+    "adjective-meaning",
+    "present-simple-revision",
+    "sentence-construction",
+    "guided-writing"
+  ],
+  "stimuli": [
+    {
+      "id": "class-list",
+      "title": "A school-subject list made for this test",
+      "description": "A fictional list with new names, written for this assessment and not copied from the book.",
+      "headers": [
+        "Name",
+        "Subject",
+        "Day"
+      ],
+      "rows": [
+        [
+          "Mina",
+          "Science",
+          "Monday"
+        ],
+        [
+          "Omar",
+          "Art",
+          "Thursday"
+        ],
+        [
+          "Rami",
+          "Geography",
+          "Monday"
+        ]
+      ]
+    },
+    {
+      "id": "original-note",
+      "title": "A new note about subjects",
+      "description": "A short new passage written only for this assessment.",
+      "text": "Rana likes science. She says art is fun. Science is useful for her. History is difficult for her."
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "What subject is matched with Rami?",
+      "correct": 2,
+      "objective": "school-subjects",
+      "objectiveLabel": "Identify school subjects in a new table.",
+      "evidence": "Rami’s row in the new list says Geography.",
+      "format": "multiple-choice",
+      "options": [
+        "Art",
+        "Science",
+        "Geography"
+      ],
+      "stimulus": "class-list",
+      "number": 1,
+      "id": "q1"
+    },
+    {
+      "prompt": "What day is shown in Mina’s row?",
+      "correct": 0,
+      "objective": "read-a-new-calendar",
+      "objectiveLabel": "Read a day from an original table.",
+      "evidence": "Mina’s row shows Monday.",
+      "format": "multiple-choice",
+      "options": [
+        "Monday",
+        "Thursday",
+        "Wednesday"
+      ],
+      "stimulus": "class-list",
+      "number": 2,
+      "id": "q2"
+    },
+    {
+      "prompt": "Which adjective does Rana use for art?",
+      "correct": 0,
+      "objective": "adjectives-for-subjects",
+      "objectiveLabel": "Match subject opinions with taught adjectives.",
+      "evidence": "The new note says art is fun.",
+      "format": "multiple-choice",
+      "options": [
+        "fun",
+        "difficult",
+        "boring"
+      ],
+      "stimulus": "original-note",
+      "number": 3,
+      "id": "q3"
+    },
+    {
+      "prompt": "Which subject does Rana call useful?",
+      "correct": 1,
+      "objective": "read-new-passage",
+      "objectiveLabel": "Find a stated reason in an original passage.",
+      "evidence": "The new note states that science is useful for Rana.",
+      "format": "multiple-choice",
+      "options": [
+        "Art",
+        "Science",
+        "History"
+      ],
+      "stimulus": "original-note",
+      "number": 4,
+      "id": "q4"
+    },
+    {
+      "prompt": "Which subject does Rana find difficult?",
+      "correct": 2,
+      "objective": "read-new-passage",
+      "objectiveLabel": "Identify a subject and opinion in a new passage.",
+      "evidence": "The new note says history is difficult for Rana.",
+      "format": "multiple-choice",
+      "options": [
+        "Art",
+        "Science",
+        "History"
+      ],
+      "stimulus": "original-note",
+      "number": 5,
+      "id": "q5"
+    },
+    {
+      "prompt": "Choose the correct form: “Music and art ___ fun for our class.”",
+      "correct": 2,
+      "objective": "subject-adjectives",
+      "objectiveLabel": "Choose the singular present form in a new school context.",
+      "evidence": "The plural subject joined by “and” takes “are”.",
+      "format": "multiple-choice",
+      "options": [
+        "is",
+        "am",
+        "are"
+      ],
+      "number": 6,
+      "id": "q6"
+    },
+    {
+      "prompt": "Which adjective gives a positive opinion about a school subject?",
+      "correct": 0,
+      "objective": "subject-adjectives",
+      "objectiveLabel": "Select an adjective that fits a clear context.",
+      "evidence": "“Useful” expresses a positive value; “boring” and “difficult” do not.",
+      "format": "multiple-choice",
+      "options": [
+        "useful",
+        "boring",
+        "difficult"
+      ],
+      "number": 7,
+      "id": "q7"
+    },
+    {
+      "prompt": "A learner says a film does not interest him. Which word best describes the film?",
+      "correct": 0,
+      "objective": "adjective-meaning",
+      "objectiveLabel": "Choose an adjective from a new situation.",
+      "evidence": "A boring thing is not interesting.",
+      "format": "multiple-choice",
+      "options": [
+        "boring",
+        "useful",
+        "interesting"
+      ],
+      "number": 8,
+      "id": "q8"
+    },
+    {
+      "prompt": "Choose the sentence that is correct for a made-up learner named Mina.",
+      "correct": 2,
+      "objective": "present-simple-revision",
+      "objectiveLabel": "Apply the taught third-person present form in a new example.",
+      "evidence": "The third-person singular form takes -s: Mina likes geography after school.",
+      "format": "multiple-choice",
+      "options": [
+        "Mina like geography after school.",
+        "Mina liking geography after school.",
+        "Mina likes geography after school."
+      ],
+      "number": 9,
+      "id": "q9"
+    },
+    {
+      "prompt": "Rewrite with the missing word: “I ___ music because it is fun.”",
+      "correct": "like",
+      "objective": "sentence-construction",
+      "objectiveLabel": "Construct a taught preference sentence.",
+      "evidence": "“I like …” is a taught preference frame.",
+      "format": "sentence-construction",
+      "accepted": [
+        "like",
+        "I like music because it is fun."
+      ],
+      "wrongSample": "likes",
+      "number": 10,
+      "id": "q10"
+    },
+    {
+      "prompt": "Complete the new sentence: “The art club ___ fun on Tuesdays.”",
+      "correct": "is",
+      "objective": "sentence-construction",
+      "objectiveLabel": "Choose the singular present form in a new school context.",
+      "evidence": "“The art club” is singular, so the present form is “is”.",
+      "format": "sentence-construction",
+      "accepted": [
+        "is"
+      ],
+      "wrongSample": "are",
+      "number": 11,
+      "id": "q11"
+    },
+    {
+      "prompt": "Rami’s class note says he is strong in science. Complete: “Rami is good at ___.”",
+      "correct": "science",
+      "objective": "guided-writing",
+      "objectiveLabel": "Complete a taught ability sentence using one stated subject.",
+      "evidence": "The original note says Rami is strong in science; “good at” expresses ability.",
+      "format": "sentence-construction",
+      "accepted": [
+        "science"
+      ],
+      "wrongSample": "maths",
+      "number": 12,
+      "id": "q12"
+    }
+  ]
+}

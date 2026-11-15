@@ -1,0 +1,234 @@
+{
+  "lesson": "grade4-unit1-lesson6",
+  "title": "Grade 4 Unit 1 Lesson 6: independent test",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 12,
+  "objectives": [
+    "place-words",
+    "place-prepositions",
+    "read-new-passage",
+    "prepositions-of-place",
+    "there-is-are",
+    "place-vocabulary",
+    "sentence-construction",
+    "guided-writing"
+  ],
+  "stimuli": [
+    {
+      "id": "neighborhood-list",
+      "title": "Three new place notes",
+      "description": "An original set of place notes created only for this assessment.",
+      "headers": [
+        "Name",
+        "Place",
+        "House"
+      ],
+      "rows": [
+        [
+          "Nabil",
+          "city",
+          "by a river"
+        ],
+        [
+          "Sara",
+          "village",
+          "on a hill"
+        ],
+        [
+          "Yara",
+          "country",
+          "on a farm"
+        ]
+      ]
+    },
+    {
+      "id": "original-home-note",
+      "title": "A new note about a house",
+      "description": "A short new passage written only for this assessment.",
+      "text": "Lina lives in a town. Her house is by a river. Her garden is by the house. Her friend likes a city."
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Which place is written for Sara?",
+      "correct": 1,
+      "objective": "place-words",
+      "objectiveLabel": "Read a home-place entry in an original table.",
+      "evidence": "Sara’s row gives village.",
+      "format": "multiple-choice",
+      "options": [
+        "a city",
+        "a village",
+        "the country"
+      ],
+      "stimulus": "neighborhood-list",
+      "number": 1,
+      "id": "q1"
+    },
+    {
+      "prompt": "What phrase describes Yara’s house?",
+      "correct": 2,
+      "objective": "place-prepositions",
+      "objectiveLabel": "Read a nearby feature in a new table.",
+      "evidence": "Yara’s row says on a farm.",
+      "format": "multiple-choice",
+      "options": [
+        "on a hill",
+        "by the sea",
+        "on a farm"
+      ],
+      "stimulus": "neighborhood-list",
+      "number": 2,
+      "id": "q2"
+    },
+    {
+      "prompt": "Where does Lina live?",
+      "correct": 0,
+      "objective": "read-new-passage",
+      "objectiveLabel": "Find the home-place detail in an original passage.",
+      "evidence": "The new note says Lina lives in a town.",
+      "format": "multiple-choice",
+      "options": [
+        "a town",
+        "a village",
+        "the country"
+      ],
+      "stimulus": "original-home-note",
+      "number": 3,
+      "id": "q3"
+    },
+    {
+      "prompt": "What is by Lina’s house?",
+      "correct": 1,
+      "objective": "read-new-passage",
+      "objectiveLabel": "Identify a detail from a new home description.",
+      "evidence": "The note states that the garden is by the house.",
+      "format": "multiple-choice",
+      "options": [
+        "a river",
+        "a garden",
+        "a city"
+      ],
+      "stimulus": "original-home-note",
+      "number": 4,
+      "id": "q4"
+    },
+    {
+      "prompt": "Where is Lina’s house?",
+      "correct": 2,
+      "objective": "place-prepositions",
+      "objectiveLabel": "Interpret “by” in a new sentence context.",
+      "evidence": "The note says the house is by a river.",
+      "format": "multiple-choice",
+      "options": [
+        "in the river",
+        "on the river",
+        "by a river"
+      ],
+      "stimulus": "original-home-note",
+      "number": 5,
+      "id": "q5"
+    },
+    {
+      "prompt": "Choose the correct preposition: “We live ___ a village.”",
+      "correct": 0,
+      "objective": "prepositions-of-place",
+      "objectiveLabel": "Use “in” with a village.",
+      "evidence": "The taught phrase is “in a village”.",
+      "format": "multiple-choice",
+      "options": [
+        "in",
+        "on",
+        "by"
+      ],
+      "number": 6,
+      "id": "q6"
+    },
+    {
+      "prompt": "Choose the correct preposition: “Their house is ___ a hill.”",
+      "correct": 1,
+      "objective": "prepositions-of-place",
+      "objectiveLabel": "Use “on” with a hill.",
+      "evidence": "The taught phrase is “on a hill”.",
+      "format": "multiple-choice",
+      "options": [
+        "by",
+        "on",
+        "in"
+      ],
+      "number": 7,
+      "id": "q7"
+    },
+    {
+      "prompt": "Complete: “There ___ two bedrooms in the house.”",
+      "correct": 2,
+      "objective": "there-is-are",
+      "objectiveLabel": "Use plural “there are”.",
+      "evidence": "“Two bedrooms” is plural, so use “are”.",
+      "format": "multiple-choice",
+      "options": [
+        "is",
+        "am",
+        "are"
+      ],
+      "number": 8,
+      "id": "q8"
+    },
+    {
+      "prompt": "True or false: “A city” and “a village” name places where people may live.",
+      "correct": 0,
+      "objective": "place-vocabulary",
+      "objectiveLabel": "Recognise the taught types of settlement.",
+      "evidence": "Both words are taught home-place vocabulary.",
+      "format": "multiple-choice",
+      "options": [
+        "True",
+        "False"
+      ],
+      "number": 9,
+      "id": "q9"
+    },
+    {
+      "prompt": "Complete a new sentence: “The garden is ___ the house.”",
+      "correct": "by",
+      "objective": "sentence-construction",
+      "objectiveLabel": "Use a taught place preposition in a new context.",
+      "evidence": "The location phrase “by the house” fits the new sentence.",
+      "format": "short-answer",
+      "accepted": [
+        "by"
+      ],
+      "wrongSample": "in",
+      "number": 10,
+      "id": "q10"
+    },
+    {
+      "prompt": "Complete: “A house is ___ the mountains.”",
+      "correct": "in",
+      "objective": "sentence-construction",
+      "objectiveLabel": "Use a taught place collocation in a new context.",
+      "evidence": "The taught location phrase is “in the mountains”.",
+      "format": "short-answer",
+      "accepted": [
+        "in"
+      ],
+      "wrongSample": "on",
+      "number": 11,
+      "id": "q11"
+    },
+    {
+      "prompt": "Mina’s information card says “village”. Complete: “Mina lives in a ___.”",
+      "correct": "village",
+      "objective": "guided-writing",
+      "objectiveLabel": "Use the taught settlement word in a new sentence.",
+      "evidence": "The information card supplies the single answer, village.",
+      "format": "sentence-construction",
+      "accepted": [
+        "village"
+      ],
+      "wrongSample": "city",
+      "number": 12,
+      "id": "q12"
+    }
+  ]
+}

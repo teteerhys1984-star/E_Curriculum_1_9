@@ -1,0 +1,77 @@
+{
+  "lesson": "Grade 4 · Unit 1 · Lesson 6",
+  "images": [
+    {
+      "file": "assets/grade4-unit1-lesson6/source/pupil-book-page-21.png",
+      "originalUpload": "image-12.png",
+      "uploadIndex": 12,
+      "lesson": 6,
+      "book": "pupil-book",
+      "sourcePage": 21,
+      "sha256": "55b4d92b846ccaf4f3b7d5e9ee1557ae01873f494d27e83de6d81e39cc797efd",
+      "bytes": 738900,
+      "width": 736,
+      "height": 1036
+    },
+    {
+      "file": "assets/grade4-unit1-lesson6/source/pupil-book-page-22.png",
+      "originalUpload": "image-13.png",
+      "uploadIndex": 13,
+      "lesson": 6,
+      "book": "pupil-book",
+      "sourcePage": 22,
+      "sha256": "b85c1f0a02ef156f6cd9b6085b6baae327b442b597000bf266b73250c67a0b1f",
+      "bytes": 610746,
+      "width": 742,
+      "height": 1018
+    },
+    {
+      "file": "assets/grade4-unit1-lesson6/source/pupil-book-page-23.png",
+      "originalUpload": "image-14.png",
+      "uploadIndex": 14,
+      "lesson": 6,
+      "book": "pupil-book",
+      "sourcePage": 23,
+      "sha256": "6f25ab0badb61796bb3e5377c3b9198cc96ddaa9449f27d65a61951165b6edc1",
+      "bytes": 371035,
+      "width": 721,
+      "height": 1030
+    },
+    {
+      "file": "assets/grade4-unit1-lesson6/source/workbook-page-22.png",
+      "originalUpload": "image-15.png",
+      "uploadIndex": 15,
+      "lesson": 6,
+      "book": "workbook",
+      "sourcePage": 22,
+      "sha256": "986e1433a9123a3bfd2e475c41d07db85d4fe172fe45b1e09fce91260b0f00d3",
+      "bytes": 260907,
+      "width": 742,
+      "height": 1026
+    },
+    {
+      "file": "assets/grade4-unit1-lesson6/source/workbook-page-23.png",
+      "originalUpload": "image-16.png",
+      "uploadIndex": 16,
+      "lesson": 6,
+      "book": "workbook",
+      "sourcePage": 23,
+      "sha256": "ad4618c5339905be55f3ee7f4234eb18c14a9835030c24e5b1448d5df26b716c",
+      "bytes": 319900,
+      "width": 724,
+      "height": 1027
+    },
+    {
+      "file": "assets/grade4-unit1-lesson6/source/workbook-page-24.png",
+      "originalUpload": "image-17.png",
+      "uploadIndex": 17,
+      "lesson": 6,
+      "book": "workbook",
+      "sourcePage": 24,
+      "sha256": "69b9aca42bdd668c354acbf6b689086f9a43d6ed882d2085407bb7878ff2dde6",
+      "bytes": 239310,
+      "width": 750,
+      "height": 1030
+    }
+  ]
+}

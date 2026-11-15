@@ -1,0 +1,137 @@
+{
+  "lesson": "Grade 4 · Unit 1 · Lesson 5",
+  "images": [
+    {
+      "file": "assets/grade4-unit1-lesson5/source/pupil-book-page-15.png",
+      "originalUpload": "image-1.png",
+      "uploadIndex": 1,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 15,
+      "sha256": "112e45a66c5193f0e9b2046edb97ed4fdaf00fdbd524ea33b798bf97f5230e89",
+      "bytes": 780651,
+      "width": 748,
+      "height": 1036
+    },
+    {
+      "file": "assets/grade4-unit1-lesson5/source/pupil-book-page-16.png",
+      "originalUpload": "image-2.png",
+      "uploadIndex": 2,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 16,
+      "sha256": "ee6732fd6dfeea1759b02f8a2bd6761287f06997e86797f2a0484d757909e9ba",
+      "bytes": 489896,
+      "width": 748,
+      "height": 1021
+    },
+    {
+      "file": "assets/grade4-unit1-lesson5/source/pupil-book-page-17.png",
+      "originalUpload": "image-3.png",
+      "uploadIndex": 3,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 17,
+      "sha256": "655550bcccc9ae6e5af03de0631e5cbf533a86d4bdaf2a69d9bfa5493503fe26",
+      "bytes": 363048,
+      "width": 745,
+      "height": 1023
+    },
+    {
+      "file": "assets/grade4-unit1-lesson5/source/pupil-book-page-18.png",
+      "originalUpload": "image-4.png",
+      "uploadIndex": 4,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 18,
+      "sha256": "cf996dda6b257a0509fdbc177e2a0abe6548e52c001f6a77fbce75adb0e6a76d",
+      "bytes": 227611,
+      "width": 753,
+      "height": 1051
+    },
+    {
+      "file": "assets/grade4-unit1-lesson5/source/pupil-book-page-19.png",
+      "originalUpload": "image-5.png",
+      "uploadIndex": 5,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 19,
+      "sha256": "f0825a0e8c16462e14073ed699789233ab356731563fddace7287594292aec10",
+      "bytes": 380288,
+      "width": 709,
+      "height": 1014
+    },
+    {
+      "file": "assets/grade4-unit1-lesson5/source/pupil-book-page-20.png",
+      "originalUpload": "image-6.png",
+      "uploadIndex": 6,
+      "lesson": 5,
+      "book": "pupil-book",
+      "sourcePage": 20,
+      "sha256": "f54ed3040220736b404ba3771a6cd348b140d9b62f89e74ffc3ae25eb9262a20",
+      "bytes": 779274,
+      "width": 736,
+      "height": 1024
+    },
+    {
+      "file": "assets/grade4-unit1-lesson5/source/workbook-page-17.png",
+      "originalUpload": "image-7.png",
+      "uploadIndex": 7,
+      "lesson": 5,
+      "book": "workbook",
+      "sourcePage": 17,
+      "sha256": "0b68e19eb1da77c5fa426c1637d8ce736187632b98b468e928b90e1b54ffd805",
+      "bytes": 334269,
+      "width": 732,
+      "height": 1003
+    },
+    {
+      "file": "assets/grade4-unit1-lesson5/source/workbook-page-18.png",
+      "originalUpload": "image-8.png",
+      "uploadIndex": 8,
+      "lesson": 5,
+      "book": "workbook",
+      "sourcePage": 18,
+      "sha256": "8c4d268d2b410d9917de566f44c194c4f291eb33f1fc988288facb5bb3e7cc32",
+      "bytes": 396377,
+      "width": 718,
+      "height": 984
+    },
+    {
+      "file": "assets/grade4-unit1-lesson5/source/workbook-page-19.png",
+      "originalUpload": "image-9.png",
+      "uploadIndex": 9,
+      "lesson": 5,
+      "book": "workbook",
+      "sourcePage": 19,
+      "sha256": "1d6207034da831af56ea231e0dbbd260c626c3193f7d240a1600ae2c9ff479fc",
+      "bytes": 244444,
+      "width": 730,
+      "height": 997
+    },
+    {
+      "file": "assets/grade4-unit1-lesson5/source/workbook-page-20.png",
+      "originalUpload": "image-10.png",
+      "uploadIndex": 10,
+      "lesson": 5,
+      "book": "workbook",
+      "sourcePage": 20,
+      "sha256": "5136af9bc6385831115febd91bed1588a14478dc745297f3067a0812fb45d36f",
+      "bytes": 167205,
+      "width": 736,
+      "height": 1030
+    },
+    {
+      "file": "assets/grade4-unit1-lesson5/source/workbook-page-21.png",
+      "originalUpload": "image-11.png",
+      "uploadIndex": 11,
+      "lesson": 5,
+      "book": "workbook",
+      "sourcePage": 21,
+      "sha256": "439968ba28a04adfae802c1a19ef324ca81b2327d3900a0ef61ee2a03184bba4",
+      "bytes": 193943,
+      "width": 721,
+      "height": 988
+    }
+  ]
+}

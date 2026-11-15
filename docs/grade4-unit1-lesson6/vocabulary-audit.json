@@ -1,0 +1,1457 @@
+{
+  "lesson": "Grade 4 · Unit 1 · Lesson 6 · Where I Live",
+  "totals": {
+    "printed": 17,
+    "additional": 46,
+    "expression": 44,
+    "allEntries": 107
+  },
+  "occurrences": {
+    "printed": 47,
+    "additional": 67,
+    "expression": 57,
+    "allReferences": 171
+  },
+  "review": {
+    "status": "complete",
+    "reviewedOn": "2026-11-15",
+    "method": "Page-by-page audit against every preserved source scan. Terms are categorized as explicitly printed lesson vocabulary, additional contextual words, or functional expressions; each has an Arabic learner-support gloss and exact source-image allocation. Original scans remain available alongside typed study notes.",
+    "translationNote": "Arabic meanings are age-appropriate editorial learner-support glosses, not translations printed in the textbook.",
+    "scopeNote": "Character names, ordinary articles and pronouns except where part of a useful expression, isolated numerals, picture-only labels, and blank dotted answer lines are excluded. Workbook Revision 1 is included as printed content on its assigned images. Listening-only content is not transcribed or keyed because no audio/transcript was supplied."
+  },
+  "imageAudit": [
+    {
+      "imageNumber": 12,
+      "lesson": 6,
+      "book": "pupil-book",
+      "sourcePage": 21,
+      "sourceFile": "assets/grade4-unit1-lesson6/source/pupil-book-page-21.png",
+      "sourceSha256": "55b4d92b846ccaf4f3b7d5e9ee1557ae01873f494d27e83de6d81e39cc797efd",
+      "printedVocabulary": [
+        "village",
+        "sea",
+        "country",
+        "city"
+      ],
+      "additionalVocabulary": [
+        "house",
+        "picture",
+        "listen",
+        "number",
+        "live",
+        "the-country"
+      ],
+      "usefulExpressions": [
+        "where-do-you-live",
+        "i-live-in",
+        "do-you-like-your-house",
+        "yes-i-do-no-i-don-t",
+        "ask-and-answer",
+        "listen-and-repeat"
+      ],
+      "counts": {
+        "printed": 4,
+        "additional": 6,
+        "expression": 6
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 13,
+      "lesson": 6,
+      "book": "pupil-book",
+      "sourcePage": 22,
+      "sourceFile": "assets/grade4-unit1-lesson6/source/pupil-book-page-22.png",
+      "sourceSha256": "b85c1f0a02ef156f6cd9b6085b6baae327b442b597000bf266b73250c67a0b1f",
+      "printedVocabulary": [
+        "village",
+        "country",
+        "city",
+        "farm",
+        "hill",
+        "river"
+      ],
+      "additionalVocabulary": [
+        "house",
+        "big",
+        "small",
+        "tartous",
+        "picture",
+        "guess",
+        "choose",
+        "correct",
+        "complete",
+        "task",
+        "live",
+        "small-village",
+        "on-the-farm"
+      ],
+      "usefulExpressions": [
+        "i-live-in",
+        "where-is-the-house",
+        "it-is-on-a-farm",
+        "what-are-the-people-talking-about",
+        "it-is-on-a-hill",
+        "our-house-is-in-a-village",
+        "it-is-by-the-river",
+        "i-live-on-a-farm",
+        "look-at-the-pictures",
+        "read-and-do-the-tasks-below"
+      ],
+      "counts": {
+        "printed": 6,
+        "additional": 13,
+        "expression": 10
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 14,
+      "lesson": 6,
+      "book": "pupil-book",
+      "sourcePage": 23,
+      "sourceFile": "assets/grade4-unit1-lesson6/source/pupil-book-page-23.png",
+      "sourceSha256": "6f25ab0badb61796bb3e5377c3b9198cc96ddaa9449f27d65a61951165b6edc1",
+      "printedVocabulary": [
+        "village",
+        "sea",
+        "country",
+        "city",
+        "farm",
+        "hill",
+        "river",
+        "in",
+        "on",
+        "by",
+        "pronunciation",
+        "silent-letters",
+        "half",
+        "talk",
+        "island",
+        "aisle"
+      ],
+      "additionalVocabulary": [
+        "house",
+        "aleppo",
+        "fill-in",
+        "reorder",
+        "uncle",
+        "friend",
+        "mountain",
+        "by-the-sea",
+        "in-the-mountains",
+        "the-mountains",
+        "work",
+        "walk"
+      ],
+      "usefulExpressions": [
+        "i-live-in",
+        "in-the-country",
+        "in-a-city",
+        "on-a-farm",
+        "on-a-hill",
+        "by-the-river",
+        "in-a-village",
+        "in-a-house",
+        "my-uncle-lives",
+        "we-walk-by",
+        "fill-in-the-spaces",
+        "uncle-lives-on-a-farm",
+        "we-walk-by-the-river"
+      ],
+      "counts": {
+        "printed": 16,
+        "additional": 12,
+        "expression": 13
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 15,
+      "lesson": 6,
+      "book": "workbook",
+      "sourcePage": 22,
+      "sourceFile": "assets/grade4-unit1-lesson6/source/workbook-page-22.png",
+      "sourceSha256": "986e1433a9123a3bfd2e475c41d07db85d4fe172fe45b1e09fce91260b0f00d3",
+      "printedVocabulary": [
+        "country",
+        "city",
+        "town",
+        "river",
+        "in",
+        "on",
+        "by"
+      ],
+      "additionalVocabulary": [
+        "house",
+        "big",
+        "small",
+        "beautiful",
+        "flat-roof",
+        "storey",
+        "bedroom",
+        "living-room",
+        "kitchen",
+        "dining-room",
+        "garden",
+        "middle-east",
+        "damascus",
+        "syria",
+        "aleppo",
+        "homs",
+        "listen",
+        "choose",
+        "correct",
+        "friend",
+        "father",
+        "room",
+        "floor",
+        "live",
+        "three-bedrooms",
+        "first-floor"
+      ],
+      "usefulExpressions": [
+        "my-house-is-in",
+        "in-the-country",
+        "there-are",
+        "there-is",
+        "two-storeys",
+        "surrounded-by",
+        "favourite-room",
+        "because",
+        "food",
+        "sweet-home",
+        "my-friend-s-house-is-in",
+        "we-live-in-a-big-house",
+        "i-d-like-to-live",
+        "the-living-room-is-on-the-first-floor"
+      ],
+      "counts": {
+        "printed": 7,
+        "additional": 26,
+        "expression": 14
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 16,
+      "lesson": 6,
+      "book": "workbook",
+      "sourcePage": 23,
+      "sourceFile": "assets/grade4-unit1-lesson6/source/workbook-page-23.png",
+      "sourceSha256": "ad4618c5339905be55f3ee7f4234eb18c14a9835030c24e5b1448d5df26b716c",
+      "printedVocabulary": [
+        "village",
+        "sea",
+        "farm",
+        "hill",
+        "river",
+        "in",
+        "on",
+        "by"
+      ],
+      "additionalVocabulary": [
+        "house",
+        "listen",
+        "number",
+        "fill-in",
+        "small-village",
+        "by-the-sea"
+      ],
+      "usefulExpressions": [
+        "on-a-farm",
+        "on-a-hill",
+        "by-the-river",
+        "in-a-village",
+        "sam-and-tala-live",
+        "fill-in-the-spaces"
+      ],
+      "counts": {
+        "printed": 8,
+        "additional": 6,
+        "expression": 6
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    },
+    {
+      "imageNumber": 17,
+      "lesson": 6,
+      "book": "workbook",
+      "sourcePage": 24,
+      "sourceFile": "assets/grade4-unit1-lesson6/source/workbook-page-24.png",
+      "sourceSha256": "69b9aca42bdd668c354acbf6b689086f9a43d6ed882d2085407bb7878ff2dde6",
+      "printedVocabulary": [
+        "village",
+        "sea",
+        "country",
+        "city",
+        "town",
+        "farm"
+      ],
+      "additionalVocabulary": [
+        "house",
+        "describe",
+        "write",
+        "live"
+      ],
+      "usefulExpressions": [
+        "i-live-in",
+        "in-the-country",
+        "in-a-city",
+        "in-a-village",
+        "i-like-to-live",
+        "sam-and-tala-live",
+        "describe-and-write",
+        "write-about-where-you-like-to-live"
+      ],
+      "counts": {
+        "printed": 6,
+        "additional": 4,
+        "expression": 8
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Character names, isolated numbers, picture-only labels without readable language, and dotted answer blanks are excluded; no language-bearing printed activity was intentionally omitted."
+    }
+  ],
+  "entries": [
+    {
+      "term": "village",
+      "meaning": "قرية",
+      "category": "printed",
+      "sourceImages": [
+        12,
+        13,
+        14,
+        16,
+        17
+      ],
+      "example": "Our house is in a village.",
+      "id": "village"
+    },
+    {
+      "term": "sea",
+      "meaning": "بحر",
+      "category": "printed",
+      "sourceImages": [
+        12,
+        14,
+        16,
+        17
+      ],
+      "example": "By the sea.",
+      "id": "sea"
+    },
+    {
+      "term": "country",
+      "meaning": "ريف / بلد (بحسب السياق)",
+      "category": "printed",
+      "sourceImages": [
+        12,
+        13,
+        14,
+        15,
+        17
+      ],
+      "example": "I live in the country.",
+      "id": "country"
+    },
+    {
+      "term": "city",
+      "meaning": "مدينة",
+      "category": "printed",
+      "sourceImages": [
+        12,
+        13,
+        14,
+        15,
+        17
+      ],
+      "example": "I live in a city.",
+      "id": "city"
+    },
+    {
+      "term": "town",
+      "meaning": "بلدة",
+      "category": "printed",
+      "sourceImages": [
+        15,
+        17
+      ],
+      "example": "town",
+      "id": "town"
+    },
+    {
+      "term": "farm",
+      "meaning": "مزرعة",
+      "category": "printed",
+      "sourceImages": [
+        13,
+        14,
+        16,
+        17
+      ],
+      "example": "I live on a farm.",
+      "id": "farm"
+    },
+    {
+      "term": "hill",
+      "meaning": "تلّة",
+      "category": "printed",
+      "sourceImages": [
+        13,
+        14,
+        16
+      ],
+      "example": "It is on a hill.",
+      "id": "hill"
+    },
+    {
+      "term": "river",
+      "meaning": "نهر",
+      "category": "printed",
+      "sourceImages": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "example": "It is by the river.",
+      "id": "river"
+    },
+    {
+      "term": "in",
+      "meaning": "في",
+      "category": "printed",
+      "sourceImages": [
+        14,
+        15,
+        16
+      ],
+      "example": "In Damascus.",
+      "id": "in"
+    },
+    {
+      "term": "on",
+      "meaning": "على",
+      "category": "printed",
+      "sourceImages": [
+        14,
+        15,
+        16
+      ],
+      "example": "On a farm.",
+      "id": "on"
+    },
+    {
+      "term": "by",
+      "meaning": "بجانب / قرب",
+      "category": "printed",
+      "sourceImages": [
+        14,
+        15,
+        16
+      ],
+      "example": "By the sea.",
+      "id": "by"
+    },
+    {
+      "term": "pronunciation",
+      "meaning": "النطق",
+      "category": "printed",
+      "sourceImages": [
+        14
+      ],
+      "example": "pronunciation (silent letters).",
+      "id": "pronunciation"
+    },
+    {
+      "term": "silent letters",
+      "meaning": "حروف لا تُنطق",
+      "category": "printed",
+      "sourceImages": [
+        14
+      ],
+      "example": "pronunciation (silent letters).",
+      "id": "silent-letters"
+    },
+    {
+      "term": "half",
+      "meaning": "نصف",
+      "category": "printed",
+      "sourceImages": [
+        14
+      ],
+      "example": "half",
+      "id": "half"
+    },
+    {
+      "term": "talk",
+      "meaning": "يتحدّث",
+      "category": "printed",
+      "sourceImages": [
+        14
+      ],
+      "example": "Talk",
+      "id": "talk"
+    },
+    {
+      "term": "island",
+      "meaning": "جزيرة",
+      "category": "printed",
+      "sourceImages": [
+        14
+      ],
+      "example": "island",
+      "id": "island"
+    },
+    {
+      "term": "aisle",
+      "meaning": "ممرّ",
+      "category": "printed",
+      "sourceImages": [
+        14
+      ],
+      "example": "aisle",
+      "id": "aisle"
+    },
+    {
+      "term": "house",
+      "meaning": "منزل",
+      "category": "additional",
+      "sourceImages": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "example": "My house is in Damascus, Syria.",
+      "id": "house"
+    },
+    {
+      "term": "big",
+      "meaning": "كبير",
+      "category": "additional",
+      "sourceImages": [
+        13,
+        15
+      ],
+      "example": "My house is very big.",
+      "id": "big"
+    },
+    {
+      "term": "small",
+      "meaning": "صغير",
+      "category": "additional",
+      "sourceImages": [
+        13,
+        15
+      ],
+      "example": "It’s small.",
+      "id": "small"
+    },
+    {
+      "term": "beautiful",
+      "meaning": "جميل",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "a beautiful garden.",
+      "id": "beautiful"
+    },
+    {
+      "term": "flat roof",
+      "meaning": "سقف مسطّح",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "The house has a flat roof.",
+      "id": "flat-roof"
+    },
+    {
+      "term": "storey",
+      "meaning": "طابق",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "It has two storeys.",
+      "id": "storey"
+    },
+    {
+      "term": "bedroom",
+      "meaning": "غرفة نوم",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "It has three bedrooms.",
+      "id": "bedroom"
+    },
+    {
+      "term": "living room",
+      "meaning": "غرفة جلوس",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "The living room is on the first floor.",
+      "id": "living-room"
+    },
+    {
+      "term": "kitchen",
+      "meaning": "مطبخ",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "I love the kitchen because I like food.",
+      "id": "kitchen"
+    },
+    {
+      "term": "dining room",
+      "meaning": "غرفة طعام",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "My father’s favourite room is the dining room.",
+      "id": "dining-room"
+    },
+    {
+      "term": "garden",
+      "meaning": "حديقة",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "The house is surrounded by a beautiful garden.",
+      "id": "garden"
+    },
+    {
+      "term": "Middle East",
+      "meaning": "الشرق الأوسط",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "Syria is a country in the Middle East.",
+      "id": "middle-east"
+    },
+    {
+      "term": "Damascus",
+      "meaning": "دمشق",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "My house is in Damascus, Syria.",
+      "id": "damascus"
+    },
+    {
+      "term": "Syria",
+      "meaning": "سوريا",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "My house is in Damascus, Syria.",
+      "id": "syria"
+    },
+    {
+      "term": "Tartous",
+      "meaning": "طرطوس",
+      "category": "additional",
+      "sourceImages": [
+        13
+      ],
+      "example": "Tartous",
+      "id": "tartous"
+    },
+    {
+      "term": "Aleppo",
+      "meaning": "حلب",
+      "category": "additional",
+      "sourceImages": [
+        14,
+        15
+      ],
+      "example": "My friend’s house is in Aleppo.",
+      "id": "aleppo"
+    },
+    {
+      "term": "Homs",
+      "meaning": "حمص",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "Homs",
+      "id": "homs"
+    },
+    {
+      "term": "picture",
+      "meaning": "صورة",
+      "category": "additional",
+      "sourceImages": [
+        12,
+        13
+      ],
+      "example": "Look at these pictures, ask and answer.",
+      "id": "picture"
+    },
+    {
+      "term": "guess",
+      "meaning": "يخمّن",
+      "category": "additional",
+      "sourceImages": [
+        13
+      ],
+      "example": "Before you read, look at the pictures and guess.",
+      "id": "guess"
+    },
+    {
+      "term": "describe",
+      "meaning": "يصف",
+      "category": "additional",
+      "sourceImages": [
+        17
+      ],
+      "example": "Describe and write.",
+      "id": "describe"
+    },
+    {
+      "term": "write",
+      "meaning": "يكتب",
+      "category": "additional",
+      "sourceImages": [
+        17
+      ],
+      "example": "Write about where you like to live.",
+      "id": "write"
+    },
+    {
+      "term": "listen",
+      "meaning": "يستمع",
+      "category": "additional",
+      "sourceImages": [
+        12,
+        15,
+        16
+      ],
+      "example": "Listen and number.",
+      "id": "listen"
+    },
+    {
+      "term": "number",
+      "meaning": "يرقّم",
+      "category": "additional",
+      "sourceImages": [
+        12,
+        16
+      ],
+      "example": "Listen and number.",
+      "id": "number"
+    },
+    {
+      "term": "choose",
+      "meaning": "يختار",
+      "category": "additional",
+      "sourceImages": [
+        13,
+        15
+      ],
+      "example": "Choose the correct answer.",
+      "id": "choose"
+    },
+    {
+      "term": "correct",
+      "meaning": "صحيح",
+      "category": "additional",
+      "sourceImages": [
+        13,
+        15
+      ],
+      "example": "Choose the correct answer.",
+      "id": "correct"
+    },
+    {
+      "term": "fill in",
+      "meaning": "يملأ",
+      "category": "additional",
+      "sourceImages": [
+        14,
+        16
+      ],
+      "example": "Fill in the spaces.",
+      "id": "fill-in"
+    },
+    {
+      "term": "reorder",
+      "meaning": "يرتّب",
+      "category": "additional",
+      "sourceImages": [
+        14
+      ],
+      "example": "Reorder these sentences.",
+      "id": "reorder"
+    },
+    {
+      "term": "complete",
+      "meaning": "يكمل",
+      "category": "additional",
+      "sourceImages": [
+        13
+      ],
+      "example": "Complete these sentences about your house.",
+      "id": "complete"
+    },
+    {
+      "term": "task",
+      "meaning": "مهمّة",
+      "category": "additional",
+      "sourceImages": [
+        13
+      ],
+      "example": "Read and do the tasks below.",
+      "id": "task"
+    },
+    {
+      "term": "uncle",
+      "meaning": "عمّ / خال",
+      "category": "additional",
+      "sourceImages": [
+        14
+      ],
+      "example": "My uncle lives on a farm.",
+      "id": "uncle"
+    },
+    {
+      "term": "friend",
+      "meaning": "صديق",
+      "category": "additional",
+      "sourceImages": [
+        14,
+        15
+      ],
+      "example": "My friend’s house is in Aleppo.",
+      "id": "friend"
+    },
+    {
+      "term": "father",
+      "meaning": "أب",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "My father’s favourite room is the dining room.",
+      "id": "father"
+    },
+    {
+      "term": "room",
+      "meaning": "غرفة",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "The house has a living room and a dining room.",
+      "id": "room"
+    },
+    {
+      "term": "floor",
+      "meaning": "طابق",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "The living room is on the first floor.",
+      "id": "floor"
+    },
+    {
+      "term": "mountain",
+      "meaning": "جبل",
+      "category": "additional",
+      "sourceImages": [
+        14
+      ],
+      "example": "In the mountains.",
+      "id": "mountain"
+    },
+    {
+      "term": "live",
+      "meaning": "يسكن / يعيش",
+      "category": "additional",
+      "sourceImages": [
+        12,
+        13,
+        15,
+        17
+      ],
+      "example": "I live in the country.",
+      "id": "live"
+    },
+    {
+      "term": "three bedrooms",
+      "meaning": "ثلاث غرف نوم",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "It has three bedrooms.",
+      "id": "three-bedrooms"
+    },
+    {
+      "term": "first floor",
+      "meaning": "الطابق الأول",
+      "category": "additional",
+      "sourceImages": [
+        15
+      ],
+      "example": "The living room is on the first floor.",
+      "id": "first-floor"
+    },
+    {
+      "term": "small village",
+      "meaning": "قرية صغيرة",
+      "category": "additional",
+      "sourceImages": [
+        13,
+        16
+      ],
+      "example": "Sam and Tala live in a small village.",
+      "id": "small-village"
+    },
+    {
+      "term": "by the sea",
+      "meaning": "بجانب البحر",
+      "category": "additional",
+      "sourceImages": [
+        14,
+        16
+      ],
+      "example": "By the sea.",
+      "id": "by-the-sea"
+    },
+    {
+      "term": "in the mountains",
+      "meaning": "في الجبال",
+      "category": "additional",
+      "sourceImages": [
+        14
+      ],
+      "example": "In the mountains.",
+      "id": "in-the-mountains"
+    },
+    {
+      "term": "Where do you live?",
+      "meaning": "أين تسكن؟",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "Where do you live?",
+      "id": "where-do-you-live"
+    },
+    {
+      "term": "I live in …",
+      "meaning": "أسكن في ...",
+      "category": "expression",
+      "sourceImages": [
+        12,
+        13,
+        14,
+        17
+      ],
+      "example": "I live in the country.",
+      "id": "i-live-in"
+    },
+    {
+      "term": "Do you like your house?",
+      "meaning": "هل تحبّ منزلك؟",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "Do you like your house?",
+      "id": "do-you-like-your-house"
+    },
+    {
+      "term": "Yes, I do. / No, I don’t.",
+      "meaning": "نعم، أحبّه. / لا، لا أحبّه.",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "Yes, I do / No, I don't.",
+      "id": "yes-i-do-no-i-don-t"
+    },
+    {
+      "term": "Where is the house?",
+      "meaning": "أين يقع المنزل؟",
+      "category": "expression",
+      "sourceImages": [
+        13
+      ],
+      "example": "Where is the house?",
+      "id": "where-is-the-house"
+    },
+    {
+      "term": "It is on a farm.",
+      "meaning": "إنه في مزرعة.",
+      "category": "expression",
+      "sourceImages": [
+        13
+      ],
+      "example": "It is on a farm.",
+      "id": "it-is-on-a-farm"
+    },
+    {
+      "term": "What are the people talking about?",
+      "meaning": "عمّ يتحدّث الناس؟",
+      "category": "expression",
+      "sourceImages": [
+        13
+      ],
+      "example": "Before you read, look at the pictures and guess.",
+      "id": "what-are-the-people-talking-about"
+    },
+    {
+      "term": "My house is in …",
+      "meaning": "منزلي في ...",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "My house is in Damascus, Syria.",
+      "id": "my-house-is-in"
+    },
+    {
+      "term": "It is on a hill.",
+      "meaning": "إنه على تلّة.",
+      "category": "expression",
+      "sourceImages": [
+        13
+      ],
+      "example": "My house is in the country. It is on a hill.",
+      "id": "it-is-on-a-hill"
+    },
+    {
+      "term": "Our house is in a village.",
+      "meaning": "منزلنا في قرية.",
+      "category": "expression",
+      "sourceImages": [
+        13
+      ],
+      "example": "Our house is in a village.",
+      "id": "our-house-is-in-a-village"
+    },
+    {
+      "term": "It is by the river.",
+      "meaning": "إنه بجانب النهر.",
+      "category": "expression",
+      "sourceImages": [
+        13
+      ],
+      "example": "It is by the river.",
+      "id": "it-is-by-the-river"
+    },
+    {
+      "term": "I live on a farm.",
+      "meaning": "أسكن في مزرعة.",
+      "category": "expression",
+      "sourceImages": [
+        13
+      ],
+      "example": "Hello, I am Jad. I live on a farm.",
+      "id": "i-live-on-a-farm"
+    },
+    {
+      "term": "in the country",
+      "meaning": "في الريف",
+      "category": "expression",
+      "sourceImages": [
+        14,
+        15,
+        17
+      ],
+      "example": "My house is in the country.",
+      "id": "in-the-country"
+    },
+    {
+      "term": "in a city",
+      "meaning": "في مدينة",
+      "category": "expression",
+      "sourceImages": [
+        14,
+        17
+      ],
+      "example": "I live in a city.",
+      "id": "in-a-city"
+    },
+    {
+      "term": "on a farm",
+      "meaning": "في مزرعة",
+      "category": "expression",
+      "sourceImages": [
+        14,
+        16
+      ],
+      "example": "We work on a farm.",
+      "id": "on-a-farm"
+    },
+    {
+      "term": "on a hill",
+      "meaning": "على تلّة",
+      "category": "expression",
+      "sourceImages": [
+        14,
+        16
+      ],
+      "example": "It is on a hill.",
+      "id": "on-a-hill"
+    },
+    {
+      "term": "by the river",
+      "meaning": "بجانب النهر",
+      "category": "expression",
+      "sourceImages": [
+        14,
+        16
+      ],
+      "example": "By the river.",
+      "id": "by-the-river"
+    },
+    {
+      "term": "in a village",
+      "meaning": "في قرية",
+      "category": "expression",
+      "sourceImages": [
+        14,
+        16,
+        17
+      ],
+      "example": "I live in a village.",
+      "id": "in-a-village"
+    },
+    {
+      "term": "in a house",
+      "meaning": "في منزل",
+      "category": "expression",
+      "sourceImages": [
+        14
+      ],
+      "example": "In a house.",
+      "id": "in-a-house"
+    },
+    {
+      "term": "there are",
+      "meaning": "يوجد (للجمع)",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "There are three bedrooms.",
+      "id": "there-are"
+    },
+    {
+      "term": "there is",
+      "meaning": "يوجد (للمفرد)",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "There is a garden.",
+      "id": "there-is"
+    },
+    {
+      "term": "two storeys",
+      "meaning": "طابقان",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "It has two storeys.",
+      "id": "two-storeys"
+    },
+    {
+      "term": "surrounded by",
+      "meaning": "محاط بـ",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "is surrounded by a beautiful garden.",
+      "id": "surrounded-by"
+    },
+    {
+      "term": "favourite room",
+      "meaning": "الغرفة المفضّلة",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "my father's favourite room",
+      "id": "favourite-room"
+    },
+    {
+      "term": "because",
+      "meaning": "لأنّ",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "I love the kitchen because I like food.",
+      "id": "because"
+    },
+    {
+      "term": "food",
+      "meaning": "طعام",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "I like food.",
+      "id": "food"
+    },
+    {
+      "term": "sweet home",
+      "meaning": "منزل جميل / حبيب",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "I love my sweet home.",
+      "id": "sweet-home"
+    },
+    {
+      "term": "My friend’s house is in …",
+      "meaning": "منزل صديقي في ...",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "My friend's house is in Aleppo.",
+      "id": "my-friend-s-house-is-in"
+    },
+    {
+      "term": "We live in a big house …",
+      "meaning": "نسكن في منزل كبير ...",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "We live in a big house in the country.",
+      "id": "we-live-in-a-big-house"
+    },
+    {
+      "term": "I’d like to live …",
+      "meaning": "أودّ أن أسكن ...",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "I'd like to live in a big city.",
+      "id": "i-d-like-to-live"
+    },
+    {
+      "term": "I like to live …",
+      "meaning": "أحبّ أن أسكن ...",
+      "category": "expression",
+      "sourceImages": [
+        17
+      ],
+      "example": "Write about where you like to live.",
+      "id": "i-like-to-live"
+    },
+    {
+      "term": "Sam and Tala live …",
+      "meaning": "سام وتالا يسكنان ...",
+      "category": "expression",
+      "sourceImages": [
+        16,
+        17
+      ],
+      "example": "Sam and Tala live in a small village by the sea.",
+      "id": "sam-and-tala-live"
+    },
+    {
+      "term": "My uncle lives …",
+      "meaning": "عمّي / خالي يسكن ...",
+      "category": "expression",
+      "sourceImages": [
+        14
+      ],
+      "example": "My uncle lives on a farm.",
+      "id": "my-uncle-lives"
+    },
+    {
+      "term": "We walk by …",
+      "meaning": "نمشي بجانب ...",
+      "category": "expression",
+      "sourceImages": [
+        14
+      ],
+      "example": "We walk by the river.",
+      "id": "we-walk-by"
+    },
+    {
+      "term": "Look at the pictures.",
+      "meaning": "انظر إلى الصور.",
+      "category": "expression",
+      "sourceImages": [
+        13
+      ],
+      "example": "Look at these pictures, ask and answer.",
+      "id": "look-at-the-pictures"
+    },
+    {
+      "term": "Ask and answer.",
+      "meaning": "اسأل وأجب.",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "Ask and answer.",
+      "id": "ask-and-answer"
+    },
+    {
+      "term": "Fill in the spaces.",
+      "meaning": "املأ الفراغات.",
+      "category": "expression",
+      "sourceImages": [
+        14,
+        16
+      ],
+      "example": "Fill in the spaces.",
+      "id": "fill-in-the-spaces"
+    },
+    {
+      "term": "Describe and write.",
+      "meaning": "صِف واكتب.",
+      "category": "expression",
+      "sourceImages": [
+        17
+      ],
+      "example": "Describe and write.",
+      "id": "describe-and-write"
+    },
+    {
+      "term": "Write about where you like to live.",
+      "meaning": "اكتب عن المكان الذي تحبّ أن تسكن فيه.",
+      "category": "expression",
+      "sourceImages": [
+        17
+      ],
+      "example": "Write about where you like to live.",
+      "id": "write-about-where-you-like-to-live"
+    },
+    {
+      "term": "Listen and repeat.",
+      "meaning": "استمع وكرّر.",
+      "category": "expression",
+      "sourceImages": [
+        12
+      ],
+      "example": "Listen and repeat the words.",
+      "id": "listen-and-repeat"
+    },
+    {
+      "term": "Read and do the tasks below.",
+      "meaning": "اقرأ ونفّذ المهام أدناه.",
+      "category": "expression",
+      "sourceImages": [
+        13
+      ],
+      "example": "Read and do the tasks below.",
+      "id": "read-and-do-the-tasks-below"
+    },
+    {
+      "term": "on the farm",
+      "meaning": "في المزرعة",
+      "category": "additional",
+      "sourceImages": [
+        13
+      ],
+      "example": "I live on a farm.",
+      "id": "on-the-farm"
+    },
+    {
+      "term": "the country",
+      "meaning": "الريف",
+      "category": "additional",
+      "sourceImages": [
+        12
+      ],
+      "example": "My house is in the country.",
+      "id": "the-country"
+    },
+    {
+      "term": "the mountains",
+      "meaning": "الجبال",
+      "category": "additional",
+      "sourceImages": [
+        14
+      ],
+      "example": "In the mountains.",
+      "id": "the-mountains"
+    },
+    {
+      "term": "work",
+      "meaning": "يعمل",
+      "category": "additional",
+      "sourceImages": [
+        14
+      ],
+      "example": "My father works on a farm.",
+      "id": "work"
+    },
+    {
+      "term": "walk",
+      "meaning": "يمشي",
+      "category": "additional",
+      "sourceImages": [
+        14
+      ],
+      "example": "We walk by the river.",
+      "id": "walk"
+    },
+    {
+      "term": "uncle lives on a farm",
+      "meaning": "يسكن العمّ في مزرعة",
+      "category": "expression",
+      "sourceImages": [
+        14
+      ],
+      "example": "My uncle lives on a farm.",
+      "id": "uncle-lives-on-a-farm"
+    },
+    {
+      "term": "We walk by the river.",
+      "meaning": "نمشي بجانب النهر.",
+      "category": "expression",
+      "sourceImages": [
+        14
+      ],
+      "example": "We walk by the river.",
+      "id": "we-walk-by-the-river"
+    },
+    {
+      "term": "The living room is on the first floor.",
+      "meaning": "غرفة الجلوس في الطابق الأول.",
+      "category": "expression",
+      "sourceImages": [
+        15
+      ],
+      "example": "The living room is on the first floor.",
+      "id": "the-living-room-is-on-the-first-floor"
+    }
+  ]
+}
