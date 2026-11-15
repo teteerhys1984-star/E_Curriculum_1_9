@@ -31,9 +31,9 @@
             <a class="btn btn-secondary" href="#grades">Browse All 9 Grades</a>
           </div>
           <div class="stats" role="group" aria-label="Platform summary">
-            <div class="stat"><b>9</b><span>School grades</span></div>
-            <div class="stat"><b>17</b><span>Prepared lessons</span></div>
-            <div class="stat"><b>85</b><span>Verified lesson pages</span></div>
+            <div class="stat"><b data-curriculum-count="grades">9</b><span>School grades</span></div>
+            <div class="stat"><b data-curriculum-count="lessons">22</b><span>Prepared lessons</span></div>
+            <div class="stat"><b data-curriculum-count="pages">110</b><span>Verified lesson pages</span></div>
             <div class="stat"><b>10–20</b><span>Questions in each lesson test</span></div>
           </div>
         </div>
@@ -58,7 +58,7 @@
     <div class="section-head">
       <div>
         <h2>Choose a Grade</h2>
-        <p>Grades 3, 4, 5, and 8 include complete verified Unit 1 lessons. Remaining grades show structured curriculum previews while source scans are prepared.</p>
+        <p>Grades <span data-curriculum-totals="ready-grade-numbers">3, 4, 5 and 8</span> include complete verified Unit 1 lessons. Remaining grades show structured curriculum previews while source scans are prepared.</p>
       </div>
       <div class="pills" role="group" aria-label="Availability key">
         <span class="badge badge-available">Available lessons ready</span>
@@ -91,38 +91,38 @@
         <div class="grade-meta"><span>Preview curriculum outline</span><span aria-hidden="true">→</span></div>
       </a>
 
-      <a class="grade is-available" href="lessons.html?grade=3">
+      <a class="grade is-available" href="lessons.html?grade=3" data-curriculum-grade="3">
         <div class="grade-top">
           <span class="num">Grade 3</span>
           <span class="badge badge-available">5 lessons ready</span>
         </div>
         <div>
           <h3>Primary Stage · Year 3</h3>
-          <p>Unit 1 Lessons 1–5 ready: <em>Back to School</em>, <em>School Subjects</em>, <em>My Lovely School</em>, <em>My Five Senses</em> and <em>Revision 1</em>.</p>
+          <p><span data-curriculum-summary>Unit 1 Lessons 1–5 ready: <em>Back to School</em>, <em>School Subjects</em>, <em>My Lovely School</em>, <em>My Five Senses</em> and <em>Revision 1</em></span>.</p>
         </div>
         <div class="grade-meta"><span>Open Grade 3 lessons</span><span aria-hidden="true">→</span></div>
       </a>
 
-      <a class="grade is-available" href="lessons.html?grade=4">
+      <a class="grade is-available" href="lessons.html?grade=4" data-curriculum-grade="4">
         <div class="grade-top">
           <span class="num">Grade 4</span>
-          <span class="badge badge-available">4 lessons ready</span>
+          <span class="badge badge-available">6 lessons ready</span>
         </div>
         <div>
           <h3>Primary Stage · Year 4</h3>
-          <p>Unit 1 Lessons 1–4 ready: <em>Nice to Meet You</em>, <em>My Family</em>, <em>Daily Routine</em> and <em>My House</em>.</p>
+          <p><span data-curriculum-summary>Unit 1 Lessons 1–6 ready: <em>Nice to Meet You</em>, <em>My Family</em>, <em>Daily Routine</em>, <em>My House</em>, <em>School Subjects</em> and <em>Where I Live</em></span>.</p>
         </div>
         <div class="grade-meta"><span>Open Grade 4 lessons</span><span aria-hidden="true">→</span></div>
       </a>
 
-      <a class="grade is-available" href="lessons.html?grade=5">
+      <a class="grade is-available" href="lessons.html?grade=5" data-curriculum-grade="5">
         <div class="grade-top">
           <span class="num">Grade 5</span>
           <span class="badge badge-available">7 lessons ready</span>
         </div>
         <div>
           <h3>Primary Stage · Year 5</h3>
-          <p>Unit 1 Lessons 1–7 ready: <em>At School</em>, <em>Family</em>, <em>Daily Routines</em>, <em>The Five Senses</em>, <em>Clothes</em>, <em>Healthy Lifestyle</em> and <em>Hobbies</em>.</p>
+          <p><span data-curriculum-summary>Unit 1 Lessons 1–7 ready: <em>At School</em>, <em>Family</em>, <em>Daily Routines</em>, <em>The Five Senses</em>, <em>Clothes</em>, <em>Healthy Lifestyle</em> and <em>Hobbies</em></span>.</p>
         </div>
         <div class="grade-meta"><span>Open Grade 5 lessons</span><span aria-hidden="true">→</span></div>
       </a>
@@ -151,14 +151,14 @@
         <div class="grade-meta"><span>Preview curriculum outline</span><span aria-hidden="true">→</span></div>
       </a>
 
-      <a class="grade is-available" href="lessons.html?grade=8">
+      <a class="grade is-available" href="lessons.html?grade=8" data-curriculum-grade="8">
         <div class="grade-top">
           <span class="num">Grade 8</span>
           <span class="badge badge-available">4 lessons ready</span>
         </div>
         <div>
           <h3>Intermediate Stage · Year 8</h3>
-          <p>Unit 1 Lessons 1–4 ready: <em>Future Plans</em>, <em>School Challenges</em>, <em>Let’s Discover</em> and <em>Interesting Destinations</em> (Student’s Book, Workbook, Vocabulary, Test).</p>
+          <p><span data-curriculum-summary>Unit 1 Lessons 1–4 ready: <em>Future Plans</em>, <em>School Challenges</em>, <em>Let’s Discover</em> and <em>Interesting Destinations</em></span> (Student’s Book, Workbook, Vocabulary, Test).</p>
         </div>
         <div class="grade-meta"><span>Open Grade 8 lessons</span><span aria-hidden="true">→</span></div>
       </a>
@@ -181,7 +181,7 @@
         <h2>Prepared Lessons Directory</h2>
         <p>Direct student and teacher access to every verified lesson and section currently published in the repository.</p>
       </div>
-      <span class="badge badge-available">22 verified lessons · 110 pages</span>
+      <span class="badge badge-available" data-curriculum-totals="verified-lessons-pages">22 verified lessons · 110 pages</span>
     </div>
 
     <section class="curriculum-directory" aria-label="Prepared lessons directory">
@@ -548,7 +548,7 @@
     <section class="panel" aria-labelledby="for-teachers-heading">
       <h2 id="for-teachers-heading">Teacher Portal</h2>
       <p>
-        The teacher portal collects the twenty-two prepared lessons, the answer-key areas published on twenty-one lesson tests, and
+        The teacher portal collects the <span data-curriculum-count-words="lessons">twenty-two</span> prepared lessons, the answer-key areas published on <span data-curriculum-count-words="answerKeyAreas">twenty-one</span> lesson tests, and
         the practice answer reveals that pupils can already open. It also states plainly what is not available: no audio
         key, no round test, no teacher’s guide, and no accounts or pupil records.
       </p>

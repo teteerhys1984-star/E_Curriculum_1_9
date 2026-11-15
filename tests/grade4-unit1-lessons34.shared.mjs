@@ -307,7 +307,8 @@ export function validateLesson(lesson) {
   validateTest(lesson, quiz, testHtml);
   const siteListing = read('lessons.html');
   assert.ok(siteListing.includes(`${base}.html`), `lessons.html: ${base} must be registered`);
-  assert.ok(read('round-tests.html').includes(`${base}-test.html`), `round-tests.html: ${base} test must be registered`);
+  assert.ok(read('platform-shell.js').includes(`'${base}': { grade: 4, unit: 1, lesson: ${lesson},`), `registry: ${base} must be registered so round-tests.html lists its test`);
+  assert.match(read('round-tests.html'), /curriculum\.gradeSummary\(grade\)/, 'round-tests.html derives its Lesson Test directory from the curriculum registry');
   assert.ok(read('index.html').includes(`${base}.html`), `index.html: ${base} must be directly listed`);
   assert.ok(read('teacher-resources.html').includes(`${base}.html`), `teacher-resources.html: ${base} must be listed for teachers`);
   assert.ok(read('teacher.html').includes('22</b><span>Prepared lessons'), 'Teacher portal aggregate lesson total');

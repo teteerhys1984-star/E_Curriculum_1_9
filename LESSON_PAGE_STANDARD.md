@@ -37,10 +37,30 @@ Every **Lesson Test** (`*-test.html`) across Grades 1 to 9 must be an **independ
 ## Expected behavior
 The shared script provides the right-side step index, progress indicator, and centered Previous/Next controls beneath the content. Check desktop and narrow/mobile widths before considering a new lesson complete. Lesson Tests must also persist in-progress and scored attempts locally in the browser and clear that saved state cleanly when the pupil resets/retries the test.
 
+## Registering a lesson in the curriculum
+
+`platform-shell.js` holds the authoritative curriculum registry: the `LESSONS` object near the top of the file. It is the single source of truth for which lessons are published and ready. Every learner-facing and teacher-facing curriculum number is derived from it — the homepage hero totals and grade cards, the prepared-lessons directory, the `lessons.html` badges, summaries, grade switcher and lesson list, the `round-tests.html` coverage and individual Lesson Test directory, and the `teacher.html` and `teacher-resources.html` totals, per-grade cards and status matrix.
+
+Add exactly one entry per published lesson:
+
+```js
+'grade4-unit1-lesson6': { grade: 4, unit: 1, lesson: 6, title: 'Where I Live', bookLabel: "Pupil's Book", answerKey: true },
+```
+
+- `title` is the lesson's real printed title, exactly as its lesson hub names it. Never invent or paraphrase one.
+- `bookLabel` is `Pupil's Book` for Grades 1–6 and `Student's Book` for Grades 7–9.
+- `answerKey` is `true` only when that lesson's `*-test.html` publishes a `#teacher-gate` answer-key area.
+- Register a lesson only when all five pages exist, follow this standard, and pass their automated checks. A folder, a scan or a placeholder page is not a ready lesson, and lesson numbers must stay unbroken inside a unit so the published "Lessons 1–N" ranges stay true.
+
+Never restate a count, a lesson range or a title list inside a page. Tag the markup with the existing derivation hooks instead — `data-curriculum-count`, `data-curriculum-count-words`, `data-curriculum-totals`, `data-curriculum-grade`, `data-curriculum-summary`, `data-curriculum-pages`, `data-curriculum-titles` and `data-curriculum-grade-count-words` — and keep the static text accurate, so the page still reads correctly with scripting disabled and cannot disagree with the registry once the shell runs.
+
+`npm test` runs `tests/curriculum-registry.mjs`, which reconciles the registry against the published lesson pages and every display surface, and `npm run test:browser` runs `tests/curriculum-consistency.browser.mjs`, which renders all nine grade views plus every registered lesson page and requires the rendered text to match the registry. Both fail in either direction: a display left stale, and a complete lesson left unregistered.
+
 ## Before opening a PR
 1. Confirm all four lesson sections load the shared script.
 2. Confirm every step is reachable from the side index and Previous/Next.
 3. Confirm the Lesson Test complies with all ten rules of the **Independent Lesson Test Policy** above and is covered by automated independence, objective-mapping, answer-key, persistence, scoring, and retry checks.
 4. Confirm answer reveal, quiz scoring, saving, retrying, and links work end to end.
 5. Check Vocabulary RTL cells and English LTR pages across desktop and mobile viewports.
-6. Record any visual testing that was not performed; never claim a page was tested if it was not.
+6. Confirm the lesson is registered in `LESSONS` in `platform-shell.js` with its real title, correct `bookLabel` and correct `answerKey`, and that the derived counts on the homepage, `lessons.html`, `round-tests.html` and both teacher pages all moved together.
+7. Record any visual testing that was not performed; never claim a page was tested if it was not.

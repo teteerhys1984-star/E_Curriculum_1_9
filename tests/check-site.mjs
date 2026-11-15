@@ -143,9 +143,9 @@ assert.ok(landing.includes('<a href="grade5-unit1-lesson3.html">Daily Routines</
 pass('Grade 5 landing summary and lesson links', 'Seven lessons declared ready; Lessons 1–7 link to their existing lesson menus with matching titles');
 
 const listing = read('lessons.html');
-assert.ok(listing.includes("grade===3?'<a class=\"lesson\" href=\"grade3-unit1-lesson2.html\""));
+assert.ok(listing.includes("'grade3-unit1-lesson2': '<a class=\"lesson\" href=\"grade3-unit1-lesson2.html\""));
 assert.ok(listing.includes('Lesson 2 · School Subjects'));
-assert.ok(listing.includes("grade===5?'<a class=\"lesson\" href=\"grade5-unit1-lesson2.html\""));
+assert.ok(listing.includes("'grade5-unit1-lesson2': '<a class=\"lesson\" href=\"grade5-unit1-lesson2.html\""));
 for (const grade of [3, 4, 5, 8]) assert.ok(listing.includes(`grade${grade}-unit1-lesson1.html`));
 pass('Grade 3 listing includes new lesson without removing existing lesson links');
 
@@ -231,7 +231,7 @@ assert.ok(read(`${g4}.html`).includes('data-nav-page="menu"'), 'Grade 4 Lesson 2
 pass('Grade 4 Lesson 2 pages follow LESSON_PAGE_STANDARD.md', 'Five connected pages; four content pages load the shared step navigator; menu opts out');
 
 const g4Listing = read('lessons.html');
-assert.ok(g4Listing.includes("grade===4?'<a class=\"lesson\" href=\"grade4-unit1-lesson2.html\""));
+assert.ok(g4Listing.includes("'grade4-unit1-lesson2': '<a class=\"lesson\" href=\"grade4-unit1-lesson2.html\""));
 assert.ok(g4Listing.includes('Lesson 2 · My Family'));
 assert.ok(g4Listing.includes('grade4-unit1-lesson1.html'));
 assert.ok(g4Listing.includes('grade3-unit1-lesson2.html'));

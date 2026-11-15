@@ -177,9 +177,10 @@ for (const stimulus of stimuli) {
 pass('Original-question independence', 'No prompt or test stimulus contains a seven-word sequence from the authoritative textbook inventory; new room rows, floor list, count table and passage are used');
 
 assert.ok(read('platform-shell.js').includes(`'${slug}': { grade: 3, unit: 1, lesson: 3, title: 'My Lovely School'`));
-assert.match(read('lessons.html'), /const preparedCounts = \{ 3: [3-9],/);
+assert.ok(read('lessons.html').includes(`'${slug}': '<a class="lesson" href="${slug}.html"`), `${slug}: registry-keyed grade listing card`);
 assert.ok(read('lessons.html').includes(`href="${slug}.html"`));
-assert.ok(read('round-tests.html').includes(`href: '${slug}-test.html'`));
+assert.match(read('lessons.html'), /curriculum\.gradeSummary\(grade\)/, 'lessons.html must derive its readiness count from the curriculum registry instead of restating it');
+assert.match(read('round-tests.html'), /curriculum\.gradeSummary\(grade\)/, 'round-tests.html must derive its Lesson Test directory from the curriculum registry');
 for (const file of files) {
   assert.ok(read('index.html').includes(`href="${file}"`), `home directory missing ${file}`);
   assert.ok(read('teacher-resources.html').includes(`href="${file}"`), `teacher directory missing ${file}`);
