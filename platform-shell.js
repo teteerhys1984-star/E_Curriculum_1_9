@@ -41,7 +41,8 @@
     'grade8-unit1-lesson1': { grade: 8, unit: 1, lesson: 1, title: 'Future Plans', bookLabel: "Student's Book", answerKey: true },
     'grade8-unit1-lesson2': { grade: 8, unit: 1, lesson: 2, title: 'School Challenges', bookLabel: "Student's Book", answerKey: true },
     'grade8-unit1-lesson3': { grade: 8, unit: 1, lesson: 3, title: 'Let’s Discover', bookLabel: "Student's Book", answerKey: true },
-    'grade8-unit1-lesson4': { grade: 8, unit: 1, lesson: 4, title: 'Interesting Destinations', bookLabel: "Student's Book", answerKey: true }
+    'grade8-unit1-lesson4': { grade: 8, unit: 1, lesson: 4, title: 'Interesting Destinations', bookLabel: "Student's Book", answerKey: true },
+    'grade8-unit1-lesson5': { grade: 8, unit: 1, lesson: 5, title: 'Safety Online!', bookLabel: "Student's Book", answerKey: true }
   };
 
   /* Every published lesson ships the same five connected pages. The page total shown

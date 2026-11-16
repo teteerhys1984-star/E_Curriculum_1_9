@@ -74,7 +74,8 @@ const anchoredKeyLinks = [
   'grade8-unit1-lesson1-test.html#teacher-gate',
   'grade8-unit1-lesson2-test.html#teacher-gate',
   'grade8-unit1-lesson3-test.html#teacher-gate',
-  'grade8-unit1-lesson4-test.html#teacher-gate'
+  'grade8-unit1-lesson4-test.html#teacher-gate',
+  'grade8-unit1-lesson5-test.html#teacher-gate'
 ];
 // The one lesson test that publishes no answer key at all. It must gain neither a gate nor a link.
 const keylessTests = ['grade4-unit1-lesson1'];
@@ -343,9 +344,9 @@ try {
       wrapped: Boolean(document.querySelector('.table-scroll')?.classList.contains('table-scroll'))
     };
   });
-  assert.equal(matrix.rows.length, 22, 'the matrix must list all twenty-two prepared lessons');
+  assert.equal(matrix.rows.length, 23, 'the matrix must list all twenty-three prepared lessons');
   assert.deepEqual(matrix.headers, ['Grade · Lesson', 'Test items', 'Answer-key area', 'Book reveals', 'Workbook reveals', 'Listening key']);
-  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 22, 'every lesson must report no listening key');
+  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 23, 'every lesson must report no listening key');
   assert.equal(matrix.rows.filter(row => /^Not published$/.test(row.cells[1])).length, 1, 'exactly one lesson has no published key');
   assert.match(matrix.rows.find(row => row.label.startsWith('4 · 1')).cells[1], /Not published/);
 
@@ -365,7 +366,7 @@ try {
   assert.match(g8l4.cells[1], /^Published \(deep-linked gate\)/, 'Grade 8 Lesson 4 must publish its key area');
   assert.equal(g8l4.cells[4], 'None', 'Grade 8 Lesson 4 must report no listening key');
 
-  pass('Rendered status matrix', 'Twenty-two rows with the expected columns, one “Not published” key and “None” for every listening key');
+  pass('Rendered status matrix', 'Twenty-three rows with the expected columns, one “Not published” key and “None” for every listening key');
 
   // 9. Keyboard access and skip link (desktop width, where the header bar is visible).
   await page.setViewportSize({ width: 1440, height: 900 });

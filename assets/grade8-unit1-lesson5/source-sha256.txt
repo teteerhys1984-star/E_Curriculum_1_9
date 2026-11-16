@@ -1,0 +1,10 @@
+d16973a2e53fc2583009a8278b73e1d9829ba33b6cb236e249b6500ac8b21516  assets/grade8-unit1-lesson5/source/student-book-page-34.png
+0d68ff4b222a0b11c090cad0a0e7e411170078e13afbc339b48edc9e5fbbd7ef  assets/grade8-unit1-lesson5/source/student-book-page-35.png
+feeffe985d2893c631d5759dc63345b9ab1b197bdffae2e6294bf84607c597b1  assets/grade8-unit1-lesson5/source/student-book-page-36.png
+265fd3666fa2325079d177577a3d5e6f79adb2985c3e3343b5bca9af4beabbd9  assets/grade8-unit1-lesson5/source/student-book-page-37.png
+3e2f987267fff0b2fbdea02123f9f0a45cd673e10dd4d20644a5bbc3f75cba9e  assets/grade8-unit1-lesson5/source/student-book-page-38.png
+3048f3da5c79131b5b9e324fdb11827ba904f902b94eebae1603e6ae1174c286  assets/grade8-unit1-lesson5/source/student-book-page-39.png
+afc9032820a949f962fff89ae3a9202ab4cd5f899f0051c6fa9b54bb6a864b65  assets/grade8-unit1-lesson5/source/workbook-page-18.png
+b2856a451ca7a15b77abfe26be498dce9e3a01b819f8e42894891f47df8c3b5b  assets/grade8-unit1-lesson5/source/workbook-page-19.png
+f357d94cf9b07fb86958902c0232e575f3a80b7d737efa517bace404a2fce611  assets/grade8-unit1-lesson5/source/workbook-page-20.png
+208bfada5164eb0310145621e06e359dad894f04278435800a902e66d4962d6f  assets/grade8-unit1-lesson5/source/workbook-page-21.png
