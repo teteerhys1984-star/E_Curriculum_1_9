@@ -5,6 +5,7 @@ import http from 'node:http';
 import {createRequire} from 'node:module';
 import {fileURLToPath} from 'node:url';
 import {chromium} from 'playwright';
+import { curriculumTotals } from './curriculum-totals.shared.mjs';
 const require=createRequire(import.meta.url),root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),prefix='/E_Curriculum_1_9/';
 const mime={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.png':'image/png','.json':'application/json'};
 const server=http.createServer((req,res)=>{const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);if(!pathname.startsWith(prefix)){res.writeHead(404);res.end();return;}const file=path.resolve(root,pathname.slice(prefix.length)||'index.html');if(!file.startsWith(root+path.sep)||!fs.existsSync(file)){res.writeHead(404);res.end();return;}res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream'});fs.createReadStream(file).pipe(res);});
@@ -21,7 +22,7 @@ try{
  // Live directory integrations and section navigation targets.
  await page.goto(origin+'lessons.html?grade=4');check(await page.locator('#lesson-list a.lesson').count()===6,'Grade 4 menu lists six prepared lessons');for(const l of [5,6])check(await page.locator(`#lesson-list a[href="grade4-unit1-lesson${l}.html"]`).count()===1,`Grade 4 menu includes Lesson ${l}`);
  await page.goto(origin+'round-tests.html?grade=4');check(await page.locator('#available-tests-links a').count()===6,'Round test directory lists six individual tests');
- await page.goto(origin+'index.html');check((await page.locator('#prepared-lessons').innerText()).includes('23 verified lessons · 115 pages'),'homepage prepared lesson totals');
- await page.goto(origin+'teacher.html');check(await page.locator('.stat').nth(0).innerText()==='23\nPrepared lessons','teacher lesson count');check(await page.locator('.stat').nth(1).innerText()==='115\nVerified lesson pages','teacher page count');check(await page.locator('.stat').nth(2).innerText()==='22\nAnswer-key areas','teacher key count');
+ await page.goto(origin+'index.html');check((await page.locator('#prepared-lessons').innerText()).includes(`${curriculumTotals.lessons} verified lessons · ${curriculumTotals.pages} pages`),'homepage prepared lesson totals');
+ await page.goto(origin+'teacher.html');check(await page.locator('.stat').nth(0).innerText()===`${curriculumTotals.lessons}\nPrepared lessons`,'teacher lesson count');check(await page.locator('.stat').nth(1).innerText()===`${curriculumTotals.pages}\nVerified lesson pages`,'teacher page count');check(await page.locator('.stat').nth(2).innerText()===`${curriculumTotals.answerKeyAreas}\nAnswer-key areas`,'teacher key count');
  check(errors.length===0,`No browser console or page errors: ${errors.join('; ')}`);console.log(`PASS Grade 4 Unit 1 Lessons 5 & 6 browser tests: ${checkCount} checks across all ten pages, viewports, navigation, scans, Arabic, scoring, persistence, reset and teacher keys.`);
 }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));}

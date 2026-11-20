@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { assertTeacherFallbackTotals } from './curriculum-totals.shared.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sha256 = value => crypto.createHash('sha256').update(value).digest('hex');
@@ -311,9 +312,7 @@ export function validateLesson(lesson) {
   assert.match(read('round-tests.html'), /curriculum\.gradeSummary\(grade\)/, 'round-tests.html derives its Lesson Test directory from the curriculum registry');
   assert.ok(read('index.html').includes(`${base}.html`), `index.html: ${base} must be directly listed`);
   assert.ok(read('teacher-resources.html').includes(`${base}.html`), `teacher-resources.html: ${base} must be listed for teachers`);
-  assert.ok(read('teacher.html').includes('23</b><span>Prepared lessons'), 'Teacher portal aggregate lesson total');
-  assert.ok(read('teacher.html').includes('115</b><span>Verified lesson pages'), 'Teacher portal aggregate page total');
-  assert.ok(read('teacher.html').includes('22</b><span>Answer-key areas'), 'Teacher portal aggregate key total');
+  assertTeacherFallbackTotals(read('teacher.html'));
 
   console.log(`PASS Grade 4 Unit 1 Lesson ${lesson}: five registered pages; source/crop hashes; ${expectedVocabulary.total} audited vocabulary entries and references; ${quiz.totalQuestions} quiz questions matched to JSON; curriculum links, limits and key data checked.`);
 }
