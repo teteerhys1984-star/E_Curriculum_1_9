@@ -56,6 +56,16 @@ try {
         assert.equal(await page.locator(`${selector} .check-practice`).count(),0,`${id}: open/audio form must not be scored`);
         for(let i=0;i<await controls.count();i++) await controls.nth(i).evaluate(el=>{el.value=el.tagName==='SELECT'?el.options[1].value:'personal response';el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));});
       }
+      if (process.env.LESSON5_PUBLISHED && id.endsWith('-writing')) {
+        const model = page.locator(`${selector} details[data-writing-kind="open"]`);
+        assert.ok(fs.existsSync(await model.getAttribute('data-source')));
+        assert.doesNotMatch(await model.innerText(), /Teacher guidance|answer key/i);
+        await model.locator('summary').evaluate(el => el.click());
+        assert.equal(await model.evaluate(el => el.open), true);
+        assert.match(await model.textContent(), id === 'sb39-writing' ? /Hi Sami,If I were you/ : /Hi Sarah,Why don’t you/);
+        assert.equal(await controls.first().inputValue(), 'personal response');
+        await controls.first().evaluate(el => { el.value += ' revised'; el.dispatchEvent(new Event('input')); });
+      }
       const expected=await controls.evaluateAll(els=>els.map(el=>el.value));
       await page.reload();
       assert.deepEqual(await controls.evaluateAll(els=>els.map(el=>el.value)),expected,`${id}: restored`);
