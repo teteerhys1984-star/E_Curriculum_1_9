@@ -10,6 +10,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
+import { curriculumTotals } from './curriculum-totals.shared.mjs';
 
 const require = createRequire(import.meta.url);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -344,10 +345,11 @@ try {
       wrapped: Boolean(document.querySelector('.table-scroll')?.classList.contains('table-scroll'))
     };
   });
-  assert.equal(matrix.rows.length, 23, 'the matrix must list all twenty-three prepared lessons');
+  assert.equal(matrix.rows.length, curriculumTotals.lessons, 'the matrix must list every registered lesson');
   assert.deepEqual(matrix.headers, ['Grade · Lesson', 'Test items', 'Answer-key area', 'Book reveals', 'Workbook reveals', 'Listening key']);
-  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, 23, 'every lesson must report no listening key');
-  assert.equal(matrix.rows.filter(row => /^Not published$/.test(row.cells[1])).length, 1, 'exactly one lesson has no published key');
+  assert.equal(matrix.rows.filter(row => row.cells[4] === 'None').length, curriculumTotals.lessons, 'every lesson must report no listening key');
+  const unpublishedKeyCount = curriculumTotals.lessons - curriculumTotals.answerKeyAreas;
+  assert.equal(matrix.rows.filter(row => /^Not published$/.test(row.cells[1])).length, unpublishedKeyCount, 'the matrix must match the registry count of lessons without a published key');
   assert.match(matrix.rows.find(row => row.label.startsWith('4 · 1')).cells[1], /Not published/);
 
   // Grade 8 Lesson 2 row: published key area, 12 test items, no listening key.
@@ -366,7 +368,7 @@ try {
   assert.match(g8l4.cells[1], /^Published \(deep-linked gate\)/, 'Grade 8 Lesson 4 must publish its key area');
   assert.equal(g8l4.cells[4], 'None', 'Grade 8 Lesson 4 must report no listening key');
 
-  pass('Rendered status matrix', 'Twenty-three rows with the expected columns, one “Not published” key and “None” for every listening key');
+  pass('Rendered status matrix', `${curriculumTotals.lessons} rows with the expected columns, ${unpublishedKeyCount} “Not published” answer-key entries and “None” for every listening key`);
 
   // 9. Keyboard access and skip link (desktop width, where the header bar is visible).
   await page.setViewportSize({ width: 1440, height: 900 });
