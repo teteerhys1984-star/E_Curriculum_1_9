@@ -170,3 +170,24 @@
     min-width: 0;
   }
 }
+
+/* Labelled student-visible writing models and practice controls. */
+.writing-model {
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  background-color: var(--color-bg-subtle);
+  padding: 0 var(--space-4);
+  margin: var(--space-3) 0;
+}
+
+.writing-model summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--color-brand-900);
+  font-size: var(--text-sm);
+  padding: var(--space-3) 0;
+}
+
+.writing-model p {
+  color: var(--color-text-secondary);
+}
