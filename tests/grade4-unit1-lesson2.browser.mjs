@@ -227,7 +227,8 @@ try {
   assert.equal(await page.locator('#wb-3 .notice').count(), 1);
   await clickStep(3);
   assert.match(await page.locator('#wb-4 h2').textContent(), /Listen and match\. \(Adam’s family – Tom’s family\)/);
-  assert.equal(await page.locator('#wb-4 .notice').count(), 1);
+  assert.equal(await page.locator('#wb-4 > div.notice').count(), 1, 'the original listening notice is preserved');
+  assert.equal(await page.locator('#wb-4 [data-writing-exception]').count(), 1, 'the writing practice documents the missing recording');
   await clickStep(4);
   assert.equal(await page.locator('#wb-5 .writing-lines input').count(), 5, 'one field per printed dotted line');
   await page.locator('#wb5-1').fill('The mother has got long hair.');

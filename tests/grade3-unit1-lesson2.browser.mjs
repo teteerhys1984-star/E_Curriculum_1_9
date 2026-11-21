@@ -207,11 +207,11 @@ try {
   assert.deepEqual(await normalizedText('.match-options.en li'), ['What lessons have we got today?', "What's your favourite lesson?", 'What have you got on Tuesday?', "a — On Tuesday, I've got Maths.", "b — Today, we've got Art and Music.", 'c — My favourite lesson is English.']);
   assert.deepEqual(await normalizedText('#wb-number-match .match-row label'), ['twenty-nine','twenty-two','thirty','twenty-one','twenty-eight','twenty-three']);
   assert.deepEqual(await page.locator('#wb-number-match select').evaluateAll(nodes => nodes.map(node => Array.from(node.options).slice(1).map(option => option.value))), Array(6).fill(['21','30','29','28','23','22']));
-  assert.deepEqual(await normalizedText('#wb-4 > p'), ['Printed numbers in order: 21 → 22 → … → 24 → … → … → 27 → 28 → … → 30.']);
+  assert.deepEqual(await normalizedText('#wb-4 > p:first-of-type'), ['Printed numbers in order: 21 → 22 → … → 24 → … → … → 27 → 28 → … → 30.']);
   assert.deepEqual(await page.locator('.schedule-table tbody tr').evaluateAll(rows => rows.map(row => Array.from(row.cells).map(cell => cell.querySelector('input') ? '[blank]' : cell.textContent.trim()))), [
     ['Sunday','Maths','Art','[blank]','Arabic'], ['Monday','[blank]','Music','Arabic','English'], ['Tuesday','Arabic','[blank]','Social Studies','[blank]']
   ]);
-  assert.deepEqual(await normalizedText('#wb-6 .activity > p'), ["What's your favourite lesson?"]);
+  assert.deepEqual(await normalizedText('#wb-6 > div.activity > p'), ["What's your favourite lesson?"]);
   assert.equal(await page.locator('#wb-6 .writing-line > span').textContent(), 'My');
   pass('Exact source transcription audit', 'Six PB dialogues; learn/ask sentences; ten numbers; phonics words; all WB questions/options; number order; four+four blank positions; personal writing prompt');
 
