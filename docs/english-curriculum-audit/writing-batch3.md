@@ -45,6 +45,14 @@ was fully compliant; the requirement-by-requirement before/after tables are in e
   documented exceptions, exposes a persistence status, migrates drafts already saved by the
   existing lesson stores, and provides a deliberate per-activity reset with its own storage key
   `efc_writing_<page>_v1:<id>`.
+  Reset is **synchronous**: the single `reset` handler calls `preventDefault()`, clears every
+  control in the activity (including printed clock pickers), removes invalid markings, closes
+  the model and guidance panels, clears feedback, deletes the activity's writing key and its
+  legacy lesson fields, and updates the status — all before the click returns. Printed
+  `type="reset"` buttons and generated reset buttons both funnel through that one handler, so
+  there is no second, deferred reset path and an immediate reload cannot resurrect a cleared
+  draft. (An earlier draft of this layer deferred the cleanup through `setTimeout(…, 0)`, which
+  raced a reload in CI; see the pull request.)
 - `grade3-unit1-lesson3-workbook.html`, `grade4-unit1-lesson3-pupil-book.html`,
   `grade4-unit1-lesson3-workbook.html`: one `<script>` reference each.
 - `grade3-unit1-lesson3.css`, `grade4-unit1-lesson3.css`: styling for the labelled model and
@@ -61,8 +69,12 @@ section IDs, field IDs, lesson storage keys (`efc_grade3_unit1_lesson3_practice_
 - `npm test` — passes (includes the new `tests/lesson3-writing.mjs`, which re-hashes all
   12 scans and pins the 13 activities and their printed response spaces).
 - `node tests/lesson3-writing.browser.mjs` — passes: model/exception content, reveal without
-  overwriting, edit, reload persistence, isolated per-activity reset, page-level reset,
-  keyboard access, 390 px/768 px layout, storage-failure disclosure, and teacher-key separation.
+  overwriting, edit, reload persistence, synchronous isolated per-activity reset, page-level
+  reset, keyboard access, 390 px/768 px layout, storage-failure disclosure, teacher-key
+  separation, and legacy draft migration. The reset assertions read fields, the activity key,
+  the legacy lesson draft, panel state, invalid markings and feedback in a single evaluation
+  immediately after the click, then reload immediately; all 13 activities across both grades
+  are covered.
 - `node tests/grade3-unit1-lesson3.browser.mjs` and
   `node tests/grade4-unit1-lessons34.browser.mjs` — existing lesson suites pass unchanged.
 - Full browser suite (`npm run test:browser`) — **exit 0**, 185 `PASS` lines and zero

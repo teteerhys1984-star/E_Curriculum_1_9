@@ -138,30 +138,90 @@ try {
       for (let i = 1; i < expected[id]; i++) assert.equal(await fieldsOf(id).nth(i).inputValue(), `draft ${id} ${i}`);
     }
 
-    // Deliberate reset of one activity must not clear another.
-    for (let n = 0; n < ids.length; n++) {
-      const id = ids[n];
-      await navigate(id);
-      const group = page.locator(`[data-writing-activity="${id}"]`);
-      await openModel(id);
-      await group.locator('[data-writing-reset]').first().click();
-      assert.ok((await fieldsOf(id).evaluateAll(els => els.map(el => el.value))).every(value => value === ''), `${file}:${id}: reset clears this activity`);
-      if (await group.locator('details[data-student-model]').count()) {
-        assert.equal(await group.locator('details[data-student-model]').evaluate(el => el.open), false, `${file}:${id}: reset closes the model`);
-      } else if (await group.locator('button[aria-controls]').count()) {
-        assert.equal(await group.locator('button[aria-controls]').first().getAttribute('aria-expanded'), 'false', `${file}:${id}: reset closes the guidance`);
+    /* Deliberate reset must be synchronous and complete. A draft is first kept in every
+       activity, then one activity is reset and the whole page state is read back in a
+       single evaluation — no waiting, no polling — so a deferred cleanup cannot hide. */
+    const isG3 = file.startsWith('grade3');
+    const legacyPrefix = isG3 ? 'efc_grade3_unit1_lesson3_practice_v1:' : 'efc_grade4_unit1_lesson3:practice:';
+    const writingPrefix = `efc_writing_${file.replace('.html', '')}_v1:`;
+    const readAfterReset = id => page.evaluate(({ id, legacyPrefix, writingPrefix, isG3 }) => {
+      const section = document.querySelector(`[data-writing-activity="${id}"]`);
+      const fields = [...section.querySelectorAll('input[type="text"], textarea')];
+      const keys = [...section.querySelectorAll('input, select, textarea')]
+        .map(el => (isG3 ? el.name : el.id)).filter(Boolean);
+      const legacyKey = Object.keys(localStorage).find(key => key.startsWith(legacyPrefix));
+      let legacy = null;
+      try { legacy = legacyKey ? JSON.parse(localStorage.getItem(legacyKey) || 'null') : null; } catch { legacy = null; }
+      const legacyDraft = legacy
+        ? keys.filter(key => {
+          const entry = isG3 ? legacy.fields?.[key] : legacy[key]?.value;
+          return typeof entry === 'string' && entry !== '';
+        })
+        : [];
+      return {
+        values: fields.map(field => field.value),
+        writingKey: localStorage.getItem(writingPrefix + id),
+        legacyDraft,
+        invalid: [...section.querySelectorAll('[aria-invalid]')].length,
+        modelsOpen: [...section.querySelectorAll('details[data-student-model]')].filter(details => details.open).length,
+        expanded: [...section.querySelectorAll('button[aria-controls]')]
+          .filter(button => button.getAttribute('aria-expanded') === 'true').length,
+        feedback: (section.querySelector('.practice-feedback')?.textContent || '').trim(),
+        status: (section.querySelector('[data-writing-status]')?.textContent || '').trim()
+      };
+    }, { id, legacyPrefix, writingPrefix, isG3 });
+    const assertCleared = (state, id, when) => {
+      assert.ok(state.values.every(value => value === ''), `${file}:${id}: ${when} clears every field`);
+      assert.equal(state.writingKey, null, `${file}:${id}: ${when} removes its own saved writing key`);
+      assert.deepEqual(state.legacyDraft, [], `${file}:${id}: ${when} clears the legacy lesson draft for this activity`);
+      assert.equal(state.invalid, 0, `${file}:${id}: ${when} clears invalid-field marking`);
+      assert.equal(state.modelsOpen, 0, `${file}:${id}: ${when} closes the model`);
+      assert.equal(state.expanded, 0, `${file}:${id}: ${when} closes the guidance`);
+      assert.equal(state.feedback, '', `${file}:${id}: ${when} clears feedback`);
+      assert.equal(state.status, 'Responses are saved in this browser. Compare, edit, or reset when ready.', `${file}:${id}: ${when} reports the saved-draft status`);
+    };
+    const otherDrafts = async (exceptId, prefix) => {
+      const kept = {};
+      for (const id of ids) {
+        if (id === exceptId) continue;
+        await navigate(id);
+        kept[id] = await fieldsOf(id).first().inputValue();
+        assert.equal(kept[id], `${prefix} ${id}`, `${file}:${id}: another activity's draft must survive a reset elsewhere`);
       }
-      if (n + 1 < ids.length) {
-        await navigate(ids[n + 1]);
-        assert.equal(await fieldsOf(ids[n + 1]).first().inputValue(), `edited ${ids[n + 1]}`, `${file}:${id}: reset left the next activity untouched`);
-      }
-    }
-    await page.reload();
+      return kept;
+    };
+
+    // Seed a draft in every activity so isolation can be observed.
     for (const id of ids) {
       await navigate(id);
-      assert.ok((await fieldsOf(id).evaluateAll(els => els.map(el => el.value))).every(value => value === ''), `${file}:${id}: reset survived the reload`);
+      await fieldsOf(id).first().fill(`kept ${id}`);
     }
-    console.log(`PASS ${file}: ${ids.length} writing activities — model/exception, reveal without overwrite, edit, reload, isolated reset`);
+    await page.reload();
+
+    for (const id of ids) {
+      await navigate(id);
+      const group = page.locator(`[data-writing-activity="${id}"]`);
+      for (let i = 0; i < expected[id]; i++) await fieldsOf(id).nth(i).fill(`reset-me ${id} ${i}`);
+      await openModel(id);
+      const check = group.locator('.check-practice');
+      if (await check.count()) await check.click();
+      await group.locator('[data-writing-reset]').first().click();
+      // Read the settled state with no waiting: fields, keys, panels, marking, feedback.
+      assertCleared(await readAfterReset(id), id, 'reset');
+
+      // Reload immediately after the next click: nothing asynchronous may still be pending.
+      for (let i = 0; i < expected[id]; i++) await fieldsOf(id).nth(i).fill(`again ${id} ${i}`);
+      await group.locator('[data-writing-reset]').first().click();
+      await page.reload();
+      await navigate(id);
+      assertCleared(await readAfterReset(id), id, 'immediate reload after reset');
+      await otherDrafts(id, 'kept');
+
+      // Leave a draft behind again so the next activity's isolation check is meaningful.
+      await navigate(id);
+      await fieldsOf(id).first().fill(`kept ${id}`);
+    }
+    console.log(`PASS ${file}: ${ids.length} writing activities — model/exception, reveal without overwrite, edit, reload, synchronous isolated reset`);
   }
 
   // The page-level reset on the Grade 4 pages clears every typed draft.
@@ -180,6 +240,30 @@ try {
       assert.equal(await fieldsOf(id).first().inputValue(), '', `${file}:${id}: page reset clears the draft`);
     }
     console.log(`PASS ${file}: page-level reset clears every writing draft`);
+  }
+
+  // Draft migration: work saved by the lesson script before this layer existed is adopted,
+  // so upgrading the page never discards a pupil's earlier draft.
+  for (const [file, activity, fieldId] of [
+    ['grade3-unit1-lesson3-workbook.html', 'wb-1', 'wb1-1a'],
+    ['grade4-unit1-lesson3-workbook.html', 'wb-2', 'wb2-1']
+  ]) {
+    const isG3 = file.startsWith('grade3');
+    await page.goto(origin + file);
+    await page.evaluate(({ isG3, fieldId }) => {
+      localStorage.clear();
+      if (isG3) localStorage.setItem('efc_grade3_unit1_lesson3_practice_v1:workbook', JSON.stringify({ fields: { [fieldId]: 'legacy draft' } }));
+      else localStorage.setItem(`efc_grade4_unit1_lesson3:practice:${location.pathname}`, JSON.stringify({ [fieldId]: { kind: 'value', value: 'legacy draft' } }));
+    }, { isG3, fieldId });
+    await page.reload();
+    await navigate(activity);
+    assert.equal(await page.locator(`#${fieldId}`).inputValue(), 'legacy draft', `${file}: legacy draft is adopted`);
+    const migrated = await page.evaluate(id => localStorage.getItem(`efc_writing_${location.pathname.split('/').pop().replace('.html', '')}_v1:${id}`), activity);
+    assert.ok(migrated && migrated.includes('legacy draft'), `${file}: adopted draft is persisted in the activity key`);
+    await page.locator(`[data-writing-activity="${activity}"] [data-writing-reset]`).first().click();
+    assert.equal(await page.locator(`#${fieldId}`).inputValue(), '', `${file}: reset clears the adopted draft`);
+    assert.equal(await page.evaluate(id => localStorage.getItem(`efc_writing_${location.pathname.split('/').pop().replace('.html', '')}_v1:${id}`), activity), null, `${file}: reset removes the adopted key`);
+    console.log(`PASS ${file}: legacy draft migration is preserved and resettable`);
   }
 
   // Keyboard access to the model reveal and the reset control.

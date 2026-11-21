@@ -170,32 +170,54 @@
       target.querySelectorAll('details[data-student-model]').forEach(details => { details.open = false; });
       target.querySelectorAll('button[aria-controls][aria-expanded="true"]').forEach(button => button.click());
     };
-    const clear = () => {
-      controls.forEach(control => { control.value = ''; control.removeAttribute('aria-invalid'); });
-      clearLegacy(controls);
-      try { localStorage.removeItem(key); } catch { /* Storage is optional. */ }
+    // Every control of this activity, including any printed clock pickers that are not
+    // text fields but still belong to the same written response.
+    const activityControls = [...target.querySelectorAll('input, select, textarea')];
+
+    /* Reset is one synchronous step: when this returns, the visible fields, the saved
+       writing key and the legacy lesson draft all agree, so a reload that follows the
+       click immediately cannot resurrect the cleared draft. */
+    const performReset = () => {
+      activityControls.forEach(control => {
+        if (control.type === 'checkbox' || control.type === 'radio') control.checked = false;
+        else control.value = '';
+        control.removeAttribute('aria-invalid');
+      });
       closeModels();
       const feedback = target.querySelector('.practice-feedback');
-      if (feedback) { feedback.textContent = ''; feedback.className = 'feedback practice-feedback'; }
+      if (feedback) {
+        feedback.textContent = '';
+        feedback.className = 'feedback practice-feedback';
+      }
+      clearLegacy(activityControls);
+      try { localStorage.removeItem(key); } catch { /* Storage is optional. */ }
+      // Let the lesson script redraw derived views (e.g. blank clocks) from the cleared
+      // values. It persists its own empty state; the writing key was already removed.
+      activityControls
+        .filter(control => !controls.includes(control))
+        .forEach(control => control.dispatchEvent(new Event('input', { bubbles: true })));
       report();
     };
 
     const form = target.querySelector('form');
-    const afterReset = () => {
-      closeModels();
-      window.setTimeout(clear, 0);
-    };
-    if (reset.type === 'reset') {
-      // The printed control already resets the form; keep the saved draft in step with it.
-      form?.addEventListener('reset', afterReset);
-    } else {
-      reset.addEventListener('click', () => {
-        if (form) form.reset();
-        else clear();
-        afterReset();
+    if (form) {
+      // Take responsibility for the reset instead of relying on the native form action,
+      // so there is exactly one synchronous path for printed and generated controls.
+      form.addEventListener('reset', event => {
+        event.preventDefault();
+        performReset();
       });
     }
-    if (!Array.isArray(saved)) save();
+    if (reset.type !== 'reset') {
+      reset.addEventListener('click', () => {
+        // form.reset() fires the single reset handler above; no second reset path.
+        if (form) form.reset();
+        else performReset();
+      });
+    }
+    // Only persist a migrated draft when there is something to keep; an activity with no
+    // work must not acquire a saved key, so "reset" stays observable across reloads.
+    if (!Array.isArray(saved) && restored.some(value => typeof value === 'string' && value !== '')) save();
     report();
   });
 

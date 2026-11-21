@@ -83,7 +83,11 @@ model states 12:45 and how it is said, and discloses that the book prints no ans
 
 - Added `lesson3-writing-practice.js` to both pages: 3 groups on the Pupil's Book, 4 on the
   Workbook, each with `efc_writing_<page>_v1:<id>` storage, a visible persistence status and
-  a `Reset this activity` button (a printed reset control is reused where one exists).
+  a `Reset this activity` button (a printed reset control is reused where one exists). Both
+  button kinds funnel through one synchronous `reset` handler that prevents the native reset
+  and clears fields (including the printed clock pickers), the activity key, the legacy
+  `efc_grade4_unit1_lesson3:practice:<path>` entries, the model and guidance panels, invalid
+  markings, feedback and the status in one step.
 - Preserved all section IDs, field IDs, the lesson store
   `efc_grade4_unit1_lesson3:practice:<path>`, and the existing page-level reset. Drafts already
   saved in the page store are migrated into the per-activity keys on first load, and the

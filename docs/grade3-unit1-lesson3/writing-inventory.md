@@ -62,7 +62,11 @@ excluded, not as Writing.
 - Added `lesson3-writing-practice.js` to the Workbook page: one writing group per exercise,
   per-activity storage key `efc_writing_grade3-unit1-lesson3-workbook_v1:<id>`, a visible
   persistence status, and an explicit reset that reuses the printed `Clear this exercise`
-  control (no duplicate button).
+  control (no duplicate button). The reset runs synchronously inside the form's `reset` event
+  (the native default is prevented), so fields, the activity key, the legacy
+  `efc_grade3_unit1_lesson3_practice_v1:workbook` entries, the open guidance panel, invalid
+  markings and feedback are all cleared before the click returns — an immediate reload cannot
+  restore the cleared draft.
 - Preserved every existing section ID, field ID, the lesson storage key
   `efc_grade3_unit1_lesson3_practice_v1:workbook` and any draft already saved there
   (existing drafts are migrated into the new per-activity keys on first load).
