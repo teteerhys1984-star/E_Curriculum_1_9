@@ -52,6 +52,13 @@ const cases = [
   },
   {
     file: 'grade4-unit1-lesson4-pupil-book.html',
+    section: '#pb-1',
+    input: '#pb1-number-1',
+    sample: '3',
+    exception: true
+  },
+  {
+    file: 'grade4-unit1-lesson4-pupil-book.html',
     section: '#pb-11',
     input: '#pb10-first',
     sample: 'very bright',
@@ -98,16 +105,42 @@ for (const c of cases) {
     assert.equal(await btn.getAttribute('aria-expanded'), 'false');
   }
 
-  // Write, reload, verify persistence
+  // The audio-dependent activity remains explicitly unverified and ungraded.
+  if (c.exception) {
+    const note = await sec.locator('[data-writing-exception]').innerText();
+    assert.match(note, /recording was not supplied/);
+    assert.match(note, /no answer model is provided/);
+    assert.match(note, /not graded/);
+    assert.equal(await sec.locator('details[data-student-model]').count(), 0);
+  }
+
+  // Compare a model without replacing the response, then edit and persist it.
   const input = sec.locator(c.input);
   await input.fill(c.sample);
+  if (c.hasStudentModel) {
+    await sec.locator('details[data-student-model] summary').click();
+    assert.equal(await input.inputValue(), c.sample);
+    await sec.locator('details[data-student-model] summary').click();
+  } else if (c.existingReveal) {
+    await sec.locator(c.existingReveal).click();
+    assert.equal(await input.inputValue(), c.sample);
+    await sec.locator(c.existingReveal).click();
+  }
+  const edited = c.sample + (c.exception ? '1' : ' edited');
+  await input.fill(edited);
   await page.reload({ waitUntil: 'networkidle' });
   await navigate(page, c.section);
   await sec.waitFor({ state: 'visible' });
-  assert.equal(await sec.locator(c.input).inputValue(), c.sample, `${c.file} ${c.input} persisted`);
+  assert.equal(await sec.locator(c.input).inputValue(), edited, `${c.file} ${c.input} persisted`);
 
-  // Synchronous reset, immediate reload, verify cleared
-  await sec.locator('[data-writing-reset]').click();
+  // Inspect state within the same browser task as the click, before any reload.
+  const immediate = await sec.evaluate((section, selector) => {
+    section.querySelector('[data-writing-reset]').click();
+    const key = `efc_writing_${location.pathname.split('/').pop().replace('.html', '')}_v1:${section.dataset.writingActivity}`;
+    return { value: section.querySelector(selector).value, stored: localStorage.getItem(key) };
+  }, c.input);
+  assert.equal(immediate.value, '', `${c.file} ${c.input} immediately cleared`);
+  assert.equal(immediate.stored, null, `${c.file} activity storage immediately cleared`);
   await page.reload({ waitUntil: 'networkidle' });
   await navigate(page, c.section);
   await sec.waitFor({ state: 'visible' });
