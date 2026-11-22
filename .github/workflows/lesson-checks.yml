@@ -9,6 +9,7 @@ on:
       - 'assets/**'
       - 'tests/**'
       - 'docs/**'
+      - 'LESSON_PAGE_STANDARD.md'
       - 'package*.json'
       - '.github/workflows/lesson-checks.yml'
   workflow_dispatch:

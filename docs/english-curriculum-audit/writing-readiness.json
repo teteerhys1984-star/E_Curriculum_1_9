@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "audited": {
+    "grade3-unit1-lesson1": {
+      "activityCount": 2,
+      "inventory": "https://github.com/teteerhys1984-star/E_Curriculum_1_9/pull/73",
+      "exceptions": []
+    },
+    "grade4-unit1-lesson1": {
+      "activityCount": 14,
+      "inventory": "https://github.com/teteerhys1984-star/E_Curriculum_1_9/pull/73",
+      "exceptions": [
+        {
+          "book": "Pupil's Book",
+          "page": 3,
+          "activity": "Exercise 1 — Listen and number",
+          "reason": "The original recording was not supplied; the listening order cannot be verified.",
+          "handling": "Response entry, persistence and reset; no model; ask teacher for recording.",
+          "evidence": "lesson1-writing-practice.js"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 3,
+          "activity": "Exercise 2 — Listen again and order",
+          "reason": "The original recording was not supplied; the listening order cannot be verified.",
+          "handling": "Response entry, persistence and reset; no model; ask teacher for recording.",
+          "evidence": "lesson1-writing-practice.js"
+        },
+        {
+          "book": "Workbook",
+          "page": 6,
+          "activity": "Exercise 5 — Listen and write the number",
+          "reason": "The original recording was not supplied; the numbers cannot be verified.",
+          "handling": "Response entry, persistence and reset; no model; ask teacher for recording.",
+          "evidence": "lesson1-writing-practice.js"
+        },
+        {
+          "book": "Workbook",
+          "page": 7,
+          "activity": "Exercise 8 — Write the correct form",
+          "reason": "Remaining picture cues do not establish unique pronouns with confidence.",
+          "handling": "Labelled partial example, original page link and teacher-review notice; remaining responses unverified.",
+          "evidence": "lesson1-writing-practice.js"
+        }
+      ]
+    },
+    "grade3-unit1-lesson2": {
+      "activityCount": 3,
+      "inventory": "https://github.com/teteerhys1984-star/E_Curriculum_1_9/pull/74",
+      "exceptions": []
+    },
+    "grade4-unit1-lesson2": {
+      "activityCount": 9,
+      "inventory": "https://github.com/teteerhys1984-star/E_Curriculum_1_9/pull/74",
+      "exceptions": [
+        {
+          "book": "Pupil's Book",
+          "page": 6,
+          "activity": "Activity 3 — Look and describe",
+          "reason": "The source prints the third sentence with a dotted line and no completed version.",
+          "handling": "Explicit exception; sentence is practice only and not graded.",
+          "evidence": "lesson2-writing-practice.js"
+        },
+        {
+          "book": "Workbook",
+          "page": 9,
+          "activity": "Exercise 4 — Listen and match",
+          "reason": "The two names cannot be matched or verified without the original recording.",
+          "handling": "Response entry, persistence and reset; no model; ask teacher for recording.",
+          "evidence": "lesson2-writing-practice.js"
+        }
+      ]
+    },
+    "grade3-unit1-lesson3": {
+      "activityCount": 6,
+      "inventory": "docs/grade3-unit1-lesson3/writing-inventory.md",
+      "exceptions": [
+        {
+          "book": "Workbook",
+          "page": 9,
+          "activity": "Exercise 2 — Listen and number",
+          "reason": "The recording was not supplied; the six-circle order cannot be established from pictures.",
+          "handling": "Explicit exception; saved as practice only, not graded and no invented answer.",
+          "evidence": "docs/grade3-unit1-lesson3/writing-inventory.md"
+        }
+      ]
+    },
+    "grade4-unit1-lesson3": {
+      "activityCount": 7,
+      "inventory": "docs/grade4-unit1-lesson3/writing-inventory.md",
+      "exceptions": []
+    },
+    "grade3-unit1-lesson4": {
+      "activityCount": 4,
+      "inventory": "docs/grade3-unit1-lesson4/writing-inventory.md",
+      "exceptions": []
+    },
+    "grade4-unit1-lesson4": {
+      "activityCount": 11,
+      "inventory": "docs/grade4-unit1-lesson4/writing-inventory.md",
+      "exceptions": [
+        {
+          "book": "Pupil's Book",
+          "page": 12,
+          "activity": "Exercise 1 — Listen and number",
+          "reason": "The recording was not supplied; listening order cannot be verified from the pictures.",
+          "handling": "Explicit exception; numbers saved as practice only, not graded; no answer model.",
+          "evidence": "docs/grade4-unit1-lesson4/writing-inventory.md"
+        }
+      ]
+    }
+  }
+}

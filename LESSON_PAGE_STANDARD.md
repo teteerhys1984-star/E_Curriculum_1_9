@@ -19,6 +19,23 @@ Do not add it to lesson-selection/menu pages. Menu pages can opt out with `<body
 - Keep answer reveal and scoring logic in the lesson page. Shared navigation must not replace assessment logic.
 - Keep English text in `dir="ltr"` and restrict Arabic to word-level meanings marked `class="ar" lang="ar" dir="rtl"` on Vocabulary pages only.
 
+## Writing practice standard (mandatory for all grades and lessons)
+
+Before publishing or declaring Writing audited, inspect the original Pupil's/Student's Book and Workbook sources and record a source-based inventory of every activity requiring a written response. Identify its book, printed page, exercise, classification, source evidence, model or exception, and test coverage. Distinguish written production from oral, listening-only, matching or other non-writing tasks; explain borderline classifications.
+
+- Provide a complete, source-verified student-facing model where the source supports one. Clearly label illustrative examples for personal or open-ended prompts as examples where answers vary, not unique answers.
+- Explicitly disclose each audio-, image- or other source-dependent exception, its reason and current handling. An incomplete or partial example must not be presented as a verified complete model. Do not invent missing answers, recordings or evidence.
+- Provide accessible response entry and editing, model reveal/hide when a model exists, and comparison without overwriting the student's response. Provide a deliberate activity-level reset that clears that activity without erasing other work. If no model can be verified, disclose that instead of presenting a fabricated reveal.
+- Preserve drafts locally across reload and navigation; report storage failure and do not overwrite existing student responses when revealing a model. Preserve existing storage keys and migrate existing work safely if implementation changes them.
+- Keep student-facing practice models distinct from teacher-only assessment answer keys. Do not copy a teacher-only key into a practice model. Do not use fake autograding or pretend a personal answer or unsupported source-dependent answer has a unique correct result.
+- Test and record the actual scope of source/inventory checks and browser interactions separately, including model or exception, editing, persistence and isolated reset. Do not imply untested activities were browser-tested.
+
+### Writing readiness record
+
+`docs/english-curriculum-audit/writing-readiness.json` records source-audited lessons and their known exceptions; `node tests/writing-readiness.mjs` checks the records against the existing lesson registry and prints a state for every registered lesson. An absent audit record means **Writing not yet audited**, never compliant. A valid audit record with no listed exception means **Writing audited**; one with any exception means **Writing audited with documented exceptions**, not fully verified. These states cover Writing only, not overall lesson readiness.
+
+When auditing a lesson, add its activity count, an inventory reference, and every unresolved exception with its book, page, activity, reason, handling and local evidence. Update those records and the focused regression fixtures only when a source-based review justifies the change. New lessons must be audited before being presented as Writing-complete. The checker validates record structure and local evidence paths; it cannot verify pedagogical accuracy or discover omitted activities, and it does not change the public registry or block legacy unaudited lessons from existing publication.
+
 ## Independent Lesson Test Policy (Mandatory for All Grades & Lessons)
 
 Every **Lesson Test** (`*-test.html`) across Grades 1 to 9 must be an **independent pedagogical assessment**, completely separate from the textbook's printed exercises while measuring the exact same lesson learning objectives:
