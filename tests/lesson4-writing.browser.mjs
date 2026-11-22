@@ -66,10 +66,22 @@ const cases = [
   }
 ];
 
+const navigate = async (page, sectionSelector) => {
+  const id = sectionSelector.replace(/^#/, '');
+  const index = await page.evaluate(targetId => {
+    const panels = [...document.querySelectorAll('main.wrap section.panel')];
+    return panels.findIndex(p => p.id === targetId || p.querySelector(`#${targetId}`));
+  }, id);
+  assert.ok(index >= 0, `${sectionSelector}: activity lives in a navigable step`);
+  const btn = page.locator('.content-nav-links button').nth(index);
+  if (await btn.count()) await btn.click();
+};
+
 for (const c of cases) {
   await page.goto(`${baseUrl}/${c.file}`, { waitUntil: 'networkidle' });
+  await navigate(page, c.section);
   const sec = page.locator(c.section);
-  await sec.waitFor();
+  await sec.waitFor({ state: 'visible' });
 
   // Model reveal / hide
   if (c.hasStudentModel) {
@@ -79,7 +91,7 @@ for (const c of cases) {
     await details.locator('summary').click();
     assert.equal(await details.getAttribute('open'), null);
   } else if (c.existingReveal) {
-    const btn = page.locator(c.existingReveal);
+    const btn = sec.locator(c.existingReveal);
     await btn.click();
     assert.equal(await btn.getAttribute('aria-expanded'), 'true');
     await btn.click();
@@ -87,14 +99,19 @@ for (const c of cases) {
   }
 
   // Write, reload, verify persistence
-  await page.fill(c.input, c.sample);
+  const input = sec.locator(c.input);
+  await input.fill(c.sample);
   await page.reload({ waitUntil: 'networkidle' });
-  assert.equal(await page.inputValue(c.input), c.sample, `${c.file} ${c.input} persisted`);
+  await navigate(page, c.section);
+  await sec.waitFor({ state: 'visible' });
+  assert.equal(await sec.locator(c.input).inputValue(), c.sample, `${c.file} ${c.input} persisted`);
 
   // Synchronous reset, immediate reload, verify cleared
-  await page.locator(`${c.section} [data-writing-reset]`).click();
+  await sec.locator('[data-writing-reset]').click();
   await page.reload({ waitUntil: 'networkidle' });
-  assert.equal(await page.inputValue(c.input), '', `${c.file} ${c.input} cleared synchronously`);
+  await navigate(page, c.section);
+  await sec.waitFor({ state: 'visible' });
+  assert.equal(await sec.locator(c.input).inputValue(), '', `${c.file} ${c.input} cleared synchronously`);
 }
 
 assert.deepEqual(errors, [], `No page errors: ${errors.join('; ')}`);
