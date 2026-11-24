@@ -15,4 +15,4 @@ requires its forward link, and the site-wide local-link check is unchanged.
 
 **Required follow-up when Lesson 7 is published.** Remove `'6'` from
 `NEXT_LESSON_NOT_YET_PUBLISHED`, add the link to `grade3-unit1-lesson7.html` on the Lesson 6
-hub, and update `tests/navigation-exception.mjs` so it expects that link.
+hub, and remove the Lesson 6 branch from the exception check in `tests/grade3-lesson.mjs` so the shared contract expects that link.

@@ -16,6 +16,11 @@
     "grade3-unit1-lesson5-vocabulary.html",
     "grade3-unit1-lesson5-workbook.html",
     "grade3-unit1-lesson5.html",
+    "grade3-unit1-lesson6-pupil-book.html",
+    "grade3-unit1-lesson6-test.html",
+    "grade3-unit1-lesson6-vocabulary.html",
+    "grade3-unit1-lesson6-workbook.html",
+    "grade3-unit1-lesson6.html",
     "grade4-unit1-lesson3-pupil-book.html",
     "grade4-unit1-lesson3-test.html",
     "grade4-unit1-lesson3-vocabulary.html",
@@ -66,14 +71,38 @@
     "grade8-unit1-lesson4-vocabulary.html",
     "grade8-unit1-lesson4-workbook.html",
     "grade8-unit1-lesson4.html",
-    "grade8-unit1-lesson5.html",
     "grade8-unit1-lesson5-pupil-book.html",
-    "grade8-unit1-lesson5-workbook.html",
+    "grade8-unit1-lesson5-test.html",
     "grade8-unit1-lesson5-vocabulary.html",
-    "grade8-unit1-lesson5-test.html"
+    "grade8-unit1-lesson5-workbook.html",
+    "grade8-unit1-lesson5.html"
   ],
   "integrationEdits": {
     "index.html": [
+      {
+        "before": "            <div class=\"stat\"><b data-curriculum-count=\"lessons\">23</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"pages\">115</b><span>Verified lesson pages</span></div>\n",
+        "after": "            <div class=\"stat\"><b data-curriculum-count=\"lessons\">24</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"pages\">120</b><span>Verified lesson pages</span></div>\n"
+      },
+      {
+        "before": "          <span class=\"num\">Grade 3</span>\n          <span class=\"badge badge-available\">5 lessons ready</span>\n        </div>\n",
+        "after": "          <span class=\"num\">Grade 3</span>\n          <span class=\"badge badge-available\">6 lessons ready</span>\n        </div>\n"
+      },
+      {
+        "before": "          <p><span data-curriculum-summary>Unit 1 Lessons 1–5 ready: <em>Back to School</em>, <em>School Subjects</em>, <em>My Lovely School</em>, <em>My Five Senses</em> and <em>Revision 1</em></span>.</p>\n",
+        "after": "          <p><span data-curriculum-summary>Unit 1 Lessons 1–6 ready: <em>Back to School</em>, <em>School Subjects</em>, <em>My Lovely School</em>, <em>My Five Senses</em>, <em>Revision 1</em> and <em>My Daily Routine</em></span>.</p>\n"
+      },
+      {
+        "before": "      <span class=\"badge badge-available\" data-curriculum-totals=\"verified-lessons-pages\">23 verified lessons · 115 pages</span>\n",
+        "after": "      <span class=\"badge badge-available\" data-curriculum-totals=\"verified-lessons-pages\">24 verified lessons · 120 pages</span>\n"
+      },
+      {
+        "before": "",
+        "after": "            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 6 · My Daily Routine</strong>\n              <span>Pupil’s Book pp. 18–20 · Workbook pp. 18–20 · Vocabulary · 20-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson6.html\">Lesson Menu</a>\n              <a href=\"grade3-unit1-lesson6-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade3-unit1-lesson6-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson6-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson6-test.html\">Lesson Test</a>\n"
+      },
+      {
+        "before": "        The teacher portal collects the <span data-curriculum-count-words=\"lessons\">twenty-three</span> prepared lessons, the answer-key areas published on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-two</span> lesson tests, and\n",
+        "after": "        The teacher portal collects the <span data-curriculum-count-words=\"lessons\">twenty-four</span> prepared lessons, the answer-key areas published on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-three</span> lesson tests, and\n"
+      },
       {
         "before": "<span data-curriculum-count-words=\"answerKeyAreas\">twenty-one</span>",
         "after": "<span data-curriculum-count-words=\"answerKeyAreas\">twenty-two</span>"
@@ -330,6 +359,10 @@
     "lessons.html": [
       {
         "before": "",
+        "after": "      'grade3-unit1-lesson6': '<a class=\"lesson\" href=\"grade3-unit1-lesson6.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 6 · My Daily Routine</strong><small>Pupil’s Book (pp. 18–20) · Workbook (pp. 18–20) · Vocabulary · 20-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>',\n"
+      },
+      {
+        "before": "",
         "after": "      'grade8-unit1-lesson5': '<a class=\"lesson\" href=\"grade8-unit1-lesson5.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 5 · Safety Online!</strong><small>Student’s Book (pp. 34–39) · Workbook (pp. 18–21) · Vocabulary · 12-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>',\n"
       },
       {
@@ -488,6 +521,26 @@
       }
     ],
     "teacher.html": [
+      {
+        "before": "            in this repository: <span data-curriculum-count-words=\"lessons\">twenty-three</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, their Pupil’s or Student’s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-two</span> of those tests.\n",
+        "after": "            in this repository: <span data-curriculum-count-words=\"lessons\">twenty-four</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, their Pupil’s or Student’s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-three</span> of those tests.\n"
+      },
+      {
+        "before": "            <div class=\"stat\"><b data-curriculum-count=\"lessons\">23</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"pages\">115</b><span>Verified lesson pages</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"answerKeyAreas\">22</b><span>Answer-key areas</span></div>\n",
+        "after": "            <div class=\"stat\"><b data-curriculum-count=\"lessons\">24</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"pages\">120</b><span>Verified lesson pages</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"answerKeyAreas\">23</b><span>Answer-key areas</span></div>\n"
+      },
+      {
+        "before": "        <strong>Not secure authentication.</strong> The answer-key areas on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-two</span> lesson tests ask for a single\n",
+        "after": "        <strong>Not secure authentication.</strong> The answer-key areas on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-three</span> lesson tests ask for a single\n"
+      },
+      {
+        "before": "          <span class=\"num\">Grade 3</span>\n          <span class=\"badge badge-available\">5 lessons prepared</span>\n        </div>\n",
+        "after": "          <span class=\"num\">Grade 3</span>\n          <span class=\"badge badge-available\">6 lessons prepared</span>\n        </div>\n"
+      },
+      {
+        "before": "          <p><span data-curriculum-grade-count-words>Five</span> prepared lessons, including <span data-curriculum-titles>Back to School, School Subjects, My Lovely School, My Five Senses and Revision 1</span>: <span data-curriculum-pages>25</span> verified pages with a published test key for each lesson.</p>\n",
+        "after": "          <p><span data-curriculum-grade-count-words>Six</span> prepared lessons, including <span data-curriculum-titles>Back to School, School Subjects, My Lovely School, My Five Senses, Revision 1 and My Daily Routine</span>: <span data-curriculum-pages>30</span> verified pages with a published test key for each lesson.</p>\n"
+      },
       {
         "before": "<span data-curriculum-grade-count-words>Four</span> prepared lessons: <span data-curriculum-pages>20</span>",
         "after": "<span data-curriculum-grade-count-words>Five</span> prepared lessons: <span data-curriculum-pages>25</span>"
@@ -686,6 +739,26 @@
       }
     ],
     "teacher-resources.html": [
+      {
+        "before": "        <span data-curriculum-count-words=\"lessons\">Twenty-three</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, each with its book, Workbook, Vocabulary and\n",
+        "after": "        <span data-curriculum-count-words=\"lessons\">Twenty-four</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, each with its book, Workbook, Vocabulary and\n"
+      },
+      {
+        "before": "        Answer-key areas sit inside <span data-curriculum-count-words=\"answerKeyAreas\">twenty-two</span> lesson tests and are hidden behind one shared classroom password typed into the\n",
+        "after": "        Answer-key areas sit inside <span data-curriculum-count-words=\"answerKeyAreas\">twenty-three</span> lesson tests and are hidden behind one shared classroom password typed into the\n"
+      },
+      {
+        "before": "      <span class=\"badge badge-available\" data-curriculum-totals=\"lessons-pages\">23 lessons · 115 pages</span>\n",
+        "after": "      <span class=\"badge badge-available\" data-curriculum-totals=\"lessons-pages\">24 lessons · 120 pages</span>\n"
+      },
+      {
+        "before": "",
+        "after": "          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 6 · My Daily Routine</strong>\n              <span>Pupil’s Book pp. 18–20 · Workbook pp. 18–20 · 20-question independent test · answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade3-unit1-lesson6.html\">Lesson menu</a>\n              <a href=\"grade3-unit1-lesson6-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade3-unit1-lesson6-workbook.html\">Workbook</a>\n              <a href=\"grade3-unit1-lesson6-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade3-unit1-lesson6-test.html\">Lesson Test</a>\n              <a href=\"grade3-unit1-lesson6-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">Key type: 20 independent items with objective and explanation. Audio-dependent activities (Pupil’s Book 4, 6 and 7; Workbook 3) have no key because their recording was not supplied.</p>\n"
+      },
+      {
+        "before": "",
+        "after": "            <th scope=\"row\">3 · 6 My Daily Routine</th>\n            <td>20</td>\n            <td>Published (independent test)</td>\n            <td>0</td>\n            <td>5</td>\n            <td>None</td>\n          </tr>\n          <tr>\n"
+      },
       {
         "before": "<span data-curriculum-count-words=\"lessons\">Twenty-two</span>",
         "after": "<span data-curriculum-count-words=\"lessons\">Twenty-three</span>"

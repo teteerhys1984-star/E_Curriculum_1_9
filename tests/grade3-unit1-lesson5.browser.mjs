@@ -87,8 +87,8 @@ try {
   const testKey = `efc_grade3_unit1_lesson${LESSON}_test_v1`;
 
   await go('lessons.html?grade=3');
-  assert.equal(await page.locator('#lesson-list a.lesson').count(), 5);
-  for (const lesson of [1, 2, 3, 4, 5]) assert.equal(await page.locator(`#lesson-list a[href="grade3-unit1-lesson${lesson}.html"]`).count(), 1);
+  assert.equal(await page.locator('#lesson-list a.lesson').count(), 6);
+  for (const lesson of [1, 2, 3, 4, 5, 6]) assert.equal(await page.locator(`#lesson-list a[href="grade3-unit1-lesson${lesson}.html"]`).count(), 1);
   await page.locator(`#lesson-list a[href="${base}.html"]`).click();
   await page.waitForURL(`**/${base}.html`);
   assert.equal(await page.locator('.cards .card').count(), 4);

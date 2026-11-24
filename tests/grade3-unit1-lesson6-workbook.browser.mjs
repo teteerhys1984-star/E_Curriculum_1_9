@@ -67,10 +67,10 @@ try {
   await page.evaluate(() => localStorage.clear());
   await page.reload({ waitUntil: 'load' });
 
-  /* 1. Structure: four writing activities, the two non-writing exercises carry none. */
+  /* 1. Structure: five managed activities (four writing, plus the checkable matching in WB 4); the listening exercise carries none. */
   const activities = await page.$$eval('[data-writing-activity]', els => els.map(e => e.dataset.writingActivity));
-  assert.deepEqual(activities, ['wb-1', 'wb-2', 'wb-5', 'wb-6']);
-  pass('four writing activities present; listen and match carry no writing field');
+  assert.deepEqual(activities, ['wb-1', 'wb-2', 'wb-4', 'wb-5', 'wb-6']);
+  pass('four writing activities and the WB 4 matching are managed; the listening exercise carries no writing field');
 
   /* 2. Model reveal and hide without overwriting the pupil's response. */
   await page.fill('#wb1-1', 'often');
