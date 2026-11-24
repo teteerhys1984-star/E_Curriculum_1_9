@@ -1,0 +1,206 @@
+[
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/pupil-book-page-18-dialogue.png",
+    "source": "assets/grade3-unit1-lesson6/source/pupil-book-page-18.png",
+    "activity": "pb-1",
+    "box": [
+      75,
+      225,
+      700,
+      1000
+    ],
+    "size": [
+      625,
+      775
+    ],
+    "scale": 1,
+    "sha256": "61d866963afeb118802cab827a5b9fc24866cae1abcd6ba1d0f17ef52a729bb8"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/pupil-book-page-19-frequency.png",
+    "source": "assets/grade3-unit1-lesson6/source/pupil-book-page-19.png",
+    "activity": "pb-2",
+    "box": [
+      75,
+      80,
+      690,
+      330
+    ],
+    "size": [
+      615,
+      250
+    ],
+    "scale": 1,
+    "sha256": "4460032e5c0434843b3c3ea9340ab6d0d0b7d8b235f67fa6f715098a8bf22d84"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/pupil-book-page-19-ask-answer.png",
+    "source": "assets/grade3-unit1-lesson6/source/pupil-book-page-19.png",
+    "activity": "pb-3",
+    "box": [
+      55,
+      340,
+      690,
+      778
+    ],
+    "size": [
+      635,
+      438
+    ],
+    "scale": 1,
+    "sha256": "98e321ea160f9b6be96efc598f8bcbaac2610b2f4b0a0bccc02c2a3b150412d3"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/pupil-book-page-19-listen-tick.png",
+    "source": "assets/grade3-unit1-lesson6/source/pupil-book-page-19.png",
+    "activity": "pb-4",
+    "box": [
+      50,
+      770,
+      660,
+      1000
+    ],
+    "size": [
+      610,
+      230
+    ],
+    "scale": 1,
+    "sha256": "86e70c4f4bb0b8232d1ab14e30cffc6a34a1358a68f63d8add45236071a6b7d6"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/pupil-book-page-20-song.png",
+    "source": "assets/grade3-unit1-lesson6/source/pupil-book-page-20.png",
+    "activity": "pb-6",
+    "box": [
+      40,
+      55,
+      700,
+      745
+    ],
+    "size": [
+      660,
+      690
+    ],
+    "scale": 1,
+    "sha256": "354220c6ff2cdae643f251b8f9a4f66ed97bc81bcc2484a9d3f962d4f4f7b333"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/pupil-book-page-20-sounds.png",
+    "source": "assets/grade3-unit1-lesson6/source/pupil-book-page-20.png",
+    "activity": "pb-7",
+    "box": [
+      40,
+      770,
+      700,
+      1010
+    ],
+    "size": [
+      660,
+      240
+    ],
+    "scale": 1,
+    "sha256": "b06dba85de4b8e159109b7733ccf1f88c3fcbbdd333e32ed8f3574848772886d"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/workbook-page-18-look-read-write.png",
+    "source": "assets/grade3-unit1-lesson6/source/workbook-page-18.png",
+    "activity": "wb-1",
+    "box": [
+      40,
+      180,
+      740,
+      545
+    ],
+    "size": [
+      700,
+      365
+    ],
+    "scale": 1,
+    "sha256": "1a683067d0207dbcf7c45f9fc30a04331a0a9f3efdbb886bd9d9756097cb9ff5"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/workbook-page-18-complete.png",
+    "source": "assets/grade3-unit1-lesson6/source/workbook-page-18.png",
+    "activity": "wb-2",
+    "box": [
+      40,
+      575,
+      740,
+      870
+    ],
+    "size": [
+      700,
+      295
+    ],
+    "scale": 1,
+    "sha256": "d8c97c990a76e7d3789c64bbdf0bd005a9dfbbaca1144cabc5714663ca48fb41"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/workbook-page-19-listen-tick.png",
+    "source": "assets/grade3-unit1-lesson6/source/workbook-page-19.png",
+    "activity": "wb-3",
+    "box": [
+      40,
+      60,
+      600,
+      615
+    ],
+    "size": [
+      560,
+      555
+    ],
+    "scale": 1,
+    "sha256": "2b07fa82eaeb5d04f95bb4e3076dc5d9ed799306076d6a267f45b0e410821dd2"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/workbook-page-19-read-match.png",
+    "source": "assets/grade3-unit1-lesson6/source/workbook-page-19.png",
+    "activity": "wb-4",
+    "box": [
+      40,
+      640,
+      740,
+      905
+    ],
+    "size": [
+      700,
+      265
+    ],
+    "scale": 1,
+    "sha256": "5810b2388b05f3584e8e9b2ff0bc4a2ec7f953e25f7ea85155b31c27edc0b268"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/workbook-page-20-reorder.png",
+    "source": "assets/grade3-unit1-lesson6/source/workbook-page-20.png",
+    "activity": "wb-5",
+    "box": [
+      40,
+      85,
+      700,
+      370
+    ],
+    "size": [
+      660,
+      285
+    ],
+    "scale": 1,
+    "sha256": "ae865df921256c5690eedac633db0bffe7b6a84c4ea72d3ebe2223019fcf099f"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson6/crops/workbook-page-20-write-family.png",
+    "source": "assets/grade3-unit1-lesson6/source/workbook-page-20.png",
+    "activity": "wb-6",
+    "box": [
+      40,
+      395,
+      700,
+      985
+    ],
+    "size": [
+      660,
+      590
+    ],
+    "scale": 1,
+    "sha256": "4da21a6fdfc132a8ecf1cece12d0138529c9fa15aaad740528cdf0783d2fc8ac"
+  }
+]
