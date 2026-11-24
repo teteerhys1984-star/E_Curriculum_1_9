@@ -7,8 +7,8 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const lesson = process.argv[2];
-/* Lessons whose next lesson is not yet published. Only Lesson 6 is listed (approved, temporary). */
-const NEXT_LESSON_NOT_YET_PUBLISHED = new Set(['6']);
+/* Lessons whose next lesson is not yet published. Only Lesson 8 is listed (approved, temporary). */
+const NEXT_LESSON_NOT_YET_PUBLISHED = new Set(['8']);
 if (!lesson) throw new Error('Lesson number argument is required');
 if (!lesson) throw new Error('Lesson number argument is required');
 const slug = 'grade3-unit1-lesson' + lesson;
@@ -53,7 +53,7 @@ for (const file of files) {
       /* Temporary, lesson-specific exception (approved): the next lesson is not yet published,
          so the hub shows the same honest state as Lesson 5 and must not link to a missing page.
          Remove this entry when the next lesson is published. See
-         docs/grade3-unit1-lesson6/navigation-exception.md. */
+         docs/grade3-unit1-lesson8/navigation-exception.md. */
       assert.match(html, /Next lesson · not yet published/, 'exception: menu shows the not-yet-published state');
       assert.ok(!html.includes(`href="grade3-unit1-lesson${Number(lesson) + 1}.html"`), 'exception: no link to an unpublished next lesson');
     } else {

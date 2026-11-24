@@ -1,0 +1,310 @@
+{
+  "lesson": "grade3-unit1-lesson8",
+  "totalQuestions": 20,
+  "objectives": [
+    "like-doing-question",
+    "like-verb-ing",
+    "yes-no-answers",
+    "doesnt-negation",
+    "activity-vocabulary",
+    "like-listening-music",
+    "phonics-cr",
+    "third-person-likes",
+    "word-order"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "number": 1,
+      "format": "multiple-choice",
+      "objective": "like-doing-question",
+      "prompt": "1. Which question asks someone about a hobby?",
+      "evidence": "What do you like doing? asks which activity someone enjoys.",
+      "objectiveLabel": "Asking \u201cWhat do you like doing?\u201d",
+      "options": [
+        "What do you like doing?",
+        "What do you like to doing?",
+        "What you like doing?"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "format": "multiple-choice",
+      "objective": "like-verb-ing",
+      "prompt": "2. After like, which form of the verb is used for a hobby?",
+      "evidence": "After like we add -ing to the verb for a hobby: like playing.",
+      "objectiveLabel": "Using like with a hobby in the -ing form",
+      "options": [
+        "play",
+        "playing",
+        "plays"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "format": "multiple-choice",
+      "objective": "like-verb-ing",
+      "prompt": "3. Choose the correct sentence about a hobby.",
+      "evidence": "The -ing form follows like: I like collecting stamps.",
+      "objectiveLabel": "Using like with a hobby in the -ing form",
+      "options": [
+        "I like collect stamps.",
+        "I like collecting stamps.",
+        "I likes collecting stamps."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "format": "multiple-choice",
+      "objective": "yes-no-answers",
+      "prompt": "4. Which answer means no to \u201cDo you like playing chess?\u201d",
+      "evidence": "The short negative answer uses don\u2019t.",
+      "objectiveLabel": "Asking and answering Do you like \u2026? questions",
+      "options": [
+        "No, I don\u2019t.",
+        "No, I doesn\u2019t.",
+        "No, I not."
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "format": "multiple-choice",
+      "objective": "doesnt-negation",
+      "prompt": "5. Choose the correct sentence about Sara.",
+      "evidence": "With she, the negative is doesn\u2019t like, with the base form like.",
+      "objectiveLabel": "Using doesn\u2019t like with he, she and other third-person subjects",
+      "options": [
+        "Sara doesn\u2019t likes swimming.",
+        "Sara doesn\u2019t like swimming.",
+        "Sara don\u2019t like swimming."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q6",
+      "number": 6,
+      "format": "multiple-choice",
+      "objective": "activity-vocabulary",
+      "prompt": "6. Which activity is played on a court with a ball and a hoop?",
+      "evidence": "Basketball is played on a court with a ball and a hoop.",
+      "objectiveLabel": "Naming hobbies and activities",
+      "options": [
+        "tennis",
+        "water skiing",
+        "listening"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q7",
+      "number": 7,
+      "format": "multiple-choice",
+      "objective": "activity-vocabulary",
+      "prompt": "7. Which hobby do you do with shells and sand on a beach?",
+      "evidence": "Collecting shells is a hobby on the beach.",
+      "objectiveLabel": "Naming hobbies and activities",
+      "options": [
+        "collecting shells",
+        "playing chess",
+        "watching TV"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q8",
+      "number": 8,
+      "format": "multiple-choice",
+      "objective": "like-listening-music",
+      "prompt": "8. Choose the correct word: We like \u2026\u2026\u2026 to music.",
+      "evidence": "After like we use the -ing form: listening to music.",
+      "objectiveLabel": "Saying I like listening to music",
+      "options": [
+        "listening",
+        "listen",
+        "listens"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q9",
+      "number": 9,
+      "format": "multiple-choice",
+      "objective": "phonics-cr",
+      "prompt": "9. Which word begins with the sound cr?",
+      "evidence": "Crayon begins with cr.",
+      "objectiveLabel": "Recognising the sound and spelling cr",
+      "options": [
+        "crayon",
+        "sleep",
+        "chess"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q10",
+      "number": 10,
+      "format": "multiple-choice",
+      "objective": "yes-no-answers",
+      "prompt": "10. Which reply answers \u201cDo you like playing the guitar?\u201d with yes?",
+      "evidence": "The yes answer is Yes, I do.",
+      "objectiveLabel": "Asking and answering Do you like \u2026? questions",
+      "options": [
+        "Yes, I do.",
+        "Yes, I like.",
+        "Yes, I play."
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q11",
+      "number": 11,
+      "format": "multiple-choice",
+      "objective": "like-verb-ing",
+      "prompt": "11. Which word completes the sentence: I \u2026\u2026\u2026 playing football.",
+      "evidence": "With I, the verb like has no s.",
+      "objectiveLabel": "Using like with a hobby in the -ing form",
+      "options": [
+        "like",
+        "likes",
+        "liking"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q12",
+      "number": 12,
+      "format": "multiple-choice",
+      "objective": "like-verb-ing",
+      "prompt": "12. Which sentence says the speaker enjoys swimming?",
+      "evidence": "I like swimming in the sea says the speaker enjoys it.",
+      "objectiveLabel": "Using like with a hobby in the -ing form",
+      "options": [
+        "I like swimming in the sea.",
+        "I doesn\u2019t swim in the sea.",
+        "I swimming like sea."
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q13",
+      "number": 13,
+      "format": "true-false",
+      "objective": "doesnt-negation",
+      "prompt": "13. True or false: \u201cHe doesn\u2019t like watching TV.\u201d is a negative sentence.",
+      "evidence": "Doesn\u2019t makes the sentence negative.",
+      "objectiveLabel": "Using doesn\u2019t like with he, she and other third-person subjects",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q14",
+      "number": 14,
+      "format": "true-false",
+      "objective": "third-person-likes",
+      "prompt": "14. True or false: With she, we say \u201cShe likes\u201d with an s.",
+      "evidence": "A third-person subject takes likes.",
+      "objectiveLabel": "Using likes with he, she and names",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q15",
+      "number": 15,
+      "format": "true-false",
+      "objective": "yes-no-answers",
+      "prompt": "15. True or false: The only correct answer to \u201cDo you like music?\u201d is \u201cYes, I do\u201d.",
+      "evidence": "No, I don\u2019t is also a correct answer, so the statement is false.",
+      "objectiveLabel": "Asking and answering Do you like \u2026? questions",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q16",
+      "number": 16,
+      "format": "true-false",
+      "objective": "word-order",
+      "prompt": "16. True or false: \u201cThey like swimming the sea in.\u201d is correct word order.",
+      "evidence": "The correct order is They like swimming in the sea.",
+      "objectiveLabel": "Putting the words of a sentence in order",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q17",
+      "number": 17,
+      "format": "short-answer",
+      "objective": "like-verb-ing",
+      "prompt": "17. Write the missing word: Do you like \u2026\u2026\u2026 the piano? (use the -ing form)",
+      "evidence": "Use the -ing form after like: playing.",
+      "objectiveLabel": "Using like with a hobby in the -ing form",
+      "accepted": [
+        "playing"
+      ],
+      "correct": "playing",
+      "wrongSample": "play"
+    },
+    {
+      "id": "q18",
+      "number": 18,
+      "format": "short-answer",
+      "objective": "word-order",
+      "prompt": "18. Put the words in order: chess / like / we / playing. Write the sentence.",
+      "evidence": "The correct sentence is We like playing chess.",
+      "objectiveLabel": "Putting the words of a sentence in order",
+      "accepted": [
+        "We like playing chess"
+      ],
+      "correct": "We like playing chess",
+      "wrongSample": "Like we chess playing"
+    },
+    {
+      "id": "q19",
+      "number": 19,
+      "format": "short-answer",
+      "objective": "yes-no-answers",
+      "prompt": "19. Write a short answer, Yes, to \u201cDo you like collecting shells?\u201d",
+      "evidence": "The answer to a yes-no question is Yes, I do.",
+      "objectiveLabel": "Asking and answering Do you like \u2026? questions",
+      "accepted": [
+        "Yes, I do",
+        "Yes I do"
+      ],
+      "correct": "Yes, I do",
+      "wrongSample": "Yes, I like"
+    },
+    {
+      "id": "q20",
+      "number": 20,
+      "format": "short-answer",
+      "objective": "doesnt-negation",
+      "prompt": "20. Write the missing word: He doesn\u2019t like \u2026\u2026\u2026 TV. (use the -ing form)",
+      "evidence": "After doesn\u2019t like, the verb takes -ing: watching.",
+      "objectiveLabel": "Using doesn\u2019t like with he, she and other third-person subjects",
+      "accepted": [
+        "watching"
+      ],
+      "correct": "watching",
+      "wrongSample": "watch"
+    }
+  ]
+}

@@ -16,10 +16,12 @@ test('every registered lesson has a Writing state; unrecorded lessons are not au
   assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson5').state, 'Writing audited with documented exceptions');
   assert.equal(states.find(s => s.slug === 'grade4-unit1-lesson5').state, 'Writing audited with documented exceptions');
   assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson6').state, 'Writing audited with documented exceptions');
+  assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson7').state, 'Writing audited with documented exceptions');
+  assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson8').state, 'Writing audited with documented exceptions');
   assert.ok(states.filter(s => !Object.hasOwn(data.audited, s.slug)).every(s => s.state === 'Writing not yet audited'));
 });
 
-test('the eighteen documented exceptions cannot silently disappear or be combined', () => {
+test('the twenty-six documented exceptions cannot silently disappear or be combined', () => {
   const found = Object.entries(data.audited).flatMap(([slug, audit]) => audit.exceptions.map(e => `${slug}|${e.book}|${e.page}|${e.activity}`));
   assert.deepEqual(found, [
     "grade4-unit1-lesson1|Pupil's Book|3|Exercise 1 — Listen and number",
@@ -39,9 +41,17 @@ test('the eighteen documented exceptions cannot silently disappear or be combine
     'grade3-unit1-lesson6|Workbook|18|Exercise 1 — Look, read and write',
     'grade3-unit1-lesson6|Workbook|18|Exercise 2 — Read, complete with never/always and say',
     'grade3-unit1-lesson6|Workbook|20|Exercise 5 — Reorder',
-    'grade3-unit1-lesson6|Workbook|20|Exercise 6 — Write about your family, items 2–4'
+    'grade3-unit1-lesson6|Workbook|20|Exercise 6 — Write about your family, items 2–4',
+    'grade3-unit1-lesson7|Workbook|21|Exercise 2 — Look, read and write',
+    'grade3-unit1-lesson7|Workbook|22|Exercise 4 — Look , and write',
+    'grade3-unit1-lesson7|Workbook|23|Exercise 5 — Fill in the spaces',
+    'grade3-unit1-lesson7|Workbook|23|Exercise 7 — Rewrite the following sentences using capital letters and full stops',
+    'grade3-unit1-lesson8|Workbook|24|Exercise 2 — Read and write',
+    'grade3-unit1-lesson8|Workbook|25|Exercise 3 — Read and write about yourself',
+    'grade3-unit1-lesson8|Workbook|26|Exercise 5 — Reorder',
+    'grade3-unit1-lesson8|Workbook|26|Exercise 6 — Write and draw about what you like doing'
   ]);
-  assert.equal(run(data).reduce((n, s) => n + s.exceptions, 0), 18);
+  assert.equal(run(data).reduce((n, s) => n + s.exceptions, 0), 26);
 });
 
 test('invalid, duplicate, undocumented and unregistered records are rejected', () => {

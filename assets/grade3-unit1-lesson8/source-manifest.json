@@ -1,0 +1,86 @@
+[
+  {
+    "file": "assets/grade3-unit1-lesson8/source/pupil-book-page-24.png",
+    "source": "pupil-book-page-24.png",
+    "uploadedAs": "image-13.png",
+    "sha256": "bc9d6b51c73f9a7dd3d1a8cc32b1b8cd2ae5e2b31193a4a68b511a482f7e55a6",
+    "bytes": 706012,
+    "size": [
+      757,
+      1053
+    ],
+    "book": "Pupil's Book",
+    "printedPage": 24,
+    "lesson": "Grade 3 \u00b7 Unit 1 \u00b7 Lesson 8"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/source/pupil-book-page-25.png",
+    "source": "pupil-book-page-25.png",
+    "uploadedAs": "image-14.png",
+    "sha256": "4ec0a6ac825cceb1099233c3ba29d306df5c96cb0883301955b6c8c03a3b2055",
+    "bytes": 421976,
+    "size": [
+      733,
+      1030
+    ],
+    "book": "Pupil's Book",
+    "printedPage": 25,
+    "lesson": "Grade 3 \u00b7 Unit 1 \u00b7 Lesson 8"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/source/pupil-book-page-26.png",
+    "source": "pupil-book-page-26.png",
+    "uploadedAs": "image-15.png",
+    "sha256": "8aeae952b57ee692d61b6146392cfa1089f47367fd14cfe6b3c217c93189e770",
+    "bytes": 513550,
+    "size": [
+      736,
+      1063
+    ],
+    "book": "Pupil's Book",
+    "printedPage": 26,
+    "lesson": "Grade 3 \u00b7 Unit 1 \u00b7 Lesson 8"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/source/workbook-page-24.png",
+    "source": "workbook-page-24.png",
+    "uploadedAs": "image-16.png",
+    "sha256": "8e0ae2fd9f9d9c2fdbd6bdacb03bea09f52d303bd85d6d42223c70f821e4af0a",
+    "bytes": 251624,
+    "size": [
+      730,
+      1051
+    ],
+    "book": "Workbook",
+    "printedPage": 24,
+    "lesson": "Grade 3 \u00b7 Unit 1 \u00b7 Lesson 8"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/source/workbook-page-25.png",
+    "source": "workbook-page-25.png",
+    "uploadedAs": "image-17.png",
+    "sha256": "4a9a2fdd4c3ef52cf1e38600cf2c3392b6dd6476a65c9b31f65e481b6024baed",
+    "bytes": 221813,
+    "size": [
+      730,
+      1014
+    ],
+    "book": "Workbook",
+    "printedPage": 25,
+    "lesson": "Grade 3 \u00b7 Unit 1 \u00b7 Lesson 8"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/source/workbook-page-26.png",
+    "source": "workbook-page-26.png",
+    "uploadedAs": "image-18.png",
+    "sha256": "2182e53552257359f7ec41d3f4e7313755df7f60b8d23cc92b9072e016745cf1",
+    "bytes": 193399,
+    "size": [
+      751,
+      1053
+    ],
+    "book": "Workbook",
+    "printedPage": 26,
+    "lesson": "Grade 3 \u00b7 Unit 1 \u00b7 Lesson 8"
+  }
+]

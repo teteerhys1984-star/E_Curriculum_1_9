@@ -26,6 +26,8 @@
     'grade3-unit1-lesson4': { grade: 3, unit: 1, lesson: 4, title: 'My Five Senses', bookLabel: "Pupil's Book", answerKey: true },
     'grade3-unit1-lesson5': { grade: 3, unit: 1, lesson: 5, title: 'Revision 1', bookLabel: "Pupil's Book", answerKey: true },
     'grade3-unit1-lesson6': { grade: 3, unit: 1, lesson: 6, title: 'My Daily Routine', bookLabel: "Pupil's Book", answerKey: true },
+    'grade3-unit1-lesson7': { grade: 3, unit: 1, lesson: 7, title: 'TV Programmes', bookLabel: "Pupil's Book", answerKey: true },
+    'grade3-unit1-lesson8': { grade: 3, unit: 1, lesson: 8, title: 'Let’s Have Fun', bookLabel: "Pupil's Book", answerKey: true },
     'grade4-unit1-lesson1': { grade: 4, unit: 1, lesson: 1, title: 'Nice to Meet You', bookLabel: "Pupil's Book", answerKey: false },
     'grade4-unit1-lesson2': { grade: 4, unit: 1, lesson: 2, title: 'My Family', bookLabel: "Pupil's Book", answerKey: true },
     'grade4-unit1-lesson3': { grade: 4, unit: 1, lesson: 3, title: 'Daily Routine', bookLabel: "Pupil's Book", answerKey: true },

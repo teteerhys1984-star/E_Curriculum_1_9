@@ -206,6 +206,82 @@
           "evidence": "docs/grade3-unit1-lesson6/writing-inventory.md"
         }
       ]
+    },
+    "grade3-unit1-lesson7": {
+      "activityCount": 4,
+      "inventory": "docs/grade3-unit1-lesson7/writing-inventory.md",
+      "exceptions": [
+        {
+          "book": "Workbook",
+          "page": 21,
+          "activity": "Exercise 2 — Look, read and write",
+          "reason": "The book prints no answer key. Each answer is the time shown on a clock picture, which the page does not check.",
+          "handling": "Three response fields; not scored; no model shown; the teacher checks against the pictures.",
+          "evidence": "docs/grade3-unit1-lesson7/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 22,
+          "activity": "Exercise 4 — Look , and write",
+          "reason": "The book prints no answer key. Programme names are inferred from the pictures and the word bank.",
+          "handling": "Four response fields with a labelled inferred model; comparison only; no score.",
+          "evidence": "docs/grade3-unit1-lesson7/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 23,
+          "activity": "Exercise 5 — Fill in the spaces",
+          "reason": "The book prints no answer key. Each word is inferred from the sentence sense and the word bank.",
+          "handling": "Four response fields with a labelled inferred model; comparison only; no score.",
+          "evidence": "docs/grade3-unit1-lesson7/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 23,
+          "activity": "Exercise 7 — Rewrite the following sentences using capital letters and full stops",
+          "reason": "Only item 1 is printed as a worked example. Items 2–4 are inferred from the capitalisation and full-stop rule.",
+          "handling": "Four response fields; labelled model; comparison only; no score.",
+          "evidence": "docs/grade3-unit1-lesson7/writing-inventory.md"
+        }
+      ]
+    },
+    "grade3-unit1-lesson8": {
+      "activityCount": 4,
+      "inventory": "docs/grade3-unit1-lesson8/writing-inventory.md",
+      "exceptions": [
+        {
+          "book": "Workbook",
+          "page": 24,
+          "activity": "Exercise 2 — Read and write",
+          "reason": "The book prints no answer key. Each word is inferred from the sentence sense and the pictures.",
+          "handling": "Four response fields with a labelled inferred model; comparison only; no score.",
+          "evidence": "docs/grade3-unit1-lesson8/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 25,
+          "activity": "Exercise 3 — Read and write about yourself",
+          "reason": "Items 2–4 are personal prompts with no official answer. The printed example covers item 1 only.",
+          "handling": "Three open fields; labelled illustrative examples that are not official answers; answers vary; no score.",
+          "evidence": "docs/grade3-unit1-lesson8/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 26,
+          "activity": "Exercise 5 — Reorder",
+          "reason": "The book prints no answer key. The tiles fix the words, but the sentence order is inferred from the tiles and meaning.",
+          "handling": "Three response fields with a labelled inferred model; comparison only; no score.",
+          "evidence": "docs/grade3-unit1-lesson8/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 26,
+          "activity": "Exercise 6 — Write and draw about what you like doing",
+          "reason": "The item is open and personal. No official answer exists.",
+          "handling": "One open field; a labelled illustrative example that is not an official answer; drawing not checked; no score.",
+          "evidence": "docs/grade3-unit1-lesson8/writing-inventory.md"
+        }
+      ]
     }
   }
 }

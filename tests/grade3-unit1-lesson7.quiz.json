@@ -1,0 +1,312 @@
+{
+  "lesson": "grade3-unit1-lesson7",
+  "totalQuestions": 20,
+  "objectives": [
+    "quarter-half-past",
+    "to-past-time",
+    "start-starts",
+    "question-what-time",
+    "at-on-time",
+    "capital-and-stop",
+    "programme-vocabulary",
+    "prefer-favourite",
+    "time-in-words-numbers",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "number": 1,
+      "format": "multiple-choice",
+      "objective": "quarter-half-past",
+      "prompt": "1. Which time phrase means 4:15?",
+      "evidence": "Quarter past four means fifteen minutes after four, so 4:15.",
+      "objectiveLabel": "Telling the time with quarter past and half past",
+      "options": [
+        "It\u2019s a quarter past four.",
+        "It\u2019s half past four.",
+        "It\u2019s a quarter to four."
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "format": "multiple-choice",
+      "objective": "quarter-half-past",
+      "prompt": "2. Which phrase means 6:30?",
+      "evidence": "Half past six is thirty minutes after six, so 6:30.",
+      "objectiveLabel": "Telling the time with quarter past and half past",
+      "options": [
+        "half past six",
+        "quarter to six",
+        "six o\u2019clock"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "format": "multiple-choice",
+      "objective": "to-past-time",
+      "prompt": "3. Which phrase means 8:45?",
+      "evidence": "Quarter to nine is fifteen minutes before nine, so 8:45.",
+      "objectiveLabel": "Telling the time with quarter to",
+      "options": [
+        "quarter to nine",
+        "quarter past eight",
+        "half past eight"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "format": "multiple-choice",
+      "objective": "start-starts",
+      "prompt": "4. Choose the correct sentence about one quiz show.",
+      "evidence": "With one programme, such as a quiz show, the verb takes an s: starts.",
+      "objectiveLabel": "Using start and starts with the right subject",
+      "options": [
+        "The quiz show start at nine.",
+        "The quiz show starts at nine.",
+        "The quiz show starting at nine."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "format": "multiple-choice",
+      "objective": "start-starts",
+      "prompt": "5. Choose the correct sentence about two cartoons.",
+      "evidence": "A plural subject such as cartoons takes start without an s.",
+      "objectiveLabel": "Using start and starts with the right subject",
+      "options": [
+        "The cartoons starts at four.",
+        "The cartoons start at four.",
+        "The cartoons is start at four."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q6",
+      "number": 6,
+      "format": "multiple-choice",
+      "objective": "question-what-time",
+      "prompt": "6. Choose the correct question.",
+      "evidence": "After does, the verb stays in its base form: start.",
+      "objectiveLabel": "Asking \u201cWhat time does it start?\u201d",
+      "options": [
+        "What time does the film start?",
+        "What time the film starts?",
+        "What time does the film starts?"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q7",
+      "number": 7,
+      "format": "multiple-choice",
+      "objective": "at-on-time",
+      "prompt": "7. Which word goes before a clock time such as six o\u2019clock?",
+      "evidence": "We say at with clock times.",
+      "objectiveLabel": "Using at with clock times and on with days",
+      "options": [
+        "at",
+        "on",
+        "in"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q8",
+      "number": 8,
+      "format": "multiple-choice",
+      "objective": "at-on-time",
+      "prompt": "8. Which word goes before a day name such as Friday?",
+      "evidence": "We say on with days of the week.",
+      "objectiveLabel": "Using at with clock times and on with days",
+      "options": [
+        "at",
+        "on",
+        "in"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q9",
+      "number": 9,
+      "format": "multiple-choice",
+      "objective": "capital-and-stop",
+      "prompt": "9. Which sentence is written correctly?",
+      "evidence": "A sentence starts with a capital letter; football is not a name, so it stays small.",
+      "objectiveLabel": "Starting sentences with a capital letter and ending with a full stop",
+      "options": [
+        "my favourite programme is football.",
+        "My favourite programme is football.",
+        "My favourite programme is Football."
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q10",
+      "number": 10,
+      "format": "multiple-choice",
+      "objective": "programme-vocabulary",
+      "prompt": "10. Which programme has questions and prizes?",
+      "evidence": "A quiz show asks questions and gives prizes.",
+      "objectiveLabel": "Naming TV programmes",
+      "options": [
+        "quiz show",
+        "cartoon",
+        "football"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q11",
+      "number": 11,
+      "format": "multiple-choice",
+      "objective": "programme-vocabulary",
+      "prompt": "11. Which programme shows people making food?",
+      "evidence": "A cooking programme shows how food is made.",
+      "objectiveLabel": "Naming TV programmes",
+      "options": [
+        "cooking programme",
+        "animals programme",
+        "film"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q12",
+      "number": 12,
+      "format": "multiple-choice",
+      "objective": "prefer-favourite",
+      "prompt": "12. Which sentence says a pupil prefers cartoons?",
+      "evidence": "With I, the verb prefer has no s.",
+      "objectiveLabel": "Saying which programme you prefer or like best",
+      "options": [
+        "I prefer cartoons.",
+        "I prefers cartoons.",
+        "I prefer cartoon."
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q13",
+      "number": 13,
+      "format": "true-false",
+      "objective": "to-past-time",
+      "prompt": "13. True or false: Quarter to eight means 7:45.",
+      "evidence": "Quarter to eight is fifteen minutes before eight, which is 7:45.",
+      "objectiveLabel": "Telling the time with quarter to",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q14",
+      "number": 14,
+      "format": "true-false",
+      "objective": "start-starts",
+      "prompt": "14. True or false: \u201cThe film start at six.\u201d is correct.",
+      "evidence": "The film is one programme, so the verb needs an s: starts.",
+      "objectiveLabel": "Using start and starts with the right subject",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q15",
+      "number": 15,
+      "format": "true-false",
+      "objective": "capital-and-stop",
+      "prompt": "15. True or false: Day names such as Monday begin with a capital letter.",
+      "evidence": "Day names are proper names, so they start with a capital letter.",
+      "objectiveLabel": "Starting sentences with a capital letter and ending with a full stop",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "q16",
+      "number": 16,
+      "format": "true-false",
+      "objective": "at-on-time",
+      "prompt": "16. True or false: We say \u201cat Friday\u201d to name a day.",
+      "evidence": "With days, we say on Friday, not at Friday.",
+      "objectiveLabel": "Using at with clock times and on with days",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "q17",
+      "number": 17,
+      "format": "short-answer",
+      "objective": "time-in-words-numbers",
+      "prompt": "17. Write the time half past eleven in numbers, like 11:30.",
+      "evidence": "Half past eleven is 11:30.",
+      "objectiveLabel": "Writing a time in numbers and in words",
+      "accepted": [
+        "11:30",
+        "11.30"
+      ],
+      "correct": "11:30",
+      "wrongSample": "11:15"
+    },
+    {
+      "id": "q18",
+      "number": 18,
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "prompt": "18. Write a sentence that says a programme starts at quarter past nine. Begin with \u201cIt starts at\u201d.",
+      "evidence": "The sentence keeps the time phrase quarter past nine.",
+      "objectiveLabel": "Writing a complete sentence about a programme time",
+      "accepted": [
+        "It starts at quarter past nine"
+      ],
+      "correct": "It starts at quarter past nine",
+      "wrongSample": "It start at quarter past nine"
+    },
+    {
+      "id": "q19",
+      "number": 19,
+      "format": "short-answer",
+      "objective": "start-starts",
+      "prompt": "19. Write the missing word: The cooking programme \u2026\u2026\u2026 at noon. (start or starts)",
+      "evidence": "A single programme takes the s ending: starts.",
+      "objectiveLabel": "Using start and starts with the right subject",
+      "accepted": [
+        "starts"
+      ],
+      "correct": "starts",
+      "wrongSample": "start"
+    },
+    {
+      "id": "q20",
+      "number": 20,
+      "format": "short-answer",
+      "objective": "question-what-time",
+      "prompt": "20. Write a question asking what time a cartoon begins. Use the word does.",
+      "evidence": "Use \u201cWhat time does the cartoon start?\u201d with the base form start.",
+      "objectiveLabel": "Asking \u201cWhat time does it start?\u201d",
+      "accepted": [
+        "What time does the cartoon start",
+        "What time does a cartoon start"
+      ],
+      "correct": "What time does the cartoon start",
+      "wrongSample": "What time does the cartoon starts"
+    }
+  ]
+}
