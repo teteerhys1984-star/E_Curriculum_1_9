@@ -168,6 +168,44 @@
           "evidence": "docs/grade4-unit1-lesson5/writing-inventory.md"
         }
       ]
+    },
+    "grade3-unit1-lesson6": {
+      "activityCount": 4,
+      "inventory": "docs/grade3-unit1-lesson6/writing-inventory.md",
+      "exceptions": [
+        {
+          "book": "Workbook",
+          "page": 18,
+          "activity": "Exercise 1 — Look, read and write",
+          "reason": "The book prints no answer key. The star counts are read against the frequency table on Pupil's Book page 19, so the five frequency words are an inferred model, not an official answer.",
+          "handling": "Five response fields with a labelled inferred model shown on request; comparison only, drafts saved, no score.",
+          "evidence": "docs/grade3-unit1-lesson6/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 18,
+          "activity": "Exercise 2 — Read, complete with never/always and say",
+          "reason": "The book prints no answer key. The never or always choice is inferred from the sense of each sentence. The spoken part is not recorded.",
+          "handling": "Four response fields with a labelled inferred model; the spoken part is noted as not recorded; no score.",
+          "evidence": "docs/grade3-unit1-lesson6/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 20,
+          "activity": "Exercise 5 — Reorder",
+          "reason": "The book prints no answer key. The tiles fix the words, but the sentence order is inferred from the tiles and the meaning.",
+          "handling": "Three response fields with a labelled inferred model; comparison only; no score.",
+          "evidence": "docs/grade3-unit1-lesson6/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 20,
+          "activity": "Exercise 6 — Write about your family, items 2–4",
+          "reason": "Items 2–4 are open. Only item 1 is printed as a model, so no official answer exists for the picture cues.",
+          "handling": "Three open fields; labelled illustrative examples that are not official answers; the page says answers vary; no score.",
+          "evidence": "docs/grade3-unit1-lesson6/writing-inventory.md"
+        }
+      ]
     }
   }
 }

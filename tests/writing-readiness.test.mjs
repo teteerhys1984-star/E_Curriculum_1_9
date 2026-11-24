@@ -15,10 +15,11 @@ test('every registered lesson has a Writing state; unrecorded lessons are not au
   assert.equal(states.find(s => s.slug === 'grade4-unit1-lesson1').state, 'Writing audited with documented exceptions');
   assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson5').state, 'Writing audited with documented exceptions');
   assert.equal(states.find(s => s.slug === 'grade4-unit1-lesson5').state, 'Writing audited with documented exceptions');
+  assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson6').state, 'Writing audited with documented exceptions');
   assert.ok(states.filter(s => !Object.hasOwn(data.audited, s.slug)).every(s => s.state === 'Writing not yet audited'));
 });
 
-test('the fourteen documented exceptions cannot silently disappear or be combined', () => {
+test('the eighteen documented exceptions cannot silently disappear or be combined', () => {
   const found = Object.entries(data.audited).flatMap(([slug, audit]) => audit.exceptions.map(e => `${slug}|${e.book}|${e.page}|${e.activity}`));
   assert.deepEqual(found, [
     "grade4-unit1-lesson1|Pupil's Book|3|Exercise 1 — Listen and number",
@@ -34,9 +35,13 @@ test('the fourteen documented exceptions cannot silently disappear or be combine
     "grade4-unit1-lesson5|Pupil's Book|15|Exercise 1 — Listen and number",
     "grade4-unit1-lesson5|Pupil's Book|18|Revision 1 Exercise 2 — Read and correct the underlined mistakes, item 5",
     'grade4-unit1-lesson5|Workbook|18|Exercise 5 — Complete, items 2 and 3',
-    'grade4-unit1-lesson5|Workbook|19|Exercise 9 — Write about your favourite subject'
+    'grade4-unit1-lesson5|Workbook|19|Exercise 9 — Write about your favourite subject',
+    'grade3-unit1-lesson6|Workbook|18|Exercise 1 — Look, read and write',
+    'grade3-unit1-lesson6|Workbook|18|Exercise 2 — Read, complete with never/always and say',
+    'grade3-unit1-lesson6|Workbook|20|Exercise 5 — Reorder',
+    'grade3-unit1-lesson6|Workbook|20|Exercise 6 — Write about your family, items 2–4'
   ]);
-  assert.equal(run(data).reduce((n, s) => n + s.exceptions, 0), 14);
+  assert.equal(run(data).reduce((n, s) => n + s.exceptions, 0), 18);
 });
 
 test('invalid, duplicate, undocumented and unregistered records are rejected', () => {

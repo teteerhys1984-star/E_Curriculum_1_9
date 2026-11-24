@@ -1,0 +1,164 @@
+{
+  "lesson": "grade3-unit1-lesson6",
+  "title": "My Daily Routine",
+  "sourceImages": [
+    {
+      "file": "assets/grade3-unit1-lesson6/source/pupil-book-page-18.png",
+      "sha256": "8f8b110362473fdd97396ed8fe39300a11a7e54448506e5f083c843f228fb985",
+      "size": [
+        762,
+        1062
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson6/source/pupil-book-page-19.png",
+      "sha256": "a19d20a4cd0f4649567079636c916783d8d3a19d804419885c4814f36cf5981a",
+      "size": [
+        772,
+        1036
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson6/source/pupil-book-page-20.png",
+      "sha256": "8638e467266fb6bc40525d0bf2a57bfd16224814bfa6fd0ca1cbf24ff40dee10",
+      "size": [
+        733,
+        1059
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson6/source/workbook-page-18.png",
+      "sha256": "036dbfaa79f08173d9b0cc82439456ad7e1177d99a91049fe03ed3b22d0541d8",
+      "size": [
+        765,
+        1056
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson6/source/workbook-page-19.png",
+      "sha256": "5484fd495d9b673e06eb38aa084ee392cce8f401aaaedb867354ee1271dfc551",
+      "size": [
+        748,
+        1036
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson6/source/workbook-page-20.png",
+      "sha256": "c13c866c01c94ab8a0b0c6d5a60db781c4b4257ee3daad5c81d14d36893d8f2b",
+      "size": [
+        745,
+        1045
+      ]
+    }
+  ],
+  "cropCount": 12,
+  "instructions": {
+    "pb-1": "1. Listen and read.",
+    "pb-2": "2. Let\u2019s learn!",
+    "pb-3": "3. Ask and answer.",
+    "pb-4": "4. Listen and tick \u2713.",
+    "pb-6": "6. Listen and sing.",
+    "pb-7": "7. Listen to the following sounds and words, then repeat them.",
+    "wb-1": "1. Look, read and write.",
+    "wb-2": "2. Read, complete with (never/ always) and say.",
+    "wb-3": "3. Listen and tick \u2713.",
+    "wb-4": "4. Read and match.",
+    "wb-5": "5. Reorder.",
+    "wb-6": "6. Write about your family."
+  },
+  "printed": {
+    "pb-1-block": "What do you do every day? I ride my bike to the park. I always brush my teeth and wash my hands. I usually tidy my bedroom. I sometimes use my computer. I often read a story with my grandfather. I never stay late at night.",
+    "pb-2-block": "always, usually, often, sometimes, never (frequency table with flower counts 5, 4, 3, 2 and none)",
+    "pb-3-block": "What do you do every day? I always wash my face.",
+    "pb-4-block": "Listen and tick \u2713. Four picture groups numbered 1 and 2 with empty tick circles. Audio not supplied.",
+    "pb-6-block": "What does your friend do every day? He always goes to school. He sometimes reads a story. He often speaks English. He never eats in the class. What does he do every day? He never runs. He never shouts. He always helps me, and I always help him.",
+    "pb-7-block": "Sound gr: grass, grapes. Audio not supplied.",
+    "wb1-1-block": "1- Roy \u2026\u2026\u2026 washes his hands with water and soap. (five stars)",
+    "wb1-2-block": "2- Mary \u2026\u2026\u2026 uses her computer. (three stars)",
+    "wb1-3-block": "3- We \u2026\u2026\u2026 run in the street. (cross)",
+    "wb1-4-block": "4- My friend \u2026\u2026\u2026 reads a story. (two stars)",
+    "wb1-5-block": "5- I \u2026\u2026\u2026 help my sister. (four stars)",
+    "wb2-1-block": "1- I \u2026\u2026\u2026 go to school at the weekend.",
+    "wb2-2-block": "2- We \u2026\u2026\u2026 eat in the classroom.",
+    "wb2-3-block": "3- My brother \u2026\u2026\u2026 washes his face and hands.",
+    "wb2-4-block": "4- I \u2026\u2026\u2026 speak English in my English class.",
+    "wb3-block": "Listen and tick \u2713. Six picture pairs in three rows. Audio not supplied.",
+    "wb4-1-block": "1- My mother usually cooks / a- at eight o\u2019clock.",
+    "wb4-2-block": "2- I never do my homework / b- his friends on Friday.",
+    "wb4-3-block": "3- We always go to bed / c- football in the playground.",
+    "wb4-4-block": "4- Roy often visits / d- at school.",
+    "wb4-5-block": "5- They sometimes play / e- delicious food.",
+    "wb5-1-block": "1- Ted \u00b7 brushes \u00b7 teeth. \u00b7 always \u00b7 his",
+    "wb5-2-block": "2- sometimes \u00b7 the \u00b7 guitar. \u00b7 My \u00b7 sister \u00b7 plays",
+    "wb5-3-block": "3- chess \u00b7 often \u00b7 I \u00b7 in \u00b7 the \u00b7 afternoon. \u00b7 play",
+    "wb6-1-block": "1- My father usually washes his car in the morning. (printed model)",
+    "wb6-2-block": "2- \u2026\u2026\u2026 (open; picture: girl painting)",
+    "wb6-3-block": "3- \u2026\u2026\u2026 (open; picture: man with a car)",
+    "wb6-4-block": "4- \u2026\u2026\u2026 (open; picture: boy reading a book; woman cooking)"
+  },
+  "responseControls": {
+    "pupil-book": {},
+    "workbook": {
+      "text": 15,
+      "select": 5
+    },
+    "test": {
+      "radio": 44,
+      "text": 4
+    }
+  },
+  "vocabulary": [
+    {
+      "english": "always",
+      "arabic": "\u062f\u0627\u0626\u0645\u0627\u064b"
+    },
+    {
+      "english": "usually",
+      "arabic": "\u0639\u0627\u062f\u0629\u064b"
+    },
+    {
+      "english": "often",
+      "arabic": "\u063a\u0627\u0644\u0628\u0627\u064b"
+    },
+    {
+      "english": "sometimes",
+      "arabic": "\u0623\u062d\u064a\u0627\u0646\u0627\u064b"
+    },
+    {
+      "english": "never",
+      "arabic": "\u0623\u0628\u062f\u0627\u064b"
+    }
+  ],
+  "vocabularyProvenance": {
+    "always": [
+      "https://ling-app.com/blog/arabic-adverbs/",
+      "https://preply.com/en/blog/adverbs-of-frequency-in-arabic/",
+      "https://nasmaofny.com/how-to-speak-about-habits-in-levantine-arabic/",
+      "https://myteacher.ma/common-core-adverbs-frequency-wh-questions-lesson-17/"
+    ],
+    "usually": [
+      "https://ling-app.com/blog/arabic-adverbs/",
+      "https://nasmaofny.com/how-to-speak-about-habits-in-levantine-arabic/",
+      "https://myteacher.ma/common-core-adverbs-frequency-wh-questions-lesson-17/"
+    ],
+    "often": [
+      "https://ling-app.com/blog/arabic-adverbs/",
+      "https://nasmaofny.com/how-to-speak-about-habits-in-levantine-arabic/",
+      "https://myteacher.ma/common-core-adverbs-frequency-wh-questions-lesson-17/"
+    ],
+    "often_conflict": "https://preply.com/en/blog/adverbs-of-frequency-in-arabic/ gives \u0643\u062b\u064a\u0631\u0627\u064b for often; three other sources give \u063a\u0627\u0644\u0628\u0627\u064b. The majority reading is used and the conflict is recorded.",
+    "sometimes": [
+      "https://ling-app.com/blog/arabic-adverbs/",
+      "https://preply.com/en/blog/adverbs-of-frequency-in-arabic/",
+      "https://nasmaofny.com/how-to-speak-about-habits-in-levantine-arabic/",
+      "https://myteacher.ma/common-core-adverbs-frequency-wh-questions-lesson-17/"
+    ],
+    "never": [
+      "https://ling-app.com/blog/arabic-adverbs/",
+      "https://preply.com/en/blog/adverbs-of-frequency-in-arabic/",
+      "https://nasmaofny.com/how-to-speak-about-habits-in-levantine-arabic/",
+      "https://myteacher.ma/common-core-adverbs-frequency-wh-questions-lesson-17/"
+    ]
+  },
+  "vocabularyOmitted": "Other printed words (for example ride, brush, tidy, computer, grandfather) are not added, because no Arabic meaning was verified for them in this review."
+}
