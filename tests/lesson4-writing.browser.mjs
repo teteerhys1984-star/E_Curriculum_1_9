@@ -2,8 +2,12 @@ import assert from 'node:assert/strict';
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
+import { createRequire } from 'node:module';
 import { chromium } from 'playwright';
-import sparticuzChromium from '@sparticuz/chromium';
+
+// Use the same bundled-Chromium setup as the other browser suites: importing
+// @sparticuz/chromium directly skips the shared-library setup its executable needs.
+const require = createRequire(import.meta.url);
 
 const mime = {
   '.html': 'text/html; charset=utf-8',
@@ -30,11 +34,18 @@ await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const { port } = server.address();
 const baseUrl = `http://127.0.0.1:${port}`;
 
-const browser = await chromium.launch({
-  executablePath: await sparticuzChromium.executablePath(),
-  args: sparticuzChromium.args,
-  headless: true
-});
+let launchOptions = { headless: true };
+if (process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH) {
+  launchOptions.executablePath = process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH;
+} else {
+  const chromiumPackage = require('@sparticuz/chromium');
+  const bundled = chromiumPackage.default;
+  const packageDir = path.resolve(path.dirname(require.resolve('@sparticuz/chromium')), '..');
+  const libs = await chromiumPackage.inflate(path.join(packageDir, 'bin', 'al2023.tar.br'));
+  chromiumPackage.setupLambdaEnvironment(path.join(libs, 'lib'));
+  launchOptions = { ...launchOptions, executablePath: await bundled.executablePath(), args: bundled.args };
+}
+const browser = await chromium.launch(launchOptions);
 const context = await browser.newContext();
 const page = await context.newPage();
 

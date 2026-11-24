@@ -170,6 +170,30 @@ try {
   await resetForm('pb-see');
   pass('Pupil’s Book practice', 'Tick/cross checking, the unscored listening phonics table and the three circled bracket pairs check, persist and reset');
 
+  // Writing layer, Pupil's Book: the audio-dependent table is disclosed and has no model.
+  await go(`${base}-pupil-book.html`);
+  await clickStep(1);
+  const pb2 = page.locator('[data-writing-activity="pb-2"]');
+  assert.match(await pb2.locator('[data-writing-exception]').innerText(), /recording was not supplied/i, 'pb-2 exception disclosed');
+  assert.equal(await pb2.locator('details[data-student-model]').count(), 0, 'pb-2 has no fabricated model');
+  await page.locator('#pb2-sisters').fill('two');
+  await page.locator('#pb2-mine-subject').fill('art');
+  await page.reload({ waitUntil: 'networkidle' });
+  await clickStep(1);
+  assert.equal(await page.locator('#pb2-sisters').inputValue(), 'two', 'pb-2 response persists');
+  const pb2Immediate = await pb2.evaluate(section => {
+    section.querySelector('[data-writing-reset]').click();
+    return { sisters: section.querySelector('#pb2-sisters').value, mine: section.querySelector('#pb2-mine-subject').value,
+      stored: localStorage.getItem(`efc_writing_${location.pathname.split('/').pop().replace('.html', '')}_v1:pb-2`) };
+  });
+  assert.equal(pb2Immediate.sisters, '', 'pb-2 reset clears its own field immediately');
+  assert.equal(pb2Immediate.mine, '', 'pb-2 reset clears all of its own fields');
+  assert.equal(pb2Immediate.stored, null, 'pb-2 reset clears only its activity key');
+  await page.reload({ waitUntil: 'networkidle' });
+  await clickStep(1);
+  assert.equal(await page.locator('#pb2-sisters').inputValue(), '', 'pb-2 reset survives reload');
+  pass('Pupil’s Book writing layer', 'pb-2 discloses the missing recording, offers no model, persists and resets only its own activity');
+
   // Pupil's Book 5: the project response space, including its drawing surface.
   await clickStep(4);
   await page.locator('#pb5-smell').check();
@@ -227,11 +251,11 @@ try {
   assert.match(await page.locator('#wb-listen .practice-feedback').textContent(), /unavailable|practice only|recording/i);
   await resetForm('wb-listen');
 
+  // Exercise 4 prints no answer lines: the scan's left half is blank, so the page must
+  // offer no writing fields there and must say so, rather than carry invented fields.
   await clickStep(3);
-  for (const [id, value] of [['wb4-line1', 'forty'], ['wb4-line2', 'twenty'], ['wb4-line3', 'fifty']]) await page.locator('#' + id).fill(value);
-  await page.reload({ waitUntil: 'networkidle' });
-  await clickStep(3);
-  assert.equal(await page.locator('#wb4-line2').inputValue(), 'twenty');
+  assert.equal(await page.locator('#wb4-line1, #wb-say').count(), 0, 'Exercise 4 has no invented writing fields');
+  assert.match(await page.locator('#wb-4').innerText(), /no answer lines/i, 'Exercise 4 discloses that it has no writing space');
 
   await clickStep(4);
   for (const [id, value] of Object.entries({ 'wb5-1a': 'Science', 'wb5-1b': 'Music', 'wb5-2a': 'English', 'wb5-2b': 'Maths', 'wb5-3': 'Art', 'wb5-4a': 'Music', 'wb5-4b': 'Sports' })) await page.locator('#' + id).fill(value);
@@ -244,6 +268,23 @@ try {
   await page.locator('#wb-phonics .check-practice').click();
   assert.match(await page.locator('#wb-phonics .practice-feedback').textContent(), /All 4/);
   await resetForm('wb-phonics');
+
+  // Writing layer, Workbook: the printed-column mismatch is disclosed and no model is claimed.
+  const wb6 = page.locator('[data-writing-activity="wb-6"]');
+  assert.match(await wb6.locator('[data-writing-exception]').innerText(), /printed columns disagree|example line jumps/i, 'wb-6 exception disclosed');
+  assert.equal(await wb6.locator('details[data-student-model]').count(), 0, 'wb-6 publishes no verified model');
+  await clickStep(4);
+  await page.locator('#wb5-3').fill('Art');
+  const wb6Immediate = await wb6.evaluate(section => {
+    section.querySelector('[data-writing-reset]').click();
+    return { checked: section.querySelectorAll('input[type="radio"]:checked').length,
+      stored: localStorage.getItem(`efc_writing_${location.pathname.split('/').pop().replace('.html', '')}_v1:wb-6`),
+      kept: document.querySelector('#wb5-3').value };
+  });
+  assert.equal(wb6Immediate.checked, 0, 'wb-6 reset clears its own choices immediately');
+  assert.equal(wb6Immediate.stored, null, 'wb-6 reset clears only its activity key');
+  assert.equal(wb6Immediate.kept, 'Art', 'resetting wb-6 leaves wb-5 work untouched');
+  pass('Workbook writing layer', 'wb-6 discloses the printed-column mismatch, publishes no verified model, and its reset is isolated');
   pass('All Workbook exercises are genuinely usable', 'Five-sentence matching, three odd-one-out rows with the printed example intact, unscored listening ticks, personal number lines, five subject blanks plus two personal ones and four sound pairs; every check and reset works');
 
   // Independent test.

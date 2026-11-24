@@ -13,12 +13,12 @@ test('every registered lesson has a Writing state; unrecorded lessons are not au
   assert.equal(states.length, slugs.length);
   assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson1').state, 'Writing audited');
   assert.equal(states.find(s => s.slug === 'grade4-unit1-lesson1').state, 'Writing audited with documented exceptions');
-  assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson5').state, 'Writing not yet audited');
-  assert.equal(states.find(s => s.slug === 'grade4-unit1-lesson5').state, 'Writing not yet audited');
+  assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson5').state, 'Writing audited with documented exceptions');
+  assert.equal(states.find(s => s.slug === 'grade4-unit1-lesson5').state, 'Writing audited with documented exceptions');
   assert.ok(states.filter(s => !Object.hasOwn(data.audited, s.slug)).every(s => s.state === 'Writing not yet audited'));
 });
 
-test('the eight documented exceptions cannot silently disappear or be combined', () => {
+test('the fourteen documented exceptions cannot silently disappear or be combined', () => {
   const found = Object.entries(data.audited).flatMap(([slug, audit]) => audit.exceptions.map(e => `${slug}|${e.book}|${e.page}|${e.activity}`));
   assert.deepEqual(found, [
     "grade4-unit1-lesson1|Pupil's Book|3|Exercise 1 — Listen and number",
@@ -28,9 +28,15 @@ test('the eight documented exceptions cannot silently disappear or be combined',
     "grade4-unit1-lesson2|Pupil's Book|6|Activity 3 — Look and describe",
     'grade4-unit1-lesson2|Workbook|9|Exercise 4 — Listen and match',
     'grade3-unit1-lesson3|Workbook|9|Exercise 2 — Listen and number',
-    "grade4-unit1-lesson4|Pupil's Book|12|Exercise 1 — Listen and number"
+    "grade4-unit1-lesson4|Pupil's Book|12|Exercise 1 — Listen and number",
+    "grade3-unit1-lesson5|Pupil's Book|16|Activity 2 — Listen then complete the table",
+    'grade3-unit1-lesson5|Workbook|17|Exercise 6 — Look, match then write',
+    "grade4-unit1-lesson5|Pupil's Book|15|Exercise 1 — Listen and number",
+    "grade4-unit1-lesson5|Pupil's Book|18|Revision 1 Exercise 2 — Read and correct the underlined mistakes, item 5",
+    'grade4-unit1-lesson5|Workbook|18|Exercise 5 — Complete, items 2 and 3',
+    'grade4-unit1-lesson5|Workbook|19|Exercise 9 — Write about your favourite subject'
   ]);
-  assert.equal(run(data).reduce((n, s) => n + s.exceptions, 0), 8);
+  assert.equal(run(data).reduce((n, s) => n + s.exceptions, 0), 14);
 });
 
 test('invalid, duplicate, undocumented and unregistered records are rejected', () => {

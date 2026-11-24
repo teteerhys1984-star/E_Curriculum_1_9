@@ -108,6 +108,66 @@
           "evidence": "docs/grade4-unit1-lesson4/writing-inventory.md"
         }
       ]
+    },
+    "grade3-unit1-lesson5": {
+      "activityCount": 3,
+      "inventory": "docs/grade3-unit1-lesson5/writing-inventory.md",
+      "exceptions": [
+        {
+          "book": "Pupil's Book",
+          "page": 16,
+          "activity": "Activity 2 — Listen then complete the table",
+          "reason": "The original recording was not supplied, so the three empty Sally cells cannot be verified from the printed table.",
+          "handling": "Response entry, persistence and activity reset; no model; the two exceptions are disclosed on the page and the cells are not checked.",
+          "evidence": "docs/grade3-unit1-lesson5/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 17,
+          "activity": "Exercise 6 — Look, match then write",
+          "reason": "The printed sound pairs, pictures and dotted word frames do not align row by row, and the book’s own example line jumps from “ou” to “h.o. .u. se”, so the picture-to-word matching cannot be verified.",
+          "handling": "Columns kept in printed order; the book example is marked as the book’s; only the word-level sound mapping is shown, labelled inferred; disclosed on the page and not graded.",
+          "evidence": "docs/grade3-unit1-lesson5/writing-inventory.md"
+        }
+      ]
+    },
+    "grade4-unit1-lesson5": {
+      "activityCount": 15,
+      "inventory": "docs/grade4-unit1-lesson5/writing-inventory.md",
+      "exceptions": [
+        {
+          "book": "Pupil's Book",
+          "page": 15,
+          "activity": "Exercise 1 — Listen and number",
+          "reason": "The original recording was not supplied, so which number belongs in each of the nine printed bubbles cannot be verified.",
+          "handling": "Response entry, persistence and activity reset; disclosed exception; no model; not graded.",
+          "evidence": "docs/grade4-unit1-lesson5/writing-inventory.md"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 18,
+          "activity": "Revision 1 Exercise 2 — Read and correct the underlined mistakes, item 5",
+          "reason": "“Sally is brown eyes” cannot be repaired by changing the form of the underlined word; the scan prints no completed version.",
+          "handling": "Labelled example (“has got”) with the reason disclosed; items 1–4 are verified; the activity is not graded as a unique key.",
+          "evidence": "docs/grade4-unit1-lesson5/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 18,
+          "activity": "Exercise 5 — Complete, items 2 and 3",
+          "reason": "“Geography is ……” and “Art is ……” ask for an adjective that the book never prints and provides no word bank for.",
+          "handling": "Items 1, 4, 5 and 6 verified; the two open adjectives are labelled illustrative and disclosed on the page; not graded.",
+          "evidence": "docs/grade4-unit1-lesson5/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 19,
+          "activity": "Exercise 9 — Write about your favourite subject",
+          "reason": "Personal writing: the subject, days and reasons are the pupil’s own, so no unique answer exists.",
+          "handling": "Labelled illustrative sample marked “answers vary”; response entry, persistence and activity reset.",
+          "evidence": "docs/grade4-unit1-lesson5/writing-inventory.md"
+        }
+      ]
     }
   }
 }
