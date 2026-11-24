@@ -32,7 +32,7 @@
     }
   };
 
-  const inputsOf = section => Array.from(section.querySelectorAll('input[type="text"]'));
+  const inputsOf = section => Array.from(section.querySelectorAll('input[type="text"], select'));
   const feedbackOf = section => section.querySelector('.practice-feedback');
   const modelItems = section => Array.from(section.querySelectorAll('.answer ol li')).map(li => li.textContent.trim());
   const norm = s => s.trim().replace(/\s+/g, ' ').replace(/[.!?]+$/, '').toLowerCase();
@@ -52,12 +52,12 @@
     const saved = drafts[id] || {};
     inputsOf(section).forEach(input => {
       if (Object.prototype.hasOwnProperty.call(saved, input.name)) input.value = saved[input.name];
-      input.addEventListener('input', () => {
+      ['input', 'change'].forEach(type => input.addEventListener(type, () => {
         drafts[id] = drafts[id] || {};
         drafts[id][input.name] = input.value;
         if (save()) say(section, '');
         else say(section, 'Saving failed.' + storageMessage());
-      });
+      }));
     });
 
     /* Compare: show each response beside its model without changing either. */

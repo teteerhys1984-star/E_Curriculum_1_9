@@ -1,0 +1,310 @@
+{
+  "lesson": "grade3-unit1-lesson6",
+  "totalQuestions": 20,
+  "objectives": [
+    "frequency-words",
+    "third-person-s",
+    "never-with-verb",
+    "question-do-every-day",
+    "adverb-position",
+    "routine-vocabulary",
+    "sentence-matching",
+    "phonics-gr",
+    "sentence-order",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "number": 1,
+      "format": "multiple-choice",
+      "objective": "frequency-words",
+      "prompt": "1. Which frequency word means that something happens every time?",
+      "evidence": "Always means the action happens every time, which is the top of the scale.",
+      "options": [
+        "always",
+        "sometimes",
+        "never"
+      ],
+      "correct": 0,
+      "objectiveLabel": "frequency-words"
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "format": "multiple-choice",
+      "objective": "frequency-words",
+      "prompt": "2. Which frequency word means something happens now and then, but not every time?",
+      "evidence": "Sometimes means the action happens now and then, but not always.",
+      "options": [
+        "sometimes",
+        "always",
+        "never"
+      ],
+      "correct": 0,
+      "objectiveLabel": "frequency-words"
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "format": "multiple-choice",
+      "objective": "third-person-s",
+      "prompt": "3. Choose the correct sentence about Mona.",
+      "evidence": "With he, she or a name, the verb in a simple present sentence takes an s ending.",
+      "options": [
+        "Mona use her computer after school.",
+        "Mona uses her computer after school.",
+        "Mona using her computer after school."
+      ],
+      "correct": 1,
+      "objectiveLabel": "third-person-s"
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "format": "multiple-choice",
+      "objective": "never-with-verb",
+      "prompt": "4. Which sentence is correct?",
+      "evidence": "Never goes before the main verb, and the verb takes s with he.",
+      "options": [
+        "He never runs in class.",
+        "He runs never in class.",
+        "He never run in class."
+      ],
+      "correct": 0,
+      "objectiveLabel": "never-with-verb"
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "format": "multiple-choice",
+      "objective": "question-do-every-day",
+      "prompt": "5. Which question asks what someone does regularly?",
+      "evidence": "The question about a regular routine uses What does ... do every day.",
+      "options": [
+        "What does Omar do every day?",
+        "Where is Omar going today?",
+        "How old is Omar?"
+      ],
+      "correct": 0,
+      "objectiveLabel": "question-do-every-day"
+    },
+    {
+      "id": "q6",
+      "number": 6,
+      "format": "multiple-choice",
+      "objective": "adverb-position",
+      "prompt": "6. Which sentence puts the frequency word in the correct place?",
+      "evidence": "A frequency word goes before the main verb.",
+      "options": [
+        "She reads always before school.",
+        "She always reads before school.",
+        "Always she before school reads."
+      ],
+      "correct": 1,
+      "objectiveLabel": "adverb-position"
+    },
+    {
+      "id": "q7",
+      "number": 7,
+      "format": "multiple-choice",
+      "objective": "routine-vocabulary",
+      "prompt": "7. Which activity is done with a bicycle?",
+      "evidence": "Ride my bike is the activity that uses a bicycle.",
+      "options": [
+        "ride my bike",
+        "brush my teeth",
+        "tidy my bedroom"
+      ],
+      "correct": 0,
+      "objectiveLabel": "routine-vocabulary"
+    },
+    {
+      "id": "q8",
+      "number": 8,
+      "format": "multiple-choice",
+      "objective": "routine-vocabulary",
+      "prompt": "8. Which activity keeps your teeth clean?",
+      "evidence": "Brushing the teeth keeps them clean.",
+      "options": [
+        "brush my teeth",
+        "tidy my bedroom",
+        "ride my bike"
+      ],
+      "correct": 0,
+      "objectiveLabel": "routine-vocabulary"
+    },
+    {
+      "id": "q9",
+      "number": 9,
+      "format": "multiple-choice",
+      "objective": "sentence-matching",
+      "prompt": "9. Which ending fits the sentence: My brother often ...?",
+      "evidence": "Only helps me with my homework makes sense after often and a verb.",
+      "options": [
+        "helps me with my homework.",
+        "at eight o’clock.",
+        "to the moon."
+      ],
+      "correct": 0,
+      "objectiveLabel": "sentence-matching"
+    },
+    {
+      "id": "q10",
+      "number": 10,
+      "format": "multiple-choice",
+      "objective": "phonics-gr",
+      "prompt": "10. Which word begins with the sound gr?",
+      "evidence": "Grass begins with the letters gr.",
+      "options": [
+        "grass",
+        "bike",
+        "school"
+      ],
+      "correct": 0,
+      "objectiveLabel": "phonics-gr"
+    },
+    {
+      "id": "q11",
+      "number": 11,
+      "format": "multiple-choice",
+      "objective": "sentence-order",
+      "prompt": "11. Which sentence is in the correct order?",
+      "evidence": "The frequency word comes before the main verb, and the rest follows.",
+      "options": [
+        "Lina always draws after lunch.",
+        "Lina draws always after lunch.",
+        "Always Lina after lunch draws."
+      ],
+      "correct": 0,
+      "objectiveLabel": "sentence-order"
+    },
+    {
+      "id": "q12",
+      "number": 12,
+      "format": "multiple-choice",
+      "objective": "frequency-words",
+      "prompt": "12. Which word is the opposite of always?",
+      "evidence": "Never is the opposite of always on the frequency scale.",
+      "options": [
+        "never",
+        "often",
+        "usually"
+      ],
+      "correct": 0,
+      "objectiveLabel": "frequency-words"
+    },
+    {
+      "id": "q13",
+      "number": 13,
+      "format": "true-false",
+      "objective": "never-with-verb",
+      "prompt": "13. True or False: In the sentence Ben never shouts in class, the word never comes before the verb.",
+      "evidence": "Never comes before shouts, the main verb.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "objectiveLabel": "never-with-verb"
+    },
+    {
+      "id": "q14",
+      "number": 14,
+      "format": "true-false",
+      "objective": "third-person-s",
+      "prompt": "14. True or False: In the sentence Tom reads a book every day, the verb reads ends in s because Tom is a third-person subject.",
+      "evidence": "Third-person subjects take an s on the verb in the simple present.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "objectiveLabel": "third-person-s"
+    },
+    {
+      "id": "q15",
+      "number": 15,
+      "format": "true-false",
+      "objective": "routine-vocabulary",
+      "prompt": "15. True or False: Ride my bike means swimming in a pool.",
+      "evidence": "Ride my bike means riding a bicycle, so the statement is false.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 1,
+      "objectiveLabel": "routine-vocabulary"
+    },
+    {
+      "id": "q16",
+      "number": 16,
+      "format": "true-false",
+      "objective": "adverb-position",
+      "prompt": "16. True or False: In the sentence Omar always reads after lunch, the word always comes before the main verb.",
+      "evidence": "Always comes before reads.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correct": 0,
+      "objectiveLabel": "adverb-position"
+    },
+    {
+      "id": "q17",
+      "number": 17,
+      "format": "short-answer",
+      "objective": "frequency-words",
+      "prompt": "17. Write the frequency word that means one hundred percent of the time.",
+      "evidence": "Always is the top of the frequency scale.",
+      "accepted": [
+        "always"
+      ],
+      "correct": "always",
+      "wrongSample": "usually",
+      "objectiveLabel": "frequency-words"
+    },
+    {
+      "id": "q18",
+      "number": 18,
+      "format": "short-answer",
+      "objective": "third-person-s",
+      "prompt": "18. Write the correct form of the verb in brackets: Hasan ........ (brush) his teeth every morning.",
+      "evidence": "Hasan is a third-person subject, so the verb takes es after sh.",
+      "accepted": [
+        "brushes"
+      ],
+      "correct": "brushes",
+      "wrongSample": "brush",
+      "objectiveLabel": "third-person-s"
+    },
+    {
+      "id": "q19",
+      "number": 19,
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "prompt": "19. Rewrite the sentence with the word always: He reads a story.",
+      "evidence": "The word always goes before the main verb reads.",
+      "accepted": [
+        "he always reads a story"
+      ],
+      "correct": "he always reads a story",
+      "wrongSample": "He reads always a story",
+      "objectiveLabel": "sentence-writing"
+    },
+    {
+      "id": "q20",
+      "number": 20,
+      "format": "short-answer",
+      "objective": "phonics-gr",
+      "prompt": "20. Write the two letters that begin the word grapes.",
+      "evidence": "Grapes begins with the letters gr.",
+      "accepted": [
+        "gr"
+      ],
+      "correct": "gr",
+      "wrongSample": "sh",
+      "objectiveLabel": "phonics-gr"
+    }
+  ]
+}
