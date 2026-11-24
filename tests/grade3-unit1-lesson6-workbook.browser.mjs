@@ -12,13 +12,18 @@ import { chromium } from 'playwright';
 
 const require = createRequire(import.meta.url);
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const PAGE = 'grade3-unit1-lesson6-workbook.html';
+const PAGE = 'drafts/grade3-unit1-lesson6/grade3-unit1-lesson6-workbook.html';
 const KEY = 'grade3-unit1-lesson6-workbook-drafts-v1';
 const mime = { '.html': 'text/html; charset=utf-8', '.js': 'application/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.json': 'application/json; charset=utf-8' };
 
 const server = http.createServer((req, res) => {
   const reqPath = decodeURIComponent((req.url || '/').split('?')[0]);
-  const filePath = path.join(root, reqPath === '/' ? 'index.html' : reqPath);
+  let filePath = path.join(root, reqPath === '/' ? 'index.html' : reqPath);
+  /* Draft pages live in drafts/grade3-unit1-lesson6/; shared assets are read from the root. */
+  const draftPrefix = '/drafts/grade3-unit1-lesson6/';
+  if ((!fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) && reqPath.startsWith(draftPrefix)) {
+    filePath = path.join(root, reqPath.slice(draftPrefix.length));
+  }
   if (!filePath.startsWith(root + path.sep) || !fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
     res.writeHead(404); res.end('Not found'); return;
   }
