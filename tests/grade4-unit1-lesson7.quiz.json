@@ -147,11 +147,11 @@
       "prompt": "Lina plays tennis from Monday to Friday and rests at the weekend. Choose the best word: “She ___ plays tennis.”",
       "correct": 0,
       "objective": "frequency-adverbs",
-      "objectiveLabel": "Choose “always” from a new frequency context.",
-      "evidence": "The new context describes every weekday and no weekend play, so “always” fits the stated school-week pattern.",
+      "objectiveLabel": "Choose “usually” from a new frequency context.",
+      "evidence": "The new context says she plays Monday to Friday but rests at the weekend, so “usually” fits; “always” would wrongly include the weekend.",
       "format": "multiple-choice",
       "options": [
-        "always",
+        "usually",
         "never",
         "sometimes"
       ],
