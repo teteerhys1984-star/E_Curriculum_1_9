@@ -93,13 +93,13 @@
       "number": 6,
       "format": "multiple-choice",
       "objective": "activity-vocabulary",
-      "prompt": "6. Which activity is played on a court with a ball and a hoop?",
-      "evidence": "Basketball is played on a court with a ball and a hoop.",
+      "prompt": "6. Which sport does the speaker say they like playing?",
+      "evidence": "Pupil’s Book, Ask and answer: “I like playing basketball.” The piano is said to be disliked, and stamps are collected rather than played.",
       "objectiveLabel": "Naming hobbies and activities",
       "options": [
-        "tennis",
-        "water skiing",
-        "listening"
+        "basketball",
+        "the piano",
+        "collecting stamps"
       ],
       "correct": 0
     },

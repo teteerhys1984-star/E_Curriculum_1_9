@@ -46,10 +46,12 @@ Only the printed text in the six scans is authoritative. Labels used below:
 
 ## Vocabulary glosses (Arabic)
 
+The Arabic meanings are published only on the Vocabulary page (`grade3-unit1-lesson7-vocabulary.html`), inside RTL cells. They are not repeated in this document.
+
 Lesson words: programme, cartoons, football, quiz show, cooking programme, film, favourite, match, start.
 
-- **Verified against a named source:** *favourite* → مفضل (Almaany English–Arabic dictionary, entry “favourite”; Lingolifto).
-- **Not individually source-checked in this session.** The meanings are standard dictionary equivalents: programme → برنامج, cartoons → رسوم متحركة, football → كرة القدم, quiz show → برنامج مسابقات, cooking programme → برنامج طبخ, film → فيلم, match → مباراة, start → يبدأ. Each needs teacher confirmation before classroom use. Flagged here as unverified.
+- **Verified against a named source:** *favourite* (Almaany English–Arabic dictionary, entry “favourite”; Lingolifto). The Vocabulary page gloss matches the first dictionary meaning.
+- **Not individually source-checked in this session:** programme, cartoons, football, quiz show, cooking programme, film, match, start. Each Vocabulary page gloss is a standard dictionary equivalent and needs teacher confirmation before classroom use. Flagged here as unverified.
 - The vocabulary page states that Arabic equivalents are editorial support and recommends teacher review.
 
 ## Source limitations (exceptions)

@@ -39,12 +39,14 @@ Labels: **printed**, **inferred**, **audio**, **illustrative**, **oral** as defi
 
 ## Vocabulary glosses (Arabic)
 
-Lesson words: shells, collecting, water skiing, guitar, piano, chess, music, stamps, basketball, tennis, swimming, reading books.
+The Arabic meanings are published only on the Vocabulary page (`grade3-unit1-lesson8-vocabulary.html`), inside RTL cells. They are not repeated in this document.
+
+Lesson words (12): shells, collecting, water skiing, guitar, piano, chess, music, basketball, tennis, stamps, sea, crayon.
 
 - **Verified against a named source:**
-  - *water skiing* → التزلج على الماء (Reverso Context, “water-skiing”; Ling, “Arabic sports vocabulary”).
-  - *crayon* → قلم تلوين شمعي (Cambridge English–Arabic dictionary; the lesson uses the wax-crayon sense from the printed picture).
-- **Not individually source-checked in this session.** Standard dictionary equivalents: shells → أصداف, collecting → يجمع, guitar → غيتار, piano → بيانو, chess → شطرنج, music → موسيقى, stamps → طوابع, basketball → كرة السلة, tennis → التنس, sea → البحر, swimming and reading books (per the vocabulary page). Each needs teacher confirmation. Flagged here as unverified.
+  - *water skiing*: Reverso Context (“water-skiing”) and Ling (sports vocabulary). The Vocabulary page gloss is the sport-of-riding-water-skis sense.
+  - *crayon*: Cambridge English–Arabic dictionary (“a stick of coloured wax used for drawing”). The Vocabulary page gloss is the wax-crayon sense.
+- **Not individually source-checked in this session:** shells, collecting, guitar, piano, chess, music, stamps, basketball, tennis, sea. Each Vocabulary page gloss is a standard dictionary equivalent and needs teacher confirmation before classroom use. Flagged here as unverified.
 - The vocabulary page states that Arabic equivalents are editorial support and recommends teacher review.
 
 ## Source limitations (exceptions)
