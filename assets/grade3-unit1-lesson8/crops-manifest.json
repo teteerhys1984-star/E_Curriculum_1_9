@@ -1,0 +1,182 @@
+[
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/pupil-book-page-24-listen-read.png",
+    "source": "assets/grade3-unit1-lesson8/source/pupil-book-page-24.png",
+    "box": [
+      40,
+      215,
+      720,
+      985
+    ],
+    "size": [
+      680,
+      770
+    ],
+    "sha256": "2416289d87086a321ef6ea2f2a65d245b4ead0fee0f3f0ee2d415045c96e3839"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/pupil-book-page-25-lets-learn.png",
+    "source": "assets/grade3-unit1-lesson8/source/pupil-book-page-25.png",
+    "box": [
+      80,
+      85,
+      670,
+      290
+    ],
+    "size": [
+      590,
+      205
+    ],
+    "sha256": "4c21731baa00bd1fe61c644679a481841884e117625ec2e43d3a3e6f734159d4"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/pupil-book-page-25-ask-answer.png",
+    "source": "assets/grade3-unit1-lesson8/source/pupil-book-page-25.png",
+    "box": [
+      110,
+      310,
+      630,
+      610
+    ],
+    "size": [
+      520,
+      300
+    ],
+    "sha256": "8fa257ec4e20b1c3ecce67ec537272b4bcf8486602c3c793999eedc3efb51643"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/pupil-book-page-25-listen-tick.png",
+    "source": "assets/grade3-unit1-lesson8/source/pupil-book-page-25.png",
+    "box": [
+      70,
+      630,
+      540,
+      1000
+    ],
+    "size": [
+      470,
+      370
+    ],
+    "sha256": "7b38dc22b85535b7f569774dfd08336e5bf9cc3b1781fdb7a2c430d96619e406"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/pupil-book-page-26-listen-sing.png",
+    "source": "assets/grade3-unit1-lesson8/source/pupil-book-page-26.png",
+    "box": [
+      60,
+      60,
+      690,
+      640
+    ],
+    "size": [
+      630,
+      580
+    ],
+    "sha256": "61dbc6f81abbfebeaaccc273fd553e5c06f52b80e076892c4636e9f58544876b"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/pupil-book-page-26-sounds-cr.png",
+    "source": "assets/grade3-unit1-lesson8/source/pupil-book-page-26.png",
+    "box": [
+      40,
+      745,
+      700,
+      1010
+    ],
+    "size": [
+      660,
+      265
+    ],
+    "sha256": "8d377f62a554d3c332f7c25f65152fb1aea0dcb395979b0f3f63a04e8ec734b2"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/workbook-page-24-read-match.png",
+    "source": "assets/grade3-unit1-lesson8/source/workbook-page-24.png",
+    "box": [
+      40,
+      130,
+      720,
+      500
+    ],
+    "size": [
+      680,
+      370
+    ],
+    "sha256": "38e629de3ecec534371071dcc367e5686e7ba0277b08bd1c13c5a3e43f29169a"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/workbook-page-24-read-write.png",
+    "source": "assets/grade3-unit1-lesson8/source/workbook-page-24.png",
+    "box": [
+      40,
+      530,
+      720,
+      980
+    ],
+    "size": [
+      680,
+      450
+    ],
+    "sha256": "62a340c0f6cb3dcfbfe92542704c1127b8fe91c88db95d07152c117304c82b28"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/workbook-page-25-read-write-about-yourself.png",
+    "source": "assets/grade3-unit1-lesson8/source/workbook-page-25.png",
+    "box": [
+      40,
+      80,
+      700,
+      470
+    ],
+    "size": [
+      660,
+      390
+    ],
+    "sha256": "05bf6030775b5113d08809e5b8630ecaad0e833ff303bbbf35899eebe06a164a"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/workbook-page-25-listen-write-number.png",
+    "source": "assets/grade3-unit1-lesson8/source/workbook-page-25.png",
+    "box": [
+      80,
+      470,
+      640,
+      930
+    ],
+    "size": [
+      560,
+      460
+    ],
+    "sha256": "60a6c0a32cc1dd4c688f6ed45dff57278e51edba3919c681dfb10ae25bb38867"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/workbook-page-26-reorder.png",
+    "source": "assets/grade3-unit1-lesson8/source/workbook-page-26.png",
+    "box": [
+      40,
+      90,
+      720,
+      500
+    ],
+    "size": [
+      680,
+      410
+    ],
+    "sha256": "59b0bcf9a2d9e4b43eecf9654fb7e90624553830f749c3307b36494822750e07"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson8/crops/workbook-page-26-write-draw.png",
+    "source": "assets/grade3-unit1-lesson8/source/workbook-page-26.png",
+    "box": [
+      40,
+      540,
+      700,
+      1000
+    ],
+    "size": [
+      660,
+      460
+    ],
+    "sha256": "1066c43e003d5486c1adaf78d166426949b21bff54236bd099340d07b002eac4"
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "lesson": "grade3-unit1-lesson7",
+  "title": "TV Programmes",
+  "sourceImages": [
+    {
+      "file": "assets/grade3-unit1-lesson7/source/pupil-book-page-21.png",
+      "sha256": "65cc5ef2228dfa29a8784c903d2167a1cb126d385ab5774eafc6f171efb063ee",
+      "size": [
+        772,
+        1062
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson7/source/pupil-book-page-22.png",
+      "sha256": "448df99c7fabf4f4269f0b73d1a7c00ac53360c94db92ec0b938c2d5ab04d7c6",
+      "size": [
+        757,
+        1044
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson7/source/pupil-book-page-23.png",
+      "sha256": "246c8fc0ea02e2da4f9d4e6da61f091c3865c9e6f3fffbf10c7d9691b26dc7a0",
+      "size": [
+        756,
+        1033
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson7/source/workbook-page-21.png",
+      "sha256": "d3de6120047168aa959803e714a074dfbc3e85dd61d40f6530a6b7938128f1c5",
+      "size": [
+        741,
+        1033
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson7/source/workbook-page-22.png",
+      "sha256": "8c54d272df5bd65b56b166d61f46daff350b1eab0a73976b9d44b3d7c6d44ea1",
+      "size": [
+        757,
+        1038
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson7/source/workbook-page-23.png",
+      "sha256": "9309d067c0f02260837b806eecacbdb6fd14529bd55151e36fe418d220d646d9",
+      "size": [
+        747,
+        1054
+      ]
+    }
+  ],
+  "cropCount": 12,
+  "instructions": {
+    "pb-1": "1. Listen and read.",
+    "pb-2": "2. Let\u2019s learn!",
+    "pb-3": "3. Listen and tick \u2713.",
+    "pb-4": "4. Let\u2019s play.",
+    "pb-5": "5. Ask and answer.",
+    "pb-6": "6. Listen to the following sounds and words, then repeat them.",
+    "wb-1": "1. Listen and tick (\u2713) or cross (\u2716).",
+    "wb-2": "2. Look, read and write.",
+    "wb-3": "3. Look, read and circle.",
+    "wb-4": "4. Look , and write.",
+    "wb-5": "5. Fill in the spaces.",
+    "wb-6": "6. Let\u2019s learn!",
+    "wb-7": "7. Rewrite the following sentences using capital letters and full stops."
+  },
+  "printed": {
+    "pb-1-block": "What time does the football match start? It starts at half past two. Let\u2019s watch it together. I don\u2019t like football. I prefer cartoons. They start at quarter to four. Does the quiz show start at three o\u2019clock? No, it doesn\u2019t. It starts at five o\u2019clock. I love films. There is a good film tonight. It starts at quarter past six. The cooking programme starts at ten o\u2019clock in the morning.",
+    "pb-2-block": "It\u2019s quarter past five. It\u2019s half past five. It\u2019s quarter to six. It\u2019s six o\u2019clock.",
+    "pb-3-block": "Three numbered rows of two clock pictures, each with one tick circle. The recording determines the ticks.",
+    "pb-4-block": "What time is it? It is quarter past five.",
+    "pb-5-block": "What \u2019s your favourite TV programme? What time does it start? My favourite TV programme is animals programme . It starts at quarter past three.",
+    "pb-6-block": "Sound: sl. sleep. slide.",
+    "wb-1-block": "1- The cartoons start at half past eight. 2- The cooking programme starts at quarter past ten. 3- The quiz show starts at quarter to nine.",
+    "wb-2-block": "1- He has lunch at \u2026\u2026\u2026 \u2026\u2026\u2026 \u2026\u2026\u2026 . 2- She watches TV at \u2026\u2026\u2026 \u2026\u2026\u2026 \u2026\u2026\u2026 . 3- They play in the garden at \u2026\u2026\u2026 \u2026\u2026\u2026 \u2026\u2026\u2026 .",
+    "wb-3-block": "1- The film starts at (quarter, half) past six. 2- It\u2019s quarter (past, to) three. 3- The cooking programme (start, starts) at eleven o\u2019clock.",
+    "wb-4-block": "Word bank: football \u00b7 quiz show \u00b7 cartoons \u00b7 cooking programme. 1- \u2026\u2026 2- \u2026\u2026 3- \u2026\u2026 4- \u2026\u2026",
+    "wb-5-block": "starts to match show. 1- What time does the quiz \u2026\u2026 start? 2- It \u2026\u2026 at quarter past seven. 3- The football \u2026\u2026 finishes at eight o\u2019clock. 4- Cartoons start at quarter \u2026\u2026 four.",
+    "wb-6-block": "Tom likes football. He plays football on Friday.",
+    "wb-7-block": "1- max watches cartoons on friday (worked example: Max watches cartoons on Friday.) 2- my favourite programme is quiz show 3- tom loves films 4- i watch the cooking programme on monday"
+  },
+  "responseControls": {
+    "pupil-book": {},
+    "workbook": {
+      "text": 15,
+      "select": 3
+    },
+    "test": {
+      "radio": 44,
+      "text": 4
+    }
+  },
+  "vocabulary": [
+    {
+      "english": "programme",
+      "arabic": "\u0628\u0631\u0646\u0627\u0645\u062c"
+    },
+    {
+      "english": "cartoons",
+      "arabic": "\u0631\u0633\u0648\u0645 \u0645\u062a\u062d\u0631\u0643\u0629"
+    },
+    {
+      "english": "football",
+      "arabic": "\u0643\u0631\u0629 \u0627\u0644\u0642\u062f\u0645"
+    },
+    {
+      "english": "quiz show",
+      "arabic": "\u0628\u0631\u0646\u0627\u0645\u062c \u0645\u0633\u0627\u0628\u0642\u0627\u062a"
+    },
+    {
+      "english": "cooking programme",
+      "arabic": "\u0628\u0631\u0646\u0627\u0645\u062c \u0637\u0628\u062e"
+    },
+    {
+      "english": "film",
+      "arabic": "\u0641\u064a\u0644\u0645"
+    },
+    {
+      "english": "favourite",
+      "arabic": "\u0645\u0641\u0636\u0651\u0644"
+    },
+    {
+      "english": "match",
+      "arabic": "\u0645\u0628\u0627\u0631\u0627\u0629"
+    },
+    {
+      "english": "start",
+      "arabic": "\u064a\u0628\u062f\u0623"
+    }
+  ],
+  "vocabularyProvenance": "Arabic equivalents are standard dictionary meanings of the printed words, supplied as editorial support. Teacher review is recommended before classroom use.",
+  "vocabularyOmitted": []
+}

@@ -64,9 +64,9 @@ try {
   assert.equal(await page.locator('nav.section-links a.section-link').count(), 5, 'menu: five section links');
   assert.equal(await page.locator('.card').count(), 4, 'menu: four cards');
   assert.equal(await page.locator('a[href="grade3-unit1-lesson5.html"]').count() > 0, true, 'menu: previous lesson link');
-  assert.equal(await page.locator('a[href="grade3-unit1-lesson7.html"]').count(), 0, 'menu: no link to an unpublished Lesson 7');
-  assert.match(await page.locator('body').textContent(), /Next lesson · not yet published/);
-  pass('Menu and navigation', 'Five section links, four cards, previous Lesson 5 link, honest not-yet-published next lesson');
+  assert.match(await page.locator('body').textContent(), /Next lesson · TV Programmes/);
+  assert.ok(await page.locator('a[href="grade3-unit1-lesson7.html"]').count() >= 1, 'Lesson 6 links forward to the published Lesson 7');
+  pass('Menu and navigation', 'Five section links, four cards, previous Lesson 5 link, forward link to published Lesson 7');
 
   // 2. Pupil's Book and Workbook: every printed block visible, crops load, source pages open
   for (const [file, ids] of [[`${base}-pupil-book.html`, Object.keys(content.instructions).filter(id => id.startsWith('pb'))],

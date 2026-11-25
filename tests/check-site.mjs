@@ -487,6 +487,8 @@ const teacherCounts = {
   'grade3-unit1-lesson4': '3 · 4 My Five Senses',
   'grade3-unit1-lesson5': '3 · 5 Revision 1',
   'grade3-unit1-lesson6': '3 · 6 My Daily Routine',
+  'grade3-unit1-lesson7': '3 · 7 TV Programmes',
+  'grade3-unit1-lesson8': '3 · 8 Let’s Have Fun',
   'grade4-unit1-lesson1': '4 · 1 Nice to Meet You',
   'grade4-unit1-lesson2': '4 · 2 My Family',
   'grade4-unit1-lesson3': '4 · 3 Daily Routine',

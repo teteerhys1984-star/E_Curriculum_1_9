@@ -1,0 +1,146 @@
+{
+  "lesson": "grade3-unit1-lesson8",
+  "title": "Let\u2019s Have Fun",
+  "sourceImages": [
+    {
+      "file": "assets/grade3-unit1-lesson8/source/pupil-book-page-24.png",
+      "sha256": "bc9d6b51c73f9a7dd3d1a8cc32b1b8cd2ae5e2b31193a4a68b511a482f7e55a6",
+      "size": [
+        757,
+        1053
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson8/source/pupil-book-page-25.png",
+      "sha256": "4ec0a6ac825cceb1099233c3ba29d306df5c96cb0883301955b6c8c03a3b2055",
+      "size": [
+        733,
+        1030
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson8/source/pupil-book-page-26.png",
+      "sha256": "8aeae952b57ee692d61b6146392cfa1089f47367fd14cfe6b3c217c93189e770",
+      "size": [
+        736,
+        1063
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson8/source/workbook-page-24.png",
+      "sha256": "8e0ae2fd9f9d9c2fdbd6bdacb03bea09f52d303bd85d6d42223c70f821e4af0a",
+      "size": [
+        730,
+        1051
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson8/source/workbook-page-25.png",
+      "sha256": "4a9a2fdd4c3ef52cf1e38600cf2c3392b6dd6476a65c9b31f65e481b6024baed",
+      "size": [
+        730,
+        1014
+      ]
+    },
+    {
+      "file": "assets/grade3-unit1-lesson8/source/workbook-page-26.png",
+      "sha256": "2182e53552257359f7ec41d3f4e7313755df7f60b8d23cc92b9072e016745cf1",
+      "size": [
+        751,
+        1053
+      ]
+    }
+  ],
+  "cropCount": 12,
+  "instructions": {
+    "pb-1": "1. Listen and read.",
+    "pb-2": "2. Let\u2019s learn!",
+    "pb-3": "3. Ask and answer.",
+    "pb-4": "4. Listen and tick \u2713.",
+    "pb-5": "5. Listen and sing.",
+    "pb-6": "6. Listen to the following sounds and words, then repeat them.",
+    "wb-1": "1. Read and match.",
+    "wb-2": "2. Read and write.",
+    "wb-3": "3. Read and write about yourself.",
+    "wb-4": "4. Listen and write the number.",
+    "wb-5": "5. Reorder.",
+    "wb-6": "6. Write and draw about what you like doing."
+  },
+  "printed": {
+    "pb-1-block": "What do you like doing? I like collecting shells. I like water skiing. Do you like playing the guitar? Yes, I do. I don\u2019t like playing the piano. What do you like doing? We like playing chess. I like listening to music.",
+    "pb-2-block": "1- What do you like doing? I like collecting stamps. 2- Do you like playing the piano? Yes, I do. / No, I don\u2019t.",
+    "pb-3-block": "What do you like doing? I like playing basketball. Do you like playing tennis? No, I don\u2019t.",
+    "pb-4-block": "Two numbered rows of two pictures each, with one tick circle per picture. The recording determines the ticks.",
+    "pb-5-block": "What do you like doing? What do you like doing? Playing chess, playing chess. Swimming in the sea, swimming in the sea. Collecting things, collecting things. What do you like doing? What do you like doing?",
+    "pb-6-block": "Sound: cr. crayon. crow.",
+    "wb-1-block": "1- I like playing the piano. 2- I don\u2019t like watching TV. 3- She doesn\u2019t like playing tennis. 4- I like swimming in the sea.",
+    "wb-2-block": "Word bank: playing \u00b7 listening \u00b7 watching \u00b7 collecting. 1- We like \u2026\u2026 to music. 2- He likes \u2026\u2026 TV. 3- They like \u2026\u2026 shells. 4- Mike likes \u2026\u2026 the guitar.",
+    "wb-3-block": "Activities: 1- listening to music 2- playing chess 3- collecting stamps 4- reading books. The printed example for item 1 is \u201cI like listening to music.\u201d",
+    "wb-4-block": "Four pictures, each with a circle for the number. The recording determines the numbers.",
+    "wb-5-block": "1- Like TV. He watching doesn\u2019t 2- the Do piano? playing you like 3- like sea. swimming the in They",
+    "wb-6-block": "I like \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026 Write and draw about what you like doing. (frame for a drawing; no printed answer)"
+  },
+  "responseControls": {
+    "pupil-book": {},
+    "workbook": {
+      "text": 11,
+      "select": 4
+    },
+    "test": {
+      "radio": 44,
+      "text": 4
+    }
+  },
+  "vocabulary": [
+    {
+      "english": "shells",
+      "arabic": "\u0623\u0635\u062f\u0627\u0641"
+    },
+    {
+      "english": "collecting",
+      "arabic": "\u064a\u062c\u0645\u0639"
+    },
+    {
+      "english": "water skiing",
+      "arabic": "\u0627\u0644\u062a\u0632\u0644\u062c \u0639\u0644\u0649 \u0627\u0644\u0645\u0627\u0621"
+    },
+    {
+      "english": "guitar",
+      "arabic": "\u063a\u064a\u062a\u0627\u0631"
+    },
+    {
+      "english": "piano",
+      "arabic": "\u0628\u064a\u0627\u0646\u0648"
+    },
+    {
+      "english": "chess",
+      "arabic": "\u0634\u0637\u0631\u0646\u062c"
+    },
+    {
+      "english": "music",
+      "arabic": "\u0645\u0648\u0633\u064a\u0642\u0649"
+    },
+    {
+      "english": "basketball",
+      "arabic": "\u0643\u0631\u0629 \u0627\u0644\u0633\u0644\u0629"
+    },
+    {
+      "english": "tennis",
+      "arabic": "\u0627\u0644\u062a\u0646\u0633"
+    },
+    {
+      "english": "stamps",
+      "arabic": "\u0637\u0648\u0627\u0628\u0639"
+    },
+    {
+      "english": "sea",
+      "arabic": "\u0627\u0644\u0628\u062d\u0631"
+    },
+    {
+      "english": "crayon",
+      "arabic": "\u0642\u0644\u0645 \u062a\u0644\u0648\u064a\u0646 \u0634\u0645\u0639\u064a"
+    }
+  ],
+  "vocabularyProvenance": "Arabic equivalents are standard dictionary meanings of the printed words, supplied as editorial support. Teacher review is recommended before classroom use.",
+  "vocabularyOmitted": []
+}

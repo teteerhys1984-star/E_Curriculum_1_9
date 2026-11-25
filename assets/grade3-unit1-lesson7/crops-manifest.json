@@ -1,0 +1,182 @@
+[
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/pupil-book-page-21-listen-read.png",
+    "source": "assets/grade3-unit1-lesson7/source/pupil-book-page-21.png",
+    "box": [
+      20,
+      160,
+      740,
+      995
+    ],
+    "size": [
+      720,
+      835
+    ],
+    "sha256": "a852db34be6aafcc18882d831a5544ad8bbca7b866edc17fdaccf199b652bde0"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/pupil-book-page-22-frequency-table.png",
+    "source": "assets/grade3-unit1-lesson7/source/pupil-book-page-22.png",
+    "box": [
+      95,
+      85,
+      665,
+      410
+    ],
+    "size": [
+      570,
+      325
+    ],
+    "sha256": "e4e165b9e86f822d14743d030a8d911aa8a1f8661fb6ed60b352800f7a3b70c3"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/pupil-book-page-22-listen-tick.png",
+    "source": "assets/grade3-unit1-lesson7/source/pupil-book-page-22.png",
+    "box": [
+      70,
+      410,
+      700,
+      725
+    ],
+    "size": [
+      630,
+      315
+    ],
+    "sha256": "a8951f75b9466678ee9fc8e87c61c4bcc45e820cca36fbd5073644570f78716c"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/pupil-book-page-22-lets-play.png",
+    "source": "assets/grade3-unit1-lesson7/source/pupil-book-page-22.png",
+    "box": [
+      200,
+      745,
+      575,
+      1000
+    ],
+    "size": [
+      375,
+      255
+    ],
+    "sha256": "69b9a018ea428d6e5b16882be6db10d6d29215762a0110a41eb3ef0ad0b1a03c"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/pupil-book-page-23-ask-answer.png",
+    "source": "assets/grade3-unit1-lesson7/source/pupil-book-page-23.png",
+    "box": [
+      90,
+      80,
+      700,
+      510
+    ],
+    "size": [
+      610,
+      430
+    ],
+    "sha256": "17b26eb628f74ed1d352eeaa970543f5e0d7945ef39fac14e8d6c8f0bcc53ad6"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/pupil-book-page-23-sounds-sl.png",
+    "source": "assets/grade3-unit1-lesson7/source/pupil-book-page-23.png",
+    "box": [
+      90,
+      570,
+      700,
+      880
+    ],
+    "size": [
+      610,
+      310
+    ],
+    "sha256": "4687d35f7be7cc24729ee58f51957c22b6da33c7f64e6e6d03127818cebad5cd"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/workbook-page-21-listen-tick-cross.png",
+    "source": "assets/grade3-unit1-lesson7/source/workbook-page-21.png",
+    "box": [
+      45,
+      70,
+      700,
+      330
+    ],
+    "size": [
+      655,
+      260
+    ],
+    "sha256": "e786bdc32d22fec6c78f455bff3b79e803682b22751ac3334f03f3c8ad9357bd"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/workbook-page-21-look-read-write.png",
+    "source": "assets/grade3-unit1-lesson7/source/workbook-page-21.png",
+    "box": [
+      45,
+      330,
+      700,
+      900
+    ],
+    "size": [
+      655,
+      570
+    ],
+    "sha256": "3fc157735c170822baa8c5dd60d2feb59f52632f234510589b1a9e7b2b120333"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/workbook-page-22-look-circle.png",
+    "source": "assets/grade3-unit1-lesson7/source/workbook-page-22.png",
+    "box": [
+      40,
+      50,
+      700,
+      440
+    ],
+    "size": [
+      660,
+      390
+    ],
+    "sha256": "acd6e2989e8d08e1f99466f30c817ab1e4d512f73ae26e76b7777c2ba3b30bbb"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/workbook-page-22-look-write.png",
+    "source": "assets/grade3-unit1-lesson7/source/workbook-page-22.png",
+    "box": [
+      30,
+      440,
+      740,
+      1000
+    ],
+    "size": [
+      710,
+      560
+    ],
+    "sha256": "4c6b7e992a2d38decbcd1e7fab61432846bba6ea24dacbacc17a90cabdf57916"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/workbook-page-23-fill-spaces.png",
+    "source": "assets/grade3-unit1-lesson7/source/workbook-page-23.png",
+    "box": [
+      40,
+      80,
+      700,
+      300
+    ],
+    "size": [
+      660,
+      220
+    ],
+    "sha256": "9a76e0587d275605572b246e64f2d5c68a0e23fb7ead14ea3039523af20be4f9"
+  },
+  {
+    "file": "assets/grade3-unit1-lesson7/crops/workbook-page-23-rewrite.png",
+    "source": "assets/grade3-unit1-lesson7/source/workbook-page-23.png",
+    "box": [
+      40,
+      500,
+      720,
+      920
+    ],
+    "size": [
+      680,
+      420
+    ],
+    "sha256": "9ed5a56df82b49eb8b178fc084863f30b2260f7cfd0362a568676814f0df48c7"
+  }
+]
