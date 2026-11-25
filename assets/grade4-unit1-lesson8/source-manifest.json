@@ -1,0 +1,86 @@
+{
+  "lesson": 8,
+  "title": "Places in My Town",
+  "policy": "original-source-bytes-v2",
+  "description": "Byte-for-byte copies of the uploaded source scans. No crop or synthesis is published; temporary enlarged verification crops were made outside the repository and never replace an original.",
+  "images": [
+    {
+      "uploadIndex": 7,
+      "lesson": 8,
+      "book": "pupil-book",
+      "sourcePage": 27,
+      "file": "assets/grade4-unit1-lesson8/source/pupil-book-page-27.png",
+      "originalFile": "image-7.png",
+      "bytes": 874298,
+      "width": 768,
+      "height": 1044,
+      "sha256": "83fb60dfb94d5e88a92a3fffb4700d1b4605047448a4644e33a0367e2f874b08",
+      "allocationNote": "Upload image 7 is assigned only to Grade 4 Lesson 8 pupil-book, printed page 27."
+    },
+    {
+      "uploadIndex": 8,
+      "lesson": 8,
+      "book": "pupil-book",
+      "sourcePage": 28,
+      "file": "assets/grade4-unit1-lesson8/source/pupil-book-page-28.png",
+      "originalFile": "image-8.png",
+      "bytes": 378881,
+      "width": 714,
+      "height": 1017,
+      "sha256": "6177c9edb05ccf3902b47f72a5c8a531585cd615014a3aff5b1e6f07ff3b1441",
+      "allocationNote": "Upload image 8 is assigned only to Grade 4 Lesson 8 pupil-book, printed page 28."
+    },
+    {
+      "uploadIndex": 9,
+      "lesson": 8,
+      "book": "pupil-book",
+      "sourcePage": 29,
+      "file": "assets/grade4-unit1-lesson8/source/pupil-book-page-29.png",
+      "originalFile": "image-9.png",
+      "bytes": 555575,
+      "width": 750,
+      "height": 1009,
+      "sha256": "f0887721a2dba076b643cadc876af7481512977755992da7c9b9366218d5d1da",
+      "allocationNote": "Upload image 9 is assigned only to Grade 4 Lesson 8 pupil-book, printed page 29."
+    },
+    {
+      "uploadIndex": 10,
+      "lesson": 8,
+      "book": "workbook",
+      "sourcePage": 28,
+      "file": "assets/grade4-unit1-lesson8/source/workbook-page-28.png",
+      "originalFile": "image-10.png",
+      "bytes": 417728,
+      "width": 763,
+      "height": 997,
+      "sha256": "6dcbd89ad2b53f1be15c6da4abe1b5d089c99296638c9f7073b94f572b74c57d",
+      "allocationNote": "Upload image 10 is assigned only to Grade 4 Lesson 8 workbook, printed page 28."
+    },
+    {
+      "uploadIndex": 11,
+      "lesson": 8,
+      "book": "workbook",
+      "sourcePage": 29,
+      "file": "assets/grade4-unit1-lesson8/source/workbook-page-29.png",
+      "originalFile": "image-11.png",
+      "bytes": 260891,
+      "width": 741,
+      "height": 1011,
+      "sha256": "a0f4f8f78f1cad369f25f0945e17158a736e357794742b018170f22bc2ba49ab",
+      "allocationNote": "Upload image 11 is assigned only to Grade 4 Lesson 8 workbook, printed page 29."
+    },
+    {
+      "uploadIndex": 12,
+      "lesson": 8,
+      "book": "workbook",
+      "sourcePage": 30,
+      "file": "assets/grade4-unit1-lesson8/source/workbook-page-30.png",
+      "originalFile": "image-12.png",
+      "bytes": 313030,
+      "width": 753,
+      "height": 988,
+      "sha256": "70af272dfe0f19db46ce223cc5b510663ba4bef9716720fc672345b103beeb94",
+      "allocationNote": "Upload image 12 is assigned only to Grade 4 Lesson 8 workbook, printed page 30."
+    }
+  ]
+}

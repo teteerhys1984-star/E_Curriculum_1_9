@@ -1,0 +1,36 @@
+/* Grade 4 Unit 1 Lessons 7–8: source pages, audited vocabulary, writing practice and independent tests. */
+.source-scan{display:block;width:min(100%,760px);height:auto;margin:1rem auto;border:1px solid var(--color-border-subtle);border-radius:var(--radius-md);box-shadow:var(--shadow-sm,0 2px 8px #0002)}
+.source-page{max-width:760px;margin:1rem auto;padding:.75rem;border:1px solid var(--color-border-subtle);border-radius:var(--radius-sm)}
+.source-transcription pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit;line-height:1.6;padding:1rem;background:var(--color-bg-subtle);border-radius:var(--radius-sm)}
+.l78-note{padding:.75rem 1rem;margin:1rem 0;border-left:4px solid var(--color-accent-500);background:var(--color-bg-subtle);border-radius:var(--radius-sm)}
+.l78-label{display:inline-block;padding:.15rem .45rem;margin:.15rem .25rem .15rem 0;border-radius:.3rem;background:var(--color-bg-subtle);font-size:.85rem}
+.l78-controls{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;margin:1rem 0}
+.l78-vocab-wrap{width:100%;overflow-x:auto}
+.l78-vocab{width:100%;min-width:640px;border-collapse:collapse}
+.l78-vocab th,.l78-vocab td{padding:.65rem;border:1px solid var(--color-border-subtle);text-align:left;vertical-align:top}
+.l78-vocab th{background:var(--color-bg-subtle)}
+.l78-vocab td:nth-child(2){text-align:right;font-size:1.08em}
+.l78-vocab td:first-child{font-weight:700}
+.writing-activity{padding:.75rem;margin:1rem 0;border:1px solid var(--color-border-subtle);border-radius:var(--radius-sm)}
+.writing-activity fieldset{border:0;padding:0;margin:0}
+.writing-activity label{display:block;margin:.6rem 0 .25rem}
+.writing-activity input[type=text],.writing-activity textarea{width:100%;max-width:100%;box-sizing:border-box;padding:.45rem}
+.writing-activity details{margin:.75rem 0;padding:.5rem;background:var(--color-bg-subtle);border-radius:var(--radius-sm)}
+.writing-activity summary{cursor:pointer;font-weight:700}
+.writing-activity .model{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.6}
+.writing-save-status{min-height:1.25rem;font-size:.9rem}
+.question{padding:1rem;margin:1rem 0;border:1px solid var(--color-border-subtle);border-radius:var(--radius-md)}
+.question h2{font-size:1.05rem}
+.option{display:flex;align-items:flex-start;gap:.5rem;margin:.5rem 0}
+.option input{margin-top:.25rem}
+.test-passage{padding:1rem;background:var(--color-bg-subtle);border-radius:var(--radius-sm);line-height:1.7}
+.feedback{min-height:1.5rem}
+.feedback.correct{color:#176b37}
+.feedback.incorrect{color:#9a2630}
+.test-actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1rem}
+.grid-cards .card{display:block;padding:1rem;border:1px solid var(--color-border-subtle);border-radius:var(--radius-md);text-decoration:none;background:var(--color-bg-surface)}
+.grid-cards .card:hover,.grid-cards .card:focus-visible{outline:3px solid var(--color-accent-500)}
+.hero .pills{display:flex;flex-wrap:wrap;gap:.5rem}
+.pill{padding:.25rem .65rem;border-radius:999px;background:var(--color-bg-subtle)}
+@media(max-width:600px){.source-scan{border-radius:0}.l78-vocab{min-width:600px}}

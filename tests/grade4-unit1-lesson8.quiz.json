@@ -1,0 +1,235 @@
+{
+  "lesson": "grade4-unit1-lesson8",
+  "title": "Grade 4 Unit 1 Lesson 8: independent test",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 12,
+  "objectives": [
+    "place-vocabulary",
+    "directions",
+    "prepositions-of-place",
+    "reading-comprehension",
+    "purpose-language",
+    "sentence-construction",
+    "guided-writing"
+  ],
+  "stimuli": [
+    {
+      "id": "brook-notes",
+      "title": "Four new town notes",
+      "description": "An original table created only for this assessment; it does not reproduce a textbook map or table.",
+      "headers": [
+        "Place",
+        "Position"
+      ],
+      "rows": [
+        [
+          "Library",
+          "next to the park"
+        ],
+        [
+          "Cinema",
+          "between the bank and the bakery"
+        ],
+        [
+          "Museum",
+          "opposite the school"
+        ],
+        [
+          "Post office",
+          "behind the fire station"
+        ]
+      ]
+    },
+    {
+      "id": "brook-passage",
+      "title": "A new passage about Brook Town",
+      "description": "A short original town description written only for this assessment.",
+      "text": "Welcome to Brook Town. The museum is in the north. The park is in the south. The library is between the museum and the park. The bank is next to the school."
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Which place is next to the park in the new town notes?",
+      "correct": 0,
+      "objective": "place-vocabulary",
+      "objectiveLabel": "Read a location from an original table.",
+      "evidence": "The library row says next to the park.",
+      "format": "multiple-choice",
+      "options": [
+        "Library",
+        "Museum",
+        "Post office"
+      ],
+      "stimulus": "brook-notes",
+      "number": 1,
+      "id": "q1"
+    },
+    {
+      "prompt": "Where is the cinema in the new town notes?",
+      "correct": 1,
+      "objective": "prepositions-of-place",
+      "objectiveLabel": "Read “between” in a new table entry.",
+      "evidence": "The cinema row gives between the bank and the bakery.",
+      "format": "multiple-choice",
+      "options": [
+        "opposite the school",
+        "between the bank and the bakery",
+        "behind the fire station"
+      ],
+      "stimulus": "brook-notes",
+      "number": 2,
+      "id": "q2"
+    },
+    {
+      "prompt": "What is opposite the school in the new town notes?",
+      "correct": 2,
+      "objective": "prepositions-of-place",
+      "objectiveLabel": "Read “opposite” in a new table entry.",
+      "evidence": "The museum row says opposite the school.",
+      "format": "multiple-choice",
+      "options": [
+        "Library",
+        "Bakery",
+        "Museum"
+      ],
+      "stimulus": "brook-notes",
+      "number": 3,
+      "id": "q3"
+    },
+    {
+      "prompt": "Where is the museum in the new Brook Town passage?",
+      "correct": 0,
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Find a direction in an original passage.",
+      "evidence": "The passage says the museum is in the north.",
+      "format": "multiple-choice",
+      "options": [
+        "in the north",
+        "in the south",
+        "behind the park"
+      ],
+      "stimulus": "brook-passage",
+      "number": 4,
+      "id": "q4"
+    },
+    {
+      "prompt": "Which place is between the museum and the park in the new passage?",
+      "correct": 1,
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Find a between-relationship in a new passage.",
+      "evidence": "The passage names the library between them.",
+      "format": "multiple-choice",
+      "options": [
+        "The bank",
+        "The library",
+        "The school"
+      ],
+      "stimulus": "brook-passage",
+      "number": 5,
+      "id": "q5"
+    },
+    {
+      "prompt": "If south is below you on a compass, which word names the direction above you?",
+      "correct": 2,
+      "objective": "directions",
+      "objectiveLabel": "Use the taught compass direction north.",
+      "evidence": "North is opposite south.",
+      "format": "multiple-choice",
+      "options": [
+        "west",
+        "east",
+        "north"
+      ],
+      "number": 6,
+      "id": "q6"
+    },
+    {
+      "prompt": "The new notes say the post office is behind the fire station. Complete: “The fire station is ___ the post office.”",
+      "correct": 0,
+      "objective": "prepositions-of-place",
+      "objectiveLabel": "Reverse a taught location relationship.",
+      "evidence": "If the post office is behind the fire station, the fire station is in front of it.",
+      "format": "multiple-choice",
+      "options": [
+        "in front of",
+        "behind",
+        "next to"
+      ],
+      "stimulus": "brook-notes",
+      "number": 7,
+      "id": "q7"
+    },
+    {
+      "prompt": "Choose the purpose: “We go to the museum ___ old things.”",
+      "correct": 1,
+      "objective": "purpose-language",
+      "objectiveLabel": "Match a place with its taught purpose.",
+      "evidence": "The lesson purpose phrase is “to see old things”.",
+      "format": "multiple-choice",
+      "options": [
+        "to buy bread",
+        "to see old things",
+        "to cash a cheque"
+      ],
+      "number": 8,
+      "id": "q8"
+    },
+    {
+      "prompt": "True or false: “North” and “west” are both compass directions.",
+      "correct": 0,
+      "objective": "directions",
+      "objectiveLabel": "Recognise the taught direction words.",
+      "evidence": "Both words are taught compass labels.",
+      "format": "multiple-choice",
+      "options": [
+        "True",
+        "False"
+      ],
+      "number": 9,
+      "id": "q9"
+    },
+    {
+      "prompt": "Complete from the new passage: “The park is in the south. The museum is in the ___.”",
+      "correct": "north",
+      "objective": "sentence-construction",
+      "objectiveLabel": "Write the contrasting direction from the new passage.",
+      "evidence": "The passage places the museum in the north.",
+      "format": "short-answer",
+      "accepted": [
+        "north"
+      ],
+      "wrongSample": "west",
+      "stimulus": "brook-passage",
+      "number": 10,
+      "id": "q10"
+    },
+    {
+      "prompt": "Complete a new purpose sentence: “I go to the library to ___ books.”",
+      "correct": "read",
+      "objective": "sentence-construction",
+      "objectiveLabel": "Use taught place-purpose language in a new sentence.",
+      "evidence": "The taught library purpose includes reading books.",
+      "format": "short-answer",
+      "accepted": [
+        "read"
+      ],
+      "wrongSample": "buy",
+      "number": 11,
+      "id": "q11"
+    },
+    {
+      "prompt": "A new map note says: Bank — next to the school. Complete: “The bank is ___ the school.”",
+      "correct": "next to",
+      "objective": "guided-writing",
+      "objectiveLabel": "Use the taught preposition from a new map note.",
+      "evidence": "The note gives the exact phrase “next to the school”.",
+      "format": "sentence-construction",
+      "accepted": [
+        "next to"
+      ],
+      "wrongSample": "opposite",
+      "number": 12,
+      "id": "q12"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "lesson": 7,
+  "title": "Hobbies and Interests",
+  "policy": "original-source-bytes-v2",
+  "description": "Byte-for-byte copies of the uploaded source scans. No crop or synthesis is published; temporary enlarged verification crops were made outside the repository and never replace an original.",
+  "images": [
+    {
+      "uploadIndex": 1,
+      "lesson": 7,
+      "book": "pupil-book",
+      "sourcePage": 24,
+      "file": "assets/grade4-unit1-lesson7/source/pupil-book-page-24.png",
+      "originalFile": "image-1.png",
+      "bytes": 603979,
+      "width": 762,
+      "height": 1042,
+      "sha256": "3575caadc2b971def40050c39c2ee9a145e5fbb1bcf2b6d4e31dacf1eaf1664b",
+      "allocationNote": "Upload image 1 is assigned only to Grade 4 Lesson 7 pupil-book, printed page 24."
+    },
+    {
+      "uploadIndex": 2,
+      "lesson": 7,
+      "book": "pupil-book",
+      "sourcePage": 25,
+      "file": "assets/grade4-unit1-lesson7/source/pupil-book-page-25.png",
+      "originalFile": "image-2.png",
+      "bytes": 533999,
+      "width": 742,
+      "height": 1018,
+      "sha256": "8c41ea0e710adf9a5a38ca343a3658df12cacd50e3f1fd253c2b1cf2714914b7",
+      "allocationNote": "Upload image 2 is assigned only to Grade 4 Lesson 7 pupil-book, printed page 25."
+    },
+    {
+      "uploadIndex": 3,
+      "lesson": 7,
+      "book": "pupil-book",
+      "sourcePage": 26,
+      "file": "assets/grade4-unit1-lesson7/source/pupil-book-page-26.png",
+      "originalFile": "image-3.png",
+      "bytes": 293143,
+      "width": 745,
+      "height": 1000,
+      "sha256": "5f80d587c027744fd14f293070ff543227ce57187a78c0d34d4ac6f537cddab4",
+      "allocationNote": "Upload image 3 is assigned only to Grade 4 Lesson 7 pupil-book, printed page 26."
+    },
+    {
+      "uploadIndex": 4,
+      "lesson": 7,
+      "book": "workbook",
+      "sourcePage": 25,
+      "file": "assets/grade4-unit1-lesson7/source/workbook-page-25.png",
+      "originalFile": "image-4.png",
+      "bytes": 270052,
+      "width": 745,
+      "height": 1020,
+      "sha256": "8ee8297625adc27de1d843ee3b09dc9a46239b57bb89e30507e9e6776bef9344",
+      "allocationNote": "Upload image 4 is assigned only to Grade 4 Lesson 7 workbook, printed page 25."
+    },
+    {
+      "uploadIndex": 5,
+      "lesson": 7,
+      "book": "workbook",
+      "sourcePage": 26,
+      "file": "assets/grade4-unit1-lesson7/source/workbook-page-26.png",
+      "originalFile": "image-5.png",
+      "bytes": 294671,
+      "width": 751,
+      "height": 1023,
+      "sha256": "62ac60d3eaa836832e4f640a4cbe7c7d44a24087392c6135824dbb1ba612d608",
+      "allocationNote": "Upload image 5 is assigned only to Grade 4 Lesson 7 workbook, printed page 26."
+    },
+    {
+      "uploadIndex": 6,
+      "lesson": 7,
+      "book": "workbook",
+      "sourcePage": 27,
+      "file": "assets/grade4-unit1-lesson7/source/workbook-page-27.png",
+      "originalFile": "image-6.png",
+      "bytes": 226062,
+      "width": 736,
+      "height": 1005,
+      "sha256": "0b7b035a269c73f268771cfc559c25597b21b4d04baa300b2662e3f9e2ff827a",
+      "allocationNote": "Upload image 6 is assigned only to Grade 4 Lesson 7 workbook, printed page 27."
+    }
+  ]
+}

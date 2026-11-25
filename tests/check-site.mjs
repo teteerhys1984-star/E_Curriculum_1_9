@@ -99,7 +99,7 @@ function scanTextFiles(directory) {
     const contents = fs.readFileSync(file, 'utf8');
     const relative = path.relative(root, file).split(path.sep).join('/');
     if (arabicPattern.test(contents)) {
-      const isGrade4VocabularyAudit = /^docs\/grade4-unit1-lesson[3456]\/vocabulary-audit\.json$/.test(relative);
+      const isGrade4VocabularyAudit = /^docs\/grade4-unit1-lesson[345678]\/vocabulary-audit\.json$/.test(relative);
       assert.ok(isGrade4VocabularyAudit, `${relative}: Arabic text is not allowed in code, tests, documentation, or non-Vocabulary pages`);
       const audit = JSON.parse(contents);
       assert.ok(Array.isArray(audit.entries) && audit.entries.length > 0, `${relative}: Arabic glossary audit must include entries`);
@@ -111,7 +111,7 @@ function scanTextFiles(directory) {
   }
 }
 scanTextFiles(root);
-pass('Documentation, tests, and other repository text are English', `${auditedTextFiles} text files scanned; Arabic is confined to the four reviewed Grade 4 glossary-audit meaning fields`);
+pass('Documentation, tests, and other repository text are English', `${auditedTextFiles} text files scanned; Arabic is confined to the reviewed Grade 4 glossary-audit meaning fields`);
 
 for (const file of newPages) {
   assert.ok(exists(file), `Missing ${file}`);
@@ -495,6 +495,8 @@ const teacherCounts = {
   'grade4-unit1-lesson4': '4 · 4 My House',
   'grade4-unit1-lesson5': '4 · 5 School Subjects',
   'grade4-unit1-lesson6': '4 · 6 Where I Live',
+  'grade4-unit1-lesson7': '4 · 7 Hobbies and Interests',
+  'grade4-unit1-lesson8': '4 · 8 Places in My Town',
   'grade5-unit1-lesson1': '5 · 1 At School',
   'grade5-unit1-lesson2': '5 · 2 Family',
   'grade5-unit1-lesson3': '5 · 3 Daily Routines',
@@ -541,7 +543,7 @@ for (const [slug, label] of Object.entries(teacherCounts)) {
   assert.equal(cells[4], 'None', `${label}: listening key must be reported as unavailable`);
 }
 assert.match(matrixRows.get('4 · 1 Nice to Meet You')[1], /Not published/, 'Grade 4 Lesson 1 must be listed as having no answer key');
-for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '4 · 3 Daily Routine', '4 · 4 My House', '4 · 5 School Subjects', '4 · 6 Where I Live', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '5 · 4 The Five Senses', '5 · 5 Clothes', '5 · 6 Healthy Lifestyle', '5 · 7 Hobbies', '8 · 1 Future Plans', '8 · 2 School Challenges', '8 · 3 Let’s Discover', '8 · 4 Interesting Destinations', '8 · 5 Safety Online!']) {
+for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '4 · 3 Daily Routine', '4 · 4 My House', '4 · 5 School Subjects', '4 · 6 Where I Live', '4 · 7 Hobbies and Interests', '4 · 8 Places in My Town', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '5 · 4 The Five Senses', '5 · 5 Clothes', '5 · 6 Healthy Lifestyle', '5 · 7 Hobbies', '8 · 1 Future Plans', '8 · 2 School Challenges', '8 · 3 Let’s Discover', '8 · 4 Interesting Destinations', '8 · 5 Safety Online!']) {
   assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
 }
 

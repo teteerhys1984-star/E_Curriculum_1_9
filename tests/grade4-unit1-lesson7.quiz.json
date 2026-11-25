@@ -1,0 +1,236 @@
+{
+  "lesson": "grade4-unit1-lesson7",
+  "title": "Grade 4 Unit 1 Lesson 7: independent test",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 12,
+  "objectives": [
+    "hobby-vocabulary",
+    "frequency-adverbs",
+    "reading-comprehension",
+    "present-simple",
+    "sentence-construction",
+    "guided-writing"
+  ],
+  "stimuli": [
+    {
+      "id": "hobby-notes",
+      "title": "Three new hobby notes",
+      "description": "An original table created only for this assessment; it does not reproduce a textbook table.",
+      "headers": [
+        "Name",
+        "Hobby",
+        "How often"
+      ],
+      "rows": [
+        [
+          "Dina",
+          "painting",
+          "once a week"
+        ],
+        [
+          "Karim",
+          "swimming",
+          "every evening"
+        ],
+        [
+          "Nour",
+          "reading",
+          "at the weekend"
+        ]
+      ]
+    },
+    {
+      "id": "samir-note",
+      "title": "A new note about Samir",
+      "description": "A short original passage written only for this assessment.",
+      "text": "Samir loves music. He usually listens to music in the morning. He sometimes plays the piano after school. He never plays football at night."
+    }
+  ],
+  "questions": [
+    {
+      "prompt": "Which hobby is written for Dina in the new table?",
+      "correct": 1,
+      "objective": "hobby-vocabulary",
+      "objectiveLabel": "Read a hobby entry in an original table.",
+      "evidence": "Dina’s row gives painting.",
+      "format": "multiple-choice",
+      "options": [
+        "drawing",
+        "painting",
+        "fishing"
+      ],
+      "stimulus": "hobby-notes",
+      "number": 1,
+      "id": "q1"
+    },
+    {
+      "prompt": "How often does Karim swim in the new table?",
+      "correct": 2,
+      "objective": "frequency-adverbs",
+      "objectiveLabel": "Read a frequency phrase from a new table.",
+      "evidence": "Karim’s row says every evening.",
+      "format": "multiple-choice",
+      "options": [
+        "once a week",
+        "at night",
+        "every evening"
+      ],
+      "stimulus": "hobby-notes",
+      "number": 2,
+      "id": "q2"
+    },
+    {
+      "prompt": "What does Nour do at the weekend in the new table?",
+      "correct": 0,
+      "objective": "hobby-vocabulary",
+      "objectiveLabel": "Match a person with a hobby in an original table.",
+      "evidence": "Nour’s row says reading at the weekend.",
+      "format": "multiple-choice",
+      "options": [
+        "reading",
+        "painting",
+        "playing the piano"
+      ],
+      "stimulus": "hobby-notes",
+      "number": 3,
+      "id": "q3"
+    },
+    {
+      "prompt": "What does Samir love in the new note?",
+      "correct": 1,
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Find the main interest in an original passage.",
+      "evidence": "The first sentence says Samir loves music.",
+      "format": "multiple-choice",
+      "options": [
+        "sport",
+        "music",
+        "chess"
+      ],
+      "stimulus": "samir-note",
+      "number": 4,
+      "id": "q4"
+    },
+    {
+      "prompt": "When does Samir usually listen to music?",
+      "correct": 0,
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Find a time detail in a new passage.",
+      "evidence": "The note says he usually listens in the morning.",
+      "format": "multiple-choice",
+      "options": [
+        "in the morning",
+        "at night",
+        "at the weekend"
+      ],
+      "stimulus": "samir-note",
+      "number": 5,
+      "id": "q5"
+    },
+    {
+      "prompt": "Which statement is written about Samir?",
+      "correct": 2,
+      "objective": "frequency-adverbs",
+      "objectiveLabel": "Distinguish the frequency of two activities in a new passage.",
+      "evidence": "The note says he never plays football at night.",
+      "format": "multiple-choice",
+      "options": [
+        "He always plays football.",
+        "He never plays the piano.",
+        "He never plays football at night."
+      ],
+      "stimulus": "samir-note",
+      "number": 6,
+      "id": "q6"
+    },
+    {
+      "prompt": "Lina plays tennis from Monday to Friday and rests at the weekend. Choose the best word: “She ___ plays tennis.”",
+      "correct": 0,
+      "objective": "frequency-adverbs",
+      "objectiveLabel": "Choose “always” from a new frequency context.",
+      "evidence": "The new context describes every weekday and no weekend play, so “always” fits the stated school-week pattern.",
+      "format": "multiple-choice",
+      "options": [
+        "always",
+        "never",
+        "sometimes"
+      ],
+      "number": 7,
+      "id": "q7"
+    },
+    {
+      "prompt": "Tom does not play chess at all. Choose the best word: “He ___ plays chess.”",
+      "correct": 2,
+      "objective": "frequency-adverbs",
+      "objectiveLabel": "Choose “never” from a new frequency context.",
+      "evidence": "“Does not … at all” gives a zero-frequency context.",
+      "format": "multiple-choice",
+      "options": [
+        "always",
+        "usually",
+        "never"
+      ],
+      "number": 8,
+      "id": "q8"
+    },
+    {
+      "prompt": "Choose the correct form: “My sister ___ TV every evening.”",
+      "correct": 1,
+      "objective": "present-simple",
+      "objectiveLabel": "Use the third-person singular verb form.",
+      "evidence": "“My sister” is singular, so the verb takes -es.",
+      "format": "multiple-choice",
+      "options": [
+        "watch",
+        "watches",
+        "watching"
+      ],
+      "number": 9,
+      "id": "q9"
+    },
+    {
+      "prompt": "Choose the correct form: “He likes ___ stories.”",
+      "correct": 2,
+      "objective": "present-simple",
+      "objectiveLabel": "Use the -ing form after “likes”.",
+      "evidence": "The taught pattern is “likes reading” or “likes playing”.",
+      "format": "multiple-choice",
+      "options": [
+        "read",
+        "reads",
+        "reading"
+      ],
+      "number": 10,
+      "id": "q10"
+    },
+    {
+      "prompt": "Complete from the new note: “Samir plays the piano ___ school.”",
+      "correct": "after",
+      "objective": "sentence-construction",
+      "objectiveLabel": "Use the time phrase from the new passage.",
+      "evidence": "The passage says he sometimes plays the piano after school.",
+      "format": "short-answer",
+      "accepted": [
+        "after"
+      ],
+      "wrongSample": "before",
+      "stimulus": "samir-note",
+      "number": 11,
+      "id": "q11"
+    },
+    {
+      "prompt": "A new card says Hobby: reading; Time: every evening. Complete: “I ___ books every evening.”",
+      "correct": "read",
+      "objective": "guided-writing",
+      "objectiveLabel": "Write the hobby verb from a new information card.",
+      "evidence": "The card gives reading; the sentence needs the verb “read”.",
+      "format": "sentence-construction",
+      "accepted": [
+        "read"
+      ],
+      "wrongSample": "reading",
+      "number": 12,
+      "id": "q12"
+    }
+  ]
+}
