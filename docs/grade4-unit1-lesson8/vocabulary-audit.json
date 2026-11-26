@@ -1,0 +1,1196 @@
+{
+  "lesson": 8,
+  "title": "Places in My Town",
+  "review": {
+    "status": "complete",
+    "method": "Page-by-page audit of each allocated byte-preserved scan. Terms are grouped as printed lesson vocabulary, additional contextual vocabulary and useful expressions. Every entry has an Arabic learner-support gloss and an exact source-image reference. Temporary enlarged verification crops were used outside the repository to resolve small print; originals were not edited.",
+    "translationNote": "Arabic meanings are editorial learner-support glosses, not translations printed in the textbook.",
+    "scopeNote": "Character names, isolated numerals, blank dotted lines and picture-only labels without legible English are excluded. Listening-only content is displayed but not transcribed beyond printed prompts, and no audio answers are invented.",
+    "sourceDefects": []
+  },
+  "totals": {
+    "printed": 24,
+    "additional": 34,
+    "expression": 28,
+    "allEntries": 86
+  },
+  "occurrences": 138,
+  "imageAudit": [
+    {
+      "imageNumber": 7,
+      "lesson": 8,
+      "book": "pupil-book",
+      "sourcePage": 27,
+      "sourceFile": "assets/grade4-unit1-lesson8/source/pupil-book-page-27.png",
+      "sourceSha256": "83fb60dfb94d5e88a92a3fffb4700d1b4605047448a4644e33a0367e2f874b08",
+      "printedVocabulary": [
+        "bank",
+        "post-office",
+        "hospital",
+        "restaurant",
+        "supermarket",
+        "library",
+        "bakery",
+        "school"
+      ],
+      "additionalVocabulary": [],
+      "usefulExpressions": [
+        "why-do-you-go-to-school",
+        "i-go-to-school-to-learn-new-things"
+      ],
+      "counts": {
+        "printed": 8,
+        "additional": 0,
+        "expression": 2
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Eight printed place names, the two printed numbering sets and the printed question-and-answer model are transcribed. The printed number 4 appears on both Bakery and School; both are preserved exactly, disclosed as a source defect and not used as an unambiguous key. No audio is supplied for exercises 1–2."
+    },
+    {
+      "imageNumber": 8,
+      "lesson": 8,
+      "book": "pupil-book",
+      "sourcePage": 28,
+      "sourceFile": "assets/grade4-unit1-lesson8/source/pupil-book-page-28.png",
+      "sourceSha256": "6177c9edb05ccf3902b47f72a5c8a531585cd615014a3aff5b1e6f07ff3b1441",
+      "printedVocabulary": [
+        "bank",
+        "post-office",
+        "library",
+        "school",
+        "museum",
+        "cinema",
+        "market",
+        "park",
+        "north",
+        "south",
+        "east",
+        "west",
+        "town"
+      ],
+      "additionalVocabulary": [
+        "places",
+        "small-town",
+        "britain",
+        "old-things",
+        "new-films",
+        "presents",
+        "walk",
+        "relax",
+        "calm",
+        "friendly",
+        "house",
+        "films",
+        "food",
+        "people"
+      ],
+      "usefulExpressions": [
+        "guess-where-am-i",
+        "why-are-you-there",
+        "i-am-here-to-see-old-things",
+        "are-you-in-the-museum",
+        "yes-i-am",
+        "where-do-you-go-in-your-town",
+        "why-do-you-go-there",
+        "i-live-in-a-small-town-in-the-south-of-britain",
+        "i-go-to-a-school-next-to-my-house",
+        "there-is-a-museum-where-you-can-find-old-things",
+        "between-the-museum-and-the-post-office-there-is-a-cinema",
+        "we-usually-go-to-the-market-to-buy-presents",
+        "the-town-has-a-beautiful-park",
+        "i-like-living-here-because-it-is-very-calm"
+      ],
+      "counts": {
+        "printed": 13,
+        "additional": 14,
+        "expression": 14
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "The printed compass labels, pre-reading questions, full town passage and printed questions/options are transcribed. The school name in the passage and picture labels are preserved; no answer is invented for the two open pre-reading questions."
+    },
+    {
+      "imageNumber": 9,
+      "lesson": 8,
+      "book": "pupil-book",
+      "sourcePage": 29,
+      "sourceFile": "assets/grade4-unit1-lesson8/source/pupil-book-page-29.png",
+      "sourceSha256": "f0887721a2dba076b643cadc876af7481512977755992da7c9b9366218d5d1da",
+      "printedVocabulary": [
+        "bank",
+        "post-office",
+        "hospital",
+        "restaurant",
+        "bakery",
+        "school",
+        "museum",
+        "cinema",
+        "park",
+        "in-front-of",
+        "between",
+        "behind",
+        "opposite",
+        "next-to",
+        "police-station",
+        "fire-station",
+        "town"
+      ],
+      "additionalVocabulary": [
+        "map"
+      ],
+      "usefulExpressions": [
+        "the-restaurant-is-between-the-park-and-the-museum",
+        "the-school-is-in-front-of-the-cinema",
+        "the-police-station-is-behind-the-hospital",
+        "the-museum-is-opposite-the-hospital",
+        "the-bank-is-next-to-the-fire-station"
+      ],
+      "counts": {
+        "printed": 17,
+        "additional": 1,
+        "expression": 5
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "The five printed preposition diagrams, all five map sentences and the three empty completion lines are transcribed. Map positions are labelled as inferred from the illustration, not as a printed answer key; character names are excluded."
+    },
+    {
+      "imageNumber": 10,
+      "lesson": 8,
+      "book": "workbook",
+      "sourcePage": 28,
+      "sourceFile": "assets/grade4-unit1-lesson8/source/workbook-page-28.png",
+      "sourceSha256": "6dcbd89ad2b53f1be15c6da4abe1b5d089c99296638c9f7073b94f572b74c57d",
+      "printedVocabulary": [
+        "bank",
+        "post-office",
+        "hospital",
+        "restaurant",
+        "supermarket",
+        "library",
+        "bakery",
+        "school",
+        "museum",
+        "cinema",
+        "police-station"
+      ],
+      "additionalVocabulary": [
+        "have-lunch",
+        "see-old-things",
+        "buy-bread",
+        "see-films",
+        "cash-a-cheque",
+        "films"
+      ],
+      "usefulExpressions": [
+        "we-go-to-the-bank-to-cash-a-cheque",
+        "we-go-to-the-restaurant-to-have-lunch",
+        "we-go-to-the-bakery-to-buy-some-bread"
+      ],
+      "counts": {
+        "printed": 11,
+        "additional": 6,
+        "expression": 3
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "The eleven printed place-list numbers, match prompts and purpose options, and the two open completion lines are transcribed. The numbers printed beside the list are exercise labels, not a key; image-to-number matching is inferred and labelled as such."
+    },
+    {
+      "imageNumber": 11,
+      "lesson": 8,
+      "book": "workbook",
+      "sourcePage": 29,
+      "sourceFile": "assets/grade4-unit1-lesson8/source/workbook-page-29.png",
+      "sourceSha256": "a0f4f8f78f1cad369f25f0945e17158a736e357794742b018170f22bc2ba49ab",
+      "printedVocabulary": [
+        "library",
+        "museum",
+        "north",
+        "south",
+        "east",
+        "west",
+        "next-to"
+      ],
+      "additionalVocabulary": [
+        "britain",
+        "old-things",
+        "walk",
+        "buy-presents",
+        "see-old-things",
+        "city",
+        "by-the-sea",
+        "bus-station",
+        "crowded",
+        "evening",
+        "morning",
+        "old-buildings",
+        "history",
+        "past",
+        "favourite-building"
+      ],
+      "usefulExpressions": [],
+      "counts": {
+        "printed": 7,
+        "additional": 15,
+        "expression": 0
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "The printed compass word bank, Jenny passage and all printed questions/options are transcribed. Colour emphasis is not treated as an official answer key; blue words are presented as source formatting only."
+    },
+    {
+      "imageNumber": 12,
+      "lesson": 8,
+      "book": "workbook",
+      "sourcePage": 30,
+      "sourceFile": "assets/grade4-unit1-lesson8/source/workbook-page-30.png",
+      "sourceSha256": "70af272dfe0f19db46ce223cc5b510663ba4bef9716720fc672345b103beeb94",
+      "printedVocabulary": [
+        "bank",
+        "post-office",
+        "library",
+        "bakery",
+        "school",
+        "museum",
+        "cinema",
+        "park",
+        "opposite",
+        "next-to",
+        "fire-station",
+        "town"
+      ],
+      "additionalVocabulary": [
+        "favourite-building",
+        "map",
+        "boxes",
+        "draw",
+        "sentences"
+      ],
+      "usefulExpressions": [
+        "why-do-you-go-there",
+        "where-is-the-fire-station",
+        "it-s-opposite-the-bank",
+        "where-do-you-live",
+        "what-is-your-favourite-building"
+      ],
+      "counts": {
+        "printed": 12,
+        "additional": 5,
+        "expression": 5
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "The four printed listening labels, four empty boxes and printed map model are transcribed. No audio was supplied, so the listening boxes have no answers; the map pair and the personal drawing/writing prompt are disclosed as illustrative or source-only."
+    }
+  ],
+  "entries": [
+    {
+      "term": "bank",
+      "meaning": "البنك",
+      "category": "printed",
+      "example": "We go to the bank to cash a cheque.",
+      "sourceImages": [
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "id": "bank"
+    },
+    {
+      "term": "post office",
+      "meaning": "مكتب البريد",
+      "category": "printed",
+      "example": "The post office is near the bank.",
+      "sourceImages": [
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "id": "post-office"
+    },
+    {
+      "term": "hospital",
+      "meaning": "المستشفى",
+      "category": "printed",
+      "example": "The hospital is opposite the museum.",
+      "sourceImages": [
+        7,
+        9,
+        10
+      ],
+      "id": "hospital"
+    },
+    {
+      "term": "restaurant",
+      "meaning": "مطعم",
+      "category": "printed",
+      "example": "We eat at the restaurant.",
+      "sourceImages": [
+        7,
+        9,
+        10
+      ],
+      "id": "restaurant"
+    },
+    {
+      "term": "supermarket",
+      "meaning": "السوبر ماركت",
+      "category": "printed",
+      "example": "We buy food at the supermarket.",
+      "sourceImages": [
+        7,
+        10
+      ],
+      "id": "supermarket"
+    },
+    {
+      "term": "library",
+      "meaning": "المكتبة",
+      "category": "printed",
+      "example": "I read books in the library.",
+      "sourceImages": [
+        7,
+        8,
+        10,
+        11,
+        12
+      ],
+      "id": "library"
+    },
+    {
+      "term": "bakery",
+      "meaning": "مخبز",
+      "category": "printed",
+      "example": "We buy bread at the bakery.",
+      "sourceImages": [
+        7,
+        9,
+        10,
+        12
+      ],
+      "id": "bakery"
+    },
+    {
+      "term": "school",
+      "meaning": "المدرسة",
+      "category": "printed",
+      "example": "I go to school to learn.",
+      "sourceImages": [
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "id": "school"
+    },
+    {
+      "term": "museum",
+      "meaning": "المتحف",
+      "category": "printed",
+      "example": "The museum has old things.",
+      "sourceImages": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "id": "museum"
+    },
+    {
+      "term": "cinema",
+      "meaning": "السينما",
+      "category": "printed",
+      "example": "We see films at the cinema.",
+      "sourceImages": [
+        8,
+        9,
+        10,
+        12
+      ],
+      "id": "cinema"
+    },
+    {
+      "term": "market",
+      "meaning": "السوق",
+      "category": "printed",
+      "example": "We buy presents at the market.",
+      "sourceImages": [
+        8
+      ],
+      "id": "market"
+    },
+    {
+      "term": "park",
+      "meaning": "الحديقة",
+      "category": "printed",
+      "example": "People walk in the park.",
+      "sourceImages": [
+        8,
+        9,
+        12
+      ],
+      "id": "park"
+    },
+    {
+      "term": "north",
+      "meaning": "الشمال",
+      "category": "printed",
+      "example": "The museum is in the north.",
+      "sourceImages": [
+        8,
+        11
+      ],
+      "id": "north"
+    },
+    {
+      "term": "south",
+      "meaning": "الجنوب",
+      "category": "printed",
+      "example": "The park is in the south.",
+      "sourceImages": [
+        8,
+        11
+      ],
+      "id": "south"
+    },
+    {
+      "term": "east",
+      "meaning": "الشرق",
+      "category": "printed",
+      "example": "The city is in the east.",
+      "sourceImages": [
+        8,
+        11
+      ],
+      "id": "east"
+    },
+    {
+      "term": "west",
+      "meaning": "الغرب",
+      "category": "printed",
+      "example": "West is on the left of the compass.",
+      "sourceImages": [
+        8,
+        11
+      ],
+      "id": "west"
+    },
+    {
+      "term": "in front of",
+      "meaning": "أمام",
+      "category": "printed",
+      "example": "The school is in front of the cinema.",
+      "sourceImages": [
+        9
+      ],
+      "id": "in-front-of"
+    },
+    {
+      "term": "between",
+      "meaning": "بين",
+      "category": "printed",
+      "example": "The restaurant is between the park and the museum.",
+      "sourceImages": [
+        9
+      ],
+      "id": "between"
+    },
+    {
+      "term": "behind",
+      "meaning": "خلف",
+      "category": "printed",
+      "example": "The police station is behind the hospital.",
+      "sourceImages": [
+        9
+      ],
+      "id": "behind"
+    },
+    {
+      "term": "opposite",
+      "meaning": "مقابل",
+      "category": "printed",
+      "example": "It is opposite the bank.",
+      "sourceImages": [
+        9,
+        12
+      ],
+      "id": "opposite"
+    },
+    {
+      "term": "next to",
+      "meaning": "بجوار",
+      "category": "printed",
+      "example": "The bank is next to the fire station.",
+      "sourceImages": [
+        9,
+        11,
+        12
+      ],
+      "id": "next-to"
+    },
+    {
+      "term": "police station",
+      "meaning": "مركز الشرطة",
+      "category": "printed",
+      "example": "The police station is behind the hospital.",
+      "sourceImages": [
+        9,
+        10
+      ],
+      "id": "police-station"
+    },
+    {
+      "term": "fire station",
+      "meaning": "مكافحة الحريق",
+      "category": "printed",
+      "example": "Where is the fire station?",
+      "sourceImages": [
+        9,
+        12
+      ],
+      "id": "fire-station"
+    },
+    {
+      "term": "town",
+      "meaning": "البلدة",
+      "category": "printed",
+      "example": "I live in a small town.",
+      "sourceImages": [
+        8,
+        9,
+        12
+      ],
+      "id": "town"
+    },
+    {
+      "term": "places",
+      "meaning": "الأماكن",
+      "category": "additional",
+      "example": "There are many places in the town.",
+      "sourceImages": [
+        8
+      ],
+      "id": "places"
+    },
+    {
+      "term": "small town",
+      "meaning": "بلدة صغيرة",
+      "category": "additional",
+      "example": "The passage describes a small town.",
+      "sourceImages": [
+        8
+      ],
+      "id": "small-town"
+    },
+    {
+      "term": "Britain",
+      "meaning": "بريطانيا",
+      "category": "additional",
+      "example": "The town is in Britain.",
+      "sourceImages": [
+        8,
+        11
+      ],
+      "id": "britain"
+    },
+    {
+      "term": "old things",
+      "meaning": "أشياء قديمة",
+      "category": "additional",
+      "example": "We see old things in the museum.",
+      "sourceImages": [
+        8,
+        11
+      ],
+      "id": "old-things"
+    },
+    {
+      "term": "new films",
+      "meaning": "أفلام جديدة",
+      "category": "additional",
+      "example": "The cinema shows new films.",
+      "sourceImages": [
+        8
+      ],
+      "id": "new-films"
+    },
+    {
+      "term": "presents",
+      "meaning": "هدايا",
+      "category": "additional",
+      "example": "People buy presents at the market.",
+      "sourceImages": [
+        8
+      ],
+      "id": "presents"
+    },
+    {
+      "term": "walk",
+      "meaning": "يمشي",
+      "category": "additional",
+      "example": "People walk in the park.",
+      "sourceImages": [
+        8,
+        11
+      ],
+      "id": "walk"
+    },
+    {
+      "term": "relax",
+      "meaning": "يسترخي",
+      "category": "additional",
+      "example": "The park is a place to relax.",
+      "sourceImages": [
+        8
+      ],
+      "id": "relax"
+    },
+    {
+      "term": "calm",
+      "meaning": "هادئ",
+      "category": "additional",
+      "example": "The town is very calm.",
+      "sourceImages": [
+        8
+      ],
+      "id": "calm"
+    },
+    {
+      "term": "friendly",
+      "meaning": "ودود",
+      "category": "additional",
+      "example": "The people are friendly.",
+      "sourceImages": [
+        8
+      ],
+      "id": "friendly"
+    },
+    {
+      "term": "buy presents",
+      "meaning": "يشتري هدايا",
+      "category": "additional",
+      "example": "We go to the market to buy presents.",
+      "sourceImages": [
+        11
+      ],
+      "id": "buy-presents"
+    },
+    {
+      "term": "have lunch",
+      "meaning": "يتناول الغداء",
+      "category": "additional",
+      "example": "We go to the restaurant to have lunch.",
+      "sourceImages": [
+        10
+      ],
+      "id": "have-lunch"
+    },
+    {
+      "term": "see old things",
+      "meaning": "يرى أشياء قديمة",
+      "category": "additional",
+      "example": "We visit the museum to see old things.",
+      "sourceImages": [
+        10,
+        11
+      ],
+      "id": "see-old-things"
+    },
+    {
+      "term": "buy bread",
+      "meaning": "يشتري خبزًا",
+      "category": "additional",
+      "example": "We go to the bakery to buy bread.",
+      "sourceImages": [
+        10
+      ],
+      "id": "buy-bread"
+    },
+    {
+      "term": "see films",
+      "meaning": "يشاهد أفلامًا",
+      "category": "additional",
+      "example": "We go to the cinema to see films.",
+      "sourceImages": [
+        10
+      ],
+      "id": "see-films"
+    },
+    {
+      "term": "cash a cheque",
+      "meaning": "يصرف شيكًا",
+      "category": "additional",
+      "example": "We go to the bank to cash a cheque.",
+      "sourceImages": [
+        10
+      ],
+      "id": "cash-a-cheque"
+    },
+    {
+      "term": "city",
+      "meaning": "المدينة",
+      "category": "additional",
+      "example": "Jenny is from an old city.",
+      "sourceImages": [
+        11
+      ],
+      "id": "city"
+    },
+    {
+      "term": "by the sea",
+      "meaning": "بجانب البحر",
+      "category": "additional",
+      "example": "The city is by the sea.",
+      "sourceImages": [
+        11
+      ],
+      "id": "by-the-sea"
+    },
+    {
+      "term": "bus station",
+      "meaning": "محطة الحافلات",
+      "category": "additional",
+      "example": "Her house is next to the bus station.",
+      "sourceImages": [
+        11
+      ],
+      "id": "bus-station"
+    },
+    {
+      "term": "crowded",
+      "meaning": "مزدحم",
+      "category": "additional",
+      "example": "The park is crowded in the evening.",
+      "sourceImages": [
+        11
+      ],
+      "id": "crowded"
+    },
+    {
+      "term": "evening",
+      "meaning": "المساء",
+      "category": "additional",
+      "example": "It is crowded in the evening.",
+      "sourceImages": [
+        11
+      ],
+      "id": "evening"
+    },
+    {
+      "term": "morning",
+      "meaning": "الصباح",
+      "category": "additional",
+      "example": "She walks in the morning.",
+      "sourceImages": [
+        11
+      ],
+      "id": "morning"
+    },
+    {
+      "term": "old buildings",
+      "meaning": "مبانٍ قديمة",
+      "category": "additional",
+      "example": "She likes the old buildings.",
+      "sourceImages": [
+        11
+      ],
+      "id": "old-buildings"
+    },
+    {
+      "term": "history",
+      "meaning": "التاريخ",
+      "category": "additional",
+      "example": "She reads about the history of the city.",
+      "sourceImages": [
+        11
+      ],
+      "id": "history"
+    },
+    {
+      "term": "past",
+      "meaning": "الماضي",
+      "category": "additional",
+      "example": "The things come from the past.",
+      "sourceImages": [
+        11
+      ],
+      "id": "past"
+    },
+    {
+      "term": "favourite building",
+      "meaning": "المبنى المفضل",
+      "category": "additional",
+      "example": "Her favourite building is the museum.",
+      "sourceImages": [
+        11,
+        12
+      ],
+      "id": "favourite-building"
+    },
+    {
+      "term": "map",
+      "meaning": "خريطة",
+      "category": "additional",
+      "example": "The map shows four empty boxes.",
+      "sourceImages": [
+        9,
+        12
+      ],
+      "id": "map"
+    },
+    {
+      "term": "boxes",
+      "meaning": "مربعات",
+      "category": "additional",
+      "example": "Four boxes are empty on the workbook map.",
+      "sourceImages": [
+        12
+      ],
+      "id": "boxes"
+    },
+    {
+      "term": "draw",
+      "meaning": "يرسم",
+      "category": "additional",
+      "example": "Draw a picture of your town.",
+      "sourceImages": [
+        12
+      ],
+      "id": "draw"
+    },
+    {
+      "term": "sentences",
+      "meaning": "جمل",
+      "category": "additional",
+      "example": "Write sentences about your town.",
+      "sourceImages": [
+        12
+      ],
+      "id": "sentences"
+    },
+    {
+      "term": "house",
+      "meaning": "المنزل",
+      "category": "additional",
+      "example": "The school is next to my house.",
+      "sourceImages": [
+        8
+      ],
+      "id": "house"
+    },
+    {
+      "term": "films",
+      "meaning": "أفلام",
+      "category": "additional",
+      "example": "The cinema has films.",
+      "sourceImages": [
+        8,
+        10
+      ],
+      "id": "films"
+    },
+    {
+      "term": "food",
+      "meaning": "طعام",
+      "category": "additional",
+      "example": "They go to the market for food.",
+      "sourceImages": [
+        8
+      ],
+      "id": "food"
+    },
+    {
+      "term": "people",
+      "meaning": "الناس",
+      "category": "additional",
+      "example": "People can walk and relax.",
+      "sourceImages": [
+        8
+      ],
+      "id": "people"
+    },
+    {
+      "term": "Why do you go to school?",
+      "meaning": "لماذا تذهب إلى المدرسة؟",
+      "category": "expression",
+      "example": "Why do you go to school?",
+      "sourceImages": [
+        7
+      ],
+      "id": "why-do-you-go-to-school"
+    },
+    {
+      "term": "I go to school to learn new things.",
+      "meaning": "أذهب إلى المدرسة لأتعلم أشياء جديدة.",
+      "category": "expression",
+      "example": "I go to school to learn new things.",
+      "sourceImages": [
+        7
+      ],
+      "id": "i-go-to-school-to-learn-new-things"
+    },
+    {
+      "term": "Guess! Where am I?",
+      "meaning": "خمّن! أين أنا؟",
+      "category": "expression",
+      "example": "Guess! Where am I?",
+      "sourceImages": [
+        8
+      ],
+      "id": "guess-where-am-i"
+    },
+    {
+      "term": "Why are you there?",
+      "meaning": "لماذا أنت هناك؟",
+      "category": "expression",
+      "example": "Why are you there?",
+      "sourceImages": [
+        8
+      ],
+      "id": "why-are-you-there"
+    },
+    {
+      "term": "I am here to see old things.",
+      "meaning": "أنا هنا لأرى أشياء قديمة.",
+      "category": "expression",
+      "example": "I am here to see old things.",
+      "sourceImages": [
+        8
+      ],
+      "id": "i-am-here-to-see-old-things"
+    },
+    {
+      "term": "Are you in the museum?",
+      "meaning": "هل أنت في المتحف؟",
+      "category": "expression",
+      "example": "Are you in the museum?",
+      "sourceImages": [
+        8
+      ],
+      "id": "are-you-in-the-museum"
+    },
+    {
+      "term": "Yes, I am.",
+      "meaning": "نعم، أنا كذلك.",
+      "category": "expression",
+      "example": "Yes, I am.",
+      "sourceImages": [
+        8
+      ],
+      "id": "yes-i-am"
+    },
+    {
+      "term": "Where do you go in your town?",
+      "meaning": "إلى أين تذهب في بلدتك؟",
+      "category": "expression",
+      "example": "Where do you go in your town?",
+      "sourceImages": [
+        8
+      ],
+      "id": "where-do-you-go-in-your-town"
+    },
+    {
+      "term": "Why do you go there?",
+      "meaning": "لماذا تذهب إلى هناك؟",
+      "category": "expression",
+      "example": "Why do you go there?",
+      "sourceImages": [
+        8,
+        12
+      ],
+      "id": "why-do-you-go-there"
+    },
+    {
+      "term": "I live in a small town in the south of Britain.",
+      "meaning": "أعيش في بلدة صغيرة في جنوب بريطانيا.",
+      "category": "expression",
+      "example": "I live in a small town in the south of Britain.",
+      "sourceImages": [
+        8
+      ],
+      "id": "i-live-in-a-small-town-in-the-south-of-britain"
+    },
+    {
+      "term": "I go to a school next to my house.",
+      "meaning": "أذهب إلى مدرسة بجوار منزلي.",
+      "category": "expression",
+      "example": "I go to a school next to my house.",
+      "sourceImages": [
+        8
+      ],
+      "id": "i-go-to-a-school-next-to-my-house"
+    },
+    {
+      "term": "There is a museum where you can find old things.",
+      "meaning": "يوجد متحف يمكنك أن تجد فيه أشياء قديمة.",
+      "category": "expression",
+      "example": "There is a museum where you can find old things.",
+      "sourceImages": [
+        8
+      ],
+      "id": "there-is-a-museum-where-you-can-find-old-things"
+    },
+    {
+      "term": "Between the museum and the post office there is a cinema.",
+      "meaning": "بين المتحف ومكتب البريد يوجد سينما.",
+      "category": "expression",
+      "example": "Between the museum and the post office there is a cinema.",
+      "sourceImages": [
+        8
+      ],
+      "id": "between-the-museum-and-the-post-office-there-is-a-cinema"
+    },
+    {
+      "term": "We usually go to the market to buy presents.",
+      "meaning": "نذهب عادةً إلى السوق لشراء الهدايا.",
+      "category": "expression",
+      "example": "We usually go to the market to buy presents.",
+      "sourceImages": [
+        8
+      ],
+      "id": "we-usually-go-to-the-market-to-buy-presents"
+    },
+    {
+      "term": "The town has a beautiful park.",
+      "meaning": "في البلدة حديقة جميلة.",
+      "category": "expression",
+      "example": "The town has a beautiful park.",
+      "sourceImages": [
+        8
+      ],
+      "id": "the-town-has-a-beautiful-park"
+    },
+    {
+      "term": "I like living here because it is very calm.",
+      "meaning": "أحب العيش هنا لأنها هادئة جدًا.",
+      "category": "expression",
+      "example": "I like living here because it is very calm.",
+      "sourceImages": [
+        8
+      ],
+      "id": "i-like-living-here-because-it-is-very-calm"
+    },
+    {
+      "term": "The restaurant is between the park and the museum.",
+      "meaning": "المطعم بين الحديقة والمتحف.",
+      "category": "expression",
+      "example": "The restaurant is between the park and the museum.",
+      "sourceImages": [
+        9
+      ],
+      "id": "the-restaurant-is-between-the-park-and-the-museum"
+    },
+    {
+      "term": "The school is in front of the cinema.",
+      "meaning": "المدرسة أمام السينما.",
+      "category": "expression",
+      "example": "The school is in front of the cinema.",
+      "sourceImages": [
+        9
+      ],
+      "id": "the-school-is-in-front-of-the-cinema"
+    },
+    {
+      "term": "The police station is behind the hospital.",
+      "meaning": "مركز الشرطة خلف المستشفى.",
+      "category": "expression",
+      "example": "The police station is behind the hospital.",
+      "sourceImages": [
+        9
+      ],
+      "id": "the-police-station-is-behind-the-hospital"
+    },
+    {
+      "term": "The museum is opposite the hospital.",
+      "meaning": "المتحف مقابل المستشفى.",
+      "category": "expression",
+      "example": "The museum is opposite the hospital.",
+      "sourceImages": [
+        9
+      ],
+      "id": "the-museum-is-opposite-the-hospital"
+    },
+    {
+      "term": "The bank is next to the fire station.",
+      "meaning": "البنك بجوار مكافحة الحريق.",
+      "category": "expression",
+      "example": "The bank is next to the fire station.",
+      "sourceImages": [
+        9
+      ],
+      "id": "the-bank-is-next-to-the-fire-station"
+    },
+    {
+      "term": "We go to the bank to cash a cheque.",
+      "meaning": "نذهب إلى البنك لصرف شيك.",
+      "category": "expression",
+      "example": "We go to the bank to cash a cheque.",
+      "sourceImages": [
+        10
+      ],
+      "id": "we-go-to-the-bank-to-cash-a-cheque"
+    },
+    {
+      "term": "We go to the restaurant to have lunch.",
+      "meaning": "نذهب إلى المطعم لتناول الغداء.",
+      "category": "expression",
+      "example": "We go to the restaurant to have lunch.",
+      "sourceImages": [
+        10
+      ],
+      "id": "we-go-to-the-restaurant-to-have-lunch"
+    },
+    {
+      "term": "We go to the bakery to buy some bread.",
+      "meaning": "نذهب إلى المخبز لشراء بعض الخبز.",
+      "category": "expression",
+      "example": "We go to the bakery to buy some bread.",
+      "sourceImages": [
+        10
+      ],
+      "id": "we-go-to-the-bakery-to-buy-some-bread"
+    },
+    {
+      "term": "Where is the fire station?",
+      "meaning": "أين مكافحة الحريق؟",
+      "category": "expression",
+      "example": "Where is the fire station?",
+      "sourceImages": [
+        12
+      ],
+      "id": "where-is-the-fire-station"
+    },
+    {
+      "term": "It's opposite the bank.",
+      "meaning": "إنها مقابل البنك.",
+      "category": "expression",
+      "example": "It's opposite the bank.",
+      "sourceImages": [
+        12
+      ],
+      "id": "it-s-opposite-the-bank"
+    },
+    {
+      "term": "Where do you live?",
+      "meaning": "أين تعيش؟",
+      "category": "expression",
+      "example": "Where do you live?",
+      "sourceImages": [
+        12
+      ],
+      "id": "where-do-you-live"
+    },
+    {
+      "term": "What is your favourite building?",
+      "meaning": "ما هو مبناك المفضل؟",
+      "category": "expression",
+      "example": "What is your favourite building?",
+      "sourceImages": [
+        12
+      ],
+      "id": "what-is-your-favourite-building"
+    }
+  ]
+}

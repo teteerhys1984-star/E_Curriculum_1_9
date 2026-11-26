@@ -1,0 +1,1322 @@
+{
+  "lesson": 7,
+  "title": "Hobbies and Interests",
+  "review": {
+    "status": "complete",
+    "method": "Page-by-page audit of each allocated byte-preserved scan. Terms are grouped as printed lesson vocabulary, additional contextual vocabulary and useful expressions. Every entry has an Arabic learner-support gloss and an exact source-image reference. Temporary enlarged verification crops were used outside the repository to resolve small print; originals were not edited.",
+    "translationNote": "Arabic meanings are editorial learner-support glosses, not translations printed in the textbook.",
+    "scopeNote": "Character names, isolated numerals, blank dotted lines and picture-only labels without legible English are excluded. Listening-only content is displayed but not transcribed beyond printed prompts, and no audio answers are invented.",
+    "sourceDefects": [
+      "Pupil’s Book page 25 exercise 6b prints a matching option “5 kilometres every day” although the passage says “about 2 kilometres every day”; the conflicting item is disclosed and not scored."
+    ]
+  },
+  "totals": {
+    "printed": 21,
+    "additional": 50,
+    "expression": 29,
+    "allEntries": 100
+  },
+  "occurrences": 137,
+  "imageAudit": [
+    {
+      "imageNumber": 1,
+      "lesson": 7,
+      "book": "pupil-book",
+      "sourcePage": 24,
+      "sourceFile": "assets/grade4-unit1-lesson7/source/pupil-book-page-24.png",
+      "sourceSha256": "3575caadc2b971def40050c39c2ee9a145e5fbb1bcf2b6d4e31dacf1eaf1664b",
+      "printedVocabulary": [
+        "listen-to-music",
+        "play-the-piano",
+        "read-books",
+        "play-football",
+        "watch-tv",
+        "go-swimming",
+        "drawing",
+        "listening-to",
+        "swimming",
+        "reading"
+      ],
+      "additionalVocabulary": [
+        "hobbies",
+        "dancing",
+        "football",
+        "chess",
+        "piano",
+        "farming",
+        "painting",
+        "practises",
+        "every-day",
+        "brothers"
+      ],
+      "usefulExpressions": [],
+      "counts": {
+        "printed": 10,
+        "additional": 10,
+        "expression": 0
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "The six printed phrase boxes, six answer labels and the seven small activity pictures are transcribed; the television and its viewer form one composite “watching TV” activity, so no extra wording is invented for the extra figure."
+    },
+    {
+      "imageNumber": 2,
+      "lesson": 7,
+      "book": "pupil-book",
+      "sourcePage": 25,
+      "sourceFile": "assets/grade4-unit1-lesson7/source/pupil-book-page-25.png",
+      "sourceSha256": "8c41ea0e710adf9a5a38ca343a3658df12cacd50e3f1fd253c2b1cf2714914b7",
+      "printedVocabulary": [
+        "reading"
+      ],
+      "additionalVocabulary": [
+        "favourite-hobby",
+        "every-day",
+        "loves",
+        "likes",
+        "morning",
+        "evening",
+        "kilometres",
+        "strong-and-fit",
+        "free-time",
+        "adventure-books",
+        "science",
+        "stories",
+        "once-a-week",
+        "something-else",
+        "running"
+      ],
+      "usefulExpressions": [
+        "what-is-your-favourite-hobby",
+        "my-favourite-hobby-is-swimming",
+        "how-often-do-you-swim",
+        "i-swim-once-a-week",
+        "do-you-do-something-else",
+        "yes-i-sometimes-play-football",
+        "do-you-enjoy-running",
+        "do-you-like-reading",
+        "he-runs-about-2-kilometres-every-day",
+        "she-always-reads-in-her-free-time",
+        "running-makes-him-strong-and-fit"
+      ],
+      "counts": {
+        "printed": 1,
+        "additional": 15,
+        "expression": 11
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "The two printed passages and printed questions/options are transcribed. The matching option “5 kilometres every day” conflicts with the passage “about 2 kilometres every day”; both are preserved and the conflicting item is not scored. No recording is supplied for exercise 1."
+    },
+    {
+      "imageNumber": 3,
+      "lesson": 7,
+      "book": "pupil-book",
+      "sourcePage": 26,
+      "sourceFile": "assets/grade4-unit1-lesson7/source/pupil-book-page-26.png",
+      "sourceSha256": "5f80d587c027744fd14f293070ff543227ce57187a78c0d34d4ac6f537cddab4",
+      "printedVocabulary": [
+        "play-the-piano",
+        "play-football",
+        "watch-tv",
+        "go-swimming",
+        "swimming",
+        "always",
+        "usually",
+        "often",
+        "sometimes",
+        "never",
+        "pronunciation",
+        "silent-letters",
+        "rhino",
+        "rhombus",
+        "castle",
+        "whistle"
+      ],
+      "additionalVocabulary": [
+        "piano",
+        "painting",
+        "morning",
+        "evening",
+        "free-time",
+        "stories",
+        "weekend",
+        "summer",
+        "paints"
+      ],
+      "usefulExpressions": [
+        "i-often-play-tennis-in-my-free-time",
+        "rana-usually-paints-in-the-evening",
+        "we-sometimes-go-swimming-at-the-weekend",
+        "he-always-goes-swimming-in-summer",
+        "she-usually-listens-to-music-in-the-morning",
+        "we-often-run-every-day",
+        "they-sometimes-watch-tv-in-the-evening",
+        "i-never-play-the-piano-at-night",
+        "my-sister-usually-reads-short-stories"
+      ],
+      "counts": {
+        "printed": 16,
+        "additional": 9,
+        "expression": 9
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Printed sentences, reorder tiles, writing prompts, phonics labels and page number are transcribed. Dotted answer lines and character names are excluded; no recording is supplied for pronunciation."
+    },
+    {
+      "imageNumber": 4,
+      "lesson": 7,
+      "book": "workbook",
+      "sourcePage": 25,
+      "sourceFile": "assets/grade4-unit1-lesson7/source/workbook-page-25.png",
+      "sourceSha256": "8ee8297625adc27de1d843ee3b09dc9a46239b57bb89e30507e9e6776bef9344",
+      "printedVocabulary": [
+        "watch-tv",
+        "always",
+        "usually",
+        "often",
+        "sometimes"
+      ],
+      "additionalVocabulary": [
+        "hobbies",
+        "favourite-hobby",
+        "free-time",
+        "camera",
+        "photos",
+        "taking-photos",
+        "nature",
+        "butterflies",
+        "places",
+        "parents",
+        "amazing",
+        "homework",
+        "bedroom"
+      ],
+      "usefulExpressions": [],
+      "counts": {
+        "printed": 5,
+        "additional": 13,
+        "expression": 0
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "The printed Rami passage and all printed question words/options are transcribed. Blue emphasis in the source is not treated as an official printed answer key; inferred answers are labelled separately in the study notes."
+    },
+    {
+      "imageNumber": 5,
+      "lesson": 7,
+      "book": "workbook",
+      "sourcePage": 26,
+      "sourceFile": "assets/grade4-unit1-lesson7/source/workbook-page-26.png",
+      "sourceSha256": "62ac60d3eaa836832e4f640a4cbe7c7d44a24087392c6135824dbb1ba612d608",
+      "printedVocabulary": [
+        "listen-to-music",
+        "play-football",
+        "drawing",
+        "swimming"
+      ],
+      "additionalVocabulary": [
+        "football",
+        "likes",
+        "parents",
+        "library",
+        "weekends",
+        "brushes",
+        "music-class",
+        "cooking",
+        "pencils",
+        "weekend"
+      ],
+      "usefulExpressions": [
+        "what-do-you-like-doing",
+        "i-like-playing-football",
+        "when-do-you-play-it",
+        "i-play-it-at-the-weekend",
+        "how-often-do-you-play-football",
+        "who-do-you-play-it-with"
+      ],
+      "counts": {
+        "printed": 4,
+        "additional": 10,
+        "expression": 6
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Printed phrase choices and dialogue prompts are transcribed. Audio-dependent exercises 3–4 are displayed without invented answers; dotted lines are excluded."
+    },
+    {
+      "imageNumber": 6,
+      "lesson": 7,
+      "book": "workbook",
+      "sourcePage": 27,
+      "sourceFile": "assets/grade4-unit1-lesson7/source/workbook-page-27.png",
+      "sourceSha256": "0b7b035a269c73f268771cfc559c25597b21b4d04baa300b2662e3f9e2ff827a",
+      "printedVocabulary": [
+        "watch-tv",
+        "always",
+        "usually",
+        "often",
+        "sometimes"
+      ],
+      "additionalVocabulary": [
+        "chess",
+        "evening",
+        "basketball",
+        "singing",
+        "fishing",
+        "running",
+        "visit",
+        "drink",
+        "cook",
+        "father"
+      ],
+      "usefulExpressions": [
+        "what-does-she-like-doing",
+        "he-likes-playing-basketball",
+        "i-usually-watch-tv-in-the-evening"
+      ],
+      "counts": {
+        "printed": 5,
+        "additional": 10,
+        "expression": 3
+      },
+      "arabicTranslationConfirmed": true,
+      "excludedContent": "Printed model, picture prompts, word prompts and sentence stems are transcribed. Picture-only nouns are labelled as inferred from the illustration, and no official key is claimed."
+    }
+  ],
+  "entries": [
+    {
+      "term": "listen to music",
+      "meaning": "الاستماع إلى الموسيقى",
+      "category": "printed",
+      "example": "We listen to music after school.",
+      "sourceImages": [
+        1,
+        5
+      ],
+      "id": "listen-to-music"
+    },
+    {
+      "term": "play the piano",
+      "meaning": "العزف على البيانو",
+      "category": "printed",
+      "example": "She can play the piano well.",
+      "sourceImages": [
+        1,
+        3
+      ],
+      "id": "play-the-piano"
+    },
+    {
+      "term": "read books",
+      "meaning": "قراءة الكتب",
+      "category": "printed",
+      "example": "I read books in my free time.",
+      "sourceImages": [
+        1
+      ],
+      "id": "read-books"
+    },
+    {
+      "term": "play football",
+      "meaning": "لعب كرة القدم",
+      "category": "printed",
+      "example": "They play football after school.",
+      "sourceImages": [
+        1,
+        3,
+        5
+      ],
+      "id": "play-football"
+    },
+    {
+      "term": "watch TV",
+      "meaning": "مشاهدة التلفاز",
+      "category": "printed",
+      "example": "I watch TV in the evening.",
+      "sourceImages": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "id": "watch-tv"
+    },
+    {
+      "term": "go swimming",
+      "meaning": "الذهاب للسباحة",
+      "category": "printed",
+      "example": "We go swimming in summer.",
+      "sourceImages": [
+        1,
+        3
+      ],
+      "id": "go-swimming"
+    },
+    {
+      "term": "drawing",
+      "meaning": "الرسم",
+      "category": "printed",
+      "example": "Drawing is my favourite hobby.",
+      "sourceImages": [
+        1,
+        5
+      ],
+      "id": "drawing"
+    },
+    {
+      "term": "listening to",
+      "meaning": "الاستماع إلى",
+      "category": "printed",
+      "example": "He is listening to music.",
+      "sourceImages": [
+        1
+      ],
+      "id": "listening-to"
+    },
+    {
+      "term": "swimming",
+      "meaning": "السباحة",
+      "category": "printed",
+      "example": "Swimming is good exercise.",
+      "sourceImages": [
+        1,
+        3,
+        5
+      ],
+      "id": "swimming"
+    },
+    {
+      "term": "reading",
+      "meaning": "القراءة",
+      "category": "printed",
+      "example": "Reading helps me learn.",
+      "sourceImages": [
+        1,
+        2
+      ],
+      "id": "reading"
+    },
+    {
+      "term": "always",
+      "meaning": "دائمًا",
+      "category": "printed",
+      "example": "She always reads at night.",
+      "sourceImages": [
+        3,
+        4,
+        6
+      ],
+      "id": "always"
+    },
+    {
+      "term": "usually",
+      "meaning": "عادةً",
+      "category": "printed",
+      "example": "He usually gets up early.",
+      "sourceImages": [
+        3,
+        4,
+        6
+      ],
+      "id": "usually"
+    },
+    {
+      "term": "often",
+      "meaning": "غالبًا",
+      "category": "printed",
+      "example": "We often visit the park.",
+      "sourceImages": [
+        3,
+        4,
+        6
+      ],
+      "id": "often"
+    },
+    {
+      "term": "sometimes",
+      "meaning": "أحيانًا",
+      "category": "printed",
+      "example": "I sometimes play chess.",
+      "sourceImages": [
+        3,
+        4,
+        6
+      ],
+      "id": "sometimes"
+    },
+    {
+      "term": "never",
+      "meaning": "أبدًا",
+      "category": "printed",
+      "example": "I never watch TV at school.",
+      "sourceImages": [
+        3
+      ],
+      "id": "never"
+    },
+    {
+      "term": "pronunciation",
+      "meaning": "النطق",
+      "category": "printed",
+      "example": "We study pronunciation today.",
+      "sourceImages": [
+        3
+      ],
+      "id": "pronunciation"
+    },
+    {
+      "term": "silent letters",
+      "meaning": "الحروف الصامتة",
+      "category": "printed",
+      "example": "The word “castle” has silent letters.",
+      "sourceImages": [
+        3
+      ],
+      "id": "silent-letters"
+    },
+    {
+      "term": "rhino",
+      "meaning": "وحيد القرن",
+      "category": "printed",
+      "example": "The rhino is a big animal.",
+      "sourceImages": [
+        3
+      ],
+      "id": "rhino"
+    },
+    {
+      "term": "rhombus",
+      "meaning": "المعين",
+      "category": "printed",
+      "example": "A rhombus has four sides.",
+      "sourceImages": [
+        3
+      ],
+      "id": "rhombus"
+    },
+    {
+      "term": "castle",
+      "meaning": "قلعة",
+      "category": "printed",
+      "example": "The castle is old.",
+      "sourceImages": [
+        3
+      ],
+      "id": "castle"
+    },
+    {
+      "term": "whistle",
+      "meaning": "صفارة",
+      "category": "printed",
+      "example": "He has a yellow whistle.",
+      "sourceImages": [
+        3
+      ],
+      "id": "whistle"
+    },
+    {
+      "term": "hobbies",
+      "meaning": "الهوايات",
+      "category": "additional",
+      "example": "The page asks about hobbies.",
+      "sourceImages": [
+        1,
+        4
+      ],
+      "id": "hobbies"
+    },
+    {
+      "term": "favourite hobby",
+      "meaning": "الهواية المفضلة",
+      "category": "additional",
+      "example": "My favourite hobby is drawing.",
+      "sourceImages": [
+        2,
+        4
+      ],
+      "id": "favourite-hobby"
+    },
+    {
+      "term": "dancing",
+      "meaning": "الرقص",
+      "category": "additional",
+      "example": "She loves dancing.",
+      "sourceImages": [
+        1
+      ],
+      "id": "dancing"
+    },
+    {
+      "term": "football",
+      "meaning": "كرة القدم",
+      "category": "additional",
+      "example": "The ball is for football.",
+      "sourceImages": [
+        1,
+        5
+      ],
+      "id": "football"
+    },
+    {
+      "term": "chess",
+      "meaning": "الشطرنج",
+      "category": "additional",
+      "example": "They play chess together.",
+      "sourceImages": [
+        1,
+        6
+      ],
+      "id": "chess"
+    },
+    {
+      "term": "piano",
+      "meaning": "البيانو",
+      "category": "additional",
+      "example": "The piano is black.",
+      "sourceImages": [
+        1,
+        3
+      ],
+      "id": "piano"
+    },
+    {
+      "term": "farming",
+      "meaning": "الزراعة",
+      "category": "additional",
+      "example": "He likes farming.",
+      "sourceImages": [
+        1
+      ],
+      "id": "farming"
+    },
+    {
+      "term": "painting",
+      "meaning": "الرسم بالألوان",
+      "category": "additional",
+      "example": "She is painting a flower.",
+      "sourceImages": [
+        1,
+        3
+      ],
+      "id": "painting"
+    },
+    {
+      "term": "practises",
+      "meaning": "يتدرب",
+      "category": "additional",
+      "example": "She practises the piano every day.",
+      "sourceImages": [
+        1
+      ],
+      "id": "practises"
+    },
+    {
+      "term": "every day",
+      "meaning": "كل يوم",
+      "category": "additional",
+      "example": "He runs every day.",
+      "sourceImages": [
+        1,
+        2
+      ],
+      "id": "every-day"
+    },
+    {
+      "term": "brothers",
+      "meaning": "الأخوة",
+      "category": "additional",
+      "example": "He plays with his brothers.",
+      "sourceImages": [
+        1
+      ],
+      "id": "brothers"
+    },
+    {
+      "term": "loves",
+      "meaning": "يحب كثيرًا",
+      "category": "additional",
+      "example": "Maher loves running.",
+      "sourceImages": [
+        2
+      ],
+      "id": "loves"
+    },
+    {
+      "term": "likes",
+      "meaning": "يحب",
+      "category": "additional",
+      "example": "Sally likes reading.",
+      "sourceImages": [
+        2,
+        5
+      ],
+      "id": "likes"
+    },
+    {
+      "term": "morning",
+      "meaning": "الصباح",
+      "category": "additional",
+      "example": "He runs in the morning.",
+      "sourceImages": [
+        2,
+        3
+      ],
+      "id": "morning"
+    },
+    {
+      "term": "evening",
+      "meaning": "المساء",
+      "category": "additional",
+      "example": "She reads in the evening.",
+      "sourceImages": [
+        2,
+        3,
+        6
+      ],
+      "id": "evening"
+    },
+    {
+      "term": "kilometres",
+      "meaning": "كيلومترات",
+      "category": "additional",
+      "example": "The passage mentions kilometres.",
+      "sourceImages": [
+        2
+      ],
+      "id": "kilometres"
+    },
+    {
+      "term": "strong and fit",
+      "meaning": "قوي ولياقته جيدة",
+      "category": "additional",
+      "example": "Running makes him strong and fit.",
+      "sourceImages": [
+        2
+      ],
+      "id": "strong-and-fit"
+    },
+    {
+      "term": "free time",
+      "meaning": "وقت الفراغ",
+      "category": "additional",
+      "example": "I draw in my free time.",
+      "sourceImages": [
+        2,
+        3,
+        4
+      ],
+      "id": "free-time"
+    },
+    {
+      "term": "adventure books",
+      "meaning": "كتب المغامرات",
+      "category": "additional",
+      "example": "She reads adventure books.",
+      "sourceImages": [
+        2
+      ],
+      "id": "adventure-books"
+    },
+    {
+      "term": "science",
+      "meaning": "العلوم",
+      "category": "additional",
+      "example": "The option says science books.",
+      "sourceImages": [
+        2
+      ],
+      "id": "science"
+    },
+    {
+      "term": "stories",
+      "meaning": "قصص",
+      "category": "additional",
+      "example": "My sister reads short stories.",
+      "sourceImages": [
+        2,
+        3
+      ],
+      "id": "stories"
+    },
+    {
+      "term": "once a week",
+      "meaning": "مرة واحدة في الأسبوع",
+      "category": "additional",
+      "example": "I swim once a week.",
+      "sourceImages": [
+        2
+      ],
+      "id": "once-a-week"
+    },
+    {
+      "term": "something else",
+      "meaning": "شيء آخر",
+      "category": "additional",
+      "example": "Do you do something else?",
+      "sourceImages": [
+        2
+      ],
+      "id": "something-else"
+    },
+    {
+      "term": "camera",
+      "meaning": "كاميرا",
+      "category": "additional",
+      "example": "Rami has a new camera.",
+      "sourceImages": [
+        4
+      ],
+      "id": "camera"
+    },
+    {
+      "term": "photos",
+      "meaning": "صور",
+      "category": "additional",
+      "example": "He takes photos of nature.",
+      "sourceImages": [
+        4
+      ],
+      "id": "photos"
+    },
+    {
+      "term": "taking photos",
+      "meaning": "التقاط الصور",
+      "category": "additional",
+      "example": "Taking photos is his hobby.",
+      "sourceImages": [
+        4
+      ],
+      "id": "taking-photos"
+    },
+    {
+      "term": "nature",
+      "meaning": "الطبيعة",
+      "category": "additional",
+      "example": "He likes photos of nature.",
+      "sourceImages": [
+        4
+      ],
+      "id": "nature"
+    },
+    {
+      "term": "butterflies",
+      "meaning": "فراشات",
+      "category": "additional",
+      "example": "The butterflies are small.",
+      "sourceImages": [
+        4
+      ],
+      "id": "butterflies"
+    },
+    {
+      "term": "places",
+      "meaning": "أماكن",
+      "category": "additional",
+      "example": "He goes to different places.",
+      "sourceImages": [
+        4
+      ],
+      "id": "places"
+    },
+    {
+      "term": "parents",
+      "meaning": "الوالدان",
+      "category": "additional",
+      "example": "He goes with his parents.",
+      "sourceImages": [
+        4,
+        5
+      ],
+      "id": "parents"
+    },
+    {
+      "term": "amazing",
+      "meaning": "مدهش",
+      "category": "additional",
+      "example": "The picture is amazing.",
+      "sourceImages": [
+        4
+      ],
+      "id": "amazing"
+    },
+    {
+      "term": "homework",
+      "meaning": "الواجب المنزلي",
+      "category": "additional",
+      "example": "My father helps me with my homework.",
+      "sourceImages": [
+        4
+      ],
+      "id": "homework"
+    },
+    {
+      "term": "bedroom",
+      "meaning": "غرفة النوم",
+      "category": "additional",
+      "example": "She listens to music in her bedroom.",
+      "sourceImages": [
+        4
+      ],
+      "id": "bedroom"
+    },
+    {
+      "term": "library",
+      "meaning": "المكتبة",
+      "category": "additional",
+      "example": "I read in the library.",
+      "sourceImages": [
+        5
+      ],
+      "id": "library"
+    },
+    {
+      "term": "weekends",
+      "meaning": "نهايات الأسبوع",
+      "category": "additional",
+      "example": "He plays at the weekends.",
+      "sourceImages": [
+        5
+      ],
+      "id": "weekends"
+    },
+    {
+      "term": "brushes",
+      "meaning": "فرشاة الرسم",
+      "category": "additional",
+      "example": "He draws with brushes.",
+      "sourceImages": [
+        5
+      ],
+      "id": "brushes"
+    },
+    {
+      "term": "music class",
+      "meaning": "حصة الموسيقى",
+      "category": "additional",
+      "example": "We play music in the music class.",
+      "sourceImages": [
+        5
+      ],
+      "id": "music-class"
+    },
+    {
+      "term": "cooking",
+      "meaning": "الطهو",
+      "category": "additional",
+      "example": "He likes cooking.",
+      "sourceImages": [
+        5
+      ],
+      "id": "cooking"
+    },
+    {
+      "term": "pencils",
+      "meaning": "أقلام رصاص",
+      "category": "additional",
+      "example": "He draws with pencils.",
+      "sourceImages": [
+        5
+      ],
+      "id": "pencils"
+    },
+    {
+      "term": "basketball",
+      "meaning": "كرة السلة",
+      "category": "additional",
+      "example": "He likes playing basketball.",
+      "sourceImages": [
+        6
+      ],
+      "id": "basketball"
+    },
+    {
+      "term": "singing",
+      "meaning": "الغناء",
+      "category": "additional",
+      "example": "She likes singing.",
+      "sourceImages": [
+        6
+      ],
+      "id": "singing"
+    },
+    {
+      "term": "fishing",
+      "meaning": "الصيد",
+      "category": "additional",
+      "example": "He goes fishing.",
+      "sourceImages": [
+        6
+      ],
+      "id": "fishing"
+    },
+    {
+      "term": "running",
+      "meaning": "الجري",
+      "category": "additional",
+      "example": "Running makes him strong.",
+      "sourceImages": [
+        2,
+        6
+      ],
+      "id": "running"
+    },
+    {
+      "term": "visit",
+      "meaning": "يزور",
+      "category": "additional",
+      "example": "I often visit my friend.",
+      "sourceImages": [
+        6
+      ],
+      "id": "visit"
+    },
+    {
+      "term": "drink",
+      "meaning": "يشرب",
+      "category": "additional",
+      "example": "I sometimes drink juice.",
+      "sourceImages": [
+        6
+      ],
+      "id": "drink"
+    },
+    {
+      "term": "cook",
+      "meaning": "يطهو",
+      "category": "additional",
+      "example": "I always cook with my mother.",
+      "sourceImages": [
+        6
+      ],
+      "id": "cook"
+    },
+    {
+      "term": "father",
+      "meaning": "الأب",
+      "category": "additional",
+      "example": "My father watches TV.",
+      "sourceImages": [
+        6
+      ],
+      "id": "father"
+    },
+    {
+      "term": "weekend",
+      "meaning": "نهاية الأسبوع",
+      "category": "additional",
+      "example": "We play at the weekend.",
+      "sourceImages": [
+        3,
+        5
+      ],
+      "id": "weekend"
+    },
+    {
+      "term": "summer",
+      "meaning": "الصيف",
+      "category": "additional",
+      "example": "He goes swimming in summer.",
+      "sourceImages": [
+        3
+      ],
+      "id": "summer"
+    },
+    {
+      "term": "paints",
+      "meaning": "يرسم",
+      "category": "additional",
+      "example": "Rana paints in the evening.",
+      "sourceImages": [
+        3
+      ],
+      "id": "paints"
+    },
+    {
+      "term": "What is your favourite hobby?",
+      "meaning": "ما هويتك المفضلة؟",
+      "category": "expression",
+      "example": "The conversation asks: What is your favourite hobby?",
+      "sourceImages": [
+        2
+      ],
+      "id": "what-is-your-favourite-hobby"
+    },
+    {
+      "term": "My favourite hobby is swimming.",
+      "meaning": "هويتي المفضلة هي السباحة.",
+      "category": "expression",
+      "example": "My favourite hobby is swimming.",
+      "sourceImages": [
+        2
+      ],
+      "id": "my-favourite-hobby-is-swimming"
+    },
+    {
+      "term": "How often do you swim?",
+      "meaning": "كم مرة تسبح؟",
+      "category": "expression",
+      "example": "How often do you swim?",
+      "sourceImages": [
+        2
+      ],
+      "id": "how-often-do-you-swim"
+    },
+    {
+      "term": "I swim once a week.",
+      "meaning": "أسبح مرة واحدة في الأسبوع.",
+      "category": "expression",
+      "example": "I swim once a week.",
+      "sourceImages": [
+        2
+      ],
+      "id": "i-swim-once-a-week"
+    },
+    {
+      "term": "Do you do something else?",
+      "meaning": "هل تفعل شيئًا آخر؟",
+      "category": "expression",
+      "example": "Do you do something else?",
+      "sourceImages": [
+        2
+      ],
+      "id": "do-you-do-something-else"
+    },
+    {
+      "term": "Yes, I sometimes play football.",
+      "meaning": "نعم، ألعب كرة القدم أحيانًا.",
+      "category": "expression",
+      "example": "Yes, I sometimes play football.",
+      "sourceImages": [
+        2
+      ],
+      "id": "yes-i-sometimes-play-football"
+    },
+    {
+      "term": "Do you enjoy running?",
+      "meaning": "هل تستمتع بالجري؟",
+      "category": "expression",
+      "example": "Do you enjoy running?",
+      "sourceImages": [
+        2
+      ],
+      "id": "do-you-enjoy-running"
+    },
+    {
+      "term": "Do you like reading?",
+      "meaning": "هل تحب القراءة؟",
+      "category": "expression",
+      "example": "Do you like reading?",
+      "sourceImages": [
+        2
+      ],
+      "id": "do-you-like-reading"
+    },
+    {
+      "term": "He runs about 2 kilometres every day.",
+      "meaning": "يجري حوالي كيلومترين كل يوم.",
+      "category": "expression",
+      "example": "The printed passage says he runs about 2 kilometres every day.",
+      "sourceImages": [
+        2
+      ],
+      "id": "he-runs-about-2-kilometres-every-day"
+    },
+    {
+      "term": "She always reads in her free time.",
+      "meaning": "تقرأ دائمًا في وقت فراغها.",
+      "category": "expression",
+      "example": "She always reads in her free time.",
+      "sourceImages": [
+        2
+      ],
+      "id": "she-always-reads-in-her-free-time"
+    },
+    {
+      "term": "Running makes him strong and fit.",
+      "meaning": "الجري يجعله قويًا وذو لياقة.",
+      "category": "expression",
+      "example": "Running makes him strong and fit.",
+      "sourceImages": [
+        2
+      ],
+      "id": "running-makes-him-strong-and-fit"
+    },
+    {
+      "term": "I often play tennis in my free time.",
+      "meaning": "ألعب التنس غالبًا في وقت فراغي.",
+      "category": "expression",
+      "example": "I often play tennis in my free time.",
+      "sourceImages": [
+        3
+      ],
+      "id": "i-often-play-tennis-in-my-free-time"
+    },
+    {
+      "term": "Rana usually paints in the evening.",
+      "meaning": "رانا ترسم عادةً في المساء.",
+      "category": "expression",
+      "example": "Rana usually paints in the evening.",
+      "sourceImages": [
+        3
+      ],
+      "id": "rana-usually-paints-in-the-evening"
+    },
+    {
+      "term": "We sometimes go swimming at the weekend.",
+      "meaning": "نذهب أحيانًا للسباحة في نهاية الأسبوع.",
+      "category": "expression",
+      "example": "We sometimes go swimming at the weekend.",
+      "sourceImages": [
+        3
+      ],
+      "id": "we-sometimes-go-swimming-at-the-weekend"
+    },
+    {
+      "term": "He always goes swimming in summer.",
+      "meaning": "يذهب دائمًا للسباحة في الصيف.",
+      "category": "expression",
+      "example": "He always goes swimming in summer.",
+      "sourceImages": [
+        3
+      ],
+      "id": "he-always-goes-swimming-in-summer"
+    },
+    {
+      "term": "She usually listens to music in the morning.",
+      "meaning": "تستمع عادةً إلى الموسيقى في الصباح.",
+      "category": "expression",
+      "example": "She usually listens to music in the morning.",
+      "sourceImages": [
+        3
+      ],
+      "id": "she-usually-listens-to-music-in-the-morning"
+    },
+    {
+      "term": "We often run every day.",
+      "meaning": "نجري غالبًا كل يوم.",
+      "category": "expression",
+      "example": "We often run every day.",
+      "sourceImages": [
+        3
+      ],
+      "id": "we-often-run-every-day"
+    },
+    {
+      "term": "They sometimes watch TV in the evening.",
+      "meaning": "يشاهدون التلفاز أحيانًا في المساء.",
+      "category": "expression",
+      "example": "They sometimes watch TV in the evening.",
+      "sourceImages": [
+        3
+      ],
+      "id": "they-sometimes-watch-tv-in-the-evening"
+    },
+    {
+      "term": "I never play the piano at night.",
+      "meaning": "لا أعزف البيانو أبدًا في الليل.",
+      "category": "expression",
+      "example": "I never play the piano at night.",
+      "sourceImages": [
+        3
+      ],
+      "id": "i-never-play-the-piano-at-night"
+    },
+    {
+      "term": "My sister usually reads short stories.",
+      "meaning": "أختي تقرأ عادةً قصصًا قصيرة.",
+      "category": "expression",
+      "example": "My sister usually reads short stories.",
+      "sourceImages": [
+        3
+      ],
+      "id": "my-sister-usually-reads-short-stories"
+    },
+    {
+      "term": "What do you like doing?",
+      "meaning": "ماذا تحب أن تفعل؟",
+      "category": "expression",
+      "example": "What do you like doing?",
+      "sourceImages": [
+        5
+      ],
+      "id": "what-do-you-like-doing"
+    },
+    {
+      "term": "I like playing football.",
+      "meaning": "أحب لعب كرة القدم.",
+      "category": "expression",
+      "example": "I like playing football.",
+      "sourceImages": [
+        5
+      ],
+      "id": "i-like-playing-football"
+    },
+    {
+      "term": "When do you play it?",
+      "meaning": "متى تلعبها؟",
+      "category": "expression",
+      "example": "When do you play it?",
+      "sourceImages": [
+        5
+      ],
+      "id": "when-do-you-play-it"
+    },
+    {
+      "term": "I play it at the weekend.",
+      "meaning": "ألعبها في نهاية الأسبوع.",
+      "category": "expression",
+      "example": "I play it at the weekend.",
+      "sourceImages": [
+        5
+      ],
+      "id": "i-play-it-at-the-weekend"
+    },
+    {
+      "term": "How often do you play football?",
+      "meaning": "كم مرة تلعب كرة القدم؟",
+      "category": "expression",
+      "example": "How often do you play football?",
+      "sourceImages": [
+        5
+      ],
+      "id": "how-often-do-you-play-football"
+    },
+    {
+      "term": "Who do you play it with?",
+      "meaning": "مع من تلعبها؟",
+      "category": "expression",
+      "example": "Who do you play it with?",
+      "sourceImages": [
+        5
+      ],
+      "id": "who-do-you-play-it-with"
+    },
+    {
+      "term": "What does she like doing?",
+      "meaning": "ماذا تحب أن تفعل؟",
+      "category": "expression",
+      "example": "What does she like doing?",
+      "sourceImages": [
+        6
+      ],
+      "id": "what-does-she-like-doing"
+    },
+    {
+      "term": "He likes playing basketball.",
+      "meaning": "يحب لعب كرة السلة.",
+      "category": "expression",
+      "example": "He likes playing basketball.",
+      "sourceImages": [
+        6
+      ],
+      "id": "he-likes-playing-basketball"
+    },
+    {
+      "term": "I usually watch TV in the evening.",
+      "meaning": "أشاهد التلفاز عادةً في المساء.",
+      "category": "expression",
+      "example": "I usually watch TV in the evening.",
+      "sourceImages": [
+        6
+      ],
+      "id": "i-usually-watch-tv-in-the-evening"
+    }
+  ]
+}

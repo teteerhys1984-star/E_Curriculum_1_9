@@ -21,7 +21,7 @@ test('every registered lesson has a Writing state; unrecorded lessons are not au
   assert.ok(states.filter(s => !Object.hasOwn(data.audited, s.slug)).every(s => s.state === 'Writing not yet audited'));
 });
 
-test('the twenty-six documented exceptions cannot silently disappear or be combined', () => {
+test('the forty-one documented exceptions cannot silently disappear or be combined', () => {
   const found = Object.entries(data.audited).flatMap(([slug, audit]) => audit.exceptions.map(e => `${slug}|${e.book}|${e.page}|${e.activity}`));
   assert.deepEqual(found, [
     "grade4-unit1-lesson1|Pupil's Book|3|Exercise 1 — Listen and number",
@@ -49,9 +49,24 @@ test('the twenty-six documented exceptions cannot silently disappear or be combi
     'grade3-unit1-lesson8|Workbook|24|Exercise 2 — Read and write',
     'grade3-unit1-lesson8|Workbook|25|Exercise 3 — Read and write about yourself',
     'grade3-unit1-lesson8|Workbook|26|Exercise 5 — Reorder',
-    'grade3-unit1-lesson8|Workbook|26|Exercise 6 — Write and draw about what you like doing'
+    'grade3-unit1-lesson8|Workbook|26|Exercise 6 — Write and draw about what you like doing',
+    "grade4-unit1-lesson7|Pupil's Book|26|Exercise 7 — Reorder these sentences",
+    "grade4-unit1-lesson7|Pupil's Book|26|Exercise 8 — Complete these sentences about hobbies, items 2–4",
+    'grade4-unit1-lesson7|Workbook|25|Exercise 1b — Fill in the spaces',
+    'grade4-unit1-lesson7|Workbook|26|Exercise 5 — Ask and answer',
+    'grade4-unit1-lesson7|Workbook|27|Exercise 6 — Look at the pictures and practise',
+    'grade4-unit1-lesson7|Workbook|27|Exercise 7 — Write sentences',
+    'grade4-unit1-lesson7|Workbook|27|Exercise 8 — Complete the sentences',
+    "grade4-unit1-lesson8|Pupil's Book|29|Exercise 7a — Look and fill in the spaces",
+    "grade4-unit1-lesson8|Pupil's Book|29|Exercise 7b — Look and complete",
+    'grade4-unit1-lesson8|Workbook|28|Exercise 1 — Read and write the numbers',
+    'grade4-unit1-lesson8|Workbook|28|Exercise 3 — Complete',
+    'grade4-unit1-lesson8|Workbook|29|Exercise 4 — Fill in the spaces',
+    'grade4-unit1-lesson8|Workbook|30|Exercise 6 — Listen, look and write the number',
+    'grade4-unit1-lesson8|Workbook|30|Exercise 7 — Ask and answer according to the map',
+    'grade4-unit1-lesson8|Workbook|30|Exercise 8 — Now draw a picture of your town and write sentences about it'
   ]);
-  assert.equal(run(data).reduce((n, s) => n + s.exceptions, 0), 26);
+  assert.equal(run(data).reduce((n, s) => n + s.exceptions, 0), 41);
 });
 
 test('invalid, duplicate, undocumented and unregistered records are rejected', () => {

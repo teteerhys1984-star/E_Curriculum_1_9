@@ -34,6 +34,8 @@
     'grade4-unit1-lesson4': { grade: 4, unit: 1, lesson: 4, title: 'My House', bookLabel: "Pupil's Book", answerKey: true },
     'grade4-unit1-lesson5': { grade: 4, unit: 1, lesson: 5, title: 'School Subjects', bookLabel: "Pupil's Book", answerKey: true },
     'grade4-unit1-lesson6': { grade: 4, unit: 1, lesson: 6, title: 'Where I Live', bookLabel: "Pupil's Book", answerKey: true },
+    'grade4-unit1-lesson7': { grade: 4, unit: 1, lesson: 7, title: 'Hobbies and Interests', bookLabel: "Pupil's Book", answerKey: true },
+    'grade4-unit1-lesson8': { grade: 4, unit: 1, lesson: 8, title: 'Places in My Town', bookLabel: "Pupil's Book", answerKey: true },
     'grade5-unit1-lesson1': { grade: 5, unit: 1, lesson: 1, title: 'At School', bookLabel: "Pupil's Book", answerKey: true },
     'grade5-unit1-lesson2': { grade: 5, unit: 1, lesson: 2, title: 'Family', bookLabel: "Pupil's Book", answerKey: true },
     'grade5-unit1-lesson3': { grade: 5, unit: 1, lesson: 3, title: 'Daily Routines', bookLabel: "Pupil's Book", answerKey: true },

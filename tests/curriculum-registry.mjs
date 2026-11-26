@@ -670,23 +670,23 @@ pass('Template previews point at the ready grades', `lesson-menu.html and lesson
  * ------------------------------------------------------------------ */
 
 const grade4 = byGrade.get(4);
-assert.equal(grade4.readyCount, 6, 'Grade 4 publishes six complete, registered lessons');
+assert.equal(grade4.readyCount, 8, 'Grade 4 publishes eight complete, registered lessons');
 assert.deepEqual(
   grade4.titles,
-  ['Nice to Meet You', 'My Family', 'Daily Routine', 'My House', 'School Subjects', 'Where I Live'],
-  'Grade 4 lesson titles, including Lessons 5 and 6 that the homepage card used to omit'
+  ['Nice to Meet You', 'My Family', 'Daily Routine', 'My House', 'School Subjects', 'Where I Live', 'Hobbies and Interests', 'Places in My Town'],
+  'Grade 4 lesson titles, including the new Lessons 7 and 8'
 );
-assert.equal(grade4.lessonRange, '1\u20136', 'Grade 4 lesson range');
-assert.equal(grade4.pages, 30, 'Grade 4 verified page count');
-for (const lesson of [5, 6]) {
+assert.equal(grade4.lessonRange, '1\u20138', 'Grade 4 lesson range');
+assert.equal(grade4.pages, 40, 'Grade 4 verified page count');
+for (const lesson of [5, 6, 7, 8]) {
   const slug = `grade4-unit1-lesson${lesson}`;
   assert.ok(registry.has(slug), `${slug} must be registered so breadcrumbs, the resume card and every derived count can see it`);
   assert.ok(home.includes(`Lesson ${lesson} \u00b7 ${registry.get(slug).title}`), `index.html must list Grade 4 Lesson ${lesson}`);
   assert.ok(listing.includes(`'${slug}': '<a class="lesson" href="${slug}.html"`), `lessons.html must hold a card for Grade 4 Lesson ${lesson}`);
 }
 pass(
-  'Grade 4 reports all six ready lessons everywhere',
-  'Registry, homepage card ("6 lessons ready", Lessons 1-6 with six titles), homepage directory, grade menu and teacher directories all agree'
+  'Grade 4 reports all eight ready lessons everywhere',
+  'Registry, homepage card ("8 lessons ready", Lessons 1-8 with eight titles), homepage directory, grade menu and teacher directories all agree'
 );
 
 console.log(JSON.stringify({

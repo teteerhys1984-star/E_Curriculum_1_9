@@ -282,6 +282,138 @@
           "evidence": "docs/grade3-unit1-lesson8/writing-inventory.md"
         }
       ]
+    },
+    "grade4-unit1-lesson7": {
+      "activityCount": 7,
+      "inventory": "docs/grade4-unit1-lesson7/writing-inventory.md",
+      "exceptions": [
+        {
+          "book": "Pupil's Book",
+          "page": 26,
+          "activity": "Exercise 7 — Reorder these sentences",
+          "reason": "The book prints the word tiles but no completed sentences; the three arrangements are inferred from the printed words and meaning.",
+          "handling": "Three response fields with a labelled inferred model; comparison only; no score.",
+          "evidence": "docs/grade4-unit1-lesson7/writing-inventory.md"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 26,
+          "activity": "Exercise 8 — Complete these sentences about hobbies, items 2–4",
+          "reason": "Only the first sentence is printed as a worked example; the three remaining lines are personal and have no official answer.",
+          "handling": "Three open fields; the printed example is labelled; illustrative answers vary and are not official; no score.",
+          "evidence": "docs/grade4-unit1-lesson7/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 25,
+          "activity": "Exercise 1b — Fill in the spaces",
+          "reason": "The book supplies a word bank but no printed answer key; the blue emphasis in the scan is source formatting rather than a declared key.",
+          "handling": "Four response fields with a labelled inferred model from the printed passage; comparison only; no score.",
+          "evidence": "docs/grade4-unit1-lesson7/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 26,
+          "activity": "Exercise 5 — Ask and answer",
+          "reason": "The response lines invite personal answers about frequency and companions; no unique printed answer exists.",
+          "handling": "Two open fields; labelled illustrative examples that are not official answers; answers vary; no score.",
+          "evidence": "docs/grade4-unit1-lesson7/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 27,
+          "activity": "Exercise 6 — Look at the pictures and practise",
+          "reason": "The six picture nouns are inferred from the illustrations and the book prints no answers.",
+          "handling": "Six response fields with a labelled image-derived inferred model; comparison only; no score.",
+          "evidence": "docs/grade4-unit1-lesson7/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 27,
+          "activity": "Exercise 7 — Write sentences",
+          "reason": "The prompt words do not fix one sentence, and the book prints no key.",
+          "handling": "Three open fields; labelled illustrative examples that are not official answers; answers vary; no score.",
+          "evidence": "docs/grade4-unit1-lesson7/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 27,
+          "activity": "Exercise 8 — Complete the sentences",
+          "reason": "The three stems are personal continuations with no official answer.",
+          "handling": "Three open fields; labelled illustrative examples that are not official answers; answers vary; no score.",
+          "evidence": "docs/grade4-unit1-lesson7/writing-inventory.md"
+        }
+      ]
+    },
+    "grade4-unit1-lesson8": {
+      "activityCount": 8,
+      "inventory": "docs/grade4-unit1-lesson8/writing-inventory.md",
+      "exceptions": [
+        {
+          "book": "Pupil's Book",
+          "page": 29,
+          "activity": "Exercise 7a — Look and fill in the spaces",
+          "reason": "The book prints a map and a word bank but no answer key; the five prepositions are read from picture positions.",
+          "handling": "Five response fields with a labelled map-derived inferred model; comparison only; no score.",
+          "evidence": "docs/grade4-unit1-lesson8/writing-inventory.md"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 29,
+          "activity": "Exercise 7b — Look and complete",
+          "reason": "The three printed lines are open descriptions of the map and have no official answer.",
+          "handling": "Three open fields; labelled illustrative examples that are not official answers; answers vary; no score.",
+          "evidence": "docs/grade4-unit1-lesson8/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 28,
+          "activity": "Exercise 1 — Read and write the numbers",
+          "reason": "The printed list numbers are exercise labels; the book supplies no image-to-number key.",
+          "handling": "Eleven response fields with a labelled image-derived inferred numbering; comparison only; no score.",
+          "evidence": "docs/grade4-unit1-lesson8/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 28,
+          "activity": "Exercise 3 — Complete",
+          "reason": "The two purpose sentences are personal/open and the book prints no answers.",
+          "handling": "Two open fields; labelled illustrative examples that are not official answers; answers vary; no score.",
+          "evidence": "docs/grade4-unit1-lesson8/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 29,
+          "activity": "Exercise 4 — Fill in the spaces",
+          "reason": "The compass word bank is printed, but the placement of the four labels in empty boxes is inferred and no key is printed.",
+          "handling": "Four response fields with a labelled inferred model; comparison only; no score.",
+          "evidence": "docs/grade4-unit1-lesson8/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 30,
+          "activity": "Exercise 6 — Listen, look and write the number",
+          "reason": "The original recording was not supplied, so the four empty map boxes cannot be verified.",
+          "handling": "Four response fields; disclosed audio exception; no model; not scored.",
+          "evidence": "docs/grade4-unit1-lesson8/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 30,
+          "activity": "Exercise 7 — Ask and answer according to the map",
+          "reason": "The printed pair is a model; other map questions and answers are source-derived and can vary.",
+          "handling": "Two pairs of open fields; printed model labelled; illustrative map-derived examples are not official answers; no score.",
+          "evidence": "docs/grade4-unit1-lesson8/writing-inventory.md"
+        },
+        {
+          "book": "Workbook",
+          "page": 30,
+          "activity": "Exercise 8 — Now draw a picture of your town and write sentences about it",
+          "reason": "The task is personal and open; the drawing and sentences have no unique official answer.",
+          "handling": "Three open fields; labelled illustrative examples that are not official answers; drawing not checked; no score.",
+          "evidence": "docs/grade4-unit1-lesson8/writing-inventory.md"
+        }
+      ]
     }
   }
 }
