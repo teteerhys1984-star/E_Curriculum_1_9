@@ -72,6 +72,8 @@ const anchoredKeyLinks = [
   'grade5-unit1-lesson5-test.html#teacher-gate',
   'grade5-unit1-lesson6-test.html#teacher-gate',
   'grade5-unit1-lesson7-test.html#teacher-gate',
+  'grade5-unit1-lesson8-test.html#teacher-gate',
+  'grade5-unit1-lesson9-test.html#teacher-gate',
   'grade8-unit1-lesson1-test.html#teacher-gate',
   'grade8-unit1-lesson2-test.html#teacher-gate',
   'grade8-unit1-lesson3-test.html#teacher-gate',

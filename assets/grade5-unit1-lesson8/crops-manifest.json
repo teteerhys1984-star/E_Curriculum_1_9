@@ -1,0 +1,131 @@
+{
+  "note": "Every crop is an exact rectangle of the unchanged original scan; the original is never edited.",
+  "crops": [
+    {
+      "file": "assets/grade5-unit1-lesson8/crops/pb27-inventions.png",
+      "source": "assets/grade5-unit1-lesson8/source/pupil-book-page-27.png",
+      "sourceUpload": "image-1",
+      "sourceSha256": "2ee901a09dae0969b27de783ab6482e0e7b48d163238964244d20b8dc26a9dbd",
+      "crop": {
+        "width": 725,
+        "height": 165,
+        "x": 20,
+        "y": 215
+      },
+      "sha256": "cb4853e97e1b26c4efaf021622ce6887dfa1f765e28292bffaa3122b1d0019c8",
+      "bytes": 101606
+    },
+    {
+      "file": "assets/grade5-unit1-lesson8/crops/pb27-panels.png",
+      "source": "assets/grade5-unit1-lesson8/source/pupil-book-page-27.png",
+      "sourceUpload": "image-1",
+      "sourceSha256": "2ee901a09dae0969b27de783ab6482e0e7b48d163238964244d20b8dc26a9dbd",
+      "crop": {
+        "width": 575,
+        "height": 175,
+        "x": 130,
+        "y": 458
+      },
+      "sha256": "e57dbe9bea3a1d41bf06e8254795b60158c9225a75e213f6cdcd77566ddbb6ff",
+      "bytes": 23114
+    },
+    {
+      "file": "assets/grade5-unit1-lesson8/crops/pb27-dialogue.png",
+      "source": "assets/grade5-unit1-lesson8/source/pupil-book-page-27.png",
+      "sourceUpload": "image-1",
+      "sourceSha256": "2ee901a09dae0969b27de783ab6482e0e7b48d163238964244d20b8dc26a9dbd",
+      "crop": {
+        "width": 730,
+        "height": 235,
+        "x": 15,
+        "y": 640
+      },
+      "sha256": "b7395e2d8f6c88e6caf229f74b810edf3ca4bf4256faa5258e409f87b25e8e42",
+      "bytes": 103847
+    },
+    {
+      "file": "assets/grade5-unit1-lesson8/crops/pb28-umbrella.png",
+      "source": "assets/grade5-unit1-lesson8/source/pupil-book-page-28.png",
+      "sourceUpload": "image-2",
+      "sourceSha256": "3d4e087a6908085e2f3a11e81fd64e43cfc8ef91d4b4fbf7e73910dfe8ce51ff",
+      "crop": {
+        "width": 700,
+        "height": 215,
+        "x": 18,
+        "y": 404
+      },
+      "sha256": "b8942276699315820d8bb3bab27fe8c19b20e968de2cc1ecc6477d3208610f4d",
+      "bytes": 83838
+    },
+    {
+      "file": "assets/grade5-unit1-lesson8/crops/pb29-letslearn.png",
+      "source": "assets/grade5-unit1-lesson8/source/pupil-book-page-29.png",
+      "sourceUpload": "image-3",
+      "sourceSha256": "f7ec69bab5d62725f14c83fde221258393c92688ddc1e5bf389822711856e11a",
+      "crop": {
+        "width": 680,
+        "height": 175,
+        "x": 30,
+        "y": 60
+      },
+      "sha256": "ea28049285214ffe1c3aa6d6b61a31fb5f12427858cddaeead347b7bc4570484",
+      "bytes": 54589
+    },
+    {
+      "file": "assets/grade5-unit1-lesson8/crops/pb29-inventorbox.png",
+      "source": "assets/grade5-unit1-lesson8/source/pupil-book-page-29.png",
+      "sourceUpload": "image-3",
+      "sourceSha256": "f7ec69bab5d62725f14c83fde221258393c92688ddc1e5bf389822711856e11a",
+      "crop": {
+        "width": 650,
+        "height": 270,
+        "x": 30,
+        "y": 690
+      },
+      "sha256": "f78272a5dd4c42b7ee2b7ce12d4940a9bcdb54f2eb04cc821fe91197f845279f",
+      "bytes": 11254
+    },
+    {
+      "file": "assets/grade5-unit1-lesson8/crops/wb28-pictures.png",
+      "source": "assets/grade5-unit1-lesson8/source/workbook-page-28.png",
+      "sourceUpload": "image-4",
+      "sourceSha256": "a970718308782bd6ebf8a0a8280ab05074cb0ef69a0e42d703545cafdd402d9c",
+      "crop": {
+        "width": 690,
+        "height": 285,
+        "x": 15,
+        "y": 175
+      },
+      "sha256": "66095d9aedee0460048b0885faf80890ab9204aeeae0db06cafb5973019d65e0",
+      "bytes": 73846
+    },
+    {
+      "file": "assets/grade5-unit1-lesson8/crops/wb29-wordsearch.png",
+      "source": "assets/grade5-unit1-lesson8/source/workbook-page-29.png",
+      "sourceUpload": "image-5",
+      "sourceSha256": "ca8d2c7a33b0bd74d91344fc1f26fb3b5edbef1b64a57eb2607a85558b4c187f",
+      "crop": {
+        "width": 650,
+        "height": 320,
+        "x": 58,
+        "y": 698
+      },
+      "sha256": "b3fc9a707433f93686e7a585833d1d3860ab78fe4282e89d72a53cfb1b562117",
+      "bytes": 62083
+    },
+    {
+      "file": "assets/grade5-unit1-lesson8/crops/wb30-infoboxes.png",
+      "source": "assets/grade5-unit1-lesson8/source/workbook-page-30.png",
+      "sourceUpload": "image-6",
+      "sourceSha256": "591743dd47b0b87e3fb570c9e8cdb4e72956ab68b98d4155f1c6e468e2b2aa11",
+      "crop": {
+        "width": 710,
+        "height": 290,
+        "x": 15,
+        "y": 175
+      },
+      "sha256": "b235e2ff6d10cc6ec89fcd232fbfa00a414b8082e29c28db0573201fa2b47bc9",
+      "bytes": 112228
+    }
+  ]
+}

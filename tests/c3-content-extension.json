@@ -81,6 +81,16 @@
     "grade5-unit1-lesson7-vocabulary.html",
     "grade5-unit1-lesson7-workbook.html",
     "grade5-unit1-lesson7.html",
+    "grade5-unit1-lesson8-pupil-book.html",
+    "grade5-unit1-lesson8-test.html",
+    "grade5-unit1-lesson8-vocabulary.html",
+    "grade5-unit1-lesson8-workbook.html",
+    "grade5-unit1-lesson8.html",
+    "grade5-unit1-lesson9-pupil-book.html",
+    "grade5-unit1-lesson9-test.html",
+    "grade5-unit1-lesson9-vocabulary.html",
+    "grade5-unit1-lesson9-workbook.html",
+    "grade5-unit1-lesson9.html",
     "grade8-unit1-lesson3-pupil-book.html",
     "grade8-unit1-lesson3-test.html",
     "grade8-unit1-lesson3-vocabulary.html",
@@ -99,6 +109,30 @@
   ],
   "integrationEdits": {
     "index.html": [
+      {
+        "before": "            <div class=\"stat\"><b data-curriculum-count=\"lessons\">28</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"pages\">140</b><span>Verified lesson pages</span></div>\n",
+        "after": "            <div class=\"stat\"><b data-curriculum-count=\"lessons\">30</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"pages\">150</b><span>Verified lesson pages</span></div>\n"
+      },
+      {
+        "before": "          <span class=\"badge badge-available\">7 lessons ready</span>\n",
+        "after": "          <span class=\"badge badge-available\">9 lessons ready</span>\n"
+      },
+      {
+        "before": "          <p><span data-curriculum-summary>Unit 1 Lessons 1–7 ready: <em>At School</em>, <em>Family</em>, <em>Daily Routines</em>, <em>The Five Senses</em>, <em>Clothes</em>, <em>Healthy Lifestyle</em> and <em>Hobbies</em></span>.</p>\n",
+        "after": "          <p><span data-curriculum-summary>Unit 1 Lessons 1–9 ready: <em>At School</em>, <em>Family</em>, <em>Daily Routines</em>, <em>The Five Senses</em>, <em>Clothes</em>, <em>Healthy Lifestyle</em>, <em>Hobbies</em>, <em>Inventions</em> and <em>Music</em></span>.</p>\n"
+      },
+      {
+        "before": "      <span class=\"badge badge-available\" data-curriculum-totals=\"verified-lessons-pages\">28 verified lessons · 140 pages</span>\n",
+        "after": "      <span class=\"badge badge-available\" data-curriculum-totals=\"verified-lessons-pages\">30 verified lessons · 150 pages</span>\n"
+      },
+      {
+        "before": "",
+        "after": "          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 8 · Inventions</strong>\n              <span>Pupil’s Book pp. 27–29 · Workbook pp. 28–30 · Vocabulary · 18-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade5-unit1-lesson8.html\">Inventions</a>\n              <a href=\"grade5-unit1-lesson8-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade5-unit1-lesson8-workbook.html\">Workbook</a>\n              <a href=\"grade5-unit1-lesson8-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade5-unit1-lesson8-test.html\">Lesson Test</a>\n            </div>\n          </div>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 9 · Music</strong>\n              <span>Pupil’s Book pp. 30–32 · Workbook pp. 31–33 · Vocabulary · 18-question Test</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade5-unit1-lesson9.html\">Music</a>\n              <a href=\"grade5-unit1-lesson9-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade5-unit1-lesson9-workbook.html\">Workbook</a>\n              <a href=\"grade5-unit1-lesson9-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade5-unit1-lesson9-test.html\">Lesson Test</a>\n            </div>\n          </div>\n"
+      },
+      {
+        "before": "        The teacher portal collects the <span data-curriculum-count-words=\"lessons\">twenty-eight</span> prepared lessons, the answer-key areas published on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-seven</span> lesson tests, and\n",
+        "after": "        The teacher portal collects the <span data-curriculum-count-words=\"lessons\">thirty</span> prepared lessons, the answer-key areas published on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-nine</span> lesson tests, and\n"
+      },
       {
         "before": "            <div class=\"stat\"><b data-curriculum-count=\"lessons\">26</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"pages\">130</b><span>Verified lesson pages</span></div>\n",
         "after": "            <div class=\"stat\"><b data-curriculum-count=\"lessons\">28</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"pages\">140</b><span>Verified lesson pages</span></div>\n"
@@ -211,6 +245,10 @@
     "lessons.html": [
       {
         "before": "",
+        "after": "      'grade5-unit1-lesson8': '<a class=\"lesson\" href=\"grade5-unit1-lesson8.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 8 · Inventions</strong><small>Pupil’s Book (pp. 27–29) · Workbook (pp. 28–30) · Vocabulary · 18-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>',\n      'grade5-unit1-lesson9': '<a class=\"lesson\" href=\"grade5-unit1-lesson9.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 9 · Music</strong><small>Pupil’s Book (pp. 30–32) · Workbook (pp. 31–33) · Vocabulary · 18-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>',\n"
+      },
+      {
+        "before": "",
         "after": "      'grade4-unit1-lesson7': '<a class=\"lesson\" href=\"grade4-unit1-lesson7.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 7 · Hobbies and Interests</strong><small>Pupil’s Book (pp. 24–26) · Workbook (pp. 25–27) · Vocabulary · 12-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>',\n      'grade4-unit1-lesson8': '<a class=\"lesson\" href=\"grade4-unit1-lesson8.html\"><div><span class=\"badge badge-available\">Available · Unit 1</span><strong>Lesson 8 · Places in My Town</strong><small>Pupil’s Book (pp. 27–29) · Workbook (pp. 28–30) · Vocabulary · 12-question Lesson Test</small></div><span class=\"arrow\" aria-hidden=\"true\">→</span></a>',\n"
       },
       {
@@ -314,6 +352,26 @@
     ],
     "teacher-resources.html": [
       {
+        "before": "        <span data-curriculum-count-words=\"lessons\">Twenty-eight</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, each with its book, Workbook, Vocabulary and\n",
+        "after": "        <span data-curriculum-count-words=\"lessons\">Thirty</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, each with its book, Workbook, Vocabulary and\n"
+      },
+      {
+        "before": "        Answer-key areas sit inside <span data-curriculum-count-words=\"answerKeyAreas\">twenty-seven</span> lesson tests and are hidden behind one shared classroom password typed into the\n",
+        "after": "        Answer-key areas sit inside <span data-curriculum-count-words=\"answerKeyAreas\">twenty-nine</span> lesson tests and are hidden behind one shared classroom password typed into the\n"
+      },
+      {
+        "before": "      <span class=\"badge badge-available\" data-curriculum-totals=\"lessons-pages\">28 lessons · 140 pages</span>\n",
+        "after": "      <span class=\"badge badge-available\" data-curriculum-totals=\"lessons-pages\">30 lessons · 150 pages</span>\n"
+      },
+      {
+        "before": "",
+        "after": "          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 8 · Inventions</strong>\n              <span>Pupil’s Book pp. 27–29 · Workbook pp. 28–30 · 18-question test · answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade5-unit1-lesson8.html\">Lesson menu</a>\n              <a href=\"grade5-unit1-lesson8-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade5-unit1-lesson8-workbook.html\">Workbook</a>\n              <a href=\"grade5-unit1-lesson8-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade5-unit1-lesson8-test.html\">Lesson Test</a>\n              <a href=\"grade5-unit1-lesson8-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">\n            Key type: a published key written for the 18 independent test items aligned with Lesson 8’s learning\n            objectives, with the objective and explanation for each item. In-page reveals: 3 on the Pupil’s Book page\n            and 3 on the Workbook page (one reports that the recording was not supplied, and one reports how the five\n            picture numbers are fixed by the printed panel). The printed Heddy / Hedy spelling is kept on each page as\n            printed, and a radiograph is never described as radium.\n          </p>\n          <div class=\"directory-lesson-row\">\n            <div class=\"directory-lesson-info\">\n              <strong>Lesson 9 · Music</strong>\n              <span>Pupil’s Book pp. 30–32 · Workbook pp. 31–33 · 18-question test · answer key published</span>\n            </div>\n            <div class=\"directory-quick-links\">\n              <a href=\"grade5-unit1-lesson9.html\">Lesson menu</a>\n              <a href=\"grade5-unit1-lesson9-pupil-book.html\">Pupil’s Book</a>\n              <a href=\"grade5-unit1-lesson9-workbook.html\">Workbook</a>\n              <a href=\"grade5-unit1-lesson9-vocabulary.html\">Vocabulary</a>\n              <a href=\"grade5-unit1-lesson9-test.html\">Lesson Test</a>\n              <a href=\"grade5-unit1-lesson9-test.html#teacher-gate\">Answer key</a>\n            </div>\n          </div>\n          <p class=\"source-note\">\n            Key type: a published key written for the 18 independent test items aligned with Lesson 9’s learning\n            objectives, with the objective and explanation for each item. In-page reveals: 3 on the Pupil’s Book page\n            and 4 on the Workbook page (two of them state that the recording was not supplied). Workbook exercise 1 is\n            limited to spelling, and the four-row “car / cat” classification task stays unscored.\n          </p>\n"
+      },
+      {
+        "before": "",
+        "after": "            <th scope=\"row\">5 · 8 Inventions</th>\n            <td>18</td>\n            <td>Published (independent test)</td>\n            <td>3</td>\n            <td>3</td>\n            <td>None</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">5 · 9 Music</th>\n            <td>18</td>\n            <td>Published (independent test)</td>\n            <td>3</td>\n            <td>4</td>\n            <td>None</td>\n          </tr>\n          <tr>\n"
+      },
+      {
         "before": "        <span data-curriculum-count-words=\"lessons\">Twenty-six</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, each with its book, Workbook, Vocabulary and\n",
         "after": "        <span data-curriculum-count-words=\"lessons\">Twenty-eight</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, each with its book, Workbook, Vocabulary and\n"
       },
@@ -395,6 +453,26 @@
       }
     ],
     "teacher.html": [
+      {
+        "before": "            in this repository: <span data-curriculum-count-words=\"lessons\">twenty-eight</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, their Pupil’s or Student’s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-seven</span> of those tests.\n",
+        "after": "            in this repository: <span data-curriculum-count-words=\"lessons\">thirty</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, their Pupil’s or Student’s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-nine</span> of those tests.\n"
+      },
+      {
+        "before": "            <div class=\"stat\"><b data-curriculum-count=\"lessons\">28</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"pages\">140</b><span>Verified lesson pages</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"answerKeyAreas\">27</b><span>Answer-key areas</span></div>\n",
+        "after": "            <div class=\"stat\"><b data-curriculum-count=\"lessons\">30</b><span>Prepared lessons</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"pages\">150</b><span>Verified lesson pages</span></div>\n            <div class=\"stat\"><b data-curriculum-count=\"answerKeyAreas\">29</b><span>Answer-key areas</span></div>\n"
+      },
+      {
+        "before": "        <strong>Not secure authentication.</strong> The answer-key areas on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-seven</span> lesson tests ask for a single\n",
+        "after": "        <strong>Not secure authentication.</strong> The answer-key areas on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-nine</span> lesson tests ask for a single\n"
+      },
+      {
+        "before": "          <span class=\"badge badge-available\">7 lessons prepared</span>\n",
+        "after": "          <span class=\"badge badge-available\">9 lessons prepared</span>\n"
+      },
+      {
+        "before": "          <p><span data-curriculum-grade-count-words>Seven</span> prepared lessons: <span data-curriculum-pages>35</span> verified pages with a published answer-key area on each lesson test.</p>\n",
+        "after": "          <p><span data-curriculum-grade-count-words>Nine</span> prepared lessons: <span data-curriculum-pages>45</span> verified pages with a published answer-key area on each lesson test.</p>\n"
+      },
       {
         "before": "            in this repository: <span data-curriculum-count-words=\"lessons\">twenty-six</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, their Pupil’s or Student’s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-five</span> of those tests.\n",
         "after": "            in this repository: <span data-curriculum-count-words=\"lessons\">twenty-eight</span> prepared Unit 1 lessons across Grades <span data-curriculum-totals=\"ready-grade-numbers\">3, 4, 5 and 8</span>, their Pupil’s or Student’s\n            Book, Workbook, Vocabulary and Lesson Test pages, and the answer-key areas that are published on <span data-curriculum-count-words=\"answerKeyAreas\">twenty-seven</span> of those tests.\n"

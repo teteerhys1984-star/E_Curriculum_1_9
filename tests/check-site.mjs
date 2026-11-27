@@ -132,7 +132,7 @@ for (const file of newPages) {
 pass('Five new pages follow LESSON_PAGE_STANDARD.md', 'Four content pages load the shared step navigator; menu opts out');
 
 const landing = read('index.html');
-assert.match(landing, /<span class="num">Grade 5<\/span>[\s\S]*?<span class="badge badge-available">7 lessons ready<\/span>[\s\S]*?Unit 1 Lessons 1–7 ready: <em>At School<\/em>, <em>Family<\/em>, <em>Daily Routines<\/em>, <em>The Five Senses<\/em>, <em>Clothes<\/em>, <em>Healthy Lifestyle<\/em> and <em>Hobbies<\/em>/);
+assert.match(landing, /<span class="num">Grade 5<\/span>[\s\S]*?<span class="badge badge-available">9 lessons ready<\/span>[\s\S]*?Unit 1 Lessons 1–9 ready: <em>At School<\/em>, <em>Family<\/em>, <em>Daily Routines<\/em>, <em>The Five Senses<\/em>, <em>Clothes<\/em>, <em>Healthy Lifestyle<\/em>, <em>Hobbies<\/em>, <em>Inventions<\/em> and <em>Music<\/em>/);
 for (const [lesson, title] of [[1, 'At School'], [2, 'Family'], [3, 'Daily Routines']]) {
   const href = `grade5-unit1-lesson${lesson}.html`;
   assert.ok(exists(href), `Missing Grade 5 Lesson ${lesson} menu`);
@@ -140,7 +140,7 @@ for (const [lesson, title] of [[1, 'At School'], [2, 'Family'], [3, 'Daily Routi
   assert.ok(landing.includes(`Lesson ${lesson} · ${title}`), `Landing page missing Grade 5 Lesson ${lesson} title`);
 }
 assert.ok(landing.includes('<a href="grade5-unit1-lesson3.html">Daily Routines</a>'));
-pass('Grade 5 landing summary and lesson links', 'Seven lessons declared ready; Lessons 1–7 link to their existing lesson menus with matching titles');
+pass('Grade 5 landing summary and lesson links', 'Nine lessons declared ready; Lessons 1–9 link to their existing lesson menus with matching titles');
 
 const listing = read('lessons.html');
 assert.ok(listing.includes("'grade3-unit1-lesson2': '<a class=\"lesson\" href=\"grade3-unit1-lesson2.html\""));
@@ -504,6 +504,8 @@ const teacherCounts = {
   'grade5-unit1-lesson5': '5 · 5 Clothes',
   'grade5-unit1-lesson6': '5 · 6 Healthy Lifestyle',
   'grade5-unit1-lesson7': '5 · 7 Hobbies',
+  'grade5-unit1-lesson8': '5 · 8 Inventions',
+  'grade5-unit1-lesson9': '5 · 9 Music',
   'grade8-unit1-lesson1': '8 · 1 Future Plans',
   'grade8-unit1-lesson2': '8 · 2 School Challenges',
   'grade8-unit1-lesson3': '8 · 3 Let’s Discover',
@@ -543,11 +545,11 @@ for (const [slug, label] of Object.entries(teacherCounts)) {
   assert.equal(cells[4], 'None', `${label}: listening key must be reported as unavailable`);
 }
 assert.match(matrixRows.get('4 · 1 Nice to Meet You')[1], /Not published/, 'Grade 4 Lesson 1 must be listed as having no answer key');
-for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '4 · 3 Daily Routine', '4 · 4 My House', '4 · 5 School Subjects', '4 · 6 Where I Live', '4 · 7 Hobbies and Interests', '4 · 8 Places in My Town', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '5 · 4 The Five Senses', '5 · 5 Clothes', '5 · 6 Healthy Lifestyle', '5 · 7 Hobbies', '8 · 1 Future Plans', '8 · 2 School Challenges', '8 · 3 Let’s Discover', '8 · 4 Interesting Destinations', '8 · 5 Safety Online!']) {
+for (const label of ['3 · 1 Back to School', '3 · 2 School Subjects', '3 · 3 My Lovely School', '3 · 4 My Five Senses', '3 · 5 Revision 1', '4 · 2 My Family', '4 · 3 Daily Routine', '4 · 4 My House', '4 · 5 School Subjects', '4 · 6 Where I Live', '4 · 7 Hobbies and Interests', '4 · 8 Places in My Town', '5 · 1 At School', '5 · 2 Family', '5 · 3 Daily Routines', '5 · 4 The Five Senses', '5 · 5 Clothes', '5 · 6 Healthy Lifestyle', '5 · 7 Hobbies', '5 · 8 Inventions', '5 · 9 Music', '8 · 1 Future Plans', '8 · 2 School Challenges', '8 · 3 Let’s Discover', '8 · 4 Interesting Destinations', '8 · 5 Safety Online!']) {
   assert.match(matrixRows.get(label)[1], /^Published/, `${label}: must be listed as publishing an answer key`);
 }
 
-const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade3-unit1-lesson4', 'grade3-unit1-lesson5', 'grade4-unit1-lesson2', 'grade4-unit1-lesson3', 'grade4-unit1-lesson4', 'grade4-unit1-lesson5', 'grade4-unit1-lesson6', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade5-unit1-lesson4', 'grade5-unit1-lesson5', 'grade5-unit1-lesson6', 'grade5-unit1-lesson7', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2', 'grade8-unit1-lesson3', 'grade8-unit1-lesson4', 'grade8-unit1-lesson5'];
+const anchoredKeys = ['grade3-unit1-lesson1', 'grade3-unit1-lesson2', 'grade3-unit1-lesson3', 'grade3-unit1-lesson4', 'grade3-unit1-lesson5', 'grade4-unit1-lesson2', 'grade4-unit1-lesson3', 'grade4-unit1-lesson4', 'grade4-unit1-lesson5', 'grade4-unit1-lesson6', 'grade5-unit1-lesson1', 'grade5-unit1-lesson2', 'grade5-unit1-lesson3', 'grade5-unit1-lesson4', 'grade5-unit1-lesson5', 'grade5-unit1-lesson6', 'grade5-unit1-lesson7', 'grade5-unit1-lesson8', 'grade5-unit1-lesson9', 'grade8-unit1-lesson1', 'grade8-unit1-lesson2', 'grade8-unit1-lesson3', 'grade8-unit1-lesson4', 'grade8-unit1-lesson5'];
 for (const slug of anchoredKeys) {
   assert.ok(teacherPage.includes(`href="${slug}-test.html#teacher-gate"`), `teacher-resources.html: ${slug} must deep-link its published key anchor`);
   const testHtml = read(`${slug}-test.html`);
@@ -1112,6 +1114,56 @@ const g5Lessons = [
       'playing chess', 'doing karate', 'painting', 'reading', 'instrument', 'favourite', 'interesting', 'library',
       'borrow', 'adventure', 'grade', 'homework', 'difficult', 'clever', 'artist', 'paragraph',
       'can’t', 'music', 'chess']
+  },
+  {
+    slug: 'grade5-unit1-lesson8',
+    title: 'Inventions',
+    book: { 'pupil-book': '27–29', workbook: '28–30' },
+    pbOrder: [
+      '1 a Listen and number.', 'b Listen again and match the inventor to the invention or discovery.',
+      '2 Ask and answer.', 'Pronunciation.', '3 Ask and answer.', '4 Before you read, fill in the spaces.',
+      '5 Read the text and do the tasks below.', 'a Read and choose.', 'b Write true (T) or false (F).',
+      'Let’s Learn', '6 Read and underline the past simple verb.', '7 Write three sentences in the past simple.',
+      '8 You are an inventor. Write about your invention.'
+    ],
+    wbOrder: [
+      '1. Write the number next to the picture.', '2. Read and match the questions to the answers.',
+      '3. Talk about the inventions in exercise 1.', '4. Read and practise a similar conversation.',
+      '5. Fill in the spaces with these words:', '6. Listen and tick the invention.',
+      '7. Find the past in the word search.', '8. Read and do the tasks below.',
+      '9. Write about your favourite invention.'
+    ],
+    pbControls: { radios: 15, texts: 11, numbers: 5, selects: 5, textareas: 1, reveals: 3 },
+    wbControls: { radios: 13, texts: 14, numbers: 5, selects: 4, textareas: 0, reveals: 3 },
+    scans: 6,
+    crops: 9,
+    taught: ['invention', 'inventor', 'invent', 'electric light', 'bulb', 'television', 'Wi-Fi', 'vaccination',
+      'syringe', 'radium', 'X-ray', 'solar energy', 'telephone', 'actress', 'discover', 'improve', 'important',
+      'different', 'world', 'change', 'environment']
+  },
+  {
+    slug: 'grade5-unit1-lesson9',
+    title: 'Music',
+    book: { 'pupil-book': '30–32', workbook: '31–33' },
+    pbOrder: [
+      '1 Listen and choose the speaker.', '2 Listen and repeat:', '3 Ask and answer.', 'Pronunciation.',
+      '4 Look at the picture and say what they are going to do.', '5 Before you read, answer the questions.',
+      '6 Read then do the tasks.', 'a Choose.', 'b Match.', 'Let’s Learn', '7 Fill in the spaces.', '8 Look and write.',
+      '9 Choose.', '10 Complete.'
+    ],
+    wbOrder: [
+      '1. Correct the mistake then match.', '2. Read and do the tasks.', '3. Listen and number.', '4. Listen and choose.',
+      '5. Read then act out.', '6. Talk about yourself.', '7. Listen and classify.', '8. Choose.',
+      '9. Read Lily’s list and write what she is or isn’t going to do.',
+      '10. Write about what you are going to do this weekend.'
+    ],
+    pbControls: { radios: 30, texts: 17, numbers: 0, selects: 3, textareas: 0, reveals: 3 },
+    wbControls: { radios: 34, texts: 23, numbers: 8, selects: 0, textareas: 1, reveals: 4 },
+    scans: 6,
+    crops: 10,
+    taught: ['piano', 'violin', 'tambourine', 'flute', 'keyboard', 'drum', 'guitar', 'harp', 'oud', 'mizmar',
+      'qanun', 'tabla', 'instrument', 'band', 'concert', 'theatre', 'audience', 'singer', 'song', 'musician',
+      'jazz', 'classical', 'famous', 'favourite', 'tomorrow', 'next week']
   }
 ];
 
