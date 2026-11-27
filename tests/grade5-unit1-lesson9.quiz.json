@@ -1,0 +1,284 @@
+{
+  "lesson": "grade5-unit1-lesson9",
+  "title": "Lesson 9 Test · Music",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 18,
+  "objectives": [
+    "instrument-vocabulary",
+    "going-to-plans",
+    "going-to-negative",
+    "going-to-questions",
+    "future-time-words",
+    "reading-comprehension",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "q1",
+      "format": "multiple-choice",
+      "objective": "instrument-vocabulary",
+      "objectiveLabel": "Lesson objective: Musical instrument vocabulary",
+      "prompt": "Which instrument has black and white keys and is played by pressing them?",
+      "correct": 0,
+      "options": [
+        "a) a piano",
+        "b) a flute",
+        "c) a tambourine"
+      ],
+      "evidence": "The keys of a piano are pressed with the fingers. A flute is blown and a tambourine is shaken."
+    },
+    {
+      "number": 2,
+      "id": "q2",
+      "format": "multiple-choice",
+      "objective": "instrument-vocabulary",
+      "objectiveLabel": "Lesson objective: Musical instrument vocabulary",
+      "prompt": "Which instrument do you shake or hit with your hand?",
+      "correct": 1,
+      "options": [
+        "a) a violin",
+        "b) a tambourine",
+        "c) a guitar"
+      ],
+      "evidence": "A tambourine is a small drum with metal discs, so it is shaken or hit. The other two have strings."
+    },
+    {
+      "number": 3,
+      "id": "q3",
+      "format": "multiple-choice",
+      "objective": "instrument-vocabulary",
+      "objectiveLabel": "Lesson objective: Musical instrument vocabulary",
+      "prompt": "Sami is going to play the ______ by blowing into it.",
+      "correct": 2,
+      "options": [
+        "a) oud",
+        "b) piano",
+        "c) flute"
+      ],
+      "evidence": "A flute is played by blowing air into it. The oud and the piano are not blown."
+    },
+    {
+      "number": 4,
+      "id": "q4",
+      "format": "multiple-choice",
+      "objective": "instrument-vocabulary",
+      "objectiveLabel": "Lesson objective: Musical instrument vocabulary",
+      "prompt": "Which of these instruments is used to play Arabian music?",
+      "correct": 1,
+      "options": [
+        "a) the harp",
+        "b) the oud",
+        "c) the trumpet"
+      ],
+      "evidence": "The oud, the mizmar, the qanun and the tabla are the Arabian instruments named in the lesson. The harp is used for western music."
+    },
+    {
+      "number": 5,
+      "id": "q5",
+      "format": "multiple-choice",
+      "objective": "going-to-plans",
+      "objectiveLabel": "Lesson objective: Plans with am / is / are going to",
+      "prompt": "Lily ______ going to sing at the concert.",
+      "correct": 0,
+      "options": [
+        "a) is",
+        "b) are",
+        "c) am"
+      ],
+      "evidence": "Lily is one person, so the be verb is is: Lily is going to sing."
+    },
+    {
+      "number": 6,
+      "id": "q6",
+      "format": "multiple-choice",
+      "objective": "going-to-plans",
+      "objectiveLabel": "Lesson objective: Plans with am / is / are going to",
+      "prompt": "We ______ going to play music next week.",
+      "correct": 2,
+      "options": [
+        "a) is",
+        "b) am",
+        "c) are"
+      ],
+      "evidence": "We is a plural subject, so the be verb is are: we are going to play."
+    },
+    {
+      "number": 7,
+      "id": "q7",
+      "format": "multiple-choice",
+      "objective": "going-to-plans",
+      "objectiveLabel": "Lesson objective: Plans with am / is / are going to",
+      "prompt": "I ______ going to practise the piano tonight.",
+      "correct": 1,
+      "options": [
+        "a) is",
+        "b) am",
+        "c) are"
+      ],
+      "evidence": "With I the be verb is always am: I am going to practise."
+    },
+    {
+      "number": 8,
+      "id": "q8",
+      "format": "multiple-choice",
+      "objective": "going-to-negative",
+      "objectiveLabel": "Lesson objective: Negative sentences with isn’t / aren’t going to",
+      "prompt": "She isn’t going to ______ to the concert.",
+      "correct": 0,
+      "options": [
+        "a) go",
+        "b) goes",
+        "c) went"
+      ],
+      "evidence": "After going to the verb stays plain, so it is going to go."
+    },
+    {
+      "number": 9,
+      "id": "q9",
+      "format": "multiple-choice",
+      "objective": "going-to-negative",
+      "objectiveLabel": "Lesson objective: Negative sentences with isn’t / aren’t going to",
+      "prompt": "They ______ going to dance tonight.",
+      "correct": 2,
+      "options": [
+        "a) isn’t",
+        "b) don’t",
+        "c) aren’t"
+      ],
+      "evidence": "They is plural and the sentence needs a negative be verb: they aren’t going to dance."
+    },
+    {
+      "number": 10,
+      "id": "q10",
+      "format": "multiple-choice",
+      "objective": "going-to-questions",
+      "objectiveLabel": "Lesson objective: Questions with be going to",
+      "prompt": "______ you going to play the tambourine? — Yes, I am.",
+      "correct": 0,
+      "options": [
+        "a) Are",
+        "b) Do",
+        "c) Is"
+      ],
+      "evidence": "The answer Yes, I am shows a question with the be verb, and with you it is Are you going to …?"
+    },
+    {
+      "number": 11,
+      "id": "q11",
+      "format": "multiple-choice",
+      "objective": "going-to-questions",
+      "objectiveLabel": "Lesson objective: Questions with be going to",
+      "prompt": "What ______ you going to do in the concert?",
+      "correct": 1,
+      "options": [
+        "a) is",
+        "b) are",
+        "c) do"
+      ],
+      "evidence": "The subject is you, so the be verb is are: what are you going to do?"
+    },
+    {
+      "number": 12,
+      "id": "q12",
+      "format": "multiple-choice",
+      "objective": "future-time-words",
+      "objectiveLabel": "Lesson objective: Time words for the future",
+      "prompt": "We are going to visit the theatre ______.",
+      "correct": 2,
+      "options": [
+        "a) last week",
+        "b) yesterday",
+        "c) tomorrow"
+      ],
+      "evidence": "Going to looks forward, so only tomorrow fits. Last week and yesterday are in the past."
+    },
+    {
+      "number": 13,
+      "id": "q13",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about a concert",
+      "prompt": "Read the text. Which instrument does Nour play?",
+      "correct": 1,
+      "options": [
+        "a) the tabla",
+        "b) the oud",
+        "c) the flute"
+      ],
+      "evidence": "The text says Nour plays the oud and her friend Sami plays the tabla."
+    },
+    {
+      "number": 14,
+      "id": "q14",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about a concert",
+      "prompt": "In the text, the band is going to play at their school next Friday.",
+      "correct": 0,
+      "options": [
+        "True",
+        "False"
+      ],
+      "evidence": "The text says the band is going to play in a concert at their school next Friday."
+    },
+    {
+      "number": 15,
+      "id": "q15",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about a concert",
+      "prompt": "In the text, Nour is going to play a long solo.",
+      "correct": 1,
+      "options": [
+        "True",
+        "False"
+      ],
+      "evidence": "The text says she is not going to play a long solo."
+    },
+    {
+      "number": 16,
+      "id": "q16",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about a concert",
+      "prompt": "In the text, Nour wrote the words of the song herself.",
+      "correct": 0,
+      "options": [
+        "True",
+        "False"
+      ],
+      "evidence": "The text says she is going to sing one song and she wrote the words herself."
+    },
+    {
+      "number": 17,
+      "id": "q17",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing sentences with be going to",
+      "prompt": "Make one complete sentence with these words: nour / going to / sing / one song",
+      "correct": "Nour is going to sing one song.",
+      "accepted": [
+        "nour is going to sing one song"
+      ],
+      "wrongSample": "Nour going to sing one song.",
+      "evidence": "The plan uses is going to with the subject Nour, then the plain verb sing."
+    },
+    {
+      "number": 18,
+      "id": "q18",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing sentences with be going to",
+      "prompt": "Make one complete sentence with these words: they / not / going to / play / tonight",
+      "correct": "They aren’t going to play tonight.",
+      "accepted": [
+        "they aren’t going to play tonight",
+        "they aren't going to play tonight",
+        "they are not going to play tonight"
+      ],
+      "wrongSample": "They not going to play tonight.",
+      "evidence": "A negative plan uses aren’t with they, then going to and the plain verb play."
+    }
+  ]
+}

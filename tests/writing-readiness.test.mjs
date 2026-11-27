@@ -18,10 +18,12 @@ test('every registered lesson has a Writing state; unrecorded lessons are not au
   assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson6').state, 'Writing audited with documented exceptions');
   assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson7').state, 'Writing audited with documented exceptions');
   assert.equal(states.find(s => s.slug === 'grade3-unit1-lesson8').state, 'Writing audited with documented exceptions');
+  assert.equal(states.find(s => s.slug === 'grade5-unit1-lesson8').state, 'Writing audited with documented exceptions');
+  assert.equal(states.find(s => s.slug === 'grade5-unit1-lesson9').state, 'Writing audited with documented exceptions');
   assert.ok(states.filter(s => !Object.hasOwn(data.audited, s.slug)).every(s => s.state === 'Writing not yet audited'));
 });
 
-test('the forty-one documented exceptions cannot silently disappear or be combined', () => {
+test('the fifty-nine documented exceptions cannot silently disappear or be combined', () => {
   const found = Object.entries(data.audited).flatMap(([slug, audit]) => audit.exceptions.map(e => `${slug}|${e.book}|${e.page}|${e.activity}`));
   assert.deepEqual(found, [
     "grade4-unit1-lesson1|Pupil's Book|3|Exercise 1 — Listen and number",
@@ -64,9 +66,27 @@ test('the forty-one documented exceptions cannot silently disappear or be combin
     'grade4-unit1-lesson8|Workbook|29|Exercise 4 — Fill in the spaces',
     'grade4-unit1-lesson8|Workbook|30|Exercise 6 — Listen, look and write the number',
     'grade4-unit1-lesson8|Workbook|30|Exercise 7 — Ask and answer according to the map',
-    'grade4-unit1-lesson8|Workbook|30|Exercise 8 — Now draw a picture of your town and write sentences about it'
+    'grade4-unit1-lesson8|Workbook|30|Exercise 8 — Now draw a picture of your town and write sentences about it',
+    "grade5-unit1-lesson8|Pupil's Book|27|Activity 1 a — Listen and number",
+    "grade5-unit1-lesson8|Pupil's Book|27|Activity 1 b — Listen again and match the inventor to the invention or discovery",
+    "grade5-unit1-lesson8|Pupil's Book|27|Pronunciation — u:",
+    "grade5-unit1-lesson8|Pupil's Book|28|Activity 3 — Ask and answer",
+    "grade5-unit1-lesson8|Pupil's Book|29|Activity 7 — Write three sentences in the past simple",
+    "grade5-unit1-lesson8|Pupil's Book|29|Activity 8 — Write about your invention",
+    'grade5-unit1-lesson8|Workbook|28|Exercise 1 — Write the number next to the picture',
+    'grade5-unit1-lesson8|Workbook|29|Exercise 6 — Listen and tick the invention',
+    'grade5-unit1-lesson8|Workbook|30|Exercise 9 — Write about your favourite invention',
+    "grade5-unit1-lesson9|Pupil's Book|30|Activity 1 — Listen and choose the speaker",
+    "grade5-unit1-lesson9|Pupil's Book|30|Pronunciation — æ and ɑː",
+    "grade5-unit1-lesson9|Pupil's Book|31|Activity 4 — Look at the picture and say what they are going to do",
+    "grade5-unit1-lesson9|Pupil's Book|32|Activity 8 — Look and write, items 2–4",
+    "grade5-unit1-lesson9|Pupil's Book|32|Activity 10 — Complete",
+    'grade5-unit1-lesson9|Workbook|31|Exercise 1 — Correct the mistake then match',
+    'grade5-unit1-lesson9|Workbook|32|Exercise 3 — Listen and number',
+    'grade5-unit1-lesson9|Workbook|32|Exercise 4 — Listen and choose',
+    'grade5-unit1-lesson9|Workbook|32|Exercise 7 — Listen and classify'
   ]);
-  assert.equal(run(data).reduce((n, s) => n + s.exceptions, 0), 41);
+  assert.equal(run(data).reduce((n, s) => n + s.exceptions, 0), 59);
 });
 
 test('invalid, duplicate, undocumented and unregistered records are rejected', () => {

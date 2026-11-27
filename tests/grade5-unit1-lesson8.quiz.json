@@ -1,0 +1,284 @@
+{
+  "lesson": "grade5-unit1-lesson8",
+  "title": "Lesson 8 Test · Inventions",
+  "policy": "independent-lesson-test-v1",
+  "totalQuestions": 18,
+  "objectives": [
+    "invention-words",
+    "past-simple",
+    "past-simple-irregular",
+    "did-questions",
+    "future-in-the-past",
+    "reading-comprehension",
+    "sentence-writing"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "id": "q1",
+      "format": "multiple-choice",
+      "objective": "invention-words",
+      "objectiveLabel": "Lesson objective: Inventions and inventors vocabulary",
+      "prompt": "Which word means “the first person to make a new thing”?",
+      "correct": 1,
+      "options": [
+        "a) an invention",
+        "b) an inventor",
+        "c) a discovery"
+      ],
+      "evidence": "An inventor is the person. The thing the person makes is an invention."
+    },
+    {
+      "number": 2,
+      "id": "q2",
+      "format": "multiple-choice",
+      "objective": "invention-words",
+      "objectiveLabel": "Lesson objective: Inventions and inventors vocabulary",
+      "prompt": "The telephone, the television and Wi-Fi are all ______.",
+      "correct": 2,
+      "options": [
+        "a) inventors",
+        "b) discoveries",
+        "c) inventions"
+      ],
+      "evidence": "They are things that people made, so they are inventions. An inventor is the person who makes them."
+    },
+    {
+      "number": 3,
+      "id": "q3",
+      "format": "multiple-choice",
+      "objective": "invention-words",
+      "objectiveLabel": "Lesson objective: Inventions and inventors vocabulary",
+      "prompt": "Bell wanted to talk to people without moving, and he ______.",
+      "correct": 0,
+      "options": [
+        "a) succeeded",
+        "b) discovered",
+        "c) improved"
+      ],
+      "evidence": "He wanted to do something and he did it, so he succeeded. Discover is for finding something that already exists."
+    },
+    {
+      "number": 4,
+      "id": "q4",
+      "format": "multiple-choice",
+      "objective": "future-in-the-past",
+      "objectiveLabel": "Lesson objective: Talking about the past and today",
+      "prompt": "In the past, life was ______ from today.",
+      "correct": 1,
+      "options": [
+        "a) the same",
+        "b) different",
+        "c) difficult"
+      ],
+      "evidence": "The lesson contrasts life in the past with life today, so the two are different."
+    },
+    {
+      "number": 5,
+      "id": "q5",
+      "format": "multiple-choice",
+      "objective": "past-simple",
+      "objectiveLabel": "Lesson objective: The past simple",
+      "prompt": "The past simple of invent is ______.",
+      "correct": 0,
+      "options": [
+        "a) invented",
+        "b) invents",
+        "c) inventing"
+      ],
+      "evidence": "Invent is a regular verb, so the past simple adds -ed: invented."
+    },
+    {
+      "number": 6,
+      "id": "q6",
+      "format": "multiple-choice",
+      "objective": "past-simple",
+      "objectiveLabel": "Lesson objective: The past simple",
+      "prompt": "The past simple of try is ______.",
+      "correct": 2,
+      "options": [
+        "a) tryed",
+        "b) tryd",
+        "c) tried"
+      ],
+      "evidence": "A verb ending in a consonant and y changes y to i before -ed: try → tried."
+    },
+    {
+      "number": 7,
+      "id": "q7",
+      "format": "multiple-choice",
+      "objective": "past-simple-irregular",
+      "objectiveLabel": "Lesson objective: Irregular past simple verbs",
+      "prompt": "The past simple of fly is ______.",
+      "correct": 0,
+      "options": [
+        "a) flew",
+        "b) flied",
+        "c) flyed"
+      ],
+      "evidence": "Fly is irregular, so it does not take -ed: fly → flew."
+    },
+    {
+      "number": 8,
+      "id": "q8",
+      "format": "multiple-choice",
+      "objective": "past-simple-irregular",
+      "objectiveLabel": "Lesson objective: Irregular past simple verbs",
+      "prompt": "The past simple of become is ______.",
+      "correct": 1,
+      "options": [
+        "a) becomed",
+        "b) became",
+        "c) becoming"
+      ],
+      "evidence": "Become is irregular: become → became. Becoming is not a past simple form."
+    },
+    {
+      "number": 9,
+      "id": "q9",
+      "format": "multiple-choice",
+      "objective": "past-simple",
+      "objectiveLabel": "Lesson objective: The past simple",
+      "prompt": "The past simple of carry is ______.",
+      "correct": 2,
+      "options": [
+        "a) carryed",
+        "b) carred",
+        "c) carried"
+      ],
+      "evidence": "Carry ends in a consonant and y, so y becomes i before -ed: carry → carried."
+    },
+    {
+      "number": 10,
+      "id": "q10",
+      "format": "multiple-choice",
+      "objective": "did-questions",
+      "objectiveLabel": "Lesson objective: Questions with did",
+      "prompt": "Which sentence is correct?",
+      "correct": 1,
+      "options": [
+        "a) Did Bell invented the telephone?",
+        "b) Bell invented the telephone.",
+        "c) Bell did invented the telephone."
+      ],
+      "evidence": "The past simple is either did + plain verb, or one verb in the past. It is never did + invented."
+    },
+    {
+      "number": 11,
+      "id": "q11",
+      "format": "multiple-choice",
+      "objective": "did-questions",
+      "objectiveLabel": "Lesson objective: Questions with did",
+      "prompt": "______ Marie Curie discover radium? — Yes, she did.",
+      "correct": 2,
+      "options": [
+        "a) Does",
+        "b) Was",
+        "c) Did"
+      ],
+      "evidence": "The answer Yes, she did shows a past simple question, so the question opens with Did."
+    },
+    {
+      "number": 12,
+      "id": "q12",
+      "format": "multiple-choice",
+      "objective": "past-simple",
+      "objectiveLabel": "Lesson objective: The past simple",
+      "prompt": "They didn’t ______ the machine last year.",
+      "correct": 0,
+      "options": [
+        "a) invent",
+        "b) invented",
+        "c) inventing"
+      ],
+      "evidence": "After didn’t the verb goes back to its plain form: didn’t invent."
+    },
+    {
+      "number": 13,
+      "id": "q13",
+      "format": "multiple-choice",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about an invention",
+      "prompt": "Read the text. Why did Karim plan his machine?",
+      "correct": 1,
+      "options": [
+        "a) to become famous",
+        "b) to help his grandmother",
+        "c) to sell it to his neighbours"
+      ],
+      "evidence": "The text says he saw his grandmother carry heavy water and he wanted to help her."
+    },
+    {
+      "number": 14,
+      "id": "q14",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about an invention",
+      "prompt": "In the text, Karim’s grandmother carried heavy water every morning.",
+      "correct": 0,
+      "options": [
+        "True",
+        "False"
+      ],
+      "evidence": "The text says Karim saw that his grandmother carried heavy water from the well every morning."
+    },
+    {
+      "number": 15,
+      "id": "q15",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about an invention",
+      "prompt": "In the text, Karim’s first machine worked at once.",
+      "correct": 1,
+      "options": [
+        "True",
+        "False"
+      ],
+      "evidence": "The text says the first two machines broke, so the first machine did not work."
+    },
+    {
+      "number": 16,
+      "id": "q16",
+      "format": "true-false",
+      "objective": "reading-comprehension",
+      "objectiveLabel": "Lesson objective: Reading a short text about an invention",
+      "prompt": "In the text, other families in the town use the same machine today.",
+      "correct": 0,
+      "options": [
+        "True",
+        "False"
+      ],
+      "evidence": "The text says today other families in the town have the same machine."
+    },
+    {
+      "number": 17,
+      "id": "q17",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing sentences about inventors",
+      "prompt": "Make one complete sentence in the past simple with these words: karim / carry / the machine / to the well",
+      "correct": "Karim carried the machine to the well.",
+      "accepted": [
+        "karim carried the machine to the well"
+      ],
+      "wrongSample": "Karim carry the machine to the well.",
+      "evidence": "Carry becomes carried in the past simple, and the rest of the words keep their order."
+    },
+    {
+      "number": 18,
+      "id": "q18",
+      "format": "short-answer",
+      "objective": "sentence-writing",
+      "objectiveLabel": "Lesson objective: Writing sentences about inventors",
+      "prompt": "Make one complete sentence in the past simple with these words: the machine / not / work / at first",
+      "correct": "The machine didn’t work at first.",
+      "accepted": [
+        "the machine didn’t work at first",
+        "the machine didn't work at first",
+        "the machine did not work at first"
+      ],
+      "wrongSample": "The machine not worked at first.",
+      "evidence": "A negative past simple sentence uses didn’t plus the plain verb, so it is didn’t work."
+    }
+  ]
+}

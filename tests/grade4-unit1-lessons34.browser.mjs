@@ -180,9 +180,9 @@ try {
   assert.equal(await page.locator('#lesson-list a[href="grade4-unit1-lesson4.html"]').count(), 1);
   assert.match(await page.locator('#lesson-list').innerText(), /Lesson 3 · Daily Routine[\s\S]*Lesson 4 · My House/);
   await go('lessons.html?grade=5');
-  assert.match(await page.locator('#grade-badges').innerText(), /7 prepared lessons available/);
+  assert.match(await page.locator('#grade-badges').innerText(), /9 prepared lessons available/);
   assert.match(await page.locator('#round-copy').innerText(), /5 of 5 verified lessons/);
-  assert.equal(await page.locator('#lesson-list a.lesson').count(), 7, 'Grade 5 count matches seven rendered lessons');
+  assert.equal(await page.locator('#lesson-list a.lesson').count(), 9, 'Grade 5 count matches nine rendered lessons');
   pass('Grade menus display the real published counts and capped Round 1 coverage');
 
   await go('round-tests.html?grade=4');
@@ -193,7 +193,7 @@ try {
   assert.match(await page.locator('#round-cards').innerText(), /Not published · 5\/5 lessons covered/);
   await go('round-tests.html?grade=5');
   assert.match(await page.locator('#status-pills').innerText(), /5 of 5 Round 1 lessons covered/);
-  assert.equal(await page.locator('#available-tests-links a').count(), 7, 'Grade 5 exposes all seven individual Lesson Tests');
+  assert.equal(await page.locator('#available-tests-links a').count(), 9, 'Grade 5 exposes all nine individual Lesson Tests');
   assert.doesNotMatch(await page.locator('#status-pills').innerText(), /7 of 5/);
   await go('round-tests.html?grade=8');
   assert.equal(await page.locator('#available-tests-links a').count(), 5, 'Grade 8 exposes all five published lesson tests');

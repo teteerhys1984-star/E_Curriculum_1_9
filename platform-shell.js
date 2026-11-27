@@ -43,6 +43,8 @@
     'grade5-unit1-lesson5': { grade: 5, unit: 1, lesson: 5, title: 'Clothes', bookLabel: "Pupil's Book", answerKey: true },
     'grade5-unit1-lesson6': { grade: 5, unit: 1, lesson: 6, title: 'Healthy Lifestyle', bookLabel: "Pupil's Book", answerKey: true },
     'grade5-unit1-lesson7': { grade: 5, unit: 1, lesson: 7, title: 'Hobbies', bookLabel: "Pupil's Book", answerKey: true },
+    'grade5-unit1-lesson8': { grade: 5, unit: 1, lesson: 8, title: 'Inventions', bookLabel: "Pupil's Book", answerKey: true },
+    'grade5-unit1-lesson9': { grade: 5, unit: 1, lesson: 9, title: 'Music', bookLabel: "Pupil's Book", answerKey: true },
     'grade8-unit1-lesson1': { grade: 8, unit: 1, lesson: 1, title: 'Future Plans', bookLabel: "Student's Book", answerKey: true },
     'grade8-unit1-lesson2': { grade: 8, unit: 1, lesson: 2, title: 'School Challenges', bookLabel: "Student's Book", answerKey: true },
     'grade8-unit1-lesson3': { grade: 8, unit: 1, lesson: 3, title: 'Let’s Discover', bookLabel: "Student's Book", answerKey: true },

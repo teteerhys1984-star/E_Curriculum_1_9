@@ -414,6 +414,162 @@
           "evidence": "docs/grade4-unit1-lesson8/writing-inventory.md"
         }
       ]
+    },
+    "grade5-unit1-lesson8": {
+      "activityCount": 19,
+      "inventory": "docs/grade5-unit1-lesson8/source-defects.md",
+      "exceptions": [
+        {
+          "book": "Pupil's Book",
+          "page": 27,
+          "activity": "Activity 1 a — Listen and number",
+          "reason": "The original recording was not supplied; the page therefore prints no key and marks nothing.",
+          "handling": "Response entry, persistence and reset; no model answer and no scoring; the missing recording is disclosed on the page.",
+          "evidence": "grade5-unit1-lesson8-pupil-book.html"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 27,
+          "activity": "Activity 1 b — Listen again and match the inventor to the invention or discovery",
+          "reason": "The original recording was not supplied; the page therefore prints no key and marks nothing.",
+          "handling": "Both printed panels are reproduced with five response lists; nothing is marked correct, and the note says the recording decides the matching.",
+          "evidence": "grade5-unit1-lesson8-pupil-book.html"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 27,
+          "activity": "Pronunciation — u:",
+          "reason": "The original recording was not supplied; the page therefore prints no key and marks nothing.",
+          "handling": "The five printed words are reproduced and the recording is disclosed as missing; no model pronunciation is claimed.",
+          "evidence": "grade5-unit1-lesson8-pupil-book.html"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 28,
+          "activity": "Activity 3 — Ask and answer",
+          "reason": "The printed page settles no correct answer for this prompt.",
+          "handling": "Picture comparison speaking task; the page carries a response area and states that it prints no key.",
+          "evidence": "grade5-unit1-lesson8-pupil-book.html"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 29,
+          "activity": "Activity 7 — Write three sentences in the past simple",
+          "reason": "The page prints three dotted lines marked with a tick, a cross and a question mark but never prints what the markers mean.",
+          "handling": "Responses are stored and reset; the reveal names the marker reading as an inference and offers examples only, not a key.",
+          "evidence": "grade5-unit1-lesson8-pupil-book.html"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 29,
+          "activity": "Activity 8 — Write about your invention",
+          "reason": "The printed page settles no correct answer for this prompt.",
+          "handling": "Creative writing with three printed prompts; the reveal gives one illustrative paragraph and labels it as an illustration.",
+          "evidence": "grade5-unit1-lesson8-pupil-book.html"
+        },
+        {
+          "book": "Workbook",
+          "page": 28,
+          "activity": "Exercise 1 — Write the number next to the picture",
+          "reason": "The five printed pictures are not named by the page; the numbers follow only from using up the printed panel, and the last picture (a radiograph of a hand) pairs with Radium by elimination.",
+          "handling": "The five numbers are shown as an elimination over the printed panel; the page states in as many words that this pairing is not a statement that an X-ray picture is radium, and no scientific claim is made.",
+          "evidence": "grade5-unit1-lesson8-workbook.html"
+        },
+        {
+          "book": "Workbook",
+          "page": 29,
+          "activity": "Exercise 6 — Listen and tick the invention",
+          "reason": "The original recording was not supplied; the page therefore prints no key and marks nothing.",
+          "handling": "Both printed pictures and both tick boxes are reproduced; the page does not say how many inventions are ticked and marks nothing.",
+          "evidence": "grade5-unit1-lesson8-workbook.html"
+        },
+        {
+          "book": "Workbook",
+          "page": 30,
+          "activity": "Exercise 9 — Write about your favourite invention",
+          "reason": "The printed page settles no correct answer for this prompt.",
+          "handling": "Personal writing with three printed lines; the reveal gives one illustrative answer and notes which line must be a printed fact.",
+          "evidence": "grade5-unit1-lesson8-workbook.html"
+        }
+      ]
+    },
+    "grade5-unit1-lesson9": {
+      "activityCount": 22,
+      "inventory": "docs/grade5-unit1-lesson9/source-defects.md",
+      "exceptions": [
+        {
+          "book": "Pupil's Book",
+          "page": 30,
+          "activity": "Activity 1 — Listen and choose the speaker",
+          "reason": "The original recording was not supplied; the page therefore prints no key and marks nothing.",
+          "handling": "The four printed questions and every printed name are reproduced; nothing is marked correct and the missing recording is disclosed.",
+          "evidence": "grade5-unit1-lesson9-pupil-book.html"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 30,
+          "activity": "Pronunciation — æ and ɑː",
+          "reason": "The original recording was not supplied; the page therefore prints no key and marks nothing.",
+          "handling": "Both printed word sets and the printed model sentence are reproduced; the recording is disclosed as missing and no model pronunciation is claimed.",
+          "evidence": "grade5-unit1-lesson9-pupil-book.html"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 31,
+          "activity": "Activity 4 — Look at the picture and say what they are going to do",
+          "reason": "The six children printed beside the picture and the five children named in the reading passage on the same page do not correspond, and the two who overlap hold different roles in each.",
+          "handling": "The picture task is answered from the printed picture only; its examples are labelled as picture-read illustrations, and the page states that the passage is not used to check them.",
+          "evidence": "grade5-unit1-lesson9-pupil-book.html"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 32,
+          "activity": "Activity 8 — Look and write, items 2–4",
+          "reason": "The printed page settles no correct answer for this prompt.",
+          "handling": "Each of the three printed pictures admits more than one true sentence; the reveal gives one example per picture and says so.",
+          "evidence": "grade5-unit1-lesson9-pupil-book.html"
+        },
+        {
+          "book": "Pupil's Book",
+          "page": 32,
+          "activity": "Activity 10 — Complete",
+          "reason": "The printed page settles no correct answer for this prompt.",
+          "handling": "Open paragraph completion with no printed key; the reveal gives one illustrative continuation only.",
+          "evidence": "grade5-unit1-lesson9-pupil-book.html"
+        },
+        {
+          "book": "Workbook",
+          "page": 31,
+          "activity": "Exercise 1 — Correct the mistake then match",
+          "reason": "The printed labels do not sit under the drawings they name and the page does not settle the intended matching order.",
+          "handling": "Only the six spelling corrections are scored; the matching step is not marked, no matching answer is published, and the page explains why.",
+          "evidence": "grade5-unit1-lesson9-workbook.html"
+        },
+        {
+          "book": "Workbook",
+          "page": 32,
+          "activity": "Exercise 3 — Listen and number",
+          "reason": "The original recording was not supplied; the page therefore prints no key and marks nothing.",
+          "handling": "The eight printed instrument labels and eight empty number boxes are reproduced; no order is invented and nothing is scored.",
+          "evidence": "grade5-unit1-lesson9-workbook.html"
+        },
+        {
+          "book": "Workbook",
+          "page": 32,
+          "activity": "Exercise 4 — Listen and choose",
+          "reason": "The original recording was not supplied; the page therefore prints no key and marks nothing.",
+          "handling": "All four printed questions and their options are reproduced; no option is chosen for the pupil and nothing is scored.",
+          "evidence": "grade5-unit1-lesson9-workbook.html"
+        },
+        {
+          "book": "Workbook",
+          "page": 32,
+          "activity": "Exercise 7 — Listen and classify",
+          "reason": "The recording decides the grouping, and the printed table offers four rows per column for eight words that sort five against three by vowel, so it cannot be completed as printed.",
+          "handling": "The table and all eight words are reproduced; no grouping is published, the activity is not scored, and the page states that no grouping is given.",
+          "evidence": "grade5-unit1-lesson9-workbook.html"
+        }
+      ]
     }
   }
 }
